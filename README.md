@@ -1,6 +1,12 @@
 # Girls' Frontline Discord Search
 Search a doll from Girls' Frontline within Discord.
 
+Features:
+- Type, Base Stats, Max Stats, How To Obtain, Production Requirement, Ability, Ability Cooldown, Tile Bonus, Tile Bonus information.
+- Embed color matches star color
+- Links to the corresponding doll page on https://en.gfwiki.com
+- Flavor text... Soon.
+
 ## Prerequesites
 Python3 and pip
 
