@@ -4,6 +4,7 @@ import re
 
 client = discord.Client()
 DISCORD_TOKEN="your_key_here"
+COMMAND_NAME="$gfsearch"
 SITE_DOMAIN = "https://en.gfwiki.com"
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
 def num2stars(n):
@@ -32,9 +33,9 @@ async def on_ready():
 async def on_message(message):
 	if message.author == client.user:
 		return
-	if message.content.startswith("$gfsearch2 "):
+	if message.content.startswith(COMMAND_NAME+" "):
 		#The string "$gfsearch2 " is 11 characters, so cut it off
-		param = message.content[11:].lower()
+		param = message.content[len(COMMAND_NAME+1):].lower()
 		print(param)
 		#await client.send_message(message.channel, "World")
 		for doll in frontlinedex:
