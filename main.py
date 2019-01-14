@@ -3,7 +3,7 @@ import json
 import re
 
 client = discord.Client()
-DISCORD_TOKEN="your_key_here"
+DISCORD_TOKEN=""
 COMMAND_NAME="$gfsearch"
 SITE_DOMAIN = "https://en.gfwiki.com"
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
@@ -23,11 +23,25 @@ def num2stars(n):
 #async def loaddex(message):
 #	reload()
 #	await client.send_message(message.channel, "Done.")
+def serverCount():
+	print("Serving " + str(len(client.servers)) +" commanders")
+	return "Serving " + str(len(client.servers)) +" commanders"
 
 @client.event
 async def on_ready():
 	print("The bot is ready!")
-	await client.change_presence(game=discord.Game(name="I'm a specialist!"))
+	#print(str(client.user.id))
+	#https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0
+	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+client.user.id+ "&scope=bot&permissions=0")
+	await client.change_presence(game=discord.Game(name=serverCount()))
+
+@client.event
+async def on_server_join(server):
+	await client.change_presence(game=discord.Game(name=serverCount()))
+
+@client.event
+async def on_server_remove(server):
+	await client.change_presence(game=discord.Game(name=serverCount()))
 
 @client.event
 async def on_message(message):
@@ -35,7 +49,7 @@ async def on_message(message):
 		return
 	if message.content.startswith(COMMAND_NAME+" "):
 		#The string "$gfsearch2 " is 11 characters, so cut it off
-		param = message.content[len(COMMAND_NAME+1):].lower()
+		param = message.content[(len(COMMAND_NAME)+1):].lower()
 		print(param)
 		#await client.send_message(message.channel, "World")
 		for doll in frontlinedex:
