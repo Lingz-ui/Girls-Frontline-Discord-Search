@@ -1,0 +1,25 @@
+{
+	"Negev" : {"flavor": "She's a specialist!", "voodoo": [730, 630, 130, 439], "drop_rate": 4.11},
+	"PKP" : {"voodoo" : [793, 635, 133, 423], "drop_rate" : 5.19},
+	"MG5" : {"voodoo" : [730, 630, 130, 439], "drop_rate" : 4.89},
+	"Grizzly MkV": {"voodoo" : [130, 130, 130, 230], "drop_rate" : 2.56},
+	"Welrod MkII": {"voodoo" : [130, 130, 131, 130], "drop_rate" : 1.32},
+	"M950A": {"alias" : "Calico", "voodoo" : [130, 130, 131, 130], "drop_rate" : 1.32},
+	"UMP9": {"voodoo": [400, 400, 30, 200], "drop_rate" : 3.62},
+	"UMP45" : {"flavor" : "Cutting board."},
+	"Thompson" : {"voodoo": [404, 404, 90, 230], "drop_rate" : 2.78},
+	"Vector" : {"voodoo": [400, 400, 90, 230], "drop_rate" : 2.79},
+	"G36C" : {"voodoo" : [730, 630, 130, 439], "drop_rate" : 5.38},
+	"Suomi" : {"voodoo" : [400, 400, 91, 230], "drop_rate" : 4.69},
+	"Type 79" : {"voodoo" : [400, 400, 91, 230], "drop_rate" : 1.83},
+	"HK416" : {"flavor" : "She's all you need.", "alias": "HKM4", "voodoo": [92, 404, 404, 233], "drop_rate" : 3.20},
+	"IDW": {"flavor" : "IDW DA NYAAAAAAAAAAAAAAAAAAAAA"},
+	"FNC" : {"flavor" : "May have PTSD.", "alias" : "FF FNC", "voodoo": [430, 430, 91, 230], "drop_rate" : 5.07},
+	"Noel" : {"flavor" : "The Wheel of Fate is turning!"},
+	"Elphelt" : {"flavor" : "Heaven or Hell! Let's rock!"},
+	"Clear" : {"flavor" : "You are the light!"},
+	"Fail" : {"flavor" : "Fight the power! The black cat!"},
+	"ART556": {"flavor": "My ears are pretty, right?"},
+	"Five-seveN" : {"flavor" : "Is the order a rabbit... gun?"}
+
+}

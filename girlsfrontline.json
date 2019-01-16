@@ -184,21 +184,22 @@
         "bonus_desc": "Affects submachineguns\nIncreases evasion by 15%\nIncreases rate of fire by 10%",
         "production": {
             "timer": "3:35:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "6-5, 6-2E, 7-6, 7-3E, 8-5, 8-3E, 9-5, 10-1, 10-6, 11-5, 11-4E",
             "placebo": false
-        }
+        },
+        "img": "pic_9A91.png"
     },
     {
         "url": "/wiki/A-91",
@@ -291,7 +292,8 @@
         "production": {
             "stage": "Battle and random combat reward from 2018 summer event Continuum Turbulence, drop location as following: E1-5, E2-3, E3-5.",
             "placebo": false
-        }
+        },
+        "img": "pic_A91.png"
     },
     {
         "url": "/wiki/AA-12",
@@ -397,7 +399,8 @@
         "production": {
             "timer": "8:12:00",
             "placebo": false
-        }
+        },
+        "img": "pic_AA12.png"
     },
     {
         "url": "/wiki/AAT-52",
@@ -490,15 +493,16 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 20%",
         "production": {
             "timer": "4:50:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 5-6 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_AAT52.png"
     },
     {
         "url": "/wiki/AEK-999",
@@ -603,20 +607,21 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 15%\nIncreases armor by 10%",
         "production": {
             "timer": "6:20:00",
-            "normal": {
-                "manpower": 600,
-                "ammo": 600,
-                "rations": 100,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 4000
-            },
+            "normal": [
+                600,
+                600,
+                100,
+                400
+            ],
+            "heavy": [
+                6000,
+                6000,
+                1000,
+                4000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_AEK999.png"
     },
     {
         "url": "/wiki/AK-12",
@@ -696,20 +701,21 @@
         "bonus_desc": "Affects submachine guns\nIncrease damage by 25%\nIncrease rate of fire by 15%",
         "production": {
             "timer": "4:12:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_AK12.png"
     },
     {
         "url": "/wiki/AK-47",
@@ -801,21 +807,22 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 18%",
         "production": {
             "timer": "3:20:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_AK47.png"
     },
     {
         "url": "/wiki/AK-74U",
@@ -920,7 +927,8 @@
         "production": {
             "reward": "Rewarded to players upon completion of E2-9 of Continuum Turbulence, cannot be re/obtained otherwise.",
             "placebo": false
-        }
+        },
+        "img": "pic_AK74U.png"
     },
     {
         "url": "/wiki/AN-94",
@@ -988,20 +996,21 @@
         "bonus_desc": "Affects submachine guns\nIncreases accurаcy by 55%\nIncreases evasion by 16%",
         "production": {
             "timer": "4:09:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_AN94.png"
     },
     {
         "url": "/wiki/AR70",
@@ -1237,7 +1246,8 @@
             "timer": "3:15:00",
             "stage": "Obtainable from E3, E4 in Operation Cube. Eventually became available in heavy production on July 6th 2017 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_ARX160.png"
     },
     {
         "url": "/wiki/AS_Val",
@@ -1329,18 +1339,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases damage by 25%",
         "production": {
             "timer": "3:30:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "0-2, 3-6, 3-3E, 3-4E, 4-3, 4-1E, 5-1, 5-5, 5-6, 6-1, 6-6, 7-4, 8-1, 8-2, 9-2, 9-1E, 10-3, 11-6, 11-2E",
             "placebo": false
         }
@@ -1705,18 +1715,18 @@
         "bonus_desc": "Affects shotguns\nIncreases damage by 10%\nIncreases armor by 15%",
         "production": {
             "timer": "6:25:00",
-            "normal": {
-                "manpower": 600,
-                "ammo": 600,
-                "rations": 100,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 4000
-            },
+            "normal": [
+                600,
+                600,
+                100,
+                400
+            ],
+            "heavy": [
+                6000,
+                6000,
+                1000,
+                4000
+            ],
             "placebo": false
         },
         "img": "pic_Ameli.png"
@@ -1799,12 +1809,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:40:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward.",
             "placebo": false
         }
@@ -1887,12 +1897,12 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 10%",
         "production": {
             "timer": "3:20:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 4-2E onward.",
             "placebo": false
         },
@@ -2046,12 +2056,12 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 5%\nIncreases rate of fire by 10%",
         "production": {
             "timer": "1:30:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-6 onward.",
             "placebo": false
         }
@@ -2201,18 +2211,18 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 10%\nIncreases accuracy by 12%",
         "production": {
             "timer": "5:20:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-6 onward.",
             "placebo": false
         }
@@ -2295,12 +2305,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:28:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from battle stages from Chapter 7-1 onward.",
             "placebo": false
         }
@@ -2476,12 +2486,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:30:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward.",
             "placebo": false
         },
@@ -2554,7 +2564,8 @@
         "production": {
             "stage": "Drops from specific units as well as the boss in 3-6 and 3-4E.",
             "placebo": false
-        }
+        },
+        "img": "pic_CZ805.png"
     },
     {
         "url": "/wiki/CZ2000",
@@ -2918,18 +2929,18 @@
         "bonus_desc": "Affects rifles\nReduces skill cooldown time by 10%",
         "production": {
             "timer": "4:38:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -3035,18 +3046,18 @@
         "bonus_desc": "Affects rifles\nReduces skill cooldown time by 10%",
         "production": {
             "timer": "4:42:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -3170,12 +3181,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:50:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "0-1, 1-4E, 3-1E, 3-4E, 4-1, 4-1E, 5-1, 5-1E, 6-5, 6-1E, 7-1, 7-5, 7-2E, 8-2, 8-1E, 9-4, 10-3, 10-1E, 11-1, 11-6",
             "placebo": false
         }
@@ -3270,12 +3281,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "1:02:00",
-            "normal": {
-                "manpower": 130,
-                "ammo": 130,
-                "rations": 130,
-                "parts": 130
-            },
+            "normal": [
+                130,
+                130,
+                130,
+                130
+            ],
             "placebo": false
         },
         "img": "pic_Contender.png"
@@ -3464,12 +3475,12 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 15%",
         "production": {
             "timer": "5:00:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-5 onward.",
             "placebo": false
         },
@@ -3554,7 +3565,8 @@
         "production": {
             "reward": "Rewarded to players upon completion of E2-4 of Operation Deep Dive",
             "placebo": false
-        }
+        },
+        "img": "pic_DSR50.png"
     },
     {
         "url": "/wiki/EVO_3",
@@ -3715,12 +3727,12 @@
         "bonus_desc": "Affect Assault Rifles\nIncrease Accuracy by 40%\nIncrease Evasion by 15%",
         "production": {
             "timer": "1:50:00",
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Obtained as a possible drop throughout Deep Dive. Later added to heavy construction (CN).",
             "placebo": false
         },
@@ -3804,12 +3816,12 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 10%\nIncreases damage by 20%",
         "production": {
             "timer": "2:45:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 4-1 onward.",
             "placebo": false
         },
@@ -3881,20 +3893,21 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 20%",
         "production": {
             "timer": "3:45:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_FNFAL.png"
     },
     {
         "url": "/wiki/FAMAS",
@@ -3962,18 +3975,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 60%\nIncreases damage by 25%",
         "production": {
             "timer": "3:30:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "0-1, 4-5, 5-5, 5-4E, 6-2, 6-3E, 7-1, 7-4E, 8-3, 9-4, 10-2, 10-1E, 11-1, 11-1E",
             "placebo": false
         },
@@ -4058,12 +4071,12 @@
         "bonus_desc": "Affects shotguns\nIncreases accuracy by 30%",
         "production": {
             "timer": "4:50:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 4-3E onward.",
             "placebo": false
         },
@@ -4148,7 +4161,8 @@
         "production": {
             "stage": "Drops from specific units as well as the boss in 2-6 and 2-4E.",
             "placebo": false
-        }
+        },
+        "img": "pic_FMG9.png"
     },
     {
         "url": "/wiki/FN-49",
@@ -4270,15 +4284,16 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 10%",
         "production": {
             "timer": "3:10:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_FN49.png"
     },
     {
         "url": "/wiki/FNC",
@@ -4358,21 +4373,22 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 12%\nIncreases accuracy by 50%",
         "production": {
             "timer": "3:20:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_FNFNC.png"
     },
     {
         "url": "/wiki/FNP-9",
@@ -4452,16 +4468,17 @@
         "bonus_desc": "Affects all weapons",
         "production": {
             "timer": "0:25:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained in any battle stage.",
             "reward": "Achievement Reward for stepping on a Random Event node for the first time.",
             "placebo": false
-        }
+        },
+        "img": "pic_FNP9.png"
     },
     {
         "url": "/wiki/FP-6",
@@ -4555,7 +4572,8 @@
         "production": {
             "timer": "8:06:00",
             "placebo": false
-        }
+        },
+        "img": "pic_FP6.png"
     },
     {
         "url": "/wiki/Five-seveN",
@@ -4649,7 +4667,8 @@
             "stage": "Possible battle drop from E3-1 of Singularity. Also a possible drop in Operation Rabbit Hunt+ in E1-1 and E2-1 (CN/TW/KR)",
             "reward": "From Winter Battle Quests and Trimagic Square as event rewards.",
             "placebo": false
-        }
+        },
+        "img": "pic_FN57.png"
     },
     {
         "url": "/wiki/G11",
@@ -4729,18 +4748,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 10%\nIncreases firepower by 30%",
         "production": {
             "timer": "4:04:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_G11.png"
@@ -4924,12 +4943,12 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 50%\nIncreases rate of fire by 20%",
         "production": {
             "timer": "2:50:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-3 onward.",
             "placebo": false
         },
@@ -5055,18 +5074,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases damage by 30%\nIncreases rate of fire by 10%",
         "production": {
             "timer": "3:40:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_G36.png"
@@ -5137,18 +5156,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 10%\nIncreases rate of fire by 8%",
         "production": {
             "timer": "2:30:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_G36C.png"
@@ -5231,18 +5250,18 @@
         "bonus_desc": "Affects submachine guns\nIncrease evasion by 15%\nIncrease accuracy by 50%",
         "production": {
             "timer": "4:05:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "stage": "9-4E",
             "placebo": false
         },
@@ -5338,12 +5357,12 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 10%",
         "production": {
             "timer": "3:10:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward.",
             "placebo": false
         },
@@ -5416,7 +5435,8 @@
         "production": {
             "reward": "Achievement award for purchasing 5 editions of the Girls' Frontline official 4-koma in the cafeteria.",
             "placebo": false
-        }
+        },
+        "img": "pic_GSH18.png"
     },
     {
         "url": "/wiki/Galil",
@@ -5496,12 +5516,12 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 12%\nIncreases accuracy by 50%",
         "production": {
             "timer": "2:40:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "reward": "Achievement Reward for obtaining a T-doll drop for the first time.",
             "placebo": false
@@ -5736,12 +5756,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "1:10:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "placebo": false
         }
     },
@@ -6015,18 +6035,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases damage by 40%",
         "production": {
             "timer": "3:55:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "5-4E.",
             "placebo": false
         },
@@ -6216,18 +6236,18 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
             "timer": "3:50:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -6549,12 +6569,12 @@
         "bonus_desc": "Affects assault rifles\nIncreases evasion by 20%",
         "production": {
             "timer": "1:10:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward.",
             "placebo": false
         },
@@ -6650,18 +6670,18 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
         "production": {
             "timer": "4:52:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -6905,12 +6925,12 @@
         "bonus_desc": "Affects all classes",
         "production": {
             "timer": "00:49:00",
-            "normal": {
-                "manpower": 130,
-                "ammo": 130,
-                "rations": 130,
-                "parts": 130
-            },
+            "normal": [
+                130,
+                130,
+                130,
+                130
+            ],
             "placebo": false
         },
         "img": "pic_Jericho.png"
@@ -7087,18 +7107,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases damage by 25%\nIncreases accuracy by 50%",
         "production": {
             "timer": "3:52:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_K2.png"
@@ -7490,14 +7510,15 @@
         "bonus_desc": "Affects machineguns\nIncrease Damage by 12%\nIncrease Accuracy by 30%",
         "production": {
             "timer": "7:25:00",
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 3000
-            },
+            "heavy": [
+                4000,
+                1000,
+                6000,
+                3000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_KS23.png"
     },
     {
         "url": "/wiki/KSG",
@@ -7590,12 +7611,12 @@
         "bonus_desc": "Affects machineguns\nIncrease Damage by 20%",
         "production": {
             "timer": "8:00:00",
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 3000
-            },
+            "heavy": [
+                4000,
+                1000,
+                6000,
+                3000
+            ],
             "placebo": false
         },
         "img": "pic_KSG.png"
@@ -7666,18 +7687,18 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
         "production": {
             "timer": "4:40:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -7771,12 +7792,12 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 50%\nIncreases firepower by 20%",
         "production": {
             "timer": "2:50:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "placebo": false
         },
@@ -7903,12 +7924,12 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 10%\nIncreases damage by 10%",
         "production": {
             "timer": "5:10:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 5-5 onward.",
             "placebo": false
         },
@@ -7992,18 +8013,18 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
         "production": {
             "timer": "5:00:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -8073,18 +8094,18 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
             "timer": "4:00:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-3 onward.",
             "placebo": false
         }
@@ -8400,18 +8421,18 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
             "timer": "3:40:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-3 onward.",
             "reward": "Obtained when the player reaches level 40 on their HQ level.",
             "placebo": false
@@ -8651,12 +8672,12 @@
         "bonus_desc": "Affects machineguns\nIncrease accuracy by 50%",
         "production": {
             "timer": "7:30:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
         },
         "img": "pic_M1897.png"
@@ -8805,12 +8826,12 @@
         "bonus_desc": "Affects all weapons",
         "production": {
             "timer": "0:20:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from any battle stage",
             "reward": "Upon creating a new profile, players will start with M1911, along with 2 other HG's",
             "placebo": false
@@ -8938,18 +8959,18 @@
         "bonus_desc": "Affects shotguns\nIncreases armor by 10%\nIncreases damage by 15%",
         "production": {
             "timer": "6:25:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "0-1, 6-6, 7-3, 7-4E, 8-3, 8-3E, 9-6, 10-5, 11-6, 11-2E",
             "placebo": false
         },
@@ -9034,18 +9055,18 @@
         "bonus_desc": "Affects shotguns\nIncreases accuracy by 25%\nIncreases armour by 10%",
         "production": {
             "timer": "5:40:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-3E onward.",
             "placebo": false
         },
@@ -9363,18 +9384,18 @@
         "bonus_desc": "Affects shotguns\nIncreases damage by 22%",
         "production": {
             "timer": "6:10:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-2E onward.",
             "placebo": false
         },
@@ -9446,12 +9467,12 @@
         "bonus_desc": "Affects assault rifles\nIncreases accuracy by 40%\nIncreases evasion by 30%",
         "production": {
             "timer": "1:30:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward.",
             "placebo": false
         },
@@ -9536,12 +9557,12 @@
         "bonus_desc": "Affects machine guns\nIncreases Damage by 18%",
         "production": {
             "timer": "7:45:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
         }
     },
@@ -9848,12 +9869,12 @@
         "bonus_desc": "Affects machineguns\nIncrease Damage by 18%",
         "production": {
             "timer": "7:20:00",
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 3000
-            },
+            "heavy": [
+                4000,
+                1000,
+                6000,
+                3000
+            ],
             "placebo": false
         },
         "img": "pic_M500.png"
@@ -9937,12 +9958,12 @@
         "bonus_desc": "Affects machineguns\nIncrease Accuracy by 55%",
         "production": {
             "timer": "7:40:00",
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 3000
-            },
+            "heavy": [
+                4000,
+                1000,
+                6000,
+                3000
+            ],
             "placebo": false
         },
         "img": "pic_M590.png"
@@ -10038,18 +10059,18 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 8%\nIncreases damage by 10%",
         "production": {
             "timer": "6:10:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "0-3, 0-4, 6-3E, 7-2E, 8-2, 8-6, 9-3, 10-3, 11-4, 11-4E",
             "placebo": false
         },
@@ -10309,12 +10330,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:40:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-5 onward.",
             "placebo": false
         },
@@ -10398,12 +10419,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "1:05:00",
-            "normal": {
-                "manpower": 130,
-                "ammo": 130,
-                "rations": 130,
-                "parts": 130
-            },
+            "normal": [
+                130,
+                130,
+                130,
+                130
+            ],
             "placebo": false
         },
         "img": "pic_M950A.png"
@@ -10474,18 +10495,18 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
         "production": {
             "timer": "4:55:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "stage": "11-4E",
             "placebo": false
         },
@@ -10581,21 +10602,22 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 12%",
         "production": {
             "timer": "2:00:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-4E onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_MAC10.png"
     },
     {
         "url": "/wiki/MDR",
@@ -10806,18 +10828,18 @@
         "bonus_desc": "Affects shotguns\nIncreases accuracy by 15%\nIncreases damage by 10%",
         "production": {
             "timer": "6:30:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "0-3, 6-4, 6-4E, 7-5, 7-3E, 8-4, 8-1E, 9-5, 10-4, 11-3, 11-1E",
             "placebo": false
         },
@@ -10902,12 +10924,12 @@
         "bonus_desc": "Affects shotguns\nIncreases damage by 20%",
         "production": {
             "timer": "5:00:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-4 onward.",
             "placebo": false
         },
@@ -11004,18 +11026,18 @@
         "bonus_desc": "Affects shotguns\nIncreases accuracy by 12%\nIncreases armour by 15%",
         "production": {
             "timer": "6:40:00",
-            "normal": {
-                "manpower": 600,
-                "ammo": 600,
-                "rations": 100,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 4000
-            },
+            "normal": [
+                600,
+                600,
+                100,
+                400
+            ],
+            "heavy": [
+                6000,
+                6000,
+                1000,
+                4000
+            ],
             "placebo": false
         },
         "img": "pic_MG4.png"
@@ -11099,18 +11121,18 @@
         "bonus_desc": "Affects shotguns\nIncreases damage by 22%",
         "production": {
             "timer": "5:50:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-6 onward.",
             "placebo": false
         },
@@ -11170,18 +11192,18 @@
         "bonus_desc": "Affects shotguns\nIncreases damage by 10%\nIncreases armor by 10%",
         "production": {
             "timer": "6:45:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 3000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                4000,
+                6000,
+                1000,
+                3000
+            ],
             "stage": "7-4E",
             "placebo": false
         },
@@ -11267,7 +11289,8 @@
             "stage": "Obtained as a possible drop throughout Continuum Turbulence",
             "reward": "Login reward for June 2018 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_MP443.png"
     },
     {
         "url": "/wiki/MP-446",
@@ -11389,15 +11412,16 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:25:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from any battle stages from Chapter 1-5 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_MP446.png"
     },
     {
         "url": "/wiki/MP-448",
@@ -11478,7 +11502,8 @@
         "production": {
             "reward": "Login Reward for September (CN)",
             "placebo": false
-        }
+        },
+        "img": "pic_MP448.png"
     },
     {
         "url": "/wiki/MP40",
@@ -11571,12 +11596,12 @@
         "bonus_desc": "Affects assault rifles\nIncreases accuracy by 25%\nIncreases evasion by 20%",
         "production": {
             "timer": "1:30:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward.",
             "reward": "Achievement Reward for doing Construction for the first time.",
             "placebo": false
@@ -11649,18 +11674,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases accuracy by 40%\nIncreases critical hit rate by 20%",
         "production": {
             "timer": "2:20:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "0-2, 2-4, 3-2, 3-4, 4-2, 4-2E, 5-2, 5-2E, 6-1E, 7-2, 7-4, 7-3E, 8-1, 8-6, 9-1, 9-1E, 10-2, 11-3, 11-4E",
             "placebo": false
         },
@@ -11839,7 +11864,8 @@
         "production": {
             "stage": "Obtained as a possible drop throughout Deep Dive (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_MT9.png"
     },
     {
         "url": "/wiki/Makarov",
@@ -11919,12 +11945,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:40:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward.",
             "placebo": false
         }
@@ -12020,18 +12046,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 18%",
         "production": {
             "timer": "1:40:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward.",
             "placebo": false
         }
@@ -12219,12 +12245,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:50:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "4-3E, 5-3, 5-1E, 6-1, 6-1E, 7-3, 7-1E, 8-3, 9-1, 9-1E, 10-5, 11-4, 11-3E",
             "placebo": false
         },
@@ -12404,20 +12430,21 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 18%",
         "production": {
             "timer": "6:20:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 600,
-                "rations": 30,
-                "parts": 300
-            },
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 4000
-            },
+            "normal": [
+                400,
+                600,
+                30,
+                300
+            ],
+            "heavy": [
+                6000,
+                6000,
+                1000,
+                4000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_MK48.png"
     },
     {
         "url": "/wiki/Model_L",
@@ -12608,18 +12635,18 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 15%",
         "production": {
             "timer": "4:10:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "0-3, 4-6, 5-3E, 5-6, 6-5, 6-3E, 7-5, 7-1E, 8-1, 8-2E, 9-4, 9-1E, 10-2, 10-6, 11-3, 11-2E",
             "placebo": false
         }
@@ -12703,12 +12730,12 @@
         "bonus_desc": "Affects machine guns\nIncreases damage by 15%",
         "production": {
             "timer": "7:15:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
         },
         "img": "pic_NS2000.png"
@@ -12779,21 +12806,22 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
         "production": {
             "timer": "4:45:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "8-4E",
             "placebo": false
-        }
+        },
+        "img": "pic_NTW20.png"
     },
     {
         "url": "/wiki/NZ75",
@@ -12873,12 +12901,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "1:05:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "reward": "Login reward during National Day of the People's Republic of China (October 1st 2016 - October 7th 2016) in CN and during November 2018 on EN.",
             "placebo": false
         },
@@ -13052,12 +13080,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:20:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from any battle stage",
             "reward": "Upon creating a new profile, players will start with Nagant Revolver, along with 2 other HG's",
             "placebo": false
@@ -13117,20 +13145,21 @@
         "bonus_desc": "Affects shotguns\nIncreases armour by 20%",
         "production": {
             "timer": "6:35:00",
-            "normal": {
-                "manpower": 600,
-                "ammo": 600,
-                "rations": 100,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 4000
-            },
+            "normal": [
+                600,
+                600,
+                100,
+                400
+            ],
+            "heavy": [
+                6000,
+                6000,
+                1000,
+                4000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_NEGEV.png"
     },
     {
         "url": "/wiki/OBR",
@@ -13292,21 +13321,22 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 20%\nIncreases damage by 15%",
         "production": {
             "timer": "3:10:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 5-5 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_OTs12.png"
     },
     {
         "url": "/wiki/OTs-14",
@@ -13400,7 +13430,8 @@
             "stage": "Possible battle drop from E1-2 of Operation Deep Dive.",
             "reward": "Reward to players for completing Operation Cube.",
             "placebo": false
-        }
+        },
+        "img": "pic_OTs14.png"
     },
     {
         "url": "/wiki/OTs-39",
@@ -13470,7 +13501,8 @@
             "stage": "Obtained as a possible drop throughout Continuum Turbulence (CN).",
             "reward": "CN servers login reward of March 2018.",
             "placebo": false
-        }
+        },
+        "img": "pic_OTs39.png"
     },
     {
         "url": "/wiki/OTs-44",
@@ -13644,12 +13676,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:30:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "placebo": false
         },
@@ -13816,12 +13848,12 @@
         "bonus_desc": "Affects all weapons",
         "production": {
             "timer": "0:20:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from any battle stage",
             "reward": "Upon creating a new profile, players will start with P38, along with 2 other HG's",
             "placebo": false
@@ -13906,12 +13938,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:55:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Chapter 5-E (All Maps), 6-3, 6-2E, 7-4, 8-5, 8-2E, 9-5, 10-1, 11-5, 11-1E",
             "placebo": false
         },
@@ -14065,12 +14097,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:35:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "placebo": false
         },
         "img": "pic_P99.png"
@@ -14129,18 +14161,18 @@
         "bonus_desc": "Affects shotguns\nIncreases damage by 18%",
         "production": {
             "timer": "6:30:00",
-            "normal": {
-                "manpower": 600,
-                "ammo": 600,
-                "rations": 100,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 4000
-            },
+            "normal": [
+                600,
+                600,
+                100,
+                400
+            ],
+            "heavy": [
+                6000,
+                6000,
+                1000,
+                4000
+            ],
             "stage": "0-2, 7-6, 10-6E, 11-5, 11-3E",
             "placebo": false
         },
@@ -14200,18 +14232,18 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 15%\nIncreases accuracy by 12%",
         "production": {
             "timer": "6:50:00",
-            "normal": {
-                "manpower": 600,
-                "ammo": 600,
-                "rations": 100,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 6000,
-                "rations": 1000,
-                "parts": 4000
-            },
+            "normal": [
+                600,
+                600,
+                100,
+                400
+            ],
+            "heavy": [
+                6000,
+                6000,
+                1000,
+                4000
+            ],
             "placebo": false
         },
         "img": "pic_PKP.png"
@@ -14332,7 +14364,8 @@
             "stage": "Possible drop in Operation Rabbit Hunt+ in E1-4 and E2-4 (CN/TW/KR)",
             "reward": "Rewarded to players after accumulating 1800 points during the \"Crimson Witch\" event on the 14th of July 2018.",
             "placebo": false
-        }
+        },
+        "img": "pic_PM06.png"
     },
     {
         "url": "/wiki/PP-19",
@@ -14401,7 +14434,8 @@
         "production": {
             "stage": "Obtainable as a possible drop throughout Glory Day (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_PP19.png"
     },
     {
         "url": "/wiki/PP-19-01",
@@ -14493,20 +14527,21 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 12%\nIncreases accuracy by 30%",
         "production": {
             "timer": "2:18:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_PP1901.png"
     },
     {
         "url": "/wiki/PP-2000",
@@ -14574,15 +14609,16 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 10%\nIncreases accuracy by 25%",
         "production": {
             "timer": "1:10:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_PP2000.png"
     },
     {
         "url": "/wiki/PP-90",
@@ -14662,21 +14698,22 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 8%\nIncrease evasion by 20%",
         "production": {
             "timer": "2:20:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "stage": "10-6, 10-4E, 11-5, 11-4E",
             "placebo": false
-        }
+        },
+        "img": "pic_PP90.png"
     },
     {
         "url": "/wiki/PPK",
@@ -14768,12 +14805,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:22:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from any battle stages from Chapter 1-2 onward.",
             "reward": "Achievement Reward for killing 1 Enemy type for the first time.",
             "placebo": false
@@ -14846,21 +14883,22 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 12%",
         "production": {
             "timer": "2:10:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_PPS43.png"
     },
     {
         "url": "/wiki/PPSh-41",
@@ -14928,15 +14966,16 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 10%\nIncreases rate of fire by 5%",
         "production": {
             "timer": "1:50:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_PPsh41.png"
     },
     {
         "url": "/wiki/PSG-1",
@@ -15006,7 +15045,8 @@
             "timer": "4:20:00",
             "stage": "Obtainable from E1-4 in Operation Cube. Eventually became available in heavy production on July 6th 2017 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_PSG1.png"
     },
     {
         "url": "/wiki/PSM",
@@ -15168,18 +15208,18 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 15%",
         "production": {
             "timer": "4:30:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "0-1, 4-4, 4-2E, 5-2, 7-3E, 8-5, 8-1E, 9-1, 9-5, 10-5, 11-1, 11-3E",
             "placebo": false
         },
@@ -15275,12 +15315,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "01:04:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "placebo": false
         }
     },
@@ -15480,12 +15520,12 @@
         "bonus_desc": "Affects HGs\nReduce skill cooldown by 15%",
         "production": {
             "timer": "4:30:00",
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "stage": "Possible battle drop reward from E1-4 and E3-3 of Operation Deep Dive.",
             "placebo": false
         }
@@ -15580,18 +15620,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 30%\nIncreases evasion by 18%",
         "production": {
             "timer": "3:58:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_RFB.png"
@@ -15675,14 +15715,15 @@
         "bonus_desc": "Affects machineguns\nIncrease Damage by 12%\nIncrease Accuracy by 30%",
         "production": {
             "timer": "7:30:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_RMB93.png"
     },
     {
         "url": "/wiki/RO635",
@@ -15929,7 +15970,8 @@
         "production": {
             "reward": "Login reward for November 2018 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_RT20.png"
     },
     {
         "url": "/wiki/Ribeyrolles",
@@ -16033,12 +16075,12 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 20%",
         "production": {
             "timer": "3:40:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
             "placebo": false
         },
         "img": "pic_Ribeyrolles.png"
@@ -16122,12 +16164,12 @@
         "bonus_desc": "Affects machine guns\nIncreases damage by 10%\nIncreases accuracy by 15%",
         "production": {
             "timer": "8:10:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
         }
     },
@@ -16210,7 +16252,8 @@
         "production": {
             "timer": "3:25:00",
             "placebo": false
-        }
+        },
+        "img": "pic_SAR21.png"
     },
     {
         "url": "/wiki/SCW",
@@ -16383,15 +16426,16 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases damage by 20%",
         "production": {
             "timer": "2:40:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_SIG510.png"
     },
     {
         "url": "/wiki/SM-1",
@@ -16542,14 +16586,15 @@
         "bonus_desc": "Affects machineguns\nIncrease Damage by 20%",
         "production": {
             "timer": "7:40:00",
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 3000
-            },
+            "heavy": [
+                4000,
+                1000,
+                6000,
+                3000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_SPAS12.png"
     },
     {
         "url": "/wiki/SPP-1",
@@ -16630,7 +16675,8 @@
         "production": {
             "reward": "Reward for clearing Operation Cube E2.",
             "placebo": false
-        }
+        },
+        "img": "pic_SPP1.png"
     },
     {
         "url": "/wiki/SPR_A3G",
@@ -16791,21 +16837,22 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 18%\nIncreases critical hit rate by 30%",
         "production": {
             "timer": "2:33:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "stage": "10-4E",
             "placebo": false
-        }
+        },
+        "img": "pic_SR3MP.png"
     },
     {
         "url": "/wiki/SRS",
@@ -17201,21 +17248,22 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
             "timer": "3:40:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4E onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_SV98.png"
     },
     {
         "url": "/wiki/SVD",
@@ -17295,18 +17343,18 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 15%",
         "production": {
             "timer": "4:15:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_SVD.png"
@@ -17377,15 +17425,16 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 10%",
         "production": {
             "timer": "3:30:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 3-3 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_SVT38.png"
     },
     {
         "url": "/wiki/Saiga-12",
@@ -17478,14 +17527,15 @@
         "bonus_desc": "Affects machineguns\nIncrease damage by 15%",
         "production": {
             "timer": "8:05:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_Saiga12.png"
     },
     {
         "url": "/wiki/Serdyukov",
@@ -17646,18 +17696,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 15%\nIncreases evasion by 10%",
         "production": {
             "timer": "2:18:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_Shipka.png"
@@ -17740,12 +17790,12 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 10%",
         "production": {
             "timer": "3:30:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-6 onward.",
             "placebo": false
         }
@@ -17841,18 +17891,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 15%\nIncreases accuracy by 50%",
         "production": {
             "timer": "2:00:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward.",
             "placebo": false
         }
@@ -17935,12 +17985,12 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 20%",
         "production": {
             "timer": "1:20:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "placebo": false
         }
@@ -18023,12 +18073,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:52:00",
-            "normal": {
-                "manpower": 130,
-                "ammo": 130,
-                "rations": 130,
-                "parts": 130
-            },
+            "normal": [
+                130,
+                130,
+                130,
+                130
+            ],
             "stage": "Obtainable as a possible drop throughout Singularity and Continuum Turbulence.",
             "placebo": false
         },
@@ -18100,18 +18150,18 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 15%",
         "production": {
             "timer": "4:25:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "0-2, 0-4, 4-6, 4-4E, 5-4, 5-3E, 6-3, 6-6, 6-4E, 7-2, 7-6, 7-4E, 8-2, 8-6, 8-3E, 9-2, 9-6, 10-4, 10-1E, 10-3E, 11-2, 11-6",
             "reward": "First Payment award on CN/TW/KR server. With the First Payment award change on July 2018 Springfield is no longer the reward T-doll and cannot be obtained this way again",
             "placebo": false
@@ -18183,21 +18233,22 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 60%\nIncreases evasion by 20%",
         "production": {
             "timer": "3:00:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_STG44.png"
     },
     {
         "url": "/wiki/Stechkin",
@@ -18277,12 +18328,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:55:00",
-            "normal": {
-                "manpower": 130,
-                "ammo": 130,
-                "rations": 130,
-                "parts": 130
-            },
+            "normal": [
+                130,
+                130,
+                130,
+                130
+            ],
             "placebo": false
         }
     },
@@ -18382,18 +18433,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases accuracy by 10%\nIncreases evasion by 30%",
         "production": {
             "timer": "1:40:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward.",
             "reward": "Rewarded to players after completing chapter 1-1 for the first time.",
             "placebo": false
@@ -18477,18 +18528,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 15%\nIncreases accuracy by 30%",
         "production": {
             "timer": "2:25:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -18653,14 +18704,15 @@
         "bonus_desc": "Affects machine guns\nIncrease damage by 15%\nIncreases accuracy by 20%",
         "production": {
             "timer": "7:50:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_SuperShorty.png"
     },
     {
         "url": "/wiki/T-5000",
@@ -18740,20 +18792,21 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 15%",
         "production": {
             "timer": "4:10:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 30,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 1000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                30,
+                400,
+                30
+            ],
+            "heavy": [
+                4000,
+                1000,
+                4000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_T5000.png"
     },
     {
         "url": "/wiki/T65",
@@ -19070,18 +19123,18 @@
         "bonus_desc": "Affects SMG\nIncreases damage by 20%\nincreases evasion by 12%",
         "production": {
             "timer": "3:48:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
         },
         "img": "pic_T91.png"
@@ -19153,7 +19206,8 @@
         "production": {
             "reward": "Exchangeable for 240 Alloy Zongzi during the 2018 Dragon Boat Festival event Operation Zongzi.",
             "placebo": false
-        }
+        },
+        "img": "pic_TAC50.png"
     },
     {
         "url": "/wiki/TAR-21",
@@ -19245,21 +19299,22 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 18%",
         "production": {
             "timer": "3:30:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "stage": "0-4, 5-5, 5-6, 8-6, 9-6",
             "placebo": false
-        }
+        },
+        "img": "pic_TAR21.png"
     },
     {
         "url": "/wiki/TMP",
@@ -19410,18 +19465,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases evasion by 15%",
         "production": {
             "timer": "2:30:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -19572,12 +19627,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:45:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-3 onward.",
             "placebo": false
         }
@@ -19929,21 +19984,22 @@
         "bonus_desc": "Affects submachine guns\nIncreases critical rate by 10%\nIncreases evasion by 15%",
         "production": {
             "timer": "3:25:00",
-            "normal": {
-                "manpower": 800,
-                "ammo": 800,
-                "rations": 800,
-                "parts": 800
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                800,
+                800,
+                800,
+                800
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "0-3, 4-5, 4-3E, 5-3, 5-4E, 6-4, 6-4E, 7-3, 7-2E, 8-4, 9-3, 10-5, 11-2, 11-3E",
             "placebo": false
-        }
+        },
+        "img": "pic_56-1type.png"
     },
     {
         "url": "/wiki/Type_59",
@@ -20049,7 +20105,8 @@
             "stage": "Obtained as a possible drop throughout Arctic Warfare (CN)",
             "reward": "Obtained as login reward on November 2016 (CN), October 2018 (EN), November 2018 (JP)",
             "placebo": false
-        }
+        },
+        "img": "pic_59type.png"
     },
     {
         "url": "/wiki/Type_62",
@@ -20225,7 +20282,8 @@
             "timer": "2:45:00",
             "stage": "Can be obtained from many battle stages from Chapter 6-1 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_63type.png"
     },
     {
         "url": "/wiki/Type_64",
@@ -20323,15 +20381,16 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 20%",
         "production": {
             "timer": "1:25:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4E onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_64type.png"
     },
     {
         "url": "/wiki/Type_79",
@@ -20399,20 +20458,21 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 20%",
         "production": {
             "timer": "2:35:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_79type.png"
     },
     {
         "url": "/wiki/Type_80",
@@ -20494,7 +20554,8 @@
         "production": {
             "timer": "6:15:00",
             "placebo": false
-        }
+        },
+        "img": "pic_80type.png"
     },
     {
         "url": "/wiki/Type_81_Carbine",
@@ -20706,7 +20767,8 @@
         "production": {
             "timer": "6:28:00",
             "placebo": false
-        }
+        },
+        "img": "pic_88type.png"
     },
     {
         "url": "/wiki/Type_92",
@@ -20798,15 +20860,16 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:35:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-3E onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_92type.png"
     },
     {
         "url": "/wiki/Type_95",
@@ -20886,20 +20949,21 @@
         "bonus_desc": "Affects submachine guns\nIncreases damage by 10%\nIncreases evasion by 18%",
         "production": {
             "timer": "3:50:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_95type.png"
     },
     {
         "url": "/wiki/Type_97",
@@ -20979,20 +21043,21 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases evasion by 18%",
         "production": {
             "timer": "3:50:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_97type.png"
     },
     {
         "url": "/wiki/Type_97_Shotgun",
@@ -21314,18 +21379,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 18%\nIncreases critical hit rate by 30%",
         "production": {
             "timer": "2:15:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "stage": "6-6, 6-3E, 8-4, 8-2E, 9-3, 9-2E, 10-1E, 11-4, 11-2E",
             "placebo": false
         },
@@ -21397,18 +21462,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases accuracy by 30%\nIncreases rate of fire by 12%",
         "production": {
             "timer": "2:15:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "stage": "4-4E, 5-4, 5-5, 5-6, 5-2E, 6-2, 6-5, 6-2E, 7-5, 7-6, 7-1E, 8-5, 8-1E, 8-3E, 9-2, 9-6, 10-1, 10-4, 11-2, 11-1E",
             "placebo": false
         },
@@ -21505,14 +21570,15 @@
         "bonus_desc": "Affects machine guns\nIncreases damage by 15%\nIncreases accuracy by 20%",
         "production": {
             "timer": "7:55:00",
-            "heavy": {
-                "manpower": 6000,
-                "ammo": 1000,
-                "rations": 6000,
-                "parts": 4000
-            },
+            "heavy": [
+                6000,
+                1000,
+                6000,
+                4000
+            ],
             "placebo": false
-        }
+        },
+        "img": "pic_USAS12.png"
     },
     {
         "url": "/wiki/USP_Compact",
@@ -21592,12 +21658,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "0:28:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 7-1 onward.",
             "placebo": false
         }
@@ -21693,18 +21759,18 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 25%",
         "production": {
             "timer": "2:35:00",
-            "normal": {
-                "manpower": 400,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 400
-            },
-            "heavy": {
-                "manpower": 4000,
-                "ammo": 4000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                400,
+                400,
+                400,
+                400
+            ],
+            "heavy": [
+                4000,
+                4000,
+                1000,
+                1000
+            ],
             "stage": "6-4E",
             "placebo": false
         },
@@ -21788,18 +21854,18 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
         "production": {
             "timer": "4:50:00",
-            "normal": {
-                "manpower": 300,
-                "ammo": 30,
-                "rations": 300,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 3000,
-                "ammo": 1000,
-                "rations": 3000,
-                "parts": 1000
-            },
+            "normal": [
+                300,
+                30,
+                300,
+                30
+            ],
+            "heavy": [
+                3000,
+                1000,
+                3000,
+                1000
+            ],
             "stage": "0-4",
             "placebo": false
         },
@@ -21883,12 +21949,12 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "timer": "1:00:00",
-            "normal": {
-                "manpower": 130,
-                "ammo": 130,
-                "rations": 130,
-                "parts": 130
-            },
+            "normal": [
+                130,
+                130,
+                130,
+                130
+            ],
             "placebo": false
         }
     },
@@ -21983,7 +22049,8 @@
         "production": {
             "stage": "Drops from specific units as well as the boss in 10-6 and 10-4E.",
             "placebo": false
-        }
+        },
+        "img": "pic_xm3.png"
     },
     {
         "url": "/wiki/XM8",
@@ -22146,21 +22213,22 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases evasion by 10%",
         "production": {
             "timer": "2:05:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 1000,
-                "rations": 1000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
+            "heavy": [
+                1000,
+                1000,
+                1000,
+                1000
+            ],
             "stage": "Operation Cube E1-2, E1-3, E1-4",
             "placebo": false
-        }
+        },
+        "img": "pic_Z62.png"
     },
     {
         "url": "/wiki/Zas_M21",
@@ -22276,18 +22344,18 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 12%\nIncreases evasion by 15%",
         "production": {
             "timer": "4:05:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 400,
-                "rations": 400,
-                "parts": 30
-            },
-            "heavy": {
-                "manpower": 1000,
-                "ammo": 4000,
-                "rations": 4000,
-                "parts": 1000
-            },
+            "normal": [
+                30,
+                400,
+                400,
+                30
+            ],
+            "heavy": [
+                1000,
+                4000,
+                4000,
+                1000
+            ],
             "placebo": false
         }
     },
@@ -22381,12 +22449,12 @@
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 10%\nIncreases evasion by 10%",
         "production": {
             "timer": "1:20:00",
-            "normal": {
-                "manpower": 30,
-                "ammo": 30,
-                "rations": 30,
-                "parts": 30
-            },
+            "normal": [
+                30,
+                30,
+                30,
+                30
+            ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4E onward.",
             "placebo": false
         },
@@ -22622,7 +22690,8 @@
         "production": {
             "reward": "Rewarded upon completing chapter Glory Day E2-3 three times.",
             "placebo": false
-        }
+        },
+        "img": "pic_CLEAR.png"
     },
     {
         "url": "/wiki/Elphelt",
@@ -22704,7 +22773,8 @@
         "production": {
             "reward": "Reward of the last map of Operation Rabbit Hunt.",
             "placebo": false
-        }
+        },
+        "img": "pic_GG_elfeldt.png"
     },
     {
         "url": "/wiki/Fail",
@@ -22785,7 +22855,8 @@
         "production": {
             "reward": "Collaboration event T-doll, exchangeable from Glory Day event shop for 120 Crown of Respects.",
             "placebo": false
-        }
+        },
+        "img": "pic_FAIL.png"
     },
     {
         "url": "/wiki/Kiana",
@@ -23030,7 +23101,8 @@
             "stage": "Obtainable during the BlazBlue / Guilty Gear collaboration event Operation Rabbit Hunt from E1-3, E1-4, E2-3, E2-4",
             "reward": "Guaranteed to drop upon opening 99 Seithr lootcrates during the Operation Rabbit Hunt Collab events.",
             "placebo": false
-        }
+        },
+        "img": "pic_BB_Noel.png"
     },
     {
         "url": "/wiki/Raiden_Mei",
