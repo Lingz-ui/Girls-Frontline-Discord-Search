@@ -6,7 +6,7 @@
 	"Welrod MkII": {"voodoo" : [130, 130, 131, 130], "drop_rate" : 1.32},
 	"M950A": {"alias" : "Calico", "voodoo" : [130, 130, 131, 130], "drop_rate" : 1.32},
 	"UMP9": {"voodoo": [400, 400, 30, 200], "drop_rate" : 3.62},
-	"UMP45" : {"flavor" : "Cutting board."},
+	"UMP45" : {"flavor" : "Cutting board.", "voodoo" : [435, 435, 135, 235], "drop_rate" : 4.35},
 	"Thompson" : {"voodoo": [404, 404, 90, 230], "drop_rate" : 2.78},
 	"Vector" : {"voodoo": [400, 400, 90, 230], "drop_rate" : 2.79},
 	"G36C" : {"voodoo" : [730, 630, 130, 439], "drop_rate" : 5.38},
@@ -14,12 +14,18 @@
 	"Type 79" : {"voodoo" : [400, 400, 91, 230], "drop_rate" : 1.83},
 	"HK416" : {"flavor" : "She's all you need.", "alias": "HKM4", "voodoo": [92, 404, 404, 233], "drop_rate" : 3.20},
 	"IDW": {"flavor" : "IDW DA NYAAAAAAAAAAAAAAAAAAAAA"},
-	"FNC" : {"flavor" : "May have PTSD.", "alias" : "FF FNC", "voodoo": [430, 430, 91, 230], "drop_rate" : 5.07},
+	"FNC" : {"flavor" : "All this chocolate can't heal my wounds", "alias" : "FF FNC", "voodoo": [430, 430, 91, 230], "drop_rate" : 5.07},
 	"Noel" : {"flavor" : "The Wheel of Fate is turning!"},
 	"Elphelt" : {"flavor" : "Heaven or Hell! Let's rock!"},
 	"Clear" : {"flavor" : "You are the light!"},
 	"Fail" : {"flavor" : "Fight the power! The black cat!"},
 	"ART556": {"flavor": "My ears are pretty, right?"},
-	"Five-seveN" : {"flavor" : "Is the order a rabbit... gun?"}
-
+	"Five-seveN" : {"flavor" : "hoxy", "alias":"57"},
+	"M4A1": {"flavor" : "A precious cinnamon roll."},
+	"G41" : {"flavor": "f××knugget", "voodoo" : [95, 494, 494, 230], "drop_rate" : 2.53},
+	"G11": {"flavor": "I'm tired...", "voodoo" : [95, 400, 400, 95], "drop_rate" : 2.67},
+	"M4 SOPMOD II": {"flavor" : "Trophy collecting angry battle maniac puppy"},
+	"AUG" : {"flavor":"Glory to mankind."},
+	"WA2000" : {"flavor":"Do not attempt to eat her cooking", "voodoo":[438,438,438,238], "drop_rate":1.86},
+	"G36" : {"voodoo":[95, 433, 433, 233], "drop_rate" : 3.02, "alias": "Gr G36"}
 }
