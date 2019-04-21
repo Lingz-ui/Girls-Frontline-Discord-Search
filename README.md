@@ -29,7 +29,6 @@ Python3 and pip
 3. Change COMMAND_PREFIX to whatever you want, the default is $gf
 4. If you have your own server containing the dumped girls frontline images, change PIC_DOMAIN, otherwise you can keep using mine.
 5. `pip3 install discord` (Windows users, the command might be 'pip' instead of pip3)
-LINUX:
 6. `chmod +x run_forever.sh` (Windows users, you're on your own)
 7. `./run_forever.sh` if linux, otherwise `python3 main.py`.
 
