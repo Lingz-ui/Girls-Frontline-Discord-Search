@@ -1,22 +1,26 @@
 import discord
 import json
 import re
+import os
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
 client = discord.Client()
-#Your discord bot token.
-DISCORD_TOKEN="MzUxNDQ3NzAwMDY0OTYwNTIy.Dx1vVA.dKBAtcCZxlOPGF5m0MI22FuAdc0"
+#Your discord bot token. For your safety this is an environment variable, but you're free to put your token here if you really want to.
+DISCORD_TOKEN=os.environ['GFBOT_TOKEN']
 #The prefix for the bot commands. Default is $gf
 COMMAND_PREFIX="$gf"
 #COMMAND_NAME="$gfsearch"
 #The domain for the images extracted from Girls' Frontline. The bot will combine it like PIC_DOMAIN + "pic_ump45.png"
 PIC_DOMAIN="http://103.28.71.152:999/pic_compressed/"
+#The domain for the icons for dolls like the ones that are on the top left of the doll cards.
+#Icons are disabled because they make embeds worse.
+#ICON_DOMAIN="http://103.28.71.152:999/pic_compressed/icons/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 1.6-20190320"
+version = "IOP 1.75-20190420"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -124,6 +128,13 @@ def dollInfo(doll):
 	if 'img' in doll:
 		embed.set_image(url=PIC_DOMAIN+doll['img'])
 		print(PIC_DOMAIN+doll['img'])
+	
+	#icons
+	#These are disabled because it makes the embed WORSE, not better. There's reduced space for text on mobile.
+	#if doll['rating'] > 5:
+	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_EXTRAstar.png")
+	#else:
+	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_"+str(doll['rating'])+"star.png")
 	return embed
 
 @client.event

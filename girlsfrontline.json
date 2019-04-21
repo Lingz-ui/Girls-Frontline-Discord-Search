@@ -9,7 +9,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 61,
@@ -104,7 +104,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -184,18 +184,7 @@
         "bonus_desc": "Affects submachineguns\nIncreases evasion by 15%\nIncreases rate of fire by 10%",
         "production": {
             "timer": "3:35:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "6-5, 6-2E, 7-6, 7-3E, 8-5, 8-3E, 9-5, 10-1, 10-6, 11-5, 11-4E",
             "placebo": false
         },
@@ -211,7 +200,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 57,
@@ -305,7 +294,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "5"
         },
         "baseStats": {
@@ -412,7 +401,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -514,7 +503,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -633,7 +622,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -727,7 +716,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 66,
@@ -807,18 +796,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 18%",
         "production": {
             "timer": "3:20:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward.",
             "placebo": false
         },
@@ -834,7 +812,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 97,
@@ -940,7 +918,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -1022,7 +1000,7 @@
             "mov": 12,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -1093,7 +1071,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -1188,7 +1166,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 50,
@@ -1259,7 +1237,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 66,
@@ -1339,21 +1317,11 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases damage by 25%",
         "production": {
             "timer": "3:30:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "0-2, 3-6, 3-3E, 3-4E, 4-3, 4-1E, 5-1, 5-5, 5-6, 6-1, 6-6, 7-4, 8-1, 8-2, 9-2, 9-1E, 10-3, 11-6, 11-2E",
             "placebo": false
-        }
+        },
+        "img": "pic_ASVAL.png"
     },
     {
         "url": "/wiki/ASh-12.7",
@@ -1365,7 +1333,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -1447,7 +1415,8 @@
             "stage": "Obtained as a possible drop throughout Operation Cube (EN) and Deep Dive (CN).",
             "reward": "Monthly reward.",
             "placebo": false
-        }
+        },
+        "img": "pic_Ash127.png"
     },
     {
         "url": "/wiki/AUG",
@@ -1459,7 +1428,7 @@
             "mov": 10,
             "crit_rate": 30,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 61,
@@ -1526,7 +1495,7 @@
         "tile_bonus": "⬛🔶🔶\n⬛🔷🔶\n⬛🔶🔶",
         "bonus_desc": "Affects all types\nRaises damage by 12%\nRaises accuracy by 20%",
         "production": {
-            "reward": "Rewarded to players after accumulating 1800 points during the \"Shadow Orders\" event on the 20th of May 2018, cannot be obtained by other means.",
+            "reward": "Rewarded to players after accumulating 1800 points during the \"Shadow Orders\" event (CN/KR/TW) or the \"Black Danube\" event (EN).",
             "placebo": false
         },
         "img": "pic_AUG.png"
@@ -1541,7 +1510,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -1608,9 +1577,10 @@
         "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
         "bonus_desc": "Affects Submachine guns\nIncreases damage by 15%\nIncreases accuracy by 30%",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 9-6 and 9-4E.",
+            "stage": "Drops only from Judge in 9-6 and 9-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
-        }
+        },
+        "img": "pic_Ak5.png"
     },
     {
         "url": "/wiki/Ameli",
@@ -1622,7 +1592,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "8"
         },
         "baseStats": {
@@ -1741,7 +1711,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -1817,7 +1787,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_357.png"
     },
     {
         "url": "/wiki/BM59",
@@ -1829,7 +1800,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 49,
@@ -1918,7 +1889,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 41,
@@ -2000,7 +1971,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 102,
@@ -2064,7 +2035,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-6 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_MAB38.png"
     },
     {
         "url": "/wiki/Bren",
@@ -2076,7 +2048,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "8"
         },
         "baseStats": {
@@ -2225,7 +2197,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 3-6 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_BrenMK.png"
     },
     {
         "url": "/wiki/Bren_Ten",
@@ -2237,7 +2210,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -2313,7 +2286,8 @@
             ],
             "stage": "Can be obtained from battle stages from Chapter 7-1 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_BrenTen.png"
     },
     {
         "url": "/wiki/C-MS",
@@ -2325,7 +2299,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -2406,7 +2380,8 @@
         "production": {
             "timer": "2:28:00",
             "placebo": false
-        }
+        },
+        "img": "pic_CBJMS.png"
     },
     {
         "url": "/wiki/C96",
@@ -2418,7 +2393,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -2507,7 +2482,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -2562,7 +2537,7 @@
         "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 50%\nIncreases rate of fire by 25%",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 3-6 and 3-4E.",
+            "stage": "Drops only from Hunter in 3-6 and 3-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
         },
         "img": "pic_CZ805.png"
@@ -2577,7 +2552,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -2695,7 +2670,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 38,
@@ -2778,7 +2753,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -2833,7 +2808,7 @@
         "tile_bonus": "🔶🔶⬛\n⬛🔷⬛\n🔶🔶⬛",
         "bonus_desc": "Affects all guns",
         "production": {
-            "stage": "Limited Time Event \"Special Rescue Op X\".",
+            "stage": "Limited Time Event \"Special Rescue Op X\". Arctic Warfare Limited Drop E1-3, E3-4(JP).",
             "reward": "Limited Time Event \"Truth Prevails\".",
             "placebo": false
         },
@@ -2849,7 +2824,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -2942,7 +2917,8 @@
                 1000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_Carcano1891.png"
     },
     {
         "url": "/wiki/Carcano_M91%E2%88%9538",
@@ -2954,7 +2930,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 37,
@@ -3071,7 +3047,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -3189,7 +3165,8 @@
             ],
             "stage": "0-1, 1-4E, 3-1E, 3-4E, 4-1, 4-1E, 5-1, 5-1E, 6-5, 6-1E, 7-1, 7-5, 7-2E, 8-2, 8-1E, 9-4, 10-3, 10-1E, 11-1, 11-6",
             "placebo": false
-        }
+        },
+        "img": "pic_M1873.png"
     },
     {
         "url": "/wiki/Contender",
@@ -3201,7 +3178,7 @@
             "mov": 15,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -3301,7 +3278,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 90,
@@ -3382,7 +3359,8 @@
         "production": {
             "reward": "Rewarded to players upon completion of E1-11 of Continuum Turbulence, cannot be re/obtained otherwise.",
             "placebo": false
-        }
+        },
+        "img": "pic_Cx4Storm.png"
     },
     {
         "url": "/wiki/DP28",
@@ -3394,7 +3372,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -3496,7 +3474,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 41,
@@ -3578,7 +3556,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 97,
@@ -3634,8 +3612,10 @@
         "bonus_desc": "Affects assault rifles\nIncreases accuracy by 55%",
         "production": {
             "stage": "Can be obtained as a random battle reward from campaign Arctic Warfare.",
+            "reward": "Acquired as login reward during October 2016 (CN), October 2018 (EN), March 2019 (JP).",
             "placebo": false
-        }
+        },
+        "img": "pic_EVO3.png"
     },
     {
         "url": "/wiki/F1",
@@ -3647,7 +3627,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 106,
@@ -3748,7 +3728,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 53,
@@ -3816,12 +3796,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 10%\nIncreases damage by 20%",
         "production": {
             "timer": "2:45:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 4-1 onward.",
             "placebo": false
         },
@@ -3837,7 +3812,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 66,
@@ -3919,7 +3894,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 61,
@@ -3975,18 +3950,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 60%\nIncreases damage by 25%",
         "production": {
             "timer": "3:30:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "0-1, 4-5, 5-5, 5-4E, 6-2, 6-3E, 7-1, 7-4E, 8-3, 9-4, 10-2, 10-1E, 11-1, 11-1E",
             "placebo": false
         },
@@ -4002,7 +3966,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "8"
         },
         "baseStats": {
@@ -4092,7 +4056,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 71,
@@ -4159,7 +4123,7 @@
         "tile_bonus": "🔶⬛⬛\n⬛🔷⬛\n🔶⬛⬛",
         "bonus_desc": "Affects assault rifles\nIncreases damage by 10%\nIncreases evasion by 12%",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 2-6 and 2-4E.",
+            "stage": "Drops only from Executioner in 2-6 and 2-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
         },
         "img": "pic_FMG9.png"
@@ -4174,7 +4138,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -4305,7 +4269,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -4373,18 +4337,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 12%\nIncreases accuracy by 50%",
         "production": {
             "timer": "3:20:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward.",
             "placebo": false
         },
@@ -4400,7 +4353,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 30,
@@ -4490,7 +4443,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -4516,7 +4469,7 @@
         "ability": {
             "name": "Lost Paradise",
             "icon": "shield",
-            "text": "Deploys two damage reducing shields randomly to any T-doll on the same column as her (shields can apply twice to the same T-doll), while active the shields will reduce damage received by ($damage_value)% while also increasing the shielded T-doll's damage by ($buffdmg_value)%. The shields duration lasts for ($time_value) seconds.",
+            "text": "Deploys two damage reducing shields randomly to any T-doll on the same column as her (shields can stack). Upon activation, the shields will damage nearby enemies for ($deploy_value)% FP-6's damage and knock them back 2.5 tiles while also reducing incoming damage by ($dmg_value)% to the T-doll's standing behind the shields. The shields duration lasts for ($time_value) seconds.",
             "initial": "10",
             "cooldown": [
                 "20.0",
@@ -4542,7 +4495,7 @@
                 "7.7",
                 "8.0"
             ],
-            "damage_value": [
+            "deploy_value": [
                 "40",
                 "44",
                 "49",
@@ -4554,7 +4507,7 @@
                 "76",
                 "80"
             ],
-            "buffdmg_value": [
+            "dmg_value": [
                 "15",
                 "17",
                 "19",
@@ -4576,6 +4529,88 @@
         "img": "pic_FP6.png"
     },
     {
+        "url": "/wiki/Falcon",
+        "num": 256,
+        "name": "Falcon",
+        "type": "RF",
+        "rating": 3,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "2"
+        },
+        "baseStats": {
+            "hp": 44,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 51,
+            "eva": 4,
+            "acc": 9,
+            "rof": 22,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 88,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 140,
+            "eva": 28,
+            "acc": 71,
+            "rof": 32,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Sunset Falcon",
+            "text": "Active: Consume 1 special bullet, aim for 2 seconds and deal ($dam_value)x damage to the enemy with the highest HP (able to crit). Passive: Obtain 1 special bullet 6 seconds after battle start, thereafter gain 1 special bullet every 10 seconds. Can store up to 2 special bullets. Increase self damage and accuracy by ($buff_value)% per special bullet. Passive: Every 1 second, carry out 1 normal attack, consuming 1 normal bullet and dealing 1.5x damage to the furthest enemy. Can store up to 2 normal bullets. Needs to reload when normal bullets run out, reload time can be decreased with higher rate of fire.",
+            "icon": "falcon",
+            "initial": "6",
+            "cooldown": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "buff_value": [
+                "6",
+                "7",
+                "9",
+                "10",
+                "11",
+                "13",
+                "14",
+                "15",
+                "16",
+                "18"
+            ],
+            "dam_value": [
+                "1.5",
+                "1.61",
+                "1.72",
+                "1.83",
+                "1.94",
+                "2.06",
+                "2.17",
+                "2.28",
+                "2.39",
+                "2.5"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 12%",
+        "production": {
+            "reward": "Login reward for March 2019 (CN).",
+            "placebo": false
+        }
+    },
+    {
         "url": "/wiki/Five-seveN",
         "num": 142,
         "name": "Five-seveN",
@@ -4585,7 +4620,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 32,
@@ -4680,7 +4715,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 61,
@@ -4748,18 +4783,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 10%\nIncreases firepower by 30%",
         "production": {
             "timer": "4:04:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "placebo": false
         },
         "img": "pic_G11.png"
@@ -4774,7 +4798,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -4857,7 +4881,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -4943,12 +4967,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 50%\nIncreases rate of fire by 20%",
         "production": {
             "timer": "2:50:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 2-3 onward.",
             "placebo": false
         },
@@ -4964,7 +4983,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 64,
@@ -5100,7 +5119,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 102,
@@ -5125,7 +5144,7 @@
         "ability": {
             "name": "Force Shield",
             "icon": "Invincible",
-            "text": "Grants G36c a shield which can negate up to 9999 points of damage for ($time_value) seconds.",
+            "text": "Grants G36c a shield with a Defense value of 9999 for ($time_value) seconds.",
             "initial": "8",
             "cooldown": [
                 "20.0",
@@ -5182,7 +5201,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 64,
@@ -5277,7 +5296,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -5378,7 +5397,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -5433,7 +5452,7 @@
         "tile_bonus": "🔶🔶⬛\n🔶🔷⬛\n🔶🔶⬛",
         "bonus_desc": "Affects all guns",
         "production": {
-            "reward": "Achievement award for purchasing 5 editions of the Girls' Frontline official 4-koma in the cafeteria.",
+            "reward": "Achievement award for purchasing 5 editions of the Girls' Frontline official 4-koma in the RF Raifu's Cafe",
             "placebo": false
         },
         "img": "pic_GSH18.png"
@@ -5448,7 +5467,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 53,
@@ -5516,12 +5535,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 12%\nIncreases accuracy by 50%",
         "production": {
             "timer": "2:40:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "reward": "Achievement Reward for obtaining a T-doll drop for the first time.",
             "placebo": false
@@ -5537,7 +5551,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -5595,7 +5609,8 @@
             "stage": "Obtained as a possible drop throughout Continuum Turbulence",
             "reward": "Login reward of January 2018 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_GepardM1.png"
     },
     {
         "url": "/wiki/Glock_17",
@@ -5607,7 +5622,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 32,
@@ -5674,9 +5689,10 @@
         "tile_bonus": "🔶⬛🔶\n⬛🔷🔶\n🔶⬛🔶",
         "bonus_desc": "Affects all guns",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 1-6 and 1-4E.",
+            "stage": "Drops only from Scarecrow in 1-6 and 1-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
-        }
+        },
+        "img": "pic_Glock17.png"
     },
     {
         "url": "/wiki/Grizzly_MkV",
@@ -5688,7 +5704,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 43,
@@ -5775,7 +5791,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -5883,7 +5899,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -5979,7 +5995,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 61,
@@ -6035,18 +6051,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases damage by 40%",
         "production": {
             "timer": "3:55:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "5-4E.",
             "placebo": false
         },
@@ -6062,7 +6067,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -6142,9 +6147,103 @@
         "bonus_desc": "Affects all guns",
         "production": {
             "stage": "Obtained as a possible drop throughout Deep Dive.",
+            "reward": "Obtained as login reward on May 2017 (CN), February 2019 (EN), April 2019 (JP).",
             "placebo": false
         },
         "img": "pic_HK45.png"
+    },
+    {
+        "url": "/wiki/HS2000",
+        "num": 250,
+        "name": "HS2000",
+        "type": "HG",
+        "rating": 5,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 36,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 12,
+            "eva": 11,
+            "acc": 8,
+            "rof": 42,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 72,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 33,
+            "eva": 87,
+            "acc": 61,
+            "rof": 62,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Revenger's Fortress",
+            "icon": "LWMMGShield",
+            "text": "Grants a ($hp_value) HP shield to all allies for 6 seconds. If the shield still exists after 3 seconds, increase damage and accuracy by ($buff_value)% for ($duration) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "hp_value": [
+                "15",
+                "18",
+                "21",
+                "24",
+                "27",
+                "30",
+                "33",
+                "36",
+                "39",
+                "42"
+            ],
+            "buff_value": [
+                "18",
+                "20",
+                "22",
+                "24",
+                "26",
+                "27",
+                "29",
+                "31",
+                "33",
+                "35"
+            ],
+            "duration": [
+                "3.0",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5.0"
+            ]
+        },
+        "tile_bonus": "🔶🔶🔶\n🔶🔶🔶\n⬛🔷⬛",
+        "bonus_desc": "Affects all guns",
+        "production": {
+            "reward": "Obtained from loot boxes of event Isomer. One guaranteed HS2000 will be given to player upon opening the 777th loot box.",
+            "placebo": false
+        }
     },
     {
         "url": "/wiki/Hanyang_Type_88",
@@ -6156,7 +6255,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 51,
@@ -6261,7 +6360,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 99,
@@ -6354,7 +6453,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 63,
@@ -6447,7 +6546,8 @@
         "production": {
             "timer": "04:06:00",
             "placebo": false
-        }
+        },
+        "img": "pic_Type64-AR.png"
     },
     {
         "url": "/wiki/IDW",
@@ -6459,7 +6559,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 75,
@@ -6590,7 +6690,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -6683,7 +6783,8 @@
                 1000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_IWS2000.png"
     },
     {
         "url": "/wiki/JS_9",
@@ -6695,7 +6796,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 90,
@@ -6776,7 +6877,8 @@
         "production": {
             "reward": "Rewarded to players after matching 8 lines during the \"Mid Autumn Guardian\" event on the 22nd of September 2018, cannot be obtained by other means.*",
             "placebo": false
-        }
+        },
+        "img": "pic_JS9mm.png"
     },
     {
         "url": "/wiki/JS05",
@@ -6788,7 +6890,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 45,
@@ -6843,9 +6945,10 @@
         "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
         "production": {
-            "reward": "Obtained from 2017金色月夕 event (CN), 2018 Dinergate O' Lantern Event (EN)",
+            "reward": "Obtained from 2017 金色月夕 event (CN), 2018 Dinergate O' Lantern Event (EN), 2019 正月のテーゼ (New Years Thesis) Event (JP)",
             "placebo": false
-        }
+        },
+        "img": "pic_JS-127.png"
     },
     {
         "url": "/wiki/Jericho",
@@ -6857,7 +6960,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 38,
@@ -6945,7 +7048,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 68,
@@ -7015,7 +7118,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 64,
@@ -7133,7 +7236,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 39,
@@ -7227,7 +7330,7 @@
             "mov": 15,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -7333,7 +7436,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 96,
@@ -7429,7 +7532,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "3"
         },
         "baseStats": {
@@ -7530,7 +7633,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "5"
         },
         "baseStats": {
@@ -7622,6 +7725,99 @@
         "img": "pic_KSG.png"
     },
     {
+        "url": "/wiki/KSVK",
+        "num": 252,
+        "name": "KSVK",
+        "type": "RF",
+        "rating": 4,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 44,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 54,
+            "eva": 4,
+            "acc": 9,
+            "rof": 20,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 88,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 158,
+            "eva": 30,
+            "acc": 78,
+            "rof": 31,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Concussive Strike",
+            "icon": "KVSKShoot",
+            "text": "After aiming for 1.5 seconds, deal ($skill)x damage to the nearest target; Additionally, deal 0.5x damage to enemies in a 2 unit radius behind the target and decrease their accuracy and rate of fire by ($debuff)% for ($duration) seconds.",
+            "initial": "10",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "skill": [
+                "2.0",
+                "2.2",
+                "2.4",
+                "2.7",
+                "2.9",
+                "3.1",
+                "3.3",
+                "3.6",
+                "3.8",
+                "4.0"
+            ],
+            "debuff": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "duration": [
+                "3.0",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5.0"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects handguns\nReduces skill cooldown by 15%",
+        "production": {
+            "reward": "Obtained as a reward of E1-4 of Isomer.",
+            "placebo": false
+        }
+    },
+    {
         "url": "/wiki/Kar98k",
         "num": 46,
         "name": "Kar98k",
@@ -7631,7 +7827,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -7700,7 +7896,8 @@
                 1000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_98K.png"
     },
     {
         "url": "/wiki/L85A1",
@@ -7712,7 +7909,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -7792,12 +7989,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 50%\nIncreases firepower by 20%",
         "production": {
             "timer": "2:50:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "placebo": false
         },
@@ -7813,7 +8005,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -7945,7 +8137,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -8026,6 +8218,89 @@
                 1000
             ],
             "placebo": false
+        },
+        "img": "pic_MLEMK1.png"
+    },
+    {
+        "url": "/wiki/Lewis_Gun",
+        "num": 253,
+        "name": "Lewis Gun",
+        "type": "MG",
+        "rating": 5,
+        "constStats": {
+            "mov": 4,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "10"
+        },
+        "baseStats": {
+            "hp": 95,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": 34,
+            "eva": 4,
+            "acc": 4,
+            "rof": 76,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 190,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": 102,
+            "eva": 31,
+            "acc": 31,
+            "rof": 116,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Angel of Strength",
+            "icon": "Lewis",
+            "text": "Active: Increases Lewis Gun's damage by ($dmg_value)% for ($duration) seconds. Passive: After every reload, decrease reload time by 15%, up to 45% at most; Additionally, increase ammo count by 1 every reload, up to 3 stacks.",
+            "initial": "8",
+            "cooldown": [
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18"
+            ],
+            "dmg_value": [
+                "27",
+                "32",
+                "38",
+                "43",
+                "48",
+                "54",
+                "59",
+                "64",
+                "70",
+                "75"
+            ],
+            "duration": [
+                "4",
+                "4.2",
+                "4.4",
+                "4.7",
+                "4.9",
+                "5.1",
+                "5.3",
+                "5.6",
+                "5.8",
+                "6"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n🔷⬛🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects shotguns\nIncreases accuracy by 10%\nIncreases armour by 15%",
+        "production": {
+            "reward": "Reward for Clearing E4-3 of Isomer.",
+            "placebo": false
         }
     },
     {
@@ -8038,7 +8313,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -8108,7 +8383,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 3-3 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_M1.png"
     },
     {
         "url": "/wiki/M1014",
@@ -8120,7 +8396,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -8144,7 +8420,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Signs of Irritability",
+            "name": "Stress Allusion",
             "icon": "powBuffSelf",
             "text": "Increases M1014's damage by ($damage_value)% and armour by ($armour_value)% for ($time_value) seconds.",
             "initial": "10",
@@ -8215,7 +8491,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 84,
@@ -8311,7 +8587,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -8449,7 +8725,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -8519,7 +8795,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -8603,7 +8879,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -8692,7 +8968,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 37,
@@ -8848,7 +9124,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "8"
         },
         "baseStats": {
@@ -8986,7 +9262,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -9082,7 +9358,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -9149,10 +9425,103 @@
         "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛🔶⬛",
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 6-6 and 6-4E.",
+            "stage": "Drops only from Alchemist in 6-6 and 6-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
         },
         "img": "pic_M1A1.png"
+    },
+    {
+        "url": "/wiki/M200",
+        "num": 257,
+        "name": "M200",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 44,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 49,
+            "eva": 4,
+            "acc": 11,
+            "rof": 22,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 88,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 145,
+            "eva": 31,
+            "acc": 96,
+            "rof": 34,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Killing Intent of the Silent",
+            "text": "Active: Enter sniper mode for 9 seconds. After every ($time_value) seconds of aiming, deal ($dam_value)x damage (This shot can CRIT and is also affected by Armour) to the furthest target and decrease their damage by ($debuff_value)% for 3 seconds. Passive: Normal attacks against armorless enemies deal 1.05x damage.",
+            "icon": "M200Shot",
+            "initial": "6",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "time_value": [
+                "2.5",
+                "2.4",
+                "2.3",
+                "2.2",
+                "2.1",
+                "1.9",
+                "1.8",
+                "1.7",
+                "1.6",
+                "1.5"
+            ],
+            "dam_value": [
+                "1.5",
+                "1.56",
+                "1.61",
+                "1.67",
+                "1.72",
+                "1.78",
+                "1.83",
+                "1.89",
+                "1.94",
+                "2.0"
+            ],
+            "debuff_value": [
+                "5",
+                "6",
+                "6",
+                "7",
+                "7",
+                "8",
+                "8",
+                "9",
+                "9",
+                "10"
+            ]
+        },
+        "tile_bonus": "🔷🔶⬛\n⬛🔶⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nDecreases skill cooldown by 18%",
+        "production": {
+            "timer": "4:32:00",
+            "placebo": false
+        }
     },
     {
         "url": "/wiki/M21",
@@ -9164,7 +9533,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -9219,7 +9588,7 @@
         "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛🔶⬛",
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 4-6 and 4-4E.",
+            "stage": "Drops only from Intruder in 4-6 and 4-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
         },
         "img": "pic_M21.png"
@@ -9234,7 +9603,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "8"
         },
         "baseStats": {
@@ -9326,9 +9695,10 @@
         "tile_bonus": "⬛⬛⬛\n🔷⬛🔶\n⬛⬛🔶",
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 12%\nIncreases accuracy by 10%",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 5-6 and 5-4E.",
+            "stage": "Drops only from Destroyer in 5-6 and 5-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
-        }
+        },
+        "img": "pic_M249SAW.png"
     },
     {
         "url": "/wiki/M2HB",
@@ -9340,7 +9710,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -9411,7 +9781,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -9488,7 +9858,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -9564,7 +9934,8 @@
                 4000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_Ithaca37.png"
     },
     {
         "url": "/wiki/M4_SOPMOD_II",
@@ -9576,7 +9947,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -9663,7 +10034,8 @@
         "production": {
             "reward": "Rewarded to players upon completion of battle stage 3-3.",
             "placebo": false
-        }
+        },
+        "img": "pic_M4_SOPMOD_II.png"
     },
     {
         "url": "/wiki/M4A1",
@@ -9675,7 +10047,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -9784,7 +10156,7 @@
         "tile_bonus": "⬛🔶🔶\n⬛🔷🔶\n⬛🔶🔶",
         "bonus_desc": "Affects assault rifles\nIncreases damage by 18%\nIncreases critical hit rate by 30%",
         "production": {
-            "stage": "Possible drop in event Singularity.",
+            "stage": "Can potentially be obtained as a drop during Major Event Singularity's Hidden mission in E2 \"Survivor\". Cannot be obtained this way again.",
             "reward": "Rewarded for clearing chapter 2-6 for the first time.",
             "placebo": false
         },
@@ -9800,7 +10172,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -9889,7 +10261,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -9978,7 +10350,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -10086,7 +10458,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -10192,7 +10564,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -10218,7 +10590,7 @@
         "ability": {
             "name": "Highway to Hell",
             "icon": "Invincible",
-            "text": "Grants M870 a shield which negates up to ($damage_value) points of damage for ($time_value) seconds. Shield's HP decays by 100 points per second.",
+            "text": "Grants M870 a shield with a Defense value of ($defense_value) points (Max Defense of 1000) which reduces incoming damage by ($reduction_value)% for ($time_value) seconds. Shield's Defense decays by 100 points (-10% DMG reduction) per second.",
             "initial": "10",
             "cooldown": [
                 "20",
@@ -10232,7 +10604,7 @@
                 "16.4",
                 "16"
             ],
-            "damage_value": [
+            "defense_value": [
                 "550",
                 "600",
                 "650",
@@ -10243,6 +10615,18 @@
                 "900",
                 "950",
                 "1000"
+            ],
+            "reduction_value": [
+                "55",
+                "60",
+                "65",
+                "70",
+                "75",
+                "80",
+                "85",
+                "90",
+                "95",
+                "100"
             ],
             "time_value": [
                 "4",
@@ -10262,7 +10646,8 @@
         "production": {
             "stage": "Obtained as a possible drop throughout Major Event Continuum Turbulence, drop location as following: E1-10, E2-6, E3-14",
             "placebo": false
-        }
+        },
+        "img": "pic_M870P.png"
     },
     {
         "url": "/wiki/M9",
@@ -10274,7 +10659,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 38,
@@ -10299,7 +10684,7 @@
         "ability": {
             "name": "Flashbang",
             "icon": "Flashbomb",
-            "text": "Stuns enemies a within a radius of 2.5 units for ($time_value) seconds.",
+            "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
             "cooldown": [
                 "15.0",
@@ -10351,7 +10736,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 38,
@@ -10439,7 +10824,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -10522,7 +10907,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 88,
@@ -10548,7 +10933,7 @@
             "name": "Smoke Grenade",
             "icon": "Smoke",
             "text": "Throws a smoke grenade that decreases the enemy's rate of fire by ($rof_value)% and movement speed by ($movespeed_value)% within a radius of 2.5 units for ($time_value) seconds.",
-            "initial": "0",
+            "initial": "1",
             "cooldown": [
                 "20.0",
                 "19.6",
@@ -10629,7 +11014,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 60,
@@ -10654,7 +11039,7 @@
         "ability": {
             "name": "Danger Scout",
             "icon": "powbuffshield",
-            "text": "Shields teammates ($shield_value) points and Evades ($evade_value)% if there is a teammate in front of the battle If it does not exist, increase its own firepower by ($fp_value)% and its rate of fire by ($rof_value)%. Lasts ($time_value) seconds.",
+            "text": "If an ally is directly front of her in battle, grants that ally with a ($shield_value)HP shield and ($evade_value)% increased evasion. If no ally is in front of her, increase her damage by ($fp_value)% and rate of fire by ($rof_value)% for ($time_value) seconds.",
             "initial": "4",
             "cooldown": [
                 "20",
@@ -10747,7 +11132,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -10855,7 +11240,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -10945,7 +11330,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -11052,7 +11437,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -11148,7 +11533,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "11"
         },
         "baseStats": {
@@ -11219,7 +11604,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -11302,7 +11687,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -11433,7 +11818,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 32,
@@ -11515,7 +11900,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 92,
@@ -11618,7 +12003,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 84,
@@ -11643,7 +12028,7 @@
         "ability": {
             "name": "Force Shield",
             "icon": "Invincible",
-            "text": "Grants MP5 a shield which can negate up to 9999 points of damage for ($time_value) seconds.",
+            "text": "Grants MP5 a shield with a Defense value of 9999 for ($time_value) seconds.",
             "initial": "8",
             "cooldown": [
                 "20.0",
@@ -11701,7 +12086,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 99,
@@ -11726,7 +12111,7 @@
         "ability": {
             "name": "Moon Dancer",
             "icon": "dodgeBuff",
-            "text": "Reduce the rate of fire by ($rof_value)%, increase evasion by ($evasion_value)% and speed by ($speed_value) lasts ($time_value) seconds.",
+            "text": "Reduce the rate of fire by ($rof_value)%, increase evasion by ($evasion_value)% and speed by ($speed_value)% lasts ($time_value) seconds.",
             "initial": "6",
             "cooldown": [
                 "10",
@@ -11792,6 +12177,7 @@
         "tile_bonus": "🔶⬛⬛\n🔶🔷⬛\n🔶⬛⬛",
         "bonus_desc": "Affects assault rifles\nIncrease accuracy by 25%\nIncrease rate of fire by 15%",
         "production": {
+            "timer": "2:18:00",
             "stage": "Obtainable as a random battle loot from the event Singularity, cannot be obtained by other means. Location as following: E1-C4.",
             "placebo": false
         },
@@ -11807,7 +12193,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 102,
@@ -11862,7 +12248,8 @@
         "tile_bonus": "🔶⬛⬛\n⬛🔷⬛\n🔶⬛⬛",
         "bonus_desc": "Affects assault rifles\nIncreases evasion by 12%\nIncreases damage by 10%",
         "production": {
-            "stage": "Obtained as a possible drop throughout Deep Dive (CN).",
+            "stage": "Obtained as a possible drop throughout Deep Dive (CN), Arctic Warfare (EN).",
+            "reward": "Acquired as login reward during February 2017 (CN), August 2018 (EN).",
             "placebo": false
         },
         "img": "pic_MT9.png"
@@ -11877,7 +12264,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 32,
@@ -11953,7 +12340,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_PM.png"
     },
     {
         "url": "/wiki/Micro_Uzi",
@@ -11965,7 +12353,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 80,
@@ -12060,7 +12448,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_MicroUZI.png"
     },
     {
         "url": "/wiki/Mk_12",
@@ -12072,7 +12461,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 41,
@@ -12141,7 +12530,8 @@
         "production": {
             "stage": "Battle and random combat reward from 2018 summer event Continuum Turbulence, drop location as following: E1-B1, E2-5, E3-6.",
             "placebo": false
-        }
+        },
+        "img": "pic_Mk12.png"
     },
     {
         "url": "/wiki/Mk23",
@@ -12153,7 +12543,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -12266,7 +12656,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -12346,7 +12736,7 @@
         "tile_bonus": "🔷⬛🔶\n⬛⬛⬛\n⬛⬛🔶",
         "bonus_desc": "Affects shotguns\nIncreases damage by 10%\nIncreases accuracy by 10%",
         "production": {
-            "stage": "Drops from specific units in 11-6 and 11-4E.",
+            "stage": "Drops only from specific Strelet, Rodelero and Uhlan units in 11-6 and 11-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
         },
         "img": "pic_Mk46.png"
@@ -12361,7 +12751,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -12456,7 +12846,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -12549,7 +12939,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -12649,7 +13039,8 @@
             ],
             "stage": "0-3, 4-6, 5-3E, 5-6, 6-5, 6-3E, 7-5, 7-1E, 8-1, 8-2E, 9-4, 9-1E, 10-2, 10-6, 11-3, 11-2E",
             "placebo": false
-        }
+        },
+        "img": "pic_M1891.png"
     },
     {
         "url": "/wiki/NS2000",
@@ -12661,7 +13052,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "5"
         },
         "baseStats": {
@@ -12750,7 +13141,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -12833,7 +13224,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 37,
@@ -12922,7 +13313,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -13089,7 +13480,8 @@
             "stage": "Can be obtained from any battle stage",
             "reward": "Upon creating a new profile, players will start with Nagant Revolver, along with 2 other HG's",
             "placebo": false
-        }
+        },
+        "img": "pic_M1895.png"
     },
     {
         "url": "/wiki/Negev",
@@ -13101,7 +13493,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -13142,7 +13534,7 @@
             ]
         },
         "tile_bonus": "⬛⬛🔶\n🔷⬛🔶\n⬛⬛🔶",
-        "bonus_desc": "Affects shotguns\nIncreases armour by 20%",
+        "bonus_desc": "Affects shotguns\nIncreases armor by 20%",
         "production": {
             "timer": "6:35:00",
             "normal": [
@@ -13171,7 +13563,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 41,
@@ -13253,7 +13645,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 53,
@@ -13321,18 +13713,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 20%\nIncreases damage by 15%",
         "production": {
             "timer": "3:10:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 5-5 onward.",
             "placebo": false
         },
@@ -13348,7 +13729,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -13443,7 +13824,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 96,
@@ -13514,7 +13895,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -13570,7 +13951,7 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
             "timer": "3:50:00",
-            "stage": "Obtained as a possible drop throughout Arctic Warfare. Added to heavy crafting pool as of the 6th of July 2017 (CN).",
+            "stage": "Obtained as a possible drop throughout Arctic Warfare (all servers). Added to heavy crafting pool as of the 6th of July 2017 (CN).",
             "placebo": false
         }
     },
@@ -13584,7 +13965,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -13688,6 +14069,111 @@
         "img": "pic_P08.png"
     },
     {
+        "url": "/wiki/P22",
+        "num": 242,
+        "name": "P22",
+        "type": "HG",
+        "rating": 5,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 35,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 10,
+            "eva": 13,
+            "acc": 8,
+            "rof": 41,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 70,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 28,
+            "eva": 110,
+            "acc": 66,
+            "rof": 62,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Final Battle's Sequence",
+            "icon": "powbuffshield",
+            "text": "Grants a ($hp_value) HP shield to allies in the front row; Increases the accuracy and evasion of allies in the mid row by ($buff1_value)%; Increases damage of allies in the back row by ($buff2_value)%; Lasts for ($duration) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "hp_value": [
+                "26",
+                "29",
+                "32",
+                "35",
+                "38",
+                "41",
+                "44",
+                "47",
+                "50",
+                "53"
+            ],
+            "buff1_value": [
+                "35",
+                "38",
+                "41",
+                "43",
+                "46",
+                "49",
+                "52",
+                "54",
+                "57",
+                "60"
+            ],
+            "buff2_value": [
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25"
+            ],
+            "duration": [
+                "5",
+                "6",
+                "6",
+                "6",
+                "7",
+                "7",
+                "7",
+                "8",
+                "8",
+                "8"
+            ]
+        },
+        "tile_bonus": "🔶⬛⬛\n🔶🔶🔶\n🔶🔷⬛",
+        "bonus_desc": "Affects all guns",
+        "production": {
+            "stage": "Possible drop throughout Isomer",
+            "placebo": false
+        }
+    },
+    {
         "url": "/wiki/P226",
         "num": 186,
         "name": "P226",
@@ -13697,7 +14183,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 37,
@@ -13780,7 +14266,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -13870,7 +14356,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 32,
@@ -13959,7 +14445,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 96,
@@ -14029,7 +14515,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 30,
@@ -14117,7 +14603,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "11"
         },
         "baseStats": {
@@ -14188,7 +14674,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -14258,7 +14744,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 96,
@@ -14362,10 +14848,103 @@
         "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases accuracy by 35%",
         "production": {
             "stage": "Possible drop in Operation Rabbit Hunt+ in E1-4 and E2-4 (CN/TW/KR)",
-            "reward": "Rewarded to players after accumulating 1800 points during the \"Crimson Witch\" event on the 14th of July 2018.",
+            "reward": "Rewarded to players after accumulating 1800 points during the \"Crimson Witch\" event on the 14th of July 2018 (CN/TW/KR) or the \"Crimson Thesis\" (真紅のテーゼ) event on February 2019 (JP).",
             "placebo": false
         },
         "img": "pic_PM06.png"
+    },
+    {
+        "url": "/wiki/PM-9",
+        "num": 259,
+        "name": "PM-9",
+        "type": "SMG",
+        "rating": 5,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 88,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 176,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 28,
+            "eva": 85,
+            "acc": 13,
+            "rof": 102,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Phantasmal Dark Force",
+            "icon": "comboBuffSelf",
+            "text": "Increase self evasion by ($evasion_value)% while decreasing self damage and accuracy by ($debuff_value)%. Additionally, every attack will deal 2 instances of damage and lasts for ($time_value) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "evasion_value": [
+                "50",
+                "56",
+                "61",
+                "67",
+                "72",
+                "78",
+                "83",
+                "89",
+                "94",
+                "100"
+            ],
+            "debuff_value": [
+                "50",
+                "48",
+                "46",
+                "43",
+                "41",
+                "39",
+                "37",
+                "34",
+                "32",
+                "30"
+            ],
+            "time_value": [
+                "3.0",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5.0"
+            ]
+        },
+        "tile_bonus": "🔶🔷⬛\n⬛⬛⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 15%\nIncreases accuracy by 30%",
+        "production": {
+            "reward": "Rewarded to players after matching 8 lines in the \"Hit-Hop\" bingo event on April 13th. (CN)",
+            "placebo": false
+        }
     },
     {
         "url": "/wiki/PP-19",
@@ -14377,7 +14956,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 88,
@@ -14447,7 +15026,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 97,
@@ -14553,7 +15132,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 80,
@@ -14630,7 +15209,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 80,
@@ -14725,7 +15304,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 29,
@@ -14827,7 +15406,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 88,
@@ -14910,7 +15489,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -14948,7 +15527,7 @@
                 "16.4",
                 "16.0"
             ],
-            "initial": "8",
+            "initial": "3",
             "damage_value": [
                 "1.8",
                 "2.2",
@@ -14987,7 +15566,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -15058,7 +15637,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 29,
@@ -15137,7 +15716,7 @@
         "tile_bonus": "⬛⬛🔶\n🔶🔷🔶\n⬛⬛🔶",
         "bonus_desc": "Affects all guns",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 7-6 and 7-4E.",
+            "stage": "Drops only from Dreamer in 7-6 and 7-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
         },
         "img": "pic_PSM.png"
@@ -15152,7 +15731,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -15235,7 +15814,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 34,
@@ -15322,7 +15901,8 @@
                 30
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_Px4Storm.png"
     },
     {
         "url": "/wiki/Python",
@@ -15334,7 +15914,7 @@
             "mov": 15,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -15464,7 +16044,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -15528,7 +16108,8 @@
             ],
             "stage": "Possible battle drop reward from E1-4 and E3-3 of Operation Deep Dive.",
             "placebo": false
-        }
+        },
+        "img": "pic_PzB39.png"
     },
     {
         "url": "/wiki/RFB",
@@ -15540,7 +16121,7 @@
             "mov": 10,
             "crit_rate": 30,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 53,
@@ -15646,7 +16227,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -15735,7 +16316,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 97,
@@ -15829,7 +16410,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "8"
         },
         "baseStats": {
@@ -15913,7 +16494,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 45,
@@ -15983,7 +16564,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 53,
@@ -16008,7 +16589,7 @@
         "ability": {
             "name": "Crimson Encore",
             "icon": "powBuff",
-            "text": "Increases the damage, accuracy and rate of fire of the guns affected by her tiles by ($damage_value)%, ($accuracy_value)% and ($rof_value)% for ($time_value) seconds respectively.",
+            "text": "Increases the damage, accuracy and rate of fire of the guns affected by her tiles by ($buff_value)% for ($time_value) seconds.",
             "initial": "6",
             "cooldown": [
                 "20.0",
@@ -16022,31 +16603,7 @@
                 "16.4",
                 "16.0"
             ],
-            "damage_value": [
-                "15.0",
-                "16.0",
-                "17.0",
-                "18.0",
-                "19.0",
-                "21.0",
-                "22.0",
-                "23.0",
-                "24.0",
-                "25.0"
-            ],
-            "rof_value": [
-                "15.0",
-                "16.0",
-                "17.0",
-                "18.0",
-                "19.0",
-                "21.0",
-                "22.0",
-                "23.0",
-                "24.0",
-                "25.0"
-            ],
-            "accuracy_value": [
+            "buff_value": [
                 "15.0",
                 "16.0",
                 "17.0",
@@ -16095,7 +16652,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -16171,7 +16728,8 @@
                 4000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_SAT8.png"
     },
     {
         "url": "/wiki/SAR-21",
@@ -16183,7 +16741,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -16265,7 +16823,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 84,
@@ -16344,9 +16902,10 @@
         "tile_bonus": "⬛⬛⬛\n🔶🔷⬛\n⬛⬛⬛",
         "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 10%\nIncreases damage by 6%",
         "production": {
-            "stage": "Drops from specific units as well as the bosses in 8-6 and 8-4E.",
+            "stage": "Drops only from Destroyer and Dreamer in 8-6 and 8-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
-        }
+        },
+        "img": "pic_ColtSCW.png"
     },
     {
         "url": "/wiki/SIG-510",
@@ -16358,7 +16917,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -16426,12 +16985,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases damage by 20%",
         "production": {
             "timer": "2:40:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward.",
             "placebo": false
         },
@@ -16447,7 +17001,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 41,
@@ -16517,7 +17071,8 @@
             "stage": "Obtained as a possible drop throughout Continuum Turbulence (CN).",
             "reward": "Login reward of April 2018 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_HEZISM1.png"
     },
     {
         "url": "/wiki/SPAS-12",
@@ -16529,7 +17084,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "4"
         },
         "baseStats": {
@@ -16606,7 +17161,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 38,
@@ -16688,7 +17243,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -16757,7 +17312,8 @@
         "production": {
             "timer": "4:15:00",
             "placebo": false
-        }
+        },
+        "img": "pic_FNSPR.png"
     },
     {
         "url": "/wiki/SR-3MP",
@@ -16769,7 +17325,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 97,
@@ -16782,7 +17338,7 @@
             "armor": 0
         },
         "maxStats": {
-            "hp": 185,
+            "hp": 194,
             "ammo": 85,
             "ration": 60,
             "dmg": 31,
@@ -16864,7 +17420,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -16945,7 +17501,8 @@
         "production": {
             "reward": "Reward for connecting 8 lines during the 2018 March bingo event.",
             "placebo": false
-        }
+        },
+        "img": "pic_DTASRS.png"
     },
     {
         "url": "/wiki/SSG_69",
@@ -16957,7 +17514,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -17025,9 +17582,10 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 12%",
         "production": {
             "stage": "obtained as a possible reward throughout Deep Dive (CN).",
-            "reward": "January monthly login reward (EN).",
+            "reward": "Acquired as login reward during March 2017 (CN), January 2019 (EN).",
             "placebo": false
-        }
+        },
+        "img": "pic_SSG69.png"
     },
     {
         "url": "/wiki/ST_AR-15",
@@ -17039,7 +17597,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 53,
@@ -17148,9 +17706,11 @@
         "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛🔶",
         "bonus_desc": "Affects submachine guns\nIncreases evasion by 12%\nIncreases rate of fire by 10%",
         "production": {
+            "stage": "Can potentially be obtained as a drop during Major Event Singularity's Hidden mission in E2 \"Survivor\". Cannot be obtained this way again.",
             "reward": "Rewarded to players after completing chapter 3-6 for the first time.",
             "placebo": false
-        }
+        },
+        "img": "pic_AR15.png"
     },
     {
         "url": "/wiki/SV-98",
@@ -17162,7 +17722,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -17275,7 +17835,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -17369,7 +17929,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -17446,7 +18006,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "5"
         },
         "baseStats": {
@@ -17547,7 +18107,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -17628,7 +18188,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 84,
@@ -17722,7 +18282,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -17810,7 +18370,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 80,
@@ -17905,7 +18465,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_VZ61.png"
     },
     {
         "url": "/wiki/Spectre_M4",
@@ -17917,7 +18478,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 88,
@@ -17993,7 +18554,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_SpectreM4.png"
     },
     {
         "url": "/wiki/Spitfire",
@@ -18005,7 +18567,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -18094,7 +18656,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -18165,7 +18727,8 @@
             "stage": "0-2, 0-4, 4-6, 4-4E, 5-4, 5-3E, 6-3, 6-6, 6-4E, 7-2, 7-6, 7-4E, 8-2, 8-6, 8-3E, 9-2, 9-6, 10-4, 10-1E, 10-3E, 11-2, 11-6",
             "reward": "First Payment award on CN/TW/KR server. With the First Payment award change on July 2018 Springfield is no longer the reward T-doll and cannot be obtained this way again",
             "placebo": false
-        }
+        },
+        "img": "pic_M1903.png"
     },
     {
         "url": "/wiki/StG44",
@@ -18177,7 +18740,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 64,
@@ -18233,18 +18796,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases accuracy by 60%\nIncreases evasion by 20%",
         "production": {
             "timer": "3:00:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward.",
             "placebo": false
         },
@@ -18260,7 +18812,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -18285,7 +18837,7 @@
         "ability": {
             "name": "Assault Command",
             "icon": "rateBuff",
-            "text": "Increases all allies rate of fire by ($rof_value)% for ($time_value) seconds.",
+            "text": "Increases all allies rate of fire by ($rof_value)% for ($time_value) seconds. When equipped with \"Stechkin Exclusive Stock\", Increases allies damage by 4% for the same skill duration as well.",
             "initial": "6",
             "cooldown": [
                 "15",
@@ -18347,7 +18899,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -18448,6 +19000,88 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward.",
             "reward": "Rewarded to players after completing chapter 1-1 for the first time.",
             "placebo": false
+        },
+        "img": "pic_StenMK2.png"
+    },
+    {
+        "url": "/wiki/Steyr_Scout",
+        "num": 255,
+        "name": "Steyr Scout",
+        "type": "RF",
+        "rating": 3,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 45,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 43,
+            "eva": 5,
+            "acc": 10,
+            "rof": 24,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 90,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 114,
+            "eva": 35,
+            "acc": 78,
+            "rof": 35,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Firepower Focus",
+            "icon": "powBuffSelf",
+            "text": "Increases Steyr Scout's damage by ($damage_value)% for ($time_value) seconds.",
+            "initial": "5",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8.0"
+            ],
+            "damage_value": [
+                "35.0",
+                "38.0",
+                "41.0",
+                "43.0",
+                "46.0",
+                "49.0",
+                "52.0",
+                "54.0",
+                "57.0",
+                "60.0"
+            ],
+            "time_value": [
+                "3.0",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5.0"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 12%",
+        "production": {
+            "reward": "Login reward for February 2019 (CN).",
+            "placebo": false
         }
     },
     {
@@ -18460,7 +19094,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 110,
@@ -18541,7 +19175,8 @@
                 1000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_KP31.png"
     },
     {
         "url": "/wiki/Super_SASS",
@@ -18553,7 +19188,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -18611,7 +19246,8 @@
             "stage": "Obtained as a possible drop throughout Arctic Warfare.",
             "reward": "Acquired as login reward during September 2016 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_SuperSASS.png"
     },
     {
         "url": "/wiki/Super-Shorty",
@@ -18623,7 +19259,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "3"
         },
         "baseStats": {
@@ -18724,7 +19360,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 45,
@@ -18818,7 +19454,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 62,
@@ -18841,9 +19477,9 @@
             "armor": 0
         },
         "ability": {
-            "name": "Firepower Focus N",
+            "name": "Annihilation Focus N",
             "icon": "powBuff",
-            "text": "During night increases T65 damage by ($damage_value)% and rate of fire by ($rof_value)% for ($time_value) seconds,increase damage by ($damage_value2)% increase Rate of fire by ($rof_value2)% during day.",
+            "text": "During night increases T65 damage by ($damage_value)% and crit rate by ($crit_value)% for ($time_value) seconds, increase damage by ($damage_value2)% increase crit rate by ($crit_value2)% during day.",
             "initial": "5",
             "cooldown": [
                 "20.0",
@@ -18881,7 +19517,7 @@
                 "42",
                 "45"
             ],
-            "rof_value": [
+            "crit_value": [
                 "22",
                 "24",
                 "26",
@@ -18893,7 +19529,7 @@
                 "38",
                 "40"
             ],
-            "rof_value2": [
+            "crit_value2": [
                 "12",
                 "13",
                 "14",
@@ -18936,7 +19572,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -19019,7 +19655,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 62,
@@ -19149,7 +19785,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -19219,7 +19855,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 53,
@@ -19317,6 +19953,112 @@
         "img": "pic_TAR21.png"
     },
     {
+        "url": "/wiki/TEC-9",
+        "num": 244,
+        "name": "TEC-9",
+        "type": "HG",
+        "rating": 3,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 42,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 11,
+            "eva": 9,
+            "acc": 7,
+            "rof": 44,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 83,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 28,
+            "eva": 63,
+            "acc": 46,
+            "rof": 63,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Firepower Supression N",
+            "icon": "nightpowDebuff",
+            "text": "Decreases the enemy squads damage by ($damage_value)% for ($time_value) seconds, ($damage_value2)% for ($time_value2) seconds during day.",
+            "initial": "6",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "damage_value": [
+                "22",
+                "24",
+                "26",
+                "28",
+                "30",
+                "32",
+                "34",
+                "36",
+                "38",
+                "40"
+            ],
+            "damage_value2": [
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22"
+            ],
+            "time_value": [
+                "5.0",
+                "5.3",
+                "5.7",
+                "6.0",
+                "6.3",
+                "6.7",
+                "7.0",
+                "7.3",
+                "7.7",
+                "8.0"
+            ],
+            "time_value2": [
+                "3.0",
+                "3.2",
+                "3.4",
+                "3.6",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5.0"
+            ]
+        },
+        "tile_bonus": "🔶🔶⬛\n🔶🔷🔶\n⬛🔶⬛",
+        "bonus_desc": "Affect all guns",
+        "production": {
+            "reward": "Login Reward for January (CN/TW/KR)",
+            "placebo": false
+        },
+        "img": "pic_TEC9.png"
+    },
+    {
         "url": "/wiki/TMP",
         "num": 176,
         "name": "TMP",
@@ -19326,7 +20068,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 75,
@@ -19409,7 +20151,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 119,
@@ -19434,7 +20176,7 @@
         "ability": {
             "name": "Force Shield",
             "icon": "Invincible",
-            "text": "Grants Thompson a shield which can negate up to 9999 points of damage for ($time_value) seconds.",
+            "text": "Grants Thompson a shield with a Defense value of 9999 for ($time_value) seconds.",
             "initial": "8",
             "cooldown": [
                 "20.0",
@@ -19478,7 +20220,8 @@
                 1000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_M1928A1.png"
     },
     {
         "url": "/wiki/Thunder",
@@ -19490,7 +20233,7 @@
             "mov": 15,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 43,
@@ -19547,7 +20290,8 @@
         "production": {
             "stage": "Obtainable as a random battle loot in the event Singularity. Also as random battle loot from from the map E2-1 and E4-1 of Glory Day.",
             "placebo": false
-        }
+        },
+        "img": "pic_Thunder50.png"
     },
     {
         "url": "/wiki/Tokarev",
@@ -19559,7 +20303,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 48,
@@ -19635,7 +20379,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-3 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_TT33.png"
     },
     {
         "url": "/wiki/Type_03",
@@ -19647,7 +20392,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -19672,7 +20417,7 @@
         "ability": {
             "name": "Elimination Focus",
             "icon": "critBuffSelf",
-            "text": "Increases Type 03's damage and by ($damage_value)% and critical rate by ($critical_value)% for ($time_value) seconds.",
+            "text": "Increases Type 03's damage and critical hit rate by ($buff_value)% for ($time_value) seconds.",
             "initial": "6",
             "cooldown": [
                 "10.0",
@@ -19686,19 +20431,7 @@
                 "8.2",
                 "8.0"
             ],
-            "damage_value": [
-                "25.0",
-                "28.0",
-                "31.0",
-                "33.0",
-                "36.0",
-                "39.0",
-                "42.0",
-                "44.0",
-                "47.0",
-                "50.0"
-            ],
-            "critical_value": [
+            "buff_value": [
                 "25.0",
                 "28.0",
                 "31.0",
@@ -19728,7 +20461,8 @@
         "production": {
             "reward": "Login reward for October 2018 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_Type03.png"
     },
     {
         "url": "/wiki/Type_100",
@@ -19740,7 +20474,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 106,
@@ -19834,7 +20568,8 @@
             "timer": "02:19:00",
             "reward": "First-time login reward in Japan version during pre-register campaign, at August 1st to September 30th, 2018.",
             "placebo": false
-        }
+        },
+        "img": "pic_Type100.png"
     },
     {
         "url": "/wiki/Type_56",
@@ -19846,7 +20581,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 47,
@@ -19916,7 +20651,8 @@
             "stage": "Obtained as a possible drop throughout Arctic Warfare.",
             "reward": "Acquired as login reward during August 2016 (CN).",
             "placebo": false
-        }
+        },
+        "img": "pic_56TypeR.png"
     },
     {
         "url": "/wiki/Type_56-1",
@@ -19928,7 +20664,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 69,
@@ -19984,18 +20720,7 @@
         "bonus_desc": "Affects submachine guns\nIncreases critical rate by 10%\nIncreases evasion by 15%",
         "production": {
             "timer": "3:25:00",
-            "normal": [
-                800,
-                800,
-                800,
-                800
-            ],
-            "heavy": [
-                1000,
-                1000,
-                1000,
-                1000
-            ],
+            "minResource": 800,
             "stage": "0-3, 4-5, 4-3E, 5-3, 5-4E, 6-4, 6-4E, 7-3, 7-2E, 8-4, 9-3, 10-5, 11-2, 11-3E",
             "placebo": false
         },
@@ -20011,7 +20736,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 30,
@@ -20118,7 +20843,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "9"
         },
         "baseStats": {
@@ -20198,9 +20923,10 @@
         "tile_bonus": "⬛⬛🔶\n⬛⬛🔶\n🔷⬛⬛",
         "bonus_desc": "Affects Shotguns\nIncreases accuracy by 18%\nIncreases armour by 8%",
         "production": {
-            "reward": "Login reward for December 2018 (CN/TW/KR/JP).",
+            "reward": "Login reward for December 2018 (CN/TW/KR/JP) and April 2019 (EN).",
             "placebo": false
-        }
+        },
+        "img": "pic_Type62.png"
     },
     {
         "url": "/wiki/Type_63",
@@ -20212,7 +20938,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 50,
@@ -20295,7 +21021,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 88,
@@ -20402,7 +21128,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 97,
@@ -20484,7 +21210,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -20567,7 +21293,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 38,
@@ -20647,9 +21373,10 @@
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "production": {
             "stage": "Obtained as a possible drop throughout Deep Dive.",
-            "reward": "Acquired as login reward during June 2017 (CN).",
+            "reward": "Acquired as login reward during June 2017 (CN), February 2019 (JP), March 2019 (EN).",
             "placebo": false
-        }
+        },
+        "img": "pic_81TypeR.png"
     },
     {
         "url": "/wiki/Type_88",
@@ -20661,7 +21388,7 @@
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "10"
         },
         "baseStats": {
@@ -20768,7 +21495,7 @@
             "timer": "6:28:00",
             "placebo": false
         },
-        "img": "pic_88type.png"
+        "img": "pic_Type88.png"
     },
     {
         "url": "/wiki/Type_92",
@@ -20780,7 +21507,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 32,
@@ -20881,7 +21608,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -20975,7 +21702,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 58,
@@ -21069,7 +21796,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "3"
         },
         "baseStats": {
@@ -21154,6 +21881,100 @@
         }
     },
     {
+        "url": "/wiki/UKM-2000",
+        "num": 254,
+        "name": "UKM-2000",
+        "type": "MG",
+        "rating": 4,
+        "constStats": {
+            "mov": 4,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "11"
+        },
+        "baseStats": {
+            "hp": 85,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 169,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": 90,
+            "eva": 26,
+            "acc": 26,
+            "rof": 115,
+            "armor": 0
+        },
+        "ability": {
+            "name": "White Night's Solo",
+            "icon": "UKM2000",
+            "text": "During night battles, increases self accuracy by ($acc_value_N)% (($acc_value_D)% during day) for ($duration) seconds, additionally extend the current salvo by 4 ammo (2 ammo during day) and decreases reload time by 30%.",
+            "initial": "8",
+            "cooldown": [
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18"
+            ],
+            "acc_value_N": [
+                "40",
+                "44",
+                "48",
+                "54",
+                "58",
+                "62",
+                "66",
+                "72",
+                "76",
+                "80"
+            ],
+            "acc_value_D": [
+                "20",
+                "22",
+                "24",
+                "27",
+                "29",
+                "31",
+                "33",
+                "36",
+                "38",
+                "40"
+            ],
+            "duration": [
+                "6.0",
+                "6.2",
+                "6.4",
+                "6.7",
+                "6.9",
+                "7.1",
+                "7.3",
+                "7.6",
+                "7.8",
+                "8.0"
+            ]
+        },
+        "tile_bonus": "🔷⬛🔶\n⬛⬛⬛\n⬛⬛🔶",
+        "bonus_desc": "Affects shotguns\nIncreases damage by 10%\nIncreases accuracy by 15%",
+        "production": {
+            "stage": "Obtained as a possible drop during Major Event Isomer.",
+            "placebo": false
+        }
+    },
+    {
         "url": "/wiki/UMP40",
         "num": 102,
         "name": "UMP40",
@@ -21163,7 +21984,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 90,
@@ -21245,7 +22066,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -21406,7 +22227,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 88,
@@ -21489,7 +22310,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "5"
         },
         "baseStats": {
@@ -21590,7 +22411,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -21666,7 +22487,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 7-1 onward.",
             "placebo": false
-        }
+        },
+        "img": "pic_USPCompact.png"
     },
     {
         "url": "/wiki/Vector",
@@ -21678,7 +22500,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -21786,7 +22608,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 44,
@@ -21881,7 +22703,7 @@
             "mov": 15,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 40,
@@ -21956,6 +22778,88 @@
                 130
             ],
             "placebo": false
+        },
+        "img": "pic_Welrod.png"
+    },
+    {
+        "url": "/wiki/X95",
+        "num": 251,
+        "name": "X95",
+        "type": "SMG",
+        "rating": 5,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 97,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 14,
+            "eva": 10,
+            "acc": 2,
+            "rof": 64,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 194,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 34,
+            "eva": 67,
+            "acc": 13,
+            "rof": 90,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Lock of Flowers",
+            "icon": "X95",
+            "text": "Upon skill activation, switches target to the enemy with the lowest HP. The lower the enemy's HP, the higher the damage dealt. Damage increase is equal to the enemies (percentage HP lost x ($dam_multiplier)), skill lasts for ($duration) seconds.",
+            "initial": "4",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "dam_multiplier": [
+                "1.2",
+                "1.4",
+                "1.6",
+                "1.8",
+                "2.0",
+                "2.2",
+                "2.4",
+                "2.6",
+                "2.8",
+                "3.0"
+            ],
+            "duration": [
+                "3.0",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5.0"
+            ]
+        },
+        "tile_bonus": "🔶🔷⬛\n🔶⬛⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases rate of fire by 15%\nIncreases accuracy by 25%",
+        "production": {
+            "stage": "Possible drop throughout Isomer",
+            "placebo": false
         }
     },
     {
@@ -21968,7 +22872,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 41,
@@ -22047,7 +22951,7 @@
         "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
         "bonus_desc": "Affects pistols\nReduces skill cooldown by 15%",
         "production": {
-            "stage": "Drops from specific units as well as the boss in 10-6 and 10-4E.",
+            "stage": "Drops only from Judge in 10-6 and by Hydra units in 10-4E. Can also be obtained by S-Ranking the map and by Auto-battles",
             "placebo": false
         },
         "img": "pic_xm3.png"
@@ -22062,7 +22966,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 54,
@@ -22132,7 +23036,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 84,
@@ -22240,7 +23144,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 61,
@@ -22265,7 +23169,7 @@
         "ability": {
             "name": "Night Owl's Screech",
             "icon": "RifleGrenade",
-            "text": "Launches a grenade that causes ($dmg)% damage to enemies within a 2.5 radius. If more than three enemy units hits, they will take ($dmgdebuff)% extra damage for ($dmgdebuffduration) seconds. If less than three enemy units hits, Zas' own damage will increase by ($dmgbuff)% for ($dmgbuffduration) seconds.",
+            "text": "Launches a grenade that causes ($dmg)% damage to enemies within a 2.5 radius. If three or more enemy units are hit, they will take ($dmgdebuff)% extra damage for ($dmgdebuffduration) seconds. If less than three enemy units are hit, Zas' own damage will increase by ($dmgbuff)% for ($dmgbuffduration) seconds.",
             "initial": "4",
             "cooldown": [
                 "20",
@@ -22357,7 +23261,8 @@
                 1000
             ],
             "placebo": false
-        }
+        },
+        "img": "pic_ZastavaM21.png"
     },
     {
         "url": "/wiki/m45",
@@ -22369,7 +23274,7 @@
             "mov": 12,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 93,
@@ -22395,7 +23300,7 @@
             "name": "Smoke Grenade",
             "icon": "Smoke",
             "text": "Throws a smoke grenade that decreases the enemy's rate of fire by ($rof_value)% and movement speed by ($movespeed_value)% within a radius of 2.5 units for ($time_value) seconds.",
-            "initial": "3",
+            "initial": "1",
             "cooldown": [
                 "15.0",
                 "14.7",
@@ -22470,7 +23375,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 49,
@@ -22552,7 +23457,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 41,
@@ -22621,7 +23526,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -22703,7 +23608,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "5"
         },
         "baseStats": {
@@ -22771,7 +23676,7 @@
         "tile_bonus": "🔶⬛⬛\n⬛⬛🔷\n🔶⬛⬛",
         "bonus_desc": "Affects machineguns\nIncreases damage by 15%\nIncreases accuracy by 15%",
         "production": {
-            "reward": "Reward of the last map of Operation Rabbit Hunt.",
+            "reward": "Reward of the E1-4 of Operation Rabbit Hunt.",
             "placebo": false
         },
         "img": "pic_GG_elfeldt.png"
@@ -22786,7 +23691,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 33,
@@ -22868,7 +23773,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 35,
@@ -22950,7 +23855,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 61,
@@ -23043,7 +23948,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 30,
@@ -23114,7 +24019,7 @@
             "mov": 7,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -23183,7 +24088,8 @@
         "production": {
             "stage": "Obtainable as a random battle drop from Hitoribocchi maps E1-3 E1-4 and E2-1.",
             "placebo": false
-        }
+        },
+        "img": "pic_RaidenMei.png"
     },
     {
         "url": "/wiki/Seele",
@@ -23195,7 +24101,7 @@
             "mov": 6,
             "crit_rate": 40,
             "crit_dmg": 50,
-            "pen": 10,
+            "pen": 15,
             "clipsize": "5"
         },
         "baseStats": {
@@ -23266,7 +24172,7 @@
             "mov": 15,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 42,
@@ -23373,5 +24279,98 @@
             "placebo": false
         },
         "img": "pic_Theresa.png"
+    },
+    {
+        "url": "/wiki/Magal",
+        "num": -1,
+        "name": "Magal",
+        "type": "AR",
+        "rating": 3,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Charge Focus",
+            "icon": "powBuffSelf",
+            "text": "Increases Magal's damage by ($damage_value)% and rate of fire by ($rof_value)% for ($time_value) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "35",
+                "37",
+                "38",
+                "40",
+                "42",
+                "43",
+                "45",
+                "47",
+                "48",
+                "50"
+            ],
+            "rof_value": [
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "time_value": [
+                "6.0",
+                "6.4",
+                "6.9",
+                "7.3",
+                "7.8",
+                "8.2",
+                "8.7",
+                "9.1",
+                "9.6",
+                "10.0"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases ?? by ??\nIncreases ?? by ??",
+        "production": {
+            "reward": "Login reward for April 2019 (CN).",
+            "placebo": false
+        }
     }
 ]

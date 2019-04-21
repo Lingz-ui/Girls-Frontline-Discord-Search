@@ -15,8 +15,8 @@
 	"HK416" : {"flavor" : "She's all you need.", "alias": "HKM4", "voodoo": [92, 404, 404, 233], "drop_rate" : 3.20},
 	"IDW": {"flavor" : "IDW DA NYAAAAAAAAAAAAAAAAAAAAA"},
 	"FNC" : {"flavor" : "All this chocolate can't heal my wounds", "alias" : "FF FNC", "voodoo": [430, 430, 91, 230], "drop_rate" : 5.07},
-	"Noel" : {"flavor" : "The Wheel of Fate is turning!"},
-	"Elphelt" : {"flavor" : "Heaven or Hell! Let's rock!"},
+	"Noel" : {"flavor" : "The Wheel of Fate is turning!", "alias":"Noel Vermillion"},
+	"Elphelt" : {"flavor" : "Heaven or Hell! Let's rock!", "alias":"Elphelt Valentine"},
 	"Clear" : {"flavor" : "You are the light!"},
 	"Fail" : {"flavor" : "Fight the power! The black cat!"},
 	"ART556": {"flavor": "My ears are pretty, right?"},
@@ -27,5 +27,8 @@
 	"M4 SOPMOD II": {"flavor" : "Trophy collecting angry battle maniac puppy"},
 	"AUG" : {"flavor":"Glory to mankind."},
 	"WA2000" : {"flavor":"Do not attempt to eat her cooking", "voodoo":[438,438,438,238], "drop_rate":1.86},
-	"G36" : {"voodoo":[95, 433, 433, 233], "drop_rate" : 3.02, "alias": "Gr G36"}
+	"G36" : {"voodoo":[95, 433, 433, 233], "drop_rate" : 3.02, "alias": "Gr G36", "flavor":"Battle maid"},
+	"AS Val": {"flavor":"Error's waifu. Who is Error? Don't worry about it."},
+	"M16A1": {"flavor":"War has changed."},
+	"Springfield":{"flavor":"Raifu","alias":"M1903"}
 }
