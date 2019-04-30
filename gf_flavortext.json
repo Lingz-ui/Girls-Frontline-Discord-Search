@@ -30,5 +30,6 @@
 	"G36" : {"voodoo":[95, 433, 433, 233], "drop_rate" : 3.02, "alias": "Gr G36", "flavor":"Battle maid"},
 	"AS Val": {"flavor":"Error's waifu. Who is Error? Don't worry about it."},
 	"M16A1": {"flavor":"War has changed."},
-	"Springfield":{"flavor":"Raifu","alias":"M1903"}
+	"Springfield":{"flavor":"Raifu","alias":"M1903"},
+	"XM8":{"flavor":"(´・ω・｀)"}
 }

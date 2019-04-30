@@ -2,6 +2,7 @@ import discord
 import json
 import re
 import os
+import random
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
@@ -12,7 +13,7 @@ DISCORD_TOKEN=os.environ['GFBOT_TOKEN']
 COMMAND_PREFIX="$gf"
 #COMMAND_NAME="$gfsearch"
 #The domain for the images extracted from Girls' Frontline. The bot will combine it like PIC_DOMAIN + "pic_ump45.png"
-PIC_DOMAIN="http://103.28.71.152:999/pic_compressed/"
+PIC_DOMAIN="http://103.28.71.152:999/pic/"
 #The domain for the icons for dolls like the ones that are on the top left of the doll cards.
 #Icons are disabled because they make embeds worse.
 #ICON_DOMAIN="http://103.28.71.152:999/pic_compressed/icons/"
@@ -20,7 +21,7 @@ PIC_DOMAIN="http://103.28.71.152:999/pic_compressed/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 1.75-20190420"
+version = "IOP 1.85-20190429"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -57,9 +58,16 @@ async def on_server_join(server):
 async def on_server_remove(server):
 	await client.change_presence(game=discord.Game(name=serverCount()))
 
+
+def getQuote(internalName, quoteType):
+	if quotedex:
+		if internalName in quotedex:
+			if quoteType in quotedex[internalName]:
+				return " ".join(quotedex[internalName][quoteType])
+	return False
 #There was honestly no need to make this a function
 def dollInfo(doll):
-	embed = discord.Embed(title="No."+str(doll["num"])+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
+	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 1 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
 	embed.add_field(name="Type", value=doll['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(doll['baseStats']['hp']) + ", **DMG:** " + str(doll['baseStats']['dmg']) + ", **ACC:** " + str(doll['baseStats']['acc']) + ", **EVA:** " + str(doll['baseStats']['eva']) + ", **ROF:** " + str(doll['baseStats']['rof']))
@@ -72,6 +80,8 @@ def dollInfo(doll):
 		obtain_info += '**REWARD:** ' + doll['production']['reward'] + "\n"
 	if 'timer' in doll['production']:
 		obtain_info += '**Production Timer:** ' + doll['production']['timer']
+	if 'upgrade' in doll['production']:
+		obtain_info += "**UPGRADE:** "+doll['production']['upgrade']
 	if doll['name'] in bonusdex and 'drop_rate' in bonusdex[doll['name']]:
 		obtain_info += "\n**Normal Prod. Drop Rate:** " + str(bonusdex[doll['name']]['drop_rate'])+"% (Estimated)"
 	embed.add_field(name="How To Obtain", value=obtain_info,inline=False)
@@ -100,22 +110,23 @@ def dollInfo(doll):
 		a = doll['production']['heavy']
 		f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
 		embed.add_field(name="Heavy Production Requirement", value=f, inline=True)
-	
-	abilityText = doll['ability']['text']
-	while True:
-		searchObj = re.search("\(\$([^\)]+)\)", abilityText)
-		if searchObj:
-			key = searchObj.group()[2:-1]
-			print("key: " + key)
-			val = doll['ability'][key][-1]
-			abilityText = abilityText.replace(searchObj.group(), val)
-		else:
-			break
-	if 'cooldown' in doll['ability']:
-		abilityText += "\n**Cooldown:** " + str(doll['ability']['cooldown'][-1]) + " seconds"
-	if 'initial' in doll['ability']:
-		abilityText += ", "+str(doll['ability']['initial']) + " seconds initial cooldown"
-	embed.add_field(name="Skill: "+doll['ability']['name'], value=abilityText, inline=False)
+	#Not all dolls have abilities yet since some are unreleased.
+	if 'ability' in doll:
+		abilityText = doll['ability']['text']
+		while True:
+			searchObj = re.search("\(\$([^\)]+)\)", abilityText)
+			if searchObj:
+				key = searchObj.group()[2:-1]
+				print("key: " + key)
+				val = doll['ability'][key][-1]
+				abilityText = abilityText.replace(searchObj.group(), val)
+			else:
+				break
+		if 'cooldown' in doll['ability']:
+			abilityText += "\n**Cooldown:** " + str(doll['ability']['cooldown'][-1]) + " seconds"
+		if 'initial' in doll['ability']:
+			abilityText += ", "+str(doll['ability']['initial']) + " seconds initial cooldown"
+		embed.add_field(name="Skill: "+doll['ability']['name'], value=abilityText, inline=False)
 	
 	embed.add_field(name="Tile Buff ", value=doll['tile_bonus'], inline=True)
 	embed.add_field(name="Tile Buff Ability", value=doll['bonus_desc'], inline=True)
@@ -123,12 +134,17 @@ def dollInfo(doll):
 	if doll['name'] in bonusdex and 'flavor' in bonusdex[doll['name']]:
 		embed.set_footer(text=bonusdex[doll['name']]['flavor'])
 	else:
-		embed.set_footer(text="Data is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0.")
+		if 'internalName' in doll:
+			quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3"]))
+		if quote:
+			embed.set_footer(text=quote)
+		else:
+			embed.set_footer(text="Data is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0.")
 
-	if 'img' in doll:
-		embed.set_image(url=PIC_DOMAIN+doll['img'])
-		print(PIC_DOMAIN+doll['img'])
-	
+	if 'internalName' in doll:
+		embed.set_image(url=PIC_DOMAIN+"pic_"+doll['internalName']+".png")
+		print(PIC_DOMAIN+"pic_"+doll['internalName']+".png")
+	#print(embed)
 	#icons
 	#These are disabled because it makes the embed WORSE, not better. There's reduced space for text on mobile.
 	#if doll['rating'] > 5:
@@ -136,16 +152,17 @@ def dollInfo(doll):
 	#else:
 	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_"+str(doll['rating'])+"star.png")
 	return embed
+	
 
 @client.event
 async def on_message(message):
 	if message.author == client.user:
 		return
 	if message.content.startswith(COMMAND_PREFIX+"status"):
-		st = serverCount()
+		st = serverCount() + "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants)"
 		await client.send_message(message.channel, st)
 		#print("Attempting to change the status to " + st)
-		await client.change_presence(game=discord.Game(name="testing"))
+		#await client.change_presence(game=discord.Game(name="testing"))
 		#print("done")
 	elif message.content.startswith(COMMAND_PREFIX+"search "):
 		#The string "$gfsearch2 " is 11 characters, so cut it off
@@ -168,8 +185,12 @@ async def on_message(message):
 				return
 		res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
 		if res:
-			print(res)
-			await client.send_message(message.channel, "No T-Doll was found with that name. Did you mean: "+", ".join([i[0] for i in res]))
+			print(res[0][0])
+			for doll in frontlinedex:
+				if res[0][0] == doll['name']:
+					embed = dollInfo(doll)
+					await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+					return
 		else:
 			print("WARN: No T-Doll was found for " + param)
 			await client.send_message(message.channel, "No T-Doll was found with that name.")
@@ -179,8 +200,8 @@ async def on_message(message):
 		print(param)
 		for doll in frontlinedex:
 			if param == doll['name'].lower():
-				if 'img' in doll:
-					msg = doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
+				if 'internalName' in doll:
+					msg = doll['name'] + ":\n"+PIC_DOMAIN+"pic_"+doll['internalName']+".png"
 					await client.send_message(message.channel, msg)
 				else:
 					await client.send_message(message.channel, "Sorry, the image for this doll is missing.")
@@ -192,17 +213,38 @@ async def on_message(message):
 		else:
 			print("WARN: No T-Doll was found for " + param)
 			await client.send_message(message.channel, "No T-Doll was found with that name.")
+	elif message.content.startswith(COMMAND_PREFIX+"quote "):
+		if quotedex:
+			param = message.content[(len(COMMAND_PREFIX+"quote")+1):].lower()
+			print(param)
+			for doll in frontlinedex:
+				if param == doll['name'].lower():
+					if 'internalName' in doll:
+						if doll['internalName'] in quotedex:
+							msg = ""
+							for key,value in quotedex[doll['internalName']].items():
+								msg += "**"+key.capitalize()+"**: "+" ".join(value)+"\n"
+							await client.send_message(message.channel, msg)
+					else:
+						await client.send_message(message.channel, "Sorry, the internal name for this doll is missing, which is needed to pull the quote from the data.")
+					return
+			res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
+		else:
+			await client.send_message(message.channel, "This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions.")
 	elif message.content.startswith(COMMAND_PREFIX+"help"):
 		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls.\n"
 		msg+="Running version "+version+"\n"
 		msg+= "Commands:\n**"+COMMAND_PREFIX+"search**: Search a T-Doll and display all information. Example: "+COMMAND_PREFIX+"search UMP45\n"
 		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it. Special parameters unimplemented. Example: "+COMMAND_PREFIX+"image UMP40\n"
+		if quotedex:
+			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
 		msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
 		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord"
 		await client.send_message(message.channel, msg)
 #startup...
 print("Starting up I.O.P. version "+version+"...")
+print("Discord.py version is "+discord.__version__)
 print("Reading the frontlinedex into memory. This may take a while.")
 file_obj = open("girlsfrontline.json", "r")
 frontlinedex = json.loads(file_obj.read())
@@ -211,15 +253,21 @@ print("Reading bonus information...")
 file_obj = open("gf_flavortext.json", "r")
 bonusdex = json.loads(file_obj.read())
 file_obj.close()
+if os.path.isfile("CharacterVoice.json"):
+	print("Reading quotes.")
+	file_obj = open("CharacterVoice.json", "r")
+	quotedex = json.loads(file_obj.read())
+	file_obj.close()
+	print(COMMAND_PREFIX+"quote is now available!")
 
 #Yeah it's stupid as fuck, I have to fix my scraper
 print("Injecting aliases into the frontlinedex...")
 for doll in frontlinedex:
 	if doll['name'] in bonusdex and 'alias' in bonusdex[doll['name']]:
 		doll['alias'] = bonusdex[doll['name']]['alias']
-for doll in frontlinedex:
-	if doll['name'] == "Five-seveN":
-		assert doll['alias'], "Missing aliases!"
+#for doll in frontlinedex:
+#	if doll['name'] == "Five-seveN":
+#		assert doll['alias'], "Missing aliases!"
 
 print("Done! Now logging in...")
 client.run(DISCORD_TOKEN)
