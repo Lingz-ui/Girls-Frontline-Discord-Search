@@ -12,12 +12,14 @@ Features:
 Coming eventually:
 - MOD1, MOD2, MOD3
 - $gfimage costume support
+- $gffilter for finding the best doll in a type.
 
 ## Commands
 Assuming that that the default prefix $gf is still being used:
 - $gfsearch: Search a doll
 - $gfimage: Display only the image for that doll.
 - $gfhelp: List commands, version, etc
+- $gfquote: Show quotes from the dolls if you have CharacterVoice.json from the game files
 - $gfstatus: Number of servers this bot is in.
 
 ## Prerequesites
@@ -31,6 +33,9 @@ Python3 and pip
 5. `pip3 install discord` (Windows users, the command might be 'pip' instead of pip3)
 6. `chmod +x run_forever.sh` (Windows users, you're on your own)
 7. `./run_forever.sh` if linux, otherwise `python3 main.py`.
+
+### How to enable $gfquote and get your own images
+https://github.com/36base/girlsfrontline-resources-extract
 
 ## Legal stuff
 main.py is GPL, read LICENCE for more information.
