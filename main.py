@@ -21,7 +21,7 @@ PIC_DOMAIN="http://103.28.71.152:999/pic/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 1.85-20190429"
+version = "IOP 2.0-20190501"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -65,14 +65,35 @@ def getQuote(internalName, quoteType):
 			if quoteType in quotedex[internalName]:
 				return " ".join(quotedex[internalName][quoteType])
 	return False
+	
+def getAbility(doll, tag):
+	abilityText = doll[tag]['text']
+	while True:
+		searchObj = re.search("\(\$([^\)]+)\)", abilityText)
+		if searchObj:
+			key = searchObj.group()[2:-1]
+			print("key: " + key)
+			val = doll[tag][key][-1]
+			abilityText = abilityText.replace(searchObj.group(), val)
+		else:
+			break
+	if 'cooldown' in doll[tag]:
+		abilityText += "\n**Cooldown:** " + str(doll[tag]['cooldown'][-1]) + " seconds"
+	if 'initial' in doll[tag]:
+		abilityText += ", "+str(doll[tag]['initial']) + " seconds initial cooldown"
+	return abilityText
+	
 #There was honestly no need to make this a function
+#if statements for all the things!!!!!!
 def dollInfo(doll):
 	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 1 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
 	embed.add_field(name="Type", value=doll['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(doll['baseStats']['hp']) + ", **DMG:** " + str(doll['baseStats']['dmg']) + ", **ACC:** " + str(doll['baseStats']['acc']) + ", **EVA:** " + str(doll['baseStats']['eva']) + ", **ROF:** " + str(doll['baseStats']['rof']))
-	embed.add_field(name="Constant Stats", value="**Movement:** "+str(doll['constStats']['mov']) + "**, Crit. rate:** " + str(doll['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(doll['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(doll['constStats']['pen']) )
-	embed.add_field(name="Max Stats", value="**HP:** "+str(doll['maxStats']['hp']) + ", **DMG:** " + str(doll['maxStats']['dmg']) + ", **ACC:** " + str(doll['maxStats']['acc']) + ", **EVA:** " + str(doll['maxStats']['eva']) + ", **ROF:** " + str(doll['maxStats']['rof']) + ", **Armor:** "+ str(doll['maxStats']['armor']) )
+	if 'constStats' in doll:
+		embed.add_field(name="Constant Stats", value="**Movement:** "+str(doll['constStats']['mov']) + "**, Crit. rate:** " + str(doll['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(doll['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(doll['constStats']['pen']) )
+	if 'maxStats' in doll:
+		embed.add_field(name="Max Stats", value="**HP:** "+str(doll['maxStats']['hp']) + ", **DMG:** " + str(doll['maxStats']['dmg']) + ", **ACC:** " + str(doll['maxStats']['acc']) + ", **EVA:** " + str(doll['maxStats']['eva']) + ", **ROF:** " + str(doll['maxStats']['rof']) + ", **Armor:** "+ str(doll['maxStats']['armor']) )
 	obtain_info = ""
 	if 'stage' in doll['production']:
 		obtain_info += '**STAGE:** ' + doll['production']['stage'] + "\n"
@@ -112,38 +133,28 @@ def dollInfo(doll):
 		embed.add_field(name="Heavy Production Requirement", value=f, inline=True)
 	#Not all dolls have abilities yet since some are unreleased.
 	if 'ability' in doll:
-		abilityText = doll['ability']['text']
-		while True:
-			searchObj = re.search("\(\$([^\)]+)\)", abilityText)
-			if searchObj:
-				key = searchObj.group()[2:-1]
-				print("key: " + key)
-				val = doll['ability'][key][-1]
-				abilityText = abilityText.replace(searchObj.group(), val)
-			else:
-				break
-		if 'cooldown' in doll['ability']:
-			abilityText += "\n**Cooldown:** " + str(doll['ability']['cooldown'][-1]) + " seconds"
-		if 'initial' in doll['ability']:
-			abilityText += ", "+str(doll['ability']['initial']) + " seconds initial cooldown"
-		embed.add_field(name="Skill: "+doll['ability']['name'], value=abilityText, inline=False)
-	
-	embed.add_field(name="Tile Buff ", value=doll['tile_bonus'], inline=True)
-	embed.add_field(name="Tile Buff Ability", value=doll['bonus_desc'], inline=True)
+		embed.add_field(name="Skill: "+doll['ability']['name'], value=getAbility(doll,'ability'), inline=False)
+	if 'ability2' in doll:
+		embed.add_field(name="2nd Skill: "+doll['ability2']['name'], value=getAbility(doll,'ability2'), inline=False)
+
+	if 'tile_bonus' in doll:
+		embed.add_field(name="Tile Buff ", value=doll['tile_bonus'], inline=True)
+		embed.add_field(name="Tile Buff Ability", value=doll['bonus_desc'], inline=True)
 	#embed.add_field(name="Tile Bonus Types", value=doll['bonus_type'], inline=True)
 	if doll['name'] in bonusdex and 'flavor' in bonusdex[doll['name']]:
 		embed.set_footer(text=bonusdex[doll['name']]['flavor'])
 	else:
+		quote = False
 		if 'internalName' in doll:
 			quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3"]))
-		if quote:
+		if quote != False:
 			embed.set_footer(text=quote)
 		else:
 			embed.set_footer(text="Data is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0.")
 
-	if 'internalName' in doll:
-		embed.set_image(url=PIC_DOMAIN+"pic_"+doll['internalName']+".png")
-		print(PIC_DOMAIN+"pic_"+doll['internalName']+".png")
+	if 'img' in doll:
+		embed.set_image(url=PIC_DOMAIN+doll['img'])
+		print(PIC_DOMAIN+doll['img'])
 	#print(embed)
 	#icons
 	#These are disabled because it makes the embed WORSE, not better. There's reduced space for text on mobile.
@@ -200,8 +211,8 @@ async def on_message(message):
 		print(param)
 		for doll in frontlinedex:
 			if param == doll['name'].lower():
-				if 'internalName' in doll:
-					msg = doll['name'] + ":\n"+PIC_DOMAIN+"pic_"+doll['internalName']+".png"
+				if 'img' in doll:
+					msg = doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
 					await client.send_message(message.channel, msg)
 				else:
 					await client.send_message(message.channel, "Sorry, the image for this doll is missing.")
