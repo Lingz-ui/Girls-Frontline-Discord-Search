@@ -41,3 +41,6 @@ https://github.com/36base/girlsfrontline-resources-extract
 main.py is GPL, read LICENCE for more information.
 
 THIS PROGRAM IS NOT ENDORSED BY https://en.gfwiki.com. ALL DATA CONTAINED WITHIN girlsfrontline.json IS Ⓒ https://en.gfwiki.com AND LICENCED UNDER CC BY-SA 3.0. For more information, please read gf_json_LICENCE.
+
+## Screenshot
+![GFSearch Command](https://i.imgur.com/QAkHNF5.png)
