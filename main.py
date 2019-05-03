@@ -21,7 +21,7 @@ PIC_DOMAIN="http://103.28.71.152:999/pic/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.0-20190501"
+version = "IOP 2.01-20190501"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -91,9 +91,9 @@ def dollInfo(doll):
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(doll['baseStats']['hp']) + ", **DMG:** " + str(doll['baseStats']['dmg']) + ", **ACC:** " + str(doll['baseStats']['acc']) + ", **EVA:** " + str(doll['baseStats']['eva']) + ", **ROF:** " + str(doll['baseStats']['rof']))
 	if 'constStats' in doll:
-		embed.add_field(name="Constant Stats", value="**Movement:** "+str(doll['constStats']['mov']) + "**, Crit. rate:** " + str(doll['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(doll['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(doll['constStats']['pen']) )
-	if 'maxStats' in doll:
-		embed.add_field(name="Max Stats", value="**HP:** "+str(doll['maxStats']['hp']) + ", **DMG:** " + str(doll['maxStats']['dmg']) + ", **ACC:** " + str(doll['maxStats']['acc']) + ", **EVA:** " + str(doll['maxStats']['eva']) + ", **ROF:** " + str(doll['maxStats']['rof']) + ", **Armor:** "+ str(doll['maxStats']['armor']) )
+		stats = "**Movement:** "+str(doll['constStats']['mov']) + "**, Crit. rate:** " + str(doll['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(doll['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(doll['constStats']['pen'])
+		stats += "\n**HP:** "+str(doll['maxStats']['hp']) + ", **DMG:** " + str(doll['maxStats']['dmg']) + ", **ACC:** " + str(doll['maxStats']['acc']) + ", **EVA:** " + str(doll['maxStats']['eva']) + ", **ROF:** " + str(doll['maxStats']['rof']) + ", **Armor:** "+ str(doll['maxStats']['armor'])
+		embed.add_field(name="Max Stats",value=stats)
 	obtain_info = ""
 	if 'stage' in doll['production']:
 		obtain_info += '**STAGE:** ' + doll['production']['stage'] + "\n"
@@ -250,6 +250,7 @@ async def on_message(message):
 		if quotedex:
 			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
 		msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n\n"
+		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
 		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord"
 		await client.send_message(message.channel, msg)
