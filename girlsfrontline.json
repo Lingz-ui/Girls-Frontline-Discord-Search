@@ -1320,7 +1320,8 @@
             "minResource": 800,
             "stage": "0-2, 3-6, 3-3E, 3-4E, 4-3, 4-1E, 5-1, 5-5, 5-6, 6-1, 6-6, 7-4, 8-1, 8-2, 9-2, 9-1E, 10-3, 11-6, 11-2E"
         },
-        "internalName": "ASVAL"
+        "internalName": "ASVAL",
+        "img": "pic_ASVAL.png"
     },
     {
         "url": "/wiki/ASh-12.7",
@@ -1414,7 +1415,8 @@
             "stage": "Obtained as a possible drop throughout Operation Cube (EN) and Deep Dive (CN).",
             "reward": "Monthly reward."
         },
-        "internalName": "Ash127"
+        "internalName": "Ash127",
+        "img": "pic_Ash127.png"
     },
     {
         "url": "/wiki/AUG",
@@ -1577,7 +1579,8 @@
         "production": {
             "stage": "Drops only from Judge in 9-6 and 9-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
-        "internalName": "Ak5"
+        "internalName": "Ak5",
+        "img": "pic_Ak5.png"
     },
     {
         "url": "/wiki/Ameli",
@@ -1784,7 +1787,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward."
         },
-        "internalName": "357"
+        "internalName": "357",
+        "img": "pic_357.png"
     },
     {
         "url": "/wiki/BM59",
@@ -2031,7 +2035,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-6 onward."
         },
-        "internalName": "MAB38"
+        "internalName": "MAB38",
+        "img": "pic_MAB38.png"
     },
     {
         "url": "/wiki/Bren",
@@ -2138,7 +2143,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 3-6 onward."
         },
-        "internalName": "BrenMK"
+        "internalName": "BrenMK",
+        "img": "pic_BrenMK.png"
     },
     {
         "url": "/wiki/Bren#Mod1",
@@ -2232,7 +2238,8 @@
         "production": {
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Bren.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
-        "internalName": "BrenMK"
+        "internalName": "BrenMK",
+        "img": "pic_BrenMK.png"
     },
     {
         "url": "/wiki/Bren#Mod2",
@@ -2327,6 +2334,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Bren MOD 1.\nRequirements: Lv.110, 100 Affection."
         },
         "internalName": "BrenMK",
+        "img": "pic_BrenMK.png",
         "ability2": {
             "name": "Gap between the Strong",
             "icon": "comboBuffSelf",
@@ -2438,6 +2446,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Bren MOD 2.\nRequirements: Lv.115, 100 Affection."
         },
         "internalName": "BrenMKMod",
+        "img": "pic_BrenMKMod.png",
         "ability2": {
             "name": "Gap between the Strong",
             "icon": "comboBuffSelf",
@@ -2454,8 +2463,7 @@
                 "14",
                 "15"
             ]
-        },
-        "img": "pic_BrenMKMod.png"
+        }
     },
     {
         "url": "/wiki/Bren_Ten",
@@ -2543,7 +2551,8 @@
             ],
             "stage": "Can be obtained from battle stages from Chapter 7-1 onward."
         },
-        "internalName": "BrenTen"
+        "internalName": "BrenTen",
+        "img": "pic_BrenTen.png"
     },
     {
         "url": "/wiki/C-MS",
@@ -2636,7 +2645,8 @@
         "production": {
             "timer": "2:28:00"
         },
-        "internalName": "CBJMS"
+        "internalName": "CBJMS",
+        "img": "pic_CBJMS.png"
     },
     {
         "url": "/wiki/C96",
@@ -3172,7 +3182,8 @@
                 1000
             ]
         },
-        "internalName": "Carcano1891"
+        "internalName": "Carcano1891",
+        "img": "pic_Carcano1891.png"
     },
     {
         "url": "/wiki/Carcano_M91%E2%88%9538",
@@ -3415,7 +3426,8 @@
             ],
             "stage": "0-1, 1-4E, 3-1E, 3-4E, 4-1, 4-1E, 5-1, 5-1E, 6-5, 6-1E, 7-1, 7-5, 7-2E, 8-2, 8-1E, 9-4, 10-3, 10-1E, 11-1, 11-6"
         },
-        "internalName": "M1873"
+        "internalName": "M1873",
+        "img": "pic_M1873.png"
     },
     {
         "url": "/wiki/Colt_Revolver#Mod1",
@@ -3496,7 +3508,8 @@
         "production": {
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Colt Revolver.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
-        "internalName": "M1873"
+        "internalName": "M1873",
+        "img": "pic_M1873.png"
     },
     {
         "url": "/wiki/Colt_Revolver#Mod2",
@@ -3578,6 +3591,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Colt Revolver MOD 1.\nRequirements: Lv.110, 100 Affection."
         },
         "internalName": "M1873",
+        "img": "pic_M1873.png",
         "ability2": {
             "name": "Duel Survivor",
             "icon": "powBuff",
@@ -3688,6 +3702,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Colt Revolver MOD 2.\nRequirements: Lv.115, 100 Affection."
         },
         "internalName": "M1873Mod",
+        "img": "pic_M1873Mod.png",
         "ability2": {
             "name": "Duel Survivor",
             "icon": "powBuff",
@@ -3716,8 +3731,7 @@
                 "4.2",
                 "4.0"
             ]
-        },
-        "img": "pic_M1873Mod.png"
+        }
     },
     {
         "url": "/wiki/Contender",
@@ -3910,7 +3924,8 @@
         "production": {
             "reward": "Rewarded to players upon completion of E1-11 of Continuum Turbulence, cannot be re/obtained otherwise."
         },
-        "internalName": "Cx4Storm"
+        "internalName": "Cx4Storm",
+        "img": "pic_Cx4Storm.png"
     },
     {
         "url": "/wiki/DP28",
@@ -4469,7 +4484,8 @@
                 1000
             ]
         },
-        "internalName": "FNFAL"
+        "internalName": "FNFAL",
+        "img": "pic_FNFAL.png"
     },
     {
         "url": "/wiki/FAMAS",
@@ -5189,7 +5205,8 @@
             "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward."
         },
-        "internalName": "FNFNC"
+        "internalName": "FNFNC",
+        "img": "pic_FNFNC.png"
     },
     {
         "url": "/wiki/FNP-9",
@@ -5549,7 +5566,8 @@
             "stage": "Possible battle drop from E3-1 of Singularity. Also a possible drop in Operation Rabbit Hunt+ in E1-1 and E2-1 (CN/TW/KR)",
             "reward": "From Winter Battle Quests and Trimagic Square as event rewards."
         },
-        "internalName": "FN57"
+        "internalName": "FN57",
+        "img": "pic_FN57.png"
     },
     {
         "url": "/wiki/G11",
@@ -7148,7 +7166,8 @@
                 30
             ]
         },
-        "internalName": "Grizzly"
+        "internalName": "Grizzly",
+        "img": "pic_Grizzly.png"
     },
     {
         "url": "/wiki/HK21",
@@ -7716,7 +7735,8 @@
                 1000
             ]
         },
-        "internalName": "88type"
+        "internalName": "88type",
+        "img": "pic_88type.png"
     },
     {
         "url": "/wiki/Honey_Badger",
@@ -7913,7 +7933,8 @@
         "production": {
             "timer": "04:06:00"
         },
-        "internalName": "Type64-AR"
+        "internalName": "Type64-AR",
+        "img": "pic_Type64-AR.png"
     },
     {
         "url": "/wiki/IDW",
@@ -8529,7 +8550,8 @@
         "production": {
             "reward": "Rewarded to players after matching 8 lines during the \"Mid Autumn Guardian\" event on the 22nd of September 2018, cannot be obtained by other means.*"
         },
-        "internalName": "JS9mm"
+        "internalName": "JS9mm",
+        "img": "pic_JS9mm.png"
     },
     {
         "url": "/wiki/JS05",
@@ -8598,7 +8620,8 @@
         "production": {
             "reward": "Obtained from 2017 金色月夕 event (CN), 2018 Dinergate O' Lantern Event (EN), 2019 正月のテーゼ (New Years Thesis) Event (JP)"
         },
-        "internalName": "JS-127"
+        "internalName": "JS-127",
+        "img": "pic_JS-127.png"
     },
     {
         "url": "/wiki/Jericho",
@@ -9545,7 +9568,8 @@
                 1000
             ]
         },
-        "internalName": "98K"
+        "internalName": "98K",
+        "img": "pic_98K.png"
     },
     {
         "url": "/wiki/L85A1",
@@ -10155,7 +10179,8 @@
                 1000
             ]
         },
-        "internalName": "MLEMK1"
+        "internalName": "MLEMK1",
+        "img": "pic_MLEMK1.png"
     },
     {
         "url": "/wiki/Lewis_Gun",
@@ -10318,7 +10343,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 3-3 onward."
         },
-        "internalName": "M1"
+        "internalName": "M1",
+        "img": "pic_M1.png"
     },
     {
         "url": "/wiki/M1014",
@@ -12656,7 +12682,8 @@
                 4000
             ]
         },
-        "internalName": "Ithaca37"
+        "internalName": "Ithaca37",
+        "img": "pic_Ithaca37.png"
     },
     {
         "url": "/wiki/M4_SOPMOD_II",
@@ -12725,7 +12752,8 @@
         "production": {
             "reward": "Rewarded to players upon completion of battle stage 3-3."
         },
-        "internalName": "M4_SOPMOD_II"
+        "internalName": "M4_SOPMOD_II",
+        "img": "pic_M4_SOPMOD_II.png"
     },
     {
         "url": "/wiki/M4_SOPMOD_II#Mod1",
@@ -12794,7 +12822,8 @@
         "production": {
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M4 SOPMOD II.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
-        "internalName": "M4_SOPMOD_II"
+        "internalName": "M4_SOPMOD_II",
+        "img": "pic_M4_SOPMOD_II.png"
     },
     {
         "url": "/wiki/M4_SOPMOD_II#Mod2",
@@ -12864,6 +12893,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M4 SOPMOD II MOD 1.\nRequirements: Lv.110, 100 Affection."
         },
         "internalName": "M4_SOPMOD_II",
+        "img": "pic_M4_SOPMOD_II.png",
         "ability2": {
             "name": "Frenzied Circus",
             "icon": "SplitGrenade",
@@ -12962,6 +12992,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M4 SOPMOD II MOD 2.\nRequirements: Lv.115, 100 Affection."
         },
         "internalName": "M4_SOPMOD_IIMod",
+        "img": "pic_M4_SOPMOD_IIMod.png",
         "ability2": {
             "name": "Frenzied Circus",
             "icon": "SplitGrenade",
@@ -12990,8 +13021,7 @@
                 "24",
                 "25"
             ]
-        },
-        "img": "pic_M4_SOPMOD_IIMod.png"
+        }
     },
     {
         "url": "/wiki/M4A1",
@@ -13840,7 +13870,8 @@
         "production": {
             "stage": "Obtained as a possible drop throughout Major Event Continuum Turbulence, drop location as following: E1-10, E2-6, E3-14"
         },
-        "internalName": "M870P"
+        "internalName": "M870P",
+        "img": "pic_M870P.png"
     },
     {
         "url": "/wiki/M9",
@@ -15926,7 +15957,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward."
         },
-        "internalName": "PM"
+        "internalName": "PM",
+        "img": "pic_PM.png"
     },
     {
         "url": "/wiki/Micro_Uzi",
@@ -16593,7 +16625,8 @@
             ],
             "stage": "0-3, 4-6, 5-3E, 5-6, 6-5, 6-3E, 7-5, 7-1E, 8-1, 8-2E, 9-4, 9-1E, 10-2, 10-6, 11-3, 11-2E"
         },
-        "internalName": "M1891"
+        "internalName": "M1891",
+        "img": "pic_M1891.png"
     },
     {
         "url": "/wiki/Mosin-Nagant#Mod1",
@@ -16662,7 +16695,8 @@
         "production": {
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Mosin-Nagant.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
-        "internalName": "M1891"
+        "internalName": "M1891",
+        "img": "pic_M1891.png"
     },
     {
         "url": "/wiki/Mosin-Nagant#Mod2",
@@ -16732,6 +16766,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Mosin-Nagant MOD 1.\nRequirements: Lv.110, 100 Affection."
         },
         "internalName": "M1891",
+        "img": "pic_M1891.png",
         "ability2": {
             "name": "Pure White Reaper",
             "icon": "mosinnagant",
@@ -16830,6 +16865,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Mosin-Nagant MOD 2.\nRequirements: Lv.115, 100 Affection."
         },
         "internalName": "M1891Mod",
+        "img": "pic_M1891Mod.png",
         "ability2": {
             "name": "Pure White Reaper",
             "icon": "mosinnagant",
@@ -16858,8 +16894,7 @@
                 "28",
                 "30"
             ]
-        },
-        "img": "pic_M1891Mod.png"
+        }
     },
     {
         "url": "/wiki/NS2000",
@@ -17233,7 +17268,8 @@
             "stage": "Can be obtained from any battle stage",
             "reward": "Upon creating a new profile, players will start with Nagant Revolver, along with 2 other HG's"
         },
-        "internalName": "M1895"
+        "internalName": "M1895",
+        "img": "pic_M1895.png"
     },
     {
         "url": "/wiki/Nagant_Revolver#Mod1",
@@ -17338,7 +17374,8 @@
         "production": {
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Nagant Revolver.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
-        "internalName": "M1895"
+        "internalName": "M1895",
+        "img": "pic_M1895.png"
     },
     {
         "url": "/wiki/Nagant_Revolver#Mod2",
@@ -17444,6 +17481,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Nagant Revolver MOD 1.\nRequirements: Lv.110, 100 Affection."
         },
         "internalName": "M1895",
+        "img": "pic_M1895.png",
         "ability2": {
             "name": "Seven Note Cadenza.",
             "icon": "powBuff",
@@ -17578,6 +17616,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Nagant Revolver MOD 2.\nRequirements: Lv.115, 100 Affection."
         },
         "internalName": "M1895Mod",
+        "img": "pic_M1895Mod.png",
         "ability2": {
             "name": "Seven Note Cadenza.",
             "icon": "powBuff",
@@ -17606,8 +17645,7 @@
                 "3.8",
                 "4.0"
             ]
-        },
-        "img": "pic_M1895Mod.png"
+        }
     },
     {
         "url": "/wiki/Negev",
@@ -18079,7 +18117,8 @@
             "timer": "3:50:00",
             "stage": "Obtained as a possible drop throughout Arctic Warfare (all servers). Added to heavy crafting pool as of the 6th of July 2017 (CN)."
         },
-        "internalName": "OC44"
+        "internalName": "OC44",
+        "img": "pic_OC44.png"
     },
     {
         "url": "/wiki/P08",
@@ -20928,7 +20967,8 @@
                 4000
             ]
         },
-        "internalName": "SAT8"
+        "internalName": "SAT8",
+        "img": "pic_SAT8.png"
     },
     {
         "url": "/wiki/SAR-21",
@@ -21103,7 +21143,8 @@
         "production": {
             "stage": "Drops only from Destroyer and Dreamer in 8-6 and 8-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
-        "internalName": "ColtSCW"
+        "internalName": "ColtSCW",
+        "img": "pic_ColtSCW.png"
     },
     {
         "url": "/wiki/SIG-510",
@@ -21269,7 +21310,8 @@
             "stage": "Obtained as a possible drop throughout Continuum Turbulence (CN).",
             "reward": "Login reward of April 2018 (CN)."
         },
-        "internalName": "HEZISM1"
+        "internalName": "HEZISM1",
+        "img": "pic_HEZISM1.png"
     },
     {
         "url": "/wiki/SPAS-12",
@@ -21509,7 +21551,8 @@
         "production": {
             "timer": "4:15:00"
         },
-        "internalName": "FNSPR"
+        "internalName": "FNSPR",
+        "img": "pic_FNSPR.png"
     },
     {
         "url": "/wiki/SR-3MP",
@@ -21697,7 +21740,8 @@
         "production": {
             "reward": "Reward for connecting 8 lines during the 2018 March bingo event."
         },
-        "internalName": "DTASRS"
+        "internalName": "DTASRS",
+        "img": "pic_DTASRS.png"
     },
     {
         "url": "/wiki/SSG_69",
@@ -21862,7 +21906,8 @@
             "stage": "Can potentially be obtained as a drop during Major Event Singularity's Hidden mission in E2 \"Survivor\". Cannot be obtained this way again.",
             "reward": "Rewarded to players after completing chapter 3-6 for the first time."
         },
-        "internalName": "AR15"
+        "internalName": "AR15",
+        "img": "pic_AR15.png"
     },
     {
         "url": "/wiki/ST_AR-15#Mod1",
@@ -21943,7 +21988,8 @@
         "production": {
             "upgrade": "Obtained by performing a Digi-mind Upgrade on ST AR-15.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
-        "internalName": "AR15"
+        "internalName": "AR15",
+        "img": "pic_AR15.png"
     },
     {
         "url": "/wiki/ST_AR-15#Mod2",
@@ -22025,6 +22071,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on ST AR-15 MOD 1.\nRequirements: Lv.110, 100 Affection."
         },
         "internalName": "AR15",
+        "img": "pic_AR15.png",
         "ability2": {
             "name": "Crime and Punishment",
             "icon": "ar15_shot",
@@ -22135,6 +22182,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on ST AR-15 MOD 2.\nRequirements: Lv.115, 100 Affection."
         },
         "internalName": "AR15Mod",
+        "img": "pic_AR15Mod.png",
         "ability2": {
             "name": "Crime and Punishment",
             "icon": "ar15_shot",
@@ -22163,8 +22211,7 @@
                 "18",
                 "20"
             ]
-        },
-        "img": "pic_AR15Mod.png"
+        }
     },
     {
         "url": "/wiki/SV-98",
@@ -23155,7 +23202,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward."
         },
-        "internalName": "VZ61"
+        "internalName": "VZ61",
+        "img": "pic_VZ61.png"
     },
     {
         "url": "/wiki/Spectre_M4",
@@ -23416,7 +23464,8 @@
             "stage": "0-2, 0-4, 4-6, 4-4E, 5-4, 5-3E, 6-3, 6-6, 6-4E, 7-2, 7-6, 7-4E, 8-2, 8-6, 8-3E, 9-2, 9-6, 10-4, 10-1E, 10-3E, 11-2, 11-6",
             "reward": "First Payment award on CN/TW/KR server. With the First Payment award change on July 2018 Springfield is no longer the reward T-doll and cannot be obtained this way again"
         },
-        "internalName": "M1903"
+        "internalName": "M1903",
+        "img": "pic_M1903.png"
     },
     {
         "url": "/wiki/StG44",
@@ -23575,7 +23624,8 @@
                 130
             ]
         },
-        "internalName": "APS"
+        "internalName": "APS",
+        "img": "pic_APS.png"
     },
     {
         "url": "/wiki/Sten_MkII",
@@ -23658,7 +23708,8 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward.",
             "reward": "Rewarded to players after completing chapter 1-1 for the first time."
         },
-        "internalName": "StenMK2"
+        "internalName": "StenMK2",
+        "img": "pic_StenMK2.png"
     },
     {
         "url": "/wiki/Sten_MkII#Mod1",
@@ -23727,7 +23778,8 @@
         "production": {
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Sten MkII.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
-        "internalName": "StenMK2"
+        "internalName": "StenMK2",
+        "img": "pic_StenMK2.png"
     },
     {
         "url": "/wiki/Sten_MkII#Mod2",
@@ -23797,6 +23849,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Sten MkII MOD 1.\nRequirements: Lv.110, 100 Affection."
         },
         "internalName": "StenMK2",
+        "img": "pic_StenMK2.png",
         "ability2": {
             "name": "Valiant Shield",
             "icon": "StenMK2",
@@ -23908,6 +23961,7 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Sten MkII MOD 2.\nRequirements: Lv.115, 100 Affection."
         },
         "internalName": "StenMK2Mod",
+        "img": "pic_StenMK2Mod.png",
         "ability2": {
             "name": "Valiant Shield",
             "icon": "StenMK2",
@@ -23949,8 +24003,7 @@
                 "4.8",
                 "5.0"
             ]
-        },
-        "img": "pic_StenMK2Mod.png"
+        }
     },
     {
         "url": "/wiki/Steyr_Scout",
@@ -24123,7 +24176,8 @@
                 1000
             ]
         },
-        "internalName": "KP31"
+        "internalName": "KP31",
+        "img": "pic_KP31.png"
     },
     {
         "url": "/wiki/Super_SASS",
@@ -25167,7 +25221,8 @@
                 1000
             ]
         },
-        "internalName": "M1928A1"
+        "internalName": "M1928A1",
+        "img": "pic_M1928A1.png"
     },
     {
         "url": "/wiki/Thunder",
@@ -25236,7 +25291,8 @@
         "production": {
             "stage": "Obtainable as a random battle loot in the event Singularity. Also as random battle loot from from the map E2-1 and E4-1 of Glory Day."
         },
-        "internalName": "Thunder50"
+        "internalName": "Thunder50",
+        "img": "pic_Thunder50.png"
     },
     {
         "url": "/wiki/Tokarev",
@@ -25324,7 +25380,8 @@
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-3 onward."
         },
-        "internalName": "TT33"
+        "internalName": "TT33",
+        "img": "pic_TT33.png"
     },
     {
         "url": "/wiki/Type_03",
@@ -25595,7 +25652,8 @@
             "stage": "Obtained as a possible drop throughout Arctic Warfare.",
             "reward": "Acquired as login reward during August 2016 (CN)."
         },
-        "internalName": "56typeR"
+        "internalName": "56typeR",
+        "img": "pic_56typeR.png"
     },
     {
         "url": "/wiki/Type_56-1",
@@ -26556,7 +26614,8 @@
             "stage": "Obtained as a possible drop throughout Deep Dive.",
             "reward": "Acquired as login reward during June 2017 (CN), February 2019 (JP), March 2019 (EN)."
         },
-        "internalName": "81typeR"
+        "internalName": "81typeR",
+        "img": "pic_81typeR.png"
     },
     {
         "url": "/wiki/Type_88",
@@ -27058,7 +27117,8 @@
         "production": {
             "reward": "Achievement reward for performing heavy T-doll production 10 times."
         },
-        "internalName": "97typeS"
+        "internalName": "97typeS",
+        "img": "pic_97typeS.png"
     },
     {
         "url": "/wiki/UKM-2000",
@@ -28219,7 +28279,8 @@
                 130
             ]
         },
-        "internalName": "Welrod"
+        "internalName": "Welrod",
+        "img": "pic_Welrod.png"
     },
     {
         "url": "/wiki/X95",
@@ -28700,7 +28761,8 @@
                 1000
             ]
         },
-        "internalName": "ZastavaM21"
+        "internalName": "ZastavaM21",
+        "img": "pic_ZastavaM21.png"
     },
     {
         "url": "/wiki/m45",
@@ -28883,7 +28945,8 @@
             "stage": "Obtained as a possible drop throughout Singularity (CN).",
             "reward": "Monthly login reward August 2017 (CN)."
         },
-        "internalName": "wz29"
+        "internalName": "wz29",
+        "img": "pic_wz29.png"
     },
     {
         "url": "/wiki/Bronya",
@@ -29116,7 +29179,8 @@
         "production": {
             "reward": "Reward of the E1-4 of Operation Rabbit Hunt."
         },
-        "internalName": "GG_elfeldt"
+        "internalName": "GG_elfeldt",
+        "img": "pic_GG_elfeldt.png"
     },
     {
         "url": "/wiki/Fail",
@@ -29442,7 +29506,8 @@
             "stage": "Obtainable during the BlazBlue / Guilty Gear collaboration event Operation Rabbit Hunt from E1-3, E1-4, E2-3, E2-4",
             "reward": "Guaranteed to drop upon opening 99 Seithr lootcrates during the Operation Rabbit Hunt Collab events."
         },
-        "internalName": "BB_Noel"
+        "internalName": "BB_Noel",
+        "img": "pic_BB_Noel.png"
     },
     {
         "url": "/wiki/Raiden_Mei",
