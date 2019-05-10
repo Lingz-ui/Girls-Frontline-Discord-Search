@@ -22,7 +22,7 @@
 	"ART556": {"flavor": "My ears are pretty, right?"},
 	"Five-seveN" : {"flavor" : "hoxy", "alias":"57"},
 	"M4A1": {"flavor" : "A precious cinnamon roll."},
-	"G41" : {"flavor": "f××knugget", "voodoo" : [95, 494, 494, 230], "drop_rate" : 2.53},
+	"G41" : {"alias":"homete","flavor": "f××knugget", "voodoo" : [95, 494, 494, 230], "drop_rate" : 2.53},
 	"G11": {"flavor": "I'm tired...", "voodoo" : [95, 400, 400, 95], "drop_rate" : 2.67},
 	"M4 SOPMOD II": {"flavor" : "Trophy collecting angry battle maniac puppy"},
 	"AUG" : {"flavor":"Glory to mankind."},
@@ -31,5 +31,7 @@
 	"AS Val": {"flavor":"Error's waifu. Who is Error? Don't worry about it."},
 	"M16A1": {"flavor":"War has changed."},
 	"Springfield":{"flavor":"Raifu","alias":"M1903"},
-	"XM8":{"flavor":"(´・ω・｀)"}
+	"XM8":{"flavor":"(´・ω・｀)"},
+	"Elisa": {"flavor":"Father...?"},
+	"M1918":{"alias":"Browning"}
 }

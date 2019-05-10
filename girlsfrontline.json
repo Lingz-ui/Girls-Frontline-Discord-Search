@@ -92,7 +92,11 @@
             "reward": "Acquired as login reward during January 2017 (CN), May 2018 (EN)"
         },
         "img": "pic_6P62.png",
-        "internalName": "6P62"
+        "internalName": "6P62",
+        "costumes": {
+            "default": "pic_6P62.png",
+            "704": "pic_6P62_704.png"
+        }
     },
     {
         "url": "/wiki/9A-91",
@@ -188,7 +192,11 @@
             "stage": "6-5, 6-2E, 7-6, 7-3E, 8-5, 8-3E, 9-5, 10-1, 10-6, 11-5, 11-4E"
         },
         "img": "pic_9A91.png",
-        "internalName": "9A91"
+        "internalName": "9A91",
+        "costumes": {
+            "1302": "pic_9A91_1302.png",
+            "default": "pic_9A91.png"
+        }
     },
     {
         "url": "/wiki/A-91",
@@ -282,7 +290,10 @@
             "stage": "Battle and random combat reward from 2018 summer event Continuum Turbulence, drop location as following: E1-5, E2-3, E3-5."
         },
         "img": "pic_A91.png",
-        "internalName": "A91"
+        "internalName": "A91",
+        "costumes": {
+            "default": "pic_A91.png"
+        }
     },
     {
         "url": "/wiki/AA-12",
@@ -389,7 +400,11 @@
             "timer": "8:12:00"
         },
         "img": "pic_AA12.png",
-        "internalName": "AA12"
+        "internalName": "AA12",
+        "costumes": {
+            "2403": "pic_AA12_2403.png",
+            "default": "pic_AA12.png"
+        }
     },
     {
         "url": "/wiki/AAT-52",
@@ -491,7 +506,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 5-6 onward."
         },
         "img": "pic_AAT52.png",
-        "internalName": "AAT52"
+        "internalName": "AAT52",
+        "costumes": {
+            "default": "pic_AAT52.png"
+        }
     },
     {
         "url": "/wiki/AEK-999",
@@ -610,7 +628,11 @@
             ]
         },
         "img": "pic_AEK999.png",
-        "internalName": "AEK999"
+        "internalName": "AEK999",
+        "costumes": {
+            "default": "pic_AEK999.png",
+            "1505": "pic_AEK999_1505.png"
+        }
     },
     {
         "url": "/wiki/AK-12",
@@ -704,7 +726,11 @@
             ]
         },
         "img": "pic_AK12.png",
-        "internalName": "AK12"
+        "internalName": "AK12",
+        "costumes": {
+            "default": "pic_AK12.png",
+            "2402": "pic_AK12_2402.png"
+        }
     },
     {
         "url": "/wiki/AK-47",
@@ -800,7 +826,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward."
         },
         "img": "pic_AK47.png",
-        "internalName": "AK47"
+        "internalName": "AK47",
+        "costumes": {
+            "default": "pic_AK47.png",
+            "501": "pic_AK47_501.png"
+        }
     },
     {
         "url": "/wiki/AK-74U",
@@ -906,7 +936,10 @@
             "reward": "Rewarded to players upon completion of E2-9 of Continuum Turbulence, cannot be re/obtained otherwise."
         },
         "img": "pic_AK74U.png",
-        "internalName": "AK74U"
+        "internalName": "AK74U",
+        "costumes": {
+            "default": "pic_AK74U.png"
+        }
     },
     {
         "url": "/wiki/AN-94",
@@ -988,7 +1021,11 @@
             ]
         },
         "img": "pic_AN94.png",
-        "internalName": "AN94"
+        "internalName": "AN94",
+        "costumes": {
+            "default": "pic_AN94.png",
+            "2404": "pic_AN94_2404.png"
+        }
     },
     {
         "url": "/wiki/AR70",
@@ -1059,7 +1096,10 @@
             "reward": "Acquired as login reward during December 2016. Acquired as login reward during December 2018(EN)."
         },
         "img": "pic_AR70.png",
-        "internalName": "AR70"
+        "internalName": "AR70",
+        "costumes": {
+            "default": "pic_AR70.png"
+        }
     },
     {
         "url": "/wiki/ART556",
@@ -1154,7 +1194,12 @@
             "reward": "1800 point reward of June 2017 Children's event mission set."
         },
         "img": "pic_ART556.png",
-        "internalName": "ART556"
+        "internalName": "ART556",
+        "costumes": {
+            "1803": "pic_ART556_1803.png",
+            "2803": "pic_ART556_2803.png",
+            "default": "pic_ART556.png"
+        }
     },
     {
         "url": "/wiki/ARX-160",
@@ -1225,7 +1270,10 @@
             "stage": "Obtainable from E3, E4 in Operation Cube. Eventually became available in heavy production on July 6th 2017 (CN)."
         },
         "img": "pic_ARX160.png",
-        "internalName": "ARX160"
+        "internalName": "ARX160",
+        "costumes": {
+            "default": "pic_ARX160.png"
+        }
     },
     {
         "url": "/wiki/AS_Val",
@@ -1321,7 +1369,10 @@
             "stage": "0-2, 3-6, 3-3E, 3-4E, 4-3, 4-1E, 5-1, 5-5, 5-6, 6-1, 6-6, 7-4, 8-1, 8-2, 9-2, 9-1E, 10-3, 11-6, 11-2E"
         },
         "internalName": "ASVAL",
-        "img": "pic_ASVAL.png"
+        "img": "pic_ASVAL.png",
+        "costumes": {
+            "default": "pic_ASVAL.png"
+        }
     },
     {
         "url": "/wiki/ASh-12.7",
@@ -1416,7 +1467,10 @@
             "reward": "Monthly reward."
         },
         "internalName": "Ash127",
-        "img": "pic_Ash127.png"
+        "img": "pic_Ash127.png",
+        "costumes": {
+            "default": "pic_Ash127.png"
+        }
     },
     {
         "url": "/wiki/AUG",
@@ -1498,7 +1552,10 @@
             "reward": "Rewarded to players after accumulating 1800 points during the \"Shadow Orders\" event (CN/KR/TW) or the \"Black Danube\" event (EN)."
         },
         "img": "pic_AUG.png",
-        "internalName": "AUG"
+        "internalName": "AUG",
+        "costumes": {
+            "default": "pic_AUG.png"
+        }
     },
     {
         "url": "/wiki/Ak_5",
@@ -1580,7 +1637,10 @@
             "stage": "Drops only from Judge in 9-6 and 9-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "internalName": "Ak5",
-        "img": "pic_Ak5.png"
+        "img": "pic_Ak5.png",
+        "costumes": {
+            "default": "pic_Ak5.png"
+        }
     },
     {
         "url": "/wiki/Ameli",
@@ -1699,7 +1759,12 @@
             ]
         },
         "img": "pic_Ameli.png",
-        "internalName": "Ameli"
+        "internalName": "Ameli",
+        "costumes": {
+            "default": "pic_Ameli.png",
+            "1605": "pic_Ameli_1605.png",
+            "2409": "pic_Ameli_2409.png"
+        }
     },
     {
         "url": "/wiki/Astra_Revolver",
@@ -1788,7 +1853,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward."
         },
         "internalName": "357",
-        "img": "pic_357.png"
+        "img": "pic_357.png",
+        "costumes": {
+            "default": "pic_357.png"
+        }
     },
     {
         "url": "/wiki/BM59",
@@ -1877,7 +1945,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 4-2E onward."
         },
         "img": "pic_BM59.png",
-        "internalName": "BM59"
+        "internalName": "BM59",
+        "costumes": {
+            "default": "pic_BM59.png"
+        }
     },
     {
         "url": "/wiki/Ballista",
@@ -1959,7 +2030,10 @@
             "reward": "Obtained from loot boxes of event Singularity. One guaranteed FN Ballista will be given to player upon opening the 777th loot box."
         },
         "img": "pic_Ballista.png",
-        "internalName": "Ballista"
+        "internalName": "Ballista",
+        "costumes": {
+            "default": "pic_Ballista.png"
+        }
     },
     {
         "url": "/wiki/Beretta_Model_38",
@@ -2036,7 +2110,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-6 onward."
         },
         "internalName": "MAB38",
-        "img": "pic_MAB38.png"
+        "img": "pic_MAB38.png",
+        "costumes": {
+            "default": "pic_MAB38.png"
+        }
     },
     {
         "url": "/wiki/Bren",
@@ -2144,7 +2221,12 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-6 onward."
         },
         "internalName": "BrenMK",
-        "img": "pic_BrenMK.png"
+        "img": "pic_BrenMK.png",
+        "costumes": {
+            "default": "pic_BrenMK.png",
+            "MOD 3": "pic_BrenMKMod.png",
+            "2605": "pic_BrenMK_2605.png"
+        }
     },
     {
         "url": "/wiki/Bren#Mod1",
@@ -2463,6 +2545,9 @@
                 "14",
                 "15"
             ]
+        },
+        "costumes": {
+            "default": "pic_BrenMKMod.png"
         }
     },
     {
@@ -2552,7 +2637,10 @@
             "stage": "Can be obtained from battle stages from Chapter 7-1 onward."
         },
         "internalName": "BrenTen",
-        "img": "pic_BrenTen.png"
+        "img": "pic_BrenTen.png",
+        "costumes": {
+            "default": "pic_BrenTen.png"
+        }
     },
     {
         "url": "/wiki/C-MS",
@@ -2646,7 +2734,11 @@
             "timer": "2:28:00"
         },
         "internalName": "CBJMS",
-        "img": "pic_CBJMS.png"
+        "img": "pic_CBJMS.png",
+        "costumes": {
+            "2205": "pic_CBJMS_2205.png",
+            "default": "pic_CBJMS.png"
+        }
     },
     {
         "url": "/wiki/C96",
@@ -2735,7 +2827,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward."
         },
         "img": "pic_C96.png",
-        "internalName": "C96"
+        "internalName": "C96",
+        "costumes": {
+            "default": "pic_C96.png"
+        }
     },
     {
         "url": "/wiki/CZ-805",
@@ -2805,7 +2900,10 @@
             "stage": "Drops only from Hunter in 3-6 and 3-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_CZ805.png",
-        "internalName": "CZ805"
+        "internalName": "CZ805",
+        "costumes": {
+            "default": "pic_CZ805.png"
+        }
     },
     {
         "url": "/wiki/CZ2000",
@@ -2923,7 +3021,10 @@
             "reward": "Rewarded to players upon completion of event map E1-C4 of Singularity, no other means of obtaining."
         },
         "img": "pic_CZ2000.png",
-        "internalName": "CZ2000"
+        "internalName": "CZ2000",
+        "costumes": {
+            "default": "pic_CZ2000.png"
+        }
     },
     {
         "url": "/wiki/CZ52",
@@ -3006,7 +3107,10 @@
             "reward": "Login reward for February 2018 (CN)."
         },
         "img": "pic_CZ52.png",
-        "internalName": "CZ52"
+        "internalName": "CZ52",
+        "costumes": {
+            "default": "pic_CZ52.png"
+        }
     },
     {
         "url": "/wiki/CZ75",
@@ -3077,7 +3181,11 @@
             "reward": "Limited Time Event \"Truth Prevails\"."
         },
         "img": "pic_CZ75.png",
-        "internalName": "CZ75"
+        "internalName": "CZ75",
+        "costumes": {
+            "1604": "pic_CZ75_1604.png",
+            "default": "pic_CZ75.png"
+        }
     },
     {
         "url": "/wiki/Carcano_M1891",
@@ -3183,7 +3291,11 @@
             ]
         },
         "internalName": "Carcano1891",
-        "img": "pic_Carcano1891.png"
+        "img": "pic_Carcano1891.png",
+        "costumes": {
+            "2201": "pic_Carcano1891_2201.png",
+            "default": "pic_Carcano1891.png"
+        }
     },
     {
         "url": "/wiki/Carcano_M91%E2%88%9538",
@@ -3427,7 +3539,13 @@
             "stage": "0-1, 1-4E, 3-1E, 3-4E, 4-1, 4-1E, 5-1, 5-1E, 6-5, 6-1E, 7-1, 7-5, 7-2E, 8-2, 8-1E, 9-4, 10-3, 10-1E, 11-1, 11-6"
         },
         "internalName": "M1873",
-        "img": "pic_M1873.png"
+        "img": "pic_M1873.png",
+        "costumes": {
+            "default": "pic_M1873.png",
+            "MOD 3": "pic_M1873Mod.png",
+            "2105": "pic_M1873_2105.png",
+            "301": "pic_M1873_301.png"
+        }
     },
     {
         "url": "/wiki/Colt_Revolver#Mod1",
@@ -3731,6 +3849,9 @@
                 "4.2",
                 "4.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_M1873Mod.png"
         }
     },
     {
@@ -3831,7 +3952,12 @@
             ]
         },
         "img": "pic_Contender.png",
-        "internalName": "Contender"
+        "internalName": "Contender",
+        "costumes": {
+            "default": "pic_Contender.png",
+            "1502": "pic_Contender_1502.png",
+            "2302": "pic_Contender_2302.png"
+        }
     },
     {
         "url": "/wiki/Cx4_Storm",
@@ -3925,7 +4051,10 @@
             "reward": "Rewarded to players upon completion of E1-11 of Continuum Turbulence, cannot be re/obtained otherwise."
         },
         "internalName": "Cx4Storm",
-        "img": "pic_Cx4Storm.png"
+        "img": "pic_Cx4Storm.png",
+        "costumes": {
+            "default": "pic_Cx4Storm.png"
+        }
     },
     {
         "url": "/wiki/DP28",
@@ -4027,7 +4156,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-5 onward."
         },
         "img": "pic_DP28.png",
-        "internalName": "DP28"
+        "internalName": "DP28",
+        "costumes": {
+            "default": "pic_DP28.png"
+        }
     },
     {
         "url": "/wiki/DSR-50",
@@ -4109,7 +4241,12 @@
             "reward": "Rewarded to players upon completion of E2-4 of Operation Deep Dive"
         },
         "img": "pic_DSR50.png",
-        "internalName": "DSR50"
+        "internalName": "DSR50",
+        "costumes": {
+            "2101": "pic_DSR50_2101.png",
+            "1801": "pic_DSR50_1801.png",
+            "default": "pic_DSR50.png"
+        }
     },
     {
         "url": "/wiki/EM-2",
@@ -4218,7 +4355,11 @@
             "reward": "Acquired as login reward during October 2016 (CN), October 2018 (EN), March 2019 (JP)."
         },
         "img": "pic_EVO3.png",
-        "internalName": "EVO3"
+        "internalName": "EVO3",
+        "costumes": {
+            "2109": "pic_EVO3_2109.png",
+            "default": "pic_EVO3.png"
+        }
     },
     {
         "url": "/wiki/F1",
@@ -4319,7 +4460,11 @@
             "stage": "Obtained as a possible drop throughout Deep Dive. Later added to heavy construction (CN)."
         },
         "img": "pic_F1.png",
-        "internalName": "F1"
+        "internalName": "F1",
+        "costumes": {
+            "2606": "pic_F1_2606.png",
+            "default": "pic_F1.png"
+        }
     },
     {
         "url": "/wiki/F2000",
@@ -4403,7 +4548,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 4-1 onward."
         },
         "img": "pic_F2000.png",
-        "internalName": "F2000"
+        "internalName": "F2000",
+        "costumes": {
+            "default": "pic_F2000.png"
+        }
     },
     {
         "url": "/wiki/FAL",
@@ -4485,7 +4633,13 @@
             ]
         },
         "internalName": "FNFAL",
-        "img": "pic_FNFAL.png"
+        "img": "pic_FNFAL.png",
+        "costumes": {
+            "default": "pic_FNFAL.png",
+            "308": "pic_FNFAL_308.png",
+            "607": "pic_FNFAL_607.png",
+            "2406": "pic_FNFAL_2406.png"
+        }
     },
     {
         "url": "/wiki/FAMAS",
@@ -4557,7 +4711,11 @@
             "stage": "0-1, 4-5, 5-5, 5-4E, 6-2, 6-3E, 7-1, 7-4E, 8-3, 9-4, 10-2, 10-1E, 11-1, 11-1E"
         },
         "img": "pic_FAMAS.png",
-        "internalName": "FAMAS"
+        "internalName": "FAMAS",
+        "costumes": {
+            "2604": "pic_FAMAS_2604.png",
+            "default": "pic_FAMAS.png"
+        }
     },
     {
         "url": "/wiki/FG42",
@@ -4647,7 +4805,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 4-3E onward."
         },
         "img": "pic_FG42.png",
-        "internalName": "FG42"
+        "internalName": "FG42",
+        "costumes": {
+            "default": "pic_FG42.png"
+        }
     },
     {
         "url": "/wiki/FMG-9",
@@ -4729,7 +4890,10 @@
             "stage": "Drops only from Executioner in 2-6 and 2-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_FMG9.png",
-        "internalName": "FMG9"
+        "internalName": "FMG9",
+        "costumes": {
+            "default": "pic_FMG9.png"
+        }
     },
     {
         "url": "/wiki/FN-49",
@@ -4818,7 +4982,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward."
         },
         "img": "pic_FN49.png",
-        "internalName": "FN49"
+        "internalName": "FN49",
+        "costumes": {
+            "default": "pic_FN49.png",
+            "MOD 3": "pic_FN49Mod.png"
+        }
     },
     {
         "url": "/wiki/FN-49#Mod1",
@@ -5122,6 +5290,9 @@
                 "4.8",
                 "5.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_FN49Mod.png"
         }
     },
     {
@@ -5206,7 +5377,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward."
         },
         "internalName": "FNFNC",
-        "img": "pic_FNFNC.png"
+        "img": "pic_FNFNC.png",
+        "costumes": {
+            "1406": "pic_FNFNC_1406.png",
+            "default": "pic_FNFNC.png"
+        }
     },
     {
         "url": "/wiki/FNP-9",
@@ -5296,7 +5471,10 @@
             "reward": "Achievement Reward for stepping on a Random Event node for the first time."
         },
         "img": "pic_FNP9.png",
-        "internalName": "FNP9"
+        "internalName": "FNP9",
+        "costumes": {
+            "default": "pic_FNP9.png"
+        }
     },
     {
         "url": "/wiki/FP-6",
@@ -5391,7 +5569,11 @@
             "timer": "8:06:00"
         },
         "img": "pic_FP6.png",
-        "internalName": "FP6"
+        "internalName": "FP6",
+        "costumes": {
+            "2804": "pic_FP6_2804.png",
+            "default": "pic_FP6.png"
+        }
     },
     {
         "url": "/wiki/Falcon",
@@ -5567,7 +5749,14 @@
             "reward": "From Winter Battle Quests and Trimagic Square as event rewards."
         },
         "internalName": "FN57",
-        "img": "pic_FN57.png"
+        "img": "pic_FN57.png",
+        "costumes": {
+            "2203": "pic_FN57_2203.png",
+            "default": "pic_FN57.png",
+            "1109": "pic_FN57_1109.png",
+            "2805": "pic_FN57_2805.png",
+            "1902": "pic_FN57_1902.png"
+        }
     },
     {
         "url": "/wiki/G11",
@@ -5650,7 +5839,13 @@
             "minResource": 800
         },
         "img": "pic_G11.png",
-        "internalName": "G11"
+        "internalName": "G11",
+        "costumes": {
+            "2502": "pic_G11_2502.png",
+            "1602": "pic_G11_1602.png",
+            "default": "pic_G11.png",
+            "9": "pic_G11_9.png"
+        }
     },
     {
         "url": "/wiki/G28",
@@ -5733,7 +5928,12 @@
             "stage": "Obtained as a possible drop throughout Arctic Warfare."
         },
         "img": "pic_G28.png",
-        "internalName": "G28"
+        "internalName": "G28",
+        "costumes": {
+            "2304": "pic_G28_2304.png",
+            "default": "pic_G28.png",
+            "1104": "pic_G28_1104.png"
+        }
     },
     {
         "url": "/wiki/G3",
@@ -5805,7 +6005,18 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-3 onward."
         },
         "img": "pic_G3.png",
-        "internalName": "G3"
+        "internalName": "G3",
+        "costumes": {
+            "1507": "pic_G36_1507.png",
+            "1202": "pic_G36C_1202.png",
+            "1904": "pic_G36_1904.png",
+            "2806": "pic_G36_2806.png",
+            "1303": "pic_G3_1303.png",
+            "2407": "pic_G36_2407.png",
+            "905": "pic_G36_905.png",
+            "MOD 3": "pic_G3Mod.png",
+            "default": "pic_G36.png"
+        }
     },
     {
         "url": "/wiki/G3#Mod1",
@@ -6073,6 +6284,9 @@
                 "3.73 (15.73)",
                 "4.0 (16.0)"
             ]
+        },
+        "costumes": {
+            "default": "pic_G3Mod.png"
         }
     },
     {
@@ -6167,7 +6381,17 @@
             ]
         },
         "img": "pic_G36.png",
-        "internalName": "G36"
+        "internalName": "G36",
+        "costumes": {
+            "1507": "pic_G36_1507.png",
+            "1202": "pic_G36C_1202.png",
+            "1904": "pic_G36_1904.png",
+            "2806": "pic_G36_2806.png",
+            "2407": "pic_G36_2407.png",
+            "905": "pic_G36_905.png",
+            "MOD 3": "pic_G36Mod.png",
+            "default": "pic_G36.png"
+        }
     },
     {
         "url": "/wiki/G36#Mod1",
@@ -6495,6 +6719,9 @@
                 "4.8",
                 "5.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_G36Mod.png"
         }
     },
     {
@@ -6577,7 +6804,11 @@
             ]
         },
         "img": "pic_G36C.png",
-        "internalName": "G36C"
+        "internalName": "G36C",
+        "costumes": {
+            "1202": "pic_G36C_1202.png",
+            "default": "pic_G36C.png"
+        }
     },
     {
         "url": "/wiki/G41",
@@ -6672,7 +6903,11 @@
             "stage": "9-4E"
         },
         "img": "pic_G41.png",
-        "internalName": "G41"
+        "internalName": "G41",
+        "costumes": {
+            "2401": "pic_G41_2401.png",
+            "default": "pic_G41.png"
+        }
     },
     {
         "url": "/wiki/G43",
@@ -6773,7 +7008,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward."
         },
         "img": "pic_G43.png",
-        "internalName": "G43"
+        "internalName": "G43",
+        "costumes": {
+            "default": "pic_G43.png"
+        }
     },
     {
         "url": "/wiki/GSh-18",
@@ -6843,7 +7081,10 @@
             "reward": "Achievement award for purchasing 5 editions of the Girls' Frontline official 4-koma in the RF Raifu's Cafe"
         },
         "img": "pic_GSH18.png",
-        "internalName": "GSH18"
+        "internalName": "GSH18",
+        "costumes": {
+            "default": "pic_GSH18.png"
+        }
     },
     {
         "url": "/wiki/Galil",
@@ -6997,7 +7238,11 @@
             "reward": "Login reward of January 2018 (CN)."
         },
         "img": "pic_GepardM1.png",
-        "internalName": "GepardM1"
+        "internalName": "GepardM1",
+        "costumes": {
+            "2305": "pic_GepardM1_2305.png",
+            "default": "pic_GepardM1.png"
+        }
     },
     {
         "url": "/wiki/Glock_17",
@@ -7079,7 +7324,10 @@
             "stage": "Drops only from Scarecrow in 1-6 and 1-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_Glock17.png",
-        "internalName": "Glock17"
+        "internalName": "Glock17",
+        "costumes": {
+            "default": "pic_Glock17.png"
+        }
     },
     {
         "url": "/wiki/Grizzly_MkV",
@@ -7167,7 +7415,13 @@
             ]
         },
         "internalName": "Grizzly",
-        "img": "pic_Grizzly.png"
+        "img": "pic_Grizzly.png",
+        "costumes": {
+            "105": "pic_Grizzly_105.png",
+            "903": "pic_Grizzly_903.png",
+            "default": "pic_Grizzly.png",
+            "2102": "pic_Grizzly_2102.png"
+        }
     },
     {
         "url": "/wiki/HK21",
@@ -7275,7 +7529,11 @@
             "reward": "Rewarded after clearing E2-D4 of Singularity"
         },
         "img": "pic_HK21.png",
-        "internalName": "HK21"
+        "internalName": "HK21",
+        "costumes": {
+            "default": "pic_HK21.png",
+            "2701": "pic_HK21_2701.png"
+        }
     },
     {
         "url": "/wiki/HK23",
@@ -7371,7 +7629,10 @@
             "reward": "Monthly login reward in December 2017 (CN)."
         },
         "img": "pic_HK23.png",
-        "internalName": "HK23"
+        "internalName": "HK23",
+        "costumes": {
+            "default": "pic_HK23.png"
+        }
     },
     {
         "url": "/wiki/HK416",
@@ -7443,7 +7704,11 @@
             "stage": "5-4E."
         },
         "img": "pic_HK416.png",
-        "internalName": "HK416"
+        "internalName": "HK416",
+        "costumes": {
+            "default": "pic_HK416.png",
+            "805": "pic_HK416_805.png"
+        }
     },
     {
         "url": "/wiki/HK45",
@@ -7538,7 +7803,11 @@
             "reward": "Obtained as login reward on May 2017 (CN), February 2019 (EN), April 2019 (JP)."
         },
         "img": "pic_HK45.png",
-        "internalName": "HK45"
+        "internalName": "HK45",
+        "costumes": {
+            "2705": "pic_HK45_2705.png",
+            "default": "pic_HK45.png"
+        }
     },
     {
         "url": "/wiki/HS2000",
@@ -7736,7 +8005,11 @@
             ]
         },
         "internalName": "88type",
-        "img": "pic_88type.png"
+        "img": "pic_88type.png",
+        "costumes": {
+            "1809": "pic_88type_1809.png",
+            "default": "pic_88type.png"
+        }
     },
     {
         "url": "/wiki/Honey_Badger",
@@ -7934,7 +8207,10 @@
             "timer": "04:06:00"
         },
         "internalName": "Type64-AR",
-        "img": "pic_Type64-AR.png"
+        "img": "pic_Type64-AR.png",
+        "costumes": {
+            "default": "pic_Type64-AR.png"
+        }
     },
     {
         "url": "/wiki/IDW",
@@ -8023,7 +8299,12 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward."
         },
         "img": "pic_IDW.png",
-        "internalName": "IDW"
+        "internalName": "IDW",
+        "costumes": {
+            "2108": "pic_IDW_2108.png",
+            "MOD 3": "pic_IDWMod.png",
+            "default": "pic_IDW.png"
+        }
     },
     {
         "url": "/wiki/IDW#Mod1",
@@ -8351,6 +8632,9 @@
                 "2.5",
                 "2.6"
             ]
+        },
+        "costumes": {
+            "default": "pic_IDWMod.png"
         }
     },
     {
@@ -8457,7 +8741,11 @@
             ]
         },
         "img": "pic_IWS2000.png",
-        "internalName": "IWS2000"
+        "internalName": "IWS2000",
+        "costumes": {
+            "1403": "pic_IWS2000_1403.png",
+            "default": "pic_IWS2000.png"
+        }
     },
     {
         "url": "/wiki/JS_9",
@@ -8551,7 +8839,10 @@
             "reward": "Rewarded to players after matching 8 lines during the \"Mid Autumn Guardian\" event on the 22nd of September 2018, cannot be obtained by other means.*"
         },
         "internalName": "JS9mm",
-        "img": "pic_JS9mm.png"
+        "img": "pic_JS9mm.png",
+        "costumes": {
+            "default": "pic_JS9mm.png"
+        }
     },
     {
         "url": "/wiki/JS05",
@@ -8621,7 +8912,12 @@
             "reward": "Obtained from 2017 金色月夕 event (CN), 2018 Dinergate O' Lantern Event (EN), 2019 正月のテーゼ (New Years Thesis) Event (JP)"
         },
         "internalName": "JS-127",
-        "img": "pic_JS-127.png"
+        "img": "pic_JS-127.png",
+        "costumes": {
+            "2702": "pic_JS-127_2702.png",
+            "default": "pic_JS-127.png",
+            "1804": "pic_JS-127_1804.png"
+        }
     },
     {
         "url": "/wiki/Jericho",
@@ -8709,7 +9005,10 @@
             ]
         },
         "img": "pic_Jericho.png",
-        "internalName": "Jericho"
+        "internalName": "Jericho",
+        "costumes": {
+            "default": "pic_Jericho.png"
+        }
     },
     {
         "url": "/wiki/K11",
@@ -8779,7 +9078,10 @@
             "timer": "4:11:00"
         },
         "img": "pic_K11.png",
-        "internalName": "K11"
+        "internalName": "K11",
+        "costumes": {
+            "default": "pic_K11.png"
+        }
     },
     {
         "url": "/wiki/K2",
@@ -8897,7 +9199,11 @@
             ]
         },
         "img": "pic_K2.png",
-        "internalName": "K2"
+        "internalName": "K2",
+        "costumes": {
+            "2001": "pic_K2_2001.png",
+            "default": "pic_K2.png"
+        }
     },
     {
         "url": "/wiki/K31",
@@ -8991,7 +9297,10 @@
             "timer": "04:15:00"
         },
         "img": "pic_K31.png",
-        "internalName": "K31"
+        "internalName": "K31",
+        "costumes": {
+            "default": "pic_K31.png"
+        }
     },
     {
         "url": "/wiki/K5",
@@ -9097,7 +9406,11 @@
             "timer": "0:53:00"
         },
         "img": "pic_K5.png",
-        "internalName": "K5"
+        "internalName": "K5",
+        "costumes": {
+            "default": "pic_K5.png",
+            "2002": "pic_K5_2002.png"
+        }
     },
     {
         "url": "/wiki/KLIN",
@@ -9193,7 +9506,12 @@
             "reward": "Rewarded to players after completing E1-4 of Operation Deep Dive in 2017 (CN)."
         },
         "img": "pic_KLIN.png",
-        "internalName": "KLIN"
+        "internalName": "KLIN",
+        "costumes": {
+            "default": "pic_KLIN.png",
+            "2003": "pic_KLIN_2003.png",
+            "1204": "pic_KLIN_1204.png"
+        }
     },
     {
         "url": "/wiki/KS-23",
@@ -9294,7 +9612,10 @@
             ]
         },
         "img": "pic_KS23.png",
-        "internalName": "KS23"
+        "internalName": "KS23",
+        "costumes": {
+            "default": "pic_KS23.png"
+        }
     },
     {
         "url": "/wiki/KSG",
@@ -9395,7 +9716,10 @@
             ]
         },
         "img": "pic_KSG.png",
-        "internalName": "KSG"
+        "internalName": "KSG",
+        "costumes": {
+            "default": "pic_KSG.png"
+        }
     },
     {
         "url": "/wiki/KSVK",
@@ -9569,7 +9893,10 @@
             ]
         },
         "internalName": "98K",
-        "img": "pic_98K.png"
+        "img": "pic_98K.png",
+        "costumes": {
+            "default": "pic_98K.png"
+        }
     },
     {
         "url": "/wiki/L85A1",
@@ -9665,7 +9992,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward."
         },
         "img": "pic_L85A1.png",
-        "internalName": "L85A1"
+        "internalName": "L85A1",
+        "costumes": {
+            "default": "pic_L85A1.png"
+        }
     },
     {
         "url": "/wiki/LWMMG",
@@ -9755,7 +10085,12 @@
             "stage": "Can be obtained from many battle stages from Chapter 5-5 onward."
         },
         "img": "pic_LWMMG.png",
-        "internalName": "LWMMG"
+        "internalName": "LWMMG",
+        "costumes": {
+            "default": "pic_LWMMG.png",
+            "MOD 3": "pic_LWMMGMod.png",
+            "1808": "pic_LWMMG_1808.png"
+        }
     },
     {
         "url": "/wiki/LWMMG#Mod1",
@@ -10086,6 +10421,9 @@
                 "5.7",
                 "6.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_LWMMGMod.png"
         }
     },
     {
@@ -10180,7 +10518,13 @@
             ]
         },
         "internalName": "MLEMK1",
-        "img": "pic_MLEMK1.png"
+        "img": "pic_MLEMK1.png",
+        "costumes": {
+            "10": "pic_MLEMK1_10.png",
+            "default": "pic_MLEMK1.png",
+            "604": "pic_MLEMK1_604.png",
+            "901": "pic_MLEMK1_901.png"
+        }
     },
     {
         "url": "/wiki/Lewis_Gun",
@@ -10344,7 +10688,30 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-3 onward."
         },
         "internalName": "M1",
-        "img": "pic_M1.png"
+        "img": "pic_M1.png",
+        "costumes": {
+            "default": "pic_M1887.png",
+            "1106": "pic_M1_1106.png",
+            "106": "pic_M1919A4_106.png",
+            "102": "pic_M1918_102.png",
+            "2503": "pic_M1887_2503.png",
+            "803": "pic_M1891_803.png",
+            "2505": "pic_M1897_2505.png",
+            "2706": "pic_M1895_2706.png",
+            "MOD 3": "pic_M14Mod.png",
+            "1107": "pic_M1903_1107.png",
+            "806": "pic_M1918_806.png",
+            "Boss": "pic_M16A1_Boss.png",
+            "1501": "pic_M1928A1_1501.png",
+            "7": "pic_M1919A4_7.png",
+            "302": "pic_M1903_302.png",
+            "303": "pic_M14_303.png",
+            "2105": "pic_M1873_2105.png",
+            "1606": "pic_M1918_1606.png",
+            "802": "pic_M1903_802.png",
+            "301": "pic_M1873_301.png",
+            "5": "pic_M1903_5.png"
+        }
     },
     {
         "url": "/wiki/M1014",
@@ -10439,7 +10806,10 @@
             "timer": "7:14:00"
         },
         "img": "pic_M1014.png",
-        "internalName": "M1014"
+        "internalName": "M1014",
+        "costumes": {
+            "default": "pic_M1014.png"
+        }
     },
     {
         "url": "/wiki/M12",
@@ -10535,7 +10905,10 @@
             "reward": "October 2017 login reward (CN)."
         },
         "img": "pic_M12.png",
-        "internalName": "M12"
+        "internalName": "M12",
+        "costumes": {
+            "default": "pic_M12.png"
+        }
     },
     {
         "url": "/wiki/M14",
@@ -10631,7 +11004,12 @@
             "reward": "Obtained when the player reaches level 40 on their HQ level."
         },
         "img": "pic_M14.png",
-        "internalName": "M14"
+        "internalName": "M14",
+        "costumes": {
+            "default": "pic_M14.png",
+            "303": "pic_M14_303.png",
+            "MOD 3": "pic_M14Mod.png"
+        }
     },
     {
         "url": "/wiki/M14#Mod1",
@@ -10935,6 +11313,9 @@
                 "5.8",
                 "6.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_M14Mod.png"
         }
     },
     {
@@ -11005,7 +11386,11 @@
             "reward": "Quest Reward for clearing 4-6"
         },
         "img": "pic_M16A1.png",
-        "internalName": "M16A1"
+        "internalName": "M16A1",
+        "costumes": {
+            "Boss": "pic_M16A1_Boss.png",
+            "default": "pic_M16A1.png"
+        }
     },
     {
         "url": "/wiki/M1887",
@@ -11089,7 +11474,11 @@
             "reward": "Operation Arctic Warfare E1-4 reward."
         },
         "img": "pic_M1887.png",
-        "internalName": "M1887"
+        "internalName": "M1887",
+        "costumes": {
+            "2503": "pic_M1887_2503.png",
+            "default": "pic_M1887.png"
+        }
     },
     {
         "url": "/wiki/M1897",
@@ -11178,7 +11567,11 @@
             ]
         },
         "img": "pic_M1897.png",
-        "internalName": "M1897"
+        "internalName": "M1897",
+        "costumes": {
+            "2505": "pic_M1897_2505.png",
+            "default": "pic_M1897.png"
+        }
     },
     {
         "url": "/wiki/M1911",
@@ -11280,7 +11673,11 @@
             "reward": "Upon creating a new profile, players will start with M1911, along with 2 other HG's"
         },
         "img": "pic_M1911.png",
-        "internalName": "M1911"
+        "internalName": "M1911",
+        "costumes": {
+            "default": "pic_M1911.png",
+            "MOD 3": "pic_M1911Mod.png"
+        }
     },
     {
         "url": "/wiki/M1911#Mod1",
@@ -11596,6 +11993,9 @@
                 "194",
                 "200"
             ]
+        },
+        "costumes": {
+            "default": "pic_M1911Mod.png"
         }
     },
     {
@@ -11692,7 +12092,14 @@
             "stage": "0-1, 6-6, 7-3, 7-4E, 8-3, 8-3E, 9-6, 10-5, 11-6, 11-2E"
         },
         "img": "pic_M1918.png",
-        "internalName": "M1918"
+        "internalName": "M1918",
+        "costumes": {
+            "default": "pic_M1918.png",
+            "102": "pic_M1918_102.png",
+            "806": "pic_M1918_806.png",
+            "MOD 3": "pic_M1918Mod.png",
+            "1606": "pic_M1918_1606.png"
+        }
     },
     {
         "url": "/wiki/M1918#Mod1",
@@ -11999,6 +12406,9 @@
                 "38",
                 "40"
             ]
+        },
+        "costumes": {
+            "default": "pic_M1918Mod.png"
         }
     },
     {
@@ -12095,7 +12505,12 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-3E onward."
         },
         "img": "pic_M1919A4.png",
-        "internalName": "M1919A4"
+        "internalName": "M1919A4",
+        "costumes": {
+            "default": "pic_M1919A4.png",
+            "106": "pic_M1919A4_106.png",
+            "7": "pic_M1919A4_7.png"
+        }
     },
     {
         "url": "/wiki/M1A1",
@@ -12177,7 +12592,10 @@
             "stage": "Drops only from Alchemist in 6-6 and 6-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_M1A1.png",
-        "internalName": "M1A1"
+        "internalName": "M1A1",
+        "costumes": {
+            "default": "pic_M1A1.png"
+        }
     },
     {
         "url": "/wiki/M200",
@@ -12339,7 +12757,11 @@
             "stage": "Drops only from Intruder in 4-6 and 4-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_M21.png",
-        "internalName": "M21"
+        "internalName": "M21",
+        "costumes": {
+            "304": "pic_M21_304.png",
+            "default": "pic_M21.png"
+        }
     },
     {
         "url": "/wiki/M249_SAW",
@@ -12446,7 +12868,11 @@
             "stage": "Drops only from Destroyer in 5-6 and 5-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_M249SAW.png",
-        "internalName": "M249SAW"
+        "internalName": "M249SAW",
+        "costumes": {
+            "default": "pic_M249SAW.png",
+            "1301": "pic_M249SAW_1301.png"
+        }
     },
     {
         "url": "/wiki/M2HB",
@@ -12517,7 +12943,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-2E onward."
         },
         "img": "pic_M2HB.png",
-        "internalName": "M2HB"
+        "internalName": "M2HB",
+        "costumes": {
+            "default": "pic_M2HB.png"
+        }
     },
     {
         "url": "/wiki/M3",
@@ -12594,7 +13023,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward."
         },
         "img": "pic_M3.png",
-        "internalName": "M3"
+        "internalName": "M3",
+        "costumes": {
+            "default": "pic_M3.png"
+        }
     },
     {
         "url": "/wiki/M37",
@@ -12683,7 +13115,11 @@
             ]
         },
         "internalName": "Ithaca37",
-        "img": "pic_Ithaca37.png"
+        "img": "pic_Ithaca37.png",
+        "costumes": {
+            "default": "pic_Ithaca37.png",
+            "1105": "pic_Ithaca37_1105.png"
+        }
     },
     {
         "url": "/wiki/M4_SOPMOD_II",
@@ -12753,7 +13189,8 @@
             "reward": "Rewarded to players upon completion of battle stage 3-3."
         },
         "internalName": "M4_SOPMOD_II",
-        "img": "pic_M4_SOPMOD_II.png"
+        "img": "pic_M4_SOPMOD_II.png",
+        "costumes": {}
     },
     {
         "url": "/wiki/M4_SOPMOD_II#Mod1",
@@ -13021,6 +13458,9 @@
                 "24",
                 "25"
             ]
+        },
+        "costumes": {
+            "default": "pic_M4_SOPMOD_IIMod.png"
         }
     },
     {
@@ -13104,7 +13544,11 @@
             "reward": "Rewarded for clearing chapter 2-6 for the first time."
         },
         "img": "pic_M4A1.png",
-        "internalName": "M4A1"
+        "internalName": "M4A1",
+        "costumes": {
+            "default": "pic_M4A1.png",
+            "MOD 3": "pic_M4A1Mod.png"
+        }
     },
     {
         "url": "/wiki/M4A1#Mod1",
@@ -13384,6 +13828,9 @@
                 "567",
                 "600"
             ]
+        },
+        "costumes": {
+            "default": "pic_M4A1Mod.png"
         }
     },
     {
@@ -13473,7 +13920,10 @@
             ]
         },
         "img": "pic_M500.png",
-        "internalName": "M500"
+        "internalName": "M500",
+        "costumes": {
+            "default": "pic_M500.png"
+        }
     },
     {
         "url": "/wiki/M590",
@@ -13562,7 +14012,11 @@
             ]
         },
         "img": "pic_M590.png",
-        "internalName": "M590"
+        "internalName": "M590",
+        "costumes": {
+            "default": "pic_M590.png",
+            "1806": "pic_M590_1806.png"
+        }
     },
     {
         "url": "/wiki/M60",
@@ -13670,7 +14124,10 @@
             "stage": "0-3, 0-4, 6-3E, 7-2E, 8-2, 8-6, 9-3, 10-3, 11-4, 11-4E"
         },
         "img": "pic_M60.png",
-        "internalName": "M60"
+        "internalName": "M60",
+        "costumes": {
+            "default": "pic_M60.png"
+        }
     },
     {
         "url": "/wiki/M82A1",
@@ -13776,7 +14233,10 @@
             "reward": "Obtainable as a potential reward from Event supply crates given during Continuum Turbulence (Or one guaranteed M82A1 unit from opening the 777th crate)."
         },
         "img": "pic_M82A1.png",
-        "internalName": "M82A1"
+        "internalName": "M82A1",
+        "costumes": {
+            "default": "pic_M82A1.png"
+        }
     },
     {
         "url": "/wiki/M870",
@@ -13871,7 +14331,10 @@
             "stage": "Obtained as a possible drop throughout Major Event Continuum Turbulence, drop location as following: E1-10, E2-6, E3-14"
         },
         "internalName": "M870P",
-        "img": "pic_M870P.png"
+        "img": "pic_M870P.png",
+        "costumes": {
+            "default": "pic_M870P.png"
+        }
     },
     {
         "url": "/wiki/M9",
@@ -13948,7 +14411,15 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-5 onward."
         },
         "img": "pic_M9.png",
-        "internalName": "M9"
+        "internalName": "M9",
+        "costumes": {
+            "2303": "pic_M950A_2303.png",
+            "default": "pic_M99.png",
+            "808": "pic_M950A_808.png",
+            "1701": "pic_M99_1701.png",
+            "404": "pic_M99_404.png",
+            "702": "pic_M950A_702.png"
+        }
     },
     {
         "url": "/wiki/M950A",
@@ -14036,7 +14507,13 @@
             ]
         },
         "img": "pic_M950A.png",
-        "internalName": "M950A"
+        "internalName": "M950A",
+        "costumes": {
+            "2303": "pic_M950A_2303.png",
+            "default": "pic_M950A.png",
+            "808": "pic_M950A_808.png",
+            "702": "pic_M950A_702.png"
+        }
     },
     {
         "url": "/wiki/M99",
@@ -14119,7 +14596,12 @@
             "stage": "11-4E"
         },
         "img": "pic_M99.png",
-        "internalName": "M99"
+        "internalName": "M99",
+        "costumes": {
+            "1701": "pic_M99_1701.png",
+            "default": "pic_M99.png",
+            "404": "pic_M99_404.png"
+        }
     },
     {
         "url": "/wiki/MAC-10",
@@ -14226,7 +14708,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-4E onward."
         },
         "img": "pic_MAC10.png",
-        "internalName": "MAC10"
+        "internalName": "MAC10",
+        "costumes": {
+            "default": "pic_MAC10.png"
+        }
     },
     {
         "url": "/wiki/MDR",
@@ -14344,7 +14829,11 @@
             "timer": "3:53:00"
         },
         "img": "pic_MDR.png",
-        "internalName": "MDR"
+        "internalName": "MDR",
+        "costumes": {
+            "2603": "pic_MDR_2603.png",
+            "default": "pic_MDR.png"
+        }
     },
     {
         "url": "/wiki/MG3",
@@ -14452,7 +14941,11 @@
             "stage": "0-3, 6-4, 6-4E, 7-5, 7-3E, 8-4, 8-1E, 9-5, 10-4, 11-3, 11-1E"
         },
         "img": "pic_MG3.png",
-        "internalName": "MG3"
+        "internalName": "MG3",
+        "costumes": {
+            "default": "pic_MG3.png",
+            "1304": "pic_MG3_1304.png"
+        }
     },
     {
         "url": "/wiki/MG34",
@@ -14542,7 +15035,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-4 onward."
         },
         "img": "pic_MG34.png",
-        "internalName": "MG34"
+        "internalName": "MG34",
+        "costumes": {
+            "default": "pic_MG34.png"
+        }
     },
     {
         "url": "/wiki/MG36",
@@ -14688,7 +15184,11 @@
             ]
         },
         "img": "pic_MG4.png",
-        "internalName": "MG4"
+        "internalName": "MG4",
+        "costumes": {
+            "703": "pic_MG4_703.png",
+            "default": "pic_MG4.png"
+        }
     },
     {
         "url": "/wiki/MG42",
@@ -14784,7 +15284,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-6 onward."
         },
         "img": "pic_MG42.png",
-        "internalName": "MG42"
+        "internalName": "MG42",
+        "costumes": {
+            "default": "pic_MG42.png"
+        }
     },
     {
         "url": "/wiki/MG5",
@@ -14855,7 +15358,13 @@
             "stage": "7-4E"
         },
         "img": "pic_MG5.png",
-        "internalName": "MG5"
+        "internalName": "MG5",
+        "costumes": {
+            "2501": "pic_MG5_2501.png",
+            "default": "pic_MG5.png",
+            "309": "pic_MG5_309.png",
+            "1504": "pic_MG5_1504.png"
+        }
     },
     {
         "url": "/wiki/MP-443",
@@ -14938,7 +15447,10 @@
             "reward": "Login reward for June 2018 (CN)."
         },
         "img": "pic_MP443.png",
-        "internalName": "MP443"
+        "internalName": "MP443",
+        "costumes": {
+            "default": "pic_MP443.png"
+        }
     },
     {
         "url": "/wiki/MP-446",
@@ -15027,7 +15539,13 @@
             "stage": "Can be obtained from any battle stages from Chapter 1-5 onward."
         },
         "img": "pic_MP446.png",
-        "internalName": "MP446"
+        "internalName": "MP446",
+        "costumes": {
+            "402": "pic_MP446_402.png",
+            "MOD 3": "pic_MP446Mod.png",
+            "default": "pic_MP446.png",
+            "103": "pic_MP446_103.png"
+        }
     },
     {
         "url": "/wiki/MP-446#Mod1",
@@ -15331,6 +15849,9 @@
                 "3.8",
                 "4.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_MP446Mod.png"
         }
     },
     {
@@ -15413,7 +15934,10 @@
             "reward": "Login Reward for September (CN)"
         },
         "img": "pic_MP448.png",
-        "internalName": "MP448"
+        "internalName": "MP448",
+        "costumes": {
+            "default": "pic_MP448.png"
+        }
     },
     {
         "url": "/wiki/MP40",
@@ -15516,7 +16040,11 @@
             "reward": "Achievement Reward for doing Construction for the first time."
         },
         "img": "pic_MP40.png",
-        "internalName": "MP40"
+        "internalName": "MP40",
+        "costumes": {
+            "default": "pic_MP40.png",
+            "902": "pic_MP40_902.png"
+        }
     },
     {
         "url": "/wiki/MP5",
@@ -15599,7 +16127,13 @@
             "stage": "0-2, 2-4, 3-2, 3-4, 4-2, 4-2E, 5-2, 5-2E, 6-1E, 7-2, 7-4, 7-3E, 8-1, 8-6, 9-1, 9-1E, 10-2, 11-3, 11-4E"
         },
         "img": "pic_MP5.png",
-        "internalName": "MP5"
+        "internalName": "MP5",
+        "costumes": {
+            "1205": "pic_MP5_1205.png",
+            "1903": "pic_MP5_1903.png",
+            "default": "pic_MP5.png",
+            "3": "pic_MP5_3.png"
+        }
     },
     {
         "url": "/wiki/MP7",
@@ -15706,7 +16240,11 @@
             "stage": "Obtainable as a random battle loot from the event Singularity, cannot be obtained by other means. Location as following: E1-C4."
         },
         "img": "pic_MP7.png",
-        "internalName": "MP7"
+        "internalName": "MP7",
+        "costumes": {
+            "2405": "pic_MP7_2405.png",
+            "default": "pic_MP7.png"
+        }
     },
     {
         "url": "/wiki/MT-9",
@@ -15777,7 +16315,10 @@
             "reward": "Acquired as login reward during February 2017 (CN), August 2018 (EN)."
         },
         "img": "pic_MT9.png",
-        "internalName": "MT9"
+        "internalName": "MT9",
+        "costumes": {
+            "default": "pic_MT9.png"
+        }
     },
     {
         "url": "/wiki/Magal",
@@ -15958,7 +16499,12 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward."
         },
         "internalName": "PM",
-        "img": "pic_PM.png"
+        "img": "pic_PM.png",
+        "costumes": {
+            "default": "pic_PM06.png",
+            "2703": "pic_PM06_2703.png",
+            "1": "pic_PM_1.png"
+        }
     },
     {
         "url": "/wiki/Micro_Uzi",
@@ -16066,7 +16612,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward."
         },
         "img": "pic_MicroUZI.png",
-        "internalName": "MicroUZI"
+        "internalName": "MicroUZI",
+        "costumes": {
+            "default": "pic_MicroUZI.png",
+            "101": "pic_MicroUZI_101.png"
+        }
     },
     {
         "url": "/wiki/Mk_12",
@@ -16148,7 +16698,10 @@
             "stage": "Battle and random combat reward from 2018 summer event Continuum Turbulence, drop location as following: E1-B1, E2-5, E3-6."
         },
         "img": "pic_Mk12.png",
-        "internalName": "Mk12"
+        "internalName": "Mk12",
+        "costumes": {
+            "default": "pic_Mk12.png"
+        }
     },
     {
         "url": "/wiki/Mk23",
@@ -16261,7 +16814,12 @@
             "stage": "4-3E, 5-3, 5-1E, 6-1, 6-1E, 7-3, 7-1E, 8-3, 9-1, 9-1E, 10-5, 11-4, 11-3E"
         },
         "img": "pic_Mk23.png",
-        "internalName": "Mk23"
+        "internalName": "Mk23",
+        "costumes": {
+            "1805": "pic_Mk23_1805.png",
+            "8": "pic_Mk23_8.png",
+            "default": "pic_Mk23.png"
+        }
     },
     {
         "url": "/wiki/Mk46",
@@ -16356,7 +16914,10 @@
             "stage": "Drops only from specific Strelet, Rodelero and Uhlan units in 11-6 and 11-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_Mk46.png",
-        "internalName": "Mk46"
+        "internalName": "Mk46",
+        "costumes": {
+            "default": "pic_Mk46.png"
+        }
     },
     {
         "url": "/wiki/Mk48",
@@ -16451,7 +17012,10 @@
             ]
         },
         "img": "pic_MK48.png",
-        "internalName": "MK48"
+        "internalName": "MK48",
+        "costumes": {
+            "default": "pic_MK48.png"
+        }
     },
     {
         "url": "/wiki/Model_L",
@@ -16626,7 +17190,12 @@
             "stage": "0-3, 4-6, 5-3E, 5-6, 6-5, 6-3E, 7-5, 7-1E, 8-1, 8-2E, 9-4, 9-1E, 10-2, 10-6, 11-3, 11-2E"
         },
         "internalName": "M1891",
-        "img": "pic_M1891.png"
+        "img": "pic_M1891.png",
+        "costumes": {
+            "803": "pic_M1891_803.png",
+            "default": "pic_M1891.png",
+            "MOD 3": "pic_M1891Mod.png"
+        }
     },
     {
         "url": "/wiki/Mosin-Nagant#Mod1",
@@ -16894,6 +17463,9 @@
                 "28",
                 "30"
             ]
+        },
+        "costumes": {
+            "default": "pic_M1891Mod.png"
         }
     },
     {
@@ -16983,7 +17555,10 @@
             ]
         },
         "img": "pic_NS2000.png",
-        "internalName": "NS2000"
+        "internalName": "NS2000",
+        "costumes": {
+            "default": "pic_NS2000.png"
+        }
     },
     {
         "url": "/wiki/NTW-20",
@@ -17066,7 +17641,13 @@
             "stage": "8-4E"
         },
         "img": "pic_NTW20.png",
-        "internalName": "NTW20"
+        "internalName": "NTW20",
+        "costumes": {
+            "2301": "pic_NTW20_2301.png",
+            "default": "pic_NTW20.png",
+            "1101": "pic_NTW20_1101.png",
+            "307": "pic_NTW20_307.png"
+        }
     },
     {
         "url": "/wiki/NZ75",
@@ -17155,7 +17736,12 @@
             "reward": "Login reward during National Day of the People's Republic of China (October 1st 2016 - October 7th 2016) in CN and during November 2018 on EN."
         },
         "img": "pic_NZ75.png",
-        "internalName": "NZ75"
+        "internalName": "NZ75",
+        "costumes": {
+            "1702": "pic_NZ75_1702.png",
+            "403": "pic_NZ75_403.png",
+            "default": "pic_NZ75.png"
+        }
     },
     {
         "url": "/wiki/Nagant_Revolver",
@@ -17269,7 +17855,12 @@
             "reward": "Upon creating a new profile, players will start with Nagant Revolver, along with 2 other HG's"
         },
         "internalName": "M1895",
-        "img": "pic_M1895.png"
+        "img": "pic_M1895.png",
+        "costumes": {
+            "2706": "pic_M1895_2706.png",
+            "MOD 3": "pic_M1895Mod.png",
+            "default": "pic_M1895.png"
+        }
     },
     {
         "url": "/wiki/Nagant_Revolver#Mod1",
@@ -17645,6 +18236,9 @@
                 "3.8",
                 "4.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_M1895Mod.png"
         }
     },
     {
@@ -17715,7 +18309,11 @@
             ]
         },
         "img": "pic_NEGEV.png",
-        "internalName": "NEGEV"
+        "internalName": "NEGEV",
+        "costumes": {
+            "default": "pic_NEGEV.png",
+            "904": "pic_NEGEV_904.png"
+        }
     },
     {
         "url": "/wiki/OBR",
@@ -17797,7 +18395,10 @@
             "reward": "Monthly reward August 2018 (CN)."
         },
         "img": "pic_OBR.png",
-        "internalName": "OBR"
+        "internalName": "OBR",
+        "costumes": {
+            "default": "pic_OBR.png"
+        }
     },
     {
         "url": "/wiki/OTs-12",
@@ -17881,7 +18482,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 5-5 onward."
         },
         "img": "pic_OTs12.png",
-        "internalName": "OTs12"
+        "internalName": "OTs12",
+        "costumes": {
+            "default": "pic_OTs12.png"
+        }
     },
     {
         "url": "/wiki/OTs-14",
@@ -17976,7 +18580,11 @@
             "reward": "Reward to players for completing Operation Cube."
         },
         "img": "pic_OTs14.png",
-        "internalName": "OTs14"
+        "internalName": "OTs14",
+        "costumes": {
+            "1203": "pic_OTs14_1203.png",
+            "default": "pic_OTs14.png"
+        }
     },
     {
         "url": "/wiki/OTs-39",
@@ -18047,7 +18655,10 @@
             "reward": "CN servers login reward of March 2018."
         },
         "img": "pic_OTs39.png",
-        "internalName": "OTs39"
+        "internalName": "OTs39",
+        "costumes": {
+            "default": "pic_OTs39.png"
+        }
     },
     {
         "url": "/wiki/OTs-44",
@@ -18118,7 +18729,11 @@
             "stage": "Obtained as a possible drop throughout Arctic Warfare (all servers). Added to heavy crafting pool as of the 6th of July 2017 (CN)."
         },
         "internalName": "OC44",
-        "img": "pic_OC44.png"
+        "img": "pic_OC44.png",
+        "costumes": {
+            "default": "pic_OC44.png",
+            "1608": "pic_OC44_1608.png"
+        }
     },
     {
         "url": "/wiki/P08",
@@ -18231,7 +18846,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward."
         },
         "img": "pic_P08.png",
-        "internalName": "P08"
+        "internalName": "P08",
+        "costumes": {
+            "default": "pic_P08.png"
+        }
     },
     {
         "url": "/wiki/P22",
@@ -18418,7 +19036,10 @@
             "reward": "Login reward for September 2017 (CN)."
         },
         "img": "pic_P226.png",
-        "internalName": "P226"
+        "internalName": "P226",
+        "costumes": {
+            "default": "pic_P226.png"
+        }
     },
     {
         "url": "/wiki/P38",
@@ -18508,7 +19129,11 @@
             "reward": "Upon creating a new profile, players will start with P38, along with 2 other HG's"
         },
         "img": "pic_P38.png",
-        "internalName": "P38"
+        "internalName": "P38",
+        "costumes": {
+            "2410": "pic_P38_2410.png",
+            "default": "pic_P38.png"
+        }
     },
     {
         "url": "/wiki/P7",
@@ -18597,7 +19222,12 @@
             "stage": "Chapter 5-E (All Maps), 6-3, 6-2E, 7-4, 8-5, 8-2E, 9-5, 10-1, 11-5, 11-1E"
         },
         "img": "pic_P7.png",
-        "internalName": "P7"
+        "internalName": "P7",
+        "costumes": {
+            "default": "pic_P7.png",
+            "606": "pic_P7_606.png",
+            "1404": "pic_P7_1404.png"
+        }
     },
     {
         "url": "/wiki/P90",
@@ -18667,7 +19297,11 @@
             "timer": "02:29:00"
         },
         "img": "pic_P90.png",
-        "internalName": "P90"
+        "internalName": "P90",
+        "costumes": {
+            "default": "pic_P90.png",
+            "2802": "pic_P90_2802.png"
+        }
     },
     {
         "url": "/wiki/P99",
@@ -18755,7 +19389,10 @@
             ]
         },
         "img": "pic_P99.png",
-        "internalName": "P99"
+        "internalName": "P99",
+        "costumes": {
+            "default": "pic_P99.png"
+        }
     },
     {
         "url": "/wiki/PA-15",
@@ -18864,7 +19501,13 @@
             "stage": "0-2, 7-6, 10-6E, 11-5, 11-3E"
         },
         "img": "pic_PK.png",
-        "internalName": "PK"
+        "internalName": "PK",
+        "costumes": {
+            "default": "pic_PK.png",
+            "1201": "pic_PKP_1201.png",
+            "605": "pic_PK_605.png",
+            "1503": "pic_PKP_1503.png"
+        }
     },
     {
         "url": "/wiki/PKP",
@@ -18934,7 +19577,12 @@
             ]
         },
         "img": "pic_PKP.png",
-        "internalName": "PKP"
+        "internalName": "PKP",
+        "costumes": {
+            "default": "pic_PKP.png",
+            "1201": "pic_PKP_1201.png",
+            "1503": "pic_PKP_1503.png"
+        }
     },
     {
         "url": "/wiki/PM-06",
@@ -19053,7 +19701,11 @@
             "reward": "Rewarded to players after accumulating 1800 points during the \"Crimson Witch\" event on the 14th of July 2018 (CN/TW/KR) or the \"Crimson Thesis\" (真紅のテーゼ) event on February 2019 (JP)."
         },
         "img": "pic_PM06.png",
-        "internalName": "PM06"
+        "internalName": "PM06",
+        "costumes": {
+            "2703": "pic_PM06_2703.png",
+            "default": "pic_PM06.png"
+        }
     },
     {
         "url": "/wiki/PM-9",
@@ -19215,7 +19867,11 @@
             "stage": "Obtainable as a possible drop throughout Glory Day (CN)."
         },
         "img": "pic_PP19.png",
-        "internalName": "PP19"
+        "internalName": "PP19",
+        "costumes": {
+            "2204": "pic_PP19_2204.png",
+            "default": "pic_PP19.png"
+        }
     },
     {
         "url": "/wiki/PP-19-01",
@@ -19321,7 +19977,10 @@
             ]
         },
         "img": "pic_PP1901.png",
-        "internalName": "PP1901"
+        "internalName": "PP1901",
+        "costumes": {
+            "default": "pic_PP1901.png"
+        }
     },
     {
         "url": "/wiki/PP-2000",
@@ -19398,7 +20057,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward."
         },
         "img": "pic_PP2000.png",
-        "internalName": "PP2000"
+        "internalName": "PP2000",
+        "costumes": {
+            "default": "pic_PP2000.png"
+        }
     },
     {
         "url": "/wiki/PP-90",
@@ -19493,7 +20155,10 @@
             "stage": "10-6, 10-4E, 11-5, 11-4E"
         },
         "img": "pic_PP90.png",
-        "internalName": "PP90"
+        "internalName": "PP90",
+        "costumes": {
+            "default": "pic_PP90.png"
+        }
     },
     {
         "url": "/wiki/PPK",
@@ -19595,7 +20260,10 @@
             "reward": "Achievement Reward for killing 1 Enemy type for the first time."
         },
         "img": "pic_PPK.png",
-        "internalName": "PPK"
+        "internalName": "PPK",
+        "costumes": {
+            "default": "pic_PPK.png"
+        }
     },
     {
         "url": "/wiki/PPS-43",
@@ -19678,7 +20346,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-5 onward."
         },
         "img": "pic_PPS43.png",
-        "internalName": "PPS43"
+        "internalName": "PPS43",
+        "costumes": {
+            "default": "pic_PPS43.png"
+        }
     },
     {
         "url": "/wiki/PPSh-41",
@@ -19755,7 +20426,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward."
         },
         "img": "pic_PPsh41.png",
-        "internalName": "PPsh41"
+        "internalName": "PPsh41",
+        "costumes": {
+            "602": "pic_PPsh41_602.png",
+            "default": "pic_PPsh41.png"
+        }
     },
     {
         "url": "/wiki/PSG-1",
@@ -19826,7 +20501,10 @@
             "stage": "Obtainable from E1-4 in Operation Cube. Eventually became available in heavy production on July 6th 2017 (CN)."
         },
         "img": "pic_PSG1.png",
-        "internalName": "PSG1"
+        "internalName": "PSG1",
+        "costumes": {
+            "default": "pic_PSG1.png"
+        }
     },
     {
         "url": "/wiki/PSM",
@@ -19920,7 +20598,10 @@
             "stage": "Drops only from Dreamer in 7-6 and 7-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_PSM.png",
-        "internalName": "PSM"
+        "internalName": "PSM",
+        "costumes": {
+            "default": "pic_PSM.png"
+        }
     },
     {
         "url": "/wiki/PTRD",
@@ -20003,7 +20684,11 @@
             "stage": "0-1, 4-4, 4-2E, 5-2, 7-3E, 8-5, 8-1E, 9-1, 9-5, 10-5, 11-1, 11-3E"
         },
         "img": "pic_PTRD.png",
-        "internalName": "PTRD"
+        "internalName": "PTRD",
+        "costumes": {
+            "408": "pic_PTRD_408.png",
+            "default": "pic_PTRD.png"
+        }
     },
     {
         "url": "/wiki/Px4_Storm",
@@ -20103,7 +20788,11 @@
             ]
         },
         "img": "pic_Px4Storm.png",
-        "internalName": "Px4Storm"
+        "internalName": "Px4Storm",
+        "costumes": {
+            "default": "pic_Px4Storm.png",
+            "2801": "pic_Px4Storm_2801.png"
+        }
     },
     {
         "url": "/wiki/Python",
@@ -20233,7 +20922,10 @@
             "stage": "Obtained as a possible drop throughout Continuum Turbulence on the following Maps: E1-9, E2-8a (left path), E3-??"
         },
         "img": "pic_Python.png",
-        "internalName": "Python"
+        "internalName": "Python",
+        "costumes": {
+            "default": "pic_Python.png"
+        }
     },
     {
         "url": "/wiki/PzB_39",
@@ -20310,7 +21002,11 @@
             "stage": "Possible battle drop reward from E1-4 and E3-3 of Operation Deep Dive."
         },
         "img": "pic_PzB39.png",
-        "internalName": "PzB39"
+        "internalName": "PzB39",
+        "costumes": {
+            "1506": "pic_PzB39_1506.png",
+            "default": "pic_PzB39.png"
+        }
     },
     {
         "url": "/wiki/QBU-88",
@@ -20454,7 +21150,11 @@
             ]
         },
         "img": "pic_RFB.png",
-        "internalName": "RFB"
+        "internalName": "RFB",
+        "costumes": {
+            "default": "pic_RFB.png",
+            "1601": "pic_RFB_1601.png"
+        }
     },
     {
         "url": "/wiki/RMB-93",
@@ -20543,7 +21243,11 @@
             ]
         },
         "img": "pic_RMB93.png",
-        "internalName": "RMB93"
+        "internalName": "RMB93",
+        "costumes": {
+            "default": "pic_RMB93.png",
+            "1705": "pic_RMB93_1705.png"
+        }
     },
     {
         "url": "/wiki/RO635",
@@ -20637,7 +21341,11 @@
             "reward": "Rewarded to players after clearing chapter 7-6 for the first time. Cannot be obtained (again) by any other means."
         },
         "img": "pic_RO635.png",
-        "internalName": "RO635"
+        "internalName": "RO635",
+        "costumes": {
+            "Without Gun": "pic_RO635_NoArmor0.png",
+            "default": "pic_RO635.png"
+        }
     },
     {
         "url": "/wiki/RPD",
@@ -20721,7 +21429,10 @@
             "reward": "Monthly Login Reward."
         },
         "img": "pic_RPD.png",
-        "internalName": "RPD"
+        "internalName": "RPD",
+        "costumes": {
+            "default": "pic_RPD.png"
+        }
     },
     {
         "url": "/wiki/RT-20",
@@ -20791,7 +21502,10 @@
             "reward": "Login reward for November 2018 (CN)."
         },
         "img": "pic_RT20.png",
-        "internalName": "RT20"
+        "internalName": "RT20",
+        "costumes": {
+            "default": "pic_RT20.png"
+        }
     },
     {
         "url": "/wiki/Ribeyrolles",
@@ -20879,7 +21593,10 @@
             ]
         },
         "img": "pic_Ribeyrolles.png",
-        "internalName": "Ribeyrolles"
+        "internalName": "Ribeyrolles",
+        "costumes": {
+            "default": "pic_Ribeyrolles.png"
+        }
     },
     {
         "url": "/wiki/S.A.T.8",
@@ -20968,7 +21685,12 @@
             ]
         },
         "internalName": "SAT8",
-        "img": "pic_SAT8.png"
+        "img": "pic_SAT8.png",
+        "costumes": {
+            "1802": "pic_SAT8_1802.png",
+            "2601": "pic_SAT8_2601.png",
+            "default": "pic_SAT8.png"
+        }
     },
     {
         "url": "/wiki/SAR-21",
@@ -21050,7 +21772,10 @@
             "timer": "3:25:00"
         },
         "img": "pic_SAR21.png",
-        "internalName": "SAR21"
+        "internalName": "SAR21",
+        "costumes": {
+            "default": "pic_SAR21.png"
+        }
     },
     {
         "url": "/wiki/SCW",
@@ -21144,7 +21869,10 @@
             "stage": "Drops only from Destroyer and Dreamer in 8-6 and 8-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "internalName": "ColtSCW",
-        "img": "pic_ColtSCW.png"
+        "img": "pic_ColtSCW.png",
+        "costumes": {
+            "default": "pic_ColtSCW.png"
+        }
     },
     {
         "url": "/wiki/SIG-510",
@@ -21228,7 +21956,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-4 onward."
         },
         "img": "pic_SIG510.png",
-        "internalName": "SIG510"
+        "internalName": "SIG510",
+        "costumes": {
+            "default": "pic_SIG510.png"
+        }
     },
     {
         "url": "/wiki/SM-1",
@@ -21311,7 +22042,10 @@
             "reward": "Login reward of April 2018 (CN)."
         },
         "internalName": "HEZISM1",
-        "img": "pic_HEZISM1.png"
+        "img": "pic_HEZISM1.png",
+        "costumes": {
+            "default": "pic_HEZISM1.png"
+        }
     },
     {
         "url": "/wiki/SPAS-12",
@@ -21388,7 +22122,11 @@
             ]
         },
         "img": "pic_SPAS12.png",
-        "internalName": "SPAS12"
+        "internalName": "SPAS12",
+        "costumes": {
+            "2408": "pic_SPAS12_2408.png",
+            "default": "pic_SPAS12.png"
+        }
     },
     {
         "url": "/wiki/SPP-1",
@@ -21470,7 +22208,11 @@
             "reward": "Reward for clearing Operation Cube E2."
         },
         "img": "pic_SPP1.png",
-        "internalName": "SPP1"
+        "internalName": "SPP1",
+        "costumes": {
+            "1703": "pic_SPP1_1703.png",
+            "default": "pic_SPP1.png"
+        }
     },
     {
         "url": "/wiki/SPR_A3G",
@@ -21552,7 +22294,10 @@
             "timer": "4:15:00"
         },
         "internalName": "FNSPR",
-        "img": "pic_FNSPR.png"
+        "img": "pic_FNSPR.png",
+        "costumes": {
+            "default": "pic_FNSPR.png"
+        }
     },
     {
         "url": "/wiki/SR-3MP",
@@ -21647,7 +22392,11 @@
             "stage": "10-4E"
         },
         "img": "pic_SR3MP.png",
-        "internalName": "SR3MP"
+        "internalName": "SR3MP",
+        "costumes": {
+            "807": "pic_SR3MP_807.png",
+            "default": "pic_SR3MP.png"
+        }
     },
     {
         "url": "/wiki/SRS",
@@ -21741,7 +22490,10 @@
             "reward": "Reward for connecting 8 lines during the 2018 March bingo event."
         },
         "internalName": "DTASRS",
-        "img": "pic_DTASRS.png"
+        "img": "pic_DTASRS.png",
+        "costumes": {
+            "default": "pic_DTASRS.png"
+        }
     },
     {
         "url": "/wiki/SSG_69",
@@ -21824,7 +22576,10 @@
             "reward": "Acquired as login reward during March 2017 (CN), January 2019 (EN)."
         },
         "img": "pic_SSG69.png",
-        "internalName": "SSG69"
+        "internalName": "SSG69",
+        "costumes": {
+            "default": "pic_SSG69.png"
+        }
     },
     {
         "url": "/wiki/ST_AR-15",
@@ -21907,7 +22662,12 @@
             "reward": "Rewarded to players after completing chapter 3-6 for the first time."
         },
         "internalName": "AR15",
-        "img": "pic_AR15.png"
+        "img": "pic_AR15.png",
+        "costumes": {
+            "MOD 3": "pic_AR15Mod.png",
+            "701": "pic_AR15_701.png",
+            "default": "pic_AR15.png"
+        }
     },
     {
         "url": "/wiki/ST_AR-15#Mod1",
@@ -22211,6 +22971,9 @@
                 "18",
                 "20"
             ]
+        },
+        "costumes": {
+            "default": "pic_AR15Mod.png"
         }
     },
     {
@@ -22294,7 +23057,13 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-4E onward."
         },
         "img": "pic_SV98.png",
-        "internalName": "SV98"
+        "internalName": "SV98",
+        "costumes": {
+            "502": "pic_SV98_502.png",
+            "1906": "pic_SV98_1906.png",
+            "MOD 3": "pic_SV98Mod.png",
+            "default": "pic_SV98.png"
+        }
     },
     {
         "url": "/wiki/SV-98#Mod1",
@@ -22562,6 +23331,9 @@
                 "17",
                 "18"
             ]
+        },
+        "costumes": {
+            "default": "pic_SV98Mod.png"
         }
     },
     {
@@ -22656,7 +23428,11 @@
             ]
         },
         "img": "pic_SVD.png",
-        "internalName": "SVD"
+        "internalName": "SVD",
+        "costumes": {
+            "305": "pic_SVD_305.png",
+            "default": "pic_SVD.png"
+        }
     },
     {
         "url": "/wiki/SVT-38",
@@ -22733,7 +23509,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 3-3 onward."
         },
         "img": "pic_SVT38.png",
-        "internalName": "SVT38"
+        "internalName": "SVT38",
+        "costumes": {
+            "default": "pic_SVT38.png"
+        }
     },
     {
         "url": "/wiki/Saiga-12",
@@ -22834,7 +23613,10 @@
             ]
         },
         "img": "pic_Saiga12.png",
-        "internalName": "Saiga12"
+        "internalName": "Saiga12",
+        "costumes": {
+            "default": "pic_Saiga12.png"
+        }
     },
     {
         "url": "/wiki/Serdyukov",
@@ -23008,7 +23790,10 @@
             ]
         },
         "img": "pic_Shipka.png",
-        "internalName": "Shipka"
+        "internalName": "Shipka",
+        "costumes": {
+            "default": "pic_Shipka.png"
+        }
     },
     {
         "url": "/wiki/Simonov",
@@ -23203,7 +23988,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-6 onward."
         },
         "internalName": "VZ61",
-        "img": "pic_VZ61.png"
+        "img": "pic_VZ61.png",
+        "costumes": {
+            "default": "pic_VZ61.png",
+            "801": "pic_VZ61_801.png"
+        }
     },
     {
         "url": "/wiki/Spectre_M4",
@@ -23292,7 +24081,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 1-3 onward."
         },
         "img": "pic_SpectreM4.png",
-        "internalName": "SpectreM4"
+        "internalName": "SpectreM4",
+        "costumes": {
+            "default": "pic_SpectreM4.png"
+        }
     },
     {
         "url": "/wiki/Spitfire",
@@ -23381,7 +24173,11 @@
             "stage": "Obtainable as a possible drop throughout Singularity and Continuum Turbulence."
         },
         "img": "pic_Spitfire.png",
-        "internalName": "Spitfire"
+        "internalName": "Spitfire",
+        "costumes": {
+            "1405": "pic_Spitfire_1405.png",
+            "default": "pic_Spitfire.png"
+        }
     },
     {
         "url": "/wiki/Springfield",
@@ -23465,7 +24261,14 @@
             "reward": "First Payment award on CN/TW/KR server. With the First Payment award change on July 2018 Springfield is no longer the reward T-doll and cannot be obtained this way again"
         },
         "internalName": "M1903",
-        "img": "pic_M1903.png"
+        "img": "pic_M1903.png",
+        "costumes": {
+            "default": "pic_M1903.png",
+            "1107": "pic_M1903_1107.png",
+            "302": "pic_M1903_302.png",
+            "802": "pic_M1903_802.png",
+            "5": "pic_M1903_5.png"
+        }
     },
     {
         "url": "/wiki/StG44",
@@ -23537,7 +24340,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-4 onward."
         },
         "img": "pic_STG44.png",
-        "internalName": "STG44"
+        "internalName": "STG44",
+        "costumes": {
+            "default": "pic_STG44.png"
+        }
     },
     {
         "url": "/wiki/Stechkin",
@@ -23625,7 +24431,10 @@
             ]
         },
         "internalName": "APS",
-        "img": "pic_APS.png"
+        "img": "pic_APS.png",
+        "costumes": {
+            "default": "pic_APS.png"
+        }
     },
     {
         "url": "/wiki/Sten_MkII",
@@ -23709,7 +24518,12 @@
             "reward": "Rewarded to players after completing chapter 1-1 for the first time."
         },
         "internalName": "StenMK2",
-        "img": "pic_StenMK2.png"
+        "img": "pic_StenMK2.png",
+        "costumes": {
+            "default": "pic_StenMK2.png",
+            "603": "pic_StenMK2_603.png",
+            "MOD 3": "pic_StenMK2Mod.png"
+        }
     },
     {
         "url": "/wiki/Sten_MkII#Mod1",
@@ -24003,6 +24817,9 @@
                 "4.8",
                 "5.0"
             ]
+        },
+        "costumes": {
+            "default": "pic_StenMK2Mod.png"
         }
     },
     {
@@ -24177,7 +24994,12 @@
             ]
         },
         "internalName": "KP31",
-        "img": "pic_KP31.png"
+        "img": "pic_KP31.png",
+        "costumes": {
+            "310": "pic_KP31_310.png",
+            "1103": "pic_KP31_1103.png",
+            "default": "pic_KP31.png"
+        }
     },
     {
         "url": "/wiki/Super_SASS",
@@ -24248,7 +25070,11 @@
             "reward": "Acquired as login reward during September 2016 (CN)."
         },
         "img": "pic_SuperSASS.png",
-        "internalName": "SuperSASS"
+        "internalName": "SuperSASS",
+        "costumes": {
+            "1407": "pic_SuperSASS_1407.png",
+            "default": "pic_SuperSASS.png"
+        }
     },
     {
         "url": "/wiki/Super-Shorty",
@@ -24349,7 +25175,11 @@
             ]
         },
         "img": "pic_SuperShorty.png",
-        "internalName": "SuperShorty"
+        "internalName": "SuperShorty",
+        "costumes": {
+            "1704": "pic_SuperShorty_1704.png",
+            "default": "pic_SuperShorty.png"
+        }
     },
     {
         "url": "/wiki/T-5000",
@@ -24443,7 +25273,10 @@
             ]
         },
         "img": "pic_T5000.png",
-        "internalName": "T5000"
+        "internalName": "T5000",
+        "costumes": {
+            "default": "pic_T5000.png"
+        }
     },
     {
         "url": "/wiki/T65",
@@ -24561,7 +25394,10 @@
             "reward": "November 2017 attendance reward (CN)"
         },
         "img": "pic_T65.png",
-        "internalName": "T65"
+        "internalName": "T65",
+        "costumes": {
+            "default": "pic_T65.png"
+        }
     },
     {
         "url": "/wiki/T77",
@@ -24644,7 +25480,10 @@
             "reward": "CN servers 2018 May login reward"
         },
         "img": "pic_T77.png",
-        "internalName": "T77"
+        "internalName": "T77",
+        "costumes": {
+            "default": "pic_T77.png"
+        }
     },
     {
         "url": "/wiki/T91",
@@ -24774,7 +25613,10 @@
             ]
         },
         "img": "pic_T91.png",
-        "internalName": "T91"
+        "internalName": "T91",
+        "costumes": {
+            "default": "pic_T91.png"
+        }
     },
     {
         "url": "/wiki/TAC-50",
@@ -24844,7 +25686,11 @@
             "reward": "Exchangeable for 240 Alloy Zongzi during the 2018 Dragon Boat Festival event Operation Zongzi."
         },
         "img": "pic_TAC50.png",
-        "internalName": "TAC50"
+        "internalName": "TAC50",
+        "costumes": {
+            "2602": "pic_TAC50_2602.png",
+            "default": "pic_TAC50.png"
+        }
     },
     {
         "url": "/wiki/TAR-21",
@@ -24951,7 +25797,11 @@
             "stage": "0-4, 5-5, 5-6, 8-6, 9-6"
         },
         "img": "pic_TAR21.png",
-        "internalName": "TAR21"
+        "internalName": "TAR21",
+        "costumes": {
+            "1305": "pic_TAR21_1305.png",
+            "default": "pic_TAR21.png"
+        }
     },
     {
         "url": "/wiki/TEC-9",
@@ -25057,7 +25907,10 @@
             "reward": "Login Reward for January (CN/TW/KR)"
         },
         "img": "pic_TEC9.png",
-        "internalName": "TEC9"
+        "internalName": "TEC9",
+        "costumes": {
+            "default": "pic_TEC9.png"
+        }
     },
     {
         "url": "/wiki/TMP",
@@ -25140,7 +25993,11 @@
             "reward": "CN servers login reward of July 2017"
         },
         "img": "pic_TMP.png",
-        "internalName": "TMP"
+        "internalName": "TMP",
+        "costumes": {
+            "2807": "pic_TMP_2807.png",
+            "default": "pic_TMP.png"
+        }
     },
     {
         "url": "/wiki/Thompson",
@@ -25222,7 +26079,11 @@
             ]
         },
         "internalName": "M1928A1",
-        "img": "pic_M1928A1.png"
+        "img": "pic_M1928A1.png",
+        "costumes": {
+            "default": "pic_M1928A1.png",
+            "1501": "pic_M1928A1_1501.png"
+        }
     },
     {
         "url": "/wiki/Thunder",
@@ -25292,7 +26153,11 @@
             "stage": "Obtainable as a random battle loot in the event Singularity. Also as random battle loot from from the map E2-1 and E4-1 of Glory Day."
         },
         "internalName": "Thunder50",
-        "img": "pic_Thunder50.png"
+        "img": "pic_Thunder50.png",
+        "costumes": {
+            "2206": "pic_Thunder50_2206.png",
+            "default": "pic_Thunder50.png"
+        }
     },
     {
         "url": "/wiki/Tokarev",
@@ -25381,7 +26246,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-3 onward."
         },
         "internalName": "TT33",
-        "img": "pic_TT33.png"
+        "img": "pic_TT33.png",
+        "costumes": {
+            "default": "pic_TT33.png",
+            "601": "pic_TT33_601.png"
+        }
     },
     {
         "url": "/wiki/Type_03",
@@ -25463,7 +26332,10 @@
             "reward": "Login reward for October 2018 (CN)."
         },
         "img": "pic_Type03.png",
-        "internalName": "Type03"
+        "internalName": "Type03",
+        "costumes": {
+            "default": "pic_Type03.png"
+        }
     },
     {
         "url": "/wiki/Type_100",
@@ -25570,7 +26442,10 @@
             "reward": "First-time login reward in Japan version during pre-register campaign, at August 1st to September 30th, 2018."
         },
         "img": "pic_Type100.png",
-        "internalName": "Type100"
+        "internalName": "Type100",
+        "costumes": {
+            "default": "pic_Type100.png"
+        }
     },
     {
         "url": "/wiki/Type_56",
@@ -25653,7 +26528,10 @@
             "reward": "Acquired as login reward during August 2016 (CN)."
         },
         "internalName": "56typeR",
-        "img": "pic_56typeR.png"
+        "img": "pic_56typeR.png",
+        "costumes": {
+            "default": "pic_56typeR.png"
+        }
     },
     {
         "url": "/wiki/Type_56-1",
@@ -25725,7 +26603,12 @@
             "stage": "0-3, 4-5, 4-3E, 5-3, 5-4E, 6-4, 6-4E, 7-3, 7-2E, 8-4, 9-3, 10-5, 11-2, 11-3E"
         },
         "img": "pic_56-1type.png",
-        "internalName": "56-1type"
+        "internalName": "56-1type",
+        "costumes": {
+            "401": "pic_56-1type_401.png",
+            "default": "pic_56-1type.png",
+            "1905": "pic_56-1type_1905.png"
+        }
     },
     {
         "url": "/wiki/Type_59",
@@ -25832,7 +26715,11 @@
             "reward": "Obtained as login reward on November 2016 (CN), October 2018 (EN), November 2018 (JP)"
         },
         "img": "pic_59type.png",
-        "internalName": "59type"
+        "internalName": "59type",
+        "costumes": {
+            "default": "pic_59type.png",
+            "407": "pic_59type_407.png"
+        }
     },
     {
         "url": "/wiki/Type_62",
@@ -25927,7 +26814,10 @@
             "reward": "Login reward for December 2018 (CN/TW/KR/JP) and April 2019 (EN)."
         },
         "img": "pic_Type62.png",
-        "internalName": "Type62"
+        "internalName": "Type62",
+        "costumes": {
+            "default": "pic_Type62.png"
+        }
     },
     {
         "url": "/wiki/Type_63",
@@ -26010,7 +26900,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 6-1 onward."
         },
         "img": "pic_63type.png",
-        "internalName": "63type"
+        "internalName": "63type",
+        "costumes": {
+            "default": "pic_63type.png",
+            "2004": "pic_63type_2004.png"
+        }
     },
     {
         "url": "/wiki/Type_64",
@@ -26087,7 +26981,13 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-4E onward."
         },
         "img": "pic_64type.png",
-        "internalName": "64type"
+        "internalName": "64type",
+        "costumes": {
+            "MOD 3": "pic_64typeMod.png",
+            "104": "pic_64type_104.png",
+            "default": "pic_64type.png",
+            "11": "pic_64type_11.png"
+        }
     },
     {
         "url": "/wiki/Type_64#Mod1",
@@ -26355,6 +27255,9 @@
                 "7.7",
                 "8"
             ]
+        },
+        "costumes": {
+            "default": "pic_64typeMod.png"
         }
     },
     {
@@ -26437,7 +27340,11 @@
             ]
         },
         "img": "pic_79type.png",
-        "internalName": "79type"
+        "internalName": "79type",
+        "costumes": {
+            "1402": "pic_79type_1402.png",
+            "default": "pic_79type.png"
+        }
     },
     {
         "url": "/wiki/Type_80",
@@ -26520,7 +27427,11 @@
             "timer": "6:15:00"
         },
         "img": "pic_80type.png",
-        "internalName": "80type"
+        "internalName": "80type",
+        "costumes": {
+            "default": "pic_80type.png",
+            "2504": "pic_80type_2504.png"
+        }
     },
     {
         "url": "/wiki/Type_81_Carbine",
@@ -26615,7 +27526,11 @@
             "reward": "Acquired as login reward during June 2017 (CN), February 2019 (JP), March 2019 (EN)."
         },
         "internalName": "81typeR",
-        "img": "pic_81typeR.png"
+        "img": "pic_81typeR.png",
+        "costumes": {
+            "default": "pic_81typeR.png",
+            "1807": "pic_81typeR_1807.png"
+        }
     },
     {
         "url": "/wiki/Type_88",
@@ -26734,7 +27649,10 @@
             "timer": "6:28:00"
         },
         "img": "pic_Type88.png",
-        "internalName": "Type88"
+        "internalName": "Type88",
+        "costumes": {
+            "default": "pic_Type88.png"
+        }
     },
     {
         "url": "/wiki/Type_92",
@@ -26835,7 +27753,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-3E onward."
         },
         "img": "pic_92type.png",
-        "internalName": "92type"
+        "internalName": "92type",
+        "costumes": {
+            "default": "pic_92type.png"
+        }
     },
     {
         "url": "/wiki/Type_95",
@@ -26929,7 +27850,12 @@
             ]
         },
         "img": "pic_95type.png",
-        "internalName": "95type"
+        "internalName": "95type",
+        "costumes": {
+            "405": "pic_95type_405.png",
+            "default": "pic_95type.png",
+            "1102": "pic_95type_1102.png"
+        }
     },
     {
         "url": "/wiki/Type_97",
@@ -27023,7 +27949,11 @@
             ]
         },
         "img": "pic_97type.png",
-        "internalName": "97type"
+        "internalName": "97type",
+        "costumes": {
+            "406": "pic_97type_406.png",
+            "default": "pic_97type.png"
+        }
     },
     {
         "url": "/wiki/Type_97_Shotgun",
@@ -27118,7 +28048,10 @@
             "reward": "Achievement reward for performing heavy T-doll production 10 times."
         },
         "internalName": "97typeS",
-        "img": "pic_97typeS.png"
+        "img": "pic_97typeS.png",
+        "costumes": {
+            "default": "pic_97typeS.png"
+        }
     },
     {
         "url": "/wiki/UKM-2000",
@@ -27293,7 +28226,10 @@
             "reward": "Obtainable as a potential reward from Event supply crates given during Operation Deep Dive (Or one guaranteed UMP40 unit from opening the 777th crate)."
         },
         "img": "pic_UMP40.png",
-        "internalName": "UMP40"
+        "internalName": "UMP40",
+        "costumes": {
+            "default": "pic_UMP40.png"
+        }
     },
     {
         "url": "/wiki/UMP45",
@@ -27400,7 +28336,13 @@
             "stage": "6-6, 6-3E, 8-4, 8-2E, 9-3, 9-2E, 10-1E, 11-4, 11-2E"
         },
         "img": "pic_UMP45.png",
-        "internalName": "UMP45"
+        "internalName": "UMP45",
+        "costumes": {
+            "default": "pic_UMP45.png",
+            "2107": "pic_UMP45_2107.png",
+            "MOD 3": "pic_UMP45Mod.png",
+            "410": "pic_UMP45_410.png"
+        }
     },
     {
         "url": "/wiki/UMP45#Mod1",
@@ -27716,6 +28658,9 @@
                 "47",
                 "50"
             ]
+        },
+        "costumes": {
+            "default": "pic_UMP45Mod.png"
         }
     },
     {
@@ -27799,7 +28744,12 @@
             "stage": "4-4E, 5-4, 5-5, 5-6, 5-2E, 6-2, 6-5, 6-2E, 7-5, 7-6, 7-1E, 8-5, 8-1E, 8-3E, 9-2, 9-6, 10-1, 10-4, 11-2, 11-1E"
         },
         "img": "pic_UMP9.png",
-        "internalName": "UMP9"
+        "internalName": "UMP9",
+        "costumes": {
+            "409": "pic_UMP9_409.png",
+            "2106": "pic_UMP9_2106.png",
+            "default": "pic_UMP9.png"
+        }
     },
     {
         "url": "/wiki/USAS-12",
@@ -27900,7 +28850,11 @@
             ]
         },
         "img": "pic_USAS12.png",
-        "internalName": "USAS12"
+        "internalName": "USAS12",
+        "costumes": {
+            "default": "pic_USAS12.png",
+            "2704": "pic_USAS12_2704.png"
+        }
     },
     {
         "url": "/wiki/USP_Compact",
@@ -27989,7 +28943,10 @@
             "stage": "Can be obtained from many battle stages from Chapter 7-1 onward."
         },
         "img": "pic_USPCompact.png",
-        "internalName": "USPCompact"
+        "internalName": "USPCompact",
+        "costumes": {
+            "default": "pic_USPCompact.png"
+        }
     },
     {
         "url": "/wiki/Vector",
@@ -28097,7 +29054,12 @@
             "stage": "6-4E"
         },
         "img": "pic_Vector.png",
-        "internalName": "Vector"
+        "internalName": "Vector",
+        "costumes": {
+            "2": "pic_Vector_2.png",
+            "default": "pic_Vector.png",
+            "1901": "pic_Vector_1901.png"
+        }
     },
     {
         "url": "/wiki/WA2000",
@@ -28192,7 +29154,14 @@
             "stage": "0-4"
         },
         "img": "pic_WA2000.png",
-        "internalName": "WA2000"
+        "internalName": "WA2000",
+        "costumes": {
+            "306": "pic_WA2000_306.png",
+            "1108": "pic_WA2000_1108.png",
+            "6": "pic_WA2000_6.png",
+            "default": "pic_WA2000.png",
+            "804": "pic_WA2000_804.png"
+        }
     },
     {
         "url": "/wiki/Welrod_MkII",
@@ -28280,7 +29249,13 @@
             ]
         },
         "internalName": "Welrod",
-        "img": "pic_Welrod.png"
+        "img": "pic_Welrod.png",
+        "costumes": {
+            "411": "pic_Welrod_411.png",
+            "2103": "pic_Welrod_2103.png",
+            "default": "pic_Welrod.png",
+            "1401": "pic_Welrod_1401.png"
+        }
     },
     {
         "url": "/wiki/X95",
@@ -28454,7 +29429,10 @@
             "stage": "Drops only from Judge in 10-6 and by Hydra units in 10-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
         "img": "pic_xm3.png",
-        "internalName": "xm3"
+        "internalName": "xm3",
+        "costumes": {
+            "default": "pic_xm3.png"
+        }
     },
     {
         "url": "/wiki/XM8",
@@ -28524,7 +29502,10 @@
             "timer": "3:25:00"
         },
         "img": "pic_XM8.png",
-        "internalName": "XM8"
+        "internalName": "XM8",
+        "costumes": {
+            "default": "pic_XM8.png"
+        }
     },
     {
         "url": "/wiki/Z-62",
@@ -28632,7 +29613,10 @@
             "stage": "Operation Cube E1-2, E1-3, E1-4"
         },
         "img": "pic_Z62.png",
-        "internalName": "Z62"
+        "internalName": "Z62",
+        "costumes": {
+            "default": "pic_Z62.png"
+        }
     },
     {
         "url": "/wiki/Zas_M21",
@@ -28762,7 +29746,12 @@
             ]
         },
         "internalName": "ZastavaM21",
-        "img": "pic_ZastavaM21.png"
+        "img": "pic_ZastavaM21.png",
+        "costumes": {
+            "2104": "pic_ZastavaM21_2104.png",
+            "default": "pic_ZastavaM21.png",
+            "1603": "pic_ZastavaM21_1603.png"
+        }
     },
     {
         "url": "/wiki/m45",
@@ -28863,7 +29852,11 @@
             "stage": "Can be obtained from many battle stages from Chapter 2-4E onward."
         },
         "img": "pic_m45.png",
-        "internalName": "m45"
+        "internalName": "m45",
+        "costumes": {
+            "4": "pic_m45_4.png",
+            "default": "pic_m45.png"
+        }
     },
     {
         "url": "/wiki/wz.29",
@@ -28946,7 +29939,10 @@
             "reward": "Monthly login reward August 2017 (CN)."
         },
         "internalName": "wz29",
-        "img": "pic_wz29.png"
+        "img": "pic_wz29.png",
+        "costumes": {
+            "default": "pic_wz29.png"
+        }
     },
     {
         "url": "/wiki/Bronya",
@@ -29015,7 +30011,11 @@
             "stage": "Can be acquired as a drop in Hitoribocchi E2-2, E2-3 and E2-4."
         },
         "img": "pic_Bronya.png",
-        "internalName": "Bronya"
+        "internalName": "Bronya",
+        "costumes": {
+            "507": "pic_Bronya_507.png",
+            "default": "pic_Bronya.png"
+        }
     },
     {
         "url": "/wiki/Clear",
@@ -29097,7 +30097,11 @@
             "reward": "Rewarded upon completing chapter Glory Day E2-3 three times."
         },
         "img": "pic_CLEAR.png",
-        "internalName": "CLEAR"
+        "internalName": "CLEAR",
+        "costumes": {
+            "509": "pic_CLEAR_509.png",
+            "default": "pic_CLEAR.png"
+        }
     },
     {
         "url": "/wiki/Elphelt",
@@ -29180,7 +30184,10 @@
             "reward": "Reward of the E1-4 of Operation Rabbit Hunt."
         },
         "internalName": "GG_elfeldt",
-        "img": "pic_GG_elfeldt.png"
+        "img": "pic_GG_elfeldt.png",
+        "costumes": {
+            "default": "pic_GG_elfeldt.png"
+        }
     },
     {
         "url": "/wiki/Fail",
@@ -29262,7 +30269,11 @@
             "reward": "Collaboration event T-doll, exchangeable from Glory Day event shop for 120 Crown of Respects."
         },
         "img": "pic_FAIL.png",
-        "internalName": "FAIL"
+        "internalName": "FAIL",
+        "costumes": {
+            "default": "pic_FAIL.png",
+            "510": "pic_FAIL_510.png"
+        }
     },
     {
         "url": "/wiki/Kiana",
@@ -29344,7 +30355,11 @@
             "reward": "Obtainable as reward for passing Hitoribocchi map E2-2."
         },
         "img": "pic_Kiana.png",
-        "internalName": "Kiana"
+        "internalName": "Kiana",
+        "costumes": {
+            "default": "pic_Kiana.png",
+            "506": "pic_Kiana_506.png"
+        }
     },
     {
         "url": "/wiki/Murata_Himeko",
@@ -29507,7 +30522,10 @@
             "reward": "Guaranteed to drop upon opening 99 Seithr lootcrates during the Operation Rabbit Hunt Collab events."
         },
         "internalName": "BB_Noel",
-        "img": "pic_BB_Noel.png"
+        "img": "pic_BB_Noel.png",
+        "costumes": {
+            "default": "pic_BB_Noel.png"
+        }
     },
     {
         "url": "/wiki/Raiden_Mei",
@@ -29589,7 +30607,10 @@
             "stage": "Obtainable as a random battle drop from Hitoribocchi maps E1-3 E1-4 and E2-1."
         },
         "img": "pic_RaidenMei.png",
-        "internalName": "RaidenMei"
+        "internalName": "RaidenMei",
+        "costumes": {
+            "default": "pic_RaidenMei.png"
+        }
     },
     {
         "url": "/wiki/Seele",
@@ -29660,7 +30681,11 @@
             "reward": "Can be echanged during Hitoribocchi event in the event shop for 120 Nyan Kings."
         },
         "img": "pic_Seele.png",
-        "internalName": "Seele"
+        "internalName": "Seele",
+        "costumes": {
+            "default": "pic_Seele.png",
+            "508": "pic_Seele_508.png"
+        }
     },
     {
         "url": "/wiki/Theresa",
@@ -29778,7 +30803,10 @@
             "reward": "Obtainable as an exchangeable character for 120 Nyan Kings during the collaboration event Hitoribocchi."
         },
         "img": "pic_Theresa.png",
-        "internalName": "Theresa"
+        "internalName": "Theresa",
+        "costumes": {
+            "default": "pic_Theresa1.png"
+        }
     },
     {
         "url": "/wiki/HK33",
@@ -29819,6 +30847,44 @@
         }
     },
     {
+        "url": "/wiki/R93",
+        "num": -1,
+        "name": "R93",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
+        "production": {
+            "reward": "Rewarded to players after accumulating 1800 points during the \"???\" event (CN/KR/TW)."
+        }
+    },
+    {
         "url": "/wiki/K7",
         "num": -1,
         "name": "K7",
@@ -29854,7 +30920,10 @@
         "bonus_desc": "Affects assault rifles\nNot available\nNot available",
         "production": {},
         "img": "pic_K7.png",
-        "internalName": "K7"
+        "internalName": "K7",
+        "costumes": {
+            "default": "pic_K7.png"
+        }
     },
     {
         "url": "/wiki/KGP-9",
@@ -29892,7 +30961,10 @@
         "bonus_desc": "Affects assault rifles\nNot available\nNot available",
         "production": {},
         "img": "pic_KGP9.png",
-        "internalName": "KGP9"
+        "internalName": "KGP9",
+        "costumes": {
+            "default": "pic_KGP9.png"
+        }
     },
     {
         "url": "/wiki/Elisa",

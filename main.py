@@ -21,7 +21,7 @@ PIC_DOMAIN="http://103.28.71.152:999/pic/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.01-20190501"
+version = "IOP 2.2-20190510"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -163,7 +163,9 @@ def dollInfo(doll):
 	#else:
 	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_"+str(doll['rating'])+"star.png")
 	return embed
-	
+
+def getSearchResult(search):
+	pass		
 
 @client.event
 async def on_message(message):
@@ -207,15 +209,35 @@ async def on_message(message):
 			await client.send_message(message.channel, "No T-Doll was found with that name.")
 		return
 	elif message.content.startswith(COMMAND_PREFIX+"image "):
-		param = message.content[(len(COMMAND_PREFIX+"image")+1):].lower()
-		print(param)
+		param = message.content[(len(COMMAND_PREFIX+"image")+1):].lower().split(",")
+		costumeType = False
+		if len(param) > 1:
+			costumeType = param[-1]
+		param = param[0]
+		if param.split(" ")[-1] == "--list":
+			param = " ".join(param.split(" ")[:-1])
+			costumeType = "--list"
+		print(param + ", " +str(costumeType))
 		for doll in frontlinedex:
 			if param == doll['name'].lower():
-				if 'img' in doll:
+				if 'costumes' in doll:
+					if costumeType:
+						if costumeType == "--list":
+							await client.send_message(message.channel,"Costumes for "+doll['name']+": "+", ".join(doll['costumes'].keys()))
+							return
+						for cName in doll['costumes'].keys():
+							if cName.lower() == costumeType.lower():
+								msg = doll['name'] + ": "+cName+"\n"+PIC_DOMAIN+doll['costumes'][cName]
+								await client.send_message(message.channel, msg)
+								return
+						print(costumeType + " not found in "+doll['name'])
+						await client.send_message(message.channel,"Couldn't find that costume. Costumes: "+", ".join(doll['costumes'].keys()))
+						return
+					#else
 					msg = doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
 					await client.send_message(message.channel, msg)
 				else:
-					await client.send_message(message.channel, "Sorry, the image for this doll is missing.")
+					await client.send_message(message.channel, "Sorry, either there are no images for this doll or the data is missing.")
 				return
 		res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
 		if res:
@@ -243,13 +265,29 @@ async def on_message(message):
 		else:
 			await client.send_message(message.channel, "This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions.")
 	elif message.content.startswith(COMMAND_PREFIX+"help"):
+		param = message.content[(len(COMMAND_PREFIX+"help")+1):].lower()
+		if len(param) > 0:
+			if param == "image":
+				msg = "Search doll images and costumes. This command is in beta. Damage art coming eventually. Correct costume names coming eventually. Shorthand flags coming eventually. Changing costumes with reaction buttons coming eventually.\n"
+				msg += "You can append the '--list' flag to the end of your search to show all the costume names.\n"
+				msg += "Usage examples:\n"
+				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image M16A1,Boss`: Show M16A1's Boss costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
+				#msg += "`"+COMMAND_PREFIX+"Negev --damaged`: Show Negev's damage art for the costume.\n"
+				await client.send_message(message.channel, msg)
+			else:
+				print("Tried to get help for "+param+ " but there was none.")
+				await client.send_message(message.channel, "No help available for this command yet.")
+			return
 		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls.\n"
 		msg+="Running version "+version+"\n"
 		msg+= "Commands:\n**"+COMMAND_PREFIX+"search**: Search a T-Doll and display all information. Example: "+COMMAND_PREFIX+"search UMP45\n"
-		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it. Special parameters unimplemented. Example: "+COMMAND_PREFIX+"image UMP40\n"
+		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it, or search a doll's costume. Check this command's help for more information. Example: `"+COMMAND_PREFIX+"image UMP40`, `"+COMMAND_PREFIX+"image M16A1,Boss`\n"
 		if quotedex:
 			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
-		msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n\n"
+		msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n"
+		msg+="For advanced help, do `$gfhelp <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
 		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
 		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord"
