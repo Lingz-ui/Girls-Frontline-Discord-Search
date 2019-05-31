@@ -21,7 +21,7 @@ PIC_DOMAIN="http://103.28.71.152:999/pic/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.2-20190510"
+version = "IOP 2.21-20190530"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -164,8 +164,24 @@ def dollInfo(doll):
 	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_"+str(doll['rating'])+"star.png")
 	return embed
 
-def getSearchResult(search):
-	pass		
+def getSearchResult(param):
+	res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
+	return res[0][0], res
+
+def postdollCostume(doll,costumeType):
+	if 'costumes' in doll:
+		if costumeType:
+			if costumeType == "--list":
+				return "Costumes for "+doll['name']+": "+", ".join(doll['costumes'].keys())
+			for cName in doll['costumes'].keys():
+				if cName.lower() == costumeType.lower():
+					return doll['name'] + ": "+cName+"\n"+PIC_DOMAIN+doll['costumes'][cName]
+			print(costumeType + " not found in "+doll['name'])
+			return "Couldn't find that costume. Costumes: "+", ".join(doll['costumes'].keys())
+		#else
+		return doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
+	#else
+	return "Sorry, either there are no images for this doll or the data is missing."
 
 @client.event
 async def on_message(message):
@@ -196,14 +212,12 @@ async def on_message(message):
 				embed = dollInfo(doll)
 				await client.send_message(message.channel, embed=embed)
 				return
-		res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
-		if res:
-			print(res[0][0])
-			for doll in frontlinedex:
-				if res[0][0] == doll['name']:
-					embed = dollInfo(doll)
-					await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
-					return
+		dollName, res = getSearchResult(param)
+		for doll in frontlinedex:
+			if dollName == doll['name']:
+				embed = dollInfo(doll)
+				await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+				return
 		else:
 			print("WARN: No T-Doll was found for " + param)
 			await client.send_message(message.channel, "No T-Doll was found with that name.")
@@ -212,40 +226,25 @@ async def on_message(message):
 		param = message.content[(len(COMMAND_PREFIX+"image")+1):].lower().split(",")
 		costumeType = False
 		if len(param) > 1:
-			costumeType = param[-1]
+			costumeType = param[-1].strip()
 		param = param[0]
-		if param.split(" ")[-1] == "--list":
+		#As dumb as it is, this sets --list param because the below code searches the doll
+		if param.split(" ")[-1] == "--list" or param.split(" ")[-1] == "list" or param.split(" ")[-1] == "-l":
 			param = " ".join(param.split(" ")[:-1])
 			costumeType = "--list"
 		print(param + ", " +str(costumeType))
 		for doll in frontlinedex:
 			if param == doll['name'].lower():
-				if 'costumes' in doll:
-					if costumeType:
-						if costumeType == "--list":
-							await client.send_message(message.channel,"Costumes for "+doll['name']+": "+", ".join(doll['costumes'].keys()))
-							return
-						for cName in doll['costumes'].keys():
-							if cName.lower() == costumeType.lower():
-								msg = doll['name'] + ": "+cName+"\n"+PIC_DOMAIN+doll['costumes'][cName]
-								await client.send_message(message.channel, msg)
-								return
-						print(costumeType + " not found in "+doll['name'])
-						await client.send_message(message.channel,"Couldn't find that costume. Costumes: "+", ".join(doll['costumes'].keys()))
-						return
-					#else
-					msg = doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
-					await client.send_message(message.channel, msg)
-				else:
-					await client.send_message(message.channel, "Sorry, either there are no images for this doll or the data is missing.")
+				await client.send_message(message.channel, postdollCostume(doll,costumeType))
 				return
-		res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
-		if res:
-			#print(res)
-			await client.send_message(message.channel, "No T-Doll was found with that name. Did you mean: "+", ".join([i[0] for i in res]))
-		else:
-			print("WARN: No T-Doll was found for " + param)
-			await client.send_message(message.channel, "No T-Doll was found with that name.")
+		dollName, res = getSearchResult(param)
+		for doll in frontlinedex:
+			if dollName == doll['name']:
+				await client.send_message(message.channel, "No T-Doll was found with that name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]) + "\n"+postdollCostume(doll,costumeType))
+				return
+		print("WARN: No T-Doll was found for " + param)
+		await client.send_message(message.channel, "No T-Doll was found with that name.")
+		return
 	elif message.content.startswith(COMMAND_PREFIX+"quote "):
 		if quotedex:
 			param = message.content[(len(COMMAND_PREFIX+"quote")+1):].lower()
@@ -268,8 +267,8 @@ async def on_message(message):
 		param = message.content[(len(COMMAND_PREFIX+"help")+1):].lower()
 		if len(param) > 0:
 			if param == "image":
-				msg = "Search doll images and costumes. This command is in beta. Damage art coming eventually. Correct costume names coming eventually. Shorthand flags coming eventually. Changing costumes with reaction buttons coming eventually.\n"
-				msg += "You can append the '--list' flag to the end of your search to show all the costume names.\n"
+				msg = "Search doll images and costumes. This command is in beta. Damage art coming eventually. Correct costume names coming eventually. Changing costumes with reaction buttons coming eventually.\n"
+				msg += "You can append the '--list' or '-l' flag to the end of your search to show all the costume names.\n"
 				msg += "Usage examples:\n"
 				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
 				msg += "`"+COMMAND_PREFIX+"image M16A1,Boss`: Show M16A1's Boss costume.\n"
