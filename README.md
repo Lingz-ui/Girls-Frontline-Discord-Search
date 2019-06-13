@@ -12,7 +12,7 @@ Features:
 - Fuzzy search that will return the closest result and suggest other results.
 
 Coming eventually:
-- $gfimage costume support
+- $gfimage costume support (I'm halfway there)
 - $gffilter for finding the best doll in a type.
 - $gfsearch flags for only showing the relevant part of an embed.
 
@@ -20,6 +20,7 @@ Coming eventually:
 Assuming that that the default prefix $gf is still being used:
 - $gfsearch: Search a doll
 - $gfimage: Display only the image for that doll.
+- $gftimer: Check which dolls correspond to which production timer.
 - $gfhelp: List commands, version, how to contact me, etc.
 - $gfquote: Show quotes from the dolls if you have CharacterVoice.json from the game files
 - $gfstatus: Number of servers this bot is in.

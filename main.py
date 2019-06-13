@@ -21,7 +21,7 @@ PIC_DOMAIN="http://103.28.71.152:999/pic/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.21-20190530"
+version = "IOP 2.25-20190613"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -245,6 +245,21 @@ async def on_message(message):
 		print("WARN: No T-Doll was found for " + param)
 		await client.send_message(message.channel, "No T-Doll was found with that name.")
 		return
+	elif message.content.startswith(COMMAND_PREFIX+"timer "):
+		param = message.content[(len(COMMAND_PREFIX+"timer")+1):]
+		print("arg: "+param)
+		res = []
+		for doll in frontlinedex:
+			if 'production' in doll and 'timer' in doll['production']:
+				if param == doll['production']['timer']:
+					res.append(doll)
+		if len(res) == 0:
+			await client.send_message(message.channel, "No dolls were found matching that production timer.")
+		elif len(res) == 1:
+			await client.send_message(message.channel, content="Found an exact match for the timer.", embed=dollInfo(res[0]))
+		else:
+			await client.send_message(message.channel, "T-Dolls that match this production timer: "+", ".join(i['name'] for i in res))
+		return
 	elif message.content.startswith(COMMAND_PREFIX+"quote "):
 		if quotedex:
 			param = message.content[(len(COMMAND_PREFIX+"quote")+1):].lower()
@@ -285,6 +300,7 @@ async def on_message(message):
 		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it, or search a doll's costume. Check this command's help for more information. Example: `"+COMMAND_PREFIX+"image UMP40`, `"+COMMAND_PREFIX+"image M16A1,Boss`\n"
 		if quotedex:
 			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
+		msg+="**"+COMMAND_PREFIX+"timer:** List T-Dolls that match the production timer. Ex. `"+COMMAND_PREFIX+"timer 8:10:00`\n"
 		msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n"
 		msg+="For advanced help, do `$gfhelp <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
 		msg+="Invite: Check github page\n"
