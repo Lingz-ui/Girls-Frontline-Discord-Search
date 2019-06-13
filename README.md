@@ -31,12 +31,12 @@ Python3 and pip. Game files need to be extracted if you want images and quotes.
 To extract files: https://github.com/36base/girlsfrontline-resources-extract
 
 ## Setup
-**This bot was written for a very old version of Discord.py, it probably will not work out of the box**
+**This bot was written for a very old version of Discord.py, if you have a newer version it will need to be replaced or you need multiple python environments.**
 1. `git clone https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search.git`
-2. edit main.py, insert your discord bot token in DISCORD_TOKEN
-3. Change COMMAND_PREFIX to whatever you want, the default is $gf
-4. If you have your own server containing the dumped girls frontline images, change PIC_DOMAIN, otherwise you can keep using mine.
-5. `pip3 install discord` (Windows users, the command might be 'pip' instead of pip3)
+2. Set the GFBOT_TOKEN environment variable in your terminal with the token for the bot
+3. Open main.py, change COMMAND_PREFIX to whatever you want, the default is $gf
+4. If you have your own http server containing the dumped girls frontline images change PIC_DOMAIN, otherwise you can keep using mine.
+5. `pip3 install -r requirements.txt` (Windows users, the command might be 'pip' instead of pip3)
 6. `chmod +x run_forever.sh` (Windows users, you're on your own)
 7. `./run_forever.sh` if linux, otherwise `python3 main.py`.
 

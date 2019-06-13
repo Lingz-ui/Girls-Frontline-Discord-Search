@@ -1,0 +1,2 @@
+fuzzywuzzy[speedup]
+discord.py==0.16.7
