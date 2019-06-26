@@ -1,0 +1,800 @@
+[
+    {
+        "url": "/wiki/BM_3-12X40",
+        "name": "BM 3-12X40",
+        "rating": 2,
+        "production": {
+            "timer": "0:05:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/AC1_Suppressor",
+        "name": "AC1 Suppressor",
+        "rating": 2,
+        "production": {
+            "timer": "0:07:00",
+            "normal": [
+                150,
+                50,
+                50,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/EOT_506",
+        "name": "EOT 506",
+        "rating": 2,
+        "production": {
+            "timer": "0:08:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/PEQ-2",
+        "name": "PEQ-2",
+        "rating": 2,
+        "production": {
+            "timer": "0:09:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        }
+    },
+    {
+        "url": "/wiki/AMP_COMPM2",
+        "name": "AMP COMPM2",
+        "rating": 2,
+        "production": {
+            "timer": "0:10:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_X1_Exoskeleton",
+        "name": "IOP X1 Exoskeleton",
+        "rating": 2,
+        "production": {
+            "timer": "0:12:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_T1_Exoskeleton",
+        "name": "IOP T1 Exoskeleton",
+        "rating": 2,
+        "production": {
+            "timer": "0:12:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo_(2-Star)",
+        "name": "ILM Hollow Point Ammo (2-Star)",
+        "rating": 2,
+        "production": {
+            "timer": "0:13:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/BK_Slug",
+        "name": "BK Slug",
+        "rating": 2,
+        "production": {
+            "timer": "0:14:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%831_Buckshot",
+        "name": "＃1 Buckshot",
+        "rating": 2,
+        "production": {
+            "timer": "0:14:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/M61_Armor-Piercing_Ammo",
+        "name": "M61 Armor-Piercing Ammo",
+        "rating": 2,
+        "production": {
+            "timer": "0:15:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Ragged_Cape",
+        "name": "Ragged Cape",
+        "rating": 2,
+        "production": {
+            "timer": "0:16:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        }
+    },
+    {
+        "url": "/wiki/FMJ_High-Velocity_Ammo",
+        "name": "FMJ High-Velocity Ammo",
+        "rating": 2,
+        "production": {
+            "timer": "0:18:00",
+            "normal": [
+                10,
+                230,
+                120,
+                80
+            ]
+        }
+    },
+    {
+        "url": "/wiki/LRA_2-12x50",
+        "name": "LRA 2-12x50",
+        "rating": 3,
+        "production": {
+            "timer": "0:20:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/AC2_Suppressor",
+        "name": "AC2 Suppressor",
+        "rating": 3,
+        "production": {
+            "timer": "0:22:00",
+            "normal": [
+                150,
+                50,
+                50,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/EOT_512",
+        "name": "EOT 512",
+        "rating": 3,
+        "production": {
+            "timer": "0:23:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/PEQ-5",
+        "name": "PEQ-5",
+        "rating": 3,
+        "production": {
+            "timer": "0:24:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        }
+    },
+    {
+        "url": "/wiki/AMP_COMPM4",
+        "name": "AMP COMPM4",
+        "rating": 3,
+        "production": {
+            "timer": "0:25:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Type_1_Armor_Plate",
+        "name": "Type 1 Armor Plate",
+        "rating": 3,
+        "production": {
+            "timer": "0:26:00",
+            "normal": [
+                50,
+                50,
+                100,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_X2_Exoskeleton",
+        "name": "IOP X2 Exoskeleton",
+        "rating": 3,
+        "production": {
+            "timer": "0:27:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_T2_Exoskeleton",
+        "name": "IOP T2 Exoskeleton",
+        "rating": 3,
+        "production": {
+            "timer": "0:27:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo_(3-Star)",
+        "name": "ILM Hollow Point Ammo (3-Star)",
+        "rating": 3,
+        "production": {
+            "timer": "0:28:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/FST_Slug",
+        "name": "FST Slug",
+        "rating": 3,
+        "production": {
+            "timer": "0:29:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%830_Buckshot",
+        "name": "＃0 Buckshot",
+        "rating": 3,
+        "production": {
+            "timer": "0:29:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/M993_Armor-Piercing_Ammo",
+        "name": "M993 Armor-Piercing Ammo",
+        "rating": 3,
+        "production": {
+            "timer": "0:30:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Camouflage_Cape",
+        "name": "Camouflage Cape",
+        "rating": 3,
+        "production": {
+            "timer": "0:31:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        }
+    },
+    {
+        "url": "/wiki/JSP_High-Velocity_Ammo",
+        "name": "JSP High-Velocity Ammo",
+        "rating": 3,
+        "production": {
+            "timer": "0:33:00",
+            "normal": [
+                10,
+                230,
+                120,
+                80
+            ]
+        }
+    },
+    {
+        "url": "/wiki/PSO-1",
+        "name": "PSO-1",
+        "rating": 4,
+        "production": {
+            "timer": "0:35:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/AC3_Suppressor",
+        "name": "AC3 Suppressor",
+        "rating": 4,
+        "production": {
+            "timer": "0:37:00",
+            "normal": [
+                150,
+                50,
+                50,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/EOT_516",
+        "name": "EOT 516",
+        "rating": 4,
+        "production": {
+            "timer": "0:38:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/PEQ-15",
+        "name": "PEQ-15",
+        "rating": 4,
+        "production": {
+            "timer": "0:39:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        }
+    },
+    {
+        "url": "/wiki/COG_M150",
+        "name": "COG M150",
+        "rating": 4,
+        "production": {
+            "timer": "0:40:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Type_2_Armor_Plate",
+        "name": "Type 2 Armor Plate",
+        "rating": 4,
+        "production": {
+            "timer": "0:41:00",
+            "normal": [
+                50,
+                50,
+                100,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_T3_Exoskeleton",
+        "name": "IOP T3 Exoskeleton",
+        "rating": 4,
+        "production": {
+            "timer": "0:42:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_X3_Exoskeleton",
+        "name": "IOP X3 Exoskeleton",
+        "rating": 4,
+        "production": {
+            "timer": "0:42:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo_(4-Star)",
+        "name": "ILM Hollow Point Ammo (4-Star)",
+        "rating": 4,
+        "production": {
+            "timer": "0:43:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/WAD_Slug",
+        "name": "WAD Slug",
+        "rating": 4,
+        "production": {
+            "timer": "0:44:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%8300_Buckshot",
+        "name": "＃00 Buckshot",
+        "rating": 4,
+        "production": {
+            "timer": "0:44:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/VFL_6-24x56",
+        "name": "VFL 6-24x56",
+        "rating": 5,
+        "production": {
+            "timer": "0:45:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Mk169_Armor-Piercing_Ammo",
+        "name": "Mk169 Armor-Piercing Ammo",
+        "rating": 4,
+        "production": {
+            "timer": "0:45:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Urban_Camouflage_Cape",
+        "name": "Urban Camouflage Cape",
+        "rating": 4,
+        "production": {
+            "timer": "0:46:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        }
+    },
+    {
+        "url": "/wiki/AC4_Suppressor",
+        "name": "AC4 Suppressor",
+        "rating": 5,
+        "production": {
+            "timer": "0:47:00",
+            "normal": [
+                150,
+                50,
+                50,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_High-Capacity_Ammo_Box",
+        "name": "IOP High-Capacity Ammo Box",
+        "rating": 4,
+        "production": {
+            "timer": "0:47:00",
+            "normal": [
+                30,
+                30,
+                30,
+                200
+            ]
+        }
+    },
+    {
+        "url": "/wiki/EOT_518",
+        "name": "EOT 518",
+        "rating": 5,
+        "production": {
+            "timer": "0:48:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/JHP_High-Velocity_Ammo",
+        "name": "JHP High-Velocity Ammo",
+        "rating": 4,
+        "production": {
+            "timer": "0:48:00",
+            "normal": [
+                10,
+                230,
+                120,
+                80
+            ]
+        }
+    },
+    {
+        "url": "/wiki/PEQ-16A",
+        "name": "PEQ-16A",
+        "rating": 5,
+        "production": {
+            "timer": "0:49:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        }
+    },
+    {
+        "url": "/wiki/ITI_Mars",
+        "name": "ITI Mars",
+        "rating": 5,
+        "production": {
+            "timer": "0:50:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Type_3_Armor_Plate",
+        "name": "Type 3 Armor Plate",
+        "rating": 5,
+        "production": {
+            "timer": "0:51:00",
+            "normal": [
+                50,
+                50,
+                100,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_X4_Exoskeleton",
+        "name": "IOP X4 Exoskeleton",
+        "rating": 5,
+        "production": {
+            "timer": "0:52:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_T4_Exoskeleton",
+        "name": "IOP T4 Exoskeleton",
+        "rating": 5,
+        "production": {
+            "timer": "0:52:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo",
+        "name": "ILM Hollow Point Ammo",
+        "rating": 5,
+        "production": {
+            "timer": "0:53:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        }
+    },
+    {
+        "url": "/wiki/SABOT_Slug",
+        "name": "SABOT Slug",
+        "rating": 5,
+        "production": {
+            "timer": "0:54:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%83000_Buckshot",
+        "name": "＃000 Buckshot",
+        "rating": 5,
+        "production": {
+            "timer": "0:54:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Mk211_High-Explosive_Armor-Piercing_Ammo",
+        "name": "Mk211 High-Explosive Armor-Piercing Ammo",
+        "rating": 5,
+        "production": {
+            "timer": "0:55:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Thermoptic_Camouflage_Cape",
+        "name": "Thermoptic Camouflage Cape",
+        "rating": 5,
+        "production": {
+            "timer": "0:56:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        }
+    },
+    {
+        "url": "/wiki/IOP_Maximum_Ammo_Box",
+        "name": "IOP Maximum Ammo Box",
+        "rating": 5,
+        "production": {
+            "timer": "0:57:00",
+            "normal": [
+                30,
+                30,
+                30,
+                200
+            ]
+        }
+    },
+    {
+        "url": "/wiki/APCR_High-Velocity_Ammo",
+        "name": "APCR High-Velocity Ammo",
+        "rating": 5,
+        "production": {
+            "timer": "0:58:00",
+            "normal": [
+                10,
+                230,
+                120,
+                80
+            ]
+        }
+    }
+]

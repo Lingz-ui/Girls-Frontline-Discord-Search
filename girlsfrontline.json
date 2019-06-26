@@ -329,9 +329,9 @@
             "armor": 0
         },
         "ability": {
-            "name": "Ketosis",
+            "name": "Ketonemia",
             "icon": "comboBuffSelf",
-            "text": "Increase ammo by ($ammo) and self rate of fire by ($rate_of_fire)%. Each attack's knockback chance is increased to ($knockback)%. Duration ($duration) seconds.",
+            "text": "Increase ammo by ($ammo) and self rate of fire by ($rate_of_fire)% while decreasing her own damage by ($debuff_value)%. Each attack's knockback chance is increased to ($knockback)%. Duration ($duration) seconds.",
             "initial": "8",
             "cooldown": [
                 "20",
@@ -380,6 +380,18 @@
                 "9",
                 "10",
                 "10"
+            ],
+            "debuff_value": [
+                "50",
+                "44",
+                "39",
+                "33",
+                "28",
+                "22",
+                "17",
+                "11",
+                "6",
+                "0"
             ],
             "duration": [
                 "6",
@@ -441,7 +453,7 @@
         },
         "ability": {
             "name": "Damage Focus N-MG",
-            "icon": "nightpowBuff",
+            "icon": "nightpowBuffSelf",
             "text": "Increases AAT-52's damage by ($damage_value)% for ($time_value) seconds, ($damage_value2)% during day.",
             "initial": "8",
             "cooldown": [
@@ -974,7 +986,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Doll trigger",
+            "name": "Doll Trigger",
             "icon": "an94_shot",
             "text": "Passive: Deals extra hit when switching targets. Active:Deals extra hit for every attack during skill activate, lasts ($time_value) seconds.",
             "initial": "6",
@@ -1092,8 +1104,8 @@
         "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛⬛",
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 16%\nIncreases accuracy by 75%",
         "production": {
-            "stage": "Obtained as a possible drop throughout Arctic Warfare (CN)",
-            "reward": "Acquired as login reward during December 2016. Acquired as login reward during December 2018(EN)."
+            "stage": "Obtained as a possible drop throughout Arctic Warfare (CN) or Deep Dive (EN)",
+            "reward": "Acquired as login reward during December 2016 (CN), December 2018 (EN), May 2019 (JP)."
         },
         "img": "pic_AR70.png",
         "internalName": "AR70",
@@ -1372,6 +1384,325 @@
         "img": "pic_ASVAL.png",
         "costumes": {
             "default": "pic_ASVAL.png"
+        }
+    },
+    {
+        "url": "/wiki/AS_Val#Mod1",
+        "num": 60,
+        "name": "AS Val MOD 1",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 66,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 15,
+            "eva": 7,
+            "acc": 6,
+            "rof": 52,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 134,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 42,
+            "eva": 50,
+            "acc": 50,
+            "rof": 75,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Firepower Focus N",
+            "icon": "nightpowBuffSelf",
+            "text": "Increases AS Val's damage by ($damage_value)% for ($time_value) seconds, ($damage_value2)% during day.",
+            "initial": "5",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "110.0",
+                "118.0",
+                "126.0",
+                "133.0",
+                "141.0",
+                "149.0",
+                "157.0",
+                "164.0",
+                "172.0",
+                "180.0"
+            ],
+            "damage_value2": [
+                "35.0",
+                "38.0",
+                "41.0",
+                "43.0",
+                "46.0",
+                "49.0",
+                "52.0",
+                "54.0",
+                "57.0",
+                "60.0"
+            ],
+            "time_value": [
+                "3.5",
+                "3.8",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.9",
+                "5.2",
+                "5.4",
+                "5.7",
+                "6.0"
+            ]
+        },
+        "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases damage by 25%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on AS Val.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
+        },
+        "internalName": "ASVAL",
+        "img": "pic_ASVAL.png"
+    },
+    {
+        "url": "/wiki/AS_Val#Mod2",
+        "num": 60,
+        "name": "AS Val MOD 2",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 66,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 15,
+            "eva": 7,
+            "acc": 6,
+            "rof": 52,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 135,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 42,
+            "eva": 50,
+            "acc": 50,
+            "rof": 76,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Firepower Focus N",
+            "icon": "nightpowBuffSelf",
+            "text": "Increases AS Val's damage by ($damage_value)% for ($time_value) seconds, ($damage_value2)% during day.",
+            "initial": "5",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "110.0",
+                "118.0",
+                "126.0",
+                "133.0",
+                "141.0",
+                "149.0",
+                "157.0",
+                "164.0",
+                "172.0",
+                "180.0"
+            ],
+            "damage_value2": [
+                "35.0",
+                "38.0",
+                "41.0",
+                "43.0",
+                "46.0",
+                "49.0",
+                "52.0",
+                "54.0",
+                "57.0",
+                "60.0"
+            ],
+            "time_value": [
+                "3.5",
+                "3.8",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.9",
+                "5.2",
+                "5.4",
+                "5.7",
+                "6.0"
+            ]
+        },
+        "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases damage by 25%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on AS Val MOD 1.\nRequirements: Lv.110, 100 Affection."
+        },
+        "internalName": "ASVAL",
+        "img": "pic_ASVAL.png",
+        "ability2": {
+            "name": "Belief",
+            "icon": "AS_VALmod",
+            "text": "Upon receiving any damage buff (Including fairy skills and talents), AS Val will have perfect accuracy for ($duration) seconds.",
+            "duration": [
+                "1.5",
+                "1.7",
+                "1.8",
+                "2.0",
+                "2.2",
+                "2.3",
+                "2.5",
+                "2.7",
+                "2.8",
+                "3.0"
+            ]
+        }
+    },
+    {
+        "url": "/wiki/AS_Val#Mod3",
+        "num": 60,
+        "name": "AS Val MOD 3",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 66,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 15,
+            "eva": 7,
+            "acc": 6,
+            "rof": 52,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 136,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 43,
+            "eva": 51,
+            "acc": 51,
+            "rof": 76,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Firepower Focus N",
+            "icon": "nightpowBuffSelf",
+            "text": "Increases AS Val's damage by ($damage_value)% for ($time_value) seconds, ($damage_value2)% during day.",
+            "initial": "5",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "110.0",
+                "118.0",
+                "126.0",
+                "133.0",
+                "141.0",
+                "149.0",
+                "157.0",
+                "164.0",
+                "172.0",
+                "180.0"
+            ],
+            "damage_value2": [
+                "35.0",
+                "38.0",
+                "41.0",
+                "43.0",
+                "46.0",
+                "49.0",
+                "52.0",
+                "54.0",
+                "57.0",
+                "60.0"
+            ],
+            "time_value": [
+                "3.5",
+                "3.8",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.9",
+                "5.2",
+                "5.4",
+                "5.7",
+                "6.0"
+            ]
+        },
+        "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 10%\nIncreases damage by 25%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on AS Val MOD 2.\nRequirements: Lv.115, 100 Affection."
+        },
+        "internalName": "ASVALMod",
+        "img": "pic_ASVALMod.png",
+        "ability2": {
+            "name": "Belief",
+            "icon": "AS_VALmod",
+            "text": "Upon receiving any damage buff (Including fairy skills and talents), AS Val will have perfect accuracy for ($duration) seconds.",
+            "duration": [
+                "1.5",
+                "1.7",
+                "1.8",
+                "2.0",
+                "2.2",
+                "2.3",
+                "2.5",
+                "2.7",
+                "2.8",
+                "3.0"
+            ]
+        },
+        "costumes": {
+            "default": "pic_ASVALMod.png"
         }
     },
     {
@@ -2068,7 +2399,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -2675,7 +3006,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Whimsical Chain",
+            "name": "Fickle Temper",
             "icon": "cbjms",
             "text": "Tap skills to switch between different ammunition Each ammo provides a different resident status effect: Subsonic rounds (default): Increase evasion by ($eva_value)%. Spoon point tip : Increase Damage by ($dmg_value)%. Standard rounds : Increases Accuracy by ($acc_value)%.",
             "initial": "1",
@@ -2939,8 +3270,8 @@
         },
         "ability": {
             "name": "Daybreak Exuberance",
-            "icon": "nightpowBuff",
-            "text": "During Daytime increase damage ($damage_value)% and crit rate ($crit_value)%. During Nightime increase precision ($hit_value)% and fire rate ($rof_value)% lasts ($time_value) seconds .",
+            "icon": "nightpowBuffSelf",
+            "text": "During Daytime increase damage ($damage_value)% and crit rate ($crit_value)%. During Nightime increase accuracy ($hit_value)% and fire rate ($rof_value)% lasts ($time_value) seconds.",
             "initial": "4",
             "cooldown": [
                 "20",
@@ -3145,7 +3476,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Observer Strike",
+            "name": "Observer's Strike",
             "icon": "Coldweapon",
             "text": "Throws a tomahawk, dealing ($damage_value)x of CZ75's damage at the targeted enemy.",
             "initial": "6",
@@ -3220,7 +3551,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "War horn of Mars",
+            "name": "Horn of Mars",
             "icon": "Carcano1891",
             "text": "Active: Upon activation, increase own crit rate and rate of fire by ($active_eff)% for every RF unit present in the echelon, last for ($active_dur) seconds. Passive: 40% chance to improve crit rate and rate of fire for T-Dolls standing on the same column by ($passive_eff)%, last for 2 seconds, effect stacks up to 3 times.",
             "initial": "6",
@@ -3330,7 +3661,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Mask of Mors",
+            "name": "Mask of Hermes",
             "icon": "Carcano1938",
             "text": "Active: Instantly gains ($marks) marks. Passive: Every shot Carcano M91/38 does has a ($chance)% chance to increase her marks by 2, upon reaching 18 marks, causes Carcano M91/38's next shot to deal ($boss)% damage to Elite/Boss units, if target is a non-boss unit, deal ($mob)% damage instead. Resets marks to 0.",
             "initial": "6",
@@ -3415,7 +3746,7 @@
     },
     {
         "url": "/wiki/Chauchat",
-        "num": -1,
+        "num": 264,
         "name": "Chauchat",
         "type": "MG",
         "rating": 4,
@@ -3424,30 +3755,84 @@
             "crit_rate": 5,
             "crit_dmg": 50,
             "pen": 15,
-            "clipsize": "?"
+            "clipsize": "9"
         },
         "baseStats": {
-            "hp": 10,
+            "hp": 87,
             "ammo": 40,
             "ration": 30,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 36,
+            "eva": 4,
+            "acc": 4,
+            "rof": 54,
             "armor": 0
         },
         "maxStats": {
-            "hp": 100,
+            "hp": 174,
             "ammo": 140,
             "ration": 90,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 102,
+            "eva": 30,
+            "acc": 34,
+            "rof": 81,
             "armor": 0
         },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects shotguns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Lily Emblem",
+            "icon": "ChauchatM1915",
+            "text": "Passive: Start combat with 1 stack. Gain 1 stack every ($pass_time) seconds. Maximum of 4 stacks. Active: Consume 1 stack and reduce the next reload time by ($reload_speed1)%. Stacks up to 2 times (($reload_speed2)% reload time reduction).",
+            "initial": "6",
+            "cooldown": [
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2",
+                "2"
+            ],
+            "pass_time": [
+                "6",
+                "5.8",
+                "5.6",
+                "5.3",
+                "5.1",
+                "4.9",
+                "4.7",
+                "4.4",
+                "4.2",
+                "4.0"
+            ],
+            "reload_speed1": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "reload_speed2": [
+                "20",
+                "23",
+                "25",
+                "27",
+                "28",
+                "34",
+                "36",
+                "39",
+                "41",
+                "44"
+            ]
+        },
+        "tile_bonus": "🔷⬛🔶\n⬛⬛🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects shotguns\nIncreases rate of fire by 12%\nIncreases armour by 12%",
         "production": {
             "timer": "6:25:00"
         }
@@ -3993,7 +4378,7 @@
         },
         "ability": {
             "name": "Concealment Focus",
-            "icon": "dodgeBuff",
+            "icon": "dodgeBuffSelf",
             "text": "Increases Cx4 Storm's evasion by ($eva)% and accuracy by ($acc)% for ($dur) seconds.",
             "initial": "6",
             "cooldown": [
@@ -4194,7 +4579,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Rending Shot",
+            "name": "Armor Breaking Shot",
             "icon": "AimAttackSpecificTarge",
             "text": "After taking aim for 2 seconds, shoot the target with the highest HP for ($damage_value)x DSR-50's damage, if the target is armored, ($damage_value2)x DSR-50's damage.",
             "initial": "15",
@@ -4250,7 +4635,7 @@
     },
     {
         "url": "/wiki/EM-2",
-        "num": -1,
+        "num": 262,
         "name": "EM-2",
         "type": "AR",
         "rating": 4,
@@ -4261,27 +4646,57 @@
             "pen": 15
         },
         "baseStats": {
-            "hp": 10,
+            "hp": 60,
             "ammo": 20,
             "ration": 20,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 21,
+            "eva": 6,
+            "acc": 6,
+            "rof": 42,
             "armor": 0
         },
         "maxStats": {
-            "hp": 100,
+            "hp": 119,
             "ammo": 60,
             "ration": 60,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 57,
+            "eva": 48,
+            "acc": 48,
+            "rof": 61,
             "armor": 0
         },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects submachine guns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Crispy Cookie Shot",
+            "icon": "EM2",
+            "text": "Quickly fires 3 shots, dealing ($dam_value)x damage per shot to random enemies. This skill is capable of critical damage, bypasses accuracy checks, but doesn't ignore armor.",
+            "initial": "6.0",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "dam_value": [
+                "2.0",
+                "2.18",
+                "2.36",
+                "2.53",
+                "2.71",
+                "2.89",
+                "3.07",
+                "3.24",
+                "3.42",
+                "3.5"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases damage by 20%\nIncreases accuracy by 55%",
         "production": {
             "timer": "3:35:00"
         }
@@ -4586,7 +5001,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Grenade salvo",
+            "name": "Grenade Salvo",
             "icon": "RifleGrenade",
             "text": "Launch 3 grenades continuously that deals ($damage_value) times FALs damage to enemies within a radius of 1.5 units.",
             "initial": "6.0",
@@ -5417,7 +5832,7 @@
         },
         "ability": {
             "name": "Cover Suppression",
-            "icon": "targetdodgeDebuff",
+            "icon": "dodgeDebuff",
             "text": "Decreases the enemy squads evasion by ($evasion_value)% for ($time_value) seconds.",
             "cooldown": [
                 "15",
@@ -6759,7 +7174,7 @@
         "ability": {
             "name": "Force Shield",
             "icon": "Invincible",
-            "text": "Grants G36c a shield with a Defense value of 9999 for ($time_value) seconds.",
+            "text": "Grants G36C a shield with a Defense value of 9999 (Max value of 9999), reducing incoming damage by a percentage (100% if at max Defense value) for ($time_value) seconds.",
             "initial": "8",
             "cooldown": [
                 "20.0",
@@ -7078,7 +7493,7 @@
         "tile_bonus": "🔶🔶⬛\n🔶🔷⬛\n🔶🔶⬛",
         "bonus_desc": "Affects all guns\nIncreases damage by 12%(x1) / 15%(x2) / 18%(x3) / 21%(x4) / 24%(x5)\nIncreases accuracy by 20%(x1) / 25%(x2) / 30%(x3) / 35%(x4) / 40%(x5)",
         "production": {
-            "reward": "Achievement award for purchasing 5 editions of the Girls' Frontline official 4-koma in the RF Raifu's Cafe"
+            "reward": "Achievement award for purchasing 5 editions of the Girls' Frontline official 4-koma at the Cafe"
         },
         "img": "pic_GSH18.png",
         "internalName": "GSH18",
@@ -7165,7 +7580,7 @@
         "production": {
             "timer": "2:40:00",
             "minResource": 800,
-            "stage": "Can be obtained from many battle stages from Chapter 1-3 onward.",
+            "stage": "Can be obtained from many battle stages from Chapter 1-3E onward.",
             "reward": "Achievement Reward for obtaining a T-doll drop for the first time."
         }
     },
@@ -7635,6 +8050,86 @@
         }
     },
     {
+        "url": "/wiki/HK33",
+        "num": 265,
+        "name": "HK33",
+        "type": "AR",
+        "rating": 3,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 53,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 18,
+            "eva": 6,
+            "acc": 7,
+            "rof": 50,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 105,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 49,
+            "eva": 46,
+            "acc": 51,
+            "rof": 73,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Assault Focus T",
+            "icon": "rateBuffSelf",
+            "text": "Increases HK33's rate of fire by ($rof_value)% for ($time_value) seconds.",
+            "initial": "4",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "rof_value": [
+                "35.0",
+                "38.0",
+                "41.0",
+                "43.0",
+                "46.0",
+                "49.0",
+                "52.0",
+                "54.0",
+                "57.0",
+                "60.0"
+            ],
+            "time_value": [
+                "6.0",
+                "6.4",
+                "6.8",
+                "7.2",
+                "7.6",
+                "8.0",
+                "8.4",
+                "8.8",
+                "9.4",
+                "10.0"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases damage by 10%\nIncreases evasion by 10%",
+        "production": {
+            "reward": "Login reward for May 2019 (CN)."
+        }
+    },
+    {
         "url": "/wiki/HK416",
         "num": 65,
         "name": "HK416",
@@ -7744,7 +8239,7 @@
         },
         "ability": {
             "name": "Raid Command",
-            "icon": "powBuffSelf",
+            "icon": "powBuff",
             "text": "Increases all allies' firepower by ($firepower_value)% and accuracy by ($accuracy_value)% for ($time_value) seconds.",
             "initial": "6",
             "cooldown": [
@@ -7935,7 +8430,7 @@
         },
         "ability": {
             "name": "Firepower Focus N",
-            "icon": "nightpowBuff",
+            "icon": "nightpowBuffSelf",
             "text": "Increases Hanyang Type 88's damage by ($damage_value)% for ($time_value) seconds, ($damage_value2)% during day.",
             "initial": "8",
             "cooldown": [
@@ -9335,7 +9830,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Battlefield Fortune Teller",
+            "name": "Museum of War Philosophy",
             "icon": "variablebuff",
             "text": "Provides different bonus dependent on the type of T-dolls currently standing on her buff tiles upon activation. HG/SMG T-doll will receive a ($eva)% increase to evasion, AR/RF T-doll will receive a ($dmg)% bonus to damage, SG/MG T-doll will receive a ($acc)% bonus to accuracy, last for ($dur) seconds",
             "initial": "6",
@@ -9483,8 +9978,7 @@
                 "0.8",
                 "0.9",
                 "0.9",
-                "1.0",
-                ""
+                "1.0"
             ],
             "time_value": [
                 "2.0",
@@ -11351,7 +11845,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -11426,8 +11920,8 @@
             "armor": 0
         },
         "ability": {
-            "icon": "Shotgun",
-            "name": "Terminating shot",
+            "icon": "RifleGrenade",
+            "name": "Terminating Shot",
             "text": "M1887 inflicts ($damage_value) damage to a single target and drive it back ($distance_value) units.",
             "initial": "15",
             "cooldown": [
@@ -11868,7 +12362,7 @@
         "internalName": "M1911",
         "ability2": {
             "name": "Desperado",
-            "icon": "Smoke",
+            "icon": "AimAttackSpecificTarge",
             "text": "Everytime the smoke bomb is tossed, the next seven attacks will target in sequence, from the furthest to the closest target. Every attack will cause ($damage_value)% damage.",
             "damage_value": [
                 "150",
@@ -11979,7 +12473,7 @@
         "internalName": "M1911Mod",
         "ability2": {
             "name": "Desperado",
-            "icon": "Smoke",
+            "icon": "AimAttackSpecificTarge",
             "text": "Everytime the smoke bomb is tossed, the next seven attacks will target in sequence, from the furthest to the closest target. Every attack will cause ($damage_value)% damage.",
             "damage_value": [
                 "150",
@@ -12631,7 +13125,7 @@
         },
         "ability": {
             "name": "Killing Intent of the Silent",
-            "text": "Active: Enter sniper mode for 9 seconds. After every ($time_value) seconds of aiming, deal ($dam_value)x damage (This shot can CRIT and is also affected by Armour) to the furthest target and decrease their damage by ($debuff_value)% for 3 seconds. Passive: Normal attacks against armorless enemies deal 1.05x damage.",
+            "text": "Passive: Regular attacks against armourless enemies deal 1.05x damage. Active: Enter sniper mode for 9 seconds. After every ($time_value) seconds of aiming, deal ($dam_value)x damage to the furthest target and decrease their damage by ($debuff_value)% for 3 seconds. This skill is capable of critical damage, bypasses accuracy checks, but doesn't ignore armour.",
             "icon": "M200Shot",
             "initial": "6",
             "cooldown": [
@@ -12797,7 +13291,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Lock and Load N-MG",
+            "name": "Lock and Load N",
             "icon": "comboBuffSelf",
             "text": "Increases M249 SAW's damage by ($damage_value)% for ($time_value) seconds, ($damage_value2)% during day, plus ($round_quantity) round extended.",
             "initial": "8",
@@ -12908,7 +13402,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Barrage End",
+            "name": "Terminating Barrage",
             "icon": "comboBuffSelf",
             "text": "After every 3 hits, M2HB's 4th hit will inflict ($damage_value)x damage.",
             "damage_value": [
@@ -13741,7 +14235,7 @@
             "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 10
+            "pen": 15
         },
         "baseStats": {
             "hp": 55,
@@ -13867,7 +14361,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Ironside Concentration",
+            "name": "Protection Focus",
             "icon": "armorBuffSelf",
             "text": "Increases M500's armour by ($armour_value)% for ($time_value) seconds.",
             "initial": "10",
@@ -13959,7 +14453,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Ironside Concentration",
+            "name": "Protection Focus",
             "icon": "armorBuffSelf",
             "text": "Increases M590's armour by ($armour_value)% for ($time_value) seconds.",
             "initial": "10",
@@ -14328,7 +14822,7 @@
         "tile_bonus": "⬛⬛⬛\n🔶⬛⬛\n🔶⬛🔷",
         "bonus_desc": "Affects Machine Guns\nIncreases damage by 18%\nIncreases accuracy by 12%",
         "production": {
-            "stage": "Obtained as a possible drop throughout Major Event Continuum Turbulence, drop location as following: E1-10, E2-6, E3-14"
+            "stage": "Obtained as a possible drop throughout Major Event Continuum Turbulence, drop location as following: E1-10, E2-6, E3-14 and during the EX Map \"Operation Hurricane\""
         },
         "internalName": "M870P",
         "img": "pic_M870P.png",
@@ -14369,7 +14863,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -14746,7 +15240,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Danger Scout",
+            "name": "Danger Sniffer",
             "icon": "powbuffshield",
             "text": "If an ally is directly front of her in battle, grants that ally with a ($shield_value)HP shield and ($evade_value)% increased evasion. If no ally is in front of her, increase her damage by ($fp_value)% and rate of fire by ($rof_value)% for ($time_value) seconds.",
             "initial": "4",
@@ -15042,7 +15536,7 @@
     },
     {
         "url": "/wiki/MG36",
-        "num": -1,
+        "num": 263,
         "name": "MG36",
         "type": "MG",
         "rating": 5,
@@ -15051,30 +15545,72 @@
             "crit_rate": 5,
             "crit_dmg": 50,
             "pen": 15,
-            "clipsize": "?"
+            "clipsize": "10"
         },
         "baseStats": {
-            "hp": 10,
+            "hp": 91,
             "ammo": 40,
             "ration": 30,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 28,
+            "eva": 4,
+            "acc": 4,
+            "rof": 83,
             "armor": 0
         },
         "maxStats": {
-            "hp": 100,
+            "hp": 182,
             "ammo": 140,
             "ration": 90,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 85,
+            "eva": 36,
+            "acc": 34,
+            "rof": 129,
             "armor": 0
         },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects shotguns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Shadow Veil",
+            "icon": "MG36",
+            "text": "Passive: When reloading, reduce damage taken of units on her tiles by 20%. Active: Increase damage by ($dam_value)% for ($duration) seconds. Grants self-buffs depending on the gun type of allies on her tiles, which can stack up to 3 times per type of buff: AR's grant +25% accuracy, SMG's grant +25% increased reload speed, SG's grant +1 clip size.",
+            "initial": "8",
+            "cooldown": [
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18"
+            ],
+            "dam_value": [
+                "25",
+                "28",
+                "32",
+                "35",
+                "38",
+                "42",
+                "45",
+                "48",
+                "52",
+                "55"
+            ],
+            "duration": [
+                "4",
+                "4.2",
+                "4.4",
+                "4.7",
+                "4.9",
+                "5.1",
+                "5.3",
+                "5.6",
+                "5.8",
+                "6"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n🔷🔶🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects SMG's, AR's and SG's\nIncreases damage by 10%\nIncreases accuracy by 15%",
         "production": {
             "timer": "6:36:00"
         }
@@ -16047,6 +16583,98 @@
         }
     },
     {
+        "url": "/wiki/MP41",
+        "num": 267,
+        "name": "MP41",
+        "type": "SMG",
+        "rating": 3,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 97,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 11,
+            "eva": 8,
+            "acc": 2,
+            "rof": 52,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 194,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 30,
+            "eva": 60,
+            "acc": 13,
+            "rof": 77,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Smoke Grenade",
+            "icon": "Smoke",
+            "text": "Throws a smoke grenade that decreases the enemy's rate of fire by ($rof_value)% and movement speed by ($movespeed_value)% within a radius of 2.5 units for ($time_value) seconds.",
+            "initial": "1.0",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "rof_value": [
+                "20.0",
+                "22.0",
+                "24.0",
+                "25.0",
+                "27.0",
+                "29.0",
+                "31.0",
+                "32.0",
+                "34.0",
+                "36.0"
+            ],
+            "movespeed_value": [
+                "30.0",
+                "32.0",
+                "34.0",
+                "37.0",
+                "39.0",
+                "41.0",
+                "43.0",
+                "46.0",
+                "48.0",
+                "50.0"
+            ],
+            "time_value": [
+                "2.5",
+                "2.7",
+                "2.8",
+                "3.0",
+                "3.2",
+                "3.3",
+                "3.5",
+                "3.7",
+                "3.8",
+                "4.0"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n🔶🔷⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases evasion by 10%",
+        "production": {
+            "reward": "Login reward for June 2019 (CN)."
+        }
+    },
+    {
         "url": "/wiki/MP5",
         "num": 26,
         "name": "MP5",
@@ -16081,7 +16709,7 @@
         "ability": {
             "name": "Force Shield",
             "icon": "Invincible",
-            "text": "Grants MP5 a shield with a Defense value of 9999 for ($time_value) seconds.",
+            "text": "Grants MP5 a shield with a Defense value of 9999 (Max value of 9999), reducing incoming damage by a percentage (100% if at max Defense value) for ($time_value) seconds.",
             "initial": "8",
             "cooldown": [
                 "20.0",
@@ -16279,7 +16907,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5.0",
@@ -16322,7 +16950,7 @@
     },
     {
         "url": "/wiki/Magal",
-        "num": -1,
+        "num": 258,
         "name": "Magal",
         "type": "AR",
         "rating": 3,
@@ -16333,23 +16961,23 @@
             "pen": 15
         },
         "baseStats": {
-            "hp": 10,
+            "hp": 58,
             "ammo": 20,
             "ration": 20,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 16,
+            "eva": 5,
+            "acc": 6,
+            "rof": 46,
             "armor": 0
         },
         "maxStats": {
-            "hp": 100,
+            "hp": 116,
             "ammo": 60,
             "ration": 60,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 47,
+            "eva": 43,
+            "acc": 47,
+            "rof": 70,
             "armor": 0
         },
         "ability": {
@@ -16406,8 +17034,8 @@
                 "10.0"
             ]
         },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects submachine guns\nIncreases ?? by ??\nIncreases ?? by ??",
+        "tile_bonus": "⬛⬛⬛\n⬛🔷⬛\n⬛⬛🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases accuracy by 50%\nIncreases evasion by 12%",
         "production": {
             "reward": "Login reward for April 2019 (CN)."
         }
@@ -16616,6 +17244,328 @@
         "costumes": {
             "default": "pic_MicroUZI.png",
             "101": "pic_MicroUZI_101.png"
+        }
+    },
+    {
+        "url": "/wiki/Micro_Uzi#Mod1",
+        "num": 32,
+        "name": "Micro Uzi MOD 1",
+        "type": "SMG",
+        "rating": 5,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 80,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 9,
+            "eva": 10,
+            "acc": 2,
+            "rof": 71,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 175,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 25,
+            "eva": 81,
+            "acc": 13,
+            "rof": 104,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Incendiary Grenade",
+            "icon": "Napalm",
+            "text": "Throws an incendiary grenade that deals ($damage_value)x Micro Uzi's damage and a DoT of ($damage2_value)x Micro Uzi's damage every 0.33 seconds for ($time_value) seconds within a radius of 1.5 units.",
+            "initial": "3",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "3.0",
+                "3.3",
+                "3.7",
+                "4.0",
+                "4.3",
+                "4.7",
+                "5.0",
+                "5.3",
+                "5.7",
+                "6.0"
+            ],
+            "damage2_value": [
+                "0.5",
+                "0.6",
+                "0.6",
+                "0.7",
+                "0.7",
+                "0.8",
+                "0.8",
+                "0.9",
+                "0.9",
+                "1.0",
+                ""
+            ],
+            "time_value": [
+                "2.0",
+                "2.2",
+                "2.4",
+                "2.7",
+                "2.9",
+                "3.1",
+                "3.3",
+                "3.6",
+                "3.8",
+                "4.0"
+            ]
+        },
+        "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛🔶⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 18%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on Micro Uzi.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
+        },
+        "img": "pic_MicroUZI.png",
+        "internalName": "MicroUZI"
+    },
+    {
+        "url": "/wiki/Micro_Uzi#Mod2",
+        "num": 32,
+        "name": "Micro Uzi MOD 2",
+        "type": "SMG",
+        "rating": 5,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 80,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 9,
+            "eva": 10,
+            "acc": 2,
+            "rof": 71,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 176,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 25,
+            "eva": 82,
+            "acc": 13,
+            "rof": 104,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Incendiary Grenade",
+            "icon": "Napalm",
+            "text": "Throws an incendiary grenade that deals ($damage_value)x Micro Uzi's damage and a DoT of ($damage2_value)x Micro Uzi's damage every 0.33 seconds for ($time_value) seconds within a radius of 1.5 units.",
+            "initial": "3",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "3.0",
+                "3.3",
+                "3.7",
+                "4.0",
+                "4.3",
+                "4.7",
+                "5.0",
+                "5.3",
+                "5.7",
+                "6.0"
+            ],
+            "damage2_value": [
+                "0.5",
+                "0.6",
+                "0.6",
+                "0.7",
+                "0.7",
+                "0.8",
+                "0.8",
+                "0.9",
+                "0.9",
+                "1.0",
+                ""
+            ],
+            "time_value": [
+                "2.0",
+                "2.2",
+                "2.4",
+                "2.7",
+                "2.9",
+                "3.1",
+                "3.3",
+                "3.6",
+                "3.8",
+                "4.0"
+            ]
+        },
+        "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛🔶⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 18%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on Micro Uzi MOD 1.\nRequirements: Lv.110, 100 Affection."
+        },
+        "img": "pic_MicroUZI.png",
+        "internalName": "MicroUZI",
+        "ability2": {
+            "name": "Burning Chain",
+            "icon": "UZImod",
+            "text": "Incendiary grenade deals an additional ($dam_value)x damage every 1.5 seconds to burned enemies and will spread around the burned enemy, causing a new burning area with a radius of 1 unit. This lasts until the effect of the incendiary grenade ends. Burn damage will take effect against enemies in an extremely small area.",
+            "dam_value": [
+                "0.4",
+                "0.44",
+                "0.49",
+                "0.53",
+                "0.58",
+                "0.62",
+                "0.67",
+                "0.71",
+                "0.76",
+                "0.8"
+            ]
+        }
+    },
+    {
+        "url": "/wiki/Micro_Uzi#Mod3",
+        "num": 32,
+        "name": "Micro Uzi MOD 3",
+        "type": "SMG",
+        "rating": 5,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 80,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 9,
+            "eva": 10,
+            "acc": 2,
+            "rof": 71,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 177,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 26,
+            "eva": 83,
+            "acc": 13,
+            "rof": 104,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Incendiary Grenade",
+            "icon": "Napalm",
+            "text": "Throws an incendiary grenade that deals ($damage_value)x Micro Uzi's damage and a DoT of ($damage2_value)x Micro Uzi's damage every 0.33 seconds for ($time_value) seconds within a radius of 1.5 units.",
+            "initial": "3",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "3.0",
+                "3.3",
+                "3.7",
+                "4.0",
+                "4.3",
+                "4.7",
+                "5.0",
+                "5.3",
+                "5.7",
+                "6.0"
+            ],
+            "damage2_value": [
+                "0.5",
+                "0.6",
+                "0.6",
+                "0.7",
+                "0.7",
+                "0.8",
+                "0.8",
+                "0.9",
+                "0.9",
+                "1.0",
+                ""
+            ],
+            "time_value": [
+                "2.0",
+                "2.2",
+                "2.4",
+                "2.7",
+                "2.9",
+                "3.1",
+                "3.3",
+                "3.6",
+                "3.8",
+                "4.0"
+            ]
+        },
+        "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛🔶⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 18%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on Micro Uzi MOD 2.\nRequirements: Lv.115, 100 Affection."
+        },
+        "img": "pic_MicroUZIMod.png",
+        "internalName": "MicroUZIMod",
+        "ability2": {
+            "name": "Burning Chain",
+            "icon": "UZImod",
+            "text": "Incendiary grenade deals an additional ($dam_value)x damage every 1.5 seconds to burned enemies and will spread around the burned enemy, causing a new burning area with a radius of 1 unit. This lasts until the effect of the incendiary grenade ends. Burn damage will take effect against enemies in an extremely small area.",
+            "dam_value": [
+                "0.4",
+                "0.44",
+                "0.49",
+                "0.53",
+                "0.58",
+                "0.62",
+                "0.67",
+                "0.71",
+                "0.76",
+                "0.8"
+            ]
+        },
+        "costumes": {
+            "default": "pic_MicroUZIMod.png"
         }
     },
     {
@@ -17682,7 +18632,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Assault Supression T",
+            "name": "Assault Suppression",
             "icon": "rateDebuff",
             "text": "Decreases the enemy squad's rate of fire by ($rof_value)% for ($time_value) seconds.",
             "initial": "6",
@@ -18436,7 +19386,7 @@
             "name": "Assault Focus T",
             "icon": "rateBuffSelf",
             "text": "Increases OTs-12s rate of fire by ($rof_value)% for ($time_value) seconds.",
-            "initial": "5",
+            "initial": "4",
             "cooldown": [
                 "20.0",
                 "19.6",
@@ -18619,7 +19569,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5.0",
@@ -19396,7 +20346,7 @@
     },
     {
         "url": "/wiki/PA-15",
-        "num": -1,
+        "num": 260,
         "name": "PA-15",
         "type": "HG",
         "rating": 5,
@@ -19407,27 +20357,93 @@
             "pen": 15
         },
         "baseStats": {
-            "hp": 10,
+            "hp": 35,
             "ammo": 10,
             "ration": 10,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 12,
+            "eva": 9,
+            "acc": 8,
+            "rof": 42,
             "armor": 0
         },
         "maxStats": {
-            "hp": 100,
+            "hp": 70,
             "ammo": 30,
             "ration": 30,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 35,
+            "eva": 76,
+            "acc": 65,
+            "rof": 64,
             "armor": 0
         },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects all guns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Perfect Thrill Park",
+            "icon": "PA15",
+            "text": "Stun the highest HP enemy for ($stun_time1) seconds and deal ($dam_value1)x damage. If there are any enemies within 2.5 horizontal units, stun enemies within a radius of 2.5 units for ($stun_time2) seconds and deal ($dam_value2)x damage. This skill is capable of critical damage, bypasses accuracy checks, but doesn't ignore armor.",
+            "initial": "6",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "dam_value1": [
+                "2.5",
+                "2.67",
+                "2.83",
+                "3",
+                "3.17",
+                "3.33",
+                "3.5",
+                "3.67",
+                "3.83",
+                "4"
+            ],
+            "dam_value2": [
+                "1.2",
+                "1.29",
+                "1.38",
+                "1.47",
+                "1.56",
+                "1.64",
+                "1.73",
+                "1.82",
+                "1.91",
+                "2"
+            ],
+            "stun_time1": [
+                "1.5",
+                "1.7",
+                "1.8",
+                "2",
+                "2.2",
+                "2.3",
+                "2.5",
+                "2.7",
+                "2.8",
+                "3"
+            ],
+            "stun_time2": [
+                "1",
+                "1.1",
+                "1.2",
+                "1.3",
+                "1.4",
+                "1.6",
+                "1.7",
+                "1.8",
+                "1.9",
+                "2"
+            ]
+        },
+        "tile_bonus": "🔶🔷🔶\n🔶🔶🔶\n⬛🔶⬛",
+        "bonus_desc": "Affects all guns\nIncreases rate of fire by 15%(x1) / 18%(x2) / 22%(x3) / 26%(x4) / 30%(x5)\nIncreases accuracy by 25%(x1) / 31%(x2) / 37%(x3) / 43%(x4) / 50%(x5)",
         "production": {
             "timer": "1:15:00"
         }
@@ -19466,7 +20482,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Barrage End",
+            "name": "Terminating Barrage",
             "icon": "comboBuffSelf",
             "text": "After every 3 hits, PKs 4th hit will inflict ($damage_value)x the damage.",
             "damage_value": [
@@ -19723,10 +20739,10 @@
             "hp": 88,
             "ammo": 25,
             "ration": 20,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 10,
+            "eva": 10,
+            "acc": 2,
+            "rof": 68,
             "armor": 0
         },
         "maxStats": {
@@ -19833,7 +20849,7 @@
         },
         "ability": {
             "name": "Hand Grenade",
-            "icon": "RifleGrenade",
+            "icon": "Grenade",
             "text": "Launch a grenade that deals ($damage_value) times PP-19's damage to enemies within a radius of 2.5 units.",
             "initial": "3",
             "cooldown": [
@@ -20540,7 +21556,7 @@
         },
         "ability": {
             "name": "Conceal Command",
-            "icon": "powBuff",
+            "icon": "dodgeBuff",
             "text": "Increases all allies accuracy by ($accuracy_value)% and evasion by ($evasion_value)% for ($time_value) seconds.",
             "initial": "6",
             "cooldown": [
@@ -21024,10 +22040,10 @@
             "hp": 42,
             "ammo": 15,
             "ration": 30,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 42,
+            "eva": 5,
+            "acc": 10,
+            "rof": 27,
             "armor": 0
         },
         "maxStats": {
@@ -21040,10 +22056,156 @@
             "rof": 42,
             "armor": 0
         },
+        "ability": {
+            "name": "Rushing Cloud",
+            "icon": "88sniper",
+            "text": "Active: Aim for 1.5 seconds, then deal ($dam_value1)x damage to the enemy with highest HP. Additionally, deal ($dam_value2)x damage to enemies within a radius of 1.5 units. Passive: Every 3rd normal shot on the same target will deal ($pass_value)x damage to enemies within a small radius.",
+            "initial": "8.0",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "dam_value1": [
+                "3.0",
+                "3.22",
+                "3.44",
+                "3.67",
+                "3.89",
+                "4.11",
+                "4.33",
+                "4.56",
+                "4.78",
+                "5.0"
+            ],
+            "dam_value2": [
+                "0.8",
+                "0.88",
+                "0.96",
+                "1.03",
+                "1.11",
+                "1.19",
+                "1.27",
+                "1.34",
+                "1.42",
+                "1.5"
+            ],
+            "pass_value": [
+                "0.8",
+                "0.88",
+                "0.96",
+                "1.03",
+                "1.11",
+                "1.19",
+                "1.27",
+                "1.34",
+                "1.42",
+                "1.5"
+            ]
+        },
         "tile_bonus": "🔶🔶⬛\n⬛🔶⬛\n🔷🔶⬛",
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 18%",
         "production": {
             "timer": "4:48:00"
+        }
+    },
+    {
+        "url": "/wiki/R93",
+        "num": 266,
+        "name": "R93",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 41,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 44,
+            "eva": 4,
+            "acc": 11,
+            "rof": 25,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 81,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 133,
+            "eva": 34,
+            "acc": 97,
+            "rof": 39,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Lucky Trigger",
+            "icon": "R93",
+            "text": "Passive: Consecutive shots on the same enemy increase R93's rate of fire by ($pass_value)% for 3 seconds and can stack 3 times. Stacks reset when R93 changes targets. Active: Increase damage by ($dam_value)% for ($duration) seconds, and during that time, the passive stack does not reset when R93's target changes. Marks a single target for 3 seconds, and only targets the marked enemy.",
+            "initial": "6",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "dam_value": [
+                "20",
+                "22",
+                "24",
+                "27",
+                "29",
+                "31",
+                "33",
+                "36",
+                "38",
+                "40"
+            ],
+            "pass_value": [
+                "5",
+                "6",
+                "6",
+                "7",
+                "7",
+                "8",
+                "8",
+                "9",
+                "9",
+                "10"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
+        "production": {
+            "reward": "Rewarded to players after accumulating 1800 points during the Honey & 4-Leaf Clover Point event (CN/KR/TW)."
         }
     },
     {
@@ -21540,7 +22702,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Crimson Encore",
+            "name": "Crimson Echoes",
             "icon": "powBuff",
             "text": "Increases the damage, accuracy and rate of fire of the guns affected by her tiles by ($buff_value)% for ($time_value) seconds.",
             "initial": "6",
@@ -22573,7 +23735,7 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 12%",
         "production": {
             "stage": "obtained as a possible reward throughout Deep Dive (CN).",
-            "reward": "Acquired as login reward during March 2017 (CN), January 2019 (EN)."
+            "reward": "Acquired as login reward during March 2017 (CN), January 2019 (EN), June 2019 (JP)."
         },
         "img": "pic_SSG69.png",
         "internalName": "SSG69",
@@ -23695,7 +24857,8 @@
         "tile_bonus": "⬛🔶⬛\n🔶🔷⬛\n⬛🔶⬛",
         "bonus_desc": "Affects all guns\nIncreases damage by 12%(x1) / 15%(x2) / 18%(x3) / 21%(x4) / 24%(x5)\nIncreases accuracy by 20%(x1) / 25%(x2) / 30%(x3) / 35%(x4) / 40%(x5)",
         "production": {
-            "stage": "Obtained as a possible drop throughout Operation Cube (CN)."
+            "stage": "Obtained as a possible drop throughout Operation Cube (CN).",
+            "reward": "Acquired as login reward during July 2016 (CN), June 2019 (EN)."
         }
     },
     {
@@ -24343,6 +25506,253 @@
         "internalName": "STG44",
         "costumes": {
             "default": "pic_STG44.png"
+        }
+    },
+    {
+        "url": "/wiki/StG44#Mod1",
+        "num": 61,
+        "name": "StG44 MOD 1",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 64,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 19,
+            "eva": 5,
+            "acc": 6,
+            "rof": 41,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 129,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 57,
+            "eva": 37,
+            "acc": 49,
+            "rof": 65,
+            "armor": 0
+        },
+        "ability": {
+            "name": "High-explosive Grenade",
+            "icon": "RifleGrenade",
+            "text": "Launch a grenade that deals ($damage_value) times StG44's damage to enemies within a radius of 1/2.5/4 units.",
+            "initial": "8",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "1.8/0.7/0.4",
+                "2.1/0.8/0.5",
+                "2.4/0.9/0.5",
+                "2.7/1.1/0.6",
+                "3/1.2/0.7",
+                "3.3/1.3/0.7",
+                "3.6/1.4/0.8",
+                "3.9/1.7/0.9",
+                "4.2/1.8/0.9",
+                "4.5/1.8/1"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases accuracy by 60%\nIncreases evasion by 20%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on StG44.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
+        },
+        "img": "pic_STG44.png",
+        "internalName": "STG44"
+    },
+    {
+        "url": "/wiki/StG44#Mod2",
+        "num": 61,
+        "name": "StG44 MOD 2",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 64,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 19,
+            "eva": 5,
+            "acc": 6,
+            "rof": 41,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 129,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 58,
+            "eva": 37,
+            "acc": 49,
+            "rof": 66,
+            "armor": 0
+        },
+        "ability": {
+            "name": "High-explosive Grenade",
+            "icon": "RifleGrenade",
+            "text": "Launch a grenade that deals ($damage_value) times StG44's damage to enemies within a radius of 1/2.5/4 units.",
+            "initial": "8",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "1.8/0.7/0.4",
+                "2.1/0.8/0.5",
+                "2.4/0.9/0.5",
+                "2.7/1.1/0.6",
+                "3/1.2/0.7",
+                "3.3/1.3/0.7",
+                "3.6/1.4/0.8",
+                "3.9/1.7/0.9",
+                "4.2/1.8/0.9",
+                "4.5/1.8/1"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases accuracy by 60%\nIncreases evasion by 20%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on StG44 MOD 1.\nRequirements: Lv.110, 100 Affection."
+        },
+        "img": "pic_STG44.png",
+        "internalName": "STG44",
+        "ability2": {
+            "name": "Firestorm",
+            "icon": "Stg44mod",
+            "text": "Base grenade damage increased by ($dam_value)%, and will explode 3 times, dealing damage to enemies in 1, 2.5 and 4 units radius. Enemies will receive multiple hits when standing in overlapping area (enemies in 1 unit radius will be hit 3 times)",
+            "dam_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ]
+        }
+    },
+    {
+        "url": "/wiki/StG44#Mod3",
+        "num": 61,
+        "name": "StG44 MOD 3",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 64,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 19,
+            "eva": 5,
+            "acc": 6,
+            "rof": 41,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 130,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 58,
+            "eva": 38,
+            "acc": 50,
+            "rof": 66,
+            "armor": 0
+        },
+        "ability": {
+            "name": "High-explosive Grenade",
+            "icon": "RifleGrenade",
+            "text": "Launch a grenade that deals ($damage_value) times StG44's damage to enemies within a radius of 1/2.5/4 units.",
+            "initial": "8",
+            "cooldown": [
+                "20.0",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16.0"
+            ],
+            "damage_value": [
+                "1.8/0.7/0.4",
+                "2.1/0.8/0.5",
+                "2.4/0.9/0.5",
+                "2.7/1.1/0.6",
+                "3/1.2/0.7",
+                "3.3/1.3/0.7",
+                "3.6/1.4/0.8",
+                "3.9/1.7/0.9",
+                "4.2/1.8/0.9",
+                "4.5/1.8/1"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases accuracy by 60%\nIncreases evasion by 20%",
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on StG44 MOD 2.\nRequirements: Lv.115, 100 Affection."
+        },
+        "img": "pic_STG44Mod.png",
+        "internalName": "STG44Mod",
+        "ability2": {
+            "name": "Firestorm",
+            "icon": "Stg44mod",
+            "text": "Base grenade damage increased by ($dam_value)%, and will explode 3 times, dealing damage to enemies in 1, 2.5 and 4 units radius. Enemies will receive multiple hits when standing in overlapping area (enemies in 1 unit radius will be hit 3 times)",
+            "dam_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ]
+        },
+        "costumes": {
+            "default": "pic_STG44Mod.png"
         }
     },
     {
@@ -25519,7 +26929,7 @@
         },
         "ability": {
             "name": "Eliminate Focus N",
-            "icon": "powBuff",
+            "icon": "powBuffSelf",
             "text": "Elimination Focus N focuses on Night battles, increasing damage by ($damage_value1)% and crit rate by ($crit_value1)% in Night battles, while Day battles increase damage by ($damage_value2)% and crit rate by ($crit_value2)% for ($time_value).",
             "initial": "5",
             "cooldown": [
@@ -25990,7 +27400,7 @@
         "bonus_desc": "Affects assault rifles\nIncreases accuracy by 20%\nIncreases damage by 15%",
         "production": {
             "stage": "Obtained as a possible drop throughout Singularity (CN).",
-            "reward": "CN servers login reward of July 2017"
+            "reward": "Acquired as login reward during July 2017 (CN), October 2018 (JP), May 2019 (EN)."
         },
         "img": "pic_TMP.png",
         "internalName": "TMP",
@@ -26034,7 +27444,7 @@
         "ability": {
             "name": "Force Shield",
             "icon": "Invincible",
-            "text": "Grants Thompson a shield with a Defense value of 9999 for ($time_value) seconds.",
+            "text": "Grants Thompson a shield with a Defense value of 9999 (Max value of 9999), reducing incoming damage by a percentage (100% if at max Defense value) for ($time_value) seconds.",
             "initial": "8",
             "cooldown": [
                 "20.0",
@@ -26939,7 +28349,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -27022,7 +28432,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -27092,7 +28502,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -27130,7 +28540,7 @@
         "internalName": "64type",
         "ability2": {
             "name": "Silencing Flash",
-            "icon": "Flashbomb",
+            "icon": "dodgeBuffSelf",
             "text": "Flashbangs will also give a ($accuracy_value)% penalty to accuracy that lasts for ($rof_value) seconds. Units that are immune to stun are affected by this.",
             "accuracy_value": [
                 "25",
@@ -27191,7 +28601,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -27229,7 +28639,7 @@
         "internalName": "64typeMod",
         "ability2": {
             "name": "Silencing Flash",
-            "icon": "Flashbomb",
+            "icon": "dodgeBuffSelf",
             "text": "Flashbangs will also give a ($accuracy_value)% penalty to accuracy that lasts for ($rof_value) seconds. Units that are immune to stun are affected by this.",
             "accuracy_value": [
                 "25",
@@ -27293,7 +28703,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5",
@@ -28070,10 +29480,10 @@
             "hp": 85,
             "ammo": 40,
             "ration": 30,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 35,
+            "eva": 4,
+            "acc": 4,
+            "rof": 81,
             "armor": 0
         },
         "maxStats": {
@@ -28179,7 +29589,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Overload",
+            "name": "Etching Overload",
             "icon": "powBuffSelf",
             "text": "Inactive effect: Reduce damage by 5%, increase evasion by 10% every 2 seconds, for up to 5 stacks. Activation effect: Resets current buff and debuff stacks, increase damage by ($damage_value)%, decrease evasion by ($evasion_value)% every 2 seconds, for up to 5 stacks.",
             "initial": "1",
@@ -28696,7 +30106,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Flashbang",
+            "name": "Stun Grenade",
             "icon": "Flashbomb",
             "text": "Throws a flashbang that stuns enemies within a 2.5 unit radius for ($time_value) seconds.",
             "initial": "5.0",
@@ -29424,7 +30834,7 @@
             ]
         },
         "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
-        "bonus_desc": "Affects pistols\nReduces skill cooldown by 15%",
+        "bonus_desc": "Affects Handguns\nReduces skill cooldown by 15%",
         "production": {
             "stage": "Drops only from Judge in 10-6 and by Hydra units in 10-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
         },
@@ -29651,7 +31061,7 @@
             "armor": 0
         },
         "ability": {
-            "name": "Night Owl's Screech",
+            "name": "Howl of the Nightingale",
             "icon": "RifleGrenade",
             "text": "Launches a grenade that causes ($dmg)% damage to enemies within a 2.5 radius. If three or more enemy units are hit, they will take ($dmgdebuff)% extra damage for ($dmgdebuffduration) seconds. If less than three enemy units are hit, Zas' own damage will increase by ($dmgbuff)% for ($dmgbuffduration) seconds.",
             "initial": "4",
@@ -29945,6 +31355,62 @@
         }
     },
     {
+        "url": "/wiki/Alma",
+        "num": 1021,
+        "name": "Alma",
+        "type": "MG",
+        "rating": 6,
+        "constStats": {
+            "mov": 4,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "9"
+        },
+        "baseStats": {
+            "hp": 98,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": 32,
+            "eva": 3,
+            "acc": 4,
+            "rof": 87,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 195,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": 89,
+            "eva": 23,
+            "acc": 31,
+            "rof": 129,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "Alma",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n🔷⬛🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects shotguns\nIncreases damage by 15%\nIncreases armour by 15%",
+        "production": {
+            "reward": "Obtained by redeeming 150x \"White Knight Armour Shards\" in the Event Shop during Valhalla"
+        }
+    },
+    {
         "url": "/wiki/Bronya",
         "num": 1005,
         "name": "Bronya",
@@ -29979,7 +31445,8 @@
         "ability": {
             "name": "Catalytic Black Hole",
             "icon": "Bronya",
-            "text": "Throws out a grenade that produces a black hole after an explosion. The black hole lasts for ($duration) seconds and attracts enemies within a radius of 2.5. Enemies within 1.5 tiles from the center of the black hole will suffer ($damage)% Bronya's damage every second. This skill can only be used once per turn.",
+            "text": "Throws out a grenade that produces a black hole after an explosion. The black hole lasts for ($duration) seconds and attracts enemies within a radius of 2.5. Enemies within 1.5 tiles from the center of the black hole will suffer ($damage)% Bronya's damage every second. This skill can only be used once per turn and has a 5s int CD.",
+            "initial": "5",
             "duration": [
                 "2.0",
                 "2.3",
@@ -30101,6 +31568,117 @@
         "costumes": {
             "509": "pic_CLEAR_509.png",
             "default": "pic_CLEAR.png"
+        }
+    },
+    {
+        "url": "/wiki/Dana",
+        "num": 1022,
+        "name": "Dana",
+        "type": "SG",
+        "rating": 6,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "1"
+        },
+        "baseStats": {
+            "hp": 135,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 15,
+            "eva": 2,
+            "acc": 2,
+            "rof": 18,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 269,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 38,
+            "eva": 13,
+            "acc": 15,
+            "rof": 26,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "Dana",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "🔶⬛⬛\n🔶⬛🔷\n🔶⬛⬛",
+        "bonus_desc": "Affects machineguns\nIncreases damage by 15%\nIncreases accuracy by 15%",
+        "production": {
+            "reward": "Obtained from clearing E1-1 \"Didgeridoo Manual\" of the Valhalla Collaboration Event."
+        }
+    },
+    {
+        "url": "/wiki/Dorothy",
+        "num": 1019,
+        "name": "Dorothy",
+        "type": "SMG",
+        "rating": 6,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 88,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 10,
+            "eva": 10,
+            "acc": 2,
+            "rof": 52,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 176,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 28,
+            "eva": 87,
+            "acc": 15,
+            "rof": 79,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "dorothy",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "🔶⬛⬛\n⬛🔷⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles and rifles\nIncreases damage by 15%\nIncreases accuracy by 25%",
+        "production": {
+            "reward": "Obtained by redeeming 150x \"White Knight Armour Shards\" in the Event Shop during Valhalla"
         }
     },
     {
@@ -30273,6 +31851,206 @@
         "costumes": {
             "default": "pic_FAIL.png",
             "510": "pic_FAIL_510.png"
+        }
+    },
+    {
+        "url": "/wiki/Jill",
+        "num": 1017,
+        "name": "Jill",
+        "type": "HG",
+        "rating": 6,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 40,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 10,
+            "eva": 11,
+            "acc": 6,
+            "rof": 36,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 80,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 30,
+            "eva": 96,
+            "acc": 53,
+            "rof": 55,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Mixing Time",
+            "icon": "Jill",
+            "text": "Passive: For every point in Jill's base DMG, Jill will receive 1% reduction to her skill's base cooldown up to a max of 30% base cooldown reduction (Unaffected by any DMG modifiers).<br />Active: After mixing in her cocktail shaker for 3 seconds, Jill will serve one of 7 possible drinks to her echelon;",
+            "initial": "6",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "time_value1": [
+                "5",
+                "5.3",
+                "5.7",
+                "6",
+                "6.3",
+                "6.7",
+                "7",
+                "7.3",
+                "7.7",
+                "8"
+            ],
+            "time_value2": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ],
+            "dmg_acc_sg": [
+                "10",
+                "12",
+                "13",
+                "15",
+                "17",
+                "18",
+                "20",
+                "22",
+                "23",
+                "25"
+            ],
+            "dmg_acc_mg": [
+                "10",
+                "12",
+                "13",
+                "15",
+                "17",
+                "18",
+                "20",
+                "22",
+                "23",
+                "25"
+            ],
+            "dmg_acc_pen": [
+                "20",
+                "19",
+                "19",
+                "18",
+                "18",
+                "17",
+                "17",
+                "16",
+                "16",
+                "15"
+            ],
+            "dmg_value1": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "dmg_value2": [
+                "15",
+                "17",
+                "19",
+                "22",
+                "24",
+                "26",
+                "28",
+                "31",
+                "33",
+                "35"
+            ],
+            "dmg_value3": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18"
+            ],
+            "eva_value": [
+                "35",
+                "38",
+                "41",
+                "43",
+                "46",
+                "49",
+                "52",
+                "54",
+                "57",
+                "60"
+            ],
+            "rof_value": [
+                "10",
+                "11",
+                "13",
+                "14",
+                "15",
+                "17",
+                "18",
+                "19",
+                "21",
+                "22"
+            ],
+            "armour_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "crit_value": [
+                "10",
+                "12",
+                "13",
+                "15",
+                "17",
+                "18",
+                "20",
+                "22",
+                "23",
+                "25"
+            ]
+        },
+        "tile_bonus": "🔶🔶🔶\n🔶🔷🔶\n🔶🔶🔶",
+        "bonus_desc": "Affects all guns\nIncreases damage by 20%(x1) / 25%(x2) / 30%(x3) / 35%(x4) / 40%(x5)\nIncreases accuracy by 20%(x1) / 25%(x2) / 30%(x3) / 35%(x4) / 40%(x5)",
+        "production": {
+            "reward": "Obtained from clearing E1-8 \"Last Rain in the world\" of the Valhalla Collaboration Event."
         }
     },
     {
@@ -30688,6 +32466,116 @@
         }
     },
     {
+        "url": "/wiki/Sei",
+        "num": 1018,
+        "name": "Sei",
+        "type": "HG",
+        "rating": 6,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 43,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 11,
+            "eva": 10,
+            "acc": 8,
+            "rof": 36,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 85,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 30,
+            "eva": 77,
+            "acc": 59,
+            "rof": 53,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "Sei",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "🔶🔶⬛\n⬛🔷🔶\n🔶🔶⬛",
+        "bonus_desc": "Affects all guns\nIncreases damage by 15%(x1) / 18%(x2) / 22%(x3) / 26%(x4) / 30%(x5)\nIncreases evasion by 10%(x1) / 12%(x2) / 15%(x3) / 17%(x4) / 20%(x5)",
+        "production": {
+            "stage": "Obtained as a possible drop throughout Valhalla in maps E1-5 and E2-5."
+        }
+    },
+    {
+        "url": "/wiki/Stella",
+        "num": 1020,
+        "name": "Stella",
+        "type": "RF",
+        "rating": 6,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 45,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 40,
+            "eva": 4,
+            "acc": 10,
+            "rof": 23,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 90,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 117,
+            "eva": 36,
+            "acc": 84,
+            "rof": 35,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "stella",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
+        "bonus_desc": "Affects handguns\nReduces skill cooldown by 18%",
+        "production": {
+            "stage": "Obtained as a possible drop throughout Valhalla in maps E1-8 and E2-8."
+        }
+    },
+    {
         "url": "/wiki/Theresa",
         "num": 1006,
         "name": "Theresa",
@@ -30806,82 +32694,6 @@
         "internalName": "Theresa",
         "costumes": {
             "default": "pic_Theresa1.png"
-        }
-    },
-    {
-        "url": "/wiki/HK33",
-        "num": -1,
-        "name": "HK33",
-        "type": "AR",
-        "rating": 3,
-        "constStats": {
-            "mov": 10,
-            "crit_rate": 20,
-            "crit_dmg": 50,
-            "pen": 15
-        },
-        "baseStats": {
-            "hp": 52,
-            "ammo": 20,
-            "ration": 20,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "maxStats": {
-            "hp": 105,
-            "ammo": 60,
-            "ration": 60,
-            "dmg": 49,
-            "eva": 46,
-            "acc": 51,
-            "rof": 73,
-            "armor": 0
-        },
-        "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
-        "bonus_desc": "Affects submachine guns\nIncreases damage by 10%\nIncreases evasion by 10%",
-        "production": {
-            "reward": "Login reward for May 2019 (CN)."
-        }
-    },
-    {
-        "url": "/wiki/R93",
-        "num": -1,
-        "name": "R93",
-        "type": "RF",
-        "rating": 5,
-        "constStats": {
-            "mov": 7,
-            "crit_rate": 40,
-            "crit_dmg": 50,
-            "pen": 15
-        },
-        "baseStats": {
-            "hp": 10,
-            "ammo": 15,
-            "ration": 30,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "maxStats": {
-            "hp": 100,
-            "ammo": 55,
-            "ration": 90,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
-        "production": {
-            "reward": "Rewarded to players after accumulating 1800 points during the \"???\" event (CN/KR/TW)."
         }
     },
     {

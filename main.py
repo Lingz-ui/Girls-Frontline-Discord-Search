@@ -21,7 +21,7 @@ PIC_DOMAIN="http://103.28.71.152:999/pic/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.25-20190613"
+version = "IOP 2.3-20190625"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -163,6 +163,59 @@ def dollInfo(doll):
 	#else:
 	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_"+str(doll['rating'])+"star.png")
 	return embed
+	
+
+def equipInfo(equip):
+	embed = discord.Embed(title=equip['name'] + " " + num2stars(equip['rating']), url=SITE_DOMAIN+equip['url'], color=gfcolors[equip['rating']])
+	#embed.add_field(name="Type", value=equip['type'], inline=True)
+	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
+	#embed.add_field(name="Base Stats", value="**HP:** "+str(equip['baseStats']['hp']) + ", **DMG:** " + str(equip['baseStats']['dmg']) + ", **ACC:** " + str(equip['baseStats']['acc']) + ", **EVA:** " + str(equip['baseStats']['eva']) + ", **ROF:** " + str(equip['baseStats']['rof']))
+	if 'constStats' in equip:
+		stats = "**Movement:** "+str(equip['constStats']['mov']) + "**, Crit. rate:** " + str(equip['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(equip['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(equip['constStats']['pen'])
+		stats += "\n**HP:** "+str(equip['maxStats']['hp']) + ", **DMG:** " + str(equip['maxStats']['dmg']) + ", **ACC:** " + str(equip['maxStats']['acc']) + ", **EVA:** " + str(equip['maxStats']['eva']) + ", **ROF:** " + str(equip['maxStats']['rof']) + ", **Armor:** "+ str(equip['maxStats']['armor'])
+		embed.add_field(name="Max Stats",value=stats)
+	obtain_info = ""
+	if 'stage' in equip['production']:
+		obtain_info += '**STAGE:** ' + equip['production']['stage'] + "\n"
+	if 'reward' in equip['production']:
+		obtain_info += '**REWARD:** ' + equip['production']['reward'] + "\n"
+	if 'timer' in equip['production']:
+		obtain_info += '**Production Timer:** ' + equip['production']['timer']
+	if 'upgrade' in equip['production']:
+		obtain_info += "**UPGRADE:** "+equip['production']['upgrade']
+	#if equip['name'] in bonusdex and 'drop_rate' in bonusdex[equip['name']]:
+	#	obtain_info += "\n**Normal Prod. Drop Rate:** " + str(bonusdex[equip['name']]['drop_rate'])+"% (Estimated)"
+	embed.add_field(name="How To Obtain", value=obtain_info,inline=False)
+
+	if 'normal' in equip['production']:
+		a = equip['production']['normal']
+		f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
+		f += "\n*Official recipe for recommended production. Not a minimum requirement.*"
+		if equip['name'] in bonusdex and 'voodoo' in bonusdex[equip['name']]:
+			a = bonusdex[equip['name']]['voodoo']
+			f += "\nVoodoo: " + "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
+			f += "\n*Voodoo recipes are placebo & may not increase drop rate*"
+	
+		embed.add_field(name="Normal Production Recipe", value=f, inline=True)
+
+
+	if 'heavy' in equip['production']:
+		a = equip['production']['heavy']
+		f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
+		embed.add_field(name="Heavy Production Requirement", value=f, inline=True)
+	#Not all equips have abilities yet since some are unreleased.
+	if 'ability' in equip:
+		embed.add_field(name="Skill: "+equip['ability']['name'], value=getAbility(equip,'ability'), inline=False)
+	if 'ability2' in equip:
+		embed.add_field(name="2nd Skill: "+equip['ability2']['name'], value=getAbility(equip,'ability2'), inline=False)
+
+	
+	#if equip['name'] in bonusdex and 'flavor' in bonusdex[equip['name']]:
+	#	embed.set_footer(text=bonusdex[equip['name']]['flavor'])
+	if 'img' in equip:
+		embed.set_image(url=PIC_DOMAIN+equip['img'])
+		print(PIC_DOMAIN+equip['img'])
+	return embed
 
 def getSearchResult(param):
 	res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
@@ -248,17 +301,52 @@ async def on_message(message):
 	elif message.content.startswith(COMMAND_PREFIX+"timer "):
 		param = message.content[(len(COMMAND_PREFIX+"timer")+1):]
 		print("arg: "+param)
+		if param.count(':') == 1:
+			param = param +":00"
+			#If timer is formatted like :20, append a 0 so it's 0:20 instead
+			if param.split(":")[0] == '':
+				param = "0"+param
+		elif param.count(':') == 0:
+			print("Argument was too ambiguous.")
+			await client.send_message(message.channel, "You are too ambiguous. Please format your argument with ':' so I know if you want hours or minutes.")
+			return
+		
+		try:
+			#Strip leading 0 off a timer, like 08:00 -> 8:00
+			#But first check if it's not 0:XX so we don't accidentally do something like 0:40 -> :40
+			if int(param.split(':')[0]) != 0:
+				param = param.lstrip('0')
+		except:
+			await client.send_message(message.channel, "This does not appear to be a timer.")
+			print(param + " was not a valid timer.")
+			return
+		print("stripped arg: "+param)
+		
 		res = []
-		for doll in frontlinedex:
-			if 'production' in doll and 'timer' in doll['production']:
-				if param == doll['production']['timer']:
-					res.append(doll)
-		if len(res) == 0:
-			await client.send_message(message.channel, "No dolls were found matching that production timer.")
-		elif len(res) == 1:
-			await client.send_message(message.channel, content="Found an exact match for the timer.", embed=dollInfo(res[0]))
+		#Speedup hack, equipment is always <1 hour and dolls are >= 1 hour so we search equipment if it's <1
+		if int(param.split(':')[0]) == 0:
+			for equip in equipmentdex:
+				if 'production' in equip and 'timer' in equip['production']:
+					if param == equip['production']['timer']:
+						res.append(equip)
+			if len(res) == 0:
+				await client.send_message(message.channel, "No equipment was found matching that production timer.")
+			elif len(res) == 1:
+				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=equipInfo(res[0]))
+			else:
+				await client.send_message(message.channel, "Equipment that matches this production timer: "+", ".join(i['name'] for i in res))
+
 		else:
-			await client.send_message(message.channel, "T-Dolls that match this production timer: "+", ".join(i['name'] for i in res))
+			for doll in frontlinedex:
+				if 'production' in doll and 'timer' in doll['production']:
+					if param == doll['production']['timer']:
+						res.append(doll)
+			if len(res) == 0:
+				await client.send_message(message.channel, "No dolls were found matching that production timer.")
+			elif len(res) == 1:
+				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=dollInfo(res[0]))
+			else:
+				await client.send_message(message.channel, "T-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+")" for i in res))
 		return
 	elif message.content.startswith(COMMAND_PREFIX+"quote "):
 		if quotedex:
@@ -269,7 +357,7 @@ async def on_message(message):
 					if 'internalName' in doll:
 						if doll['internalName'] in quotedex:
 							msg = ""
-							for key,value in quotedex[doll['internalName']].items():
+							for key,value in sorted(quotedex[doll['internalName']].items()):
 								msg += "**"+key.capitalize()+"**: "+" ".join(value)+"\n"
 							await client.send_message(message.channel, msg)
 					else:
@@ -290,6 +378,12 @@ async def on_message(message):
 				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
 				#msg += "`"+COMMAND_PREFIX+"Negev --damaged`: Show Negev's damage art for the costume.\n"
 				await client.send_message(message.channel, msg)
+			elif param == "timer":
+				msg = "Find a matching doll or equip for the timer. Fairies coming eventually.\n"
+				msg += "Usage examples:\n"
+				msg += "`"+COMMAND_PREFIX+"timer 0:40` or `"+COMMAND_PREFIX+"timer :40`: Search for a matching timer of 0 hours 40 mins\n"
+				msg += "`"+COMMAND_PREFIX+"timer 8:00` or `"+COMMAND_PREFIX+"timer 08:00` or `"+COMMAND_PREFIX+"timer 08:00:00`: Search for a matching timer of 8 hours\n"
+				await client.send_message(message.channel, msg)
 			else:
 				print("Tried to get help for "+param+ " but there was none.")
 				await client.send_message(message.channel, "No help available for this command yet.")
@@ -300,8 +394,9 @@ async def on_message(message):
 		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it, or search a doll's costume. Check this command's help for more information. Example: `"+COMMAND_PREFIX+"image UMP40`, `"+COMMAND_PREFIX+"image M16A1,Boss`\n"
 		if quotedex:
 			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
-		msg+="**"+COMMAND_PREFIX+"timer:** List T-Dolls that match the production timer. Ex. `"+COMMAND_PREFIX+"timer 8:10:00`\n"
-		msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n"
+		msg+="**"+COMMAND_PREFIX+"timer:** List T-Dolls or equipment that match the production timer. Ex. `"+COMMAND_PREFIX+"timer 8:10` or `"+COMMAND_PREFIX+"timer 0:40`\n"
+		#No need to document this.
+		#msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n"
 		msg+="For advanced help, do `$gfhelp <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
 		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
@@ -333,6 +428,11 @@ for doll in frontlinedex:
 #for doll in frontlinedex:
 #	if doll['name'] == "Five-seveN":
 #		assert doll['alias'], "Missing aliases!"
+
+print("Reading equipment data into memory. This may take a while.")
+file_obj = open("equipment.json", "r")
+equipmentdex = json.loads(file_obj.read())
+file_obj.close()
 
 print("Done! Now logging in...")
 client.run(DISCORD_TOKEN)
