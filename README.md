@@ -8,6 +8,7 @@ Features:
 - Links to the corresponding doll page on https://en.gfwiki.com
 - Flavor text, or adjudant quotes if there is no flavor text.
 - Images for almost every doll... Assuming you ripped the images from the game files.
+- Fire react on a doll's image to show their damage art.
 - Aliases. Ex. HKM4 -> HK416
 - Fuzzy search that will return the closest result and suggest other results.
 

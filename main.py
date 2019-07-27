@@ -29,7 +29,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.3-20190625"
+version = "IOP 2.4-20190726"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -462,7 +462,8 @@ async def on_message(message):
 		param = message.content[(len(COMMAND_PREFIX+"help")+1):].lower()
 		if len(param) > 0:
 			if param == "image":
-				msg = "Search doll images and costumes. This command is in beta. Damage art coming eventually. Correct costume names coming eventually. Changing costumes with reaction buttons coming eventually.\n"
+				msg = "Search doll images and costumes. This command is in beta. Correct costume names coming eventually. Changing costumes with reaction buttons coming eventually.\n"
+				msg += "Press the fire react to show damage art for a doll. Remove the fire react to show normal art."
 				msg += "You can append the '--list' or '-l' flag to the end of your search to show all the costume names.\n"
 				msg += "Usage examples:\n"
 				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
