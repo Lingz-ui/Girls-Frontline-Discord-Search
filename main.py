@@ -1,8 +1,13 @@
 import discord
 import json
+#To insert ability parameters for dolls
 import re
 import os
+#For random flavor texts if quotes are present.
 import random
+#Time is needed for gfstatus time sort.
+import time
+#Return closest result for dolls. (Thank god because nobody ever spells anything correctly with this bot)
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
@@ -13,7 +18,10 @@ DISCORD_TOKEN=os.environ['GFBOT_TOKEN']
 COMMAND_PREFIX="$gf"
 #COMMAND_NAME="$gfsearch"
 #The domain for the images extracted from Girls' Frontline. The bot will combine it like PIC_DOMAIN + "pic_ump45.png"
+#This is my server, in case you didn't already realize that.
 PIC_DOMAIN="http://103.28.71.152:999/pic/"
+#The domain for the equipment images extracted from Girls' Frontline. The bot will combine it like PIC_EQUIP_DOMAIN + "pic_ump45.png"
+PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 #The domain for the icons for dolls like the ones that are on the top left of the doll cards.
 #Icons are disabled because they make embeds worse.
 #ICON_DOMAIN="http://103.28.71.152:999/pic_compressed/icons/"
@@ -213,7 +221,7 @@ def equipInfo(equip):
 	#if equip['name'] in bonusdex and 'flavor' in bonusdex[equip['name']]:
 	#	embed.set_footer(text=bonusdex[equip['name']]['flavor'])
 	if 'img' in equip:
-		embed.set_image(url=PIC_DOMAIN+equip['img'])
+		embed.set_image(url=PIC_EQUIP_DOMAIN+equip['img'])
 		print(PIC_DOMAIN+equip['img'])
 	return embed
 
@@ -226,9 +234,14 @@ def postdollCostume(doll,costumeType):
 		if costumeType:
 			if costumeType == "--list":
 				return "Costumes for "+doll['name']+": "+", ".join(doll['costumes'].keys())
-			for cName in doll['costumes'].keys():
-				if cName.lower() == costumeType.lower():
-					return doll['name'] + ": "+cName+"\n"+PIC_DOMAIN+doll['costumes'][cName]
+			else:
+				for cName in doll['costumes'].keys():
+					if cName.lower() == costumeType.lower():
+						if cName.endswith("_damage"):
+							name = cName.split("_")[0]+" (Damaged)"
+							return doll['name'] + ": "+name+"\n"+PIC_DOMAIN+doll['costumes'][cName]
+						else:
+							return doll['name'] + ": "+cName+"\n"+PIC_DOMAIN+doll['costumes'][cName]
 			print(costumeType + " not found in "+doll['name'])
 			return "Couldn't find that costume. Costumes: "+", ".join(doll['costumes'].keys())
 		#else
@@ -236,12 +249,72 @@ def postdollCostume(doll,costumeType):
 	#else
 	return "Sorry, either there are no images for this doll or the data is missing."
 
+#Behold, a stateless function, by parsing my own messages
+#Spaghetti code is subjective, ok?
+@client.event
+async def on_reaction_add(reaction,user):
+	if user == client.user:
+		return
+	if reaction.message.author != client.user:
+		return
+	msg = reaction.message.content.splitlines()
+	if not msg[-1].endswith(".png"):
+		return
+	name,costume = msg[0].split(":")
+	if "(" in costume:
+		#costume = costume.split("(")[0].strip()
+		return
+	elif costume.strip() == "":
+		costume = "default_damage"
+	else:
+		costume = costume.strip() + "_damage"
+		
+	for doll in frontlinedex:
+		if name == doll['name']:
+			await client.edit_message(reaction.message,new_content=postdollCostume(doll,costume))
+	return
+	
+#Behold, the above but it's the opposite
+@client.event
+async def on_reaction_remove(reaction,user):
+	if user == client.user:
+		return
+	if reaction.message.author != client.user:
+		return
+	msg = reaction.message.content.splitlines()
+	if not msg[-1].endswith(".png"):
+		return
+	name,costume = msg[0].split(":")
+	if "(" in costume:
+		costume = costume.split("(")[0].strip()
+	else:
+		return
+	for doll in frontlinedex:
+		if name == doll['name']:
+			await client.edit_message(reaction.message,new_content=postdollCostume(doll,costume))
+	return
+	
 @client.event
 async def on_message(message):
 	if message.author == client.user:
 		return
 	if message.content.startswith(COMMAND_PREFIX+"status"):
-		st = serverCount() + "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants)"
+		param = message.content[(len(COMMAND_PREFIX+"status")+1):].lower()
+		st = serverCount()
+		st += "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants & 1 kalina)"
+		st += "\n"+str(len(equipmentdex))+" equipments indexed."
+		#require --extra because this command is expensive to compute and I don't want people spamming it.
+		if param == "--extra":
+			time_list = []
+			for doll in frontlinedex:
+				if 'production' in doll and 'timer' in doll['production']:
+					#Tuples
+					time_list.append((doll['name'],doll['production']['timer']))
+			#it's broken
+			sorted((time.strptime(d[1], "%H:%M:%S") for d in time_list), reverse=False)
+			print(time_list)
+			st += "\nThe T-Doll with the shortest production time is "+time_list[0][0] + " with a timer of "+time_list[0][1]+"."
+			st += "\nThe T-Doll with the longest production time is "+time_list[-1][0] + " with a timer of "+time_list[-1][1]+"."
 		await client.send_message(message.channel, st)
 		#print("Attempting to change the status to " + st)
 		#await client.change_presence(game=discord.Game(name="testing"))
@@ -288,7 +361,16 @@ async def on_message(message):
 		print(param + ", " +str(costumeType))
 		for doll in frontlinedex:
 			if param == doll['name'].lower():
-				await client.send_message(message.channel, postdollCostume(doll,costumeType))
+				msg = await client.send_message(message.channel, postdollCostume(doll,costumeType))
+				#This should really be refactored
+				if costumeType != "--list":
+					await client.add_reaction(msg,"🔥")
+					#emojis = ['⏪','⏩']
+					#for e in emojis:
+					#	try:
+					#		await client.add_reaction(msg,e)
+					#	except:
+					#		print(e+" is not a valid emoji")
 				return
 		dollName, res = getSearchResult(param)
 		for doll in frontlinedex:
@@ -308,9 +390,17 @@ async def on_message(message):
 				param = "0"+param
 		elif param.count(':') == 0:
 			print("Argument was too ambiguous.")
-			await client.send_message(message.channel, "You are too ambiguous. Please format your argument with ':' so I know if you want hours or minutes.")
+			await client.send_message(message.channel, "I don't support numbers without `:`. Please format your query with `:`.")
 			return
-		
+			#print("Converted " +param+" to ",end="")
+			
+			#if (len(param) % 2) != 0:
+			#	param = "0"+param +":00"
+			#if len(param) == 2:
+			#	param = "0:"+param + ":00"
+			#else:
+			#	param = ':'.join(param[i:i+2] for i in range(0, len(param), 2)) + ":00"
+			#print(param)
 		try:
 			#Strip leading 0 off a timer, like 08:00 -> 8:00
 			#But first check if it's not 0:XX so we don't accidentally do something like 0:40 -> :40
@@ -331,6 +421,7 @@ async def on_message(message):
 						res.append(equip)
 			if len(res) == 0:
 				await client.send_message(message.channel, "No equipment was found matching that production timer.")
+				print("No match found for "+param)
 			elif len(res) == 1:
 				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=equipInfo(res[0]))
 			else:
@@ -343,10 +434,11 @@ async def on_message(message):
 						res.append(doll)
 			if len(res) == 0:
 				await client.send_message(message.channel, "No dolls were found matching that production timer.")
+				print("No match found for "+param)
 			elif len(res) == 1:
 				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=dollInfo(res[0]))
 			else:
-				await client.send_message(message.channel, "T-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+")" for i in res))
+				await client.send_message(message.channel, "T-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res))
 		return
 	elif message.content.startswith(COMMAND_PREFIX+"quote "):
 		if quotedex:
@@ -384,6 +476,10 @@ async def on_message(message):
 				msg += "`"+COMMAND_PREFIX+"timer 0:40` or `"+COMMAND_PREFIX+"timer :40`: Search for a matching timer of 0 hours 40 mins\n"
 				msg += "`"+COMMAND_PREFIX+"timer 8:00` or `"+COMMAND_PREFIX+"timer 08:00` or `"+COMMAND_PREFIX+"timer 08:00:00`: Search for a matching timer of 8 hours\n"
 				await client.send_message(message.channel, msg)
+			elif param == "status":
+				msg = "Show the amount of servers this bot is in and the number of dolls and equipment indexed."
+				msg += "\nIf --extra is appended the lowest and highest production timers for weapons and dolls will be shown."
+				await client.send_message(message.channel, msg)
 			else:
 				print("Tried to get help for "+param+ " but there was none.")
 				await client.send_message(message.channel, "No help available for this command yet.")
@@ -395,8 +491,7 @@ async def on_message(message):
 		if quotedex:
 			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
 		msg+="**"+COMMAND_PREFIX+"timer:** List T-Dolls or equipment that match the production timer. Ex. `"+COMMAND_PREFIX+"timer 8:10` or `"+COMMAND_PREFIX+"timer 0:40`\n"
-		#No need to document this.
-		#msg+="**"+COMMAND_PREFIX+"status:** See how many servers this bot is in.\n"
+		msg+="**"+COMMAND_PREFIX+"status:** See diagnostic information like the amount of dolls indexed, number of discords, etc\n"
 		msg+="For advanced help, do `$gfhelp <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
 		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"

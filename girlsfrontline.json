@@ -95,7 +95,9 @@
         "internalName": "6P62",
         "costumes": {
             "default": "pic_6P62.png",
-            "704": "pic_6P62_704.png"
+            "default_damage": "pic_6P62_D.png",
+            "Battle Sailor": "pic_6P62_704.png",
+            "Battle Sailor_damage": "pic_6P62_704_D.png"
         }
     },
     {
@@ -194,8 +196,10 @@
         "img": "pic_9A91.png",
         "internalName": "9A91",
         "costumes": {
-            "1302": "pic_9A91_1302.png",
-            "default": "pic_9A91.png"
+            "Bullets Cafe": "pic_9A91_1302.png",
+            "Bullets Cafe_damage": "pic_9A91_1302_D.png",
+            "default": "pic_9A91.png",
+            "default_damage": "pic_9A91_D.png"
         }
     },
     {
@@ -292,7 +296,8 @@
         "img": "pic_A91.png",
         "internalName": "A91",
         "costumes": {
-            "default": "pic_A91.png"
+            "default": "pic_A91.png",
+            "default_damage": "pic_A91_D.png"
         }
     },
     {
@@ -415,7 +420,9 @@
         "internalName": "AA12",
         "costumes": {
             "2403": "pic_AA12_2403.png",
-            "default": "pic_AA12.png"
+            "2403_damage": "pic_AA12_2403_D.png",
+            "default": "pic_AA12.png",
+            "default_damage": "pic_AA12_D.png"
         }
     },
     {
@@ -520,7 +527,124 @@
         "img": "pic_AAT52.png",
         "internalName": "AAT52",
         "costumes": {
-            "default": "pic_AAT52.png"
+            "default": "pic_AAT52.png",
+            "default_damage": "pic_AAT52_D.png"
+        }
+    },
+    {
+        "url": "/wiki/ADS",
+        "num": 214,
+        "name": "ADS",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 61,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 16,
+            "eva": 5,
+            "acc": 6,
+            "rof": 50,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 121,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 50,
+            "eva": 45,
+            "acc": 54,
+            "rof": 78,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Storm Surge",
+            "icon": "AdsStorm",
+            "text": "[Active] - Fires a special grenade, applying 3 layers of Corrosion to targets within a radius of 2.5 units, and an additional 2 layers to the main target of the grenade. After using the skill, chance of applying Corrosion on normal attacks increase to 100% for ($duration) seconds. [Passive] - Normal attacks have ($cor_chance)% chance to apply 1 layer of Corrosion. When an enemy accumulates 5 layers of Corrosion, it deals ($cor_dam)x damage and stuns for ($cor_stun) seconds in an extremely small area, and clears the Corrosion effect on the enemy. [Corrosion] - Reduce the target's rate of fire and movement speed by ($cor_debuff)% for ($duration) seconds.",
+            "initial": "5",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ],
+            "cor_chance": [
+                "20",
+                "22",
+                "24",
+                "26",
+                "30",
+                "32",
+                "34",
+                "36",
+                "38",
+                "40"
+            ],
+            "cor_dam": [
+                "3",
+                "3.33",
+                "3.67",
+                "4",
+                "4.33",
+                "4.67",
+                "5",
+                "5.33",
+                "5.67",
+                "6"
+            ],
+            "cor_debuff": [
+                "3",
+                "3",
+                "4",
+                "4",
+                "4",
+                "5",
+                "5",
+                "5",
+                "6",
+                "6"
+            ],
+            "cor_stun": [
+                "1.5",
+                "1.6",
+                "1.7",
+                "1.8",
+                "1.9",
+                "2",
+                "2.1",
+                "2.2",
+                "2.3",
+                "2.4"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases accuracy by 30%\nIncreases evasion by 18%",
+        "production": {
+            "timer": "3:55:00"
         }
     },
     {
@@ -643,7 +767,9 @@
         "internalName": "AEK999",
         "costumes": {
             "default": "pic_AEK999.png",
-            "1505": "pic_AEK999_1505.png"
+            "default_damage": "pic_AEK999_D.png",
+            "1505": "pic_AEK999_1505.png",
+            "1505_damage": "pic_AEK999_1505_D.png"
         }
     },
     {
@@ -741,7 +867,9 @@
         "internalName": "AK12",
         "costumes": {
             "default": "pic_AK12.png",
-            "2402": "pic_AK12_2402.png"
+            "default_damage": "pic_AK12_D.png",
+            "2402": "pic_AK12_2402.png",
+            "2402_damage": "pic_AK12_2402_D.png"
         }
     },
     {
@@ -841,7 +969,9 @@
         "internalName": "AK47",
         "costumes": {
             "default": "pic_AK47.png",
-            "501": "pic_AK47_501.png"
+            "default_damage": "pic_AK47_D.png",
+            "501": "pic_AK47_501.png",
+            "501_damage": "pic_AK47_501_D.png"
         }
     },
     {
@@ -950,7 +1080,8 @@
         "img": "pic_AK74U.png",
         "internalName": "AK74U",
         "costumes": {
-            "default": "pic_AK74U.png"
+            "default": "pic_AK74U.png",
+            "default_damage": "pic_AK74U_D.png"
         }
     },
     {
@@ -1036,7 +1167,9 @@
         "internalName": "AN94",
         "costumes": {
             "default": "pic_AN94.png",
-            "2404": "pic_AN94_2404.png"
+            "default_damage": "pic_AN94_D.png",
+            "2404": "pic_AN94_2404.png",
+            "2404_damage": "pic_AN94_2404_D.png"
         }
     },
     {
@@ -1110,7 +1243,8 @@
         "img": "pic_AR70.png",
         "internalName": "AR70",
         "costumes": {
-            "default": "pic_AR70.png"
+            "default": "pic_AR70.png",
+            "default_damage": "pic_AR70_D.png"
         }
     },
     {
@@ -1209,8 +1343,11 @@
         "internalName": "ART556",
         "costumes": {
             "1803": "pic_ART556_1803.png",
+            "1803_damage": "pic_ART556_1803_D.png",
             "2803": "pic_ART556_2803.png",
-            "default": "pic_ART556.png"
+            "2803_damage": "pic_ART556_2803_D.png",
+            "default": "pic_ART556.png",
+            "default_damage": "pic_ART556_D.png"
         }
     },
     {
@@ -1284,7 +1421,8 @@
         "img": "pic_ARX160.png",
         "internalName": "ARX160",
         "costumes": {
-            "default": "pic_ARX160.png"
+            "default": "pic_ARX160.png",
+            "default_damage": "pic_ARX160_D.png"
         }
     },
     {
@@ -1383,7 +1521,8 @@
         "internalName": "ASVAL",
         "img": "pic_ASVAL.png",
         "costumes": {
-            "default": "pic_ASVAL.png"
+            "default": "pic_ASVAL.png",
+            "default_damage": "pic_ASVAL_D.png"
         }
     },
     {
@@ -1800,7 +1939,8 @@
         "internalName": "Ash127",
         "img": "pic_Ash127.png",
         "costumes": {
-            "default": "pic_Ash127.png"
+            "default": "pic_Ash127.png",
+            "default_damage": "pic_Ash127_D.png"
         }
     },
     {
@@ -1885,7 +2025,8 @@
         "img": "pic_AUG.png",
         "internalName": "AUG",
         "costumes": {
-            "default": "pic_AUG.png"
+            "default": "pic_AUG.png",
+            "default_damage": "pic_AUG_D.png"
         }
     },
     {
@@ -1970,7 +2111,8 @@
         "internalName": "Ak5",
         "img": "pic_Ak5.png",
         "costumes": {
-            "default": "pic_Ak5.png"
+            "default": "pic_Ak5.png",
+            "default_damage": "pic_Ak5_D.png"
         }
     },
     {
@@ -2093,8 +2235,11 @@
         "internalName": "Ameli",
         "costumes": {
             "default": "pic_Ameli.png",
+            "default_damage": "pic_Ameli_D.png",
             "1605": "pic_Ameli_1605.png",
-            "2409": "pic_Ameli_2409.png"
+            "1605_damage": "pic_Ameli_1605_D.png",
+            "2409": "pic_Ameli_2409.png",
+            "2409_damage": "pic_Ameli_2409_D.png"
         }
     },
     {
@@ -2186,7 +2331,8 @@
         "internalName": "357",
         "img": "pic_357.png",
         "costumes": {
-            "default": "pic_357.png"
+            "default": "pic_357.png",
+            "default_damage": "pic_357_D.png"
         }
     },
     {
@@ -2278,7 +2424,8 @@
         "img": "pic_BM59.png",
         "internalName": "BM59",
         "costumes": {
-            "default": "pic_BM59.png"
+            "default": "pic_BM59.png",
+            "default_damage": "pic_BM59_D.png"
         }
     },
     {
@@ -2363,7 +2510,8 @@
         "img": "pic_Ballista.png",
         "internalName": "Ballista",
         "costumes": {
-            "default": "pic_Ballista.png"
+            "default": "pic_Ballista.png",
+            "default_damage": "pic_Ballista_D.png"
         }
     },
     {
@@ -2443,7 +2591,8 @@
         "internalName": "MAB38",
         "img": "pic_MAB38.png",
         "costumes": {
-            "default": "pic_MAB38.png"
+            "default": "pic_MAB38.png",
+            "default_damage": "pic_MAB38_D.png"
         }
     },
     {
@@ -2555,8 +2704,10 @@
         "img": "pic_BrenMK.png",
         "costumes": {
             "default": "pic_BrenMK.png",
+            "default_damage": "pic_BrenMK_D.png",
             "MOD 3": "pic_BrenMKMod.png",
-            "2605": "pic_BrenMK_2605.png"
+            "2605": "pic_BrenMK_2605.png",
+            "2605_damage": "pic_BrenMK_2605_D.png"
         }
     },
     {
@@ -2970,7 +3121,8 @@
         "internalName": "BrenTen",
         "img": "pic_BrenTen.png",
         "costumes": {
-            "default": "pic_BrenTen.png"
+            "default": "pic_BrenTen.png",
+            "default_damage": "pic_BrenTen_D.png"
         }
     },
     {
@@ -3068,7 +3220,9 @@
         "img": "pic_CBJMS.png",
         "costumes": {
             "2205": "pic_CBJMS_2205.png",
-            "default": "pic_CBJMS.png"
+            "2205_damage": "pic_CBJMS_2205_D.png",
+            "default": "pic_CBJMS.png",
+            "default_damage": "pic_CBJMS_D.png"
         }
     },
     {
@@ -3160,7 +3314,8 @@
         "img": "pic_C96.png",
         "internalName": "C96",
         "costumes": {
-            "default": "pic_C96.png"
+            "default": "pic_C96.png",
+            "default_damage": "pic_C96_D.png"
         }
     },
     {
@@ -3233,7 +3388,8 @@
         "img": "pic_CZ805.png",
         "internalName": "CZ805",
         "costumes": {
-            "default": "pic_CZ805.png"
+            "default": "pic_CZ805.png",
+            "default_damage": "pic_CZ805_D.png"
         }
     },
     {
@@ -3354,7 +3510,8 @@
         "img": "pic_CZ2000.png",
         "internalName": "CZ2000",
         "costumes": {
-            "default": "pic_CZ2000.png"
+            "default": "pic_CZ2000.png",
+            "default_damage": "pic_CZ2000_D.png"
         }
     },
     {
@@ -3440,7 +3597,8 @@
         "img": "pic_CZ52.png",
         "internalName": "CZ52",
         "costumes": {
-            "default": "pic_CZ52.png"
+            "default": "pic_CZ52.png",
+            "default_damage": "pic_CZ52_D.png"
         }
     },
     {
@@ -3515,7 +3673,9 @@
         "internalName": "CZ75",
         "costumes": {
             "1604": "pic_CZ75_1604.png",
-            "default": "pic_CZ75.png"
+            "1604_damage": "pic_CZ75_1604_D.png",
+            "default": "pic_CZ75.png",
+            "default_damage": "pic_CZ75_D.png"
         }
     },
     {
@@ -3625,7 +3785,9 @@
         "img": "pic_Carcano1891.png",
         "costumes": {
             "2201": "pic_Carcano1891_2201.png",
-            "default": "pic_Carcano1891.png"
+            "2201_damage": "pic_Carcano1891_2201_D.png",
+            "default": "pic_Carcano1891.png",
+            "default_damage": "pic_Carcano1891_D.png"
         }
     },
     {
@@ -3927,9 +4089,12 @@
         "img": "pic_M1873.png",
         "costumes": {
             "default": "pic_M1873.png",
+            "default_damage": "pic_M1873_D.png",
             "MOD 3": "pic_M1873Mod.png",
             "2105": "pic_M1873_2105.png",
-            "301": "pic_M1873_301.png"
+            "2105_damage": "pic_M1873_2105_D.png",
+            "301": "pic_M1873_301.png",
+            "301_damage": "pic_M1873_301_D.png"
         }
     },
     {
@@ -4340,8 +4505,11 @@
         "internalName": "Contender",
         "costumes": {
             "default": "pic_Contender.png",
+            "default_damage": "pic_Contender_D.png",
             "1502": "pic_Contender_1502.png",
-            "2302": "pic_Contender_2302.png"
+            "1502_damage": "pic_Contender_1502_D.png",
+            "2302": "pic_Contender_2302.png",
+            "2302_damage": "pic_Contender_2302_D.png"
         }
     },
     {
@@ -4438,7 +4606,8 @@
         "internalName": "Cx4Storm",
         "img": "pic_Cx4Storm.png",
         "costumes": {
-            "default": "pic_Cx4Storm.png"
+            "default": "pic_Cx4Storm.png",
+            "default_damage": "pic_Cx4Storm_D.png"
         }
     },
     {
@@ -4543,7 +4712,8 @@
         "img": "pic_DP28.png",
         "internalName": "DP28",
         "costumes": {
-            "default": "pic_DP28.png"
+            "default": "pic_DP28.png",
+            "default_damage": "pic_DP28_D.png"
         }
     },
     {
@@ -4629,8 +4799,11 @@
         "internalName": "DSR50",
         "costumes": {
             "2101": "pic_DSR50_2101.png",
+            "2101_damage": "pic_DSR50_2101_D.png",
             "1801": "pic_DSR50_1801.png",
-            "default": "pic_DSR50.png"
+            "1801_damage": "pic_DSR50_1801_D.png",
+            "default": "pic_DSR50.png",
+            "default_damage": "pic_DSR50_D.png"
         }
     },
     {
@@ -4773,7 +4946,9 @@
         "internalName": "EVO3",
         "costumes": {
             "2109": "pic_EVO3_2109.png",
-            "default": "pic_EVO3.png"
+            "2109_damage": "pic_EVO3_2109_D.png",
+            "default": "pic_EVO3.png",
+            "default_damage": "pic_EVO3_D.png"
         }
     },
     {
@@ -4878,7 +5053,9 @@
         "internalName": "F1",
         "costumes": {
             "2606": "pic_F1_2606.png",
-            "default": "pic_F1.png"
+            "2606_damage": "pic_F1_2606_D.png",
+            "default": "pic_F1.png",
+            "default_damage": "pic_F1_D.png"
         }
     },
     {
@@ -4965,7 +5142,8 @@
         "img": "pic_F2000.png",
         "internalName": "F2000",
         "costumes": {
-            "default": "pic_F2000.png"
+            "default": "pic_F2000.png",
+            "default_damage": "pic_F2000_D.png"
         }
     },
     {
@@ -5051,9 +5229,13 @@
         "img": "pic_FNFAL.png",
         "costumes": {
             "default": "pic_FNFAL.png",
+            "default_damage": "pic_FNFAL_D.png",
             "308": "pic_FNFAL_308.png",
+            "308_damage": "pic_FNFAL_308_D.png",
             "607": "pic_FNFAL_607.png",
-            "2406": "pic_FNFAL_2406.png"
+            "607_damage": "pic_FNFAL_607_D.png",
+            "2406": "pic_FNFAL_2406.png",
+            "2406_damage": "pic_FNFAL_2406_D.png"
         }
     },
     {
@@ -5129,7 +5311,9 @@
         "internalName": "FAMAS",
         "costumes": {
             "2604": "pic_FAMAS_2604.png",
-            "default": "pic_FAMAS.png"
+            "2604_damage": "pic_FAMAS_2604_D.png",
+            "default": "pic_FAMAS.png",
+            "default_damage": "pic_FAMAS_D.png"
         }
     },
     {
@@ -5222,7 +5406,8 @@
         "img": "pic_FG42.png",
         "internalName": "FG42",
         "costumes": {
-            "default": "pic_FG42.png"
+            "default": "pic_FG42.png",
+            "default_damage": "pic_FG42_D.png"
         }
     },
     {
@@ -5307,7 +5492,8 @@
         "img": "pic_FMG9.png",
         "internalName": "FMG9",
         "costumes": {
-            "default": "pic_FMG9.png"
+            "default": "pic_FMG9.png",
+            "default_damage": "pic_FMG9_D.png"
         }
     },
     {
@@ -5400,6 +5586,7 @@
         "internalName": "FN49",
         "costumes": {
             "default": "pic_FN49.png",
+            "default_damage": "pic_FN49_D.png",
             "MOD 3": "pic_FN49Mod.png"
         }
     },
@@ -5795,7 +5982,9 @@
         "img": "pic_FNFNC.png",
         "costumes": {
             "1406": "pic_FNFNC_1406.png",
-            "default": "pic_FNFNC.png"
+            "1406_damage": "pic_FNFNC_1406_D.png",
+            "default": "pic_FNFNC.png",
+            "default_damage": "pic_FNFNC_D.png"
         }
     },
     {
@@ -5888,7 +6077,8 @@
         "img": "pic_FNP9.png",
         "internalName": "FNP9",
         "costumes": {
-            "default": "pic_FNP9.png"
+            "default": "pic_FNP9.png",
+            "default_damage": "pic_FNP9_D.png"
         }
     },
     {
@@ -5987,7 +6177,9 @@
         "internalName": "FP6",
         "costumes": {
             "2804": "pic_FP6_2804.png",
-            "default": "pic_FP6.png"
+            "2804_damage": "pic_FP6_2804_D.png",
+            "default": "pic_FP6.png",
+            "default_damage": "pic_FP6_D.png"
         }
     },
     {
@@ -6167,10 +6359,15 @@
         "img": "pic_FN57.png",
         "costumes": {
             "2203": "pic_FN57_2203.png",
+            "2203_damage": "pic_FN57_2203_D.png",
             "default": "pic_FN57.png",
+            "default_damage": "pic_FN57_D.png",
             "1109": "pic_FN57_1109.png",
+            "1109_damage": "pic_FN57_1109_D.png",
             "2805": "pic_FN57_2805.png",
-            "1902": "pic_FN57_1902.png"
+            "2805_damage": "pic_FN57_2805_D.png",
+            "1902": "pic_FN57_1902.png",
+            "1902_damage": "pic_FN57_1902_D.png"
         }
     },
     {
@@ -6257,9 +6454,13 @@
         "internalName": "G11",
         "costumes": {
             "2502": "pic_G11_2502.png",
+            "2502_damage": "pic_G11_2502_D.png",
             "1602": "pic_G11_1602.png",
+            "1602_damage": "pic_G11_1602_D.png",
             "default": "pic_G11.png",
-            "9": "pic_G11_9.png"
+            "default_damage": "pic_G11_D.png",
+            "9": "pic_G11_9.png",
+            "9_damage": "pic_G11_9_D.png"
         }
     },
     {
@@ -6346,8 +6547,11 @@
         "internalName": "G28",
         "costumes": {
             "2304": "pic_G28_2304.png",
+            "2304_damage": "pic_G28_2304_D.png",
             "default": "pic_G28.png",
-            "1104": "pic_G28_1104.png"
+            "default_damage": "pic_G28_D.png",
+            "1104": "pic_G28_1104.png",
+            "1104_damage": "pic_G28_1104_D.png"
         }
     },
     {
@@ -6423,14 +6627,22 @@
         "internalName": "G3",
         "costumes": {
             "1507": "pic_G36_1507.png",
+            "1507_damage": "pic_G36_1507_D.png",
             "1202": "pic_G36C_1202.png",
+            "1202_damage": "pic_G36C_1202_D.png",
             "1904": "pic_G36_1904.png",
+            "1904_damage": "pic_G36_1904_D.png",
             "2806": "pic_G36_2806.png",
+            "2806_damage": "pic_G36_2806_D.png",
             "1303": "pic_G3_1303.png",
+            "1303_damage": "pic_G3_1303_D.png",
             "2407": "pic_G36_2407.png",
+            "2407_damage": "pic_G36_2407_D.png",
             "905": "pic_G36_905.png",
+            "905_damage": "pic_G36_905_D.png",
             "MOD 3": "pic_G3Mod.png",
-            "default": "pic_G36.png"
+            "default": "pic_G36.png",
+            "default_damage": "pic_G36_D.png"
         }
     },
     {
@@ -6799,13 +7011,20 @@
         "internalName": "G36",
         "costumes": {
             "1507": "pic_G36_1507.png",
+            "1507_damage": "pic_G36_1507_D.png",
             "1202": "pic_G36C_1202.png",
+            "1202_damage": "pic_G36C_1202_D.png",
             "1904": "pic_G36_1904.png",
+            "1904_damage": "pic_G36_1904_D.png",
             "2806": "pic_G36_2806.png",
+            "2806_damage": "pic_G36_2806_D.png",
             "2407": "pic_G36_2407.png",
+            "2407_damage": "pic_G36_2407_D.png",
             "905": "pic_G36_905.png",
+            "905_damage": "pic_G36_905_D.png",
             "MOD 3": "pic_G36Mod.png",
-            "default": "pic_G36.png"
+            "default": "pic_G36.png",
+            "default_damage": "pic_G36_D.png"
         }
     },
     {
@@ -7222,7 +7441,9 @@
         "internalName": "G36C",
         "costumes": {
             "1202": "pic_G36C_1202.png",
-            "default": "pic_G36C.png"
+            "1202_damage": "pic_G36C_1202_D.png",
+            "default": "pic_G36C.png",
+            "default_damage": "pic_G36C_D.png"
         }
     },
     {
@@ -7321,7 +7542,9 @@
         "internalName": "G41",
         "costumes": {
             "2401": "pic_G41_2401.png",
-            "default": "pic_G41.png"
+            "2401_damage": "pic_G41_2401_D.png",
+            "default": "pic_G41.png",
+            "default_damage": "pic_G41_D.png"
         }
     },
     {
@@ -7425,7 +7648,8 @@
         "img": "pic_G43.png",
         "internalName": "G43",
         "costumes": {
-            "default": "pic_G43.png"
+            "default": "pic_G43.png",
+            "default_damage": "pic_G43_D.png"
         }
     },
     {
@@ -7498,7 +7722,8 @@
         "img": "pic_GSH18.png",
         "internalName": "GSH18",
         "costumes": {
-            "default": "pic_GSH18.png"
+            "default": "pic_GSH18.png",
+            "default_damage": "pic_GSH18_D.png"
         }
     },
     {
@@ -7656,7 +7881,9 @@
         "internalName": "GepardM1",
         "costumes": {
             "2305": "pic_GepardM1_2305.png",
-            "default": "pic_GepardM1.png"
+            "2305_damage": "pic_GepardM1_2305_D.png",
+            "default": "pic_GepardM1.png",
+            "default_damage": "pic_GepardM1_D.png"
         }
     },
     {
@@ -7741,7 +7968,8 @@
         "img": "pic_Glock17.png",
         "internalName": "Glock17",
         "costumes": {
-            "default": "pic_Glock17.png"
+            "default": "pic_Glock17.png",
+            "default_damage": "pic_Glock17_D.png"
         }
     },
     {
@@ -7833,9 +8061,13 @@
         "img": "pic_Grizzly.png",
         "costumes": {
             "105": "pic_Grizzly_105.png",
+            "105_damage": "pic_Grizzly_105_D.png",
             "903": "pic_Grizzly_903.png",
+            "903_damage": "pic_Grizzly_903_D.png",
             "default": "pic_Grizzly.png",
-            "2102": "pic_Grizzly_2102.png"
+            "default_damage": "pic_Grizzly_D.png",
+            "2102": "pic_Grizzly_2102.png",
+            "2102_damage": "pic_Grizzly_2102_D.png"
         }
     },
     {
@@ -7947,7 +8179,9 @@
         "internalName": "HK21",
         "costumes": {
             "default": "pic_HK21.png",
-            "2701": "pic_HK21_2701.png"
+            "default_damage": "pic_HK21_D.png",
+            "2701": "pic_HK21_2701.png",
+            "2701_damage": "pic_HK21_2701_D.png"
         }
     },
     {
@@ -8046,7 +8280,8 @@
         "img": "pic_HK23.png",
         "internalName": "HK23",
         "costumes": {
-            "default": "pic_HK23.png"
+            "default": "pic_HK23.png",
+            "default_damage": "pic_HK23_D.png"
         }
     },
     {
@@ -8202,7 +8437,9 @@
         "internalName": "HK416",
         "costumes": {
             "default": "pic_HK416.png",
-            "805": "pic_HK416_805.png"
+            "default_damage": "pic_HK416_D.png",
+            "805": "pic_HK416_805.png",
+            "805_damage": "pic_HK416_805_D.png"
         }
     },
     {
@@ -8301,7 +8538,9 @@
         "internalName": "HK45",
         "costumes": {
             "2705": "pic_HK45_2705.png",
-            "default": "pic_HK45.png"
+            "2705_damage": "pic_HK45_2705_D.png",
+            "default": "pic_HK45.png",
+            "default_damage": "pic_HK45_D.png"
         }
     },
     {
@@ -8503,7 +8742,9 @@
         "img": "pic_88type.png",
         "costumes": {
             "1809": "pic_88type_1809.png",
-            "default": "pic_88type.png"
+            "1809_damage": "pic_88type_1809_D.png",
+            "default": "pic_88type.png",
+            "default_damage": "pic_88type_D.png"
         }
     },
     {
@@ -8704,7 +8945,8 @@
         "internalName": "Type64-AR",
         "img": "pic_Type64-AR.png",
         "costumes": {
-            "default": "pic_Type64-AR.png"
+            "default": "pic_Type64-AR.png",
+            "default_damage": "pic_Type64-AR_D.png"
         }
     },
     {
@@ -8797,8 +9039,10 @@
         "internalName": "IDW",
         "costumes": {
             "2108": "pic_IDW_2108.png",
+            "2108_damage": "pic_IDW_2108_D.png",
             "MOD 3": "pic_IDWMod.png",
-            "default": "pic_IDW.png"
+            "default": "pic_IDW.png",
+            "default_damage": "pic_IDW_D.png"
         }
     },
     {
@@ -9239,7 +9483,9 @@
         "internalName": "IWS2000",
         "costumes": {
             "1403": "pic_IWS2000_1403.png",
-            "default": "pic_IWS2000.png"
+            "1403_damage": "pic_IWS2000_1403_D.png",
+            "default": "pic_IWS2000.png",
+            "default_damage": "pic_IWS2000_D.png"
         }
     },
     {
@@ -9336,7 +9582,8 @@
         "internalName": "JS9mm",
         "img": "pic_JS9mm.png",
         "costumes": {
-            "default": "pic_JS9mm.png"
+            "default": "pic_JS9mm.png",
+            "default_damage": "pic_JS9mm_D.png"
         }
     },
     {
@@ -9410,8 +9657,11 @@
         "img": "pic_JS-127.png",
         "costumes": {
             "2702": "pic_JS-127_2702.png",
+            "2702_damage": "pic_JS-127_2702_D.png",
             "default": "pic_JS-127.png",
-            "1804": "pic_JS-127_1804.png"
+            "default_damage": "pic_JS-127_D.png",
+            "1804": "pic_JS-127_1804.png",
+            "1804_damage": "pic_JS-127_1804_D.png"
         }
     },
     {
@@ -9502,7 +9752,8 @@
         "img": "pic_Jericho.png",
         "internalName": "Jericho",
         "costumes": {
-            "default": "pic_Jericho.png"
+            "default": "pic_Jericho.png",
+            "default_damage": "pic_Jericho_D.png"
         }
     },
     {
@@ -9575,7 +9826,8 @@
         "img": "pic_K11.png",
         "internalName": "K11",
         "costumes": {
-            "default": "pic_K11.png"
+            "default": "pic_K11.png",
+            "default_damage": "pic_K11_D.png"
         }
     },
     {
@@ -9697,7 +9949,9 @@
         "internalName": "K2",
         "costumes": {
             "2001": "pic_K2_2001.png",
-            "default": "pic_K2.png"
+            "2001_damage": "pic_K2_2001_D.png",
+            "default": "pic_K2.png",
+            "default_damage": "pic_K2_D.png"
         }
     },
     {
@@ -9794,7 +10048,8 @@
         "img": "pic_K31.png",
         "internalName": "K31",
         "costumes": {
-            "default": "pic_K31.png"
+            "default": "pic_K31.png",
+            "default_damage": "pic_K31_D.png"
         }
     },
     {
@@ -9904,7 +10159,9 @@
         "internalName": "K5",
         "costumes": {
             "default": "pic_K5.png",
-            "2002": "pic_K5_2002.png"
+            "default_damage": "pic_K5_D.png",
+            "2002": "pic_K5_2002.png",
+            "2002_damage": "pic_K5_2002_D.png"
         }
     },
     {
@@ -10003,8 +10260,11 @@
         "internalName": "KLIN",
         "costumes": {
             "default": "pic_KLIN.png",
+            "default_damage": "pic_KLIN_D.png",
             "2003": "pic_KLIN_2003.png",
-            "1204": "pic_KLIN_1204.png"
+            "2003_damage": "pic_KLIN_2003_D.png",
+            "1204": "pic_KLIN_1204.png",
+            "1204_damage": "pic_KLIN_1204_D.png"
         }
     },
     {
@@ -10108,7 +10368,8 @@
         "img": "pic_KS23.png",
         "internalName": "KS23",
         "costumes": {
-            "default": "pic_KS23.png"
+            "default": "pic_KS23.png",
+            "default_damage": "pic_KS23_D.png"
         }
     },
     {
@@ -10212,7 +10473,8 @@
         "img": "pic_KSG.png",
         "internalName": "KSG",
         "costumes": {
-            "default": "pic_KSG.png"
+            "default": "pic_KSG.png",
+            "default_damage": "pic_KSG_D.png"
         }
     },
     {
@@ -10389,7 +10651,8 @@
         "internalName": "98K",
         "img": "pic_98K.png",
         "costumes": {
-            "default": "pic_98K.png"
+            "default": "pic_98K.png",
+            "default_damage": "pic_98K_D.png"
         }
     },
     {
@@ -10488,7 +10751,8 @@
         "img": "pic_L85A1.png",
         "internalName": "L85A1",
         "costumes": {
-            "default": "pic_L85A1.png"
+            "default": "pic_L85A1.png",
+            "default_damage": "pic_L85A1_D.png"
         }
     },
     {
@@ -10582,8 +10846,10 @@
         "internalName": "LWMMG",
         "costumes": {
             "default": "pic_LWMMG.png",
+            "default_damage": "pic_LWMMG_D.png",
             "MOD 3": "pic_LWMMGMod.png",
-            "1808": "pic_LWMMG_1808.png"
+            "1808": "pic_LWMMG_1808.png",
+            "1808_damage": "pic_LWMMG_1808_D.png"
         }
     },
     {
@@ -11015,9 +11281,13 @@
         "img": "pic_MLEMK1.png",
         "costumes": {
             "10": "pic_MLEMK1_10.png",
+            "10_damage": "pic_MLEMK1_10_D.png",
             "default": "pic_MLEMK1.png",
+            "default_damage": "pic_MLEMK1_D.png",
             "604": "pic_MLEMK1_604.png",
-            "901": "pic_MLEMK1_901.png"
+            "604_damage": "pic_MLEMK1_604_D.png",
+            "901": "pic_MLEMK1_901.png",
+            "901_damage": "pic_MLEMK1_901_D.png"
         }
     },
     {
@@ -11185,26 +11455,45 @@
         "img": "pic_M1.png",
         "costumes": {
             "default": "pic_M1887.png",
+            "default_damage": "pic_M1887_D.png",
             "1106": "pic_M1_1106.png",
+            "1106_damage": "pic_M1_1106_D.png",
             "106": "pic_M1919A4_106.png",
+            "106_damage": "pic_M1919A4_106_D.png",
             "102": "pic_M1918_102.png",
+            "102_damage": "pic_M1918_102_D.png",
             "2503": "pic_M1887_2503.png",
+            "2503_damage": "pic_M1887_2503_D.png",
             "803": "pic_M1891_803.png",
+            "803_damage": "pic_M1891_803_D.png",
             "2505": "pic_M1897_2505.png",
+            "2505_damage": "pic_M1897_2505_D.png",
             "2706": "pic_M1895_2706.png",
+            "2706_damage": "pic_M1895_2706_D.png",
             "MOD 3": "pic_M14Mod.png",
             "1107": "pic_M1903_1107.png",
+            "1107_damage": "pic_M1903_1107_D.png",
             "806": "pic_M1918_806.png",
+            "806_damage": "pic_M1918_806_D.png",
             "Boss": "pic_M16A1_Boss.png",
             "1501": "pic_M1928A1_1501.png",
+            "1501_damage": "pic_M1928A1_1501_D.png",
             "7": "pic_M1919A4_7.png",
+            "7_damage": "pic_M1919A4_7_D.png",
             "302": "pic_M1903_302.png",
+            "302_damage": "pic_M1903_302_D.png",
             "303": "pic_M14_303.png",
+            "303_damage": "pic_M14_303_D.png",
             "2105": "pic_M1873_2105.png",
+            "2105_damage": "pic_M1873_2105_D.png",
             "1606": "pic_M1918_1606.png",
+            "1606_damage": "pic_M1918_1606_D.png",
             "802": "pic_M1903_802.png",
+            "802_damage": "pic_M1903_802_D.png",
             "301": "pic_M1873_301.png",
-            "5": "pic_M1903_5.png"
+            "301_damage": "pic_M1873_301_D.png",
+            "5": "pic_M1903_5.png",
+            "5_damage": "pic_M1903_5_D.png"
         }
     },
     {
@@ -11302,7 +11591,8 @@
         "img": "pic_M1014.png",
         "internalName": "M1014",
         "costumes": {
-            "default": "pic_M1014.png"
+            "default": "pic_M1014.png",
+            "default_damage": "pic_M1014_D.png"
         }
     },
     {
@@ -11401,7 +11691,8 @@
         "img": "pic_M12.png",
         "internalName": "M12",
         "costumes": {
-            "default": "pic_M12.png"
+            "default": "pic_M12.png",
+            "default_damage": "pic_M12_D.png"
         }
     },
     {
@@ -11501,7 +11792,9 @@
         "internalName": "M14",
         "costumes": {
             "default": "pic_M14.png",
+            "default_damage": "pic_M14_D.png",
             "303": "pic_M14_303.png",
+            "303_damage": "pic_M14_303_D.png",
             "MOD 3": "pic_M14Mod.png"
         }
     },
@@ -11883,7 +12176,8 @@
         "internalName": "M16A1",
         "costumes": {
             "Boss": "pic_M16A1_Boss.png",
-            "default": "pic_M16A1.png"
+            "default": "pic_M16A1.png",
+            "default_damage": "pic_M16A1_D.png"
         }
     },
     {
@@ -11971,7 +12265,9 @@
         "internalName": "M1887",
         "costumes": {
             "2503": "pic_M1887_2503.png",
-            "default": "pic_M1887.png"
+            "2503_damage": "pic_M1887_2503_D.png",
+            "default": "pic_M1887.png",
+            "default_damage": "pic_M1887_D.png"
         }
     },
     {
@@ -12064,7 +12360,9 @@
         "internalName": "M1897",
         "costumes": {
             "2505": "pic_M1897_2505.png",
-            "default": "pic_M1897.png"
+            "2505_damage": "pic_M1897_2505_D.png",
+            "default": "pic_M1897.png",
+            "default_damage": "pic_M1897_D.png"
         }
     },
     {
@@ -12170,6 +12468,7 @@
         "internalName": "M1911",
         "costumes": {
             "default": "pic_M1911.png",
+            "default_damage": "pic_M1911_D.png",
             "MOD 3": "pic_M1911Mod.png"
         }
     },
@@ -12589,10 +12888,14 @@
         "internalName": "M1918",
         "costumes": {
             "default": "pic_M1918.png",
+            "default_damage": "pic_M1918_D.png",
             "102": "pic_M1918_102.png",
+            "102_damage": "pic_M1918_102_D.png",
             "806": "pic_M1918_806.png",
+            "806_damage": "pic_M1918_806_D.png",
             "MOD 3": "pic_M1918Mod.png",
-            "1606": "pic_M1918_1606.png"
+            "1606": "pic_M1918_1606.png",
+            "1606_damage": "pic_M1918_1606_D.png"
         }
     },
     {
@@ -13002,8 +13305,11 @@
         "internalName": "M1919A4",
         "costumes": {
             "default": "pic_M1919A4.png",
+            "default_damage": "pic_M1919A4_D.png",
             "106": "pic_M1919A4_106.png",
-            "7": "pic_M1919A4_7.png"
+            "106_damage": "pic_M1919A4_106_D.png",
+            "7": "pic_M1919A4_7.png",
+            "7_damage": "pic_M1919A4_7_D.png"
         }
     },
     {
@@ -13088,7 +13394,8 @@
         "img": "pic_M1A1.png",
         "internalName": "M1A1",
         "costumes": {
-            "default": "pic_M1A1.png"
+            "default": "pic_M1A1.png",
+            "default_damage": "pic_M1A1_D.png"
         }
     },
     {
@@ -13254,7 +13561,9 @@
         "internalName": "M21",
         "costumes": {
             "304": "pic_M21_304.png",
-            "default": "pic_M21.png"
+            "304_damage": "pic_M21_304_D.png",
+            "default": "pic_M21.png",
+            "default_damage": "pic_M21_D.png"
         }
     },
     {
@@ -13365,7 +13674,9 @@
         "internalName": "M249SAW",
         "costumes": {
             "default": "pic_M249SAW.png",
-            "1301": "pic_M249SAW_1301.png"
+            "default_damage": "pic_M249SAW_D.png",
+            "1301": "pic_M249SAW_1301.png",
+            "1301_damage": "pic_M249SAW_1301_D.png"
         }
     },
     {
@@ -13439,7 +13750,8 @@
         "img": "pic_M2HB.png",
         "internalName": "M2HB",
         "costumes": {
-            "default": "pic_M2HB.png"
+            "default": "pic_M2HB.png",
+            "default_damage": "pic_M2HB_D.png"
         }
     },
     {
@@ -13519,7 +13831,8 @@
         "img": "pic_M3.png",
         "internalName": "M3",
         "costumes": {
-            "default": "pic_M3.png"
+            "default": "pic_M3.png",
+            "default_damage": "pic_M3_D.png"
         }
     },
     {
@@ -13612,7 +13925,9 @@
         "img": "pic_Ithaca37.png",
         "costumes": {
             "default": "pic_Ithaca37.png",
-            "1105": "pic_Ithaca37_1105.png"
+            "default_damage": "pic_Ithaca37_D.png",
+            "1105": "pic_Ithaca37_1105.png",
+            "1105_damage": "pic_Ithaca37_1105_D.png"
         }
     },
     {
@@ -14041,6 +14356,7 @@
         "internalName": "M4A1",
         "costumes": {
             "default": "pic_M4A1.png",
+            "default_damage": "pic_M4A1_D.png",
             "MOD 3": "pic_M4A1Mod.png"
         }
     },
@@ -14416,7 +14732,8 @@
         "img": "pic_M500.png",
         "internalName": "M500",
         "costumes": {
-            "default": "pic_M500.png"
+            "default": "pic_M500.png",
+            "default_damage": "pic_M500_D.png"
         }
     },
     {
@@ -14509,7 +14826,9 @@
         "internalName": "M590",
         "costumes": {
             "default": "pic_M590.png",
-            "1806": "pic_M590_1806.png"
+            "default_damage": "pic_M590_D.png",
+            "1806": "pic_M590_1806.png",
+            "1806_damage": "pic_M590_1806_D.png"
         }
     },
     {
@@ -14620,7 +14939,8 @@
         "img": "pic_M60.png",
         "internalName": "M60",
         "costumes": {
-            "default": "pic_M60.png"
+            "default": "pic_M60.png",
+            "default_damage": "pic_M60_D.png"
         }
     },
     {
@@ -14729,7 +15049,8 @@
         "img": "pic_M82A1.png",
         "internalName": "M82A1",
         "costumes": {
-            "default": "pic_M82A1.png"
+            "default": "pic_M82A1.png",
+            "default_damage": "pic_M82A1_D.png"
         }
     },
     {
@@ -14827,7 +15148,8 @@
         "internalName": "M870P",
         "img": "pic_M870P.png",
         "costumes": {
-            "default": "pic_M870P.png"
+            "default": "pic_M870P.png",
+            "default_damage": "pic_M870P_D.png"
         }
     },
     {
@@ -14908,11 +15230,17 @@
         "internalName": "M9",
         "costumes": {
             "2303": "pic_M950A_2303.png",
+            "2303_damage": "pic_M950A_2303_D.png",
             "default": "pic_M99.png",
+            "default_damage": "pic_M99_D.png",
             "808": "pic_M950A_808.png",
+            "808_damage": "pic_M950A_808_D.png",
             "1701": "pic_M99_1701.png",
+            "1701_damage": "pic_M99_1701_D.png",
             "404": "pic_M99_404.png",
-            "702": "pic_M950A_702.png"
+            "404_damage": "pic_M99_404_D.png",
+            "702": "pic_M950A_702.png",
+            "702_damage": "pic_M950A_702_D.png"
         }
     },
     {
@@ -15004,9 +15332,13 @@
         "internalName": "M950A",
         "costumes": {
             "2303": "pic_M950A_2303.png",
+            "2303_damage": "pic_M950A_2303_D.png",
             "default": "pic_M950A.png",
+            "default_damage": "pic_M950A_D.png",
             "808": "pic_M950A_808.png",
-            "702": "pic_M950A_702.png"
+            "808_damage": "pic_M950A_808_D.png",
+            "702": "pic_M950A_702.png",
+            "702_damage": "pic_M950A_702_D.png"
         }
     },
     {
@@ -15093,8 +15425,11 @@
         "internalName": "M99",
         "costumes": {
             "1701": "pic_M99_1701.png",
+            "1701_damage": "pic_M99_1701_D.png",
             "default": "pic_M99.png",
-            "404": "pic_M99_404.png"
+            "default_damage": "pic_M99_D.png",
+            "404": "pic_M99_404.png",
+            "404_damage": "pic_M99_404_D.png"
         }
     },
     {
@@ -15204,7 +15539,8 @@
         "img": "pic_MAC10.png",
         "internalName": "MAC10",
         "costumes": {
-            "default": "pic_MAC10.png"
+            "default": "pic_MAC10.png",
+            "default_damage": "pic_MAC10_D.png"
         }
     },
     {
@@ -15326,7 +15662,9 @@
         "internalName": "MDR",
         "costumes": {
             "2603": "pic_MDR_2603.png",
-            "default": "pic_MDR.png"
+            "2603_damage": "pic_MDR_2603_D.png",
+            "default": "pic_MDR.png",
+            "default_damage": "pic_MDR_D.png"
         }
     },
     {
@@ -15438,7 +15776,9 @@
         "internalName": "MG3",
         "costumes": {
             "default": "pic_MG3.png",
-            "1304": "pic_MG3_1304.png"
+            "default_damage": "pic_MG3_D.png",
+            "1304": "pic_MG3_1304.png",
+            "1304_damage": "pic_MG3_1304_D.png"
         }
     },
     {
@@ -15531,7 +15871,8 @@
         "img": "pic_MG34.png",
         "internalName": "MG34",
         "costumes": {
-            "default": "pic_MG34.png"
+            "default": "pic_MG34.png",
+            "default_damage": "pic_MG34_D.png"
         }
     },
     {
@@ -15723,7 +16064,9 @@
         "internalName": "MG4",
         "costumes": {
             "703": "pic_MG4_703.png",
-            "default": "pic_MG4.png"
+            "703_damage": "pic_MG4_703_D.png",
+            "default": "pic_MG4.png",
+            "default_damage": "pic_MG4_D.png"
         }
     },
     {
@@ -15822,7 +16165,8 @@
         "img": "pic_MG42.png",
         "internalName": "MG42",
         "costumes": {
-            "default": "pic_MG42.png"
+            "default": "pic_MG42.png",
+            "default_damage": "pic_MG42_D.png"
         }
     },
     {
@@ -15897,9 +16241,13 @@
         "internalName": "MG5",
         "costumes": {
             "2501": "pic_MG5_2501.png",
+            "2501_damage": "pic_MG5_2501_D.png",
             "default": "pic_MG5.png",
+            "default_damage": "pic_MG5_D.png",
             "309": "pic_MG5_309.png",
-            "1504": "pic_MG5_1504.png"
+            "309_damage": "pic_MG5_309_D.png",
+            "1504": "pic_MG5_1504.png",
+            "1504_damage": "pic_MG5_1504_D.png"
         }
     },
     {
@@ -15985,7 +16333,8 @@
         "img": "pic_MP443.png",
         "internalName": "MP443",
         "costumes": {
-            "default": "pic_MP443.png"
+            "default": "pic_MP443.png",
+            "default_damage": "pic_MP443_D.png"
         }
     },
     {
@@ -16078,9 +16427,12 @@
         "internalName": "MP446",
         "costumes": {
             "402": "pic_MP446_402.png",
+            "402_damage": "pic_MP446_402_D.png",
             "MOD 3": "pic_MP446Mod.png",
             "default": "pic_MP446.png",
-            "103": "pic_MP446_103.png"
+            "default_damage": "pic_MP446_D.png",
+            "103": "pic_MP446_103.png",
+            "103_damage": "pic_MP446_103_D.png"
         }
     },
     {
@@ -16472,7 +16824,8 @@
         "img": "pic_MP448.png",
         "internalName": "MP448",
         "costumes": {
-            "default": "pic_MP448.png"
+            "default": "pic_MP448.png",
+            "default_damage": "pic_MP448_D.png"
         }
     },
     {
@@ -16579,7 +16932,9 @@
         "internalName": "MP40",
         "costumes": {
             "default": "pic_MP40.png",
-            "902": "pic_MP40_902.png"
+            "default_damage": "pic_MP40_D.png",
+            "902": "pic_MP40_902.png",
+            "902_damage": "pic_MP40_902_D.png"
         }
     },
     {
@@ -16758,9 +17113,13 @@
         "internalName": "MP5",
         "costumes": {
             "1205": "pic_MP5_1205.png",
+            "1205_damage": "pic_MP5_1205_D.png",
             "1903": "pic_MP5_1903.png",
+            "1903_damage": "pic_MP5_1903_D.png",
             "default": "pic_MP5.png",
-            "3": "pic_MP5_3.png"
+            "default_damage": "pic_MP5_D.png",
+            "3": "pic_MP5_3.png",
+            "3_damage": "pic_MP5_3_D.png"
         }
     },
     {
@@ -16871,7 +17230,9 @@
         "internalName": "MP7",
         "costumes": {
             "2405": "pic_MP7_2405.png",
-            "default": "pic_MP7.png"
+            "2405_damage": "pic_MP7_2405_D.png",
+            "default": "pic_MP7.png",
+            "default_damage": "pic_MP7_D.png"
         }
     },
     {
@@ -16945,7 +17306,8 @@
         "img": "pic_MT9.png",
         "internalName": "MT9",
         "costumes": {
-            "default": "pic_MT9.png"
+            "default": "pic_MT9.png",
+            "default_damage": "pic_MT9_D.png"
         }
     },
     {
@@ -17130,8 +17492,11 @@
         "img": "pic_PM.png",
         "costumes": {
             "default": "pic_PM06.png",
+            "default_damage": "pic_PM06_D.png",
             "2703": "pic_PM06_2703.png",
-            "1": "pic_PM_1.png"
+            "2703_damage": "pic_PM06_2703_D.png",
+            "1": "pic_PM_1.png",
+            "1_damage": "pic_PM_1_D.png"
         }
     },
     {
@@ -17243,7 +17608,9 @@
         "internalName": "MicroUZI",
         "costumes": {
             "default": "pic_MicroUZI.png",
-            "101": "pic_MicroUZI_101.png"
+            "default_damage": "pic_MicroUZI_D.png",
+            "101": "pic_MicroUZI_101.png",
+            "101_damage": "pic_MicroUZI_101_D.png"
         }
     },
     {
@@ -17650,7 +18017,8 @@
         "img": "pic_Mk12.png",
         "internalName": "Mk12",
         "costumes": {
-            "default": "pic_Mk12.png"
+            "default": "pic_Mk12.png",
+            "default_damage": "pic_Mk12_D.png"
         }
     },
     {
@@ -17767,8 +18135,11 @@
         "internalName": "Mk23",
         "costumes": {
             "1805": "pic_Mk23_1805.png",
+            "1805_damage": "pic_Mk23_1805_D.png",
             "8": "pic_Mk23_8.png",
-            "default": "pic_Mk23.png"
+            "8_damage": "pic_Mk23_8_D.png",
+            "default": "pic_Mk23.png",
+            "default_damage": "pic_Mk23_D.png"
         }
     },
     {
@@ -17866,7 +18237,8 @@
         "img": "pic_Mk46.png",
         "internalName": "Mk46",
         "costumes": {
-            "default": "pic_Mk46.png"
+            "default": "pic_Mk46.png",
+            "default_damage": "pic_Mk46_D.png"
         }
     },
     {
@@ -17964,7 +18336,8 @@
         "img": "pic_MK48.png",
         "internalName": "MK48",
         "costumes": {
-            "default": "pic_MK48.png"
+            "default": "pic_MK48.png",
+            "default_damage": "pic_MK48_D.png"
         }
     },
     {
@@ -18143,7 +18516,9 @@
         "img": "pic_M1891.png",
         "costumes": {
             "803": "pic_M1891_803.png",
+            "803_damage": "pic_M1891_803_D.png",
             "default": "pic_M1891.png",
+            "default_damage": "pic_M1891_D.png",
             "MOD 3": "pic_M1891Mod.png"
         }
     },
@@ -18507,7 +18882,8 @@
         "img": "pic_NS2000.png",
         "internalName": "NS2000",
         "costumes": {
-            "default": "pic_NS2000.png"
+            "default": "pic_NS2000.png",
+            "default_damage": "pic_NS2000_D.png"
         }
     },
     {
@@ -18594,9 +18970,13 @@
         "internalName": "NTW20",
         "costumes": {
             "2301": "pic_NTW20_2301.png",
+            "2301_damage": "pic_NTW20_2301_D.png",
             "default": "pic_NTW20.png",
+            "default_damage": "pic_NTW20_D.png",
             "1101": "pic_NTW20_1101.png",
-            "307": "pic_NTW20_307.png"
+            "1101_damage": "pic_NTW20_1101_D.png",
+            "307": "pic_NTW20_307.png",
+            "307_damage": "pic_NTW20_307_D.png"
         }
     },
     {
@@ -18689,8 +19069,11 @@
         "internalName": "NZ75",
         "costumes": {
             "1702": "pic_NZ75_1702.png",
+            "1702_damage": "pic_NZ75_1702_D.png",
             "403": "pic_NZ75_403.png",
-            "default": "pic_NZ75.png"
+            "403_damage": "pic_NZ75_403_D.png",
+            "default": "pic_NZ75.png",
+            "default_damage": "pic_NZ75_D.png"
         }
     },
     {
@@ -18808,8 +19191,10 @@
         "img": "pic_M1895.png",
         "costumes": {
             "2706": "pic_M1895_2706.png",
+            "2706_damage": "pic_M1895_2706_D.png",
             "MOD 3": "pic_M1895Mod.png",
-            "default": "pic_M1895.png"
+            "default": "pic_M1895.png",
+            "default_damage": "pic_M1895_D.png"
         }
     },
     {
@@ -19262,7 +19647,9 @@
         "internalName": "NEGEV",
         "costumes": {
             "default": "pic_NEGEV.png",
-            "904": "pic_NEGEV_904.png"
+            "default_damage": "pic_NEGEV_D.png",
+            "904": "pic_NEGEV_904.png",
+            "904_damage": "pic_NEGEV_904_D.png"
         }
     },
     {
@@ -19347,7 +19734,8 @@
         "img": "pic_OBR.png",
         "internalName": "OBR",
         "costumes": {
-            "default": "pic_OBR.png"
+            "default": "pic_OBR.png",
+            "default_damage": "pic_OBR_D.png"
         }
     },
     {
@@ -19434,7 +19822,8 @@
         "img": "pic_OTs12.png",
         "internalName": "OTs12",
         "costumes": {
-            "default": "pic_OTs12.png"
+            "default": "pic_OTs12.png",
+            "default_damage": "pic_OTs12_D.png"
         }
     },
     {
@@ -19533,7 +19922,9 @@
         "internalName": "OTs14",
         "costumes": {
             "1203": "pic_OTs14_1203.png",
-            "default": "pic_OTs14.png"
+            "1203_damage": "pic_OTs14_1203_D.png",
+            "default": "pic_OTs14.png",
+            "default_damage": "pic_OTs14_D.png"
         }
     },
     {
@@ -19607,7 +19998,8 @@
         "img": "pic_OTs39.png",
         "internalName": "OTs39",
         "costumes": {
-            "default": "pic_OTs39.png"
+            "default": "pic_OTs39.png",
+            "default_damage": "pic_OTs39_D.png"
         }
     },
     {
@@ -19682,7 +20074,9 @@
         "img": "pic_OC44.png",
         "costumes": {
             "default": "pic_OC44.png",
-            "1608": "pic_OC44_1608.png"
+            "default_damage": "pic_OC44_D.png",
+            "1608": "pic_OC44_1608.png",
+            "1608_damage": "pic_OC44_1608_D.png"
         }
     },
     {
@@ -19798,7 +20192,8 @@
         "img": "pic_P08.png",
         "internalName": "P08",
         "costumes": {
-            "default": "pic_P08.png"
+            "default": "pic_P08.png",
+            "default_damage": "pic_P08_D.png"
         }
     },
     {
@@ -19988,7 +20383,88 @@
         "img": "pic_P226.png",
         "internalName": "P226",
         "costumes": {
-            "default": "pic_P226.png"
+            "default": "pic_P226.png",
+            "default_damage": "pic_P226_D.png"
+        }
+    },
+    {
+        "url": "/wiki/P30",
+        "num": 269,
+        "name": "P30",
+        "type": "HG",
+        "rating": 4,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 35,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 12,
+            "eva": 11,
+            "acc": 8,
+            "rof": 37,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 70,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 32,
+            "eva": 85,
+            "acc": 62,
+            "rof": 55,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Eye for an Eye",
+            "icon": "P30avenger",
+            "text": "Activate to toggle between passives; [In the Midst of Revenge (Default)] - Increases allies rate of fire by ($rof_value)%. [Determination to Pursue] - Increases allies movement speed by ($ms_value)%.",
+            "initial": "3",
+            "cooldown": [
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3"
+            ],
+            "rof_value": [
+                "5",
+                "6",
+                "6",
+                "7",
+                "7",
+                "8",
+                "8",
+                "9",
+                "9",
+                "10"
+            ],
+            "ms_value": [
+                "30",
+                "33",
+                "37",
+                "40",
+                "43",
+                "47",
+                "50",
+                "53",
+                "57",
+                "60"
+            ]
+        },
+        "tile_bonus": "🔶🔷🔶\n🔶⬛🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects all classes\nIncreases damage by 9%(x1) / 11%(x2) / 13%(x3) / 15%(x4) / 18%(x5)\nIncreases accuracy by 30%(x1) / 37%(x2) / 45%(x3) / 52%(x4) / 60%(x5)",
+        "production": {
+            "timer": "00:50:00"
         }
     },
     {
@@ -20082,7 +20558,9 @@
         "internalName": "P38",
         "costumes": {
             "2410": "pic_P38_2410.png",
-            "default": "pic_P38.png"
+            "2410_damage": "pic_P38_2410_D.png",
+            "default": "pic_P38.png",
+            "default_damage": "pic_P38_D.png"
         }
     },
     {
@@ -20175,8 +20653,11 @@
         "internalName": "P7",
         "costumes": {
             "default": "pic_P7.png",
+            "default_damage": "pic_P7_D.png",
             "606": "pic_P7_606.png",
-            "1404": "pic_P7_1404.png"
+            "606_damage": "pic_P7_606_D.png",
+            "1404": "pic_P7_1404.png",
+            "1404_damage": "pic_P7_1404_D.png"
         }
     },
     {
@@ -20250,7 +20731,9 @@
         "internalName": "P90",
         "costumes": {
             "default": "pic_P90.png",
-            "2802": "pic_P90_2802.png"
+            "default_damage": "pic_P90_D.png",
+            "2802": "pic_P90_2802.png",
+            "2802_damage": "pic_P90_2802_D.png"
         }
     },
     {
@@ -20341,7 +20824,8 @@
         "img": "pic_P99.png",
         "internalName": "P99",
         "costumes": {
-            "default": "pic_P99.png"
+            "default": "pic_P99.png",
+            "default_damage": "pic_P99_D.png"
         }
     },
     {
@@ -20520,9 +21004,13 @@
         "internalName": "PK",
         "costumes": {
             "default": "pic_PK.png",
+            "default_damage": "pic_PK_D.png",
             "1201": "pic_PKP_1201.png",
+            "1201_damage": "pic_PKP_1201_D.png",
             "605": "pic_PK_605.png",
-            "1503": "pic_PKP_1503.png"
+            "605_damage": "pic_PK_605_D.png",
+            "1503": "pic_PKP_1503.png",
+            "1503_damage": "pic_PKP_1503_D.png"
         }
     },
     {
@@ -20596,8 +21084,11 @@
         "internalName": "PKP",
         "costumes": {
             "default": "pic_PKP.png",
+            "default_damage": "pic_PKP_D.png",
             "1201": "pic_PKP_1201.png",
-            "1503": "pic_PKP_1503.png"
+            "1201_damage": "pic_PKP_1201_D.png",
+            "1503": "pic_PKP_1503.png",
+            "1503_damage": "pic_PKP_1503_D.png"
         }
     },
     {
@@ -20720,7 +21211,9 @@
         "internalName": "PM06",
         "costumes": {
             "2703": "pic_PM06_2703.png",
-            "default": "pic_PM06.png"
+            "2703_damage": "pic_PM06_2703_D.png",
+            "default": "pic_PM06.png",
+            "default_damage": "pic_PM06_D.png"
         }
     },
     {
@@ -20886,7 +21379,9 @@
         "internalName": "PP19",
         "costumes": {
             "2204": "pic_PP19_2204.png",
-            "default": "pic_PP19.png"
+            "2204_damage": "pic_PP19_2204_D.png",
+            "default": "pic_PP19.png",
+            "default_damage": "pic_PP19_D.png"
         }
     },
     {
@@ -20995,7 +21490,8 @@
         "img": "pic_PP1901.png",
         "internalName": "PP1901",
         "costumes": {
-            "default": "pic_PP1901.png"
+            "default": "pic_PP1901.png",
+            "default_damage": "pic_PP1901_D.png"
         }
     },
     {
@@ -21075,7 +21571,8 @@
         "img": "pic_PP2000.png",
         "internalName": "PP2000",
         "costumes": {
-            "default": "pic_PP2000.png"
+            "default": "pic_PP2000.png",
+            "default_damage": "pic_PP2000_D.png"
         }
     },
     {
@@ -21173,7 +21670,8 @@
         "img": "pic_PP90.png",
         "internalName": "PP90",
         "costumes": {
-            "default": "pic_PP90.png"
+            "default": "pic_PP90.png",
+            "default_damage": "pic_PP90_D.png"
         }
     },
     {
@@ -21278,7 +21776,8 @@
         "img": "pic_PPK.png",
         "internalName": "PPK",
         "costumes": {
-            "default": "pic_PPK.png"
+            "default": "pic_PPK.png",
+            "default_damage": "pic_PPK_D.png"
         }
     },
     {
@@ -21364,7 +21863,8 @@
         "img": "pic_PPS43.png",
         "internalName": "PPS43",
         "costumes": {
-            "default": "pic_PPS43.png"
+            "default": "pic_PPS43.png",
+            "default_damage": "pic_PPS43_D.png"
         }
     },
     {
@@ -21445,7 +21945,9 @@
         "internalName": "PPsh41",
         "costumes": {
             "602": "pic_PPsh41_602.png",
-            "default": "pic_PPsh41.png"
+            "602_damage": "pic_PPsh41_602_D.png",
+            "default": "pic_PPsh41.png",
+            "default_damage": "pic_PPsh41_D.png"
         }
     },
     {
@@ -21519,7 +22021,8 @@
         "img": "pic_PSG1.png",
         "internalName": "PSG1",
         "costumes": {
-            "default": "pic_PSG1.png"
+            "default": "pic_PSG1.png",
+            "default_damage": "pic_PSG1_D.png"
         }
     },
     {
@@ -21616,7 +22119,8 @@
         "img": "pic_PSM.png",
         "internalName": "PSM",
         "costumes": {
-            "default": "pic_PSM.png"
+            "default": "pic_PSM.png",
+            "default_damage": "pic_PSM_D.png"
         }
     },
     {
@@ -21703,7 +22207,9 @@
         "internalName": "PTRD",
         "costumes": {
             "408": "pic_PTRD_408.png",
-            "default": "pic_PTRD.png"
+            "408_damage": "pic_PTRD_408_D.png",
+            "default": "pic_PTRD.png",
+            "default_damage": "pic_PTRD_D.png"
         }
     },
     {
@@ -21807,7 +22313,9 @@
         "internalName": "Px4Storm",
         "costumes": {
             "default": "pic_Px4Storm.png",
-            "2801": "pic_Px4Storm_2801.png"
+            "default_damage": "pic_Px4Storm_D.png",
+            "2801": "pic_Px4Storm_2801.png",
+            "2801_damage": "pic_Px4Storm_2801_D.png"
         }
     },
     {
@@ -21940,7 +22448,8 @@
         "img": "pic_Python.png",
         "internalName": "Python",
         "costumes": {
-            "default": "pic_Python.png"
+            "default": "pic_Python.png",
+            "default_damage": "pic_Python_D.png"
         }
     },
     {
@@ -22021,7 +22530,9 @@
         "internalName": "PzB39",
         "costumes": {
             "1506": "pic_PzB39_1506.png",
-            "default": "pic_PzB39.png"
+            "1506_damage": "pic_PzB39_1506_D.png",
+            "default": "pic_PzB39.png",
+            "default_damage": "pic_PzB39_D.png"
         }
     },
     {
@@ -22315,7 +22826,9 @@
         "internalName": "RFB",
         "costumes": {
             "default": "pic_RFB.png",
-            "1601": "pic_RFB_1601.png"
+            "default_damage": "pic_RFB_D.png",
+            "1601": "pic_RFB_1601.png",
+            "1601_damage": "pic_RFB_1601_D.png"
         }
     },
     {
@@ -22408,7 +22921,9 @@
         "internalName": "RMB93",
         "costumes": {
             "default": "pic_RMB93.png",
-            "1705": "pic_RMB93_1705.png"
+            "default_damage": "pic_RMB93_D.png",
+            "1705": "pic_RMB93_1705.png",
+            "1705_damage": "pic_RMB93_1705_D.png"
         }
     },
     {
@@ -22506,7 +23021,8 @@
         "internalName": "RO635",
         "costumes": {
             "Without Gun": "pic_RO635_NoArmor0.png",
-            "default": "pic_RO635.png"
+            "default": "pic_RO635.png",
+            "default_damage": "pic_RO635_D.png"
         }
     },
     {
@@ -22593,7 +23109,8 @@
         "img": "pic_RPD.png",
         "internalName": "RPD",
         "costumes": {
-            "default": "pic_RPD.png"
+            "default": "pic_RPD.png",
+            "default_damage": "pic_RPD_D.png"
         }
     },
     {
@@ -22666,7 +23183,8 @@
         "img": "pic_RT20.png",
         "internalName": "RT20",
         "costumes": {
-            "default": "pic_RT20.png"
+            "default": "pic_RT20.png",
+            "default_damage": "pic_RT20_D.png"
         }
     },
     {
@@ -22757,7 +23275,8 @@
         "img": "pic_Ribeyrolles.png",
         "internalName": "Ribeyrolles",
         "costumes": {
-            "default": "pic_Ribeyrolles.png"
+            "default": "pic_Ribeyrolles.png",
+            "default_damage": "pic_Ribeyrolles_D.png"
         }
     },
     {
@@ -22850,8 +23369,11 @@
         "img": "pic_SAT8.png",
         "costumes": {
             "1802": "pic_SAT8_1802.png",
+            "1802_damage": "pic_SAT8_1802_D.png",
             "2601": "pic_SAT8_2601.png",
-            "default": "pic_SAT8.png"
+            "2601_damage": "pic_SAT8_2601_D.png",
+            "default": "pic_SAT8.png",
+            "default_damage": "pic_SAT8_D.png"
         }
     },
     {
@@ -22936,7 +23458,8 @@
         "img": "pic_SAR21.png",
         "internalName": "SAR21",
         "costumes": {
-            "default": "pic_SAR21.png"
+            "default": "pic_SAR21.png",
+            "default_damage": "pic_SAR21_D.png"
         }
     },
     {
@@ -23033,7 +23556,8 @@
         "internalName": "ColtSCW",
         "img": "pic_ColtSCW.png",
         "costumes": {
-            "default": "pic_ColtSCW.png"
+            "default": "pic_ColtSCW.png",
+            "default_damage": "pic_ColtSCW_D.png"
         }
     },
     {
@@ -23120,7 +23644,8 @@
         "img": "pic_SIG510.png",
         "internalName": "SIG510",
         "costumes": {
-            "default": "pic_SIG510.png"
+            "default": "pic_SIG510.png",
+            "default_damage": "pic_SIG510_D.png"
         }
     },
     {
@@ -23206,7 +23731,8 @@
         "internalName": "HEZISM1",
         "img": "pic_HEZISM1.png",
         "costumes": {
-            "default": "pic_HEZISM1.png"
+            "default": "pic_HEZISM1.png",
+            "default_damage": "pic_HEZISM1_D.png"
         }
     },
     {
@@ -23287,7 +23813,9 @@
         "internalName": "SPAS12",
         "costumes": {
             "2408": "pic_SPAS12_2408.png",
-            "default": "pic_SPAS12.png"
+            "2408_damage": "pic_SPAS12_2408_D.png",
+            "default": "pic_SPAS12.png",
+            "default_damage": "pic_SPAS12_D.png"
         }
     },
     {
@@ -23373,7 +23901,9 @@
         "internalName": "SPP1",
         "costumes": {
             "1703": "pic_SPP1_1703.png",
-            "default": "pic_SPP1.png"
+            "1703_damage": "pic_SPP1_1703_D.png",
+            "default": "pic_SPP1.png",
+            "default_damage": "pic_SPP1_D.png"
         }
     },
     {
@@ -23458,7 +23988,8 @@
         "internalName": "FNSPR",
         "img": "pic_FNSPR.png",
         "costumes": {
-            "default": "pic_FNSPR.png"
+            "default": "pic_FNSPR.png",
+            "default_damage": "pic_FNSPR_D.png"
         }
     },
     {
@@ -23557,7 +24088,9 @@
         "internalName": "SR3MP",
         "costumes": {
             "807": "pic_SR3MP_807.png",
-            "default": "pic_SR3MP.png"
+            "807_damage": "pic_SR3MP_807_D.png",
+            "default": "pic_SR3MP.png",
+            "default_damage": "pic_SR3MP_D.png"
         }
     },
     {
@@ -23654,7 +24187,8 @@
         "internalName": "DTASRS",
         "img": "pic_DTASRS.png",
         "costumes": {
-            "default": "pic_DTASRS.png"
+            "default": "pic_DTASRS.png",
+            "default_damage": "pic_DTASRS_D.png"
         }
     },
     {
@@ -23740,7 +24274,8 @@
         "img": "pic_SSG69.png",
         "internalName": "SSG69",
         "costumes": {
-            "default": "pic_SSG69.png"
+            "default": "pic_SSG69.png",
+            "default_damage": "pic_SSG69_D.png"
         }
     },
     {
@@ -23828,7 +24363,9 @@
         "costumes": {
             "MOD 3": "pic_AR15Mod.png",
             "701": "pic_AR15_701.png",
-            "default": "pic_AR15.png"
+            "701_damage": "pic_AR15_701_D.png",
+            "default": "pic_AR15.png",
+            "default_damage": "pic_AR15_D.png"
         }
     },
     {
@@ -24222,9 +24759,12 @@
         "internalName": "SV98",
         "costumes": {
             "502": "pic_SV98_502.png",
+            "502_damage": "pic_SV98_502_D.png",
             "1906": "pic_SV98_1906.png",
+            "1906_damage": "pic_SV98_1906_D.png",
             "MOD 3": "pic_SV98Mod.png",
-            "default": "pic_SV98.png"
+            "default": "pic_SV98.png",
+            "default_damage": "pic_SV98_D.png"
         }
     },
     {
@@ -24593,7 +25133,9 @@
         "internalName": "SVD",
         "costumes": {
             "305": "pic_SVD_305.png",
-            "default": "pic_SVD.png"
+            "305_damage": "pic_SVD_305_D.png",
+            "default": "pic_SVD.png",
+            "default_damage": "pic_SVD_D.png"
         }
     },
     {
@@ -24673,7 +25215,8 @@
         "img": "pic_SVT38.png",
         "internalName": "SVT38",
         "costumes": {
-            "default": "pic_SVT38.png"
+            "default": "pic_SVT38.png",
+            "default_damage": "pic_SVT38_D.png"
         }
     },
     {
@@ -24777,7 +25320,8 @@
         "img": "pic_Saiga12.png",
         "internalName": "Saiga12",
         "costumes": {
-            "default": "pic_Saiga12.png"
+            "default": "pic_Saiga12.png",
+            "default_damage": "pic_Saiga12_D.png"
         }
     },
     {
@@ -24955,7 +25499,8 @@
         "img": "pic_Shipka.png",
         "internalName": "Shipka",
         "costumes": {
-            "default": "pic_Shipka.png"
+            "default": "pic_Shipka.png",
+            "default_damage": "pic_Shipka_D.png"
         }
     },
     {
@@ -25154,7 +25699,9 @@
         "img": "pic_VZ61.png",
         "costumes": {
             "default": "pic_VZ61.png",
-            "801": "pic_VZ61_801.png"
+            "default_damage": "pic_VZ61_D.png",
+            "801": "pic_VZ61_801.png",
+            "801_damage": "pic_VZ61_801_D.png"
         }
     },
     {
@@ -25246,7 +25793,8 @@
         "img": "pic_SpectreM4.png",
         "internalName": "SpectreM4",
         "costumes": {
-            "default": "pic_SpectreM4.png"
+            "default": "pic_SpectreM4.png",
+            "default_damage": "pic_SpectreM4_D.png"
         }
     },
     {
@@ -25339,7 +25887,9 @@
         "internalName": "Spitfire",
         "costumes": {
             "1405": "pic_Spitfire_1405.png",
-            "default": "pic_Spitfire.png"
+            "1405_damage": "pic_Spitfire_1405_D.png",
+            "default": "pic_Spitfire.png",
+            "default_damage": "pic_Spitfire_D.png"
         }
     },
     {
@@ -25427,10 +25977,15 @@
         "img": "pic_M1903.png",
         "costumes": {
             "default": "pic_M1903.png",
+            "default_damage": "pic_M1903_D.png",
             "1107": "pic_M1903_1107.png",
+            "1107_damage": "pic_M1903_1107_D.png",
             "302": "pic_M1903_302.png",
+            "302_damage": "pic_M1903_302_D.png",
             "802": "pic_M1903_802.png",
-            "5": "pic_M1903_5.png"
+            "802_damage": "pic_M1903_802_D.png",
+            "5": "pic_M1903_5.png",
+            "5_damage": "pic_M1903_5_D.png"
         }
     },
     {
@@ -25505,7 +26060,8 @@
         "img": "pic_STG44.png",
         "internalName": "STG44",
         "costumes": {
-            "default": "pic_STG44.png"
+            "default": "pic_STG44.png",
+            "default_damage": "pic_STG44_D.png"
         }
     },
     {
@@ -25843,7 +26399,8 @@
         "internalName": "APS",
         "img": "pic_APS.png",
         "costumes": {
-            "default": "pic_APS.png"
+            "default": "pic_APS.png",
+            "default_damage": "pic_APS_D.png"
         }
     },
     {
@@ -25931,7 +26488,9 @@
         "img": "pic_StenMK2.png",
         "costumes": {
             "default": "pic_StenMK2.png",
+            "default_damage": "pic_StenMK2_D.png",
             "603": "pic_StenMK2_603.png",
+            "603_damage": "pic_StenMK2_603_D.png",
             "MOD 3": "pic_StenMK2Mod.png"
         }
     },
@@ -26407,8 +26966,11 @@
         "img": "pic_KP31.png",
         "costumes": {
             "310": "pic_KP31_310.png",
+            "310_damage": "pic_KP31_310_D.png",
             "1103": "pic_KP31_1103.png",
-            "default": "pic_KP31.png"
+            "1103_damage": "pic_KP31_1103_D.png",
+            "default": "pic_KP31.png",
+            "default_damage": "pic_KP31_D.png"
         }
     },
     {
@@ -26483,7 +27045,9 @@
         "internalName": "SuperSASS",
         "costumes": {
             "1407": "pic_SuperSASS_1407.png",
-            "default": "pic_SuperSASS.png"
+            "1407_damage": "pic_SuperSASS_1407_D.png",
+            "default": "pic_SuperSASS.png",
+            "default_damage": "pic_SuperSASS_D.png"
         }
     },
     {
@@ -26588,7 +27152,9 @@
         "internalName": "SuperShorty",
         "costumes": {
             "1704": "pic_SuperShorty_1704.png",
-            "default": "pic_SuperShorty.png"
+            "1704_damage": "pic_SuperShorty_1704_D.png",
+            "default": "pic_SuperShorty.png",
+            "default_damage": "pic_SuperShorty_D.png"
         }
     },
     {
@@ -26685,7 +27251,88 @@
         "img": "pic_T5000.png",
         "internalName": "T5000",
         "costumes": {
-            "default": "pic_T5000.png"
+            "default": "pic_T5000.png",
+            "default_damage": "pic_T5000_D.png"
+        }
+    },
+    {
+        "url": "/wiki/T-CMS",
+        "num": 268,
+        "name": "T-CMS",
+        "type": "RF",
+        "rating": 3,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 44,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 45,
+            "eva": 4,
+            "acc": 10,
+            "rof": 25,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 88,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 120,
+            "eva": 27,
+            "acc": 75,
+            "rof": 37,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Firepower Focus",
+            "icon": "powBuffSelf",
+            "text": "Increases T-CMS's damage by ($damage_value)% for ($time_value) seconds.",
+            "initial": "5",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8.0"
+            ],
+            "damage_value": [
+                "35.0",
+                "38.0",
+                "41.0",
+                "43.0",
+                "46.0",
+                "49.0",
+                "52.0",
+                "54.0",
+                "57.0",
+                "60.0"
+            ],
+            "time_value": [
+                "3.0",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5.0"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
+        "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
+        "production": {
+            "reward": "Login reward for July 2019 (CN)."
         }
     },
     {
@@ -26806,7 +27453,8 @@
         "img": "pic_T65.png",
         "internalName": "T65",
         "costumes": {
-            "default": "pic_T65.png"
+            "default": "pic_T65.png",
+            "default_damage": "pic_T65_D.png"
         }
     },
     {
@@ -26892,7 +27540,8 @@
         "img": "pic_T77.png",
         "internalName": "T77",
         "costumes": {
-            "default": "pic_T77.png"
+            "default": "pic_T77.png",
+            "default_damage": "pic_T77_D.png"
         }
     },
     {
@@ -27025,7 +27674,8 @@
         "img": "pic_T91.png",
         "internalName": "T91",
         "costumes": {
-            "default": "pic_T91.png"
+            "default": "pic_T91.png",
+            "default_damage": "pic_T91_D.png"
         }
     },
     {
@@ -27099,7 +27749,9 @@
         "internalName": "TAC50",
         "costumes": {
             "2602": "pic_TAC50_2602.png",
-            "default": "pic_TAC50.png"
+            "2602_damage": "pic_TAC50_2602_D.png",
+            "default": "pic_TAC50.png",
+            "default_damage": "pic_TAC50_D.png"
         }
     },
     {
@@ -27210,7 +27862,9 @@
         "internalName": "TAR21",
         "costumes": {
             "1305": "pic_TAR21_1305.png",
-            "default": "pic_TAR21.png"
+            "1305_damage": "pic_TAR21_1305_D.png",
+            "default": "pic_TAR21.png",
+            "default_damage": "pic_TAR21_D.png"
         }
     },
     {
@@ -27319,7 +27973,8 @@
         "img": "pic_TEC9.png",
         "internalName": "TEC9",
         "costumes": {
-            "default": "pic_TEC9.png"
+            "default": "pic_TEC9.png",
+            "default_damage": "pic_TEC9_D.png"
         }
     },
     {
@@ -27406,7 +28061,9 @@
         "internalName": "TMP",
         "costumes": {
             "2807": "pic_TMP_2807.png",
-            "default": "pic_TMP.png"
+            "2807_damage": "pic_TMP_2807_D.png",
+            "default": "pic_TMP.png",
+            "default_damage": "pic_TMP_D.png"
         }
     },
     {
@@ -27492,7 +28149,9 @@
         "img": "pic_M1928A1.png",
         "costumes": {
             "default": "pic_M1928A1.png",
-            "1501": "pic_M1928A1_1501.png"
+            "default_damage": "pic_M1928A1_D.png",
+            "1501": "pic_M1928A1_1501.png",
+            "1501_damage": "pic_M1928A1_1501_D.png"
         }
     },
     {
@@ -27566,7 +28225,9 @@
         "img": "pic_Thunder50.png",
         "costumes": {
             "2206": "pic_Thunder50_2206.png",
-            "default": "pic_Thunder50.png"
+            "2206_damage": "pic_Thunder50_2206_D.png",
+            "default": "pic_Thunder50.png",
+            "default_damage": "pic_Thunder50_D.png"
         }
     },
     {
@@ -27659,7 +28320,9 @@
         "img": "pic_TT33.png",
         "costumes": {
             "default": "pic_TT33.png",
-            "601": "pic_TT33_601.png"
+            "default_damage": "pic_TT33_D.png",
+            "601": "pic_TT33_601.png",
+            "601_damage": "pic_TT33_601_D.png"
         }
     },
     {
@@ -27744,7 +28407,8 @@
         "img": "pic_Type03.png",
         "internalName": "Type03",
         "costumes": {
-            "default": "pic_Type03.png"
+            "default": "pic_Type03.png",
+            "default_damage": "pic_Type03_D.png"
         }
     },
     {
@@ -27854,7 +28518,88 @@
         "img": "pic_Type100.png",
         "internalName": "Type100",
         "costumes": {
-            "default": "pic_Type100.png"
+            "default": "pic_Type100.png",
+            "default_damage": "pic_Type100_D.png"
+        }
+    },
+    {
+        "url": "/wiki/Type_4",
+        "num": 270,
+        "name": "Type 4",
+        "type": "RF",
+        "rating": 4,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 42,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 40,
+            "eva": 5,
+            "acc": 9,
+            "rof": 26,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 84,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 112,
+            "eva": 37,
+            "acc": 74,
+            "rof": 39,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Dead Line Strike",
+            "icon": "fuzichocosaigo",
+            "text": "Passive: After every 2 attacks, fires a bullet with perfect accuracy and piercing effect dealing 1x damage to the target and the enemies caught within the line of fire. Active: Increase self rate of fire by ($rof_value)% for ($duration) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "rof_value": [
+                "25",
+                "28",
+                "32",
+                "35",
+                "38",
+                "42",
+                "45",
+                "48",
+                "52",
+                "55"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "tile_bonus": "⬛🔶🔶\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 15%",
+        "production": {
+            "timer": "4:15:00"
         }
     },
     {
@@ -27940,7 +28685,8 @@
         "internalName": "56typeR",
         "img": "pic_56typeR.png",
         "costumes": {
-            "default": "pic_56typeR.png"
+            "default": "pic_56typeR.png",
+            "default_damage": "pic_56typeR_D.png"
         }
     },
     {
@@ -28015,9 +28761,12 @@
         "img": "pic_56-1type.png",
         "internalName": "56-1type",
         "costumes": {
-            "401": "pic_56-1type_401.png",
+            "Scarlet Sage": "pic_56-1type_401.png",
+            "Scarlet Sage_damage": "pic_56-1type_401_D.png",
             "default": "pic_56-1type.png",
-            "1905": "pic_56-1type_1905.png"
+            "default_damage": "pic_56-1type_D.png",
+            "As One, Forever Entwined": "pic_56-1type_1905.png",
+            "As One, Forever Entwined_damage": "pic_56-1type_1905_D.png"
         }
     },
     {
@@ -28128,7 +28877,9 @@
         "internalName": "59type",
         "costumes": {
             "default": "pic_59type.png",
-            "407": "pic_59type_407.png"
+            "default_damage": "pic_59type_D.png",
+            "407": "pic_59type_407.png",
+            "407_damage": "pic_59type_407_D.png"
         }
     },
     {
@@ -28226,7 +28977,8 @@
         "img": "pic_Type62.png",
         "internalName": "Type62",
         "costumes": {
-            "default": "pic_Type62.png"
+            "default": "pic_Type62.png",
+            "default_damage": "pic_Type62_D.png"
         }
     },
     {
@@ -28313,7 +29065,9 @@
         "internalName": "63type",
         "costumes": {
             "default": "pic_63type.png",
-            "2004": "pic_63type_2004.png"
+            "default_damage": "pic_63type_D.png",
+            "Yellow Phoenix": "pic_63type_2004.png",
+            "Yellow Phoenix_damage": "pic_63type_2004_D.png"
         }
     },
     {
@@ -28394,9 +29148,12 @@
         "internalName": "64type",
         "costumes": {
             "MOD 3": "pic_64typeMod.png",
-            "104": "pic_64type_104.png",
+            "Water Gown": "pic_64type_104.png",
+            "Water Gown_damage": "pic_64type_104_D.png",
             "default": "pic_64type.png",
-            "11": "pic_64type_11.png"
+            "default_damage": "pic_64type_D.png",
+            "Witch from Afar": "pic_64type_11.png",
+            "Witch from Afar_damage": "pic_64type_11_D.png"
         }
     },
     {
@@ -28753,7 +29510,9 @@
         "internalName": "79type",
         "costumes": {
             "1402": "pic_79type_1402.png",
-            "default": "pic_79type.png"
+            "1402_damage": "pic_79type_1402_D.png",
+            "default": "pic_79type.png",
+            "default_damage": "pic_79type_D.png"
         }
     },
     {
@@ -28840,7 +29599,9 @@
         "internalName": "80type",
         "costumes": {
             "default": "pic_80type.png",
-            "2504": "pic_80type_2504.png"
+            "default_damage": "pic_80type_D.png",
+            "2504": "pic_80type_2504.png",
+            "2504_damage": "pic_80type_2504_D.png"
         }
     },
     {
@@ -28939,7 +29700,9 @@
         "img": "pic_81typeR.png",
         "costumes": {
             "default": "pic_81typeR.png",
-            "1807": "pic_81typeR_1807.png"
+            "default_damage": "pic_81typeR_D.png",
+            "1807": "pic_81typeR_1807.png",
+            "1807_damage": "pic_81typeR_1807_D.png"
         }
     },
     {
@@ -29061,7 +29824,8 @@
         "img": "pic_Type88.png",
         "internalName": "Type88",
         "costumes": {
-            "default": "pic_Type88.png"
+            "default": "pic_Type88.png",
+            "default_damage": "pic_Type88_D.png"
         }
     },
     {
@@ -29165,7 +29929,8 @@
         "img": "pic_92type.png",
         "internalName": "92type",
         "costumes": {
-            "default": "pic_92type.png"
+            "default": "pic_92type.png",
+            "default_damage": "pic_92type_D.png"
         }
     },
     {
@@ -29263,8 +30028,11 @@
         "internalName": "95type",
         "costumes": {
             "405": "pic_95type_405.png",
+            "405_damage": "pic_95type_405_D.png",
             "default": "pic_95type.png",
-            "1102": "pic_95type_1102.png"
+            "default_damage": "pic_95type_D.png",
+            "1102": "pic_95type_1102.png",
+            "1102_damage": "pic_95type_1102_D.png"
         }
     },
     {
@@ -29362,7 +30130,9 @@
         "internalName": "97type",
         "costumes": {
             "406": "pic_97type_406.png",
-            "default": "pic_97type.png"
+            "406_damage": "pic_97type_406_D.png",
+            "default": "pic_97type.png",
+            "default_damage": "pic_97type_D.png"
         }
     },
     {
@@ -29460,7 +30230,8 @@
         "internalName": "97typeS",
         "img": "pic_97typeS.png",
         "costumes": {
-            "default": "pic_97typeS.png"
+            "default": "pic_97typeS.png",
+            "default_damage": "pic_97typeS_D.png"
         }
     },
     {
@@ -29638,7 +30409,8 @@
         "img": "pic_UMP40.png",
         "internalName": "UMP40",
         "costumes": {
-            "default": "pic_UMP40.png"
+            "default": "pic_UMP40.png",
+            "default_damage": "pic_UMP40_D.png"
         }
     },
     {
@@ -29749,9 +30521,12 @@
         "internalName": "UMP45",
         "costumes": {
             "default": "pic_UMP45.png",
+            "default_damage": "pic_UMP45_D.png",
             "2107": "pic_UMP45_2107.png",
+            "2107_damage": "pic_UMP45_2107_D.png",
             "MOD 3": "pic_UMP45Mod.png",
-            "410": "pic_UMP45_410.png"
+            "410": "pic_UMP45_410.png",
+            "410_damage": "pic_UMP45_410_D.png"
         }
     },
     {
@@ -30157,8 +30932,11 @@
         "internalName": "UMP9",
         "costumes": {
             "409": "pic_UMP9_409.png",
+            "409_damage": "pic_UMP9_409_D.png",
             "2106": "pic_UMP9_2106.png",
-            "default": "pic_UMP9.png"
+            "2106_damage": "pic_UMP9_2106_D.png",
+            "default": "pic_UMP9.png",
+            "default_damage": "pic_UMP9_D.png"
         }
     },
     {
@@ -30263,7 +31041,9 @@
         "internalName": "USAS12",
         "costumes": {
             "default": "pic_USAS12.png",
-            "2704": "pic_USAS12_2704.png"
+            "default_damage": "pic_USAS12_D.png",
+            "2704": "pic_USAS12_2704.png",
+            "2704_damage": "pic_USAS12_2704_D.png"
         }
     },
     {
@@ -30355,7 +31135,8 @@
         "img": "pic_USPCompact.png",
         "internalName": "USPCompact",
         "costumes": {
-            "default": "pic_USPCompact.png"
+            "default": "pic_USPCompact.png",
+            "default_damage": "pic_USPCompact_D.png"
         }
     },
     {
@@ -30467,8 +31248,11 @@
         "internalName": "Vector",
         "costumes": {
             "2": "pic_Vector_2.png",
+            "2_damage": "pic_Vector_2_D.png",
             "default": "pic_Vector.png",
-            "1901": "pic_Vector_1901.png"
+            "default_damage": "pic_Vector_D.png",
+            "1901": "pic_Vector_1901.png",
+            "1901_damage": "pic_Vector_1901_D.png"
         }
     },
     {
@@ -30567,10 +31351,15 @@
         "internalName": "WA2000",
         "costumes": {
             "306": "pic_WA2000_306.png",
+            "306_damage": "pic_WA2000_306_D.png",
             "1108": "pic_WA2000_1108.png",
+            "1108_damage": "pic_WA2000_1108_D.png",
             "6": "pic_WA2000_6.png",
+            "6_damage": "pic_WA2000_6_D.png",
             "default": "pic_WA2000.png",
-            "804": "pic_WA2000_804.png"
+            "default_damage": "pic_WA2000_D.png",
+            "804": "pic_WA2000_804.png",
+            "804_damage": "pic_WA2000_804_D.png"
         }
     },
     {
@@ -30662,9 +31451,13 @@
         "img": "pic_Welrod.png",
         "costumes": {
             "411": "pic_Welrod_411.png",
+            "411_damage": "pic_Welrod_411_D.png",
             "2103": "pic_Welrod_2103.png",
+            "2103_damage": "pic_Welrod_2103_D.png",
             "default": "pic_Welrod.png",
-            "1401": "pic_Welrod_1401.png"
+            "default_damage": "pic_Welrod_D.png",
+            "1401": "pic_Welrod_1401.png",
+            "1401_damage": "pic_Welrod_1401_D.png"
         }
     },
     {
@@ -30841,7 +31634,8 @@
         "img": "pic_xm3.png",
         "internalName": "xm3",
         "costumes": {
-            "default": "pic_xm3.png"
+            "default": "pic_xm3.png",
+            "default_damage": "pic_xm3_D.png"
         }
     },
     {
@@ -30914,7 +31708,8 @@
         "img": "pic_XM8.png",
         "internalName": "XM8",
         "costumes": {
-            "default": "pic_XM8.png"
+            "default": "pic_XM8.png",
+            "default_damage": "pic_XM8_D.png"
         }
     },
     {
@@ -31025,7 +31820,8 @@
         "img": "pic_Z62.png",
         "internalName": "Z62",
         "costumes": {
-            "default": "pic_Z62.png"
+            "default": "pic_Z62.png",
+            "default_damage": "pic_Z62_D.png"
         }
     },
     {
@@ -31159,8 +31955,11 @@
         "img": "pic_ZastavaM21.png",
         "costumes": {
             "2104": "pic_ZastavaM21_2104.png",
+            "2104_damage": "pic_ZastavaM21_2104_D.png",
             "default": "pic_ZastavaM21.png",
-            "1603": "pic_ZastavaM21_1603.png"
+            "default_damage": "pic_ZastavaM21_D.png",
+            "1603": "pic_ZastavaM21_1603.png",
+            "1603_damage": "pic_ZastavaM21_1603_D.png"
         }
     },
     {
@@ -31265,7 +32064,9 @@
         "internalName": "m45",
         "costumes": {
             "4": "pic_m45_4.png",
-            "default": "pic_m45.png"
+            "4_damage": "pic_m45_4_D.png",
+            "default": "pic_m45.png",
+            "default_damage": "pic_m45_D.png"
         }
     },
     {
@@ -31351,7 +32152,8 @@
         "internalName": "wz29",
         "img": "pic_wz29.png",
         "costumes": {
-            "default": "pic_wz29.png"
+            "default": "pic_wz29.png",
+            "default_damage": "pic_wz29_D.png"
         }
     },
     {
@@ -31481,7 +32283,9 @@
         "internalName": "Bronya",
         "costumes": {
             "507": "pic_Bronya_507.png",
-            "default": "pic_Bronya.png"
+            "507_damage": "pic_Bronya_507_D.png",
+            "default": "pic_Bronya.png",
+            "default_damage": "pic_Bronya_D.png"
         }
     },
     {
@@ -31567,7 +32371,9 @@
         "internalName": "CLEAR",
         "costumes": {
             "509": "pic_CLEAR_509.png",
-            "default": "pic_CLEAR.png"
+            "509_damage": "pic_CLEAR_509_D.png",
+            "default": "pic_CLEAR.png",
+            "default_damage": "pic_CLEAR_D.png"
         }
     },
     {
@@ -31764,7 +32570,8 @@
         "internalName": "GG_elfeldt",
         "img": "pic_GG_elfeldt.png",
         "costumes": {
-            "default": "pic_GG_elfeldt.png"
+            "default": "pic_GG_elfeldt.png",
+            "default_damage": "pic_GG_elfeldt_D.png"
         }
     },
     {
@@ -31850,7 +32657,9 @@
         "internalName": "FAIL",
         "costumes": {
             "default": "pic_FAIL.png",
-            "510": "pic_FAIL_510.png"
+            "default_damage": "pic_FAIL_D.png",
+            "510": "pic_FAIL_510.png",
+            "510_damage": "pic_FAIL_510_D.png"
         }
     },
     {
@@ -32136,7 +32945,9 @@
         "internalName": "Kiana",
         "costumes": {
             "default": "pic_Kiana.png",
-            "506": "pic_Kiana_506.png"
+            "default_damage": "pic_Kiana_D.png",
+            "506": "pic_Kiana_506.png",
+            "506_damage": "pic_Kiana_506_D.png"
         }
     },
     {
@@ -32302,7 +33113,8 @@
         "internalName": "BB_Noel",
         "img": "pic_BB_Noel.png",
         "costumes": {
-            "default": "pic_BB_Noel.png"
+            "default": "pic_BB_Noel.png",
+            "default_damage": "pic_BB_Noel_D.png"
         }
     },
     {
@@ -32387,7 +33199,8 @@
         "img": "pic_RaidenMei.png",
         "internalName": "RaidenMei",
         "costumes": {
-            "default": "pic_RaidenMei.png"
+            "default": "pic_RaidenMei.png",
+            "default_damage": "pic_RaidenMei_D.png"
         }
     },
     {
@@ -32462,7 +33275,9 @@
         "internalName": "Seele",
         "costumes": {
             "default": "pic_Seele.png",
-            "508": "pic_Seele_508.png"
+            "default_damage": "pic_Seele_D.png",
+            "508": "pic_Seele_508.png",
+            "508_damage": "pic_Seele_508_D.png"
         }
     },
     {
@@ -32693,7 +33508,64 @@
         "img": "pic_Theresa.png",
         "internalName": "Theresa",
         "costumes": {
-            "default": "pic_Theresa1.png"
+            "default": "pic_Theresa1.png",
+            "default_damage": "pic_Theresa1_D.png"
+        }
+    },
+    {
+        "url": "/wiki/K3",
+        "num": -1,
+        "name": "K3",
+        "type": "MG",
+        "rating": 3,
+        "constStats": {
+            "mov": 4,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "9"
+        },
+        "baseStats": {
+            "hp": 63,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 165,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": 78,
+            "eva": 35,
+            "acc": 30,
+            "rof": 134,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n🔷⬛🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects shotguns\nIncreases accuracy by 10%\nIncreases armour by 10%",
+        "production": {
+            "reward": "Login reward for August 2019 (CN)."
         }
     },
     {
@@ -32728,13 +33600,31 @@
             "rof": -1,
             "armor": 0
         },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
         "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
         "bonus_desc": "Affects assault rifles\nNot available\nNot available",
         "production": {},
         "img": "pic_K7.png",
         "internalName": "K7",
         "costumes": {
-            "default": "pic_K7.png"
+            "default": "pic_K7.png",
+            "default_damage": "pic_K7_D.png"
         }
     },
     {
@@ -32775,7 +33665,8 @@
         "img": "pic_KGP9.png",
         "internalName": "KGP9",
         "costumes": {
-            "default": "pic_KGP9.png"
+            "default": "pic_KGP9.png",
+            "default_damage": "pic_KGP9_D.png"
         }
     },
     {
@@ -32885,7 +33776,8 @@
         "rating": -1,
         "production": {
             "reward": "ACCESS DENIED"
-        }
+        },
+        "img": "Architect.png"
     },
     {
         "url": "/wiki/Kalina",
@@ -32898,5 +33790,15 @@
         },
         "internalName": "NPC_Kalina",
         "img": "pic_NPC_Kalina.png"
+    },
+    {
+        "url": "",
+        "num": -1,
+        "name": "Accelerator",
+        "type": "Creator",
+        "rating": 6,
+        "production": {
+            "reward": "It is I, the owner of the bot! Good job for finding this."
+        }
     }
 ]
