@@ -29,7 +29,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.4-20190726"
+version = "IOP 2.49-20190810"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -42,13 +42,25 @@ def num2stars(n):
 			st = st + "☆"
 	return st
 
+def RepresentsInt(s):
+    try: 
+        int(s)
+        return True
+    except ValueError:
+        return False
+
 #@client.event
 #async def loaddex(message):
 #	reload()
 #	await client.send_message(message.channel, "Done.")
 def serverCount():
-	print("Serving " + str(len(client.servers)) +" commanders")
-	return "Serving " + str(len(client.servers)) +" commanders"
+	#Create a variable to store amount of members per server
+	numMembers = 0
+	#Loop through the servers, get all members and add them up
+	for s in client.servers:
+	    numMembers += len(s.members)
+	print("Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders")
+	return "Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders"
 
 @client.event
 async def on_ready():
@@ -154,7 +166,10 @@ def dollInfo(doll):
 	else:
 		quote = False
 		if 'internalName' in doll:
-			quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3"]))
+			if getQuote(doll['internalName'],"gain") != "":
+				quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3","gain"]))
+			else:
+				quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3"]))
 		if quote != False:
 			embed.set_footer(text=quote)
 		else:
@@ -175,6 +190,9 @@ def dollInfo(doll):
 
 def equipInfo(equip):
 	embed = discord.Embed(title=equip['name'] + " " + num2stars(equip['rating']), url=SITE_DOMAIN+equip['url'], color=gfcolors[equip['rating']])
+	#Type is worthless, show valid for instead
+	if 'valid' in equip:
+		embed.add_field(name="Usable by", value=equip['valid'], inline=True)
 	#embed.add_field(name="Type", value=equip['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(equip['baseStats']['hp']) + ", **DMG:** " + str(equip['baseStats']['dmg']) + ", **ACC:** " + str(equip['baseStats']['acc']) + ", **EVA:** " + str(equip['baseStats']['eva']) + ", **ROF:** " + str(equip['baseStats']['rof']))
@@ -211,12 +229,17 @@ def equipInfo(equip):
 		a = equip['production']['heavy']
 		f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
 		embed.add_field(name="Heavy Production Requirement", value=f, inline=True)
-	#Not all equips have abilities yet since some are unreleased.
+		
+	#Faries have skills too!
 	if 'ability' in equip:
 		embed.add_field(name="Skill: "+equip['ability']['name'], value=getAbility(equip,'ability'), inline=False)
+	#Future proofing... I guess
 	if 'ability2' in equip:
 		embed.add_field(name="2nd Skill: "+equip['ability2']['name'], value=getAbility(equip,'ability2'), inline=False)
 
+
+	if 'description' in equip:
+		embed.add_field(name="Description", value=equip['description'], inline=False)
 	
 	#if equip['name'] in bonusdex and 'flavor' in bonusdex[equip['name']]:
 	#	embed.set_footer(text=bonusdex[equip['name']]['flavor'])
@@ -225,25 +248,42 @@ def equipInfo(equip):
 		print(PIC_DOMAIN+equip['img'])
 	return embed
 
-def getSearchResult(param):
-	res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
-	return res[0][0], res
+def getSearchResult(param, search_equip=False):
+	if search_equip == True:
+		res = process.extract(param, [equip['name'] for equip in equipmentdex], limit=3)
+		for equip in equipmentdex:
+			if res[0][0] == equip['name']:
+				return equip, res
+	else:
+		res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
+		for doll in frontlinedex:
+			if res[0][0] == doll['name']:
+				return doll, res
+	raise Exception("This shouldn't be possible! No result found in search.")
+
+
+def getPossibleCostumes(doll):
+	msg = "Costumes for "+doll['name']+": "
+	for i in range(len(doll['costumes'])):
+		msg+="#"+str(i)+". **"+doll['costumes'][i]['name']+"**, "
+	msg+="\nYou can choose a costume by number or name, such as `"+doll['name']+", 1` or `"+doll['name']+", "+doll['costumes'][1]['name']+"`"
+	return msg
 
 def postdollCostume(doll,costumeType):
 	if 'costumes' in doll:
 		if costumeType:
 			if costumeType == "--list":
-				return "Costumes for "+doll['name']+": "+", ".join(doll['costumes'].keys())
+				return getPossibleCostumes(doll)
+			elif RepresentsInt(costumeType):
+				i = int(costumeType)
+				if i <= len(doll['costumes']) and i > 0:
+					return doll['name'] + ": "+doll['costumes'][i]['name']+"\n"+PIC_DOMAIN+doll['costumes'][i]['pic']
 			else:
-				for cName in doll['costumes'].keys():
-					if cName.lower() == costumeType.lower():
-						if cName.endswith("_damage"):
-							name = cName.split("_")[0]+" (Damaged)"
-							return doll['name'] + ": "+name+"\n"+PIC_DOMAIN+doll['costumes'][cName]
-						else:
-							return doll['name'] + ": "+cName+"\n"+PIC_DOMAIN+doll['costumes'][cName]
+				for costume in doll['costumes']:
+					if costume['name'].lower() == costumeType.lower():
+						return doll['name'] + ": "+costume['name']+"\n"+PIC_DOMAIN+costume['pic']
 			print(costumeType + " not found in "+doll['name'])
-			return "Couldn't find that costume. Costumes: "+", ".join(doll['costumes'].keys())
+			return "Couldn't find that costume. "+getPossibleCostumes(doll)
 		#else
 		return doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
 	#else
@@ -255,19 +295,23 @@ def postdollCostume(doll,costumeType):
 async def on_reaction_add(reaction,user):
 	if user == client.user:
 		return
+	#If the message that the reaction was added to is not a message this bot sent, return.
 	if reaction.message.author != client.user:
 		return
 	msg = reaction.message.content.splitlines()
+	#Lame hack to check if this is a $gfimage command result
 	if not msg[-1].endswith(".png"):
 		return
 	name,costume = msg[0].split(":")
+	
+	#If already damage art
 	if "(" in costume:
 		#costume = costume.split("(")[0].strip()
 		return
 	elif costume.strip() == "":
-		costume = "default_damage"
+		costume = "Default (Damaged)"
 	else:
-		costume = costume.strip() + "_damage"
+		costume = costume.strip() + " (Damaged)"
 		
 	for doll in frontlinedex:
 		if name == doll['name']:
@@ -303,7 +347,7 @@ async def on_message(message):
 		st = serverCount()
 		st += "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants & 1 kalina)"
 		st += "\n"+str(len(equipmentdex))+" equipments indexed."
-		#require --extra because this command is expensive to compute and I don't want people spamming it.
+		#require --extra because this command is expensive to compute and I don't want people spamming it. It also doesn't work yet.
 		if param == "--extra":
 			time_list = []
 			for doll in frontlinedex:
@@ -338,15 +382,31 @@ async def on_message(message):
 				embed = dollInfo(doll)
 				await client.send_message(message.channel, embed=embed)
 				return
-		dollName, res = getSearchResult(param)
-		for doll in frontlinedex:
-			if dollName == doll['name']:
-				embed = dollInfo(doll)
-				await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+		doll, res = getSearchResult(param)
+		embed = dollInfo(doll)
+		await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+		return
+		#else:
+		#	print("WARN: No T-Doll was found for " + param)
+		#	await client.send_message(message.channel, "No T-Doll was found with that name.")
+		#return
+	elif message.content.startswith(COMMAND_PREFIX+"equip "):
+		#The string "$gfsearch2 " is 11 characters, so cut it off
+		param = message.content[(len(COMMAND_PREFIX+"equip")+1):].lower()
+		print(param)
+		for equip in equipmentdex:
+			if param == equip['name'].lower():
+				embed = equipInfo(equip)
+				await client.send_message(message.channel, embed=embed)
 				return
-		else:
-			print("WARN: No T-Doll was found for " + param)
-			await client.send_message(message.channel, "No T-Doll was found with that name.")
+			#elif 'alias' in doll and param == doll['alias'].lower():
+			#	print(param+" -> "+doll['name'])
+			#	embed = dollInfo(doll)
+			#	await client.send_message(message.channel, embed=embed)
+			#	return
+		equip, res = getSearchResult(param,True)
+		embed = equipInfo(equip)
+		await client.send_message(message.channel, content="No equipment was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
 		return
 	elif message.content.startswith(COMMAND_PREFIX+"image "):
 		param = message.content[(len(COMMAND_PREFIX+"image")+1):].lower().split(",")
@@ -372,14 +432,12 @@ async def on_message(message):
 					#	except:
 					#		print(e+" is not a valid emoji")
 				return
-		dollName, res = getSearchResult(param)
-		for doll in frontlinedex:
-			if dollName == doll['name']:
-				await client.send_message(message.channel, "No T-Doll was found with that name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]) + "\n"+postdollCostume(doll,costumeType))
-				return
-		print("WARN: No T-Doll was found for " + param)
-		await client.send_message(message.channel, "No T-Doll was found with that name.")
+		doll, res = getSearchResult(param)
+		await client.send_message(message.channel, "No T-Doll was found with that name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]) + "\n"+postdollCostume(doll,costumeType))
 		return
+		#print("WARN: No T-Doll was found for " + param)
+		#await client.send_message(message.channel, "No T-Doll was found with that name.")
+		#return
 	elif message.content.startswith(COMMAND_PREFIX+"timer "):
 		param = message.content[(len(COMMAND_PREFIX+"timer")+1):]
 		print("arg: "+param)
@@ -444,18 +502,19 @@ async def on_message(message):
 		if quotedex:
 			param = message.content[(len(COMMAND_PREFIX+"quote")+1):].lower()
 			print(param)
-			for doll in frontlinedex:
-				if param == doll['name'].lower():
-					if 'internalName' in doll:
-						if doll['internalName'] in quotedex:
-							msg = ""
-							for key,value in sorted(quotedex[doll['internalName']].items()):
-								msg += "**"+key.capitalize()+"**: "+" ".join(value)+"\n"
-							await client.send_message(message.channel, msg)
-					else:
-						await client.send_message(message.channel, "Sorry, the internal name for this doll is missing, which is needed to pull the quote from the data.")
-					return
-			res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
+			doll, res = getSearchResult(param)
+			if 'internalName' in doll:
+				if doll['internalName'] in quotedex:
+					msg = doll['name']+"'s quotes:\n"
+					for key,value in sorted(quotedex[doll['internalName']].items()):
+						msg += "**"+key.capitalize()+"**: "+" ".join(value)+"\n"
+					await client.send_message(message.channel, msg)
+				else:
+					await client.send_message(message.channel, "This doll has no quotes... Somehow.")
+					print(doll['name']+" with internalName "+doll['internalName']+ " has no quotes.")
+			else:
+				await client.send_message(message.channel, "Sorry, the internal name for this doll is missing, which is needed to pull the quote from the data.")
+			return
 		else:
 			await client.send_message(message.channel, "This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions.")
 	elif message.content.startswith(COMMAND_PREFIX+"help"):
@@ -468,6 +527,7 @@ async def on_message(message):
 				msg += "Usage examples:\n"
 				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
 				msg += "`"+COMMAND_PREFIX+"image M16A1,Boss`: Show M16A1's Boss costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image M16A1,3`: Show M16A1's 3rd costume.\n"
 				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
 				#msg += "`"+COMMAND_PREFIX+"Negev --damaged`: Show Negev's damage art for the costume.\n"
 				await client.send_message(message.channel, msg)
@@ -485,9 +545,10 @@ async def on_message(message):
 				print("Tried to get help for "+param+ " but there was none.")
 				await client.send_message(message.channel, "No help available for this command yet.")
 			return
-		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls.\n"
+		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls and equipment.\n"
 		msg+="Running version "+version+"\n"
-		msg+= "Commands:\n**"+COMMAND_PREFIX+"search**: Search a T-Doll and display all information. Example: "+COMMAND_PREFIX+"search UMP45\n"
+		msg+= "Commands:\n**"+COMMAND_PREFIX+"search**: Search a T-Doll and display all information. Example: `"+COMMAND_PREFIX+"search UMP45`\n"
+		msg+="**"+COMMAND_PREFIX+"equip**: Search an equipment or fairy. **This command is in beta, some information is still missing.** Example: `"+COMMAND_PREFIX+"equip Armor Fairy`\n"
 		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it, or search a doll's costume. Check this command's help for more information. Example: `"+COMMAND_PREFIX+"image UMP40`, `"+COMMAND_PREFIX+"image M16A1,Boss`\n"
 		if quotedex:
 			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
@@ -496,7 +557,8 @@ async def on_message(message):
 		msg+="For advanced help, do `$gfhelp <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
 		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
-		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord"
+		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord\n"
+		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!"
 		await client.send_message(message.channel, msg)
 #startup...
 print("Starting up I.O.P. version "+version+"...")
@@ -509,9 +571,9 @@ print("Reading bonus information...")
 file_obj = open("gf_flavortext.json", "r")
 bonusdex = json.loads(file_obj.read())
 file_obj.close()
-if os.path.isfile("CharacterVoice.json"):
+if os.path.isfile("NewCharacterVoice.json"):
 	print("Reading quotes.")
-	file_obj = open("CharacterVoice.json", "r")
+	file_obj = open("NewCharacterVoice.json", "r")
 	quotedex = json.loads(file_obj.read())
 	file_obj.close()
 	print(COMMAND_PREFIX+"quote is now available!")

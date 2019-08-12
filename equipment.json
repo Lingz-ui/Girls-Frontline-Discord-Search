@@ -11,7 +11,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "description": "The 3-12x magnification optical sight manufactured by BM Corporation allows T-Dolls to hit the enemy's vital points more easily. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/AC1_Suppressor",
@@ -25,7 +28,10 @@
                 50,
                 50
             ]
-        }
+        },
+        "img": "accessory_silencer_N",
+        "type": "AC",
+        "description": "A general use suppressor model manufactured by AC Corporation, it helps to keep T-Dolls concealed. Can be equipped by all except MGs and SGs."
     },
     {
         "url": "/wiki/EOT_506",
@@ -39,7 +45,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "description": "The Type 506 Holographic Sight manufactured by EOT Corporation. It looks pretty cool. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/PEQ-2",
@@ -53,7 +62,10 @@
                 110,
                 30
             ]
-        }
+        },
+        "img": "accessory_nightvision_N.png",
+        "type": "PEQ",
+        "description": "An early model ATPIAL infrared designator issued by IOP Corporation for their T-Dolls. Now T-Dolls can hit things at night! Can only be equipped by SMGs, HGs, and ARs."
     },
     {
         "url": "/wiki/AMP_COMPM2",
@@ -67,7 +79,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "description": "The COMPML Red Dot Sight manufactured by AMP Corporation. Its only merit is its sturdiness. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/IOP_X1_Exoskeleton",
@@ -81,7 +96,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type X1 Exoskeleton is an early model developed by IOP Corporation, aimed at increasing the agility of T-Dolls through the exoskeleton system. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/IOP_T1_Exoskeleton",
@@ -95,7 +113,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type T1 Exoskeleton is an early model developed by IOP Corporation, aimed at increasing the agility of T-Dolls through the exoskeleton system. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/ILM_Hollow_Point_Ammo_(2-Star)",
@@ -109,7 +130,10 @@
                 10,
                 50
             ]
-        }
+        },
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "description": "A hollow-point ammunition developed by ILM, it helps to increase lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs."
     },
     {
         "url": "/wiki/BK_Slug",
@@ -123,7 +147,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "description": "Shotgun slugs issued by IOP. Each shot contains a single large projectile and is designed to deal single-target damage."
     },
     {
         "url": "/wiki/%EF%BC%831_Buckshot",
@@ -137,7 +164,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "description": "High-powered shotgun shells issued by IOP. Each shot contains multiple pellets measuring 7.62mm in diameter. Can be equipped by SGs."
     },
     {
         "url": "/wiki/M61_Armor-Piercing_Ammo",
@@ -151,7 +181,10 @@
                 90,
                 100
             ]
-        }
+        },
+        "img": "ammo_apBullet_N.png",
+        "type": "AP Ammo",
+        "description": "The Type M61 armor-piercing ammunition manufactured by IOP Corporation possesses a standard steel-core armor piercing bullet design, aimed at penetrating enemy armor and causing effective damage. Can be equipped by RFs and MGs."
     },
     {
         "url": "/wiki/Ragged_Cape",
@@ -165,7 +198,10 @@
                 200,
                 20
             ]
-        }
+        },
+        "img": "doll_suit_1.png",
+        "type": "Cape",
+        "description": "A ragged cape that has been passed down for ages. Having an undisturbed firing environment allows for increased critical damage. Can only be equipped by RFs."
     },
     {
         "url": "/wiki/FMJ_High-Velocity_Ammo",
@@ -179,7 +215,10 @@
                 120,
                 80
             ]
-        }
+        },
+        "img": "ammo_hvBullet_N.png",
+        "type": "HV Ammo",
+        "description": "The FCA Research Center's assault rifle-specific FMJ high-velocity ammunition effectively boosts the output of assault rifles through high quality//c high pressure gunpowder. They are issued with MP Group's reliable and lightweight magazines."
     },
     {
         "url": "/wiki/LRA_2-12x50",
@@ -193,7 +232,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "description": "A new model of optical sight developed by LRA Corporation. It provides a high magnification and a wide field of view. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/AC2_Suppressor",
@@ -207,7 +249,10 @@
                 50,
                 50
             ]
-        }
+        },
+        "img": "accessory_silencer_N",
+        "type": "AC",
+        "description": "An improved suppressor model manufactured by AC Corporation, it helps keep T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs."
     },
     {
         "url": "/wiki/EOT_512",
@@ -221,7 +266,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "description": "The Type 512 Holographic Sight manufactured by EOT Corporation. It looks pretty cool. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/PEQ-5",
@@ -235,7 +283,10 @@
                 110,
                 30
             ]
-        }
+        },
+        "img": "accessory_nightvision_N.png",
+        "type": "PEQ",
+        "description": "The standard model ATPIAL infrared designator issued by IOP Corporation for their T-Dolls. Much of the early model's deficiencies had been fixed in this model., but its battery still runs out very quickly. Can only be equipped by SMGs, HGs, and ARS."
     },
     {
         "url": "/wiki/AMP_COMPM4",
@@ -249,7 +300,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "description": "The COMPL Red Dot Sight manufactured by AMP Corporation. Its design has been enhanced, increasing its sturdiness even more. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/Type_1_Armor_Plate",
@@ -263,7 +317,10 @@
                 100,
                 100
             ]
-        }
+        },
+        "img": "doll_armor_N.png",
+        "type": "Armor Plate",
+        "description": "The protective grade Type 1 Fiber Plate provided by IOP Corporation helps to reduce the damage taken from being shot, increasing T-Dolls' survivability on the battlefield."
     },
     {
         "url": "/wiki/IOP_X2_Exoskeleton",
@@ -277,7 +334,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type X2 Exoskeleton is the standard model manufactured by IOP Corporation with improved performance and flexibility. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/IOP_T2_Exoskeleton",
@@ -291,7 +351,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type T2 Exoskeleton is the standard model manufactured by IOP Corporation with improved performance and flexibility. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/ILM_Hollow_Point_Ammo_(3-Star)",
@@ -305,7 +368,10 @@
                 10,
                 50
             ]
-        }
+        },
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "description": "A hollow-point ammunition developed by ILM, it increases lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs."
     },
     {
         "url": "/wiki/FST_Slug",
@@ -319,7 +385,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "description": "Shotgun slugs issued by IOP. With its mass centered in the front, each single large projectile shot is designed to deal accurate single-target damage."
     },
     {
         "url": "/wiki/%EF%BC%830_Buckshot",
@@ -333,7 +402,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "description": "Powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 8.13mm in diameter. Can be equipped by SGs."
     },
     {
         "url": "/wiki/M993_Armor-Piercing_Ammo",
@@ -347,7 +419,10 @@
                 90,
                 100
             ]
-        }
+        },
+        "img": "ammo_apBullet_N.png",
+        "type": "AP Ammo",
+        "description": "The Type M993 armor-piercing ammunition manufactured by IOP Corporation was developed to counter enemies possessing thicker armor by using a tungsten alloy material, aimed at penetrating enemy armor and causing effective damage. Can be equipped by RFs and MGs."
     },
     {
         "url": "/wiki/Camouflage_Cape",
@@ -361,7 +436,10 @@
                 200,
                 20
             ]
-        }
+        },
+        "img": "doll_suit_1.png",
+        "type": "Cape",
+        "description": "A camouflage cape that has been passed down for ages, its mottled edges tell a tale of the flames of war. Having an undisturbed firing environment allows for increased critical damage. Can only be equipped by RFs."
     },
     {
         "url": "/wiki/JSP_High-Velocity_Ammo",
@@ -375,7 +453,10 @@
                 120,
                 80
             ]
-        }
+        },
+        "img": "ammo_hvBullet_N.png",
+        "type": "HV Ammo",
+        "description": "EN: The FCA Research Center's assault rifle-specific JSP high-velocity ammunition uses an experimental bullet design to further increase the output of assault rifles. They are issued with MP Group's reliable and lightweight magazines.\nCN: FCA研究局的突击步枪专用JSP高速弹，采用了实验型的弹头设计进一步提升突击步枪输出能力，和MP社可靠的轻量化弹匣配套发送。"
     },
     {
         "url": "/wiki/PSO-1",
@@ -389,7 +470,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "description": "Possessing a compact and reliable design, the military-grade optical sight incorporates specialized reticle subtensions, allowing for ease of use on the battlefield. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/AC3_Suppressor",
@@ -403,7 +487,10 @@
                 50,
                 50
             ]
-        }
+        },
+        "img": "accessory_silencer_N",
+        "type": "AC",
+        "description": "An advanced general use suppressor model manufactured by AC Corporation, it is effective at keeping T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs."
     },
     {
         "url": "/wiki/EOT_516",
@@ -417,7 +504,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "description": "The Type 516 Holographic Sight manufactured by EOT Corporation. It looks very cool. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/PEQ-15",
@@ -431,7 +521,10 @@
                 110,
                 30
             ]
-        }
+        },
+        "img": "accessory_nightvision_N.png",
+        "type": "PEQ",
+        "description": "EN: An improved model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it effectively increases the T-Dolls' combat efficiency during nighttime. Can only be equipped by SMGs, HGs and ARs.\nCN: IOP公司人形列装的改进型ATPIAL红外指示器，有效提升了人形在夜战中的战斗力，只有冲锋枪，手枪，突击步枪可以装备。"
     },
     {
         "url": "/wiki/COG_M150",
@@ -445,7 +538,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "description": "CN: COG公司的先进红点瞄准镜，最大优势在于其不需要依靠电池便可提供任何环境下的瞄准照明，除手枪外均可装配。"
     },
     {
         "url": "/wiki/Type_2_Armor_Plate",
@@ -459,7 +555,10 @@
                 100,
                 100
             ]
-        }
+        },
+        "img": "doll_armor_N.png",
+        "type": "Armor Plate",
+        "description": "The protective grade Type II Composite Plate provided by IOP Corporation helps to greatly reduce the damage taken from being shot, greatly enhancing T-Dolls' survivability on the battlefield."
     },
     {
         "url": "/wiki/IOP_T3_Exoskeleton",
@@ -473,7 +572,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type T3 Exoskeleton is an enhanced model developed by IOP Corporation. Through improvements in technology, it has greater flexibility while at the same time detracting less from the shooting ability of the user. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/IOP_X3_Exoskeleton",
@@ -487,7 +589,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type X3 Exoskeleton is an enhanced model developed by IOP Corporation. Through improvements in technology, it has greater flexibility while at the same time detracting less from the shooting ability of the user. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/ILM_Hollow_Point_Ammo_(4-Star)",
@@ -501,7 +606,10 @@
                 10,
                 50
             ]
-        }
+        },
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "description": "A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs."
     },
     {
         "url": "/wiki/WAD_Slug",
@@ -515,7 +623,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "description": "Shotgun slugs issued by IOP. With its mass centered in the front, each single large projectile shot encased in polymer casing is designed to deal highly accurate single-target damage."
     },
     {
         "url": "/wiki/%EF%BC%8300_Buckshot",
@@ -529,7 +640,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "description": "Very powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 8.38mm in diameter. Can be equipped by SGs."
     },
     {
         "url": "/wiki/VFL_6-24x56",
@@ -543,7 +657,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "description": "An excellent scope specially built for long-distance sniping, it is made from the best materials and optical components, ensuring outstanding and reliable performance. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/Mk169_Armor-Piercing_Ammo",
@@ -557,7 +674,10 @@
                 90,
                 100
             ]
-        }
+        },
+        "img": "ammo_apBullet_N.png",
+        "type": "AP Ammo",
+        "description": "The Type Mk169 armor-piercing ammunition developed by IOP in conjunction with the FCA Research Center has a specially made tungsten alloy core designed to be able to penetrate any enemy's armor. Can be equipped by RFs and MGs."
     },
     {
         "url": "/wiki/Urban_Camouflage_Cape",
@@ -571,7 +691,10 @@
                 200,
                 20
             ]
-        }
+        },
+        "img": "doll_suit_2.png",
+        "type": "Cape",
+        "description": "Game Data[edit]"
     },
     {
         "url": "/wiki/AC4_Suppressor",
@@ -585,7 +708,10 @@
                 50,
                 50
             ]
-        }
+        },
+        "img": "accessory_silencer_N",
+        "type": "AC",
+        "description": "A suppressor model specially developed for special operations, it is highly effective at keeping T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs."
     },
     {
         "url": "/wiki/IOP_High-Capacity_Ammo_Box",
@@ -599,7 +725,10 @@
                 30,
                 200
             ]
-        }
+        },
+        "img": "doll_ammoBox_N.png",
+        "type": "Ammo Box",
+        "description": "A high-capacity ammunition box specially developed for machine gun T-Dolls by IOP Corporation, it grants them much longer firepower output."
     },
     {
         "url": "/wiki/EOT_518",
@@ -613,7 +742,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "description": "The Type 518 Holographic Sight manufactured by EOT Corporation. It looks super cool. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/JHP_High-Velocity_Ammo",
@@ -627,7 +759,10 @@
                 120,
                 80
             ]
-        }
+        },
+        "img": "ammo_hvBullet_N.png",
+        "type": "HV Ammo",
+        "description": "The FCA Research Center's assault rifle-specific JHP high-velocity ammunition was developed with the experience gained from previous bullet designs and experimentations, greatly increasing its damaging capabilities. They are issued with MP Group's reliable and lightweight magazines."
     },
     {
         "url": "/wiki/PEQ-16A",
@@ -641,7 +776,10 @@
                 110,
                 30
             ]
-        }
+        },
+        "img": "accessory_nightvision_N.png",
+        "type": "PEQ",
+        "description": "A custom model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it is able to fulfill all their operational needs when battling at night. Can only be equipped by SMGs, HGs, and ARs."
     },
     {
         "url": "/wiki/ITI_Mars",
@@ -655,7 +793,10 @@
                 110,
                 10
             ]
-        }
+        },
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "description": "An integrated red dot sight developed by ITI Corporation, it incorporates multiple functions without affecting shooting performance and is equipped with an anti-reflection system. Can be equipped by all except HG."
     },
     {
         "url": "/wiki/Type_3_Armor_Plate",
@@ -669,7 +810,10 @@
                 100,
                 100
             ]
-        }
+        },
+        "img": "doll_armor_N.png",
+        "type": "Armor Plate",
+        "description": "The protective grade Type III Kevlar Plate provided by IOP Corporation can resist high-caliber ammunition, massively enhancing T-Dolls' survivability on the battlefield."
     },
     {
         "url": "/wiki/IOP_X4_Exoskeleton",
@@ -683,7 +827,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type X4 Exoskeleton is a custom model crafted by IOP Corporation, specially developed based on the T-Dolls' characteristics so as to maximize their mobility and while minimizing the impact on their shooting ability. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/IOP_T4_Exoskeleton",
@@ -697,7 +844,10 @@
                 10,
                 100
             ]
-        }
+        },
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "description": "The Type T4 Exoskeleton is a custom model developed by IOP Corporation, specially developed based on the T-Dolls' characteristics so as to maximize their mobility and while minimizing the impact on their shooting ability. Can be equipped by HGs, SMGs, and most ARs."
     },
     {
         "url": "/wiki/ILM_Hollow_Point_Ammo",
@@ -711,7 +861,10 @@
                 10,
                 50
             ]
-        }
+        },
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "description": "EN: A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.\nCN: ILM生产的空尖短弹，对无甲单位有可怕的杀伤力，但面对装甲缺乏穿透力，手枪和冲锋枪可以装备。"
     },
     {
         "url": "/wiki/SABOT_Slug",
@@ -725,7 +878,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "description": "Shotgun slugs issued by IOP. After being fired, it gains a steady rotation that provides the shotgun shot with a stable firing trajectory and laser-like precision."
     },
     {
         "url": "/wiki/%EF%BC%83000_Buckshot",
@@ -739,7 +895,10 @@
                 30,
                 130
             ]
-        }
+        },
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "description": "Extremely powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 9.14mm in diameter. Can be equipped by SGs."
     },
     {
         "url": "/wiki/Mk211_High-Explosive_Armor-Piercing_Ammo",
@@ -753,7 +912,10 @@
                 90,
                 100
             ]
-        }
+        },
+        "img": "ammo_apBullet_N.png",
+        "type": "AP Ammo",
+        "description": "The Type Mk211 high-explosive armor-piercing ammunition developed by IOP in conjunction with the FCA Research Center uses a combination of a tungsten alloy bullet and a high-explosive design to further improve its lethality. Can be equipped by RFs and MGs."
     },
     {
         "url": "/wiki/Thermoptic_Camouflage_Cape",
@@ -767,7 +929,10 @@
                 200,
                 20
             ]
-        }
+        },
+        "img": "doll_suit_3.png",
+        "type": "Cape",
+        "description": "A thermoptic camouflage cape developed with military technology, it can adapt its camouflage patterns to the surrounding environment when lying still, allowing sharpshooters to massively increase their critical damage. Can only be equipped by RFs."
     },
     {
         "url": "/wiki/IOP_Maximum_Ammo_Box",
@@ -781,7 +946,10 @@
                 30,
                 200
             ]
-        }
+        },
+        "img": "doll_ammoBox_N.png",
+        "type": "Ammo Box",
+        "description": "An extra-large ammunition box specially developed for machine gun T-Dolls by IOP Corporation,c it grants them unmatched firepower."
     },
     {
         "url": "/wiki/APCR_High-Velocity_Ammo",
@@ -795,6 +963,264 @@
                 120,
                 80
             ]
-        }
+        },
+        "img": "ammo_hvBullet_N.png",
+        "type": "HV Ammo",
+        "description": "The FCA Research Center's experimental APCR high-velocity ammunition intergrates the idea of armor-piercing ammunition and uses a different design methodology to increase its lethality. They are issued with MP Group's reliable and lightweight magazines."
+    },
+    {
+        "url": "/wiki/Armor_Fairy",
+        "name": "Armor Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":00:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "armor_3.png"
+    },
+    {
+        "url": "/wiki/Shield_Fairy",
+        "name": "Shield Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":05:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "shield_3.png"
+    },
+    {
+        "url": "/wiki/Provocation_Fairy",
+        "name": "Provocation Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":10:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "target_3.png"
+    },
+    {
+        "url": "/wiki/Sniper_Fairy",
+        "name": "Sniper Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":30:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "sniper_3.png"
+    },
+    {
+        "url": "/wiki/Bombardment_Fairy",
+        "name": "Bombardment Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":35:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "bombard_3.png"
+    },
+    {
+        "url": "/wiki/Airstrike_Fairy",
+        "name": "Airstrike Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":40:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "air_attack_3.png"
+    },
+    {
+        "url": "/wiki/Reinforcement_Fairy",
+        "name": "Reinforcement Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":00:00",
+            "heavy": [
+                2000,
+                500,
+                2000,
+                1000
+            ]
+        },
+        "img": "reinforce_3.png"
+    },
+    {
+        "url": "/wiki/Parachute_Fairy",
+        "name": "Parachute Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":05:00",
+            "heavy": [
+                2000,
+                500,
+                2000,
+                1000
+            ]
+        },
+        "img": "airborne_3.png"
+    },
+    {
+        "url": "/wiki/Defense_Fairy",
+        "name": "Defense Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":10:00",
+            "heavy": [
+                2000,
+                500,
+                2000,
+                1000
+            ]
+        },
+        "img": "defense_3.png"
+    },
+    {
+        "url": "/wiki/Warrior_Fairy",
+        "name": "Warrior Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":30:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "fighting_3.png"
+    },
+    {
+        "url": "/wiki/Fury_Fairy",
+        "name": "Fury Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":35:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "crit_3.png"
+    },
+    {
+        "url": "/wiki/Command_Fairy",
+        "name": "Command Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":00:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "command_3.png"
+    },
+    {
+        "url": "/wiki/Rescue_Fairy",
+        "name": "Rescue Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":05:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "rescue_3.png"
+    },
+    {
+        "url": "/wiki/Illumination_Fairy",
+        "name": "Illumination Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":10:00",
+            "heavy": [
+                500,
+                500,
+                500,
+                500
+            ]
+        },
+        "img": "illumine_3.png"
+    },
+    {
+        "url": "/wiki/Landmine_Fairy",
+        "name": "Landmine Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":30:00",
+            "heavy": [
+                500,
+                2000,
+                2000,
+                1000
+            ]
+        },
+        "img": "Landmines_3.png"
+    },
+    {
+        "url": "/wiki/Rocket_Fairy",
+        "name": "Rocket Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":35:00",
+            "heavy": [
+                500,
+                2000,
+                2000,
+                1000
+            ]
+        },
+        "img": "position_3.png"
+    },
+    {
+        "url": "/wiki/Construction_Fairy",
+        "name": "Construction Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":40:00",
+            "heavy": [
+                500,
+                2000,
+                2000,
+                1000
+            ]
+        },
+        "img": "fortress_3.png"
     }
 ]
