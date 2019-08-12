@@ -1071,11 +1071,11 @@
                 "pic": "pic_AK12_2402_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_AK12_3302.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_AK12_3302_D.png"
             }
         ]
@@ -1185,11 +1185,11 @@
                 "pic": "pic_AK47_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Lord of War",
                 "pic": "pic_AK47_501.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Lord of War (Damaged)",
                 "pic": "pic_AK47_501_D.png"
             }
         ]
@@ -1409,11 +1409,11 @@
                 "pic": "pic_AN94_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_AN94_3303.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_AN94_3303_D.png"
             },
             {
@@ -3633,11 +3633,11 @@
                 "pic": "pic_CBJMS_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_CBJMS_3503.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_CBJMS_3503_D.png"
             },
             {
@@ -4612,11 +4612,11 @@
                 "pic": "pic_M1873_2105_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Wish Upon A Star",
                 "pic": "pic_M1873_301.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Wish Upon A Star (Damaged)",
                 "pic": "pic_M1873_301_D.png"
             }
         ]
@@ -5044,11 +5044,11 @@
                 "pic": "pic_Contender_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_Contender_3201.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_Contender_3201_D.png"
             },
             {
@@ -5958,19 +5958,19 @@
                 "pic": "pic_FNFAL_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Winter Supply",
                 "pic": "pic_FNFAL_308.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Winter Supply (Damaged)",
                 "pic": "pic_FNFAL_308_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "The Big Day",
                 "pic": "pic_FNFAL_607.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "The Big Day (Damaged)",
                 "pic": "pic_FNFAL_607_D.png"
             },
             {
@@ -7340,11 +7340,11 @@
                 "pic": "pic_G11_1602_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Neet Zombie",
                 "pic": "pic_G11_9.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Neet Zombie (Damaged)",
                 "pic": "pic_G11_9_D.png"
             }
         ]
@@ -7449,11 +7449,11 @@
                 "pic": "pic_G28_2304_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_G28_3307.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_G28_3307_D.png"
             },
             {
@@ -7603,11 +7603,11 @@
                 "pic": "pic_G36_2407_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Mini Maid",
                 "pic": "pic_G36_905.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Mini Maid (Damaged)",
                 "pic": "pic_G36_905_D.png"
             },
             {
@@ -8057,11 +8057,11 @@
                 "pic": "pic_G36_2407_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Mini Maid",
                 "pic": "pic_G36_905.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Mini Maid (Damaged)",
                 "pic": "pic_G36_905_D.png"
             },
             {
@@ -8823,11 +8823,11 @@
                 "pic": "pic_GSH18_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Mobile Operating Table",
                 "pic": "pic_GSH18_523.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Mobile Operating Table (Damaged)",
                 "pic": "pic_GSH18_523_D.png"
             }
         ]
@@ -9201,19 +9201,19 @@
                 "pic": "pic_Grizzly_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Weekend Cop",
                 "pic": "pic_Grizzly_105.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Weekend Cop (Damaged)",
                 "pic": "pic_Grizzly_105_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Teddy, Transform!",
                 "pic": "pic_Grizzly_903.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Teddy, Transform! (Damaged)",
                 "pic": "pic_Grizzly_903_D.png"
             },
             {
@@ -9631,19 +9631,19 @@
                 "pic": "pic_HK416_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_HK416_3401.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_HK416_3401_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Starry Cocoon",
                 "pic": "pic_HK416_805.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Starry Cocoon (Damaged)",
                 "pic": "pic_HK416_805_D.png"
             }
         ]
@@ -10991,11 +10991,11 @@
                 "pic": "pic_IDW_2108_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_IDW_3205.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_IDW_3205_D.png"
             },
             {
@@ -11991,11 +11991,11 @@
                 "pic": "pic_K2_2001_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_K2_3301.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_K2_3301_D.png"
             }
         ]
@@ -12227,11 +12227,11 @@
                 "pic": "pic_K5_2002_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_K5_3308.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_K5_3308_D.png"
             }
         ]
@@ -12682,11 +12682,11 @@
                 "pic": "pic_KSVK_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_KSVK_3405.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_KSVK_3405_D.png"
             }
         ]
@@ -13531,27 +13531,27 @@
                 "pic": "pic_MLEMK1_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Huntress' Frock ",
                 "pic": "pic_MLEMK1_10.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Huntress' Frock  (Damaged)",
                 "pic": "pic_MLEMK1_10_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Lifelong Protector",
                 "pic": "pic_MLEMK1_604.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Lifelong Protector (Damaged)",
                 "pic": "pic_MLEMK1_604_D.png"
             },
             {
-                "name": "MissingName3",
+                "name": "Onion Shooter",
                 "pic": "pic_MLEMK1_901.png"
             },
             {
-                "name": "MissingName3 (Damaged)",
+                "name": "Onion Shooter (Damaged)",
                 "pic": "pic_MLEMK1_901_D.png"
             }
         ]
@@ -13737,19 +13737,19 @@
                 "pic": "pic_M1_1106_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Party Sweetheart",
                 "pic": "pic_M1919A4_106.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Party Sweetheart (Damaged)",
                 "pic": "pic_M1919A4_106_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Bunny Girl",
                 "pic": "pic_M1918_102.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Bunny Girl (Damaged)",
                 "pic": "pic_M1918_102_D.png"
             },
             {
@@ -13761,11 +13761,11 @@
                 "pic": "pic_M1887_2503_D.png"
             },
             {
-                "name": "MissingName3",
+                "name": "Moonlit Ocean",
                 "pic": "pic_M1891_803.png"
             },
             {
-                "name": "MissingName3 (Damaged)",
+                "name": "Moonlit Ocean (Damaged)",
                 "pic": "pic_M1891_803_D.png"
             },
             {
@@ -13809,11 +13809,11 @@
                 "pic": "pic_M1903_1107_D.png"
             },
             {
-                "name": "MissingName4",
+                "name": "Tender Nocturne",
                 "pic": "pic_M1918_806.png"
             },
             {
-                "name": "MissingName4 (Damaged)",
+                "name": "Tender Nocturne (Damaged)",
                 "pic": "pic_M1918_806_D.png"
             },
             {
@@ -13845,11 +13845,11 @@
                 "pic": "pic_M1873Mod_D.png"
             },
             {
-                "name": "MissingName5",
+                "name": "Carmilla",
                 "pic": "pic_M1919A4_7.png"
             },
             {
-                "name": "MissingName5 (Damaged)",
+                "name": "Carmilla (Damaged)",
                 "pic": "pic_M1919A4_7_D.png"
             },
             {
@@ -13861,19 +13861,19 @@
                 "pic": "pic_M1911Mod_D.png"
             },
             {
-                "name": "MissingName6",
+                "name": "O Holy Night",
                 "pic": "pic_M1903_302.png"
             },
             {
-                "name": "MissingName6 (Damaged)",
+                "name": "O Holy Night (Damaged)",
                 "pic": "pic_M1903_302_D.png"
             },
             {
-                "name": "MissingName7",
+                "name": "Xmas Parade",
                 "pic": "pic_M14_303.png"
             },
             {
-                "name": "MissingName7 (Damaged)",
+                "name": "Xmas Parade (Damaged)",
                 "pic": "pic_M14_303_D.png"
             },
             {
@@ -13901,11 +13901,11 @@
                 "pic": "pic_M1918_1606_D.png"
             },
             {
-                "name": "MissingName8",
+                "name": "Queen in Radiance",
                 "pic": "pic_M1903_802.png"
             },
             {
-                "name": "MissingName8 (Damaged)",
+                "name": "Queen in Radiance (Damaged)",
                 "pic": "pic_M1903_802_D.png"
             },
             {
@@ -13917,19 +13917,19 @@
                 "pic": "pic_M14Mod_D.png"
             },
             {
-                "name": "MissingName9",
+                "name": "Wish Upon A Star",
                 "pic": "pic_M1873_301.png"
             },
             {
-                "name": "MissingName9 (Damaged)",
+                "name": "Wish Upon A Star (Damaged)",
                 "pic": "pic_M1873_301_D.png"
             },
             {
-                "name": "MissingName10",
+                "name": "Classic Witch",
                 "pic": "pic_M1903_5.png"
             },
             {
-                "name": "MissingName10 (Damaged)",
+                "name": "Classic Witch (Damaged)",
                 "pic": "pic_M1903_5_D.png"
             }
         ]
@@ -14258,11 +14258,11 @@
                 "pic": "pic_M14_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Xmas Parade",
                 "pic": "pic_M14_303.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Xmas Parade (Damaged)",
                 "pic": "pic_M14_303_D.png"
             },
             {
@@ -15515,19 +15515,19 @@
                 "pic": "pic_M1918_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Bunny Girl",
                 "pic": "pic_M1918_102.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Bunny Girl (Damaged)",
                 "pic": "pic_M1918_102_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Tender Nocturne",
                 "pic": "pic_M1918_806.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Tender Nocturne (Damaged)",
                 "pic": "pic_M1918_806_D.png"
             },
             {
@@ -15970,19 +15970,19 @@
                 "pic": "pic_M1919A4_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Party Sweetheart",
                 "pic": "pic_M1919A4_106.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Party Sweetheart (Damaged)",
                 "pic": "pic_M1919A4_106_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Carmilla",
                 "pic": "pic_M1919A4_7.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Carmilla (Damaged)",
                 "pic": "pic_M1919A4_7_D.png"
             }
         ]
@@ -16262,11 +16262,11 @@
                 "pic": "pic_M21_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Xmas At Home",
                 "pic": "pic_M21_304.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Xmas At Home (Damaged)",
                 "pic": "pic_M21_304_D.png"
             }
         ]
@@ -18050,19 +18050,19 @@
                 "pic": "pic_M950A_2303_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Concert Diva!",
                 "pic": "pic_M950A_808.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Concert Diva! (Damaged)",
                 "pic": "pic_M950A_808_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Untranslated1",
                 "pic": "pic_M99_3304.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_M99_3304_D.png"
             },
             {
@@ -18074,19 +18074,19 @@
                 "pic": "pic_M99_1701_D.png"
             },
             {
-                "name": "MissingName3",
+                "name": "Cyclamen",
                 "pic": "pic_M99_404.png"
             },
             {
-                "name": "MissingName3 (Damaged)",
+                "name": "Cyclamen (Damaged)",
                 "pic": "pic_M99_404_D.png"
             },
             {
-                "name": "MissingName4",
+                "name": "Ace on Duty",
                 "pic": "pic_M950A_702.png"
             },
             {
-                "name": "MissingName4 (Damaged)",
+                "name": "Ace on Duty (Damaged)",
                 "pic": "pic_M950A_702_D.png"
             }
         ]
@@ -18196,19 +18196,19 @@
                 "pic": "pic_M950A_2303_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Concert Diva!",
                 "pic": "pic_M950A_808.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Concert Diva! (Damaged)",
                 "pic": "pic_M950A_808_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Ace on Duty",
                 "pic": "pic_M950A_702.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Ace on Duty (Damaged)",
                 "pic": "pic_M950A_702_D.png"
             }
         ]
@@ -18305,11 +18305,11 @@
                 "pic": "pic_M99_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_M99_3304.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_M99_3304_D.png"
             },
             {
@@ -18321,11 +18321,11 @@
                 "pic": "pic_M99_1701_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Cyclamen",
                 "pic": "pic_M99_404.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Cyclamen (Damaged)",
                 "pic": "pic_M99_404_D.png"
             }
         ]
@@ -18574,11 +18574,11 @@
                 "pic": "pic_MDR_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_MDR_3305.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_MDR_3305_D.png"
             },
             {
@@ -19026,11 +19026,11 @@
                 "pic": "pic_MG4_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Survival Club",
                 "pic": "pic_MG4_703.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Survival Club (Damaged)",
                 "pic": "pic_MG4_703_D.png"
             }
         ]
@@ -19229,11 +19229,11 @@
                 "pic": "pic_MG5_2501_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Crimson Guardian",
                 "pic": "pic_MG5_309.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Crimson Guardian (Damaged)",
                 "pic": "pic_MG5_309_D.png"
             },
             {
@@ -19437,11 +19437,11 @@
                 "pic": "pic_MP446_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Sunflower",
                 "pic": "pic_MP446_402.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Sunflower (Damaged)",
                 "pic": "pic_MP446_402_D.png"
             },
             {
@@ -19453,11 +19453,11 @@
                 "pic": "pic_MP446Mod_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Boisterous Rogue",
                 "pic": "pic_MP446_103.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Boisterous Rogue (Damaged)",
                 "pic": "pic_MP446_103_D.png"
             }
         ]
@@ -19980,11 +19980,11 @@
                 "pic": "pic_MP40_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Thumbelina",
                 "pic": "pic_MP40_902.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Thumbelina (Damaged)",
                 "pic": "pic_MP40_902_D.png"
             }
         ]
@@ -20210,11 +20210,11 @@
                 "pic": "pic_MP5_1903_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Nocturnal Familiar",
                 "pic": "pic_MP5_3.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Nocturnal Familiar (Damaged)",
                 "pic": "pic_MP5_3_D.png"
             }
         ]
@@ -20903,11 +20903,11 @@
                 "pic": "pic_PM06_2703_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Pumpkin Mishka",
                 "pic": "pic_PM_1.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Pumpkin Mishka (Damaged)",
                 "pic": "pic_PM_1_D.png"
             }
         ]
@@ -21038,11 +21038,11 @@
                 "pic": "pic_MicroUZIMod_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Dorky Sleepyhead",
                 "pic": "pic_MicroUZI_101.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Dorky Sleepyhead (Damaged)",
                 "pic": "pic_MicroUZI_101_D.png"
             }
         ]
@@ -21606,11 +21606,11 @@
                 "pic": "pic_Mk23_3105_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Impish Sweetheart",
                 "pic": "pic_Mk23_8.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Impish Sweetheart (Damaged)",
                 "pic": "pic_Mk23_8_D.png"
             }
         ]
@@ -22009,11 +22009,11 @@
                 "pic": "pic_M1891_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Moonlit Ocean",
                 "pic": "pic_M1891_803.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Moonlit Ocean (Damaged)",
                 "pic": "pic_M1891_803_D.png"
             },
             {
@@ -22511,11 +22511,11 @@
                 "pic": "pic_NTW20_1101_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Xmas Reindeer",
                 "pic": "pic_NTW20_307.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Xmas Reindeer (Damaged)",
                 "pic": "pic_NTW20_307_D.png"
             }
         ]
@@ -22626,11 +22626,11 @@
                 "pic": "pic_NZ75_1702_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Chrysanthemum",
                 "pic": "pic_NZ75_403.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Chrysanthemum (Damaged)",
                 "pic": "pic_NZ75_403_D.png"
             }
         ]
@@ -23240,19 +23240,19 @@
                 "pic": "pic_NEGEV_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_NEGEV_3202.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_NEGEV_3202_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Little Drifter",
                 "pic": "pic_NEGEV_904.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Little Drifter (Damaged)",
                 "pic": "pic_NEGEV_904_D.png"
             }
         ]
@@ -23734,11 +23734,11 @@
                 "pic": "pic_OC44_1608_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_OC44_3406.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_OC44_3406_D.png"
             }
         ]
@@ -24373,11 +24373,11 @@
                 "pic": "pic_P7_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Pinky Swear",
                 "pic": "pic_P7_606.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Pinky Swear (Damaged)",
                 "pic": "pic_P7_606_D.png"
             },
             {
@@ -24780,11 +24780,11 @@
                 "pic": "pic_PKP_1201_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "By Your Side",
                 "pic": "pic_PK_605.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "By Your Side (Damaged)",
                 "pic": "pic_PK_605_D.png"
             },
             {
@@ -25837,11 +25837,11 @@
                 "pic": "pic_PPsh41_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Moment of Vows",
                 "pic": "pic_PPsh41_602.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Moment of Vows (Damaged)",
                 "pic": "pic_PPsh41_602_D.png"
             }
         ]
@@ -26123,11 +26123,11 @@
                 "pic": "pic_PTRD_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Romantic Mission",
                 "pic": "pic_PTRD_408.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Romantic Mission (Damaged)",
                 "pic": "pic_PTRD_408_D.png"
             }
         ]
@@ -26692,11 +26692,11 @@
                 "pic": "pic_R93_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_R93_3501.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_R93_3501_D.png"
             }
         ]
@@ -27904,11 +27904,11 @@
                 "pic": "pic_SPAS12_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Marching Band",
                 "pic": "pic_SPAS12_522.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Marching Band (Damaged)",
                 "pic": "pic_SPAS12_522_D.png"
             },
             {
@@ -27920,11 +27920,11 @@
                 "pic": "pic_SPAS12_2408_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Untranslated1",
                 "pic": "pic_SPAS12_3203.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_SPAS12_3203_D.png"
             }
         ]
@@ -28225,11 +28225,11 @@
                 "pic": "pic_SR3MP_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Bunny Macchiato",
                 "pic": "pic_SR3MP_807.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Bunny Macchiato (Damaged)",
                 "pic": "pic_SR3MP_807_D.png"
             }
         ]
@@ -28623,11 +28623,11 @@
                 "pic": "pic_AR15Mod_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Literary Girl",
                 "pic": "pic_AR15_701.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Literary Girl (Damaged)",
                 "pic": "pic_AR15_701_D.png"
             }
         ]
@@ -29039,11 +29039,11 @@
                 "pic": "pic_SV98_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "At Your Service",
                 "pic": "pic_SV98_502.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "At Your Service (Damaged)",
                 "pic": "pic_SV98_502_D.png"
             },
             {
@@ -29445,11 +29445,11 @@
                 "pic": "pic_SVD_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Winter Fairy",
                 "pic": "pic_SVD_305.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Winter Fairy (Damaged)",
                 "pic": "pic_SVD_305_D.png"
             }
         ]
@@ -30041,11 +30041,11 @@
                 "pic": "pic_VZ61_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Crimson Starlet",
                 "pic": "pic_VZ61_801.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Crimson Starlet (Damaged)",
                 "pic": "pic_VZ61_801_D.png"
             }
         ]
@@ -30357,27 +30357,27 @@
                 "pic": "pic_M1903_1107_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "O Holy Night",
                 "pic": "pic_M1903_302.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "O Holy Night (Damaged)",
                 "pic": "pic_M1903_302_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Queen in Radiance",
                 "pic": "pic_M1903_802.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Queen in Radiance (Damaged)",
                 "pic": "pic_M1903_802_D.png"
             },
             {
-                "name": "MissingName3",
+                "name": "Classic Witch",
                 "pic": "pic_M1903_5.png"
             },
             {
-                "name": "MissingName3 (Damaged)",
+                "name": "Classic Witch (Damaged)",
                 "pic": "pic_M1903_5_D.png"
             }
         ]
@@ -30918,11 +30918,11 @@
                 "pic": "pic_StenMK2_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Reciprocated Love",
                 "pic": "pic_StenMK2_603.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Reciprocated Love (Damaged)",
                 "pic": "pic_StenMK2_603_D.png"
             },
             {
@@ -31430,11 +31430,11 @@
                 "pic": "pic_KP31_3101_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Korvatunturi Pixie",
                 "pic": "pic_KP31_310.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Korvatunturi Pixie (Damaged)",
                 "pic": "pic_KP31_310_D.png"
             },
             {
@@ -32837,11 +32837,11 @@
                 "pic": "pic_Thunder50_2206_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_Thunder50_3309.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_Thunder50_3309_D.png"
             }
         ]
@@ -32945,19 +32945,19 @@
                 "pic": "pic_TT33_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_TT33_3204.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_TT33_3204_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "A Couple's Journey",
                 "pic": "pic_TT33_601.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "A Couple's Journey (Damaged)",
                 "pic": "pic_TT33_601_D.png"
             }
         ]
@@ -33270,11 +33270,11 @@
                 "pic": "pic_4type_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_4type_3505.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_4type_3505_D.png"
             }
         ]
@@ -33586,11 +33586,11 @@
                 "pic": "pic_59type_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Fairy Primrose",
                 "pic": "pic_59type_407.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Fairy Primrose (Damaged)",
                 "pic": "pic_59type_407_D.png"
             }
         ]
@@ -34298,11 +34298,11 @@
                 "pic": "pic_79type_1402_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_79type_3306.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_79type_3306_D.png"
             }
         ]
@@ -34657,11 +34657,11 @@
                 "pic": "pic_Type88_3003_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_Type88_3504.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_Type88_3504_D.png"
             }
         ]
@@ -34880,11 +34880,11 @@
                 "pic": "pic_95type_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Narcissus",
                 "pic": "pic_95type_405.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Narcissus (Damaged)",
                 "pic": "pic_95type_405_D.png"
             },
             {
@@ -35000,11 +35000,11 @@
                 "pic": "pic_97type_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Peony",
                 "pic": "pic_97type_406.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Peony (Damaged)",
                 "pic": "pic_97type_406_D.png"
             }
         ]
@@ -35443,19 +35443,19 @@
                 "pic": "pic_UMP45Mod_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_UMP45_3403.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_UMP45_3403_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Winter Trip",
                 "pic": "pic_UMP45_521.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Winter Trip (Damaged)",
                 "pic": "pic_UMP45_521_D.png"
             },
             {
@@ -35886,19 +35886,19 @@
                 "pic": "pic_UMP9_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Am I Late?",
                 "pic": "pic_UMP9_409.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Am I Late? (Damaged)",
                 "pic": "pic_UMP9_409_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Untranslated1",
                 "pic": "pic_UMP9_3404.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_UMP9_3404_D.png"
             },
             {
@@ -36562,11 +36562,11 @@
                 "pic": "pic_Vector_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Kitty Paws",
                 "pic": "pic_Vector_2.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Kitty Paws (Damaged)",
                 "pic": "pic_Vector_2_D.png"
             },
             {
@@ -36683,11 +36683,11 @@
                 "pic": "pic_WA2000_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Date in the Snow",
                 "pic": "pic_WA2000_306.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Date in the Snow (Damaged)",
                 "pic": "pic_WA2000_306_D.png"
             },
             {
@@ -36699,19 +36699,19 @@
                 "pic": "pic_WA2000_1108_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Haunted Castle",
                 "pic": "pic_WA2000_6.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Haunted Castle (Damaged)",
                 "pic": "pic_WA2000_6_D.png"
             },
             {
-                "name": "MissingName3",
+                "name": "Ballroom Interlude",
                 "pic": "pic_WA2000_804.png"
             },
             {
-                "name": "MissingName3 (Damaged)",
+                "name": "Ballroom Interlude (Damaged)",
                 "pic": "pic_WA2000_804_D.png"
             }
         ]
@@ -36813,11 +36813,11 @@
                 "pic": "pic_Welrod_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "English in Love",
                 "pic": "pic_Welrod_411.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "English in Love (Damaged)",
                 "pic": "pic_Welrod_411_D.png"
             },
             {
@@ -37231,11 +37231,11 @@
                 "pic": "pic_Z62_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Untranslated1",
                 "pic": "pic_Z62_3507.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_Z62_3507_D.png"
             }
         ]
@@ -37506,11 +37506,11 @@
                 "pic": "pic_m45_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Candy Express",
                 "pic": "pic_m45_4.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Candy Express (Damaged)",
                 "pic": "pic_m45_4_D.png"
             }
         ]
@@ -37700,11 +37700,11 @@
                 "pic": "pic_Alma_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Middle School Adventure",
                 "pic": "pic_Alma_528.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Middle School Adventure (Damaged)",
                 "pic": "pic_Alma_528_D.png"
             }
         ]
@@ -37788,11 +37788,11 @@
                 "pic": "pic_Bronya_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Bronya's Armor",
                 "pic": "pic_Bronya_507.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Bronya's Armor (Damaged)",
                 "pic": "pic_Bronya_507_D.png"
             }
         ]
@@ -37888,19 +37888,19 @@
                 "pic": "pic_CLEAR_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Pocket City Queen the Second",
                 "pic": "pic_CLEAR_509.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Pocket City Queen the Second (Damaged)",
                 "pic": "pic_CLEAR_509_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Doll Annihilator",
                 "pic": "pic_CLEAR_505.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Doll Annihilator (Damaged)",
                 "pic": "pic_CLEAR_505_D.png"
             }
         ]
@@ -38009,11 +38009,11 @@
                 "pic": "pic_Dana_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Red Comet",
                 "pic": "pic_Dana_526.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Red Comet (Damaged)",
                 "pic": "pic_Dana_526_D.png"
             }
         ]
@@ -38121,11 +38121,11 @@
                 "pic": "pic_Dorothy_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Precious Christmas Outfit",
                 "pic": "pic_Dorothy_525.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Precious Christmas Outfit (Damaged)",
                 "pic": "pic_Dorothy_525_D.png"
             }
         ]
@@ -38314,19 +38314,19 @@
                 "pic": "pic_FAIL_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Kiana's Dress",
                 "pic": "pic_FAIL_506.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Kiana's Dress (Damaged)",
                 "pic": "pic_FAIL_506_D.png"
             },
             {
-                "name": "MissingName2",
+                "name": "Pocket City Queen the Third",
                 "pic": "pic_FAIL_510.png"
             },
             {
-                "name": "MissingName2 (Damaged)",
+                "name": "Pocket City Queen the Third (Damaged)",
                 "pic": "pic_FAIL_510_D.png"
             }
         ]
@@ -38542,11 +38542,11 @@
                 "pic": "pic_Jill_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Model Warrior",
                 "pic": "pic_Jill_529.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Model Warrior (Damaged)",
                 "pic": "pic_Jill_529_D.png"
             }
         ]
@@ -38642,11 +38642,11 @@
                 "pic": "pic_Kiana_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Kiana's Dress",
                 "pic": "pic_Kiana_506.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Kiana's Dress (Damaged)",
                 "pic": "pic_Kiana_506_D.png"
             }
         ]
@@ -38996,11 +38996,11 @@
                 "pic": "pic_Seele_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Seele's Ceremony",
                 "pic": "pic_Seele_508.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Seele's Ceremony (Damaged)",
                 "pic": "pic_Seele_508_D.png"
             }
         ]
@@ -39096,11 +39096,11 @@
                 "pic": "pic_SEI_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Best Friend's Casual Dress",
                 "pic": "pic_SEI_527.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Best Friend's Casual Dress (Damaged)",
                 "pic": "pic_SEI_527_D.png"
             }
         ]
@@ -39220,11 +39220,11 @@
                 "pic": "pic_Stella_D.png"
             },
             {
-                "name": "MissingName1",
+                "name": "Best Friend's Armor",
                 "pic": "pic_Stella_524.png"
             },
             {
-                "name": "MissingName1 (Damaged)",
+                "name": "Best Friend's Armor (Damaged)",
                 "pic": "pic_Stella_524_D.png"
             }
         ]
