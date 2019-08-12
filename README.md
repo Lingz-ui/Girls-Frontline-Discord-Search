@@ -20,11 +20,14 @@ Coming eventually:
 ## Commands
 Assuming that that the default prefix $gf is still being used:
 - $gfsearch: Search a doll
+- $gfequip: Search equipment and fairies
 - $gfimage: Display only the image for that doll.
 - $gftimer: Check which dolls correspond to which production timer.
 - $gfhelp: List commands, version, how to contact me, etc.
 - $gfquote: Show quotes from the dolls if you have CharacterVoice.json from the game files
 - $gfstatus: Number of servers this bot is in.
+
+You can get more up to date command information by asking the discord bot or opening main.py and scrolling down to the help command. This is just a short summary.
 
 ## Prerequesites
 Python3 and pip. Game files need to be extracted if you want images and quotes.
