@@ -1,5 +1,5 @@
 # Girls' Frontline Discord Search
-Search a doll from Girls' Frontline within Discord. [Click to invite to your server](https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0)
+[Click to invite to your server](https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0)
 
 Features:
 - Type, Base Stats, Max Stats, How To Obtain, Production Requirement, Ability, Ability Cooldown, Tile Bonus, Tile Bonus information.
