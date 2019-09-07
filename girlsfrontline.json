@@ -693,7 +693,19 @@
         "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 25%\nIncreases accuracy by 65%",
         "production": {
             "reward": "Obtained from loot boxes of event Shattered Connexion. One guaranteed ACR will be given to player upon opening the 777th loot box."
-        }
+        },
+        "img": "pic_ACR.png",
+        "internalName": "ACR",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_ACR.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_ACR_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/ADS",
@@ -820,6 +832,14 @@
             {
                 "name": "Default (Damaged)",
                 "pic": "pic_ADS_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_ADS_3601.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_ADS_3601_D.png"
             }
         ]
     },
@@ -7340,12 +7360,20 @@
                 "pic": "pic_G11_1602_D.png"
             },
             {
+                "name": "Rugged",
+                "pic": "pic_G11_rugged.png"
+            },
+            {
                 "name": "Neet Zombie",
                 "pic": "pic_G11_9.png"
             },
             {
                 "name": "Neet Zombie (Damaged)",
                 "pic": "pic_G11_9_D.png"
+            },
+            {
+                "name": "Maid",
+                "pic": "pic_G11_maid.png"
             }
         ]
     },
@@ -7585,6 +7613,14 @@
             {
                 "name": "Battlefield Baker (Damaged)",
                 "pic": "pic_G3_1303_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_G36_3603.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_G36_3603_D.png"
             },
             {
                 "name": "You Who Steps Up",
@@ -8039,6 +8075,14 @@
             {
                 "name": "Every Child's X'mas Dream (Damaged)",
                 "pic": "pic_G36_2806_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_G36_3603.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_G36_3603_D.png"
             },
             {
                 "name": "You Who Steps Up",
@@ -12001,6 +12045,74 @@
         ]
     },
     {
+        "url": "/wiki/K3",
+        "num": -1,
+        "name": "K3",
+        "type": "MG",
+        "rating": 3,
+        "constStats": {
+            "mov": 4,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "9"
+        },
+        "baseStats": {
+            "hp": 63,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 165,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": 78,
+            "eva": 35,
+            "acc": 30,
+            "rof": 134,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n🔷⬛🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects shotguns\nIncreases accuracy by 10%\nIncreases armour by 10%",
+        "production": {
+            "reward": "Login reward for August 2019 (CN)."
+        },
+        "img": "pic_K3.png",
+        "internalName": "K3",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_K3.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_K3_D.png"
+            }
+        ]
+    },
+    {
         "url": "/wiki/K31",
         "num": 247,
         "name": "K31",
@@ -12862,7 +12974,19 @@
         "bonus_desc": "Affects shotguns\nIncreases damage by 15%\nIncreases armour by 15%",
         "production": {
             "stage": "Obtained as a possible drop throughout E?-? of Shattered Connexion."
-        }
+        },
+        "img": "pic_Kord.png",
+        "internalName": "Kord",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_Kord.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_Kord_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/L85A1",
@@ -13818,7 +13942,7 @@
             },
             {
                 "name": "Boss",
-                "img": "pic_M16A1_Boss.png"
+                "pic": "pic_M16A1_Boss.png"
             },
             {
                 "name": "Demon Hunter",
@@ -14669,7 +14793,7 @@
             },
             {
                 "name": "Boss",
-                "img": "pic_M16A1_Boss.png"
+                "pic": "pic_M16A1_Boss.png"
             }
         ]
     },
@@ -16385,6 +16509,14 @@
             {
                 "name": "Default (Damaged)",
                 "pic": "pic_M249SAW_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_M249SAW_3604.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_M249SAW_3604_D.png"
             },
             {
                 "name": "Arctic Fox",
@@ -20186,6 +20318,14 @@
                 "pic": "pic_MP5_D.png"
             },
             {
+                "name": "MOD 3",
+                "pic": "pic_MP5Mod.png"
+            },
+            {
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_MP5Mod_D.png"
+            },
+            {
                 "name": "Sleepless Begonias",
                 "pic": "pic_MP5_1205.png"
             },
@@ -20485,7 +20625,17 @@
                 "7.7",
                 "8"
             ]
-        }
+        },
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_MP5Mod.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_MP5Mod_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/MP7",
@@ -23441,6 +23591,14 @@
             {
                 "name": "Default (Damaged)",
                 "pic": "pic_OTs12_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_OTs12_3605.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_OTs12_3605_D.png"
             }
         ]
     },
@@ -27044,7 +27202,7 @@
             },
             {
                 "name": "Without Gun",
-                "img": "pic_RO635_NoArmor0.png"
+                "pic": "pic_RO635_NoArmor0.png"
             }
         ]
     },
@@ -27424,6 +27582,14 @@
             {
                 "name": "Wintersweet (Damaged)",
                 "pic": "pic_SAT8_1802_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_SAT8_3602.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_SAT8_3602_D.png"
             },
             {
                 "name": "Pumpkin Skewers",
@@ -28428,7 +28594,19 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 15%",
         "production": {
             "stage": "Obtained as a possible drop throughout E?-? of Shattered Connexion."
-        }
+        },
+        "img": "pic_SSG3000.png",
+        "internalName": "SSG3000",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_SSG3000.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_SSG3000_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/SSG_69",
@@ -38548,6 +38726,10 @@
             {
                 "name": "Model Warrior (Damaged)",
                 "pic": "pic_Jill_529_D.png"
+            },
+            {
+                "name": "Talking",
+                "pic": "pic_Jill_Talk.png"
             }
         ]
     },
@@ -39096,12 +39278,44 @@
                 "pic": "pic_SEI_D.png"
             },
             {
+                "name": "Kitty Paws",
+                "pic": "pic_SEI_2.png"
+            },
+            {
+                "name": "Kitty Paws (Damaged)",
+                "pic": "pic_SEI_2_D.png"
+            },
+            {
                 "name": "Best Friend's Casual Dress",
                 "pic": "pic_SEI_527.png"
             },
             {
                 "name": "Best Friend's Casual Dress (Damaged)",
                 "pic": "pic_SEI_527_D.png"
+            },
+            {
+                "name": "Nocturnal Familiar",
+                "pic": "pic_SEI_3.png"
+            },
+            {
+                "name": "Nocturnal Familiar (Damaged)",
+                "pic": "pic_SEI_3_D.png"
+            },
+            {
+                "name": "Candy Express",
+                "pic": "pic_SEI_4.png"
+            },
+            {
+                "name": "Candy Express (Damaged)",
+                "pic": "pic_SEI_4_D.png"
+            },
+            {
+                "name": "Pumpkin Mishka",
+                "pic": "pic_SEI_1.png"
+            },
+            {
+                "name": "Pumpkin Mishka (Damaged)",
+                "pic": "pic_SEI_1_D.png"
             }
         ]
     },
@@ -39358,22 +39572,21 @@
         ]
     },
     {
-        "url": "/wiki/K3",
+        "url": "/wiki/VP70",
         "num": -1,
-        "name": "K3",
-        "type": "MG",
+        "name": "VP70",
+        "type": "HG",
         "rating": 3,
         "constStats": {
-            "mov": 4,
-            "crit_rate": 5,
+            "mov": 15,
+            "crit_rate": 20,
             "crit_dmg": 50,
-            "pen": 15,
-            "clipsize": "9"
+            "pen": 15
         },
         "baseStats": {
-            "hp": 63,
-            "ammo": 40,
-            "ration": 30,
+            "hp": 10,
+            "ammo": 10,
+            "ration": 10,
             "dmg": -1,
             "eva": -1,
             "acc": -1,
@@ -39381,13 +39594,13 @@
             "armor": 0
         },
         "maxStats": {
-            "hp": 165,
-            "ammo": 140,
-            "ration": 90,
-            "dmg": 78,
-            "eva": 35,
-            "acc": 30,
-            "rof": 134,
+            "hp": 100,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
             "armor": 0
         },
         "ability": {
@@ -39407,21 +39620,21 @@
                 "?"
             ]
         },
-        "tile_bonus": "⬛⬛⬛\n🔷⬛🔶\n⬛⬛🔶",
-        "bonus_desc": "Affects shotguns\nIncreases accuracy by 10%\nIncreases armour by 10%",
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects all classes\nIncreases ?? by ??%\nIncreases ?? by ??%",
         "production": {
-            "reward": "Login reward for August 2019 (CN)."
+            "reward": "Login reward for September 2019 (CN)."
         },
-        "img": "pic_K3.png",
-        "internalName": "K3",
+        "img": "pic_VP70.png",
+        "internalName": "VP70",
         "costumes": [
             {
                 "name": "Default",
-                "pic": "pic_K3.png"
+                "pic": "pic_VP70.png"
             },
             {
                 "name": "Default (Damaged)",
-                "pic": "pic_K3_D.png"
+                "pic": "pic_VP70_D.png"
             }
         ]
     },
@@ -39558,7 +39771,7 @@
         "production": {
             "reward": "ACCESS DENIED"
         },
-        "img": "Agent.png"
+        "img": "pic_Agent.png"
     },
     {
         "url": "/wiki/Ouroboros",
@@ -39671,6 +39884,17 @@
         "img": "BossJustice.png"
     },
     {
+        "url": "/wiki/Beak",
+        "num": -1,
+        "name": "Beak",
+        "type": "Sangvis Ferri Doll",
+        "rating": -1,
+        "production": {
+            "reward": "ACCESS DENIED"
+        },
+        "img": "Beak_M16.png"
+    },
+    {
         "url": "/wiki/Kalina",
         "num": -1,
         "name": "Kalina",
@@ -39685,11 +39909,13 @@
     {
         "url": "",
         "num": -1,
-        "name": "Accelerator",
-        "type": "Creator",
-        "rating": 6,
+        "rating": -1,
+        "name": "OGAS",
+        "type": "pͧ̅ͅḁ͋̿ṙ̭a̗ͪ̇p̦̈̅lui͔͎̪e ̊͋̇v̊͒̽i͊ͧ̊ru̳̠s",
         "production": {
-            "reward": "It is I, the owner of the bot! Good job for finding this."
-        }
+            "reward": "?̖ͮ͗?̞̏?̄͂̉"
+        },
+        "internalName": "OGAS",
+        "img": "Nyto_Isomer_Shadow.png"
     }
 ]

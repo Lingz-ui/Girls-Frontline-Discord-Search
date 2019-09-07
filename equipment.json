@@ -1,25 +1,176 @@
 [
     {
-        "url": "/wiki/BM_3-12X40",
-        "name": "BM 3-12X40",
-        "rating": 2,
-        "production": {
-            "timer": "0:05:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
+        "url": "/wiki/.300BLK_High-Velocity_Ammo",
+        "name": ".300BLK High-Velocity Ammo",
+        "valid": "ST AR-15 Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "The .300 Blackout high-velocity ammunition was specially developed by 16Lab and is recommended for use with a suppressor. Can only be equipped by ST AR-15.\nMinimum level requirement: Lvl 80\nObtained through 3-4 Night battles from either the Manticore, or by S-ranking the map.",
+        "stats": {
+            "Damage": {
+                "min": 12.0,
+                "max": 16.0,
+                "growth": 1.6
+            },
+            "Accuracy": {
+                "min": -1.0,
+                "max": -5.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/16Lab_6-24X56",
+        "name": "16Lab 6-24X56",
+        "valid": "All except HG",
         "img": "accessory_scope_N.png",
         "type": "Scope",
-        "description": "The 3-12x magnification optical sight manufactured by BM Corporation allows T-Dolls to hit the enemy's vital points more easily. Can be equipped by all except HG."
+        "production": {
+            "reward": "Usually available for purchase using event currency during an event."
+        },
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "VFL, the scope of choice for 16Lab to slap their own logo on it. Although they are now ten times more expensive, they do come numbered in a limited edition. Isn't that cool?",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 24.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/16Lab_Armor_Plate",
+        "name": "16Lab Armor Plate",
+        "valid": "SG Only",
+        "img": "doll_armor_S.png",
+        "type": "Armor Plate",
+        "production": {
+            "timer": "",
+            "reward": "Usually available for purchase using event currency during an event."
+        },
+        "rating": 5,
+        "slot": "Doll",
+        "description": "A composite ceramic and kevlar armor plate developed by 16Lab. It possesses a strong bullet-resistant ability and is extremely lightweight. The ideal choice for an elite.",
+        "stats": {
+            "Armor": {
+                "min": 8.0,
+                "growth": 1.4
+            },
+            "Evasion": {
+                "min": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/16Lab_Buckshot",
+        "name": "16Lab Buckshot",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "reward": "Usually available for purchase using event currency during an event."
+        },
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "16Lab's custom magnum shotgun shell is one of the strongest shells currently available for shotguns with its high-powered gunpowder and tungsten alloy outer shell encapsuling a lead bullet.",
+        "stats": {
+            "Damage": {
+                "min": 10.0,
+                "growth": 1.5
+            },
+            "Critical Damage (%)": {
+                "min": 15.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/16Lab_Infrared_Designator",
+        "name": "16Lab Infrared Designator",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "accessory_nightvision_S.png",
+        "type": "Night Combat Equipment",
+        "production": {
+            "reward": "Usually available for purchase using event currency during an event."
+        },
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "An infrared designator system specially developed by 16Lab. Much of its superfluous functions and weight have been removed, leaving behind a truly practical night battle equipment that allows T-Dolls to perform to their fullest potential. Can only be equipped by SMGs, HGs, and ARs.",
+        "stats": {
+            "Night Penalty Reduction": {
+                "min": 100.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/16Lab_Sub-Caliber_Armor-Piercing_Ammo",
+        "name": "16Lab Sub-Caliber Armor-Piercing Ammo",
+        "valid": "RF and MG",
+        "img": "ammo_apBullet_S.png",
+        "type": "Armor-Piercing Ammo",
+        "production": {
+            "reward": "Usually available for purchase using event currency during an event."
+        },
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "A depleted uranium high-explosive armor-piercing ammunition recently developed by 16Lab//c it is capable of penetrating any type of armor and causing heavy damage. Can be equipped by RFs and MGs.",
+        "stats": {
+            "Armor Penetration": {
+                "min": 80.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/7.92_KURZ",
+        "name": "7.92 KURZ",
+        "valid": "StG44 Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN:专为STG44开发的7.9mm弹药，也是世界最早的中间威力弹之一，战时黄铜短缺而采用的钢制弹壳带来了独特的时髦配色，STG44专用。Obtained by reaching Stage 3 of StG44's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 10.0,
+                "max": 14.0,
+                "growth": 1.76
+            }
+        }
+    },
+    {
+        "url": "/wiki/Ability_Upgrade_Cartridge",
+        "name": "Ability Upgrade Cartridge",
+        "valid": "IDW Only",
+        "img": "doll_chip_idw.png",
+        "type": "Microchip",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN:看起来很古朴的卡带，很难相信插上这个能提升作战能力，使用前对触点吹一吹比较好，IDW专用。Obtained by reaching Stage 3 of IDW's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Evasion": {
+                "min": 21.0,
+                "max": 26.0,
+                "growth": 1.45
+            },
+            "Rate of fire": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 1.8
+            },
+            "Damage": {
+                "min": -10.0,
+                "max": -6.0
+            }
+        }
     },
     {
         "url": "/wiki/AC1_Suppressor",
         "name": "AC1 Suppressor",
-        "rating": 2,
+        "valid": "HG, SMG, AR, and RF",
+        "img": "accessory_silencer_N",
+        "type": "Silencer",
         "production": {
             "timer": "0:07:00",
             "normal": [
@@ -29,218 +180,28 @@
                 50
             ]
         },
-        "img": "accessory_silencer_N",
-        "type": "AC",
-        "description": "A general use suppressor model manufactured by AC Corporation, it helps to keep T-Dolls concealed. Can be equipped by all except MGs and SGs."
-    },
-    {
-        "url": "/wiki/EOT_506",
-        "name": "EOT 506",
         "rating": 2,
-        "production": {
-            "timer": "0:08:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_holo_N.png",
-        "type": "Scope",
-        "description": "The Type 506 Holographic Sight manufactured by EOT Corporation. It looks pretty cool. Can be equipped by all except HG."
-    },
-    {
-        "url": "/wiki/PEQ-2",
-        "name": "PEQ-2",
-        "rating": 2,
-        "production": {
-            "timer": "0:09:00",
-            "normal": [
-                70,
-                10,
-                110,
-                30
-            ]
-        },
-        "img": "accessory_nightvision_N.png",
-        "type": "PEQ",
-        "description": "An early model ATPIAL infrared designator issued by IOP Corporation for their T-Dolls. Now T-Dolls can hit things at night! Can only be equipped by SMGs, HGs, and ARs."
-    },
-    {
-        "url": "/wiki/AMP_COMPM2",
-        "name": "AMP COMPM2",
-        "rating": 2,
-        "production": {
-            "timer": "0:10:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_reddot_N.png",
-        "type": "Scope",
-        "description": "The COMPML Red Dot Sight manufactured by AMP Corporation. Its only merit is its sturdiness. Can be equipped by all except HG."
-    },
-    {
-        "url": "/wiki/IOP_X1_Exoskeleton",
-        "name": "IOP X1 Exoskeleton",
-        "rating": 2,
-        "production": {
-            "timer": "0:12:00",
-            "normal": [
-                100,
-                80,
-                10,
-                100
-            ]
-        },
-        "img": "doll_skeleton_X_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type X1 Exoskeleton is an early model developed by IOP Corporation, aimed at increasing the agility of T-Dolls through the exoskeleton system. Can be equipped by HGs, SMGs, and most ARs."
-    },
-    {
-        "url": "/wiki/IOP_T1_Exoskeleton",
-        "name": "IOP T1 Exoskeleton",
-        "rating": 2,
-        "production": {
-            "timer": "0:12:00",
-            "normal": [
-                100,
-                80,
-                10,
-                100
-            ]
-        },
-        "img": "doll_skeleton_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type T1 Exoskeleton is an early model developed by IOP Corporation, aimed at increasing the agility of T-Dolls through the exoskeleton system. Can be equipped by HGs, SMGs, and most ARs."
-    },
-    {
-        "url": "/wiki/ILM_Hollow_Point_Ammo_(2-Star)",
-        "name": "ILM Hollow Point Ammo (2-Star)",
-        "rating": 2,
-        "production": {
-            "timer": "0:13:00",
-            "normal": [
-                180,
-                180,
-                10,
-                50
-            ]
-        },
-        "img": "ammo_hpBullet_N.png",
-        "type": "HP Ammo",
-        "description": "A hollow-point ammunition developed by ILM, it helps to increase lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs."
-    },
-    {
-        "url": "/wiki/BK_Slug",
-        "name": "BK Slug",
-        "rating": 2,
-        "production": {
-            "timer": "0:14:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_s_N.png",
-        "type": "Shotgun Ammo",
-        "description": "Shotgun slugs issued by IOP. Each shot contains a single large projectile and is designed to deal single-target damage."
-    },
-    {
-        "url": "/wiki/%EF%BC%831_Buckshot",
-        "name": "＃1 Buckshot",
-        "rating": 2,
-        "production": {
-            "timer": "0:14:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_b_N.png",
-        "type": "Shotgun Ammo",
-        "description": "High-powered shotgun shells issued by IOP. Each shot contains multiple pellets measuring 7.62mm in diameter. Can be equipped by SGs."
-    },
-    {
-        "url": "/wiki/M61_Armor-Piercing_Ammo",
-        "name": "M61 Armor-Piercing Ammo",
-        "rating": 2,
-        "production": {
-            "timer": "0:15:00",
-            "normal": [
-                10,
-                150,
-                90,
-                100
-            ]
-        },
-        "img": "ammo_apBullet_N.png",
-        "type": "AP Ammo",
-        "description": "The Type M61 armor-piercing ammunition manufactured by IOP Corporation possesses a standard steel-core armor piercing bullet design, aimed at penetrating enemy armor and causing effective damage. Can be equipped by RFs and MGs."
-    },
-    {
-        "url": "/wiki/Ragged_Cape",
-        "name": "Ragged Cape",
-        "rating": 2,
-        "production": {
-            "timer": "0:16:00",
-            "normal": [
-                180,
-                20,
-                200,
-                20
-            ]
-        },
-        "img": "doll_suit_1.png",
-        "type": "Cape",
-        "description": "A ragged cape that has been passed down for ages. Having an undisturbed firing environment allows for increased critical damage. Can only be equipped by RFs."
-    },
-    {
-        "url": "/wiki/FMJ_High-Velocity_Ammo",
-        "name": "FMJ High-Velocity Ammo",
-        "rating": 2,
-        "production": {
-            "timer": "0:18:00",
-            "normal": [
-                10,
-                230,
-                120,
-                80
-            ]
-        },
-        "img": "ammo_hvBullet_N.png",
-        "type": "HV Ammo",
-        "description": "The FCA Research Center's assault rifle-specific FMJ high-velocity ammunition effectively boosts the output of assault rifles through high quality//c high pressure gunpowder. They are issued with MP Group's reliable and lightweight magazines."
-    },
-    {
-        "url": "/wiki/LRA_2-12x50",
-        "name": "LRA 2-12x50",
-        "rating": 3,
-        "production": {
-            "timer": "0:20:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_scope_N.png",
-        "type": "Scope",
-        "description": "A new model of optical sight developed by LRA Corporation. It provides a high magnification and a wide field of view. Can be equipped by all except HG."
+        "slot": "Accessory",
+        "description": "A general use suppressor model manufactured by AC Corporation, it helps to keep T-Dolls concealed. Can be equipped by all except MGs and SGs.",
+        "stats": {
+            "Crit Rate": {
+                "min": 4.0,
+                "max": 5.0,
+                "growth": -9999
+            },
+            "Evasion": {
+                "min": 2.0,
+                "max": 2.0,
+                "growth": -9999
+            }
+        }
     },
     {
         "url": "/wiki/AC2_Suppressor",
         "name": "AC2 Suppressor",
-        "rating": 3,
+        "valid": "HG, SMG, AR, and RF",
+        "img": "accessory_silencer_N",
+        "type": "Silencer",
         "production": {
             "timer": "0:22:00",
             "normal": [
@@ -250,235 +211,28 @@
                 50
             ]
         },
-        "img": "accessory_silencer_N",
-        "type": "AC",
-        "description": "An improved suppressor model manufactured by AC Corporation, it helps keep T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs."
-    },
-    {
-        "url": "/wiki/EOT_512",
-        "name": "EOT 512",
         "rating": 3,
-        "production": {
-            "timer": "0:23:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_holo_N.png",
-        "type": "Scope",
-        "description": "The Type 512 Holographic Sight manufactured by EOT Corporation. It looks pretty cool. Can be equipped by all except HG."
-    },
-    {
-        "url": "/wiki/PEQ-5",
-        "name": "PEQ-5",
-        "rating": 3,
-        "production": {
-            "timer": "0:24:00",
-            "normal": [
-                70,
-                10,
-                110,
-                30
-            ]
-        },
-        "img": "accessory_nightvision_N.png",
-        "type": "PEQ",
-        "description": "The standard model ATPIAL infrared designator issued by IOP Corporation for their T-Dolls. Much of the early model's deficiencies had been fixed in this model., but its battery still runs out very quickly. Can only be equipped by SMGs, HGs, and ARS."
-    },
-    {
-        "url": "/wiki/AMP_COMPM4",
-        "name": "AMP COMPM4",
-        "rating": 3,
-        "production": {
-            "timer": "0:25:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_reddot_N.png",
-        "type": "Scope",
-        "description": "The COMPL Red Dot Sight manufactured by AMP Corporation. Its design has been enhanced, increasing its sturdiness even more. Can be equipped by all except HG."
-    },
-    {
-        "url": "/wiki/Type_1_Armor_Plate",
-        "name": "Type 1 Armor Plate",
-        "rating": 3,
-        "production": {
-            "timer": "0:26:00",
-            "normal": [
-                50,
-                50,
-                100,
-                100
-            ]
-        },
-        "img": "doll_armor_N.png",
-        "type": "Armor Plate",
-        "description": "The protective grade Type 1 Fiber Plate provided by IOP Corporation helps to reduce the damage taken from being shot, increasing T-Dolls' survivability on the battlefield."
-    },
-    {
-        "url": "/wiki/IOP_X2_Exoskeleton",
-        "name": "IOP X2 Exoskeleton",
-        "rating": 3,
-        "production": {
-            "timer": "0:27:00",
-            "normal": [
-                100,
-                80,
-                10,
-                100
-            ]
-        },
-        "img": "doll_skeleton_X_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type X2 Exoskeleton is the standard model manufactured by IOP Corporation with improved performance and flexibility. Can be equipped by HGs, SMGs, and most ARs."
-    },
-    {
-        "url": "/wiki/IOP_T2_Exoskeleton",
-        "name": "IOP T2 Exoskeleton",
-        "rating": 3,
-        "production": {
-            "timer": "0:27:00",
-            "normal": [
-                100,
-                80,
-                10,
-                100
-            ]
-        },
-        "img": "doll_skeleton_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type T2 Exoskeleton is the standard model manufactured by IOP Corporation with improved performance and flexibility. Can be equipped by HGs, SMGs, and most ARs."
-    },
-    {
-        "url": "/wiki/ILM_Hollow_Point_Ammo_(3-Star)",
-        "name": "ILM Hollow Point Ammo (3-Star)",
-        "rating": 3,
-        "production": {
-            "timer": "0:28:00",
-            "normal": [
-                180,
-                180,
-                10,
-                50
-            ]
-        },
-        "img": "ammo_hpBullet_N.png",
-        "type": "HP Ammo",
-        "description": "A hollow-point ammunition developed by ILM, it increases lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs."
-    },
-    {
-        "url": "/wiki/FST_Slug",
-        "name": "FST Slug",
-        "rating": 3,
-        "production": {
-            "timer": "0:29:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_s_N.png",
-        "type": "Shotgun Ammo",
-        "description": "Shotgun slugs issued by IOP. With its mass centered in the front, each single large projectile shot is designed to deal accurate single-target damage."
-    },
-    {
-        "url": "/wiki/%EF%BC%830_Buckshot",
-        "name": "＃0 Buckshot",
-        "rating": 3,
-        "production": {
-            "timer": "0:29:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_b_N.png",
-        "type": "Shotgun Ammo",
-        "description": "Powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 8.13mm in diameter. Can be equipped by SGs."
-    },
-    {
-        "url": "/wiki/M993_Armor-Piercing_Ammo",
-        "name": "M993 Armor-Piercing Ammo",
-        "rating": 3,
-        "production": {
-            "timer": "0:30:00",
-            "normal": [
-                10,
-                150,
-                90,
-                100
-            ]
-        },
-        "img": "ammo_apBullet_N.png",
-        "type": "AP Ammo",
-        "description": "The Type M993 armor-piercing ammunition manufactured by IOP Corporation was developed to counter enemies possessing thicker armor by using a tungsten alloy material, aimed at penetrating enemy armor and causing effective damage. Can be equipped by RFs and MGs."
-    },
-    {
-        "url": "/wiki/Camouflage_Cape",
-        "name": "Camouflage Cape",
-        "rating": 3,
-        "production": {
-            "timer": "0:31:00",
-            "normal": [
-                180,
-                20,
-                200,
-                20
-            ]
-        },
-        "img": "doll_suit_1.png",
-        "type": "Cape",
-        "description": "A camouflage cape that has been passed down for ages, its mottled edges tell a tale of the flames of war. Having an undisturbed firing environment allows for increased critical damage. Can only be equipped by RFs."
-    },
-    {
-        "url": "/wiki/JSP_High-Velocity_Ammo",
-        "name": "JSP High-Velocity Ammo",
-        "rating": 3,
-        "production": {
-            "timer": "0:33:00",
-            "normal": [
-                10,
-                230,
-                120,
-                80
-            ]
-        },
-        "img": "ammo_hvBullet_N.png",
-        "type": "HV Ammo",
-        "description": "EN: The FCA Research Center's assault rifle-specific JSP high-velocity ammunition uses an experimental bullet design to further increase the output of assault rifles. They are issued with MP Group's reliable and lightweight magazines.\nCN: FCA研究局的突击步枪专用JSP高速弹，采用了实验型的弹头设计进一步提升突击步枪输出能力，和MP社可靠的轻量化弹匣配套发送。"
-    },
-    {
-        "url": "/wiki/PSO-1",
-        "name": "PSO-1",
-        "rating": 4,
-        "production": {
-            "timer": "0:35:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_scope_N.png",
-        "type": "Scope",
-        "description": "Possessing a compact and reliable design, the military-grade optical sight incorporates specialized reticle subtensions, allowing for ease of use on the battlefield. Can be equipped by all except HG."
+        "slot": "Accessory",
+        "description": "An improved suppressor model manufactured by AC Corporation, it helps keep T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs.",
+        "stats": {
+            "Critical hit rate": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.3
+            },
+            "Evasion": {
+                "min": 3.0,
+                "max": 3.0,
+                "growth": 1.4
+            }
+        }
     },
     {
         "url": "/wiki/AC3_Suppressor",
         "name": "AC3 Suppressor",
-        "rating": 4,
+        "valid": "HG, SMG, AR, and RF",
+        "img": "accessory_silencer_N",
+        "type": "Silencer",
         "production": {
             "timer": "0:37:00",
             "normal": [
@@ -488,218 +242,28 @@
                 50
             ]
         },
-        "img": "accessory_silencer_N",
-        "type": "AC",
-        "description": "An advanced general use suppressor model manufactured by AC Corporation, it is effective at keeping T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs."
-    },
-    {
-        "url": "/wiki/EOT_516",
-        "name": "EOT 516",
         "rating": 4,
-        "production": {
-            "timer": "0:38:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_holo_N.png",
-        "type": "Scope",
-        "description": "The Type 516 Holographic Sight manufactured by EOT Corporation. It looks very cool. Can be equipped by all except HG."
-    },
-    {
-        "url": "/wiki/PEQ-15",
-        "name": "PEQ-15",
-        "rating": 4,
-        "production": {
-            "timer": "0:39:00",
-            "normal": [
-                70,
-                10,
-                110,
-                30
-            ]
-        },
-        "img": "accessory_nightvision_N.png",
-        "type": "PEQ",
-        "description": "EN: An improved model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it effectively increases the T-Dolls' combat efficiency during nighttime. Can only be equipped by SMGs, HGs and ARs.\nCN: IOP公司人形列装的改进型ATPIAL红外指示器，有效提升了人形在夜战中的战斗力，只有冲锋枪，手枪，突击步枪可以装备。"
-    },
-    {
-        "url": "/wiki/COG_M150",
-        "name": "COG M150",
-        "rating": 4,
-        "production": {
-            "timer": "0:40:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_reddot_N.png",
-        "type": "Scope",
-        "description": "CN: COG公司的先进红点瞄准镜，最大优势在于其不需要依靠电池便可提供任何环境下的瞄准照明，除手枪外均可装配。"
-    },
-    {
-        "url": "/wiki/Type_2_Armor_Plate",
-        "name": "Type 2 Armor Plate",
-        "rating": 4,
-        "production": {
-            "timer": "0:41:00",
-            "normal": [
-                50,
-                50,
-                100,
-                100
-            ]
-        },
-        "img": "doll_armor_N.png",
-        "type": "Armor Plate",
-        "description": "The protective grade Type II Composite Plate provided by IOP Corporation helps to greatly reduce the damage taken from being shot, greatly enhancing T-Dolls' survivability on the battlefield."
-    },
-    {
-        "url": "/wiki/IOP_T3_Exoskeleton",
-        "name": "IOP T3 Exoskeleton",
-        "rating": 4,
-        "production": {
-            "timer": "0:42:00",
-            "normal": [
-                100,
-                80,
-                10,
-                100
-            ]
-        },
-        "img": "doll_skeleton_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type T3 Exoskeleton is an enhanced model developed by IOP Corporation. Through improvements in technology, it has greater flexibility while at the same time detracting less from the shooting ability of the user. Can be equipped by HGs, SMGs, and most ARs."
-    },
-    {
-        "url": "/wiki/IOP_X3_Exoskeleton",
-        "name": "IOP X3 Exoskeleton",
-        "rating": 4,
-        "production": {
-            "timer": "0:42:00",
-            "normal": [
-                100,
-                80,
-                10,
-                100
-            ]
-        },
-        "img": "doll_skeleton_X_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type X3 Exoskeleton is an enhanced model developed by IOP Corporation. Through improvements in technology, it has greater flexibility while at the same time detracting less from the shooting ability of the user. Can be equipped by HGs, SMGs, and most ARs."
-    },
-    {
-        "url": "/wiki/ILM_Hollow_Point_Ammo_(4-Star)",
-        "name": "ILM Hollow Point Ammo (4-Star)",
-        "rating": 4,
-        "production": {
-            "timer": "0:43:00",
-            "normal": [
-                180,
-                180,
-                10,
-                50
-            ]
-        },
-        "img": "ammo_hpBullet_N.png",
-        "type": "HP Ammo",
-        "description": "A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs."
-    },
-    {
-        "url": "/wiki/WAD_Slug",
-        "name": "WAD Slug",
-        "rating": 4,
-        "production": {
-            "timer": "0:44:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_s_N.png",
-        "type": "Shotgun Ammo",
-        "description": "Shotgun slugs issued by IOP. With its mass centered in the front, each single large projectile shot encased in polymer casing is designed to deal highly accurate single-target damage."
-    },
-    {
-        "url": "/wiki/%EF%BC%8300_Buckshot",
-        "name": "＃00 Buckshot",
-        "rating": 4,
-        "production": {
-            "timer": "0:44:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_b_N.png",
-        "type": "Shotgun Ammo",
-        "description": "Very powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 8.38mm in diameter. Can be equipped by SGs."
-    },
-    {
-        "url": "/wiki/VFL_6-24x56",
-        "name": "VFL 6-24x56",
-        "rating": 5,
-        "production": {
-            "timer": "0:45:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_scope_N.png",
-        "type": "Scope",
-        "description": "An excellent scope specially built for long-distance sniping, it is made from the best materials and optical components, ensuring outstanding and reliable performance. Can be equipped by all except HG."
-    },
-    {
-        "url": "/wiki/Mk169_Armor-Piercing_Ammo",
-        "name": "Mk169 Armor-Piercing Ammo",
-        "rating": 4,
-        "production": {
-            "timer": "0:45:00",
-            "normal": [
-                10,
-                150,
-                90,
-                100
-            ]
-        },
-        "img": "ammo_apBullet_N.png",
-        "type": "AP Ammo",
-        "description": "The Type Mk169 armor-piercing ammunition developed by IOP in conjunction with the FCA Research Center has a specially made tungsten alloy core designed to be able to penetrate any enemy's armor. Can be equipped by RFs and MGs."
-    },
-    {
-        "url": "/wiki/Urban_Camouflage_Cape",
-        "name": "Urban Camouflage Cape",
-        "rating": 4,
-        "production": {
-            "timer": "0:46:00",
-            "normal": [
-                180,
-                20,
-                200,
-                20
-            ]
-        },
-        "img": "doll_suit_2.png",
-        "type": "Cape",
-        "description": "Game Data[edit]"
+        "slot": "Accessory",
+        "description": "An advanced general use suppressor model manufactured by AC Corporation, it is effective at keeping T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs.",
+        "stats": {
+            "Evasion": {
+                "min": 4.0,
+                "max": 5.0,
+                "growth": 1.4
+            },
+            "Critical hit rate": {
+                "min": 9.0,
+                "max": 11.0,
+                "growth": 1.4
+            }
+        }
     },
     {
         "url": "/wiki/AC4_Suppressor",
         "name": "AC4 Suppressor",
-        "rating": 5,
+        "valid": "HG, SMG, AR, and RF",
+        "img": "accessory_silencer_N",
+        "type": "Silencer",
         "production": {
             "timer": "0:47:00",
             "normal": [
@@ -709,252 +273,189 @@
                 50
             ]
         },
-        "img": "accessory_silencer_N",
-        "type": "AC",
-        "description": "A suppressor model specially developed for special operations, it is highly effective at keeping T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs."
-    },
-    {
-        "url": "/wiki/IOP_High-Capacity_Ammo_Box",
-        "name": "IOP High-Capacity Ammo Box",
-        "rating": 4,
-        "production": {
-            "timer": "0:47:00",
-            "normal": [
-                30,
-                30,
-                30,
-                200
-            ]
-        },
-        "img": "doll_ammoBox_N.png",
-        "type": "Ammo Box",
-        "description": "A high-capacity ammunition box specially developed for machine gun T-Dolls by IOP Corporation, it grants them much longer firepower output."
-    },
-    {
-        "url": "/wiki/EOT_518",
-        "name": "EOT 518",
         "rating": 5,
-        "production": {
-            "timer": "0:48:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
-        "img": "accessory_holo_N.png",
-        "type": "Scope",
-        "description": "The Type 518 Holographic Sight manufactured by EOT Corporation. It looks super cool. Can be equipped by all except HG."
+        "slot": "Accessory",
+        "description": "A suppressor model specially developed for special operations, it is highly effective at keeping T-Dolls concealed and reduces their chances of being detected. Can be equipped by all except MGs and SGs.",
+        "stats": {
+            "Critical hit rate": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.3
+            }
+        }
     },
     {
-        "url": "/wiki/JHP_High-Velocity_Ammo",
-        "name": "JHP High-Velocity Ammo",
-        "rating": 4,
-        "production": {
-            "timer": "0:48:00",
-            "normal": [
-                10,
-                230,
-                120,
-                80
-            ]
-        },
-        "img": "ammo_hvBullet_N.png",
-        "type": "HV Ammo",
-        "description": "The FCA Research Center's assault rifle-specific JHP high-velocity ammunition was developed with the experience gained from previous bullet designs and experimentations, greatly increasing its damaging capabilities. They are issued with MP Group's reliable and lightweight magazines."
-    },
-    {
-        "url": "/wiki/PEQ-16A",
-        "name": "PEQ-16A",
+        "url": "/wiki/Acceleration_Coil",
+        "name": "Acceleration Coil",
+        "valid": "Hanyang Type 88 Only",
+        "img": "accessory_special_88type.png",
+        "type": "Special",
         "rating": 5,
-        "production": {
-            "timer": "0:49:00",
-            "normal": [
-                70,
-                10,
-                110,
-                30
-            ]
-        },
-        "img": "accessory_nightvision_N.png",
-        "type": "PEQ",
-        "description": "A custom model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it is able to fulfill all their operational needs when battling at night. Can only be equipped by SMGs, HGs, and ARs."
+        "slot": "Accessory",
+        "description": "CN: 舍弃了古老的火药推进方式，全新升级的汉阳造配备了高性能加速线圈，可以瞬间将弹丸加速至5倍音速，也太厉害了。EN: Ditched the old gunpowder propelled method, the new upgraded Hanyang is equipped with high performance acceleration coils, can instantly accelerate projectiles to five times the speed of sound, that's so overpowered! Obtained by reaching Stage 3 of Hanyang Type 88's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 3.0,
+                "growth": 1.8
+            }
+        }
     },
     {
-        "url": "/wiki/ITI_Mars",
-        "name": "ITI Mars",
+        "url": "/wiki/Additional_Process_Module",
+        "name": "Additional Process Module",
+        "valid": "UMP45 Only",
+        "img": "accessory_special_ump45.png",
+        "type": "Special",
         "rating": 5,
-        "production": {
-            "timer": "0:50:00",
-            "normal": [
-                140,
-                10,
-                110,
-                10
-            ]
-        },
+        "slot": "Accessory",
+        "description": "CN:针对UMP45特调的扩充升级芯片，在进一步发挥基础性能的前提下，最重要的是有效了解决电子战人形无法安装复杂火控的问题。Special equipment given to player after stage 3 Digi-mind upgrade of UMP45. This equipment can be found on the accessory slot of UMP45 after the upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Critical hit rate": {
+                "min": 15.0,
+                "max": 18.0,
+                "growth": 1.4
+            },
+            "Evasion": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/Adelhyde_1",
+        "name": "Adelhyde 1",
+        "valid": "Jill Only",
+        "img": "magazine_special1_jill.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 饮料中的甜味成分。由BTC统一配发。\nEN: The sweet component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Adelhyde_2",
+        "name": "Adelhyde 2",
+        "valid": "Jill Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 饮料中的甜味成分。由BTC统一配发。\nEN: The sweet component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/AMP_COMPM2",
+        "name": "AMP COMPM2",
+        "valid": "All except HG",
         "img": "accessory_reddot_N.png",
         "type": "Scope",
-        "description": "An integrated red dot sight developed by ITI Corporation, it incorporates multiple functions without affecting shooting performance and is equipped with an anti-reflection system. Can be equipped by all except HG."
-    },
-    {
-        "url": "/wiki/Type_3_Armor_Plate",
-        "name": "Type 3 Armor Plate",
-        "rating": 5,
         "production": {
-            "timer": "0:51:00",
+            "timer": "0:10:00",
             "normal": [
-                50,
-                50,
-                100,
-                100
-            ]
-        },
-        "img": "doll_armor_N.png",
-        "type": "Armor Plate",
-        "description": "The protective grade Type III Kevlar Plate provided by IOP Corporation can resist high-caliber ammunition, massively enhancing T-Dolls' survivability on the battlefield."
-    },
-    {
-        "url": "/wiki/IOP_X4_Exoskeleton",
-        "name": "IOP X4 Exoskeleton",
-        "rating": 5,
-        "production": {
-            "timer": "0:52:00",
-            "normal": [
-                100,
-                80,
+                140,
                 10,
-                100
+                110,
+                10
             ]
         },
-        "img": "doll_skeleton_X_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type X4 Exoskeleton is a custom model crafted by IOP Corporation, specially developed based on the T-Dolls' characteristics so as to maximize their mobility and while minimizing the impact on their shooting ability. Can be equipped by HGs, SMGs, and most ARs."
+        "rating": 2,
+        "slot": "Accessory",
+        "description": "The COMPML Red Dot Sight manufactured by AMP Corporation. Its only merit is its sturdiness. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.0
+            },
+            "Rate of fire": {
+                "min": -1.0,
+                "max": -1.0
+            }
+        }
     },
     {
-        "url": "/wiki/IOP_T4_Exoskeleton",
-        "name": "IOP T4 Exoskeleton",
-        "rating": 5,
+        "url": "/wiki/AMP_COMPM4",
+        "name": "AMP COMPM4",
+        "valid": "All except HG",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
         "production": {
-            "timer": "0:52:00",
+            "timer": "0:25:00",
             "normal": [
-                100,
-                80,
+                140,
                 10,
-                100
+                110,
+                10
             ]
         },
-        "img": "doll_skeleton_N.png",
-        "type": "Exoskeleton",
-        "description": "The Type T4 Exoskeleton is a custom model developed by IOP Corporation, specially developed based on the T-Dolls' characteristics so as to maximize their mobility and while minimizing the impact on their shooting ability. Can be equipped by HGs, SMGs, and most ARs."
+        "rating": 3,
+        "slot": "Accessory",
+        "description": "The COMPL Red Dot Sight manufactured by AMP Corporation. Its design has been enhanced, increasing its sturdiness even more. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 4.0,
+                "max": 6.0,
+                "growth": 2.0
+            },
+            "Rate of Fire": {
+                "min": -2.0,
+                "max": -1.0,
+                "growth": -9999
+            }
+        }
     },
     {
-        "url": "/wiki/ILM_Hollow_Point_Ammo",
-        "name": "ILM Hollow Point Ammo",
+        "url": "/wiki/AMP_COMPSP",
+        "name": "AMP COMPSP",
+        "valid": "UMP9 Only",
+        "img": "accessory_reddot_ump9.png",
+        "type": "Holographic Sight",
         "rating": 5,
-        "production": {
-            "timer": "0:53:00",
-            "normal": [
-                180,
-                180,
-                10,
-                50
-            ]
-        },
-        "img": "ammo_hpBullet_N.png",
-        "type": "HP Ammo",
-        "description": "EN: A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.\nCN: ILM生产的空尖短弹，对无甲单位有可怕的杀伤力，但面对装甲缺乏穿透力，手枪和冲锋枪可以装备。"
-    },
-    {
-        "url": "/wiki/SABOT_Slug",
-        "name": "SABOT Slug",
-        "rating": 5,
-        "production": {
-            "timer": "0:54:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_s_N.png",
-        "type": "Shotgun Ammo",
-        "description": "Shotgun slugs issued by IOP. After being fired, it gains a steady rotation that provides the shotgun shot with a stable firing trajectory and laser-like precision."
-    },
-    {
-        "url": "/wiki/%EF%BC%83000_Buckshot",
-        "name": "＃000 Buckshot",
-        "rating": 5,
-        "production": {
-            "timer": "0:54:00",
-            "normal": [
-                30,
-                150,
-                30,
-                130
-            ]
-        },
-        "img": "ammo_sgBullet_b_N.png",
-        "type": "Shotgun Ammo",
-        "description": "Extremely powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 9.14mm in diameter. Can be equipped by SGs."
-    },
-    {
-        "url": "/wiki/Mk211_High-Explosive_Armor-Piercing_Ammo",
-        "name": "Mk211 High-Explosive Armor-Piercing Ammo",
-        "rating": 5,
-        "production": {
-            "timer": "0:55:00",
-            "normal": [
-                10,
-                150,
-                90,
-                100
-            ]
-        },
-        "img": "ammo_apBullet_N.png",
-        "type": "AP Ammo",
-        "description": "The Type Mk211 high-explosive armor-piercing ammunition developed by IOP in conjunction with the FCA Research Center uses a combination of a tungsten alloy bullet and a high-explosive design to further improve its lethality. Can be equipped by RFs and MGs."
-    },
-    {
-        "url": "/wiki/Thermoptic_Camouflage_Cape",
-        "name": "Thermoptic Camouflage Cape",
-        "rating": 5,
-        "production": {
-            "timer": "0:56:00",
-            "normal": [
-                180,
-                20,
-                200,
-                20
-            ]
-        },
-        "img": "doll_suit_3.png",
-        "type": "Cape",
-        "description": "A thermoptic camouflage cape developed with military technology, it can adapt its camouflage patterns to the surrounding environment when lying still, allowing sharpshooters to massively increase their critical damage. Can only be equipped by RFs."
-    },
-    {
-        "url": "/wiki/IOP_Maximum_Ammo_Box",
-        "name": "IOP Maximum Ammo Box",
-        "rating": 5,
-        "production": {
-            "timer": "0:57:00",
-            "normal": [
-                30,
-                30,
-                30,
-                200
-            ]
-        },
-        "img": "doll_ammoBox_N.png",
-        "type": "Ammo Box",
-        "description": "An extra-large ammunition box specially developed for machine gun T-Dolls by IOP Corporation,c it grants them unmatched firepower."
+        "slot": "Accessory",
+        "description": "CN: AMP公司出品的UMP9特装版瞄具，主要特色是内建的4MOA准星是9喜欢的亮黄色。UMP9专用。EN: Exclusive optic for UMP9 produced AMP Corp, main selling point is the built in 4 MOA pointer being 9's favourite colour: egg yolk yellow. UMP9 exclusive.Obtained by reaching Stage 3 of UMP9's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 5.0,
+                "max": 7.0,
+                "growth": 1.46
+            },
+            "Accuracy": {
+                "min": 6.0,
+                "max": 10.0,
+                "growth": 1.4
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -3.0
+            }
+        }
     },
     {
         "url": "/wiki/APCR_High-Velocity_Ammo",
         "name": "APCR High-Velocity Ammo",
-        "rating": 5,
+        "valid": "AR Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
         "production": {
             "timer": "0:58:00",
             "normal": [
@@ -964,9 +465,2687 @@
                 80
             ]
         },
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "The FCA Research Center's experimental APCR high-velocity ammunition intergrates the idea of armor-piercing ammunition and uses a different design methodology to increase its lethality. They are issued with MP Group's reliable and lightweight magazines.",
+        "stats": {
+            "Damage": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/Artificial_Hands",
+        "name": "Artificial Hands",
+        "valid": "Alma Only",
+        "img": "accessory_special_alma.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 为了防止长期敲键盘患腕管综合征（以及为了接入其他便利的功能），阿尔玛做手术将自己的双手换成了电子手。\nEN: To avoid Carpal Tunnel Syndrome from long periods at the keyboard (and various other benefits), Alma replaced her own 2 hands with artificial ones.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 80",
+        "stats": {
+            "Damage": {
+                "min": 2.0,
+                "max": 4.0,
+                "growth": 1.5
+            },
+            "Clipsize": {
+                "min": 2.0,
+                "max": 4.0,
+                "growth": 1.5
+            },
+            "Evasion": {
+                "min": -3.0,
+                "max": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/BK_Slug",
+        "name": "BK Slug",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:14:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 2,
+        "slot": "Magazine",
+        "description": "Shotgun slugs issued by IOP. Each shot contains a single large projectile and is designed to deal single-target damage.",
+        "stats": {
+            "Target": {
+                "min": -2.0
+            },
+            "Damage": {
+                "min": -9999
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Black_Cat",
+        "name": "Black Cat",
+        "valid": "Fail Only",
+        "img": "accessory_special_fail.png",
+        "type": "Night Combat Equipment",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CH: 来自异世界的混沌心灵绽放出的光芒，希望在置身黑暗中的你不会将其遗忘，“我将打破规则，无论多少次！”EN: A ray of light emitted from a chaotic heart from another world, it reminds you of it's existence even in the darkness that surrounds you. \"Break the rules, I, time and time again!\" Obtainable during the 2018 collaboration event with DJMax Respect, can be exchanged from the event shop for 120 Crown of Respects. This equipment comes max calibrated and does not need upgrading.Minimum Level Requirement: 60",
+        "stats": {
+            "Night Penalty Reduction": {
+                "min": 100.0
+            },
+            "Boost Ability Effectiveness (%)": {
+                "min": 25.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Blue_Thickened_Cape",
+        "name": "Blue Thickened Cape",
+        "valid": "PTRD Only",
+        "img": "doll_suit_ptrd.png",
+        "type": "Camo Cape",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CH: 一个姓帕夫里琴科的神秘少女曾经身披的外套，可以抵御西伯利亚冻土的严寒。EN: A cloak once wore by a mysterious girl under the family name of Pavlichenko, be used to resist frozen land of Siberia.Can be exchanged for 100 Easter egg during the 2018 Easter Egg Frag Delay event.Minimum Level Requirement: 80",
+        "stats": {
+            "Critical Hit Damage (%)": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 1.7
+            },
+            "Rate of Fire": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            },
+            "Movement Speed": {
+                "min": -5.0,
+                "max": -3.0,
+                "growth": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/BM_3-12X40",
+        "name": "BM 3-12X40",
+        "valid": "All except HG",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:05:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 2,
+        "slot": "Accessory",
+        "description": "The 3-12x magnification optical sight manufactured by BM Corporation allows T-Dolls to hit the enemy's vital points more easily. Can be equipped by all except HG.",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 5.0,
+                "max": 8.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Bren_L4_Barrel_Group",
+        "name": "Bren L4 Barrel Group",
+        "valid": "Bren Only",
+        "img": "accessory_special_brenmk.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN:换装L4枪管组后布伦可以发射7.62x51mm北约通用弹药，提升了伤害和命中，射速略微降低，布伦轻机枪专用。Obtained by reaching Stage 3 of Bren's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.7
+            },
+            "Accuracy": {
+                "min": 12.0,
+                "max": 16.0,
+                "growth": 1.9
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Bronson_Ext",
+        "name": "Bronson Ext",
+        "valid": "Jill Only",
+        "img": "magazine_special2_jill.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 饮料中的苦味成分。由BTC统一配发。\nEN: The sour component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Camouflage_Cape",
+        "name": "Camouflage Cape",
+        "valid": "RF Only",
+        "img": "doll_suit_1.png",
+        "type": "Cape",
+        "production": {
+            "timer": "0:31:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        },
+        "rating": 3,
+        "slot": "Doll",
+        "description": "A camouflage cape that has been passed down for ages, its mottled edges tell a tale of the flames of war. Having an undisturbed firing environment allows for increased critical damage. Can only be equipped by RFs.",
+        "stats": {
+            "Critical Hit Damage (%)": {
+                "min": 5.0,
+                "max": 7.0,
+                "growth": 1.9
+            },
+            "Movement Speed": {
+                "min": -3.0,
+                "max": -3.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/COG_M150",
+        "name": "COG M150",
+        "valid": "All except HG",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:40:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 4,
+        "slot": "Accessory",
+        "description": "CN: COG公司的先进红点瞄准镜，最大优势在于其不需要依靠电池便可提供任何环境下的瞄准照明，除手枪外均可装配。EN: The greatest advantage of COG Corporation's advanced red dot sight is that it does not requires batteries to assist in any situation. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -3.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Colt_Revolver_Long_Barrel",
+        "name": "Colt Revolver Long Barrel",
+        "valid": "Colt Revolver Only",
+        "img": "accessory_special_m1873.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:一把超长枪管的柯尔特左轮，和皮靴上的叮当作响的马刺，嘴唇上精心修剪的壮美胡须一样，是蛮荒的西部故事主角的重要配置，也许，还有一瓶元祖可乐。Obtained by reaching Stage 3 of Colt Revolver's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical hit rate": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.3
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/CT_4X20",
+        "name": "CT 4X20",
+        "valid": "M1918 Only",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 原本是为AR平台开发的瞄具，经过多场大战的考验性能可靠，M1918经过现代化改造后通过导轨加装，M1918专用。Obtained by reaching Stage 3 of M1918 BAR's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 2.0
+            },
+            "Accuracy": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Custom_Exoskeletal_Armor",
+        "name": "Custom Exoskeletal Armor",
+        "valid": "M16A1 Only",
+        "img": "doll_armor_m16a1.png",
+        "type": "Armor Plate",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 铁血工造陷落前的遗留装备，整合了机动外骨骼的护甲极大地提升了使用者的生存能力，同时也会造成极高的身体和精神负荷。Drops from certain units and the boss in Midnight Chapter 6-4N, This piece of equipment comes max calibrated.Minimum Level Requirement: 60",
+        "stats": {
+            "Armor": {
+                "min": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 8.0,
+                "growth": 1.3
+            },
+            "Rate of fire": {
+                "min": -10.0
+            },
+            "Accuracy": {
+                "min": -20.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Dedicated_Tactical_Memory",
+        "name": "Dedicated Tactical Memory",
+        "valid": "Ameli Only",
+        "img": "doll_chip_ameli.png",
+        "type": "Microchip",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "Obtainable during the 2017 Christmas event Operation Gingerbread Men Collecting, exchangeable in the event shop for 100 Gingerbread men.Minimum Level Requirement: 80",
+        "stats": {
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 1.67
+            },
+            "Clip size": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": 1.5
+            },
+            "Accuracy": {
+                "min": -5.0,
+                "max": -3.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Digital_Camouflage_Cape",
+        "name": "Digital Camouflage Cape",
+        "valid": "SV-98 Only",
+        "img": "doll_suit_sv98.png",
+        "type": "Camo Cape",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN:冬季数码迷彩披风，很适合SV98熟悉的作战环境，提高伤害和暴击伤害，SV98专用。Translated: Winter digital camouflage patterned cape, very suitable for the combat environment SV98 is familiar with, improves damage and critical damage, SV98 exclusive.Obtained by reaching Stage 3 of SV-98 Digimind Upgrade.Minimum Level Requirement: 115",
+        "stats": {
+            "Critical  Damage (%)": {
+                "min": 11.0,
+                "max": 16.0,
+                "growth": 1.6
+            },
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 2.0
+            },
+            "Movement Speed": {
+                "min": -3.0,
+                "growth": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/Dinergate-Type_RO",
+        "name": "Dinergate-Type RO",
+        "valid": "M4 SOPMOD II Only",
+        "img": "accessory_special_M4SOPMODII.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 透过与连线RO635心智云图的兵蚁建立数据共享，M4 SOPMOD2对战场的反应力获得了大幅提升。如果这只兵蚁比别只看得更远，那是因为它站在M4 SOPMOD2的肩上。Translated: With the data sharing established by a Dinergate connected with RO635's Digimind, M4 SOPMOD2's combat reactiveness greatly improved. The reason behind this particular Dinergate having greater viewing distances is purely because it is placed on SOPMOD2's shoulder.Obtained by reaching Stage 3 of Soppu's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Accuracy": {
+                "min": 6.0,
+                "max": 10.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": 6.0,
+                "max": 9.0,
+                "growth": 1.35
+            },
+            "Rate of Fire": {
+                "min": -4.0,
+                "max": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/EOT_506",
+        "name": "EOT 506",
+        "valid": "All except HG",
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:08:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 2,
+        "slot": "Accessory",
+        "description": "The Type 506 Holographic Sight manufactured by EOT Corporation. It looks pretty cool. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 1.0,
+                "max": 1.0,
+                "growth": 1.0
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 1.0,
+                "growth": 1.0
+            },
+            "Rate of Fire": {
+                "min": -1.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/EOT_512",
+        "name": "EOT 512",
+        "valid": "All except HG",
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:23:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 3,
+        "slot": "Accessory",
+        "description": "The Type 512 Holographic Sight manufactured by EOT Corporation. It looks pretty cool. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 2.0,
+                "max": 2.0,
+                "growth": 1.5
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 1.5
+            },
+            "Rate of Fire": {
+                "min": -2.0,
+                "max": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/EOT_516",
+        "name": "EOT 516",
+        "valid": "All except HG",
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:38:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 4,
+        "slot": "Accessory",
+        "description": "The Type 516 Holographic Sight manufactured by EOT Corporation. It looks very cool. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.4
+            },
+            "Rate of Fire": {
+                "min": -4.0,
+                "max": -3.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/EOT_518",
+        "name": "EOT 518",
+        "valid": "All except HG",
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:48:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "The Type 518 Holographic Sight manufactured by EOT Corporation. It looks super cool. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 6.0,
+                "max": 10.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": 4.0,
+                "max": 6.0,
+                "growth": 1.4
+            },
+            "Rate of Fire": {
+                "min": -6.0,
+                "max": -4.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/EOT_XPS3",
+        "name": "EOT XPS3",
+        "valid": "HK416 Only",
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CH: EOT公司最新的全息瞄具，除了看起来酷外还附带了快速翻折的3倍镜，应用范围更为广泛，HK416专用。EN: EOT Company's latest holographic optic, aside from looking cool it also featured a quick-adjustable 3x scope, widen the usage situation, HK416 exclusive.Obtainable during the 2018 winter event [[Singularity]], can be obtained from E2-C4 Gager boss fight and E2-D4 Agent boss fight and Dragoon units.Minimum Level Requirement: 60",
+        "stats": {
+            "Damage": {
+                "min": 4.0,
+                "max": 6.0,
+                "growth": 1.4
+            },
+            "Accuracy": {
+                "min": 6.0,
+                "max": 10.0,
+                "growth": 1.4
+            },
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.67
+            }
+        }
+    },
+    {
+        "url": "/wiki/FELIN_System_Sight",
+        "name": "FELIN System Sight",
+        "valid": "FAMAS Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 曾经的先进单兵计划的一部分，集合了摄影机和红外系统的光学瞄具，让FAMAS可以更灵活多变的适应战场状况。Drops from certain units and the boss in Midnight Chapter 8-4NMinimum Level Required: 60",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 17.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Fire_Selector",
+        "name": "Fire Selector",
+        "valid": "FN-49 Only",
+        "img": "accessory_special_fn49.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:后期型特有的扳机组，装备这个套件的FN49可以在单发和连发中自由切换，提升射速和暴击概率，FN49专用。\nEN:A fire selector for later versions of the rifle. A FN49 equipped with this can freely switch between semi-auto and fully-auto. Increases rate of fire and critical strike chance. Can only be equipped by FN49.Obtained by reaching Stage 3 of FN-49's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 17.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Rate of Fire": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.67
+            }
+        }
+    },
+    {
+        "url": "/wiki/Flanergide",
+        "name": "Flanergide",
+        "valid": "Jill Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 饮料中的辣味成分。由BTC统一配发。\nEN: The bitter component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/FMJ_High-Velocity_Ammo",
+        "name": "FMJ High-Velocity Ammo",
+        "valid": "AR Only",
         "img": "ammo_hvBullet_N.png",
-        "type": "HV Ammo",
-        "description": "The FCA Research Center's experimental APCR high-velocity ammunition intergrates the idea of armor-piercing ammunition and uses a different design methodology to increase its lethality. They are issued with MP Group's reliable and lightweight magazines."
+        "type": "High-Velocity Ammo",
+        "production": {
+            "timer": "0:18:00",
+            "normal": [
+                10,
+                230,
+                120,
+                80
+            ]
+        },
+        "rating": 2,
+        "slot": "Magazine",
+        "description": "The FCA Research Center's assault rifle-specific FMJ high-velocity ammunition effectively boosts the output of assault rifles through high quality//c high pressure gunpowder. They are issued with MP Group's reliable and lightweight magazines.",
+        "stats": {
+            "Damage": {
+                "min": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/FST_Slug",
+        "name": "FST Slug",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:29:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 3,
+        "slot": "Magazine",
+        "description": "Shotgun slugs issued by IOP. With its mass centered in the front, each single large projectile shot is designed to deal accurate single-target damage.",
+        "stats": {
+            "Target": {
+                "min": -2.0
+            },
+            "Damage": {
+                "min": -9999
+            },
+            "Accuracy": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/G3_Improved_Barrel_Group",
+        "name": "G3 Improved Barrel Group",
+        "valid": "G3 Only",
+        "img": "accessory_special_g3.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:换装了重型枪管的G3更加稳定，弹道散布更小，配合精巧的滚轮延迟反冲式枪机，精度可以接近狙击步枪，提升暴击概率及伤害。Obtained by reaching Stage 3 of G3's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            },
+            "Critical Hit Rate (%)": {
+                "min": 18.0,
+                "max": 26.0,
+                "growth": 1.85
+            }
+        }
+    },
+    {
+        "url": "/wiki/G36_Hybrid_Optics",
+        "name": "G36 Hybrid Optics",
+        "valid": "G36 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:为G36专门设计的瞄具组，结合了下方的3倍主光学瞄具和上方的单倍红点瞄具，可以根据作战环境变化灵活切换使用，G36专用。EN: Optical system designed exclusively for G36, combining the 3x magnification telescopic sight and an unmagnified reflex sight on top, provides flexibility to fit different battlefield conditions.Special equipment given to player after stage 3 Digi-mind upgrade of G36. This equipment can be fitted on G36's accessory slot. Minimum level requirement: Lvl 115",
+        "stats": {
+            "Critical Hit Rate (%)": {
+                "min": 17.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Accuracy": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Glory_Light",
+        "name": "Glory Light",
+        "valid": "Clear Only",
+        "img": "accessory_special_clear.png",
+        "type": "Night Combat Equipment",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CH: 来自异世界的明澈心灵绽放出的光芒，希望带给迷茫中的你一线力量和希望，“荣耀之日，荣耀之光，你是唯一，你是光芒！”EN: A ray of light emitted from a pure heart from another world, it brings a ray of power and hope to you who is yet to be found. \"Glory day, Glory light, You are the one, You are the light!\"Obtainable during the 2018 collaboration event with DJMax Respect, rewarded to players after completing event chapter E2-1. This equipment comes max calibrated and does not need upgrading.Minimum level required: 60",
+        "stats": {
+            "Night Penalty Reduction": {
+                "min": 100.0
+            },
+            "Boost Ability Effectiveness (%)": {
+                "min": 33.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/GSG_UX_Exoskeleton",
+        "name": "GSG UX Exoskeleton",
+        "valid": "MP5 Only",
+        "img": "doll_skeleton_mp5.png",
+        "type": "Exoskeleton",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "A dedicated high-performance exoskeleton specially calibrated for MP5 which maximizes her mobility and evasive capabilities. Can only be equipped by MP5.\nMinimum level requirement: Lvl 60",
+        "stats": {
+            "Evasion": {
+                "min": 30.0,
+                "max": 45.0,
+                "growth": 1.3
+            },
+            "Damage": {
+                "min": -10.0,
+                "max": -6.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Hayha_Memory_Chip",
+        "name": "Hayha Memory Chip",
+        "valid": "Mosin-Nagant Only",
+        "img": "doll_chip_m1891.png",
+        "type": "Microchip",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "A memory chip that allows the White Death to once more descend upon the battlefield. Can only be equipped by Mosin-Nagant.\nMinimum level required: 80",
+        "stats": {
+            "Damage": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 1.2
+            },
+            "Evasion": {
+                "min": 2.0,
+                "max": 4.0,
+                "growth": 1.4
+            },
+            "Critical hit damage (%)": {
+                "min": 15.0,
+                "max": 20.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/High_Performance_Tactical_Hair_Decoration",
+        "name": "High Performance Tactical Hair Decoration",
+        "valid": "G41 Only",
+        "img": "doll_special_G41.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "A weird looking ball shaped hair decal used by G41, fire-control chips assisting in enemy tracking and aiming can be found within, however once it turns red it becomes very dangerous and must be returned to the factory for repairs.Special equipment awarded to players who are placed in the top 50% onward category of 'Hurricane Rescue', ranking map of [[Continuum Turbulence]]. This equipment comes with max calibration.",
+        "stats": {
+            "Damage": {
+                "min": 3.0,
+                "max": -9999,
+                "growth": 1.7
+            },
+            "Accuracy": {
+                "min": 3.0,
+                "max": -9999,
+                "growth": 1.7
+            },
+            "Evasion": {
+                "min": 12.0,
+                "max": -9999,
+                "growth": 1.67
+            }
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo",
+        "name": "ILM Hollow Point Ammo",
+        "valid": "HG and SMG",
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "production": {
+            "timer": "0:53:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        },
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "EN: A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.\nCN: ILM生产的空尖短弹，对无甲单位有可怕的杀伤力，但面对装甲缺乏穿透力，手枪和冲锋枪可以装备。",
+        "stats": {
+            "Damage": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 1.5
+            },
+            "Armor Penetration": {
+                "min": -10.0,
+                "max": -7.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo_(2-Star)",
+        "name": "ILM Hollow Point Ammo (2-Star)",
+        "valid": "HG and SMG",
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "production": {
+            "timer": "0:13:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        },
+        "rating": 2,
+        "slot": "Magazine",
+        "description": "A hollow-point ammunition developed by ILM, it helps to increase lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.",
+        "stats": {
+            "Damage": {
+                "min": 1.0,
+                "max": 1.0
+            },
+            "Armor Penetration": {
+                "min": -1.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo_(3-Star)",
+        "name": "ILM Hollow Point Ammo (3-Star)",
+        "valid": "HG and SMG",
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "production": {
+            "timer": "0:28:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        },
+        "rating": 3,
+        "slot": "Magazine",
+        "description": "A hollow-point ammunition developed by ILM, it increases lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.",
+        "stats": {
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.7
+            },
+            "Armor Penetration": {
+                "min": -3.0,
+                "max": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/ILM_Hollow_Point_Ammo_(4-Star)",
+        "name": "ILM Hollow Point Ammo (4-Star)",
+        "valid": "HG and SMG",
+        "img": "ammo_hpBullet_N.png",
+        "type": "HP Ammo",
+        "production": {
+            "timer": "0:43:00",
+            "normal": [
+                180,
+                180,
+                10,
+                50
+            ]
+        },
+        "rating": 4,
+        "slot": "Magazine",
+        "description": "A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.",
+        "stats": {
+            "Damage": {
+                "min": 4.0,
+                "max": 6.0,
+                "growth": 1.5
+            },
+            "Armor Penetration": {
+                "min": -6.0,
+                "max": -4.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Infinite_Ammo_Box",
+        "name": "Infinite Ammo Box",
+        "valid": "MG3 Only",
+        "img": "doll_ammoBox_mg3.png",
+        "type": "Ammo Box",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN:远古时期遗留的神秘强力装备，虽然大多都已经被某神秘管理局收缴，竟然有一件一直保留到今天，MG3专用。Drops in from certain units and the boss in Midnight Chapter 7-4N. This piece of equipment comes max calibrated.Minimum level requirement: Lvl 80",
+        "stats": {
+            "Clip size": {
+                "min": 20.0,
+                "growth": 1.5
+            },
+            "Damage": {
+                "min": -25.0
+            },
+            "Accuracy": {
+                "min": -10.0
+            },
+            "Evasion": {
+                "min": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Inherited_Weapon_Arsenal",
+        "name": "Inherited Weapon Arsenal",
+        "valid": "M4A1 Only",
+        "img": "doll_special_m4a1.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN:离去的老兵M16A1的礼物，见证了许多不被歌颂的战争，和没有墓碑的英雄，重新校准后由M4A1使用。Special equipment given to player after stage 3 Digi-mind upgrade of M4A1. This equipment can be fitted on the doll slot of M4A1 have after the upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.67
+            },
+            "Armor": {
+                "min": 9.0,
+                "max": 12.0,
+                "growth": 1.25
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_High-Capacity_Ammo_Box",
+        "name": "IOP High-Capacity Ammo Box",
+        "valid": "MG Only",
+        "img": "doll_ammoBox_N.png",
+        "type": "Ammo Box",
+        "production": {
+            "timer": "0:47:00",
+            "normal": [
+                30,
+                30,
+                30,
+                200
+            ]
+        },
+        "rating": 4,
+        "slot": "Doll",
+        "description": "A high-capacity ammunition box specially developed for machine gun T-Dolls by IOP Corporation, it grants them much longer firepower output.",
+        "stats": {
+            "Clip Size": {
+                "min": 1.0,
+                "growth": 3.0
+            },
+            "Evasion": {
+                "min": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_Maximum_Ammo_Box",
+        "name": "IOP Maximum Ammo Box",
+        "valid": "MG Only",
+        "img": "doll_ammoBox_N.png",
+        "type": "Ammo Box",
+        "production": {
+            "timer": "0:57:00",
+            "normal": [
+                30,
+                30,
+                30,
+                200
+            ]
+        },
+        "rating": 5,
+        "slot": "Doll",
+        "description": "An extra-large ammunition box specially developed for machine gun T-Dolls by IOP Corporation,c it grants them unmatched firepower.",
+        "stats": {
+            "Clip Size": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.7
+            },
+            "Evasion": {
+                "min": -3.0,
+                "max": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_T1_Exoskeleton",
+        "name": "IOP T1 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:12:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 2,
+        "slot": "Doll",
+        "description": "The Type T1 Exoskeleton is an early model developed by IOP Corporation, aimed at increasing the agility of T-Dolls through the exoskeleton system. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": -9999
+            },
+            "Damage": {
+                "min": -1.0,
+                "max": -2.0,
+                "growth": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_T2_Exoskeleton",
+        "name": "IOP T2 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:27:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 3,
+        "slot": "Doll",
+        "description": "The Type T2 Exoskeleton is the standard model manufactured by IOP Corporation with improved performance and flexibility. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 10.0,
+                "max": 12.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": -4.0,
+                "max": -3.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_T3_Exoskeleton",
+        "name": "IOP T3 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:42:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 4,
+        "slot": "Doll",
+        "description": "The Type T3 Exoskeleton is an enhanced model developed by IOP Corporation. Through improvements in technology, it has greater flexibility while at the same time detracting less from the shooting ability of the user. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 14.0,
+                "max": 16.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": -6.0,
+                "max": -5.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_T4_Exoskeleton",
+        "name": "IOP T4 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:52:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 5,
+        "slot": "Doll",
+        "description": "The Type T4 Exoskeleton is a custom model developed by IOP Corporation, specially developed based on the T-Dolls' characteristics so as to maximize their mobility and while minimizing the impact on their shooting ability. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 20.0,
+                "max": 25.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": -8.0,
+                "max": -6.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_X1_Exoskeleton",
+        "name": "IOP X1 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:12:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 2,
+        "slot": "Doll",
+        "description": "The Type X1 Exoskeleton is an early model developed by IOP Corporation, aimed at increasing the agility of T-Dolls through the exoskeleton system. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_X2_Exoskeleton",
+        "name": "IOP X2 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:27:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 3,
+        "slot": "Doll",
+        "description": "The Type X2 Exoskeleton is the standard model manufactured by IOP Corporation with improved performance and flexibility. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 4.0,
+                "max": 5.0,
+                "growth": 1.8
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_X3_Exoskeleton",
+        "name": "IOP X3 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:42:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 4,
+        "slot": "Doll",
+        "description": "The Type X3 Exoskeleton is an enhanced model developed by IOP Corporation. Through improvements in technology, it has greater flexibility while at the same time detracting less from the shooting ability of the user. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 6.0,
+                "max": 7.0,
+                "growth": 1.9
+            }
+        }
+    },
+    {
+        "url": "/wiki/IOP_X4_Exoskeleton",
+        "name": "IOP X4 Exoskeleton",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "doll_skeleton_X_N.png",
+        "type": "Exoskeleton",
+        "production": {
+            "timer": "0:52:00",
+            "normal": [
+                100,
+                80,
+                10,
+                100
+            ]
+        },
+        "rating": 5,
+        "slot": "Doll",
+        "description": "The Type X4 Exoskeleton is a custom model crafted by IOP Corporation, specially developed based on the T-Dolls' characteristics so as to maximize their mobility and while minimizing the impact on their shooting ability. Can be equipped by HGs, SMGs, and most ARs.",
+        "stats": {
+            "Evasion": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/ITI_Mars",
+        "name": "ITI Mars",
+        "valid": "All except HG",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:50:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "An integrated red dot sight developed by ITI Corporation, it incorporates multiple functions without affecting shooting performance and is equipped with an anti-reflection system. Can be equipped by all except HG.",
+        "stats": {
+            "Accuracy": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/JHP_High-Velocity_Ammo",
+        "name": "JHP High-Velocity Ammo",
+        "valid": "AR Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
+        "production": {
+            "timer": "0:48:00",
+            "normal": [
+                10,
+                230,
+                120,
+                80
+            ]
+        },
+        "rating": 4,
+        "slot": "Magazine",
+        "description": "The FCA Research Center's assault rifle-specific JHP high-velocity ammunition was developed with the experience gained from previous bullet designs and experimentations, greatly increasing its damaging capabilities. They are issued with MP Group's reliable and lightweight magazines.",
+        "stats": {
+            "Damage": {
+                "min": 5.0,
+                "max": 7.0,
+                "growth": 1.8
+            }
+        }
+    },
+    {
+        "url": "/wiki/JSP_High-Velocity_Ammo",
+        "name": "JSP High-Velocity Ammo",
+        "valid": "AR Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
+        "production": {
+            "timer": "0:33:00",
+            "normal": [
+                10,
+                230,
+                120,
+                80
+            ]
+        },
+        "rating": 3,
+        "slot": "Magazine",
+        "description": "EN: The FCA Research Center's assault rifle-specific JSP high-velocity ammunition uses an experimental bullet design to further increase the output of assault rifles. They are issued with MP Group's reliable and lightweight magazines.\nCN: FCA研究局的突击步枪专用JSP高速弹，采用了实验型的弹头设计进一步提升突击步枪输出能力，和MP社可靠的轻量化弹匣配套发送。",
+        "stats": {
+            "Damage": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/K6-24X56",
+        "name": "K6-24X56",
+        "valid": "Mosin-Nagant Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "accessory",
+        "description": "CN: 通過導軌加裝的現代光學瞄具，最大限度發揮出了莫辛納甘天生的精準素質，提升命中和暴擊機率. Can only be equipped by Mosin-Nagant.Obtained by reaching Stage 3 of Mosin-Nagant's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 2.0
+            },
+            "Accuracy": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Karmotrine_1",
+        "name": "Karmotrine 1",
+        "valid": "Jill Only",
+        "img": "magazine_special3_jill.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\nEN: The alcoholic component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Karmotrine_2",
+        "name": "Karmotrine 2",
+        "valid": "Jill Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\nEN: The alcoholic component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Karmotrine_3",
+        "name": "Karmotrine 3",
+        "valid": "Jill Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\nEN: The alcoholic component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/KST1P7",
+        "name": "KST1P7",
+        "valid": "AK-47 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "An optical scope developed by KST before the war, it is specially designed to fit onto the AK family of weapons. It is still a decent choice for the AK variants to this day.",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 32.0,
+                "growth": 1.5
+            },
+            "Critical Hit Damage (%)": {
+                "min": 10.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/KST1P8",
+        "name": "KST1P8",
+        "valid": "AK-47 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "An optical scope meticulously developed by KST with accuracy and precision before the war, it is specially designed to fit onto the AK family of weapons. Due to its precision and durability, it is still favored for the AK variants to this day.",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 32.0,
+                "growth": 1.5
+            },
+            "Critical Hit Damage (%)": {
+                "min": 25.0,
+                "growth": 1.2
+            }
+        }
+    },
+    {
+        "url": "/wiki/KSTSP",
+        "name": "KSTSP",
+        "valid": "AK-47 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "An optical scope developed by KSTSP before the war, it is specially designed to fit onto the AK family of weapons. Due to its unrivaled precision, it is still the accessory of choice for the AK variants to this day.",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 32.0,
+                "growth": 1.5
+            },
+            "Critical Hit Damage (%)": {
+                "min": 40.0,
+                "growth": 1.1
+            }
+        }
+    },
+    {
+        "url": "/wiki/LED_Tactical_Flashlight",
+        "name": "LED Tactical Flashlight",
+        "valid": "MP5 Only",
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 高亮度的LED武器灯集成在整体更换的护木内，内置锂电池，可以通过护木上的开关快速操控。MP5专用。EN: Bright LED flashlight integrated within the weapon's arm guard, powered by lithium batteries, can be toggled by the switch located on the arm guard. MP5 exclusive.Obtained by reaching Stage 3 of MP5's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 10.0,
+                "max": -9999,
+                "growth": -9999
+            },
+            "Accuracy": {
+                "min": 15.0,
+                "max": -9999,
+                "growth": -9999
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/Light_Weight_Rail_System",
+        "name": "Light Weight Rail System",
+        "valid": "ST AR-15 Only",
+        "img": "accessory_special_ar15.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:追求轻量化和快速射击稳定性的配置，包含keymod导轨，前握把，枪口补偿器及浮置式枪管，提升暴击伤害和命中，AR15专用。Translated: Equipment set built with reduced weight and stability during rapid firing in mind, contains Keymod rails, a fore-grid, nozzle compensator and free-floating barrel, improves critical hit daamge and accuracy, AR15 exclusive.Special equipment given to player after stage 3 Digi-mind upgrade of ST AR-15. This equipment can be fitted on one of the two accessory slots AR-15 have after the upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical Damage (%)": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 1.34
+            },
+            "Accuracy": {
+                "min": 4.0,
+                "max": 6.0,
+                "growth": 1.67
+            }
+        }
+    },
+    {
+        "url": "/wiki/LRA_2-12x50",
+        "name": "LRA 2-12x50",
+        "valid": "All except HG",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:20:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 3,
+        "slot": "Accessory",
+        "description": "A new model of optical sight developed by LRA Corporation. It provides a high magnification and a wide field of view. Can be equipped by all except HG.",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 9.0,
+                "max": 12.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/M2_Bipod",
+        "name": "M2 Bipod",
+        "valid": "M14 Only",
+        "img": "accessory_special_fn49.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 历史悠久的可折叠脚架，曾经短暂配发给M14，有效提升射击稳定性，M14专用。Obtained by reaching Stage 3 of M14's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 20.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Accuracy": {
+                "min": 4.0,
+                "max": 5.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/M61_Armor-Piercing_Ammo",
+        "name": "M61 Armor-Piercing Ammo",
+        "valid": "RF and MG",
+        "img": "ammo_apBullet_N.png",
+        "type": "Armor-Piercing Ammo",
+        "production": {
+            "timer": "0:15:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        },
+        "rating": 2,
+        "slot": "Magazine",
+        "description": "The Type M61 armor-piercing ammunition manufactured by IOP Corporation possesses a standard steel-core armor piercing bullet design, aimed at penetrating enemy armor and causing effective damage. Can be equipped by RFs and MGs.",
+        "stats": {
+            "Armor Penetration": {
+                "min": 45.0,
+                "max": 55.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/M993_Armor-Piercing_Ammo",
+        "name": "M993 Armor-Piercing Ammo",
+        "valid": "RF and MG",
+        "img": "ammo_apBullet_N.png",
+        "type": "Armor-Piercing Ammo",
+        "production": {
+            "timer": "0:30:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        },
+        "rating": 3,
+        "slot": "Magazine",
+        "description": "The Type M993 armor-piercing ammunition manufactured by IOP Corporation was developed to counter enemies possessing thicker armor by using a tungsten alloy material, aimed at penetrating enemy armor and causing effective damage. Can be equipped by RFs and MGs.",
+        "stats": {
+            "Armor Penetration": {
+                "min": 65.0,
+                "max": 75.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/Mechanical_Arm",
+        "name": "Mechanical Arm",
+        "valid": "Dana Only",
+        "img": "accessory_special_dana.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 达娜的机械臂。达娜从未透露失去手臂的原因。\nEN: Dana's mechanical arm. Dana has never revealed the reason she lost her arm.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 2.0,
+                "max": 4.0,
+                "growth": 1.5
+            },
+            "Armor": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.4
+            },
+            "Evasion": {
+                "min": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/MG4_Exclusive_MGO",
+        "name": "MG4 Exclusive MGO",
+        "valid": "MG4 Only",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，更有德国陆军迷彩涂层，采购价格翻倍，MG4专用。Translated: Specialised optic optimised by TJC company for machinegun combat purposes, featuring 6x magnification and ballistic markings, as well as Bundeswehr issue camoflauge, resulting in the high procuring prices. MG4 exclusive.Special equipment awarded to players who are placed in the top 50% onward category of \"End of Chaos\", ranking map of [[Isomer]]. This equipment comes with max calibration.",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 15.0,
+                "max": -9999,
+                "growth": 1.7
+            },
+            "Accuracy": {
+                "min": 18.0,
+                "max": -9999,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -1.0,
+                "max": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/MGO_6X48",
+        "name": "MGO 6X48",
+        "valid": "LWMMG Only",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，让远距离火力压制变得更有效率，LWMMG专用。Obtained by reaching Stage 3 of LWMMG's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Accuracy": {
+                "min": 13.0,
+                "max": 17.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 0.0,
+                "max": 1.0,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/MIRD5-Class_Ammo",
+        "name": "MIRD5-Class Ammo",
+        "valid": "Dorothy Only",
+        "img": "ammo_hpBullet_dorothy.png",
+        "type": "HP Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 多萝西对自己的手指进行了私自改装，可以发射大威力弹药。\nEN: Dorothy modified her own fingers to be able to fire high powered bullets.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.5
+            },
+            "Armor Piercing": {
+                "min": -10.0,
+                "max": -7.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Mk169_Armor-Piercing_Ammo",
+        "name": "Mk169 Armor-Piercing Ammo",
+        "valid": "RF and MG",
+        "img": "ammo_apBullet_N.png",
+        "type": "Armor-Piercing Ammo",
+        "production": {
+            "timer": "0:45:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        },
+        "rating": 4,
+        "slot": "Magazine",
+        "description": "The Type Mk169 armor-piercing ammunition developed by IOP in conjunction with the FCA Research Center has a specially made tungsten alloy core designed to be able to penetrate any enemy's armor. Can be equipped by RFs and MGs.",
+        "stats": {
+            "Armor Penetration": {
+                "min": 90.0,
+                "max": 100.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/Mk211_High-Explosive_Armor-Piercing_Ammo",
+        "name": "Mk211 High-Explosive Armor-Piercing Ammo",
+        "valid": "RF and MG",
+        "img": "ammo_apBullet_N.png",
+        "type": "Armor-Piercing Ammo",
+        "production": {
+            "timer": "0:55:00",
+            "normal": [
+                10,
+                150,
+                90,
+                100
+            ]
+        },
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "The Type Mk211 high-explosive armor-piercing ammunition developed by IOP in conjunction with the FCA Research Center uses a combination of a tungsten alloy bullet and a high-explosive design to further improve its lethality. Can be equipped by RFs and MGs.",
+        "stats": {
+            "Armor Penetration": {
+                "min": 110.0,
+                "max": 120.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/MP446C_Competition_Barrel",
+        "name": "MP446C Competition Barrel",
+        "valid": "MP-446 Only",
+        "img": "accessory_special_mp446.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: MP446升级后使用更加灵活的446C型，可以换装竞赛用的120mm加长枪管，提升精度，MP446专用。Obtained by reaching Stage 3 of MP-446 Viking's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical hit rate": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.3
+            },
+            "Accuracy": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/MPL_M21",
+        "name": "MPL M21",
+        "valid": "Micro Uzi Only",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:专为中东地区艰苦环境设计的红点瞄具，拥有光导纤维和氚双重点亮的准星，无需电池，乌兹专用。Obtained by reaching Stage 3 of Micro Uzi's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Accuracy": {
+                "min": 14.0,
+                "max": 18.0,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Nagant_Revolver_Silencer",
+        "name": "Nagant Revolver Silencer",
+        "valid": "Nagant Revolver Only",
+        "img": "accessory_silencer_m1895.png",
+        "type": "Silencer",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:左轮手枪因为结构的巨大间隙通常无法被消音，但纳甘左轮独特的上膛结构，配合专用弹药和消音器便可达到很好的消音效果，纳甘左轮专用。Obtained by reaching Stage 3 of Nagant Revolver's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical hit rate": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 1.4
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/National_Match-Grade_Armor-Piercing_Ammo",
+        "name": "National Match-Grade Armor-Piercing Ammo",
+        "valid": "Springfield Only",
+        "img": "ammo_apBullet_m1903.png",
+        "type": "Armor-Piercing Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "A legacy item of the early 20th century, the National Match-Grade Armor-Piercing Ammunition was specially made for The National Springfield Rifle Match. Can only be equipped by Springfield.\nMinimum level requirement: Lvl 60",
+        "stats": {
+            "Armor Penetration": {
+                "min": 120.0,
+                "max": 130.0,
+                "growth": 1.5
+            },
+            "Rate of fire": {
+                "min": 1.0,
+                "max": 8.0,
+                "growth": 1.3
+            }
+        }
+    },
+    {
+        "url": "/wiki/PEQ-15",
+        "name": "PEQ-15",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "accessory_nightvision_N.png",
+        "type": "Night Combat Equipment",
+        "production": {
+            "timer": "0:39:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        },
+        "rating": 4,
+        "slot": "Doll",
+        "description": "EN: An improved model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it effectively increases the T-Dolls' combat efficiency during nighttime. Can only be equipped by SMGs, HGs and ARs.\nCN: IOP公司人形列装的改进型ATPIAL红外指示器，有效提升了人形在夜战中的战斗力，只有冲锋枪，手枪，突击步枪可以装备。",
+        "stats": {
+            "Night Penalty Reduction": {
+                "min": 76.0,
+                "max": 85.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/PEQ-16A",
+        "name": "PEQ-16A",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "accessory_nightvision_N.png",
+        "type": "Night Combat Equipment",
+        "production": {
+            "timer": "0:49:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        },
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "A custom model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it is able to fulfill all their operational needs when battling at night. Can only be equipped by SMGs, HGs, and ARs.",
+        "stats": {
+            "Night Penalty Reduction": {
+                "min": 91.0,
+                "max": 100.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/PEQ-2",
+        "name": "PEQ-2",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "accessory_nightvision_N.png",
+        "type": "Night Combat Equipment",
+        "production": {
+            "timer": "0:09:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        },
+        "rating": 2,
+        "slot": "Accessory",
+        "description": "An early model ATPIAL infrared designator issued by IOP Corporation for their T-Dolls. Now T-Dolls can hit things at night! Can only be equipped by SMGs, HGs, and ARs.",
+        "stats": {
+            "Night Penalty Reduction": {
+                "min": 51.0,
+                "max": 55.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/PEQ-5",
+        "name": "PEQ-5",
+        "valid": "HGs, SMGs, and most ARs",
+        "img": "accessory_nightvision_N.png",
+        "type": "Night Combat Equipment",
+        "production": {
+            "timer": "0:24:00",
+            "normal": [
+                70,
+                10,
+                110,
+                30
+            ]
+        },
+        "rating": 3,
+        "slot": "Accessory",
+        "description": "The standard model ATPIAL infrared designator issued by IOP Corporation for their T-Dolls. Much of the early model's deficiencies had been fixed in this model., but its battery still runs out very quickly. Can only be equipped by SMGs, HGs, and ARS.",
+        "stats": {
+            "Night Vision": {
+                "min": 61.0,
+                "max": 70.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/PKN03M_Night_Scope",
+        "name": "PKN03M Night Scope",
+        "valid": "9A-91 Only",
+        "img": "accessory_nightvision_9a91.png",
+        "type": "Night Combat Equipment",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "Developed on demands of the Ministry of Internal Affairs, the combination of x3 magnification and infrared targeting laser in this night scope helps 9A91 accurately take care of her targets in the dark.Obtainable by ranking in the top 40% during the [[Deep Dive]] Ranking EX map \"Imaginary Maze\". This piece of equipment comes max calibrated.Minimum Level required: 60",
+        "stats": {
+            "Damage": {
+                "min": 5.0,
+                "max": -9999,
+                "growth": 1.6
+            },
+            "Night Penalty Reduction (%)": {
+                "min": 100.0,
+                "max": -9999,
+                "growth": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/PM_5-25X56",
+        "name": "PM 5-25X56",
+        "valid": "Kar98k Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 昂貴的德國光學器材一直是狙擊手和攝影師的終極選擇，尖端的瞄具讓跨過130年戰場的她更加從容，Kar98K專用。\nKR: 값비싼 독일제 광학기자재는 저격수와 사진사의 최종옵션으로, 첨단 조준기는 130년 넘게 전장에서 그녀의 안정도를 높여줬습니다. Kar98K 전용. \n Obtained as a reward from getting top 50% in the Ranking EX map of [[Singularity]].",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 24.0,
+                "growth": 2.0
+            },
+            "Critical Hit Damage (%)": {
+                "min": 10.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/PPK_Suppressor",
+        "name": "PPK Suppressor",
+        "valid": "PPK Only",
+        "img": "",
+        "type": "Silencer",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 一个淑女的包中除了口红外，永远还需要一支消音器。前者令人滔滔不绝，后者让人永远沉默。EN: Other than a lipstick, a suppressor is also a must in a lady's bag, the former one keeps them talking, the latter makes sure they remain silent.",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/Prosthetic_Eye",
+        "name": "Prosthetic Eye",
+        "valid": "Stella Only",
+        "img": "doll_special_stella.png",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 史黛拉在幼年遭到歹徒袭击失去一只眼睛，之后就开始佩戴电子眼。\nEN: Stella lost an eye after being assaulted at a young age. After that, she began wearing a prosthetic eye.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 80",
+        "stats": {
+            "Critical Hit Damage (%)": {
+                "min": 15.0,
+                "max": 20.0,
+                "growth": 1.5
+            },
+            "Rate of fire": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 1.5
+            },
+            "Movement Speed": {
+                "min": -3.0,
+                "max": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/PSO-1",
+        "name": "PSO-1",
+        "valid": "All except HG",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:35:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 4,
+        "slot": "Accessory",
+        "description": "Possessing a compact and reliable design, the military-grade optical sight incorporates specialized reticle subtensions, allowing for ease of use on the battlefield. Can be equipped by all except HG.",
+        "stats": {
+            "Critical hit rate": {
+                "min": 13.0,
+                "max": 16.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Pwd_Delta",
+        "name": "Pwd Delta",
+        "valid": "Jill Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 饮料中的酸味成分。由BTC统一配发。\nEN: The spicy component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 80",
+        "stats": {
+            "Evasion": {
+                "min": 15.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Ragged_Cape",
+        "name": "Ragged Cape",
+        "valid": "RF Only",
+        "img": "doll_suit_1.png",
+        "type": "Cape",
+        "production": {
+            "timer": "0:16:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        },
+        "rating": 2,
+        "slot": "Doll",
+        "description": "A ragged cape that has been passed down for ages. Having an undisturbed firing environment allows for increased critical damage. Can only be equipped by RFs.",
+        "stats": {
+            "Critical Damage": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": -9999
+            },
+            "MS": {
+                "min": -3.0,
+                "max": -9999,
+                "growth": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/SABOT_Slug",
+        "name": "SABOT Slug",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:54:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "Shotgun slugs issued by IOP. After being fired, it gains a steady rotation that provides the shotgun shot with a stable firing trajectory and laser-like precision.",
+        "stats": {
+            "Target": {
+                "min": -2.0
+            },
+            "Damage": {
+                "min": -9999
+            },
+            "Accuracy": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/SP-6_Subsonic_Rounds",
+        "name": "SP-6 Subsonic Rounds",
+        "valid": "AS Val Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 为配合消音器使用而特别开发的亚音速弹药，配合内含钢芯的弹头有着很高的泛用性，AS Val专用。Translated: Specially developed subsonic ammunition with the use of suppressor, the steel bullet tips improves effectiveness in many situations, AS Val exclusive.Obtained by reaching Stage 3 of AS Val's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 10.0,
+                "max": 14.0,
+                "growth": 1.76
+            }
+        }
+    },
+    {
+        "url": "/wiki/Stechkin_Exclusive_Stock",
+        "name": "Stechkin Exclusive Stock",
+        "valid": "Stechkin Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 尽管后期型的树脂枪托更加轻便，但人人都知道，一个经典的，饱经风霜的实木枪托，才是任何有自尊的斯捷奇金的唯一选择。斯捷奇金专用。Obtained as a drop by certain enemies in 9-4M as well as the boss and by S-ranking the map or auto-battling itMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.3
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Sten_Exclusive_Silencer",
+        "name": "Sten Exclusive Silencer",
+        "valid": "Sten MkII Only",
+        "img": "accessory_silencer_sten.png",
+        "type": "Silencer",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 古朴的消音器，曾经活跃于欧洲和太平洋战场，标配的帆布护手可以隔离发射时产生的热量，斯登MKII专用。Obtained by reaching Stage 3 of Sten MkII's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical hit rate": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 8.0,
+                "max": 11.0,
+                "growth": 1.4
+            }
+        }
+    },
+    {
+        "url": "/wiki/Tactical_Headband",
+        "name": "Tactical Headband",
+        "valid": "HK416 Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 416改造后配备了全新的增强型势态感知系统，虽然看起来只是普通的发卡，但实际上内建有22个各类传感器和天线阵列，极大地提高了HK416的作战效率。EN: A brand new improved motion sensor system, may only appear to be an ornament, but it has up to 22 different sensor arrays integrated within, significantly improves HK416's combat effectiveness.Obtained by reaching Stage 3 of HK416's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Critical Hit Damage (%)": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.26
+            },
+            "Evasion": {
+                "min": 10.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/Thermoptic_Camouflage_Cape",
+        "name": "Thermoptic Camouflage Cape",
+        "valid": "RF Only",
+        "img": "doll_suit_3.png",
+        "type": "Cape",
+        "production": {
+            "timer": "0:56:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        },
+        "rating": 5,
+        "slot": "Doll",
+        "description": "A thermoptic camouflage cape developed with military technology, it can adapt its camouflage patterns to the surrounding environment when lying still, allowing sharpshooters to massively increase their critical damage. Can only be equipped by RFs.",
+        "stats": {
+            "Critical Hit Damage (%)": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 1.7
+            },
+            "Movement Speed": {
+                "min": -3.0,
+                "max": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/Titan_Fire_Control_Chip",
+        "name": "Titan Fire Control Chip",
+        "valid": "M1918 Only",
+        "img": "doll_chip_m1918.png",
+        "type": "Microchip",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "A fire-control chip that provides an overall increase to specific machine guns' firepower output. It looks strangely familiar for some reason. Can only be equipped by M1918.\nMinimum level requirement: Lvl 80",
+        "stats": {
+            "Clip size": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": 1.5
+            },
+            "Damage": {
+                "min": -4.0,
+                "max": -2.0
+            },
+            "Rate of fire": {
+                "min": -8.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Type_1_Armor_Plate",
+        "name": "Type 1 Armor Plate",
+        "valid": "SG Only",
+        "img": "doll_armor_N.png",
+        "type": "Armor Plate",
+        "production": {
+            "timer": "0:26:00",
+            "normal": [
+                50,
+                50,
+                100,
+                100
+            ]
+        },
+        "rating": 3,
+        "slot": "Doll",
+        "description": "The protective grade Type 1 Fiber Plate provided by IOP Corporation helps to reduce the damage taken from being shot, increasing T-Dolls' survivability on the battlefield.",
+        "stats": {
+            "Armor": {
+                "min": 3.0,
+                "max": 3.0,
+                "growth": 1.4
+            },
+            "Evasion": {
+                "min": -1.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Type_2_Armor_Plate",
+        "name": "Type 2 Armor Plate",
+        "valid": "SG Only",
+        "img": "doll_armor_N.png",
+        "type": "Armor Plate",
+        "production": {
+            "timer": "0:41:00",
+            "normal": [
+                50,
+                50,
+                100,
+                100
+            ]
+        },
+        "rating": 4,
+        "slot": "Doll",
+        "description": "The protective grade Type II Composite Plate provided by IOP Corporation helps to greatly reduce the damage taken from being shot, greatly enhancing T-Dolls' survivability on the battlefield.",
+        "stats": {
+            "Armor": {
+                "min": 4.0,
+                "max": 5.0,
+                "growth": 1.4
+            },
+            "Evasion": {
+                "min": -1.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Type_3_Armor_Plate",
+        "name": "Type 3 Armor Plate",
+        "valid": "SG Only",
+        "img": "doll_armor_N.png",
+        "type": "Armor Plate",
+        "production": {
+            "timer": "0:51:00",
+            "normal": [
+                50,
+                50,
+                100,
+                100
+            ]
+        },
+        "rating": 5,
+        "slot": "Doll",
+        "description": "The protective grade Type III Kevlar Plate provided by IOP Corporation can resist high-caliber ammunition, massively enhancing T-Dolls' survivability on the battlefield.",
+        "stats": {
+            "Armor": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.4
+            },
+            "Evasion": {
+                "min": -3.0,
+                "max": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Type_64_Exclusive_Suppressor",
+        "name": "Type 64 Exclusive Suppressor",
+        "valid": "Type 64 Only",
+        "img": "accessory_silencer_64type.png",
+        "type": "Silencer",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN:古朴的消音器，让64式无声融入漆黑的雨林夜色中，同时提升暴击概率，64式专用。\nEN:This quaint suppressor allows Type 64 to silently blend into the darkness of the rainforest night while increasing her critical strike chance. Can only be equipped by Type 64.Obtained by reaching Stage 3 of Type 64's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Critical hit rate": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 8.0,
+                "max": 11.0,
+                "growth": 1.4
+            }
+        }
+    },
+    {
+        "url": "/wiki/UMP_UX_Exoskeleton",
+        "name": "UMP UX Exoskeleton",
+        "valid": "UMP9 Only",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "A highly mobile exoskeleton specially calibrated for T-Dolls of the UMP weapons platform by the former Equipment Department. It greatly increases evasive ability while preserving firing accuracy.Obtainable during the 2017 Summer event [[Operation Deep Dive]], with Deep Dive added to the campaign menu, players can now return to the maps and acquire this equipment again from random battle loots, drop location as following: E2-3, E2-4, E3-2, E3-4.Minimum Level Requirement: 60",
+        "stats": {
+            "Evasion": {
+                "min": 20.0,
+                "max": 25.0,
+                "growth": 1.4
+            },
+            "Critical Damage (%)": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 1.67
+            }
+        }
+    },
+    {
+        "url": "/wiki/Urban_Camouflage_Cape",
+        "name": "Urban Camouflage Cape",
+        "valid": "RF Only",
+        "img": "doll_suit_2.png",
+        "type": "Cape",
+        "production": {
+            "timer": "0:46:00",
+            "normal": [
+                180,
+                20,
+                200,
+                20
+            ]
+        },
+        "rating": 4,
+        "slot": "Doll",
+        "description": "",
+        "stats": {
+            "Critical Hit Damage (%)": {
+                "min": 8.0,
+                "max": 10.0,
+                "growth": 1.8
+            },
+            "Movement Speed": {
+                "min": -3.0,
+                "max": -9999
+            }
+        }
+    },
+    {
+        "url": "/wiki/VFL_6-24x56",
+        "name": "VFL 6-24x56",
+        "valid": "All except HG",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "production": {
+            "timer": "0:45:00",
+            "normal": [
+                140,
+                10,
+                110,
+                10
+            ]
+        },
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "An excellent scope specially built for long-distance sniping, it is made from the best materials and optical components, ensuring outstanding and reliable performance. Can be equipped by all except HG.",
+        "stats": {
+            "Critical Hit Chance (%)": {
+                "min": 17.0,
+                "max": 24.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/WAD_Slug",
+        "name": "WAD Slug",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_s_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:44:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 4,
+        "slot": "Magazine",
+        "description": "Shotgun slugs issued by IOP. With its mass centered in the front, each single large projectile shot encased in polymer casing is designed to deal highly accurate single-target damage.",
+        "stats": {
+            "Target": {
+                "min": -2.0
+            },
+            "Damage": {
+                "min": -9999
+            },
+            "Accuracy": {
+                "min": 5.0,
+                "max": 7.0,
+                "growth": 1.9
+            }
+        }
+    },
+    {
+        "url": "/wiki/White_Knight_Armor",
+        "name": "White Knight Armor",
+        "valid": "Sei Only",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 白骑士制式铠甲，能够快速治疗受伤的穿戴者。\nEN: A White Knight's standard armor. Able to quickly heal the wearer.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 80",
+        "stats": {
+            "Evasion": {
+                "min": 15.0,
+                "max": 20.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/XM261_ACP",
+        "name": "XM261 ACP",
+        "valid": "M1911 Only",
+        "img": "ammo_hpBullet_m1911.png",
+        "type": "HP Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN:曾经战争中为残酷的战壕内近距离战斗开发的实验弹药，本质是一种可以直接用.45口径手枪发射的霰弹，M1911专用。\nEN:The experimental ammunition that was once developed for CQC in the brutal trench warfare, this is essentially a .45 calibre shotgun shell that can be fired from pistol. M1911 exclusive.Obtained by reaching Stage 3 of M1911's Digimind Upgrade.Minimum Level Required: 115",
+        "stats": {
+            "Damage": {
+                "min": 8.0,
+                "max": 11.0,
+                "growth": 1.6
+            },
+            "Armor Penetration": {
+                "min": -10.0,
+                "max": -7.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%830_Buckshot",
+        "name": "#0 Buckshot",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:29:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 3,
+        "slot": "Magazine",
+        "description": "Powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 8.13mm in diameter. Can be equipped by SGs.",
+        "stats": {
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.5
+            },
+            "CritDamage": {
+                "min": 5.0,
+                "max": 6.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%8300_Buckshot",
+        "name": "#00 Buckshot",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:44:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 4,
+        "slot": "Magazine",
+        "description": "Very powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 8.38mm in diameter. Can be equipped by SGs.",
+        "stats": {
+            "Damage": {
+                "min": 4.0,
+                "max": 6.0,
+                "growth": 1.5
+            },
+            "Critical Damage": {
+                "min": 7.0,
+                "max": 9.0,
+                "growth": 1.6
+            }
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%83000_Buckshot",
+        "name": "#000 Buckshot",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:54:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "Extremely powerful shotgun shells issued by IOP. Each shot contains multiple pellets measuring 9.14mm in diameter. Can be equipped by SGs.",
+        "stats": {
+            "Damage": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 1.5
+            },
+            "Critical Damage": {
+                "min": 10.0,
+                "max": 15.0,
+                "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/%EF%BC%831_Buckshot",
+        "name": "#1 Buckshot",
+        "valid": "SG Only",
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "production": {
+            "timer": "0:14:00",
+            "normal": [
+                30,
+                150,
+                30,
+                130
+            ]
+        },
+        "rating": 2,
+        "slot": "Magazine",
+        "description": "High-powered shotgun shells issued by IOP. Each shot contains multiple pellets measuring 7.62mm in diameter. Can be equipped by SGs.",
+        "stats": {
+            "Damage": {
+                "min": 1.0,
+                "max": 1.0,
+                "growth": 1.0
+            },
+            "CritDamage": {
+                "min": 3.0,
+                "max": 4.0,
+                "growth": 1.0
+            }
+        }
     },
     {
         "url": "/wiki/Armor_Fairy",

@@ -1,5 +1,7 @@
 import discord
 import json
+#Error handler
+import traceback
 #To insert ability parameters for dolls
 import re
 import os
@@ -185,6 +187,9 @@ def dollInfo(doll):
 	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_EXTRAstar.png")
 	#else:
 	#	embed.set_thumbnail(url=ICON_DOMAIN+"Icon_"+doll['type']+"_"+str(doll['rating'])+"star.png")
+	#only for sangvis since they don't have a lot of text
+	if doll['type'] == "Sangvis Ferri Doll":
+		embed.set_thumbnail(url=PIC_DOMAIN+"Icon_Sangvis_Ferri.png")
 	return embed
 	
 
@@ -200,35 +205,37 @@ def equipInfo(equip):
 		stats = "**Movement:** "+str(equip['constStats']['mov']) + "**, Crit. rate:** " + str(equip['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(equip['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(equip['constStats']['pen'])
 		stats += "\n**HP:** "+str(equip['maxStats']['hp']) + ", **DMG:** " + str(equip['maxStats']['dmg']) + ", **ACC:** " + str(equip['maxStats']['acc']) + ", **EVA:** " + str(equip['maxStats']['eva']) + ", **ROF:** " + str(equip['maxStats']['rof']) + ", **Armor:** "+ str(equip['maxStats']['armor'])
 		embed.add_field(name="Max Stats",value=stats)
-	obtain_info = ""
-	if 'stage' in equip['production']:
-		obtain_info += '**STAGE:** ' + equip['production']['stage'] + "\n"
-	if 'reward' in equip['production']:
-		obtain_info += '**REWARD:** ' + equip['production']['reward'] + "\n"
-	if 'timer' in equip['production']:
-		obtain_info += '**Production Timer:** ' + equip['production']['timer']
-	if 'upgrade' in equip['production']:
-		obtain_info += "**UPGRADE:** "+equip['production']['upgrade']
-	#if equip['name'] in bonusdex and 'drop_rate' in bonusdex[equip['name']]:
-	#	obtain_info += "\n**Normal Prod. Drop Rate:** " + str(bonusdex[equip['name']]['drop_rate'])+"% (Estimated)"
-	embed.add_field(name="How To Obtain", value=obtain_info,inline=False)
+		
+	#Because the wiki doesn't list it in a clean way and I don't have everything noted down yet
+	if 'production' in equip:
+		obtain_info = ""
+		if 'stage' in equip['production']:
+			obtain_info += '**STAGE:** ' + equip['production']['stage'] + "\n"
+		if 'reward' in equip['production']:
+			obtain_info += '**REWARD:** ' + equip['production']['reward'] + "\n"
+		if 'timer' in equip['production']:
+			obtain_info += '**Production Timer:** ' + equip['production']['timer']
+		if 'upgrade' in equip['production']:
+			obtain_info += "**UPGRADE:** "+equip['production']['upgrade']
+		#if equip['name'] in bonusdex and 'drop_rate' in bonusdex[equip['name']]:
+		#	obtain_info += "\n**Normal Prod. Drop Rate:** " + str(bonusdex[equip['name']]['drop_rate'])+"% (Estimated)"
+		embed.add_field(name="How To Obtain", value=obtain_info,inline=False)
 
-	if 'normal' in equip['production']:
-		a = equip['production']['normal']
-		f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
-		f += "\n*Official recipe for recommended production. Not a minimum requirement.*"
-		if equip['name'] in bonusdex and 'voodoo' in bonusdex[equip['name']]:
-			a = bonusdex[equip['name']]['voodoo']
-			f += "\nVoodoo: " + "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
-			f += "\n*Voodoo recipes are placebo & may not increase drop rate*"
-	
-		embed.add_field(name="Normal Production Recipe", value=f, inline=True)
+		if 'normal' in equip['production']:
+			a = equip['production']['normal']
+			f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
+			f += "\n*Official recipe for recommended production. Not a minimum requirement.*"
+			if equip['name'] in bonusdex and 'voodoo' in bonusdex[equip['name']]:
+				a = bonusdex[equip['name']]['voodoo']
+				f += "\nVoodoo: " + "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
+				f += "\n*Voodoo recipes are placebo & may not increase drop rate*"
+		
+			embed.add_field(name="Normal Production Recipe", value=f, inline=True)
 
-
-	if 'heavy' in equip['production']:
-		a = equip['production']['heavy']
-		f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
-		embed.add_field(name="Heavy Production Requirement", value=f, inline=True)
+		if 'heavy' in equip['production']:
+			a = equip['production']['heavy']
+			f = "**Manpower:** "+str(a[0]) + " **Ammo:** " + str(a[1]) + " **Rations:** " + str(a[2]) + " **Parts:** " + str(a[3])
+			embed.add_field(name="Heavy Production Requirement", value=f, inline=True)
 		
 	#Faries have skills too!
 	if 'ability' in equip:
@@ -262,32 +269,41 @@ def getSearchResult(param, search_equip=False):
 	raise Exception("This shouldn't be possible! No result found in search.")
 
 
+#This REALLY should not be a function
 def getPossibleCostumes(doll):
 	msg = "Costumes for "+doll['name']+": "
 	for i in range(len(doll['costumes'])):
-		msg+="#"+str(i)+". **"+doll['costumes'][i]['name']+"**, "
-	msg+="\nYou can choose a costume by number or name, such as `"+doll['name']+", 1` or `"+doll['name']+", "+doll['costumes'][1]['name']+"`"
+		msg+=chr(i+65)+". **"+doll['costumes'][i]['name']+"**, "
+	msg+="\nYou can choose a costume by letter, name, or hitting the corresponding react button below. Ex. `"+doll['name']+", 1` or `"+doll['name']+", "+doll['costumes'][1]['name']+"`"
 	return msg
 
-def postdollCostume(doll,costumeType):
+def getDollCostume(doll,costumeType):
 	if 'costumes' in doll:
 		if costumeType:
 			if costumeType == "--list":
-				return getPossibleCostumes(doll)
-			elif RepresentsInt(costumeType):
-				i = int(costumeType)
-				if i <= len(doll['costumes']) and i > 0:
+				return ""
+			#	raise Exception("--list should not be used in getDollCostume anymore.")
+			#	return getPossibleCostumes(doll)
+			if len(costumeType) == 1:
+				print(costumeType)
+				i = ord(costumeType.upper())-65
+				if i < len(doll['costumes']) and i >= 0:
 					return doll['name'] + ": "+doll['costumes'][i]['name']+"\n"+PIC_DOMAIN+doll['costumes'][i]['pic']
+				else:
+					print("chr was too high or too low. "+str(i)+" "+costumeType)
+					return "Parameter is more than the number of costumes in this T-Doll."
 			else:
 				for costume in doll['costumes']:
 					if costume['name'].lower() == costumeType.lower():
 						return doll['name'] + ": "+costume['name']+"\n"+PIC_DOMAIN+costume['pic']
 			print(costumeType + " not found in "+doll['name'])
-			return "Couldn't find that costume. "+getPossibleCostumes(doll)
+			#return "Couldn't find that costume. "+getPossibleCostumes(doll)
+			return False
 		#else
 		return doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
 	#else
 	return "Sorry, either there are no images for this doll or the data is missing."
+	#return False
 
 #Behold, a stateless function, by parsing my own messages
 #Spaghetti code is subjective, ok?
@@ -299,23 +315,49 @@ async def on_reaction_add(reaction,user):
 	if reaction.message.author != client.user:
 		return
 	msg = reaction.message.content.splitlines()
-	#Lame hack to check if this is a $gfimage command result
-	if not msg[-1].endswith(".png"):
-		return
-	name,costume = msg[0].split(":")
 	
-	#If already damage art
-	if "(" in costume:
-		#costume = costume.split("(")[0].strip()
+	#Don't do anything if this reaction is a custom emoji.
+	if reaction.custom_emoji:
 		return
-	elif costume.strip() == "":
-		costume = "Default (Damaged)"
-	else:
-		costume = costume.strip() + " (Damaged)"
-		
-	for doll in frontlinedex:
-		if name == doll['name']:
-			await client.edit_message(reaction.message,new_content=postdollCostume(doll,costume))
+	
+	#lame hack to check if it's a --list result
+	if msg[0].startswith("Costumes for"):
+		#print(msg[0].split(":")[0])
+		name = msg[0].split(":")[0][(len("Costumes for")+1):]
+		print(name)
+		#Check if it's a letter emoji
+		print("Reacted with "+ reaction.emoji + " "+str(ord(reaction.emoji)))
+		if ord(reaction.emoji) < 127462 or ord(reaction.emoji) > 127481:
+			return
+		#unicode reactions start at 127462, so convert them to regular letters (starts at 65)
+		letter = chr(ord(reaction.emoji)-127397)
+		print("Converted to "+letter)
+		for doll in frontlinedex:
+			if name == doll['name']:
+				msg = await client.edit_message(reaction.message,new_content=getDollCostume(doll,letter))
+				try:
+					await client.clear_reactions(reaction.message)
+				except:
+					print("Missing manage messages permissions...")
+					#await client.edit_message(msg,new_content=msg.content+"\n(I'm missing manage message permissions, so I can't clear your reactions.)")
+	#Lame hack to check if this is a $gfimage command result
+	elif msg[-1].endswith(".png"):
+		if reaction.emoji == "🔥":
+			name,costume = msg[0].split(":")
+			
+			#If already damage art
+			if "(" in costume:
+				#costume = costume.split("(")[0].strip()
+				return
+			elif costume.strip() == "":
+				costume = "Default (Damaged)"
+			else:
+				costume = costume.strip() + " (Damaged)"
+				
+			for doll in frontlinedex:
+				if name == doll['name']:
+					await client.edit_message(reaction.message,new_content=getDollCostume(doll,costume))
+		#Insert else statements here for left and right arrows
 	return
 	
 #Behold, the above but it's the opposite
@@ -326,16 +368,16 @@ async def on_reaction_remove(reaction,user):
 	if reaction.message.author != client.user:
 		return
 	msg = reaction.message.content.splitlines()
-	if not msg[-1].endswith(".png"):
-		return
-	name,costume = msg[0].split(":")
-	if "(" in costume:
-		costume = costume.split("(")[0].strip()
-	else:
-		return
-	for doll in frontlinedex:
-		if name == doll['name']:
-			await client.edit_message(reaction.message,new_content=postdollCostume(doll,costume))
+	if msg[-1].endswith(".png"):
+		if reaction.emoji == "🔥":
+			name,costume = msg[0].split(":")
+			if "(" in costume:
+				costume = costume.split("(")[0].strip()
+			else:
+				return
+			for doll in frontlinedex:
+				if name == doll['name']:
+					await client.edit_message(reaction.message,new_content=getDollCostume(doll,costume))
 	return
 	
 @client.event
@@ -344,7 +386,8 @@ async def on_message(message):
 		return
 	if message.content.startswith(COMMAND_PREFIX+"status"):
 		param = message.content[(len(COMMAND_PREFIX+"status")+1):].lower()
-		st = serverCount()
+		st = "Running "+version+"\n"
+		st += serverCount()
 		st += "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants & 1 kalina)"
 		st += "\n"+str(len(equipmentdex))+" equipments indexed."
 		#require --extra because this command is expensive to compute and I don't want people spamming it. It also doesn't work yet.
@@ -375,7 +418,13 @@ async def on_message(message):
 		for doll in frontlinedex:
 			if param == doll['name'].lower():
 				embed = dollInfo(doll)
-				await client.send_message(message.channel, embed=embed)
+				try:
+					await client.send_message(message.channel, embed=embed)
+				except Exception as e:
+					await client.send_message(message.channel, content="An error occured and I am unable to complete your request.")
+					print("An error occured. Here is the affected doll:")
+					print(doll)
+					print(e)
 				return
 			elif 'alias' in doll and param == doll['alias'].lower():
 				print(param+" -> "+doll['name'])
@@ -394,19 +443,12 @@ async def on_message(message):
 		#The string "$gfsearch2 " is 11 characters, so cut it off
 		param = message.content[(len(COMMAND_PREFIX+"equip")+1):].lower()
 		print(param)
-		for equip in equipmentdex:
-			if param == equip['name'].lower():
-				embed = equipInfo(equip)
-				await client.send_message(message.channel, embed=embed)
-				return
-			#elif 'alias' in doll and param == doll['alias'].lower():
-			#	print(param+" -> "+doll['name'])
-			#	embed = dollInfo(doll)
-			#	await client.send_message(message.channel, embed=embed)
-			#	return
 		equip, res = getSearchResult(param,True)
 		embed = equipInfo(equip)
-		await client.send_message(message.channel, content="No equipment was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+		if res[0][1] == 100:
+			await client.send_message(message.channel, embed=embed)
+		else:
+			await client.send_message(message.channel, content="No equipment was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
 		return
 	elif message.content.startswith(COMMAND_PREFIX+"image "):
 		param = message.content[(len(COMMAND_PREFIX+"image")+1):].lower().split(",")
@@ -419,21 +461,40 @@ async def on_message(message):
 			param = " ".join(param.split(" ")[:-1])
 			costumeType = "--list"
 		print(param + ", " +str(costumeType))
-		for doll in frontlinedex:
-			if param == doll['name'].lower():
-				msg = await client.send_message(message.channel, postdollCostume(doll,costumeType))
-				#This should really be refactored
-				if costumeType != "--list":
-					await client.add_reaction(msg,"🔥")
-					#emojis = ['⏪','⏩']
-					#for e in emojis:
-					#	try:
-					#		await client.add_reaction(msg,e)
-					#	except:
-					#		print(e+" is not a valid emoji")
-				return
+		
 		doll, res = getSearchResult(param)
-		await client.send_message(message.channel, "No T-Doll was found with that name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]) + "\n"+postdollCostume(doll,costumeType))
+		msgText = ""
+		if res[0][1] != 100:
+			msgText = "No T-Doll was found with that name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]) + "\n"
+
+		if costumeType == "--list":
+			if 'costumes' in doll:
+				msgText += getPossibleCostumes(doll)
+				msg = await client.send_message(message.channel, msgText)
+				#ord starts at 127462 btw
+				emojis = ["🇦","🇧","🇨","🇩","🇪","🇫","🇬","🇭","🇮","🇯","🇰","🇱","🇲","🇳","🇴","🇵","🇶","🇷","🇸","🇹"]
+				for i in range(len(doll['costumes'])):
+					try:
+						await client.add_reaction(msg,emojis[i])
+					except:
+						print(emojis[i]+" is not a valid emoji")
+			else:
+				await client.send_message(message.channel, "Sorry, the data for this T-Doll is missing.")
+				return			
+		else:
+			try:
+				msgText += getDollCostume(doll,costumeType)
+				msg = await client.send_message(message.channel, msgText)
+				await client.add_reaction(msg,"🔥")
+			except Exception:
+				await client.send_message(message.channel, "An error has occured and I am unable to complete your request.")
+				print(traceback.print_exc())
+			#emojis = ['⏪','⏩']
+			#for e in emojis:
+			#	try:
+			#		await client.add_reaction(msg,e)
+			#	except:
+			#		print(e+" is not a valid emoji")
 		return
 		#print("WARN: No T-Doll was found for " + param)
 		#await client.send_message(message.channel, "No T-Doll was found with that name.")
@@ -521,13 +582,16 @@ async def on_message(message):
 		param = message.content[(len(COMMAND_PREFIX+"help")+1):].lower()
 		if len(param) > 0:
 			if param == "image":
-				msg = "Search doll images and costumes. This command is in beta. Correct costume names coming eventually. Changing costumes with reaction buttons coming eventually.\n"
-				msg += "Press the fire react to show damage art for a doll. Remove the fire react to show normal art."
+				msg = "**Summary:**\nSearch doll images and costumes. This command is in beta. Changing costumes with reaction buttons coming eventually.\n"
+				msg += "**Detailed Usage:**\n"
+				msg += "Press the fire react to show damage art for a doll. Remove the fire react to show normal art.\n"
+				msg += "Costumes are ordered from A to the number of costumes, with damage art coming after regular art. (A is always default and B is always default (Damaged)\n"
 				msg += "You can append the '--list' or '-l' flag to the end of your search to show all the costume names.\n"
-				msg += "Usage examples:\n"
+				msg += "**Examples:**\n"
 				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
-				msg += "`"+COMMAND_PREFIX+"image M16A1,Boss`: Show M16A1's Boss costume.\n"
-				msg += "`"+COMMAND_PREFIX+"image M16A1,3`: Show M16A1's 3rd costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image Skorpion, Crimson Starlet`: Show Skorpion's Crimson Starlet costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image UMP9,B`: Show UMP9's damaged art, which is the second costume in the list.\n"
+				msg += "`"+COMMAND_PREFIX+"image M16A1,C`: Show M16A1's 3rd costume.\n"
 				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
 				#msg += "`"+COMMAND_PREFIX+"Negev --damaged`: Show Negev's damage art for the costume.\n"
 				await client.send_message(message.channel, msg)
