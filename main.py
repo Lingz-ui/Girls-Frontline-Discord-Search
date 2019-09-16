@@ -12,6 +12,8 @@ import time
 #Return closest result for dolls. (Thank god because nobody ever spells anything correctly with this bot)
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
+#to round down equipment values, because it's calculated on the fly..
+import math
 
 client = discord.Client()
 #Your discord bot token. For your safety this is an environment variable, but you're free to put your token here if you really want to.
@@ -31,7 +33,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.49-20190810"
+version = "IOP 2.5-20190916"
 def num2stars(n):
 	#★☆
 	st = ""
@@ -201,10 +203,37 @@ def equipInfo(equip):
 	#embed.add_field(name="Type", value=equip['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(equip['baseStats']['hp']) + ", **DMG:** " + str(equip['baseStats']['dmg']) + ", **ACC:** " + str(equip['baseStats']['acc']) + ", **EVA:** " + str(equip['baseStats']['eva']) + ", **ROF:** " + str(equip['baseStats']['rof']))
-	if 'constStats' in equip:
-		stats = "**Movement:** "+str(equip['constStats']['mov']) + "**, Crit. rate:** " + str(equip['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(equip['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(equip['constStats']['pen'])
-		stats += "\n**HP:** "+str(equip['maxStats']['hp']) + ", **DMG:** " + str(equip['maxStats']['dmg']) + ", **ACC:** " + str(equip['maxStats']['acc']) + ", **EVA:** " + str(equip['maxStats']['eva']) + ", **ROF:** " + str(equip['maxStats']['rof']) + ", **Armor:** "+ str(equip['maxStats']['armor'])
-		embed.add_field(name="Max Stats",value=stats)
+	if 'stats' in equip:
+		outStats = ""
+		for k in equip['stats']:
+			print(k)
+			outStats += "**"+k+":** "
+			if 'growth' in equip['stats'][k]:
+				if (equip['stats'][k]['growth'] == -9999):
+					outStats += "??? (Missing data!)"
+					print("Missing keys in equip.")
+					print(str(equip['stats'][k]))
+				elif 'max' in equip['stats'][k]:
+					outStats += str(math.floor(equip['stats'][k]['max'] * equip['stats'][k]['growth'])) + "\n"
+				elif 'min' in equip['stats'][k]:
+					outStats += str(math.floor(equip['stats'][k]['min'] * equip['stats'][k]['growth'])) + "\n"
+				else:
+					outStats += "??? (Bad data in JSON?)"
+					print("Has growth key, but no min/max key.")
+					print(str(equip['stats'][k]))
+			elif 'max' in equip['stats'][k]:
+				outStats += str(equip['stats'][k]['max']) + "\n"
+			elif 'min' in equip['stats'][k]:
+				outStats += str(equip['stats'][k]['min']) + "\n"
+			else:
+				outStats += "??? (Missing data!)"
+				print("Bad keys in equip.")
+				print(str(equip['stats'][k]))
+		embed.add_field(name="Stats",value=outStats,inline=True)
+	#if 'constStats' in equip:
+	#	stats = "**Movement:** "+str(equip['constStats']['mov']) + "**, Crit. rate:** " + str(equip['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(equip['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(equip['constStats']['pen'])
+	#	stats += "\n**HP:** "+str(equip['maxStats']['hp']) + ", **DMG:** " + str(equip['maxStats']['dmg']) + ", **ACC:** " + str(equip['maxStats']['acc']) + ", **EVA:** " + str(equip['maxStats']['eva']) + ", **ROF:** " + str(equip['maxStats']['rof']) + ", **Armor:** "+ str(equip['maxStats']['armor'])
+	#	embed.add_field(name="Max Stats",value=stats)
 		
 	#Because the wiki doesn't list it in a clean way and I don't have everything noted down yet
 	if 'production' in equip:
