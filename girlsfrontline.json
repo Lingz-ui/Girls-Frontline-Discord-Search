@@ -5503,7 +5503,19 @@
         "bonus_desc": "Affects all guns\nIncreases damage by 15%(x1) / 18%(x2) / 22%(x3) / 26%(x4) / 30%(x5)\nIncreases critical hit rate by 10%(x1) / 12%(x2) / 15%(x3) / 17%(x4) / 20%(x5)",
         "production": {
             "reward": "Reward for clearing E?-? of Shattered Connexion."
-        }
+        },
+        "internalName": "DesertEagle",
+        "img": "pic_DesertEagle.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_DesertEagle.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_DesertEagle_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/EM-2",
@@ -8957,7 +8969,51 @@
             "minResource": 800,
             "stage": "Can be obtained from many battle stages from Chapter 1-3E onward.",
             "reward": "Achievement Reward for obtaining a T-doll drop for the first time."
-        }
+        },
+        "internalName": "AR",
+        "img": "pic_AR.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_AR.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_AR_D.png"
+            },
+            {
+                "name": "White Cabbage",
+                "pic": "pic_ART556_1803.png"
+            },
+            {
+                "name": "White Cabbage (Damaged)",
+                "pic": "pic_ART556_1803_D.png"
+            },
+            {
+                "name": "MOD 3",
+                "pic": "pic_AR15Mod.png"
+            },
+            {
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_AR15Mod_D.png"
+            },
+            {
+                "name": "Literary Girl",
+                "pic": "pic_AR15_701.png"
+            },
+            {
+                "name": "Literary Girl (Damaged)",
+                "pic": "pic_AR15_701_D.png"
+            },
+            {
+                "name": "Little Chimney Sweeper",
+                "pic": "pic_ART556_2803.png"
+            },
+            {
+                "name": "Little Chimney Sweeper (Damaged)",
+                "pic": "pic_ART556_2803_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Gepard_M1",
@@ -13759,7 +13815,27 @@
         "bonus_desc": "Affects shotguns\nIncreases accuracy by 10%\nIncreases armour by 15%",
         "production": {
             "reward": "Reward for Clearing E4-3 of Isomer."
-        }
+        },
+        "internalName": "Lewis",
+        "img": "pic_Lewis.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_Lewis.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_Lewis_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_Lewis_3502.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_Lewis_3502_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/M1_Garand",
@@ -30100,6 +30176,99 @@
                 30
             ],
             "stage": "Can be obtained from many battle stages from Chapter 2-6 onward."
+        },
+        "internalName": "SKS",
+        "img": "pic_SKS.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_SKS.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_SKS_D.png"
+            }
+        ]
+    },
+    {
+        "url": "/wiki/Six12",
+        "num": 278,
+        "name": "Six12",
+        "type": "SG",
+        "rating": 3,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "4"
+        },
+        "baseStats": {
+            "hp": 121,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 13,
+            "eva": 2,
+            "acc": 2,
+            "rof": 21,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 242,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 34,
+            "eva": 13,
+            "acc": 13,
+            "rof": 30,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Burst Impact",
+            "icon": "Shotgun",
+            "text": "Performs an additional attack, which deals ($damage_multiplier)x damage to a single target and drive it back ($distance_value) units.",
+            "initial": "8",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "damage_multiplier": [
+                "1.2",
+                "1.3",
+                "1.5",
+                "1.6",
+                "1.8",
+                "1.9",
+                "2.1",
+                "2.2",
+                "2.4",
+                "2.5"
+            ],
+            "distance_value": [
+                "2",
+                "2.1",
+                "2.2",
+                "2.3",
+                "2.4",
+                "2.6",
+                "2.7",
+                "2.8",
+                "2.9",
+                "3"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n🔶⬛🔷\n🔶⬛⬛",
+        "bonus_desc": "Affects machine guns\nIncreases damage by 10%\nIncreases accuracy by 20%",
+        "production": {
+            "reward": "Login reward for October 2019 (CN)."
         }
     },
     {
@@ -36624,6 +36793,73 @@
         ]
     },
     {
+        "url": "/wiki/VP70",
+        "num": -1,
+        "name": "VP70",
+        "type": "HG",
+        "rating": 3,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects all classes\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "production": {
+            "reward": "Login reward for September 2019 (CN)."
+        },
+        "img": "pic_VP70.png",
+        "internalName": "VP70",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_VP70.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_VP70_D.png"
+            }
+        ]
+    },
+    {
         "url": "/wiki/Vector",
         "num": 20,
         "name": "Vector",
@@ -39572,21 +39808,21 @@
         ]
     },
     {
-        "url": "/wiki/VP70",
+        "url": "/wiki/INSAS",
         "num": -1,
-        "name": "VP70",
-        "type": "HG",
+        "name": "INSAS",
+        "type": "AR",
         "rating": 3,
         "constStats": {
-            "mov": 15,
+            "mov": 10,
             "crit_rate": 20,
             "crit_dmg": 50,
             "pen": 15
         },
         "baseStats": {
             "hp": 10,
-            "ammo": 10,
-            "ration": 10,
+            "ammo": 20,
+            "ration": 20,
             "dmg": -1,
             "eva": -1,
             "acc": -1,
@@ -39595,8 +39831,8 @@
         },
         "maxStats": {
             "hp": 100,
-            "ammo": 30,
-            "ration": 30,
+            "ammo": 60,
+            "ration": 60,
             "dmg": -1,
             "eva": -1,
             "acc": -1,
@@ -39621,22 +39857,10 @@
             ]
         },
         "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects all classes\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "bonus_desc": "Affects submachine guns\nIncreases ?? by ??%\nIncreases ?? by ??%",
         "production": {
-            "reward": "Login reward for September 2019 (CN)."
-        },
-        "img": "pic_VP70.png",
-        "internalName": "VP70",
-        "costumes": [
-            {
-                "name": "Default",
-                "pic": "pic_VP70.png"
-            },
-            {
-                "name": "Default (Damaged)",
-                "pic": "pic_VP70_D.png"
-            }
-        ]
+            "reward": "Login reward for November 2019 (CN)."
+        }
     },
     {
         "url": "/wiki/K7",

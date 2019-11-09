@@ -17,7 +17,6 @@
 	"FNC" : {"flavor" : "All this chocolate can't heal my wounds", "alias" : "FF FNC", "voodoo": [430, 430, 91, 230], "drop_rate" : 5.07},
 	"Noel" : {"flavor" : "The Wheel of Fate is turning!", "alias":"Noel Vermillion"},
 	"Elphelt" : {"flavor" : "Heaven or Hell! Let's rock!", "alias":"Elphelt Valentine"},
-	"ART556": {"flavor": "My ears are pretty, right?"},
 	"Five-seveN" : {"flavor" : "hoxy", "alias":"57"},
 	"G41" : {"alias":"homete","flavor": "f××knugget", "voodoo" : [95, 494, 494, 230], "drop_rate" : 2.53},
 	"G11": {"flavor": "I'm tired...", "voodoo" : [95, 400, 400, 95], "drop_rate" : 2.67},
@@ -40,5 +39,7 @@
 	"Nagant Revolver":{"alias":"M1895"},
 	"Colt Revolver":{"alias":"M1873"},
 	"M37":{"alias":"Ithaca37"},
-	"JS05":{"alias":"JS-127"}
+	"JS05":{"alias":"JS-127"},
+	"Type 62":{"alias":"62 Shiki"},
+	"MAC-10":{"alias":"Ingram"}
 }

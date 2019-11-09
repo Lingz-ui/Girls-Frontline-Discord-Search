@@ -3,7 +3,7 @@
         "url": "/wiki/.300BLK_High-Velocity_Ammo",
         "name": ".300BLK High-Velocity Ammo",
         "valid": "ST AR-15 Only",
-        "img": "ammo_hvBullet_N.png",
+        "img": "ammo_hvBullet_ar15.png",
         "type": "High-Velocity Ammo",
         "rating": 5,
         "slot": "Magazine",
@@ -121,6 +121,17 @@
                 "growth": 1.5
             }
         }
+    },
+    {
+        "url": "/wiki/20GA_Buckshot",
+        "name": "20GA Buckshot",
+        "valid": "KS-23 Only",
+        "img": "ammo_sgBullet_b_N.png",
+        "type": "Shotgun Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 明黄色的弹体内含20颗铅弹，提供了顶尖的初速和极佳的指向性，可以大幅提升KS23的杀伤力。EN: Up to 20 lead pellets encased in bright yellow shells, provides pinnacle muzzle velocity and superior spread control, can greatly improve KS23's damaging potential.",
+        "stats": {}
     },
     {
         "url": "/wiki/7.92_KURZ",
@@ -364,6 +375,17 @@
         }
     },
     {
+        "url": "/wiki/Advanced_Individual_Optic",
+        "name": "Advanced Individual Optic",
+        "valid": "Type 95 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 专为增强95/97式战场感知和作战适应性设计的一体式瞄具，集成了有线传输的电子瞄具和测距仪，使95/97在掩体后不暴露自己便可进行攻击。EN: An all-in-one optic designed to improve battlefield awareness and combat adaptiveness for Type 95 and 97. Utilising wire connected electronic optics and range finder, 95 and 97 can strike from behind cover without exposing themselves.Obtained as a potential reward from unboxing the special lootboxes which were given out during the 70th Chinese National Day login event. One scope was guaranteed upon opening the 100th crate.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/AMP_COMPM2",
         "name": "AMP COMPM2",
         "valid": "All except HG",
@@ -602,6 +624,17 @@
                 "max": 8.0
             }
         }
+    },
+    {
+        "url": "/wiki/BM59_Heavy_Barrel",
+        "name": "BM59 Heavy Barrel",
+        "valid": "BM59 Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 配备了重型枪管的BM59 Mark IV，在长时间全自动连射的情况下也不会过热，让BM59可以扮演班用火力支援的角色。EN: a BM59 Mark IV rifle equipped with heavier barrels can cope with extended automatic firing sessions without overheating, this allows BM59 to perform as fire support.",
+        "stats": {}
     },
     {
         "url": "/wiki/Bren_L4_Barrel_Group",
@@ -2338,6 +2371,39 @@
         }
     },
     {
+        "url": "/wiki/No.32_MKI",
+        "name": "No.32 MKI",
+        "valid": "Lee-Enfield Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 上世纪大战早期，专为李恩菲尔德no4 MKI(T)狙击步枪生产的光学瞄具，配有华丽的黄铜套筒，略微昏暗的镜片见证了无数生命的消逝，李恩菲尔德专用。EN: Telescopic sight produced exclusively for Lee Enfield No.1 MkI sniper rifle at the beginning of the last century, furnished with exquisite bronze finish. The faded scope lens witnessed countless lives lost. Lee Enfield exclusive.Special equipment awarded to players who are placed in the top 50% onward category of \"Meadow's End\", ranking map of [[Shattered Connexion]]. This equipment comes with max calibration.",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 24.0,
+                "max": -9999,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": 2.0,
+                "max": -9999,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/OSS_Suppressor",
+        "name": "OSS Suppressor",
+        "valid": "M3 Only",
+        "img": "",
+        "type": "Silencer",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 当年战略情报局为隐秘行动特别开发的消音器，除了能让M3更不容易被发现外，还附有牛皮制的隔热套，紧急情况下可以让指挥官食用。EN: <!-- Insert translation here, remove the brackets once you're done -->",
+        "stats": {}
+    },
+    {
         "url": "/wiki/PEQ-15",
         "name": "PEQ-15",
         "valid": "HGs, SMGs, and most ARs",
@@ -2619,6 +2685,17 @@
                 "growth": 1.7
             }
         }
+    },
+    {
+        "url": "/wiki/SIG-510_Fire_Selector",
+        "name": "SIG-510 Fire Selector",
+        "valid": "SIG-510 Only",
+        "img": "",
+        "type": "Special",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 专为SIG510设计的快慢机机构，可自由切换单发点射与全自动射击，可以适应多变的战场状况。EN: A fire selector layout designed exclusively for SIG510, used to freely switch between semi and fully automatic fires, suitably adjusting for the ever changing battlefield.",
+        "stats": {}
     },
     {
         "url": "/wiki/SP-6_Subsonic_Rounds",
@@ -3024,6 +3101,17 @@
         }
     },
     {
+        "url": "/wiki/ZFG42",
+        "name": "ZFG42",
+        "valid": "FG42 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: ZF公司专为FG42生产的光学瞄具，经过一百多年的时光，黄铜镜筒已经黯淡，玻璃镜片却依然德味，透过瞄具都感觉自己仿佛加入了马格南。EN: <!-- Insert translation here, remove the brackets once you're done -->",
+        "stats": {}
+    },
+    {
         "url": "/wiki/%EF%BC%830_Buckshot",
         "name": "#0 Buckshot",
         "valid": "SG Only",
@@ -3283,6 +3371,15 @@
         "img": "defense_3.png"
     },
     {
+        "url": "/wiki/Barrier_Fairy",
+        "name": "Barrier Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":15:00"
+        },
+        "img": ""
+    },
+    {
         "url": "/wiki/Warrior_Fairy",
         "name": "Warrior Fairy",
         "rating": -1,
@@ -3311,6 +3408,15 @@
             ]
         },
         "img": "crit_3.png"
+    },
+    {
+        "url": "/wiki/Twin_Fairy",
+        "name": "Twin Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":40:00"
+        },
+        "img": ""
     },
     {
         "url": "/wiki/Command_Fairy",
@@ -3356,6 +3462,15 @@
             ]
         },
         "img": "illumine_3.png"
+    },
+    {
+        "url": "/wiki/Combo_Fairy",
+        "name": "Combo Fairy",
+        "rating": -1,
+        "production": {
+            "timer": ":15:00"
+        },
+        "img": ""
     },
     {
         "url": "/wiki/Landmine_Fairy",
