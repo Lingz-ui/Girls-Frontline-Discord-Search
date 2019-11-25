@@ -33,7 +33,97 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.5-20190916"
+version = "IOP 2.5-20191118"
+
+#This is the exp table for levelling up a T-Doll.
+#Accumulated exp is calculated on the fly.
+exp_table = [
+	#exp table is flat from 1-26.
+	100,  200,  300,  400,  500,
+	600,  700,  800,  900,  1000,
+	1100, 1200, 1300, 1400, 1500,
+	1600, 1700, 1800, 1900, 2000,
+	2100, 2200, 2300, 2400, 2500,
+	2600,
+	#from here the requirements change up a bit
+	2800,
+	3100,
+	3400,
+	4200, #30
+	4600,
+	5000,
+	5400,
+	5800,
+	6300,
+	6700,
+	7200,
+	7700,
+	8200,
+	8800, #40
+	9300,
+	9900,
+	10500,
+	11100,
+	11800,
+	12500,
+	13100,
+	13900,
+	14600,
+	15400, #50
+	16100,
+	16900,
+	17700,
+	18600,
+	19500,
+	20400,
+	21300, #57... It's flat again
+	22300,
+	23300,
+	24300, #60
+	25300,
+	26300,
+	27400, #63
+	28500,
+	29600,
+	30800,
+	32000,
+	33200,
+	34400, #70
+	45100,
+	46800,
+	48600,
+	50400,
+	52200,
+	54000,
+	55900,
+	57900,
+	59800,
+	61800,
+	63900,
+	66000,
+	68100,
+	70300,
+	72600,
+	74800,
+	77100,
+	79500,
+	81900,
+	84300,
+	112600,
+	116100,
+	119500,
+	123100,
+	126700,
+	130400,
+	134100,
+	137900,
+	141800,
+	145700, #99... Below is 100-120
+	100000,120000,140000,160000,180000,200000,220000,240000,280000,360000,480000,640000,900000,1200000,1600000,2200000,3000000,4000000,5000000,6000000,0
+]
+assert (len(exp_table) == 100 or len(exp_table) == 120),"Exp table is wrong size. Length was "+str(len(exp_table))
+
+
 def num2stars(n):
 	#★☆
 	st = ""
@@ -46,12 +136,12 @@ def num2stars(n):
 			st = st + "☆"
 	return st
 
-def RepresentsInt(s):
-    try: 
-        int(s)
-        return True
-    except ValueError:
-        return False
+
+def intTryParse(value, errorVal=-1):
+	try:
+		return int(value)
+	except:
+		return errorVal
 
 #@client.event
 #async def loaddex(message):
@@ -303,7 +393,7 @@ def getPossibleCostumes(doll):
 	msg = "Costumes for "+doll['name']+": "
 	for i in range(len(doll['costumes'])):
 		msg+=chr(i+65)+". **"+doll['costumes'][i]['name']+"**, "
-	msg+="\nYou can choose a costume by letter, name, or hitting the corresponding react button below. Ex. `"+doll['name']+", 1` or `"+doll['name']+", "+doll['costumes'][1]['name']+"`"
+	msg+="\nYou can choose a costume by letter, name, or hitting the corresponding react button below. Ex. `"+doll['name']+", A` or `"+doll['name']+", "+doll['costumes'][1]['name']+"`"
 	return msg
 
 def getDollCostume(doll,costumeType):
@@ -607,6 +697,41 @@ async def on_message(message):
 			return
 		else:
 			await client.send_message(message.channel, "This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions.")
+	elif message.content.startswith(COMMAND_PREFIX+"exp "):
+		param = message.content[(len(COMMAND_PREFIX+"exp")+1):]
+		print(param)
+		start = None
+		end = None
+		
+		if "," in param:
+			try:
+				start,end = param.split(",")
+				start = intTryParse(start.strip())
+				end = intTryParse(end.strip())
+				if start == -1 or end == -1:
+					await client.send_message(message.channel,"1st or 2nd argument was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5,100` (where 5 is start, 100 is end)")
+					return
+			except Exception:
+				await client.send_message(message.channel, "An error has occured and I am unable to complete your request. Perhaps your argument was malformed.")
+				print(traceback.print_exc())
+		else:
+			start = 1
+			end = intTryParse(param)
+			if end == -1:
+				await client.send_message(message.channel,"parameter was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5` (where 5 is end)")
+				return
+		
+		if end > len(exp_table):
+			await client.send_message(message.channel,"Calculations for levels above "+str(len(exp_table))+" are not supported.")
+			return
+		n = 0
+		for i in range(start-1,end-1):
+			n+=exp_table[i]
+		msg =  "Exp required to go from level " + str(start) + " to level "+str(end) + ": **"+str(n)+"**\n"
+		msg += "Combat reports required: **"+str(math.ceil(n/3000))+"**"
+		await client.send_message(message.channel,msg)
+		return
+			
 	elif message.content.startswith(COMMAND_PREFIX+"help"):
 		param = message.content[(len(COMMAND_PREFIX+"help")+1):].lower()
 		if len(param) > 0:
@@ -634,6 +759,12 @@ async def on_message(message):
 				msg = "Show the amount of servers this bot is in and the number of dolls and equipment indexed."
 				msg += "\nIf --extra is appended the lowest and highest production timers for weapons and dolls will be shown."
 				await client.send_message(message.channel, msg)
+			elif param == "exp":
+				msg = "Estimate how much exp is required to get from one level to another."
+				msg += "\nExample: `"+COMMAND_PREFIX+"exp 5,25`: Estimate how much exp and combat reports it takes to get from level 5 to 25."
+				msg += "\nExample: `"+COMMAND_PREFIX+"exp 75`: Estimate how much exp and combat reports it takes to get from level 1 to 75."
+				await client.send_message(message.channel,msg)
+				
 			else:
 				print("Tried to get help for "+param+ " but there was none.")
 				await client.send_message(message.channel, "No help available for this command yet.")
@@ -647,6 +778,7 @@ async def on_message(message):
 			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
 		msg+="**"+COMMAND_PREFIX+"timer:** List T-Dolls or equipment that match the production timer. Ex. `"+COMMAND_PREFIX+"timer 8:10` or `"+COMMAND_PREFIX+"timer 0:40`\n"
 		msg+="**"+COMMAND_PREFIX+"status:** See diagnostic information like the amount of dolls indexed, number of discords, etc\n"
+		msg+="**"+COMMAND_PREFIX+"exp:** Estimate how much exp is required to get from one level to another. Ex. `"+COMMAND_PREFIX+"exp 100,115`\n"
 		msg+="For advanced help, do `$gfhelp <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
 		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
