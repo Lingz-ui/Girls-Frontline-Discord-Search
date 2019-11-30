@@ -33,7 +33,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.5-20191118"
+version = "IOP 2.9-20191130"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -142,6 +142,14 @@ def intTryParse(value, errorVal=-1):
 		return int(value)
 	except:
 		return errorVal
+
+#And I thought I'd never have to use this...
+def RepresentsInt(s):
+	try: 
+		int(s)
+		return True
+	except ValueError:
+		return False
 
 #@client.event
 #async def loaddex(message):
@@ -283,7 +291,6 @@ def dollInfo(doll):
 	if doll['type'] == "Sangvis Ferri Doll":
 		embed.set_thumbnail(url=PIC_DOMAIN+"Icon_Sangvis_Ferri.png")
 	return embed
-	
 
 def equipInfo(equip):
 	embed = discord.Embed(title=equip['name'] + " " + num2stars(equip['rating']), url=SITE_DOMAIN+equip['url'], color=gfcolors[equip['rating']])
@@ -374,6 +381,18 @@ def equipInfo(equip):
 		print(PIC_DOMAIN+equip['img'])
 	return embed
 
+# This turns an embed into a regular message that looks like an embed
+# because some people refuse to turn on embeds
+def embed2text(embed):
+	#print(embed.fields)
+	msg = ""
+	msg += "__" + embed.title + "__\n\n"
+	for field in embed.fields:
+		msg += "__"+field.name+"__\n"
+		msg += field.value + "\n"
+	return msg
+	
+
 def getSearchResult(param, search_equip=False):
 	if search_equip == True:
 		res = process.extract(param, [equip['name'] for equip in equipmentdex], limit=3)
@@ -405,19 +424,30 @@ def getDollCostume(doll,costumeType):
 			#	return getPossibleCostumes(doll)
 			if len(costumeType) == 1:
 				print(costumeType)
-				i = ord(costumeType.upper())-65
+				
+				if RepresentsInt(costumeType):
+					print("chr was already a number, no remapping.")
+					i = int(costumeType)
+				else:
+					print("Remapped chr to int.")
+					i = ord(costumeType.upper())-65
+				
 				if i < len(doll['costumes']) and i >= 0:
 					return doll['name'] + ": "+doll['costumes'][i]['name']+"\n"+PIC_DOMAIN+doll['costumes'][i]['pic']
 				else:
-					print("chr was too high or too low. "+str(i)+" "+costumeType)
+					print("chr/int was too high or too low. "+str(i)+" "+costumeType)
 					return "Parameter is more than the number of costumes in this T-Doll."
 			else:
+
+				res = process.extract(costumeType, [costume['name'] for costume in doll['costumes']], limit=1)
 				for costume in doll['costumes']:
-					if costume['name'].lower() == costumeType.lower():
+					if costume['name'] == res[0][0]:
 						return doll['name'] + ": "+costume['name']+"\n"+PIC_DOMAIN+costume['pic']
-			print(costumeType + " not found in "+doll['name'])
+				#return doll['name'] + ": "+doll['costumes'][res[0][0]]['name']+"\n"+PIC_DOMAIN+doll['costumes'][res[0][0]]['pic']
+			#print(costumeType + " not found in "+doll['name'])
 			#return "Couldn't find that costume. "+getPossibleCostumes(doll)
-			return False
+			#return False
+			#If we got here, search for the closest costume
 		#else
 		return doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
 	#else
@@ -528,22 +558,31 @@ async def on_message(message):
 	elif message.content.startswith(COMMAND_PREFIX+"search "):
 		#The string "$gfsearch2 " is 11 characters, so cut it off
 		param = message.content[(len(COMMAND_PREFIX+"search")+1):].lower()
-		print(param)
+		print("[SEARCH] "+param)
 		#if param.startswith("--"):
 		#	temp = param.split(" ")
 		#	flag = 
 		#	param = param[
 		#await client.send_message(message.channel, "World")
+		
+		#This junk really shouldn't be here in the first place since we can search for the closest result..
 		for doll in frontlinedex:
 			if param == doll['name'].lower():
 				embed = dollInfo(doll)
 				try:
 					await client.send_message(message.channel, embed=embed)
 				except Exception as e:
-					await client.send_message(message.channel, content="An error occured and I am unable to complete your request.")
-					print("An error occured. Here is the affected doll:")
-					print(doll)
+					#await client.send_message(message.channel, content="An error occured and I am unable to complete your request. Perhaps you have embed permissions turned off?")
+					#print("An error occured. Here is the affected doll:")
+					#print(doll)
 					print(e)
+					try:
+						msg = "You are currently looking at a simplified view because embed permissions are turned off. Please turn them on, or if you always want a simplified view use search2. Most commands will not work with embeds turned off!\n"
+						msg += embed2text(embed)
+						await client.send_message(message.channel, content=msg)
+					except Exception as e:
+						print("Tried to send message twice and failed, giving up. Here is the affected doll:")
+						print(doll)
 				return
 			elif 'alias' in doll and param == doll['alias'].lower():
 				print(param+" -> "+doll['name'])
@@ -554,14 +593,17 @@ async def on_message(message):
 		embed = dollInfo(doll)
 		await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
 		return
-		#else:
-		#	print("WARN: No T-Doll was found for " + param)
-		#	await client.send_message(message.channel, "No T-Doll was found with that name.")
-		#return
+	elif message.content.startswith(COMMAND_PREFIX+"search2 "):
+		param = message.content[(len(COMMAND_PREFIX+"search2")+1):].lower()
+		doll, res = getSearchResult(param)
+		embed = dollInfo(doll)
+		await client.send_message(message.channel, content=embed2text(embed))
+		
+		
 	elif message.content.startswith(COMMAND_PREFIX+"equip "):
 		#The string "$gfsearch2 " is 11 characters, so cut it off
 		param = message.content[(len(COMMAND_PREFIX+"equip")+1):].lower()
-		print(param)
+		print("[EQUIP] "+param)
 		equip, res = getSearchResult(param,True)
 		embed = equipInfo(equip)
 		if res[0][1] == 100:
@@ -571,6 +613,7 @@ async def on_message(message):
 		return
 	elif message.content.startswith(COMMAND_PREFIX+"image "):
 		param = message.content[(len(COMMAND_PREFIX+"image")+1):].lower().split(",")
+		#print("[IMAGE] "+param)
 		costumeType = False
 		if len(param) > 1:
 			costumeType = param[-1].strip()
@@ -579,14 +622,14 @@ async def on_message(message):
 		if param.split(" ")[-1] == "--list" or param.split(" ")[-1] == "list" or param.split(" ")[-1] == "-l":
 			param = " ".join(param.split(" ")[:-1])
 			costumeType = "--list"
-		print(param + ", " +str(costumeType))
+		print("[IMAGE] " +param + ", " +str(costumeType))
 		
 		doll, res = getSearchResult(param)
 		msgText = ""
 		if res[0][1] != 100:
 			msgText = "No T-Doll was found with that name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]) + "\n"
 
-		if costumeType == "--list":
+		if costumeType == "--list" or costumeType == "-l":
 			if 'costumes' in doll:
 				msgText += getPossibleCostumes(doll)
 				msg = await client.send_message(message.channel, msgText)
@@ -620,7 +663,7 @@ async def on_message(message):
 		#return
 	elif message.content.startswith(COMMAND_PREFIX+"timer "):
 		param = message.content[(len(COMMAND_PREFIX+"timer")+1):]
-		print("arg: "+param)
+		print("[TIMER] "+param)
 		if param.count(':') == 1:
 			param = param +":00"
 			#If timer is formatted like :20, append a 0 so it's 0:20 instead
@@ -681,7 +724,7 @@ async def on_message(message):
 	elif message.content.startswith(COMMAND_PREFIX+"quote "):
 		if quotedex:
 			param = message.content[(len(COMMAND_PREFIX+"quote")+1):].lower()
-			print(param)
+			print("[QUOTE] "+param)
 			doll, res = getSearchResult(param)
 			if 'internalName' in doll:
 				if doll['internalName'] in quotedex:
@@ -699,7 +742,7 @@ async def on_message(message):
 			await client.send_message(message.channel, "This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions.")
 	elif message.content.startswith(COMMAND_PREFIX+"exp "):
 		param = message.content[(len(COMMAND_PREFIX+"exp")+1):]
-		print(param)
+		print("[EXP] "+param)
 		start = None
 		end = None
 		
@@ -739,7 +782,8 @@ async def on_message(message):
 				msg = "**Summary:**\nSearch doll images and costumes. This command is in beta. Changing costumes with reaction buttons coming eventually.\n"
 				msg += "**Detailed Usage:**\n"
 				msg += "Press the fire react to show damage art for a doll. Remove the fire react to show normal art.\n"
-				msg += "Costumes are ordered from A to the number of costumes, with damage art coming after regular art. (A is always default and B is always default (Damaged)\n"
+				msg += "Costumes are ordered from A to the number of costumes, with damage art coming after regular art. A is always default and B is always default damaged. If doll has a MOD 3 costume, C and D are MOD 3 and MOD 3 damaged.\n"
+				msg += "You can spell costumes wrong and still get the closest result.\n"
 				msg += "You can append the '--list' or '-l' flag to the end of your search to show all the costume names.\n"
 				msg += "**Examples:**\n"
 				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
@@ -747,7 +791,7 @@ async def on_message(message):
 				msg += "`"+COMMAND_PREFIX+"image UMP9,B`: Show UMP9's damaged art, which is the second costume in the list.\n"
 				msg += "`"+COMMAND_PREFIX+"image M16A1,C`: Show M16A1's 3rd costume.\n"
 				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
-				#msg += "`"+COMMAND_PREFIX+"Negev --damaged`: Show Negev's damage art for the costume.\n"
+				msg += "You can also use numbers instead of letters. Ex. `"+COMMAND_PREFIX+"image UMP9,2`\n"
 				await client.send_message(message.channel, msg)
 			elif param == "timer":
 				msg = "Find a matching doll or equip for the timer. Fairies coming eventually.\n"
@@ -772,6 +816,7 @@ async def on_message(message):
 		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls and equipment.\n"
 		msg+="Running version "+version+"\n"
 		msg+= "Commands:\n**"+COMMAND_PREFIX+"search**: Search a T-Doll and display all information. Example: `"+COMMAND_PREFIX+"search UMP45`\n"
+		msg+=COMMAND_PREFIX+"search2**: The same as above but the message will be text instead of an embed. Example: `"+COMMAND_PREFIX+"search2 UMP9`\n"
 		msg+="**"+COMMAND_PREFIX+"equip**: Search an equipment or fairy. **This command is in beta, some information is still missing.** Example: `"+COMMAND_PREFIX+"equip Armor Fairy`\n"
 		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it, or search a doll's costume. Check this command's help for more information. Example: `"+COMMAND_PREFIX+"image UMP40`, `"+COMMAND_PREFIX+"image M16A1,Boss`\n"
 		if quotedex:
