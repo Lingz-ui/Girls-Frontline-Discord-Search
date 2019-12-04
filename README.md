@@ -9,7 +9,7 @@ Reason for permissions:
 - Add Reactions: The bot adds 'buttons' to its own messages to switch between results. If you turn this off... You can react to the message yourself, I guess.
 - Manage Messages: Wipe other people's reactions from the bot's own messages. If you turn this off, you can unclick a reaction and click again to switch between results.
 
-Features:
+### Feature Overview:
 
 - Type, Base Stats, Max Stats, How To Obtain, Production Requirement, Ability, Ability Cooldown, Tile Bonus, Tile Bonus information.
 - placebo recipies and estimated drop rates for rare dolls.
