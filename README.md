@@ -1,7 +1,13 @@
 # Girls' Frontline Discord Search
-[Click to invite to your server](https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0)
+[Click to invite to your server](https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=26688)
 
 If you invite the above bot, the prefix is $gf! Use $gfhelp to get started.
+
+Reason for permissions:
+- Send Messages: It's obvious.
+- Embed Links: search results are rich embeds. If you turn this off, you can use $gfsearch2 for text based information.
+- Add Reactions: The bot adds 'buttons' to its own messages to switch between results. If you turn this off... You can react to the message yourself, I guess.
+- Manage Messages: Wipe reactions from the bot's own messages. If you turn this off, you can unclick a reaction and click again to switch between results.
 
 Features:
 
