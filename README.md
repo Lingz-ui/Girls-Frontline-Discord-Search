@@ -7,7 +7,7 @@ Reason for permissions:
 - Send Messages: It's obvious.
 - Embed Links: search results are rich embeds. If you turn this off, you can use $gfsearch2 for text based information.
 - Add Reactions: The bot adds 'buttons' to its own messages to switch between results. If you turn this off... You can react to the message yourself, I guess.
-- Manage Messages: Wipe reactions from the bot's own messages. If you turn this off, you can unclick a reaction and click again to switch between results.
+- Manage Messages: Wipe other people's reactions from the bot's own messages. If you turn this off, you can unclick a reaction and click again to switch between results.
 
 Features:
 
