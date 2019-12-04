@@ -20,7 +20,6 @@ client = discord.Client()
 DISCORD_TOKEN=os.environ['GFBOT_TOKEN']
 #The prefix for the bot commands. Default is $gf
 COMMAND_PREFIX="$gf"
-#COMMAND_NAME="$gfsearch"
 #The domain for the images extracted from Girls' Frontline. The bot will combine it like PIC_DOMAIN + "pic_ump45.png"
 #This is my server, in case you didn't already realize that.
 PIC_DOMAIN="http://103.28.71.152:999/pic/"
@@ -33,7 +32,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 2.9-20191130"
+version = "IOP 3.0-20191203"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -160,7 +159,9 @@ def serverCount():
 	numMembers = 0
 	#Loop through the servers, get all members and add them up
 	for s in client.servers:
-	    numMembers += len(s.members)
+		numMembers += len(s.members)
+	#The bot itself doesn't count as a member
+	numMembers -= len(client.servers)
 	print("Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders")
 	return "Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders"
 
@@ -169,7 +170,8 @@ async def on_ready():
 	print("The bot is ready!")
 	#print(str(client.user.id))
 	#https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0
-	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+client.user.id+ "&scope=bot&permissions=0")
+	#Send Messages, Manage Messages, Embed Links, and Add Reactions is required for optimal use.
+	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+client.user.id+ "&scope=bot&permissions=26688")
 	await client.change_presence(game=discord.Game(name=serverCount()))
 
 @client.event
@@ -305,6 +307,9 @@ def equipInfo(equip):
 		for k in equip['stats']:
 			print(k)
 			outStats += "**"+k+":** "
+			#Fuck this data I swear to god
+			#The min stat is an int... But only guarenteed if growth stat exists!
+			#If growth doesn't exist then it can be a string because fuck you
 			if 'growth' in equip['stats'][k]:
 				if (equip['stats'][k]['growth'] == -9999):
 					outStats += "??? (Missing data!)"
@@ -378,7 +383,7 @@ def equipInfo(equip):
 	#	embed.set_footer(text=bonusdex[equip['name']]['flavor'])
 	if 'img' in equip:
 		embed.set_image(url=PIC_EQUIP_DOMAIN+equip['img'])
-		print(PIC_DOMAIN+equip['img'])
+		print(PIC_EQUIP_DOMAIN+equip['img'])
 	return embed
 
 # This turns an embed into a regular message that looks like an embed
@@ -405,6 +410,7 @@ def getSearchResult(param, search_equip=False):
 			if res[0][0] == doll['name']:
 				return doll, res
 	raise Exception("This shouldn't be possible! No result found in search.")
+
 
 
 #This REALLY should not be a function
@@ -454,7 +460,7 @@ def getDollCostume(doll,costumeType):
 	return "Sorry, either there are no images for this doll or the data is missing."
 	#return False
 
-#Behold, a stateless function, by parsing my own messages
+#Behold, a stateless function by parsing my own messages
 #Spaghetti code is subjective, ok?
 @client.event
 async def on_reaction_add(reaction,user):
@@ -468,6 +474,24 @@ async def on_reaction_add(reaction,user):
 	#Don't do anything if this reaction is a custom emoji.
 	if reaction.custom_emoji:
 		return
+	
+	#Check if it's a search result
+	#This is an example of how NOT to write a function
+	if msg[0].startswith("No T-Doll was"):
+		dollList = msg[0].split(": ")[-1].split(", ")
+		if len(reaction.message.embeds) < 1:
+			print("What? search result was not an embed.")
+			return
+		curDollName = ' '.join(reaction.message.embeds[0].title.split(" - ")[1].split(' ')[:-1])
+		print(curDollName)
+		curIndex = 0
+		for d in dollList:
+			if curDollName == d:
+				break;
+			else:
+				curIndex+=1
+		print(str(curIndex))
+		#UNFINISHED...
 	
 	#lame hack to check if it's a --list result
 	if msg[0].startswith("Costumes for"):
@@ -507,6 +531,49 @@ async def on_reaction_add(reaction,user):
 				if name == doll['name']:
 					await client.edit_message(reaction.message,new_content=getDollCostume(doll,costume))
 		#Insert else statements here for left and right arrows
+	#Lame hack to check if this is an equipment result
+	elif 'exclusive equipment' in msg[0] and '(' in msg[-1]:
+		#Found 2 exclusive equipment for HK416: EOT XPS3, Tactical Headband
+		# -> ['EOT XPS3', 'Tactical Headband']
+		selection = intTryParse(msg[-1][1:].split("/")[0])
+		equipmentList = msg[0].split(": ")[-1].split(", ")
+		if reaction.emoji == '⏪' and selection > 1:
+			selection -= 1
+		elif reaction.emoji == '⏩' and selection < len(equipmentList):
+			selection += 1
+		else:
+			#Just do nothing
+			return
+		#else:
+		#	print("Tried changing equipment selection but the selection is unknown/invalid?")
+		#	print("Selection: "+ str(selection))
+		#	print("Reaction: "+reaction.emoji)
+		#	print(equipmentList)
+		#	print("Msg:\n" + reaction.message.content)
+		#	return
+		for equip in equipmentdex:
+			if equipmentList[selection-1] == equip['name']:
+				newMsg = msg[0] + "\n("+str(selection)+"/"+str(len(equipmentList))+")"
+				await client.edit_message(reaction.message,new_content=newMsg, embed=equipInfo(equip))
+				try:
+					await client.clear_reactions(reaction.message)
+					for e in ['⏪','⏩']:
+						try:
+							await client.add_reaction(reaction.message,e)
+						except:
+							print("Missing manage messages permissions...")
+				except:
+					print("Missing manage messages permissions...")
+				return
+		print("WTF? Can't find equipment!")
+		print("Selection: "+ str(selection))
+		print("Reaction: "+reaction.emoji)
+		print(equipmentList)
+		print("Msg:\n" + reaction.message.content)
+	else:
+		print("Someone reacted on a message the bot posted, but there's nothing for the bot to handle?")
+		print("User reacted with " +reaction.emoji)
+		print(reaction.message.content)
 	return
 	
 #Behold, the above but it's the opposite
@@ -533,8 +600,22 @@ async def on_reaction_remove(reaction,user):
 async def on_message(message):
 	if message.author == client.user:
 		return
-	if message.content.startswith(COMMAND_PREFIX+"status"):
-		param = message.content[(len(COMMAND_PREFIX+"status")+1):].lower()
+	
+	command = None
+	param = None
+	if message.content.startswith(COMMAND_PREFIX):
+		print(message.content)
+		a = message.content.split(" ")
+		#print(a)
+		command = a[0][len(COMMAND_PREFIX):]
+		if len(a) > 1:
+			#This is just a really fucked up way of combining it back into a string without the command in the params
+			param = " ".join([i.lower() for i in a[1:]])
+	else:
+		return
+	
+	#print(command)
+	if command == "status":
 		st = "Running "+version+"\n"
 		st += serverCount()
 		st += "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants & 1 kalina)"
@@ -548,16 +629,91 @@ async def on_message(message):
 					time_list.append((doll['name'],doll['production']['timer']))
 			#it's broken
 			sorted((time.strptime(d[1], "%H:%M:%S") for d in time_list), reverse=False)
-			print(time_list)
+			#print(time_list)
 			st += "\nThe T-Doll with the shortest production time is "+time_list[0][0] + " with a timer of "+time_list[0][1]+"."
 			st += "\nThe T-Doll with the longest production time is "+time_list[-1][0] + " with a timer of "+time_list[-1][1]+"."
+		#Because it's cool and it's not that expensive
+		type_list = {}
+		for doll in frontlinedex:
+			if doll['type'] not in type_list:
+				type_list[doll['type']] = 0
+			type_list[doll['type']]+=1
+		st += "\n__Number of dolls per type:__"
+		for type in type_list:
+			st += "\n**"+type+":** "+str(type_list[type])
+		
 		await client.send_message(message.channel, st)
 		#print("Attempting to change the status to " + st)
 		#await client.change_presence(game=discord.Game(name="testing"))
 		#print("done")
-	elif message.content.startswith(COMMAND_PREFIX+"search "):
-		#The string "$gfsearch2 " is 11 characters, so cut it off
-		param = message.content[(len(COMMAND_PREFIX+"search")+1):].lower()
+	elif command == "help" or command == "h":
+		if param != None:
+			if param == "image":
+				msg = "**Summary:**\nSearch doll images and costumes. This command is in beta. Changing costumes with reaction buttons coming eventually.\n"
+				msg += "**Detailed Usage:**\n"
+				msg += "Press the fire react to show damage art for a doll. Remove the fire react to show normal art.\n"
+				msg += "Costumes are ordered from A to the number of costumes, with damage art coming after regular art. A is always default and B is always default damaged. If doll has a MOD 3 costume, C and D are MOD 3 and MOD 3 damaged.\n"
+				msg += "You can spell costumes wrong and still get the closest result.\n"
+				msg += "You can append the '--list' or '-l' flag to the end of your search to show all the costume names.\n"
+				msg += "**Examples:**\n"
+				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image Skorpion, Crimson Starlet`: Show Skorpion's Crimson Starlet costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image UMP9,B`: Show UMP9's damaged art, which is the second costume in the list.\n"
+				msg += "`"+COMMAND_PREFIX+"image M16A1,C`: Show M16A1's 3rd costume.\n"
+				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
+				msg += "You can also use numbers instead of letters. Ex. `"+COMMAND_PREFIX+"image UMP9,2`\n"
+				await client.send_message(message.channel, msg)
+			elif param == "timer":
+				msg = "Find a matching doll or equip for the timer. Fairies coming eventually.\n"
+				msg += "Usage examples:\n"
+				msg += "`"+COMMAND_PREFIX+"timer 0:40` or `"+COMMAND_PREFIX+"timer :40`: Search for a matching timer of 0 hours 40 mins\n"
+				msg += "`"+COMMAND_PREFIX+"timer 8:00` or `"+COMMAND_PREFIX+"timer 08:00` or `"+COMMAND_PREFIX+"timer 08:00:00`: Search for a matching timer of 8 hours\n"
+				await client.send_message(message.channel, msg)
+			elif param == "status":
+				msg = "Show the amount of servers this bot is in and the number of dolls and equipment indexed."
+				#msg += "\nIf --extra is appended the lowest and highest production timers for weapons and dolls will be shown."
+				msg += "\nAlso shows the number of dolls in each type (HG,SMG,AR,SG,RF)."
+				await client.send_message(message.channel, msg)
+			elif param == "exp":
+				msg = "Estimate how much exp is required to get from one level to another."
+				msg += "\nExample: `"+COMMAND_PREFIX+"exp 5,25`: Estimate how much exp and combat reports it takes to get from level 5 to 25."
+				msg += "\nExample: `"+COMMAND_PREFIX+"exp 75`: Estimate how much exp and combat reports it takes to get from level 1 to 75."
+				await client.send_message(message.channel,msg)
+			elif param == "equip":
+				msg = "Search for equipment or fairies. If you search a doll's name, it will return the exclusive equipment for that doll."
+				msg += "\nExample: `"+COMMAND_PREFIX+"equip Additional Process Module`: Returns information on the 'Additional Process Module' equipment."
+				msg += "\nExample: `"+COMMAND_PREFIX+"equip HK416`: Returns HK416's exclusive equipment. You can switch results with the react buttons."
+				await client.send_message(message.channel, msg)
+			else:
+				print("Tried to get help for "+param+ " but there was none.")
+				await client.send_message(message.channel, "No help available for this command yet.")
+			return
+		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls and equipment.\n"
+		msg+="Running version "+version+"\n"
+		msg+= "Commands:\n**"+COMMAND_PREFIX+"search / "+COMMAND_PREFIX+"s**: Search a T-Doll and display all information. Example: `"+COMMAND_PREFIX+"search UMP45`\n"
+		msg+="**"+COMMAND_PREFIX+"search2**: The same as above but the message will be text instead of an embed. Example: `"+COMMAND_PREFIX+"search2 UMP9`\n"
+		msg+="**"+COMMAND_PREFIX+"equip / "+COMMAND_PREFIX+"e**: Search an equipment or fairy. **This command is in beta, some information is still missing.** Example: `"+COMMAND_PREFIX+"equip Armor Fairy`\n"
+		msg+="**"+COMMAND_PREFIX+"image / "+COMMAND_PREFIX+"i:** Search a T-Doll's image and display it, or search a doll's costume. Check this command's help for more information. Example: `"+COMMAND_PREFIX+"image UMP40`, `"+COMMAND_PREFIX+"image M16A1,Boss`\n"
+		if quotedex:
+			msg+="**"+COMMAND_PREFIX+"quote / "+COMMAND_PREFIX+"q:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
+		msg+="**"+COMMAND_PREFIX+"timer / "+COMMAND_PREFIX+"t:** List T-Dolls or equipment that match the production timer. Ex. `"+COMMAND_PREFIX+"timer 8:10` or `"+COMMAND_PREFIX+"timer 0:40`\n"
+		msg+="**"+COMMAND_PREFIX+"status:** See diagnostic information like the amount of dolls indexed, number of discords, etc\n"
+		msg+="**"+COMMAND_PREFIX+"exp:** Estimate how much exp is required to get from one level to another. Ex. `"+COMMAND_PREFIX+"exp 100,115`\n"
+		msg+="**"+COMMAND_PREFIX+"help / "+COMMAND_PREFIX+"h:** You're looking at it.\n"
+		msg+="For advanced help, do `"+COMMAND_PREFIX+"help <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
+		msg+="Invite: Check github page\n"
+		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
+		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord\n"
+		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!"
+		await client.send_message(message.channel, msg)
+	
+	#All commands below this require a parameter.
+	if param == None:
+		#await client.send_message(message.channel, "This command requires a parameter.")
+		print("Tried using a command without a parameter?")
+		return
+
+	if command == "search" or command == "s":
 		print("[SEARCH] "+param)
 		#if param.startswith("--"):
 		#	temp = param.split(" ")
@@ -593,26 +749,52 @@ async def on_message(message):
 		embed = dollInfo(doll)
 		await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
 		return
-	elif message.content.startswith(COMMAND_PREFIX+"search2 "):
-		param = message.content[(len(COMMAND_PREFIX+"search2")+1):].lower()
+	elif command == "search2":
 		doll, res = getSearchResult(param)
 		embed = dollInfo(doll)
 		await client.send_message(message.channel, content=embed2text(embed))
 		
-		
-	elif message.content.startswith(COMMAND_PREFIX+"equip "):
-		#The string "$gfsearch2 " is 11 characters, so cut it off
-		param = message.content[(len(COMMAND_PREFIX+"equip")+1):].lower()
+	elif command == "equip" or command == "e":
 		print("[EQUIP] "+param)
-		equip, res = getSearchResult(param,True)
-		embed = equipInfo(equip)
-		if res[0][1] == 100:
-			await client.send_message(message.channel, embed=embed)
-		else:
-			await client.send_message(message.channel, content="No equipment was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+		#Check if they searched a doll's name.
+		for doll in frontlinedex:
+			#If we got here, they searched a doll's name.
+			if param == doll['name'].lower():
+				#Add each exclusive equipment to this array, since there might be multiple exclusives.
+				equipmentResults = []
+				for equip in equipmentdex:
+					if 'valid' in equip and param in equip['valid'].lower():
+						equipmentResults.append(equip)
+				if len(equipmentResults) == 0:
+					await client.send_message(message.channel, content="Found no exclusive equipment for "+doll['name']+". (If this is wrong, please file a bug report)")
+				elif len(equipmentResults) > 1:
+					msgText = "Found "+str(len(equipmentResults))+" exclusive equipment for "+doll['name']+": " + ", ".join([e['name'] for e in equipmentResults])
+					msgText += "\n(1/"+str(len(equipmentResults))+")"
+					msg = await client.send_message(message.channel, content=msgText, embed=equipInfo(equipmentResults[0]))
+					#Yes I know you don't need to show the back button when it's the first selection but it's simpler this way
+					for e in ['⏪','⏩']:
+						try:
+							await client.add_reaction(msg,e)
+						except:
+							print(e+" is not a valid emoji")
+				else:
+					await client.send_message(message.channel, content="Found 1 exclusive equipment for "+doll['name']+".",embed=equipInfo(equipmentResults[0]))
+
+				return
+		try:
+			equip, res = getSearchResult(param,True)
+			embed = equipInfo(equip)
+			if res[0][1] == 100:
+				await client.send_message(message.channel, embed=embed)
+			else:
+				await client.send_message(message.channel, content="No equipment was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+		except Exception as e:
+			await client.send_message(message.channel, content="An error has occured while trying to get equipment data. Perhaps the data for this equipment is missing.")
+			print(traceback.print_exc())
+			print(embed2text(equipInfo(equip)))
 		return
-	elif message.content.startswith(COMMAND_PREFIX+"image "):
-		param = message.content[(len(COMMAND_PREFIX+"image")+1):].lower().split(",")
+	elif command == "image" or command == "i":
+		param = param.split(",")
 		#print("[IMAGE] "+param)
 		costumeType = False
 		if len(param) > 1:
@@ -661,8 +843,7 @@ async def on_message(message):
 		#print("WARN: No T-Doll was found for " + param)
 		#await client.send_message(message.channel, "No T-Doll was found with that name.")
 		#return
-	elif message.content.startswith(COMMAND_PREFIX+"timer "):
-		param = message.content[(len(COMMAND_PREFIX+"timer")+1):]
+	elif command == "timer" or command == "t":
 		print("[TIMER] "+param)
 		if param.count(':') == 1:
 			param = param +":00"
@@ -721,9 +902,8 @@ async def on_message(message):
 			else:
 				await client.send_message(message.channel, "T-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res))
 		return
-	elif message.content.startswith(COMMAND_PREFIX+"quote "):
+	elif command == "quote" or command == "q":
 		if quotedex:
-			param = message.content[(len(COMMAND_PREFIX+"quote")+1):].lower()
 			print("[QUOTE] "+param)
 			doll, res = getSearchResult(param)
 			if 'internalName' in doll:
@@ -740,8 +920,7 @@ async def on_message(message):
 			return
 		else:
 			await client.send_message(message.channel, "This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions.")
-	elif message.content.startswith(COMMAND_PREFIX+"exp "):
-		param = message.content[(len(COMMAND_PREFIX+"exp")+1):]
+	elif command == "exp":
 		print("[EXP] "+param)
 		start = None
 		end = None
@@ -775,61 +954,6 @@ async def on_message(message):
 		await client.send_message(message.channel,msg)
 		return
 			
-	elif message.content.startswith(COMMAND_PREFIX+"help"):
-		param = message.content[(len(COMMAND_PREFIX+"help")+1):].lower()
-		if len(param) > 0:
-			if param == "image":
-				msg = "**Summary:**\nSearch doll images and costumes. This command is in beta. Changing costumes with reaction buttons coming eventually.\n"
-				msg += "**Detailed Usage:**\n"
-				msg += "Press the fire react to show damage art for a doll. Remove the fire react to show normal art.\n"
-				msg += "Costumes are ordered from A to the number of costumes, with damage art coming after regular art. A is always default and B is always default damaged. If doll has a MOD 3 costume, C and D are MOD 3 and MOD 3 damaged.\n"
-				msg += "You can spell costumes wrong and still get the closest result.\n"
-				msg += "You can append the '--list' or '-l' flag to the end of your search to show all the costume names.\n"
-				msg += "**Examples:**\n"
-				msg += "`"+COMMAND_PREFIX+"image UMP45`: Show UMP45's default costume.\n"
-				msg += "`"+COMMAND_PREFIX+"image Skorpion, Crimson Starlet`: Show Skorpion's Crimson Starlet costume.\n"
-				msg += "`"+COMMAND_PREFIX+"image UMP9,B`: Show UMP9's damaged art, which is the second costume in the list.\n"
-				msg += "`"+COMMAND_PREFIX+"image M16A1,C`: Show M16A1's 3rd costume.\n"
-				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
-				msg += "You can also use numbers instead of letters. Ex. `"+COMMAND_PREFIX+"image UMP9,2`\n"
-				await client.send_message(message.channel, msg)
-			elif param == "timer":
-				msg = "Find a matching doll or equip for the timer. Fairies coming eventually.\n"
-				msg += "Usage examples:\n"
-				msg += "`"+COMMAND_PREFIX+"timer 0:40` or `"+COMMAND_PREFIX+"timer :40`: Search for a matching timer of 0 hours 40 mins\n"
-				msg += "`"+COMMAND_PREFIX+"timer 8:00` or `"+COMMAND_PREFIX+"timer 08:00` or `"+COMMAND_PREFIX+"timer 08:00:00`: Search for a matching timer of 8 hours\n"
-				await client.send_message(message.channel, msg)
-			elif param == "status":
-				msg = "Show the amount of servers this bot is in and the number of dolls and equipment indexed."
-				msg += "\nIf --extra is appended the lowest and highest production timers for weapons and dolls will be shown."
-				await client.send_message(message.channel, msg)
-			elif param == "exp":
-				msg = "Estimate how much exp is required to get from one level to another."
-				msg += "\nExample: `"+COMMAND_PREFIX+"exp 5,25`: Estimate how much exp and combat reports it takes to get from level 5 to 25."
-				msg += "\nExample: `"+COMMAND_PREFIX+"exp 75`: Estimate how much exp and combat reports it takes to get from level 1 to 75."
-				await client.send_message(message.channel,msg)
-				
-			else:
-				print("Tried to get help for "+param+ " but there was none.")
-				await client.send_message(message.channel, "No help available for this command yet.")
-			return
-		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls and equipment.\n"
-		msg+="Running version "+version+"\n"
-		msg+= "Commands:\n**"+COMMAND_PREFIX+"search**: Search a T-Doll and display all information. Example: `"+COMMAND_PREFIX+"search UMP45`\n"
-		msg+=COMMAND_PREFIX+"search2**: The same as above but the message will be text instead of an embed. Example: `"+COMMAND_PREFIX+"search2 UMP9`\n"
-		msg+="**"+COMMAND_PREFIX+"equip**: Search an equipment or fairy. **This command is in beta, some information is still missing.** Example: `"+COMMAND_PREFIX+"equip Armor Fairy`\n"
-		msg+="**"+COMMAND_PREFIX+"image:** Search a T-Doll's image and display it, or search a doll's costume. Check this command's help for more information. Example: `"+COMMAND_PREFIX+"image UMP40`, `"+COMMAND_PREFIX+"image M16A1,Boss`\n"
-		if quotedex:
-			msg+="**"+COMMAND_PREFIX+"quote:** List all the quotes for a doll. If the command doesn't fail, that is.\n"
-		msg+="**"+COMMAND_PREFIX+"timer:** List T-Dolls or equipment that match the production timer. Ex. `"+COMMAND_PREFIX+"timer 8:10` or `"+COMMAND_PREFIX+"timer 0:40`\n"
-		msg+="**"+COMMAND_PREFIX+"status:** See diagnostic information like the amount of dolls indexed, number of discords, etc\n"
-		msg+="**"+COMMAND_PREFIX+"exp:** Estimate how much exp is required to get from one level to another. Ex. `"+COMMAND_PREFIX+"exp 100,115`\n"
-		msg+="For advanced help, do `$gfhelp <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
-		msg+="Invite: Check github page\n"
-		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
-		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord\n"
-		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!"
-		await client.send_message(message.channel, msg)
 #startup...
 print("Starting up I.O.P. version "+version+"...")
 print("Discord.py version is "+discord.__version__)

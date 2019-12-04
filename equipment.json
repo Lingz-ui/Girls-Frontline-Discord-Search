@@ -197,13 +197,11 @@
         "stats": {
             "Crit Rate": {
                 "min": 4.0,
-                "max": 5.0,
-                "growth": -9999
+                "max": 5.0
             },
             "Evasion": {
                 "min": 2.0,
-                "max": 2.0,
-                "growth": -9999
+                "max": 2.0
             }
         }
     },
@@ -441,8 +439,7 @@
             },
             "Rate of Fire": {
                 "min": -2.0,
-                "max": -1.0,
-                "growth": -9999
+                "max": -1.0
             }
         }
     },
@@ -547,7 +544,7 @@
                 "min": -2.0
             },
             "Damage": {
-                "min": -9999
+                "min": "*3"
             },
             "Accuracy": {
                 "min": 1.0,
@@ -595,8 +592,7 @@
             },
             "Movement Speed": {
                 "min": -5.0,
-                "max": -3.0,
-                "growth": -9999
+                "max": -3.0
             }
         }
     },
@@ -863,8 +859,7 @@
                 "growth": 2.0
             },
             "Movement Speed": {
-                "min": -3.0,
-                "growth": -9999
+                "min": -3.0
             }
         }
     },
@@ -1038,8 +1033,8 @@
         "url": "/wiki/EOT_XPS3",
         "name": "EOT XPS3",
         "valid": "HK416 Only",
-        "img": "accessory_holo_N.png",
-        "type": "Scope",
+        "img": "accessory_holo_hk416.png",
+        "type": "Holographic Sight",
         "rating": 5,
         "slot": "Accessory",
         "description": "CH: EOT公司最新的全息瞄具，除了看起来酷外还附带了快速翻折的3倍镜，应用范围更为广泛，HK416专用。EN: EOT Company's latest holographic optic, aside from looking cool it also featured a quick-adjustable 3x scope, widen the usage situation, HK416 exclusive.Obtainable during the 2018 winter event [[Singularity]], can be obtained from E2-C4 Gager boss fight and E2-D4 Agent boss fight and Dragoon units.Minimum Level Requirement: 60",
@@ -1172,7 +1167,7 @@
                 "min": -2.0
             },
             "Damage": {
-                "min": -9999
+                "min": "*3"
             },
             "Accuracy": {
                 "min": 3.0,
@@ -1303,17 +1298,14 @@
         "stats": {
             "Damage": {
                 "min": 3.0,
-                "max": -9999,
                 "growth": 1.7
             },
             "Accuracy": {
                 "min": 3.0,
-                "max": -9999,
                 "growth": 1.7
             },
             "Evasion": {
                 "min": 12.0,
-                "max": -9999,
                 "growth": 1.67
             }
         }
@@ -1563,13 +1555,11 @@
         "stats": {
             "Evasion": {
                 "min": 6.0,
-                "max": 8.0,
-                "growth": -9999
+                "max": 8.0
             },
             "Damage": {
                 "min": -1.0,
-                "max": -2.0,
-                "growth": -9999
+                "max": -2.0
             }
         }
     },
@@ -1684,8 +1674,7 @@
         "stats": {
             "Evasion": {
                 "min": 2.0,
-                "max": 3.0,
-                "growth": -9999
+                "max": 3.0
             }
         }
     },
@@ -1853,8 +1842,8 @@
         "url": "/wiki/K6-24X56",
         "name": "K6-24X56",
         "valid": "Mosin-Nagant Only",
-        "img": "accessory_scope_N.png",
-        "type": "Scope",
+        "img": "accessory_scope_m1891.png",
+        "type": "Telescopic Sight",
         "rating": 5,
         "slot": "accessory",
         "description": "CN: 通過導軌加裝的現代光學瞄具，最大限度發揮出了莫辛納甘天生的精準素質，提升命中和暴擊機率. Can only be equipped by Mosin-Nagant.Obtained by reaching Stage 3 of Mosin-Nagant's Digimind Upgrade.Minimum Level Required: 115",
@@ -1980,25 +1969,20 @@
         "url": "/wiki/LED_Tactical_Flashlight",
         "name": "LED Tactical Flashlight",
         "valid": "MP5 Only",
-        "img": "accessory_holo_N.png",
-        "type": "Scope",
+        "img": "accessory_scope_mp5.png",
+        "type": "Holographic Sight",
         "rating": 5,
         "slot": "Accessory",
         "description": "CN: 高亮度的LED武器灯集成在整体更换的护木内，内置锂电池，可以通过护木上的开关快速操控。MP5专用。EN: Bright LED flashlight integrated within the weapon's arm guard, powered by lithium batteries, can be toggled by the switch located on the arm guard. MP5 exclusive.Obtained by reaching Stage 3 of MP5's Digimind Upgrade.Minimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
-                "min": 10.0,
-                "max": -9999,
-                "growth": -9999
+                "min": 10.0
             },
             "Accuracy": {
-                "min": 15.0,
-                "max": -9999,
-                "growth": -9999
+                "min": 15.0
             },
             "Rate of fire": {
-                "min": -4.0,
-                "max": -9999
+                "min": -4.0
             }
         }
     },
@@ -2054,7 +2038,7 @@
         "url": "/wiki/M2_Bipod",
         "name": "M2 Bipod",
         "valid": "M14 Only",
-        "img": "accessory_special_fn49.png",
+        "img": "accessory_special_M14.png",
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
@@ -2152,25 +2136,22 @@
         "url": "/wiki/MG4_Exclusive_MGO",
         "name": "MG4 Exclusive MGO",
         "valid": "MG4 Only",
-        "img": "accessory_reddot_N.png",
-        "type": "Scope",
+        "img": "accessory_reddot_mg4.png",
+        "type": "Red Dot Sight",
         "rating": 5,
         "slot": "Accessory",
         "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，更有德国陆军迷彩涂层，采购价格翻倍，MG4专用。Translated: Specialised optic optimised by TJC company for machinegun combat purposes, featuring 6x magnification and ballistic markings, as well as Bundeswehr issue camoflauge, resulting in the high procuring prices. MG4 exclusive.Special equipment awarded to players who are placed in the top 50% onward category of \"Chaotic Finale\", ranking map of [[Isomer]]. This equipment comes with max calibration.",
         "stats": {
             "Critical hit rate (%)": {
                 "min": 15.0,
-                "max": -9999,
                 "growth": 1.7
             },
             "Accuracy": {
                 "min": 18.0,
-                "max": -9999,
                 "growth": 2.0
             },
             "Rate of fire": {
-                "min": -1.0,
-                "max": -9999
+                "min": -1.0
             }
         }
     },
@@ -2178,8 +2159,8 @@
         "url": "/wiki/MGO_6X48",
         "name": "MGO 6X48",
         "valid": "LWMMG Only",
-        "img": "accessory_reddot_N.png",
-        "type": "Scope",
+        "img": "accessory_reddot_LWMMG.png",
+        "type": "Red Dot Sight",
         "rating": 5,
         "slot": "Accessory",
         "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，让远距离火力压制变得更有效率，LWMMG专用。Obtained by reaching Stage 3 of LWMMG's Digimind Upgrade.Minimum level requirement: Lvl 115",
@@ -2304,8 +2285,8 @@
         "url": "/wiki/MPL_M21",
         "name": "MPL M21",
         "valid": "Micro Uzi Only",
-        "img": "accessory_reddot_N.png",
-        "type": "Scope",
+        "img": "accessory_reddot_MicroUZI.png",
+        "type": "Red Dot Sight",
         "rating": 5,
         "slot": "Accessory",
         "description": "CN:专为中东地区艰苦环境设计的红点瞄具，拥有光导纤维和氚双重点亮的准星，无需电池，乌兹专用。Obtained by reaching Stage 3 of Micro Uzi's Digimind Upgrade.Minimum level requirement: Lvl 115",
@@ -2374,20 +2355,18 @@
         "url": "/wiki/No.32_MKI",
         "name": "No.32 MKI",
         "valid": "Lee-Enfield Only",
-        "img": "accessory_scope_N.png",
-        "type": "Scope",
+        "img": "accessory_scope_MLEMK1.png",
+        "type": "Telescopic Sight",
         "rating": 5,
         "slot": "Accessory",
         "description": "CN: 上世纪大战早期，专为李恩菲尔德no4 MKI(T)狙击步枪生产的光学瞄具，配有华丽的黄铜套筒，略微昏暗的镜片见证了无数生命的消逝，李恩菲尔德专用。EN: Telescopic sight produced exclusively for Lee Enfield No.1 MkI sniper rifle at the beginning of the last century, furnished with exquisite bronze finish. The faded scope lens witnessed countless lives lost. Lee Enfield exclusive.Special equipment awarded to players who are placed in the top 50% onward category of \"Meadow's End\", ranking map of [[Shattered Connexion]]. This equipment comes with max calibration.",
         "stats": {
             "Critical hit rate (%)": {
                 "min": 24.0,
-                "max": -9999,
                 "growth": 2.0
             },
             "Rate of fire": {
                 "min": 2.0,
-                "max": -9999,
                 "growth": 2.0
             }
         }
@@ -2515,13 +2494,10 @@
         "stats": {
             "Damage": {
                 "min": 5.0,
-                "max": -9999,
                 "growth": 1.6
             },
             "Night Penalty Reduction (%)": {
-                "min": 100.0,
-                "max": -9999,
-                "growth": -9999
+                "min": 100.0
             }
         }
     },
@@ -2577,8 +2553,7 @@
                 "growth": 1.5
             },
             "Movement Speed": {
-                "min": -3.0,
-                "max": -9999
+                "min": -3.0
             }
         }
     },
@@ -2644,13 +2619,10 @@
         "stats": {
             "Critical Damage": {
                 "min": 3.0,
-                "max": 4.0,
-                "growth": -9999
+                "max": 4.0
             },
             "MS": {
-                "min": -3.0,
-                "max": -9999,
-                "growth": -9999
+                "min": -3.0
             }
         }
     },
@@ -2677,7 +2649,7 @@
                 "min": -2.0
             },
             "Damage": {
-                "min": -9999
+                "min": "*3"
             },
             "Accuracy": {
                 "min": 8.0,
@@ -2767,7 +2739,7 @@
         "url": "/wiki/Tactical_Headband",
         "name": "Tactical Headband",
         "valid": "HK416 Only",
-        "img": "",
+        "img": "accessory_special_hk416.png",
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
@@ -2810,8 +2782,7 @@
                 "growth": 1.7
             },
             "Movement Speed": {
-                "min": -3.0,
-                "max": -9999
+                "min": -3.0
             }
         }
     },
@@ -2999,8 +2970,7 @@
                 "growth": 1.8
             },
             "Movement Speed": {
-                "min": -3.0,
-                "max": -9999
+                "min": -3.0
             }
         }
     },
@@ -3053,7 +3023,7 @@
                 "min": -2.0
             },
             "Damage": {
-                "min": -9999
+                "min": "*3"
             },
             "Accuracy": {
                 "min": 5.0,
