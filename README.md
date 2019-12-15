@@ -43,7 +43,7 @@ Supports listing all the costumes of a T-Doll with --list or -l.
 ### $gfhelp: List commands, version, how to contact me, etc.
 ### $gfquote: Show quotes from the dolls if you have CharacterVoice.json from the game files
 ### $gfstatus: Number of servers this bot is in.
-### $gf
+### $gfexp: Calculate experience required to level up.
 
 You can get more up to date command information by asking the discord bot or opening main.py and scrolling down to the help command. This is just a short summary.
 
@@ -57,7 +57,7 @@ To extract files: https://github.com/36base/girlsfrontline-resources-extract
 1. `git clone https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search.git`
 2. Set the GFBOT_TOKEN environment variable in your terminal with the token for the bot
 3. Open main.py, change COMMAND_PREFIX to whatever you want, the default is $gf
-4. If you have your own http server containing the dumped girls frontline images change PIC_DOMAIN, otherwise you can keep using mine.
+4. If you have your own http server containing the dumped girls frontline images change PIC_DOMAIN, otherwise you can keep using mine. (Please only use my CDN for unmodified versions of the bot. Bandwidth isn't free.)
 5. `pip3 install -r requirements.txt` (Windows users, the command might be 'pip' instead of pip3)
 6. `chmod +x run_forever.sh` (Windows users, you're on your own)
 7. `./run_forever.sh` if linux, otherwise `python3 main.py`.
@@ -67,7 +67,7 @@ To extract files: https://github.com/36base/girlsfrontline-resources-extract
 ![GFSearch Command](https://i.imgur.com/QAkHNF5.png)
 
 ## Legal stuff
-main.py is GPL, read LICENCE for more information.
+main.py is AGPLv3, read LICENCE for more information. If you run a modified version of this bot, you MUST release the source code.
 
 THIS PROGRAM IS NOT ENDORSED BY https://en.gfwiki.com. ALL DATA CONTAINED WITHIN girlsfrontline.json IS Ⓒ https://en.gfwiki.com AND LICENCED UNDER CC BY-SA 3.0. For more information, please read gf_json_LICENCE.
 

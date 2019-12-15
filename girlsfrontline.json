@@ -41359,6 +41359,61 @@
         ]
     },
     {
+        "url": "/wiki/MAT-49",
+        "num": -1,
+        "name": "MAT-49",
+        "type": "SMG",
+        "rating": 4,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "production": {
+            "stage": "Drops only from specific enemy units in 12-6 and 12-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
+        }
+    },
+    {
         "url": "/wiki/Zas_M76",
         "num": -1,
         "name": "Zas M76",
@@ -41605,7 +41660,17 @@
         "production": {
             "reward": "ACCESS DENIED"
         },
-        "img": "Destroyer.png"
+        "img": "Destroyer.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "Destroyer.png"
+            },
+            {
+                "name": "Alternate",
+                "pic": "DestroyerPlus.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Hunter",
@@ -41715,8 +41780,35 @@
         "production": {
             "reward": "Nice try, commander."
         },
+        "description": "Your faithful secretary. That also wants to bleed every last drop of cash out of you.",
         "internalName": "NPC_Kalina",
-        "img": "pic_NPC_Kalina.png"
+        "img": "pic_NPC_Kalina.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_NPC_Kalina.png"
+            },
+            {
+                "name": "Rays of Youth",
+                "pic": "NPC_Kalina_201.png"
+            },
+            {
+                "name": "Urban Freedom",
+                "pic": "NPC_Kalina_202.png"
+            },
+            {
+                "name": "Rock 'n' Spanner",
+                "pic": "NPC_Kalina_203.png"
+            },
+            {
+                "name": "Griffon Uniform",
+                "pic": "NPC_Kalina_204.png"
+            },
+            {
+                "name": "Reporter Disguise",
+                "pic": "NPC-KalinReporter.png"
+            }
+        ]
     },
     {
         "url": "",
@@ -41727,7 +41819,87 @@
         "production": {
             "reward": "?̖ͮ͗?̞̏?̄͂̉"
         },
+        "description": "||The true form of the Parapluie Virus. At least M4A1's isn't so bad, right?||",
         "internalName": "OGAS",
         "img": "Nyto_Isomer_Shadow.png"
+    },
+    {
+        "url": "",
+        "num": -1,
+        "rating": -1,
+        "name": "Nyto",
+        "type": "Nyto",
+        "production": {
+            "reward": "???"
+        },
+        "description": "||Evil things by Paradeus. You'll see various forms of them during the story.||",
+        "internalName": "Nyto",
+        "img": "Nyto.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "Nyto.png"
+            },
+            {
+                "name": "Black (Obelisk)",
+                "pic": "Nyto_black.png"
+            },
+            {
+                "name": "White (Polarday)",
+                "pic": "Nyto_white.png"
+            },
+            {
+                "name": "Gold",
+                "pic": "Nyto_Gold.png"
+            },
+            {
+                "name": "Silver",
+                "pic": "Nyto_Silver.png"
+            },
+            {
+                "name": "Abandoned",
+                "pic": "Abandoned_Isomer.png"
+            },
+            {
+                "name": "Shadow ||(OGAS)||",
+                "pic": "Nyto_Isomer_Shadow.png"
+            },
+            {
+                "name": "White (ISOMER version)",
+                "pic": "Nyto_Isomer_White.png"
+            }
+        ]
+    },
+    {
+        "url": "/wiki/Ange",
+        "num": -1,
+        "name": "Ange",
+        "type": "DEFY's Leader",
+        "rating": -1,
+        "production": {
+            "reward": "No, you can't play as Ange."
+        },
+        "img": "NPC-Ange.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "NPC-Ange.png"
+            },
+            {
+                "name": "Alternate",
+                "pic": "NPC-AngeStreet.png"
+            }
+        ]
+    },
+    {
+        "url": "",
+        "num": -1,
+        "name": "M16A1 (Sangvis Ferri)",
+        "type": "Sangvis Ferri Doll",
+        "rating": -1,
+        "production": {
+            "reward": "Never Ever"
+        },
+        "img": "pic_M16A1_Boss.png"
     }
 ]
