@@ -67,7 +67,7 @@ To extract files: https://github.com/36base/girlsfrontline-resources-extract
 ![GFSearch Command](https://i.imgur.com/QAkHNF5.png)
 
 ## Legal stuff
-main.py is AGPLv3, read LICENCE for more information. If you run a modified version of this bot, you MUST release the source code.
+main.py is AGPLv3, read LICENCE for more information. If you run a public modified version of this bot, you MUST release the source code.
 
 THIS PROGRAM IS NOT ENDORSED BY https://en.gfwiki.com. ALL DATA CONTAINED WITHIN girlsfrontline.json IS Ⓒ https://en.gfwiki.com AND LICENCED UNDER CC BY-SA 3.0. For more information, please read gf_json_LICENCE.
 
