@@ -1,3 +1,18 @@
+'''
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+'''
+
 import discord
 import json
 #Error handler
@@ -32,7 +47,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 3.0-20191203"
+version = "IOP 3.01-20191214"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -128,6 +143,8 @@ def num2stars(n):
 	st = ""
 	if n > 5:
 		return "⚝"
+	elif n < 1:
+		return st
 	for i in range(5):
 		if i < n:
 			st = st + "★"
@@ -210,7 +227,7 @@ def getAbility(doll, tag):
 #There was honestly no need to make this a function
 #if statements for all the things!!!!!!
 def dollInfo(doll):
-	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 1 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
+	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 0 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
 	embed.add_field(name="Type", value=doll['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(doll['baseStats']['hp']) + ", **DMG:** " + str(doll['baseStats']['dmg']) + ", **ACC:** " + str(doll['baseStats']['acc']) + ", **EVA:** " + str(doll['baseStats']['eva']) + ", **ROF:** " + str(doll['baseStats']['rof']))
@@ -264,6 +281,11 @@ def dollInfo(doll):
 	if 'tile_bonus' in doll:
 		embed.add_field(name="Tile Buff ", value=doll['tile_bonus'], inline=True)
 		embed.add_field(name="Tile Buff Ability", value=doll['bonus_desc'], inline=True)
+		
+	#Some NPCs have descriptions.
+	if 'description' in doll:
+		embed.add_field(name="Description", value=doll['description'], inline=False)
+		
 	#embed.add_field(name="Tile Bonus Types", value=doll['bonus_type'], inline=True)
 	if doll['name'] in bonusdex and 'flavor' in bonusdex[doll['name']]:
 		embed.set_footer(text=bonusdex[doll['name']]['flavor'])
@@ -282,6 +304,8 @@ def dollInfo(doll):
 	if 'img' in doll:
 		embed.set_image(url=PIC_DOMAIN+doll['img'])
 		print(PIC_DOMAIN+doll['img'])
+		
+
 	#print(embed)
 	#icons
 	#These are disabled because it makes the embed WORSE, not better. There's reduced space for text on mobile.
@@ -391,7 +415,7 @@ def equipInfo(equip):
 def embed2text(embed):
 	#print(embed.fields)
 	msg = ""
-	msg += "__" + embed.title + "__\n\n"
+	msg += "**" + embed.title + "**\n"
 	for field in embed.fields:
 		msg += "__"+field.name+"__\n"
 		msg += field.value + "\n"
@@ -401,11 +425,13 @@ def embed2text(embed):
 def getSearchResult(param, search_equip=False):
 	if search_equip == True:
 		res = process.extract(param, [equip['name'] for equip in equipmentdex], limit=3)
+		print("Result: "+res[0][0])
 		for equip in equipmentdex:
 			if res[0][0] == equip['name']:
 				return equip, res
 	else:
 		res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
+		print("Result: "+res[0][0])
 		for doll in frontlinedex:
 			if res[0][0] == doll['name']:
 				return doll, res
@@ -461,7 +487,7 @@ def getDollCostume(doll,costumeType):
 	#return False
 
 #Behold, a stateless function by parsing my own messages
-#Spaghetti code is subjective, ok?
+#You know what? It's better if it's stateless anyways
 @client.event
 async def on_reaction_add(reaction,user):
 	if user == client.user:
@@ -477,26 +503,27 @@ async def on_reaction_add(reaction,user):
 	
 	#Check if it's a search result
 	#This is an example of how NOT to write a function
-	if msg[0].startswith("No T-Doll was"):
-		dollList = msg[0].split(": ")[-1].split(", ")
-		if len(reaction.message.embeds) < 1:
-			print("What? search result was not an embed.")
-			return
-		curDollName = ' '.join(reaction.message.embeds[0].title.split(" - ")[1].split(' ')[:-1])
-		print(curDollName)
-		curIndex = 0
-		for d in dollList:
-			if curDollName == d:
-				break;
-			else:
-				curIndex+=1
-		print(str(curIndex))
+	#if msg[0].startswith("No T-Doll was"):
+	#	dollList = msg[0].split(": ")[-1].split(", ")
+	#	if len(reaction.message.embeds) < 1:
+	#		print("What? search result was not an embed.")
+	#		return
+	#	curDollName = ' '.join(reaction.message.embeds[0].title.split(" - ")[1].split(' ')[:-1])
+	#	print(curDollName)
+	#	curIndex = 0
+	#	for d in dollList:
+	#		if curDollName == d:
+	#			break;
+	#		else:
+	#			curIndex+=1
+	#	print(str(curIndex))
 		#UNFINISHED...
 	
 	#lame hack to check if it's a --list result
-	if msg[0].startswith("Costumes for"):
+	#We check backwards becuse the "No T doll was found blah blah" message might appear
+	if msg[-2].startswith("Costumes for"):
 		#print(msg[0].split(":")[0])
-		name = msg[0].split(":")[0][(len("Costumes for")+1):]
+		name = msg[-2].split(":")[0][(len("Costumes for")+1):]
 		print(name)
 		#Check if it's a letter emoji
 		print("Reacted with "+ reaction.emoji + " "+str(ord(reaction.emoji)))
@@ -516,7 +543,7 @@ async def on_reaction_add(reaction,user):
 	#Lame hack to check if this is a $gfimage command result
 	elif msg[-1].endswith(".png"):
 		if reaction.emoji == "🔥":
-			name,costume = msg[0].split(":")
+			name,costume = msg[-2].split(":")
 			
 			#If already damage art
 			if "(" in costume:
@@ -573,7 +600,9 @@ async def on_reaction_add(reaction,user):
 	else:
 		print("Someone reacted on a message the bot posted, but there's nothing for the bot to handle?")
 		print("User reacted with " +reaction.emoji)
+		print("==MESSAGE CONTENT==")
 		print(reaction.message.content)
+		print("==END CONTENT==")
 	return
 	
 #Behold, the above but it's the opposite
@@ -646,6 +675,7 @@ async def on_message(message):
 		#print("Attempting to change the status to " + st)
 		#await client.change_presence(game=discord.Game(name="testing"))
 		#print("done")
+		return
 	elif command == "help" or command == "h":
 		if param != None:
 			if param == "image":
@@ -706,6 +736,7 @@ async def on_message(message):
 		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord\n"
 		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!"
 		await client.send_message(message.channel, msg)
+		return
 	
 	#All commands below this require a parameter.
 	if param == None:
@@ -875,19 +906,32 @@ async def on_message(message):
 		print("stripped arg: "+param)
 		
 		res = []
-		#Speedup hack, equipment is always <1 hour and dolls are >= 1 hour so we search equipment if it's <1
+		#Speedup: Only search equipment if the time is <1 hour.
 		if int(param.split(':')[0]) == 0:
+			equipRes = []
 			for equip in equipmentdex:
 				if 'production' in equip and 'timer' in equip['production']:
 					if param == equip['production']['timer']:
-						res.append(equip)
-			if len(res) == 0:
-				await client.send_message(message.channel, "No equipment was found matching that production timer.")
+						equipRes.append(equip)
+			#We have to do the doll search afterwards, though!
+			for doll in frontlinedex:
+				if 'production' in doll and 'timer' in doll['production']:
+					if param == doll['production']['timer']:
+						res.append(doll)
+			
+			if len(equipRes) == 0 and len(res) == 0:
+				await client.send_message(message.channel, "No equipment or T-Doll was found matching that production timer.")
 				print("No match found for "+param)
-			elif len(res) == 1:
-				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=equipInfo(res[0]))
+			elif len(equipRes) == 1 and len(res) == 0:
+				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=equipInfo(equipRes[0]))
+			elif len(equipRes) == 0 and len(res) == 1:
+				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=dollInfo(res[0]))
 			else:
-				await client.send_message(message.channel, "Equipment that matches this production timer: "+", ".join(i['name'] for i in res))
+				msg = "Equipment that matches this production timer: "+", ".join(i['name'] for i in equipRes)
+				msg += "\nT-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res)
+				await client.send_message(message.channel, msg)
+			return
+			
 
 		else:
 			for doll in frontlinedex:
