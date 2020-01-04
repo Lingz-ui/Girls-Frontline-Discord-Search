@@ -39,9 +39,9 @@ DISCORD_TOKEN=os.environ['GFBOT_TOKEN']
 COMMAND_PREFIX="$gf"
 #The domain for the images extracted from Girls' Frontline. The bot will combine it like PIC_DOMAIN + "pic_ump45.png"
 #This is my server, in case you didn't already realize that.
-PIC_DOMAIN="http://103.28.71.152:999/pic/"
+PIC_DOMAIN="http://103.28.71.152:998/pic/"
 #The domain for the equipment images extracted from Girls' Frontline. The bot will combine it like PIC_EQUIP_DOMAIN + "pic_ump45.png"
-PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
+PIC_EQUIP_DOMAIN="http://103.28.71.152:998/pic/equip/"
 #The domain for the icons for dolls like the ones that are on the top left of the doll cards.
 #Icons are disabled because they make embeds worse.
 #ICON_DOMAIN="http://103.28.71.152:999/pic_compressed/icons/"
@@ -49,7 +49,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:999/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 3.01-20191214"
+version = "IOP 3.1-20200103"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -139,6 +139,22 @@ exp_table = [
 ]
 assert (len(exp_table) == 100 or len(exp_table) == 120),"Exp table is wrong size. Length was "+str(len(exp_table))
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    
+def printWarn(text):
+	print(bcolors.WARNING + text + bcolors.ENDC)
+
+def printError(text):
+	print(bcolors.FAIL + text + bcolors.ENDC)
+
 
 def num2stars(n):
 	#★☆
@@ -183,24 +199,6 @@ def serverCount():
 	numMembers -= len(client.servers)
 	print("Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders")
 	return "Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders"
-
-@client.event
-async def on_ready():
-	print("The bot is ready!")
-	#print(str(client.user.id))
-	#https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0
-	#Send Messages, Manage Messages, Embed Links, and Add Reactions is required for optimal use.
-	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+client.user.id+ "&scope=bot&permissions=26688")
-	await client.change_presence(game=discord.Game(name=serverCount()))
-
-@client.event
-async def on_server_join(server):
-	await client.change_presence(game=discord.Game(name=serverCount()))
-
-@client.event
-async def on_server_remove(server):
-	await client.change_presence(game=discord.Game(name=serverCount()))
-
 
 def getQuote(internalName, quoteType):
 	if quotedex:
@@ -424,6 +422,13 @@ def embed2text(embed):
 	return msg
 	
 
+"""
+param: doll or equip to search
+search_equip: if true, search equipment dex instead of doll dex.
+
+If result was an exact match, returns None as the second returned var as closest search was unnecessary.
+Otherwise the second returned var is a tuple of doll names and closeness percentage. Ex: [["M4A1",80],["M16A1",75],["M4 SOPMOD II",60]]
+"""
 def getSearchResult(param, search_equip=False):
 	if search_equip == True:
 		res = process.extract(param, [equip['name'] for equip in equipmentdex], limit=3)
@@ -432,8 +437,17 @@ def getSearchResult(param, search_equip=False):
 			if res[0][0] == equip['name']:
 				return equip, res
 	else:
+		for doll in frontlinedex:
+			if param == doll['name'].lower():
+				return doll, None
+			elif 'alias' in doll and param == doll['alias'].lower():
+				print(param+" -> "+doll['name'])
+				return doll, None
+		
 		res = process.extract(param, [doll['name'] for doll in frontlinedex], limit=3)
-		print("Result: "+res[0][0])
+		print("Result: "+res[0][0]+" ("+str(res[0][1])+"% match)")
+		if res[0][1] < 80:
+			printWarn("Match result was <80%, might be a doll that doesn't exist.")
 		for doll in frontlinedex:
 			if res[0][0] == doll['name']:
 				return doll, res
@@ -446,7 +460,7 @@ def getPossibleCostumes(doll):
 	msg = "Costumes for "+doll['name']+": "
 	for i in range(len(doll['costumes'])):
 		msg+=chr(i+65)+". **"+doll['costumes'][i]['name']+"**, "
-	msg+="\nYou can choose a costume by letter, name, or hitting the corresponding react button below. Ex. `"+doll['name']+", A` or `"+doll['name']+", "+doll['costumes'][1]['name']+"`"
+	msg+="\nYou can choose a costume by letter, name, number, or hitting the corresponding react button below. Ex. `"+doll['name']+", A` or `"+doll['name']+", "+doll['costumes'][1]['name']+"`"
 	return msg
 
 def getDollCostume(doll,costumeType):
@@ -485,8 +499,26 @@ def getDollCostume(doll,costumeType):
 		#else
 		return doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
 	#else
+	printWarn("T-Doll "+doll['name']+ " is missing image information.")
 	return "Sorry, either there are no images for this doll or the data is missing."
 	#return False
+
+@client.event
+async def on_ready():
+	print("The bot is ready!")
+	#print(str(client.user.id))
+	#https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0
+	#Send Messages, Manage Messages, Embed Links, and Add Reactions is required for optimal use.
+	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+client.user.id+ "&scope=bot&permissions=26688")
+	await client.change_presence(game=discord.Game(name=serverCount()))
+
+@client.event
+async def on_server_join(server):
+	await client.change_presence(game=discord.Game(name=serverCount()))
+
+@client.event
+async def on_server_remove(server):
+	await client.change_presence(game=discord.Game(name=serverCount()))
 
 #Behold, a stateless function by parsing my own messages
 #You know what? It's better if it's stateless anyways
@@ -594,17 +626,17 @@ async def on_reaction_add(reaction,user):
 				except:
 					print("Missing manage messages permissions...")
 				return
-		print("WTF? Can't find equipment!")
-		print("Selection: "+ str(selection))
-		print("Reaction: "+reaction.emoji)
+		printError("WTF? Can't find equipment!")
+		printError("Selection: "+ str(selection))
+		printError("Reaction: "+reaction.emoji)
 		print(equipmentList)
-		print("Msg:\n" + reaction.message.content)
+		printError("Msg:\n" + reaction.message.content)
 	else:
-		print("Someone reacted on a message the bot posted, but there's nothing for the bot to handle?")
-		print("User reacted with " +reaction.emoji)
-		print("==MESSAGE CONTENT==")
-		print(reaction.message.content)
-		print("==END CONTENT==")
+		printWarn("Someone reacted on a message the bot posted, but there's nothing for the bot to handle?")
+		printWarn("User reacted with " +reaction.emoji)
+		printWarn("==MESSAGE CONTENT==")
+		printWarn(reaction.message.content)
+		printWarn("==END CONTENT==")
 	return
 	
 #Behold, the above but it's the opposite
@@ -717,7 +749,7 @@ async def on_message(message):
 				msg += "\nExample: `"+COMMAND_PREFIX+"equip HK416`: Returns HK416's exclusive equipment. You can switch results with the react buttons."
 				await client.send_message(message.channel, msg)
 			else:
-				print("Tried to get help for "+param+ " but there was none.")
+				printWarn("Tried to get help for "+param+ " but there was none.")
 				await client.send_message(message.channel, "No help available for this command yet.")
 			return
 		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls and equipment.\n"
@@ -748,39 +780,28 @@ async def on_message(message):
 
 	if command == "search" or command == "s":
 		print("[SEARCH] "+param)
-		#if param.startswith("--"):
-		#	temp = param.split(" ")
-		#	flag = 
-		#	param = param[
-		#await client.send_message(message.channel, "World")
-		
-		#This junk really shouldn't be here in the first place since we can search for the closest result..
-		for doll in frontlinedex:
-			if param == doll['name'].lower():
-				embed = dollInfo(doll)
-				try:
-					await client.send_message(message.channel, embed=embed)
-				except Exception as e:
-					#await client.send_message(message.channel, content="An error occured and I am unable to complete your request. Perhaps you have embed permissions turned off?")
-					#print("An error occured. Here is the affected doll:")
-					#print(doll)
-					print(e)
-					try:
-						msg = "You are currently looking at a simplified view because embed permissions are turned off. Please turn them on, or if you always want a simplified view use search2. Most commands will not work with embeds turned off!\n"
-						msg += embed2text(embed)
-						await client.send_message(message.channel, content=msg)
-					except Exception as e:
-						print("Tried to send message twice and failed, giving up. Here is the affected doll:")
-						print(doll)
-				return
-			elif 'alias' in doll and param == doll['alias'].lower():
-				print(param+" -> "+doll['name'])
-				embed = dollInfo(doll)
-				await client.send_message(message.channel, embed=embed)
-				return
+
 		doll, res = getSearchResult(param)
 		embed = dollInfo(doll)
-		await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+
+		try:
+			if res:
+				await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+			else:
+				await client.send_message(message.channel, embed=embed)
+		except Exception as e:
+			#await client.send_message(message.channel, content="An error occured and I am unable to complete your request. Perhaps you have embed permissions turned off?")
+			#print("An error occured. Here is the affected doll:")
+			#print(doll)
+			print("Exception occured trying to send the message, probably missing embed permissions.")
+			print(e)
+			try:
+				msg = "You are currently looking at a simplified view because embed permissions are turned off. Please turn them on, or if you always want a simplified view use search2. Most commands will not work with embeds turned off!\n"
+				msg += embed2text(embed)
+				await client.send_message(message.channel, content=msg)
+			except Exception as e:
+				printError("Tried to send message twice and failed, giving up. Here is the affected doll:")
+				print(doll)
 		return
 	elif command == "search2":
 		doll, res = getSearchResult(param)
@@ -789,10 +810,10 @@ async def on_message(message):
 		
 	elif command == "equip" or command == "e":
 		print("[EQUIP] "+param)
-		#Check if they searched a doll's name.
+		#Check if they searched a doll's name. Only match exact names.
 		for doll in frontlinedex:
 			#If we got here, they searched a doll's name.
-			if param == doll['name'].lower():
+			if param == doll['name'].lower() or ('alias' in doll and param == doll['alias'].lower()):
 				#Add each exclusive equipment to this array, since there might be multiple exclusives.
 				equipmentResults = []
 				for equip in equipmentdex:
@@ -838,12 +859,10 @@ async def on_message(message):
 			param = " ".join(param.split(" ")[:-1])
 			costumeType = "--list"
 		print("[IMAGE] " +param + ", " +str(costumeType))
-		
 		doll, res = getSearchResult(param)
 		msgText = ""
-		if res[0][1] != 100:
+		if res:
 			msgText = "No T-Doll was found with that name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]) + "\n"
-
 		if costumeType == "--list" or costumeType == "-l":
 			if 'costumes' in doll:
 				msgText += getPossibleCostumes(doll)
@@ -856,6 +875,7 @@ async def on_message(message):
 					except:
 						print(emojis[i]+" is not a valid emoji")
 			else:
+				printWarn("T-Doll "+doll['name']+" is missing costume information.")
 				await client.send_message(message.channel, "Sorry, the data for this T-Doll is missing.")
 				return			
 		else:
@@ -960,8 +980,9 @@ async def on_message(message):
 					await client.send_message(message.channel, msg)
 				else:
 					await client.send_message(message.channel, "This doll has no quotes... Somehow.")
-					print(doll['name']+" with internalName "+doll['internalName']+ " has no quotes.")
+					printWarn(doll['name']+" with internalName "+doll['internalName']+ " has no quotes.")
 			else:
+				printWarn("T-Doll "+doll['name']+" is missing the internal name.")
 				await client.send_message(message.channel, "Sorry, the internal name for this doll is missing, which is needed to pull the quote from the data.")
 			return
 		else:
@@ -1004,18 +1025,15 @@ async def on_message(message):
 print("Starting up I.O.P. version "+version+"...")
 print("Discord.py version is "+discord.__version__)
 print("Reading the frontlinedex into memory. This may take a while.")
-file_obj = open("girlsfrontline.json", "r")
-frontlinedex = json.loads(file_obj.read())
-file_obj.close()
+with open("girlsfrontline.json", "r") as file_obj:
+	frontlinedex = json.loads(file_obj.read())
 print("Reading bonus information...")
-file_obj = open("gf_flavortext.json", "r")
-bonusdex = json.loads(file_obj.read())
-file_obj.close()
+with open("gf_flavortext.json", "r") as file_obj:
+	bonusdex = json.loads(file_obj.read())
 if os.path.isfile("NewCharacterVoice.json"):
 	print("Reading quotes.")
-	file_obj = open("NewCharacterVoice.json", "r")
-	quotedex = json.loads(file_obj.read())
-	file_obj.close()
+	with open("NewCharacterVoice.json", "r") as file_obj:
+		quotedex = json.loads(file_obj.read())
 	print(COMMAND_PREFIX+"quote is now available!")
 
 #Yeah it's stupid as fuck, I have to fix my scraper

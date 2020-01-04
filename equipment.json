@@ -134,6 +134,28 @@
         "stats": {}
     },
     {
+        "url": "/wiki/20mm_HEI",
+        "name": "20mm HEI",
+        "valid": "NTW-20 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 有什么比一颗高速飞向你的20mm弹头更可怕？答案是一颗20mm高爆引燃弹头，在你听到枪声前，你前面的墙壁，你，你身后的墙壁，墙壁后的邻居，就已经都不复存在了。EN: What is more scary than a rapidly approaching 20mm projectile? The answer is a 20mm high explosive incendiary projectile! Before you even hear the gun fire, the wall in front of you, yourself, the wall behind you, and your neighbour behind that wall are all gone!Obtained by reaching Stage 3 of NTW-20's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Armor Penetration": {
+                "min": 110.0,
+                "max": 120.0,
+                "growth": 1.5
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
         "url": "/wiki/7.92_KURZ",
         "name": "7.92 KURZ",
         "valid": "StG44 Only",
@@ -674,6 +696,28 @@
         }
     },
     {
+        "url": "/wiki/C96_Oak_Gunstock",
+        "name": "C96 Oak Gunstock",
+        "valid": "C96 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 专为毛瑟C96特制的实木枪托，提高连续射击时的精确度，装饰有与人形服饰配色向搭配的布套，打开后盖内部空间还可以收纳一些零食，真是太实用了。EN: A wooden gunstock made exclusively for Mauser C96, improves shooting accuracy during continuous firing. Decorated with the same coloured cloth as the doll's outfit, it can also carry some snacks in the hollowed out chamber, it's so useful!Obtained by reaching Stage 3 of C96's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Critical Hit Rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.7
+            },
+            "Evasion": {
+                "min": 8.0,
+                "max": 10.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
         "url": "/wiki/Camouflage_Cape",
         "name": "Camouflage Cape",
         "valid": "RF Only",
@@ -886,6 +930,27 @@
             "Rate of Fire": {
                 "min": -4.0,
                 "max": -2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/DO_Reflex_Optic",
+        "name": "DO Reflex Optic",
+        "valid": "Beretta Model 38 Only",
+        "img": "accessory_holo_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 一款搭载7MOA准星的反射瞄具，因其小巧轻便的特性而在战前的民用市场中十分流行，通过焊接的皮轨装在贝雷塔38上，极大地提高了使用体验。EN: A Reflex Optic equipped with a sight of 7MOA accuracy, the small and compactness made it super popular in civilian market before the war broke out. It is attached on top of Picatinny rails, welded on top of Beretta 38, greatly improves user experience.Obtained by reaching Stage 3 of Beretta Model 38's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 11.0
+            },
+            "Accuracy": {
+                "min": 14.0
+            },
+            "Rate of fire": {
+                "min": -4.0
             }
         }
     },
@@ -2082,6 +2147,17 @@
         }
     },
     {
+        "url": "/wiki/M9_BC2_Grips",
+        "name": "M9 BC2 Grips",
+        "valid": "M9 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: M9专用的改装聚合物战术握把，集成了皮卡汀尼下导轨，在提高控制力的同时增加了战术配件的灵活性。EN: M9 exclusive modified synthetic material tactical grip, the molded picatinny lower rails also adds accessory compatibilities to the handgun.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/M993_Armor-Piercing_Ammo",
         "name": "M993 Armor-Piercing Ammo",
         "valid": "RF and MG",
@@ -2106,6 +2182,17 @@
                 "growth": 1.5
             }
         }
+    },
+    {
+        "url": "/wiki/MAX10_Upper_Receiver",
+        "name": "MAX10 Upper Receiver",
+        "valid": "MAC-10 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: MAC10专用的改装上机匣，增加了可灵活配置装具的导轨系统的同时降低了射速，使其更容易被火控模块控制，最重要的还是看上去非常酷。EN: A modified upper receiver for MAC10, added accessory rails for combat accessory compatibilities while lowering the rate of fire, also made it easier to control for the doll's fire control module. Most importantly it looks really cool.",
+        "stats": {}
     },
     {
         "url": "/wiki/Mechanical_Arm",
@@ -2627,6 +2714,28 @@
         }
     },
     {
+        "url": "/wiki/RFB_Forward_Rail_Guard",
+        "name": "RFB Forward Rail Guard",
+        "valid": "RFB Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 牛犊式布局的突击步枪安装配件经常面临导轨不足的困境，多亏了KTC原厂推出的3英寸四导轨护木，战术圣诞树再也不是传统布局枪支的专属了，RFB专用。EN: When equipping Bullpup style assault rifles with accessories, user often found they are short on available rails. After KTC introduced the 3 inch four direction railed arm guard, tactical christmas tree is no longer an exclusive title for the conventional layout rifles. RFB exclusive.",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/RPD_Infantry_Webbing",
+        "name": "RPD Infantry Webbing",
+        "valid": "RPD Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 战前某东方阵营生产的单兵装备，轻便实用，在部分爱好者中有很高的人气，治安任务时候经常被人以高价索要，令RPD十分困扰。EN: An individual infantry gear produced by a certain eastern faction prior to the war, it's highly rated amongst the users due to its light weight and usefulness. However what troubles RPD is that while she is on missions, people often approach and offer to buy this item for exordinary prices.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/SABOT_Slug",
         "name": "SABOT Slug",
         "valid": "SG Only",
@@ -2736,6 +2845,55 @@
         }
     },
     {
+        "url": "/wiki/Tactical_Ahoge",
+        "name": "Tactical Ahoge",
+        "valid": "Stechkin Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 指挥部的大家都很在意斯捷奇金那会灵活摆动的闪电形呆毛，背地里觉得这个作为维持人设的特征未免过于抢眼，直到有一天P7发现斯捷奇金睡觉时将呆毛摘下放在一旁充电。EN: Everyone at the headquarters thought Stechkin's side-to-side moving ahoge was pretty cool, as well as thinking that it might had been too eye-catching for a character setting... until oneday P7 found out that whenever Stechkin sleeps, she would take off the ahoge and charge it by her bed side.Obtained by reaching Stage 3 of Stechkin's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "stats": {
+            "Critical Hit Rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/Tactical_Earphones",
+        "name": "Tactical Earphones",
+        "valid": "TAR-21 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: TAR21标志性的头部装备，看起来像兔耳的内部集成了大量传感器，可以在掩体后不暴露自己的同时精确定位目标。EN: TAR21's signature head gear, the rabbit like ear piece is packed with sensor arrays, it helps locating targets without exposing herself to line of fires.Obtained as a drop by certain enemies in 10-4M as well as the boss and by S-ranking the map or auto-battling itMinimum Level Required: 80",
+        "stats": {
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 1.5
+            },
+            "Rate of Fire": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 1.5
+            },
+            "Evasion": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
         "url": "/wiki/Tactical_Headband",
         "name": "Tactical Headband",
         "valid": "HK416 Only",
@@ -2840,6 +2998,17 @@
                 "max": -1.0
             }
         }
+    },
+    {
+        "url": "/wiki/Type_100_Folding_Stock",
+        "name": "Type 100 Folding Stock",
+        "valid": "Type 100 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 专为伞兵作战设计的折叠枪托，比较特别的是相比其他枪支常见的金属折叠托，樱花沿用了木质枪托配合金属活页折叠结构，樱花专用。EN: A folding stock exclusively designed for airborne operations, the main difference between this folding stock and the conventional full metal types, is that only the folding mechanism is metalic, the stock itself is made of wood. Sakura (Type 100) exclusive.",
+        "stats": {}
     },
     {
         "url": "/wiki/Type_2_Armor_Plate",

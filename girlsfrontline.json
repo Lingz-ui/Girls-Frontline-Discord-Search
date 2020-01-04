@@ -458,11 +458,11 @@
                 "pic": "pic_AA12_D.png"
             },
             {
-                "name": "The Sun Never Rises",
+                "name": "2403",
                 "pic": "pic_AA12_2403.png"
             },
             {
-                "name": "The Sun Never Rises (Damaged)",
+                "name": "2403 (Damaged)",
                 "pic": "pic_AA12_2403_D.png"
             }
         ]
@@ -971,11 +971,11 @@
                 "pic": "pic_AEK999_D.png"
             },
             {
-                "name": "Babe Driver",
+                "name": "1505",
                 "pic": "pic_AEK999_1505.png"
             },
             {
-                "name": "Babe Driver (Damaged)",
+                "name": "1505 (Damaged)",
                 "pic": "pic_AEK999_1505_D.png"
             }
         ]
@@ -1083,11 +1083,11 @@
                 "pic": "pic_AK12_D.png"
             },
             {
-                "name": "Age of Slushies",
+                "name": "2402",
                 "pic": "pic_AK12_2402.png"
             },
             {
-                "name": "Age of Slushies (Damaged)",
+                "name": "2402 (Damaged)",
                 "pic": "pic_AK12_2402_D.png"
             },
             {
@@ -1205,11 +1205,11 @@
                 "pic": "pic_AK47_D.png"
             },
             {
-                "name": "Lord of War",
+                "name": "0501",
                 "pic": "pic_AK47_501.png"
             },
             {
-                "name": "Lord of War (Damaged)",
+                "name": "0501 (Damaged)",
                 "pic": "pic_AK47_501_D.png"
             }
         ]
@@ -1329,11 +1329,11 @@
                 "pic": "pic_AK74U_D.png"
             },
             {
-                "name": "Lily of the Valley",
+                "name": "3002",
                 "pic": "pic_AK74U_3002.png"
             },
             {
-                "name": "Lily of the Valley (Damaged)",
+                "name": "3002 (Damaged)",
                 "pic": "pic_AK74U_3002_D.png"
             }
         ]
@@ -1437,11 +1437,11 @@
                 "pic": "pic_AN94_3303_D.png"
             },
             {
-                "name": "The Diving Bell and the Doll",
+                "name": "2404",
                 "pic": "pic_AN94_2404.png"
             },
             {
-                "name": "The Diving Bell and the Doll (Damaged)",
+                "name": "2404 (Damaged)",
                 "pic": "pic_AN94_2404_D.png"
             }
         ]
@@ -1631,19 +1631,19 @@
                 "pic": "pic_ART556_D.png"
             },
             {
-                "name": "White Cabbage",
+                "name": "1803",
                 "pic": "pic_ART556_1803.png"
             },
             {
-                "name": "White Cabbage (Damaged)",
+                "name": "1803 (Damaged)",
                 "pic": "pic_ART556_1803_D.png"
             },
             {
-                "name": "Little Chimney Sweeper",
+                "name": "2803",
                 "pic": "pic_ART556_2803.png"
             },
             {
-                "name": "Little Chimney Sweeper (Damaged)",
+                "name": "2803 (Damaged)",
                 "pic": "pic_ART556_2803_D.png"
             }
         ]
@@ -1842,11 +1842,11 @@
                 "pic": "pic_ASVALMod_D.png"
             },
             {
-                "name": "Fireworks of Dreams",
+                "name": "2907",
                 "pic": "pic_ASVAL_2907.png"
             },
             {
-                "name": "Fireworks of Dreams (Damaged)",
+                "name": "2907 (Damaged)",
                 "pic": "pic_ASVAL_2907_D.png"
             }
         ]
@@ -2582,19 +2582,19 @@
                 "pic": "pic_Ameli_D.png"
             },
             {
-                "name": "Little Gift Tree",
+                "name": "1605",
                 "pic": "pic_Ameli_1605.png"
             },
             {
-                "name": "Little Gift Tree (Damaged)",
+                "name": "1605 (Damaged)",
                 "pic": "pic_Ameli_1605_D.png"
             },
             {
-                "name": "Ameli's Receive",
+                "name": "2409",
                 "pic": "pic_Ameli_2409.png"
             },
             {
-                "name": "Ameli's Receive (Damaged)",
+                "name": "2409 (Damaged)",
                 "pic": "pic_Ameli_2409_D.png"
             }
         ]
@@ -3393,11 +3393,11 @@
                 "pic": "pic_BrenMKMod_D.png"
             },
             {
-                "name": "Jack the Trine",
+                "name": "2605",
                 "pic": "pic_BrenMK_2605.png"
             },
             {
-                "name": "Jack the Trine (Damaged)",
+                "name": "2605 (Damaged)",
                 "pic": "pic_BrenMK_2605_D.png"
             }
         ]
@@ -3831,6 +3831,98 @@
         ]
     },
     {
+        "url": "/wiki/C-93",
+        "num": 285,
+        "name": "C-93",
+        "type": "HG",
+        "rating": 5,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 32,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 12,
+            "eva": 12,
+            "acc": 8,
+            "rof": 43,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 63,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 33,
+            "eva": 98,
+            "acc": 62,
+            "rof": 64,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Pigeonwing Echoes",
+            "icon": "c93G",
+            "text": "[Passive]: Grants self +3 Butterflies at battle start. When an ally receives debuffs (fairy skills excluded), increase that ally's rate of fire by ($pass_value)% for 4 seconds. This effect does not stack and will not trigger other dolls passives and has a cooldown of 3 seconds per ally. When self receives debuffs, activate passive effect for self and grant self 1 additional Butterfly, up to a maximum of 6. [Active]: Increase all allies' damage by ($dam_value)% for ($duration) seconds and consumes all Butterflies. For each Butterfly consumed, increases an ally's rate of fire by ($pass_value)%, prioritising unaffected allies and the highest dps, stacks with passive effect. (Max 2 stacks per doll). Once skill expires, grants self +3 Butterflies.",
+            "initial": "5",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "dam_value": [
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18"
+            ],
+            "pass_value": [
+                "3",
+                "4",
+                "4",
+                "5",
+                "5",
+                "6",
+                "6",
+                "7",
+                "7",
+                "8"
+            ],
+            "duration": [
+                "5",
+                "5.3",
+                "5.7",
+                "6",
+                "6.3",
+                "6.7",
+                "7",
+                "7.3",
+                "7.7",
+                "8"
+            ]
+        },
+        "tile_bonus": "🔶⬛⬛\n🔶🔶⬛\n🔷🔶🔶",
+        "bonus_desc": "Affects all guns\nIncreases damage by 12%(x1) / 15%(x2) / 18%(x3) / 21%(x4) / 24%(x5)\nIncreases accuracy by 30%(x1) / 37%(x2) / 45%(x3) / 52%(x4) / 60%(x5)",
+        "production": {
+            "timer": "1:09:00"
+        }
+    },
+    {
         "url": "/wiki/C-MS",
         "num": 213,
         "name": "C-MS",
@@ -3941,11 +4033,11 @@
                 "pic": "pic_CBJMS_3503_D.png"
             },
             {
-                "name": "The Wonderful Adventures of Geese",
+                "name": "2205",
                 "pic": "pic_CBJMS_2205.png"
             },
             {
-                "name": "The Wonderful Adventures of Geese (Damaged)",
+                "name": "2205 (Damaged)",
                 "pic": "pic_CBJMS_2205_D.png"
             }
         ]
@@ -4457,6 +4549,98 @@
         "bonus_desc": "Affects machine guns\nIncreases damage by 18%\nIncreases accuracy by 12%",
         "production": {
             "timer": "8:15:00"
+        },
+        "internalName": "HKCAWS",
+        "img": "pic_HKCAWS.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_HKCAWS.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_HKCAWS_D.png"
+            }
+        ]
+    },
+    {
+        "url": "/wiki/CR-21",
+        "num": 288,
+        "name": "CR-21",
+        "type": "AR",
+        "rating": 4,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 55,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 18,
+            "eva": 6,
+            "acc": 7,
+            "rof": 55,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 110,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 48,
+            "eva": 43,
+            "acc": 52,
+            "rof": 81,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Muscle Pump",
+            "icon": "CR21",
+            "text": "Increases damage by ($dam_value)% and prioritise enemies with the highest damage for ($duration) seconds.",
+            "initial": "5",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "dam_value": [
+                "30",
+                "33",
+                "37",
+                "40",
+                "43",
+                "47",
+                "50",
+                "53",
+                "57",
+                "60"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases accuracy by 50%\nIncreases evasion by 12%",
+        "production": {
+            "timer": "3:35:00"
         }
     },
     {
@@ -4759,11 +4943,11 @@
                 "pic": "pic_CZ52_D.png"
             },
             {
-                "name": "Tweedia",
+                "name": "3007",
                 "pic": "pic_CZ52_3007.png"
             },
             {
-                "name": "Tweedia (Damaged)",
+                "name": "3007 (Damaged)",
                 "pic": "pic_CZ52_3007_D.png"
             }
         ]
@@ -4848,19 +5032,19 @@
                 "pic": "pic_CZ75_D.png"
             },
             {
-                "name": "Winter Forager",
+                "name": "1604",
                 "pic": "pic_CZ75_1604.png"
             },
             {
-                "name": "Winter Forager (Damaged)",
+                "name": "1604 (Damaged)",
                 "pic": "pic_CZ75_1604_D.png"
             },
             {
-                "name": "Monks Cress",
+                "name": "3005",
                 "pic": "pic_CZ75_3005.png"
             },
             {
-                "name": "Monks Cress (Damaged)",
+                "name": "3005 (Damaged)",
                 "pic": "pic_CZ75_3005_D.png"
             }
         ]
@@ -4980,19 +5164,19 @@
                 "pic": "pic_Carcano1891_D.png"
             },
             {
-                "name": "Bells of Beginning",
+                "name": "2905",
                 "pic": "pic_Carcano1891_2905.png"
             },
             {
-                "name": "Bells of Beginning (Damaged)",
+                "name": "2905 (Damaged)",
                 "pic": "pic_Carcano1891_2905_D.png"
             },
             {
-                "name": "Little Brave Cano",
+                "name": "2201",
                 "pic": "pic_Carcano1891_2201.png"
             },
             {
-                "name": "Little Brave Cano (Damaged)",
+                "name": "2201 (Damaged)",
                 "pic": "pic_Carcano1891_2201_D.png"
             }
         ]
@@ -5111,7 +5295,35 @@
                 4000,
                 1000
             ]
-        }
+        },
+        "internalName": "Carcano1938",
+        "img": "pic_Carcano1938.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_Carcano1938.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_Carcano1938_D.png"
+            },
+            {
+                "name": "2202",
+                "pic": "pic_Carcano1938_2202.png"
+            },
+            {
+                "name": "2202 (Damaged)",
+                "pic": "pic_Carcano1938_2202_D.png"
+            },
+            {
+                "name": "2904",
+                "pic": "pic_Carcano1938_2904.png"
+            },
+            {
+                "name": "2904 (Damaged)",
+                "pic": "pic_Carcano1938_2904_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Chauchat",
@@ -5204,7 +5416,19 @@
         "bonus_desc": "Affects shotguns\nIncreases rate of fire by 12%\nIncreases armour by 12%",
         "production": {
             "timer": "6:25:00"
-        }
+        },
+        "internalName": "ChauchatM1915",
+        "img": "pic_ChauchatM1915.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_ChauchatM1915.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_ChauchatM1915_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Colt_Revolver",
@@ -5313,19 +5537,19 @@
                 "pic": "pic_M1873Mod_D.png"
             },
             {
-                "name": "Queen of Miracles",
+                "name": "2105",
                 "pic": "pic_M1873_2105.png"
             },
             {
-                "name": "Queen of Miracles (Damaged)",
+                "name": "2105 (Damaged)",
                 "pic": "pic_M1873_2105_D.png"
             },
             {
-                "name": "Wish Upon A Star",
+                "name": "0301",
                 "pic": "pic_M1873_301.png"
             },
             {
-                "name": "Wish Upon A Star (Damaged)",
+                "name": "0301 (Damaged)",
                 "pic": "pic_M1873_301_D.png"
             }
         ]
@@ -5753,27 +5977,27 @@
                 "pic": "pic_Contender_D.png"
             },
             {
-                "name": "Dragon's Son",
+                "name": "3201",
                 "pic": "pic_Contender_3201.png"
             },
             {
-                "name": "Dragon's Son (Damaged)",
+                "name": "3201 (Damaged)",
                 "pic": "pic_Contender_3201_D.png"
             },
             {
-                "name": "Opera Ghost",
+                "name": "1502",
                 "pic": "pic_Contender_1502.png"
             },
             {
-                "name": "Opera Ghost (Damaged)",
+                "name": "1502 (Damaged)",
                 "pic": "pic_Contender_1502_D.png"
             },
             {
-                "name": "Flowerful Maid",
+                "name": "2302",
                 "pic": "pic_Contender_2302.png"
             },
             {
-                "name": "Flowerful Maid (Damaged)",
+                "name": "2302 (Damaged)",
                 "pic": "pic_Contender_2302_D.png"
             }
         ]
@@ -6226,19 +6450,19 @@
                 "pic": "pic_DSR50_D.png"
             },
             {
-                "name": "Highest Bid",
+                "name": "2101",
                 "pic": "pic_DSR50_2101.png"
             },
             {
-                "name": "Highest Bid (Damaged)",
+                "name": "2101 (Damaged)",
                 "pic": "pic_DSR50_2101_D.png"
             },
             {
-                "name": "Red Peony",
+                "name": "1801",
                 "pic": "pic_DSR50_1801.png"
             },
             {
-                "name": "Red Peony (Damaged)",
+                "name": "1801 (Damaged)",
                 "pic": "pic_DSR50_1801_D.png"
             }
         ]
@@ -6519,11 +6743,11 @@
                 "pic": "pic_EVO3_D.png"
             },
             {
-                "name": "White Night Star",
+                "name": "2109",
                 "pic": "pic_EVO3_2109.png"
             },
             {
-                "name": "White Night Star (Damaged)",
+                "name": "2109 (Damaged)",
                 "pic": "pic_EVO3_2109_D.png"
             }
         ]
@@ -6638,11 +6862,11 @@
                 "pic": "pic_F1_D.png"
             },
             {
-                "name": "Dark Sorceress Academy",
+                "name": "2606",
                 "pic": "pic_F1_2606.png"
             },
             {
-                "name": "Dark Sorceress Academy (Damaged)",
+                "name": "2606 (Damaged)",
                 "pic": "pic_F1_2606_D.png"
             }
         ]
@@ -6832,27 +7056,27 @@
                 "pic": "pic_FNFAL_D.png"
             },
             {
-                "name": "Winter Supply",
+                "name": "0308",
                 "pic": "pic_FNFAL_308.png"
             },
             {
-                "name": "Winter Supply (Damaged)",
+                "name": "0308 (Damaged)",
                 "pic": "pic_FNFAL_308_D.png"
             },
             {
-                "name": "The Big Day",
+                "name": "0607",
                 "pic": "pic_FNFAL_607.png"
             },
             {
-                "name": "The Big Day (Damaged)",
+                "name": "0607 (Damaged)",
                 "pic": "pic_FNFAL_607_D.png"
             },
             {
-                "name": "FAL's Summer",
+                "name": "2406",
                 "pic": "pic_FNFAL_2406.png"
             },
             {
-                "name": "FAL's Summer (Damaged)",
+                "name": "2406 (Damaged)",
                 "pic": "pic_FNFAL_2406_D.png"
             }
         ]
@@ -6938,11 +7162,11 @@
                 "pic": "pic_FAMAS_D.png"
             },
             {
-                "name": "Guns N' Side Boxes",
+                "name": "2604",
                 "pic": "pic_FAMAS_2604.png"
             },
             {
-                "name": "Guns N' Side Boxes (Damaged)",
+                "name": "2604 (Damaged)",
                 "pic": "pic_FAMAS_2604_D.png"
             }
         ]
@@ -7654,11 +7878,11 @@
                 "pic": "pic_FNFNC_D.png"
             },
             {
-                "name": "Candy Thief",
+                "name": "1406",
                 "pic": "pic_FNFNC_1406.png"
             },
             {
-                "name": "Candy Thief (Damaged)",
+                "name": "1406 (Damaged)",
                 "pic": "pic_FNFNC_1406_D.png"
             }
         ]
@@ -7867,11 +8091,11 @@
                 "pic": "pic_FP6_D.png"
             },
             {
-                "name": "Satellite of Love",
+                "name": "2804",
                 "pic": "pic_FP6_2804.png"
             },
             {
-                "name": "Satellite of Love (Damaged)",
+                "name": "2804 (Damaged)",
                 "pic": "pic_FP6_2804_D.png"
             }
         ]
@@ -8073,35 +8297,35 @@
                 "pic": "pic_FN57_D.png"
             },
             {
-                "name": "Adventures of Little Finn",
+                "name": "2203",
                 "pic": "pic_FN57_2203.png"
             },
             {
-                "name": "Adventures of Little Finn (Damaged)",
+                "name": "2203 (Damaged)",
                 "pic": "pic_FN57_2203_D.png"
             },
             {
-                "name": "Cruise Queen",
+                "name": "1109",
                 "pic": "pic_FN57_1109.png"
             },
             {
-                "name": "Cruise Queen (Damaged)",
+                "name": "1109 (Damaged)",
                 "pic": "pic_FN57_1109_D.png"
             },
             {
-                "name": "Blue Christmas",
+                "name": "2805",
                 "pic": "pic_FN57_2805.png"
             },
             {
-                "name": "Blue Christmas (Damaged)",
+                "name": "2805 (Damaged)",
                 "pic": "pic_FN57_2805_D.png"
             },
             {
-                "name": "Smile of Acceptance",
+                "name": "1902",
                 "pic": "pic_FN57_1902.png"
             },
             {
-                "name": "Smile of Acceptance (Damaged)",
+                "name": "1902 (Damaged)",
                 "pic": "pic_FN57_1902_D.png"
             }
         ]
@@ -8198,19 +8422,19 @@
                 "pic": "pic_G11_D.png"
             },
             {
-                "name": "Dragon Jr.",
+                "name": "2502",
                 "pic": "pic_G11_2502.png"
             },
             {
-                "name": "Dragon Jr. (Damaged)",
+                "name": "2502 (Damaged)",
                 "pic": "pic_G11_2502_D.png"
             },
             {
-                "name": "Schönstes Geschenk",
+                "name": "1602",
                 "pic": "pic_G11_1602.png"
             },
             {
-                "name": "Schönstes Geschenk (Damaged)",
+                "name": "1602 (Damaged)",
                 "pic": "pic_G11_1602_D.png"
             },
             {
@@ -8218,11 +8442,11 @@
                 "pic": "pic_G11_rugged.png"
             },
             {
-                "name": "Neet Zombie",
+                "name": "0009",
                 "pic": "pic_G11_9.png"
             },
             {
-                "name": "Neet Zombie (Damaged)",
+                "name": "0009 (Damaged)",
                 "pic": "pic_G11_9_D.png"
             },
             {
@@ -8437,43 +8661,43 @@
                 "pic": "pic_G36C_3802_D.png"
             },
             {
-                "name": "Sommelier",
+                "name": "1507",
                 "pic": "pic_G36_1507.png"
             },
             {
-                "name": "Sommelier (Damaged)",
+                "name": "1507 (Damaged)",
                 "pic": "pic_G36_1507_D.png"
             },
             {
-                "name": "Ode to Summer",
+                "name": "1202",
                 "pic": "pic_G36C_1202.png"
             },
             {
-                "name": "Ode to Summer (Damaged)",
+                "name": "1202 (Damaged)",
                 "pic": "pic_G36C_1202_D.png"
             },
             {
-                "name": "Pure White Cornflower",
+                "name": "1904",
                 "pic": "pic_G36_1904.png"
             },
             {
-                "name": "Pure White Cornflower (Damaged)",
+                "name": "1904 (Damaged)",
                 "pic": "pic_G36_1904_D.png"
             },
             {
-                "name": "Every Child's X'mas Dream",
+                "name": "2806",
                 "pic": "pic_G36_2806.png"
             },
             {
-                "name": "Every Child's X'mas Dream (Damaged)",
+                "name": "2806 (Damaged)",
                 "pic": "pic_G36_2806_D.png"
             },
             {
-                "name": "Battlefield Baker",
+                "name": "1303",
                 "pic": "pic_G3_1303.png"
             },
             {
-                "name": "Battlefield Baker (Damaged)",
+                "name": "1303 (Damaged)",
                 "pic": "pic_G3_1303_D.png"
             },
             {
@@ -8485,27 +8709,27 @@
                 "pic": "pic_G36_3603_D.png"
             },
             {
-                "name": "You Who Steps Up",
+                "name": "3103",
                 "pic": "pic_G36C_3103.png"
             },
             {
-                "name": "You Who Steps Up (Damaged)",
+                "name": "3103 (Damaged)",
                 "pic": "pic_G36C_3103_D.png"
             },
             {
-                "name": "50 Days with Gr G36",
+                "name": "2407",
                 "pic": "pic_G36_2407.png"
             },
             {
-                "name": "50 Days with Gr G36 (Damaged)",
+                "name": "2407 (Damaged)",
                 "pic": "pic_G36_2407_D.png"
             },
             {
-                "name": "Mini Maid",
+                "name": "0905",
                 "pic": "pic_G36_905.png"
             },
             {
-                "name": "Mini Maid (Damaged)",
+                "name": "0905 (Damaged)",
                 "pic": "pic_G36_905_D.png"
             },
             {
@@ -8919,35 +9143,35 @@
                 "pic": "pic_G36C_3802_D.png"
             },
             {
-                "name": "Sommelier",
+                "name": "1507",
                 "pic": "pic_G36_1507.png"
             },
             {
-                "name": "Sommelier (Damaged)",
+                "name": "1507 (Damaged)",
                 "pic": "pic_G36_1507_D.png"
             },
             {
-                "name": "Ode to Summer",
+                "name": "1202",
                 "pic": "pic_G36C_1202.png"
             },
             {
-                "name": "Ode to Summer (Damaged)",
+                "name": "1202 (Damaged)",
                 "pic": "pic_G36C_1202_D.png"
             },
             {
-                "name": "Pure White Cornflower",
+                "name": "1904",
                 "pic": "pic_G36_1904.png"
             },
             {
-                "name": "Pure White Cornflower (Damaged)",
+                "name": "1904 (Damaged)",
                 "pic": "pic_G36_1904_D.png"
             },
             {
-                "name": "Every Child's X'mas Dream",
+                "name": "2806",
                 "pic": "pic_G36_2806.png"
             },
             {
-                "name": "Every Child's X'mas Dream (Damaged)",
+                "name": "2806 (Damaged)",
                 "pic": "pic_G36_2806_D.png"
             },
             {
@@ -8959,27 +9183,27 @@
                 "pic": "pic_G36_3603_D.png"
             },
             {
-                "name": "You Who Steps Up",
+                "name": "3103",
                 "pic": "pic_G36C_3103.png"
             },
             {
-                "name": "You Who Steps Up (Damaged)",
+                "name": "3103 (Damaged)",
                 "pic": "pic_G36C_3103_D.png"
             },
             {
-                "name": "50 Days with Gr G36",
+                "name": "2407",
                 "pic": "pic_G36_2407.png"
             },
             {
-                "name": "50 Days with Gr G36 (Damaged)",
+                "name": "2407 (Damaged)",
                 "pic": "pic_G36_2407_D.png"
             },
             {
-                "name": "Mini Maid",
+                "name": "0905",
                 "pic": "pic_G36_905.png"
             },
             {
-                "name": "Mini Maid (Damaged)",
+                "name": "0905 (Damaged)",
                 "pic": "pic_G36_905_D.png"
             },
             {
@@ -9433,19 +9657,19 @@
                 "pic": "pic_G36C_3802_D.png"
             },
             {
-                "name": "Ode to Summer",
+                "name": "1202",
                 "pic": "pic_G36C_1202.png"
             },
             {
-                "name": "Ode to Summer (Damaged)",
+                "name": "1202 (Damaged)",
                 "pic": "pic_G36C_1202_D.png"
             },
             {
-                "name": "You Who Steps Up",
+                "name": "3103",
                 "pic": "pic_G36C_3103.png"
             },
             {
-                "name": "You Who Steps Up (Damaged)",
+                "name": "3103 (Damaged)",
                 "pic": "pic_G36C_3103_D.png"
             }
         ]
@@ -9554,11 +9778,11 @@
                 "pic": "pic_G41_D.png"
             },
             {
-                "name": "Beach Punk 2064",
+                "name": "2401",
                 "pic": "pic_G41_2401.png"
             },
             {
-                "name": "Beach Punk 2064 (Damaged)",
+                "name": "2401 (Damaged)",
                 "pic": "pic_G41_2401_D.png"
             }
         ]
@@ -9753,11 +9977,11 @@
                 "pic": "pic_GSH18_D.png"
             },
             {
-                "name": "Mobile Operating Table",
+                "name": "0523",
                 "pic": "pic_GSH18_523.png"
             },
             {
-                "name": "Mobile Operating Table (Damaged)",
+                "name": "0523 (Damaged)",
                 "pic": "pic_GSH18_523_D.png"
             }
         ]
@@ -9856,11 +10080,11 @@
                 "pic": "pic_AR_D.png"
             },
             {
-                "name": "White Cabbage",
+                "name": "1803",
                 "pic": "pic_ART556_1803.png"
             },
             {
-                "name": "White Cabbage (Damaged)",
+                "name": "1803 (Damaged)",
                 "pic": "pic_ART556_1803_D.png"
             },
             {
@@ -9872,19 +10096,19 @@
                 "pic": "pic_AR15Mod_D.png"
             },
             {
-                "name": "Literary Girl",
+                "name": "0701",
                 "pic": "pic_AR15_701.png"
             },
             {
-                "name": "Literary Girl (Damaged)",
+                "name": "0701 (Damaged)",
                 "pic": "pic_AR15_701_D.png"
             },
             {
-                "name": "Little Chimney Sweeper",
+                "name": "2803",
                 "pic": "pic_ART556_2803.png"
             },
             {
-                "name": "Little Chimney Sweeper (Damaged)",
+                "name": "2803 (Damaged)",
                 "pic": "pic_ART556_2803_D.png"
             }
         ]
@@ -9981,19 +10205,19 @@
                 "pic": "pic_GepardM1_D.png"
             },
             {
-                "name": "Contracted Today",
+                "name": "2305",
                 "pic": "pic_GepardM1_2305.png"
             },
             {
-                "name": "Contracted Today (Damaged)",
+                "name": "2305 (Damaged)",
                 "pic": "pic_GepardM1_2305_D.png"
             },
             {
-                "name": "Exciting Future",
+                "name": "3107",
                 "pic": "pic_GepardM1_3107.png"
             },
             {
-                "name": "Exciting Future (Damaged)",
+                "name": "3107 (Damaged)",
                 "pic": "pic_GepardM1_3107_D.png"
             }
         ]
@@ -10187,27 +10411,27 @@
                 "pic": "pic_Grizzly_D.png"
             },
             {
-                "name": "Weekend Cop",
+                "name": "0105",
                 "pic": "pic_Grizzly_105.png"
             },
             {
-                "name": "Weekend Cop (Damaged)",
+                "name": "0105 (Damaged)",
                 "pic": "pic_Grizzly_105_D.png"
             },
             {
-                "name": "Teddy, Transform!",
+                "name": "0903",
                 "pic": "pic_Grizzly_903.png"
             },
             {
-                "name": "Teddy, Transform! (Damaged)",
+                "name": "0903 (Damaged)",
                 "pic": "pic_Grizzly_903_D.png"
             },
             {
-                "name": "Starry Night Ball",
+                "name": "2102",
                 "pic": "pic_Grizzly_2102.png"
             },
             {
-                "name": "Starry Night Ball (Damaged)",
+                "name": "2102 (Damaged)",
                 "pic": "pic_Grizzly_2102_D.png"
             }
         ]
@@ -10329,11 +10553,11 @@
                 "pic": "pic_HK21_D.png"
             },
             {
-                "name": "Chain Breaker",
+                "name": "2701",
                 "pic": "pic_HK21_2701.png"
             },
             {
-                "name": "Chain Breaker (Damaged)",
+                "name": "2701 (Damaged)",
                 "pic": "pic_HK21_2701_D.png"
             }
         ]
@@ -10625,11 +10849,11 @@
                 "pic": "pic_HK416_3401_D.png"
             },
             {
-                "name": "Starry Cocoon",
+                "name": "0805",
                 "pic": "pic_HK416_805.png"
             },
             {
-                "name": "Starry Cocoon (Damaged)",
+                "name": "0805 (Damaged)",
                 "pic": "pic_HK416_805_D.png"
             }
         ]
@@ -11030,11 +11254,11 @@
                 "pic": "pic_HK45_D.png"
             },
             {
-                "name": "Miracle☆Start",
+                "name": "2705",
                 "pic": "pic_HK45_2705.png"
             },
             {
-                "name": "Miracle☆Start (Damaged)",
+                "name": "2705 (Damaged)",
                 "pic": "pic_HK45_2705_D.png"
             }
         ]
@@ -11258,11 +11482,11 @@
                 "pic": "pic_88type_D.png"
             },
             {
-                "name": "East Lake Lotus",
+                "name": "1809",
                 "pic": "pic_88type_1809.png"
             },
             {
-                "name": "East Lake Lotus (Damaged)",
+                "name": "1809 (Damaged)",
                 "pic": "pic_88type_1809_D.png"
             }
         ]
@@ -11745,7 +11969,19 @@
         "bonus_desc": "Affects assault rifles\nIncrease damage by 20%\nIncrease critical hit rate by 20%",
         "production": {
             "reward": "Obtainable only from event Singularity chapter 2 hidden level \"Survivor\", cannot be (re)obtained by other means."
-        }
+        },
+        "internalName": "PDW",
+        "img": "pic_PDW.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_PDW.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_PDW_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Howa_Type_64",
@@ -11862,14 +12098,106 @@
                 "pic": "pic_Type64-AR_D.png"
             },
             {
-                "name": "New Year Wish",
+                "name": "2901",
                 "pic": "pic_Type64-AR_2901.png"
             },
             {
-                "name": "New Year Wish (Damaged)",
+                "name": "2901 (Damaged)",
                 "pic": "pic_Type64-AR_2901_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Howa_Type_89",
+        "num": 290,
+        "name": "Howa Type 89",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 61,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 20,
+            "eva": 6,
+            "acc": 6,
+            "rof": 54,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 121,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 54,
+            "eva": 45,
+            "acc": 48,
+            "rof": 79,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Exam Preparation",
+            "icon": "exam",
+            "text": "[Revision Mode]: Gains +1 stack of Focus on every attack, automatically switches to Full Marks Mode upon reaching 18 Focus stacks. [Revision Mode Active]: Expends up to 6 Focus stacks to increase damage and rate of fire by ($value_set1)% for 4 seconds. This use can still take effect even under 6 Focus stacks. [Full Marks Mode]: Shifts targeting to the enemy with the highest health. Consecutive attacks on the same enemy increases damage by ($fmm_value)% (Max of 3 stacks). Each attack in Full Marks Mode expends 1 Focus stack, once all 18 stacks of Focus have been consumed, switches back to Revision Mode. [Full Marks Mode Active]: For 6 seconds upon reaching 18 Focus stacks, increases damage by ($value_set1)% and both rate of fire and accuracy by ($value_set2)%. Additionally, increases damage received by 30% and reduces own movement speed by 30%.",
+            "initial": "3",
+            "cooldown": [
+                "6",
+                "5.8",
+                "5.6",
+                "5.3",
+                "5.1",
+                "4.9",
+                "4.7",
+                "4.4",
+                "4.2",
+                "4"
+            ],
+            "fmm_value": [
+                "5",
+                "6",
+                "6",
+                "7",
+                "7",
+                "8",
+                "8",
+                "9",
+                "9",
+                "10"
+            ],
+            "value_set1": [
+                "15",
+                "17",
+                "18",
+                "20",
+                "22",
+                "23",
+                "25",
+                "27",
+                "28",
+                "30"
+            ],
+            "value_set2": [
+                "30",
+                "33",
+                "37",
+                "40",
+                "43",
+                "47",
+                "50",
+                "53",
+                "57",
+                "60"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases damage by 20%\nIncreases evasion by 15%",
+        "production": {
+            "timer": "04:08:00"
+        }
     },
     {
         "url": "/wiki/IDW",
@@ -11969,19 +12297,19 @@
                 "pic": "pic_IDW_D.png"
             },
             {
-                "name": "Cat in the Box",
+                "name": "2108",
                 "pic": "pic_IDW_2108.png"
             },
             {
-                "name": "Cat in the Box (Damaged)",
+                "name": "2108 (Damaged)",
                 "pic": "pic_IDW_2108_D.png"
             },
             {
-                "name": "Cloak and Cat Ears",
+                "name": "3205",
                 "pic": "pic_IDW_3205.png"
             },
             {
-                "name": "Cloak and Cat Ears (Damaged)",
+                "name": "3205 (Damaged)",
                 "pic": "pic_IDW_3205_D.png"
             },
             {
@@ -12551,19 +12879,19 @@
                 "pic": "pic_IWS2000_D.png"
             },
             {
-                "name": "Edelweiss",
+                "name": "3004",
                 "pic": "pic_IWS2000_3004.png"
             },
             {
-                "name": "Edelweiss (Damaged)",
+                "name": "3004 (Damaged)",
                 "pic": "pic_IWS2000_3004_D.png"
             },
             {
-                "name": "The Seventh Sealer",
+                "name": "1403",
                 "pic": "pic_IWS2000_1403.png"
             },
             {
-                "name": "The Seventh Sealer (Damaged)",
+                "name": "1403 (Damaged)",
                 "pic": "pic_IWS2000_1403_D.png"
             }
         ]
@@ -12763,19 +13091,19 @@
                 "pic": "pic_JS-127_D.png"
             },
             {
-                "name": "Swansong",
+                "name": "2702",
                 "pic": "pic_JS-127_2702.png"
             },
             {
-                "name": "Swansong (Damaged)",
+                "name": "2702 (Damaged)",
                 "pic": "pic_JS-127_2702_D.png"
             },
             {
-                "name": "Fairy Lily",
+                "name": "1804",
                 "pic": "pic_JS-127_1804.png"
             },
             {
-                "name": "Fairy Lily (Damaged)",
+                "name": "1804 (Damaged)",
                 "pic": "pic_JS-127_1804_D.png"
             }
         ]
@@ -13085,19 +13413,19 @@
                 "pic": "pic_K2_D.png"
             },
             {
-                "name": "Far East Princess",
+                "name": "2001",
                 "pic": "pic_K2_2001.png"
             },
             {
-                "name": "Far East Princess (Damaged)",
+                "name": "2001 (Damaged)",
                 "pic": "pic_K2_2001_D.png"
             },
             {
-                "name": "Before Dawn",
+                "name": "3301",
                 "pic": "pic_K2_3301.png"
             },
             {
-                "name": "Before Dawn (Damaged)",
+                "name": "3301 (Damaged)",
                 "pic": "pic_K2_3301_D.png"
             }
         ]
@@ -13426,11 +13754,11 @@
                 "pic": "pic_K5_D.png"
             },
             {
-                "name": "Dome Moonlight",
+                "name": "2002",
                 "pic": "pic_K5_2002.png"
             },
             {
-                "name": "Dome Moonlight (Damaged)",
+                "name": "2002 (Damaged)",
                 "pic": "pic_K5_2002_D.png"
             },
             {
@@ -13442,6 +13770,86 @@
                 "pic": "pic_K5_3308_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/KAC-PDW",
+        "num": 286,
+        "name": "KAC-PDW",
+        "type": "SMG",
+        "rating": 4,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 90,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 13,
+            "eva": 10,
+            "acc": 2,
+            "rof": 57,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 180,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 33,
+            "eva": 71,
+            "acc": 14,
+            "rof": 81,
+            "armor": 0
+        },
+        "ability": {
+            "name": "D-Fense",
+            "icon": "KAC",
+            "text": "Clears all debuffs from self and grants self a force shield for 1 second. When shield expires, increases evasion by ($eva_value)% for ($duration) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "eva_value": [
+                "30",
+                "33",
+                "37",
+                "40",
+                "43",
+                "47",
+                "50",
+                "53",
+                "57",
+                "60"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "tile_bonus": "🔶⬛⬛\n🔶🔷⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 15%\nIncreases accuracy by 30%",
+        "production": {
+            "timer": "2:20:00"
+        }
     },
     {
         "url": "/wiki/KLIN",
@@ -13547,19 +13955,19 @@
                 "pic": "pic_KLIN_D.png"
             },
             {
-                "name": "Waning Winter",
+                "name": "2003",
                 "pic": "pic_KLIN_2003.png"
             },
             {
-                "name": "Waning Winter (Damaged)",
+                "name": "2003 (Damaged)",
                 "pic": "pic_KLIN_2003_D.png"
             },
             {
-                "name": "The Three Crows",
+                "name": "1204",
                 "pic": "pic_KLIN_1204.png"
             },
             {
-                "name": "The Three Crows (Damaged)",
+                "name": "1204 (Damaged)",
                 "pic": "pic_KLIN_1204_D.png"
             }
         ]
@@ -14305,11 +14713,11 @@
                 "pic": "pic_LWMMGMod_D.png"
             },
             {
-                "name": "Golden Starthistle",
+                "name": "1808",
                 "pic": "pic_LWMMG_1808.png"
             },
             {
-                "name": "Golden Starthistle (Damaged)",
+                "name": "1808 (Damaged)",
                 "pic": "pic_LWMMG_1808_D.png"
             }
         ]
@@ -14758,35 +15166,35 @@
                 "pic": "pic_MLEMK1_D.png"
             },
             {
-                "name": "Huntress' Frock ",
+                "name": "0010",
                 "pic": "pic_MLEMK1_10.png"
             },
             {
-                "name": "Huntress' Frock  (Damaged)",
+                "name": "0010 (Damaged)",
                 "pic": "pic_MLEMK1_10_D.png"
             },
             {
-                "name": "Lifelong Protector",
+                "name": "0604",
                 "pic": "pic_MLEMK1_604.png"
             },
             {
-                "name": "Lifelong Protector (Damaged)",
+                "name": "0604 (Damaged)",
                 "pic": "pic_MLEMK1_604_D.png"
             },
             {
-                "name": "Onion Shooter",
+                "name": "0901",
                 "pic": "pic_MLEMK1_901.png"
             },
             {
-                "name": "Onion Shooter (Damaged)",
+                "name": "0901 (Damaged)",
                 "pic": "pic_MLEMK1_901_D.png"
             }
         ]
     },
     {
-        "url": "/wiki/Lewis_Gun",
+        "url": "/wiki/Lewis",
         "num": 253,
-        "name": "Lewis Gun",
+        "name": "Lewis",
         "type": "MG",
         "rating": 5,
         "constStats": {
@@ -14819,7 +15227,7 @@
         "ability": {
             "name": "Angel of Strength",
             "icon": "Lewis",
-            "text": "Active: Increases damage by ($dmg_value)% for ($duration) seconds. Passive: After every reload, decrease reload time by 15%, up to 45% at most; Additionally, increase ammo count by 1 every reload, up to 3 stacks.",
+            "text": "[Active]: Increases damage by ($dmg_value)% for ($duration) seconds. [Passive]: After every reload, decrease reload time by 15%, up to 45% at most; Additionally, increase ammo count by 1 every reload, up to 3 stacks.",
             "initial": "8",
             "cooldown": [
                 "18",
@@ -14863,8 +15271,8 @@
         "production": {
             "reward": "Reward for Clearing E4-3 of Isomer."
         },
-        "internalName": "Lewis",
         "img": "pic_Lewis.png",
+        "internalName": "Lewis",
         "costumes": [
             {
                 "name": "Default",
@@ -15081,67 +15489,67 @@
                 "pic": "pic_M1_D.png"
             },
             {
-                "name": "Beach Princess",
+                "name": "1106",
                 "pic": "pic_M1_1106.png"
             },
             {
-                "name": "Beach Princess (Damaged)",
+                "name": "1106 (Damaged)",
                 "pic": "pic_M1_1106_D.png"
             },
             {
-                "name": "Party Sweetheart",
+                "name": "0106",
                 "pic": "pic_M1919A4_106.png"
             },
             {
-                "name": "Party Sweetheart (Damaged)",
+                "name": "0106 (Damaged)",
                 "pic": "pic_M1919A4_106_D.png"
             },
             {
-                "name": "Bunny Girl",
+                "name": "0102",
                 "pic": "pic_M1918_102.png"
             },
             {
-                "name": "Bunny Girl (Damaged)",
+                "name": "0102 (Damaged)",
                 "pic": "pic_M1918_102_D.png"
             },
             {
-                "name": "Witcher General",
+                "name": "2503",
                 "pic": "pic_M1887_2503.png"
             },
             {
-                "name": "Witcher General (Damaged)",
+                "name": "2503 (Damaged)",
                 "pic": "pic_M1887_2503_D.png"
             },
             {
-                "name": "Moonlit Ocean",
+                "name": "0803",
                 "pic": "pic_M1891_803.png"
             },
             {
-                "name": "Moonlit Ocean (Damaged)",
+                "name": "0803 (Damaged)",
                 "pic": "pic_M1891_803_D.png"
             },
             {
-                "name": "Electric Witch",
+                "name": "2505",
                 "pic": "pic_M1897_2505.png"
             },
             {
-                "name": "Electric Witch (Damaged)",
+                "name": "2505 (Damaged)",
                 "pic": "pic_M1897_2505_D.png"
             },
             {
-                "name": "Astral Bond",
+                "name": "2706",
                 "pic": "pic_M1895_2706.png"
             },
             {
-                "name": "Astral Bond (Damaged)",
+                "name": "2706 (Damaged)",
                 "pic": "pic_M1895_2706_D.png"
             },
             {
-                "name": "Snow, Moon and Flowers",
+                "name": "2906",
                 "pic": "pic_M1014_2906.png"
             },
             {
-                "name": "Snow, Moon and Flowers (Damaged)",
+                "name": "2906 (Damaged)",
                 "pic": "pic_M1014_2906_D.png"
             },
             {
@@ -15153,19 +15561,19 @@
                 "pic": "pic_M1895Mod_D.png"
             },
             {
-                "name": "Stirring Mermaid",
+                "name": "1107",
                 "pic": "pic_M1903_1107.png"
             },
             {
-                "name": "Stirring Mermaid (Damaged)",
+                "name": "1107 (Damaged)",
                 "pic": "pic_M1903_1107_D.png"
             },
             {
-                "name": "Tender Nocturne",
+                "name": "0806",
                 "pic": "pic_M1918_806.png"
             },
             {
-                "name": "Tender Nocturne (Damaged)",
+                "name": "0806 (Damaged)",
                 "pic": "pic_M1918_806_D.png"
             },
             {
@@ -15173,11 +15581,11 @@
                 "pic": "pic_M16A1_Boss.png"
             },
             {
-                "name": "Demon Hunter",
+                "name": "1501",
                 "pic": "pic_M1928A1_1501.png"
             },
             {
-                "name": "Demon Hunter (Damaged)",
+                "name": "1501 (Damaged)",
                 "pic": "pic_M1928A1_1501_D.png"
             },
             {
@@ -15197,11 +15605,11 @@
                 "pic": "pic_M1873Mod_D.png"
             },
             {
-                "name": "Carmilla",
+                "name": "0007",
                 "pic": "pic_M1919A4_7.png"
             },
             {
-                "name": "Carmilla (Damaged)",
+                "name": "0007 (Damaged)",
                 "pic": "pic_M1919A4_7_D.png"
             },
             {
@@ -15213,19 +15621,19 @@
                 "pic": "pic_M1911Mod_D.png"
             },
             {
-                "name": "O Holy Night",
+                "name": "0302",
                 "pic": "pic_M1903_302.png"
             },
             {
-                "name": "O Holy Night (Damaged)",
+                "name": "0302 (Damaged)",
                 "pic": "pic_M1903_302_D.png"
             },
             {
-                "name": "Xmas Parade",
+                "name": "0303",
                 "pic": "pic_M14_303.png"
             },
             {
-                "name": "Xmas Parade (Damaged)",
+                "name": "0303 (Damaged)",
                 "pic": "pic_M14_303_D.png"
             },
             {
@@ -15237,27 +15645,27 @@
                 "pic": "pic_M1891Mod_D.png"
             },
             {
-                "name": "Queen of Miracles",
+                "name": "2105",
                 "pic": "pic_M1873_2105.png"
             },
             {
-                "name": "Queen of Miracles (Damaged)",
+                "name": "2105 (Damaged)",
                 "pic": "pic_M1873_2105_D.png"
             },
             {
-                "name": "War Is Over",
+                "name": "1606",
                 "pic": "pic_M1918_1606.png"
             },
             {
-                "name": "War Is Over (Damaged)",
+                "name": "1606 (Damaged)",
                 "pic": "pic_M1918_1606_D.png"
             },
             {
-                "name": "Queen in Radiance",
+                "name": "0802",
                 "pic": "pic_M1903_802.png"
             },
             {
-                "name": "Queen in Radiance (Damaged)",
+                "name": "0802 (Damaged)",
                 "pic": "pic_M1903_802_D.png"
             },
             {
@@ -15269,19 +15677,19 @@
                 "pic": "pic_M14Mod_D.png"
             },
             {
-                "name": "Wish Upon A Star",
+                "name": "0301",
                 "pic": "pic_M1873_301.png"
             },
             {
-                "name": "Wish Upon A Star (Damaged)",
+                "name": "0301 (Damaged)",
                 "pic": "pic_M1873_301_D.png"
             },
             {
-                "name": "Classic Witch",
+                "name": "0005",
                 "pic": "pic_M1903_5.png"
             },
             {
-                "name": "Classic Witch (Damaged)",
+                "name": "0005 (Damaged)",
                 "pic": "pic_M1903_5_D.png"
             }
         ]
@@ -15390,11 +15798,11 @@
                 "pic": "pic_M1014_D.png"
             },
             {
-                "name": "Snow, Moon and Flowers",
+                "name": "2906",
                 "pic": "pic_M1014_2906.png"
             },
             {
-                "name": "Snow, Moon and Flowers (Damaged)",
+                "name": "2906 (Damaged)",
                 "pic": "pic_M1014_2906_D.png"
             }
         ]
@@ -15609,11 +16017,11 @@
                 "pic": "pic_M14_D.png"
             },
             {
-                "name": "Xmas Parade",
+                "name": "0303",
                 "pic": "pic_M14_303.png"
             },
             {
-                "name": "Xmas Parade (Damaged)",
+                "name": "0303 (Damaged)",
                 "pic": "pic_M14_303_D.png"
             },
             {
@@ -16117,11 +16525,11 @@
                 "pic": "pic_M1887_D.png"
             },
             {
-                "name": "Witcher General",
+                "name": "2503",
                 "pic": "pic_M1887_2503.png"
             },
             {
-                "name": "Witcher General (Damaged)",
+                "name": "2503 (Damaged)",
                 "pic": "pic_M1887_2503_D.png"
             }
         ]
@@ -16205,7 +16613,19 @@
         "bonus_desc": "Affects shotguns\nIncreases accuracy by 10%\nIncreases armour by 12%",
         "production": {
             "reward": "Reward for clearing E3-3 of Shattered Connexion."
-        }
+        },
+        "internalName": "M1895MG",
+        "img": "pic_M1895MG.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_M1895MG.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_M1895MG_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/M1897",
@@ -16305,11 +16725,11 @@
                 "pic": "pic_M1897_D.png"
             },
             {
-                "name": "Electric Witch",
+                "name": "2505",
                 "pic": "pic_M1897_2505.png"
             },
             {
-                "name": "Electric Witch (Damaged)",
+                "name": "2505 (Damaged)",
                 "pic": "pic_M1897_2505_D.png"
             }
         ]
@@ -16866,19 +17286,19 @@
                 "pic": "pic_M1918_D.png"
             },
             {
-                "name": "Bunny Girl",
+                "name": "0102",
                 "pic": "pic_M1918_102.png"
             },
             {
-                "name": "Bunny Girl (Damaged)",
+                "name": "0102 (Damaged)",
                 "pic": "pic_M1918_102_D.png"
             },
             {
-                "name": "Tender Nocturne",
+                "name": "0806",
                 "pic": "pic_M1918_806.png"
             },
             {
-                "name": "Tender Nocturne (Damaged)",
+                "name": "0806 (Damaged)",
                 "pic": "pic_M1918_806_D.png"
             },
             {
@@ -16890,11 +17310,11 @@
                 "pic": "pic_M1918Mod_D.png"
             },
             {
-                "name": "War Is Over",
+                "name": "1606",
                 "pic": "pic_M1918_1606.png"
             },
             {
-                "name": "War Is Over (Damaged)",
+                "name": "1606 (Damaged)",
                 "pic": "pic_M1918_1606_D.png"
             }
         ]
@@ -17321,19 +17741,19 @@
                 "pic": "pic_M1919A4_D.png"
             },
             {
-                "name": "Party Sweetheart",
+                "name": "0106",
                 "pic": "pic_M1919A4_106.png"
             },
             {
-                "name": "Party Sweetheart (Damaged)",
+                "name": "0106 (Damaged)",
                 "pic": "pic_M1919A4_106_D.png"
             },
             {
-                "name": "Carmilla",
+                "name": "0007",
                 "pic": "pic_M1919A4_7.png"
             },
             {
-                "name": "Carmilla (Damaged)",
+                "name": "0007 (Damaged)",
                 "pic": "pic_M1919A4_7_D.png"
             }
         ]
@@ -17625,11 +18045,11 @@
                 "pic": "pic_M21_D.png"
             },
             {
-                "name": "Xmas At Home",
+                "name": "0304",
                 "pic": "pic_M21_304.png"
             },
             {
-                "name": "Xmas At Home (Damaged)",
+                "name": "0304 (Damaged)",
                 "pic": "pic_M21_304_D.png"
             }
         ]
@@ -17758,11 +18178,11 @@
                 "pic": "pic_M249SAW_3604_D.png"
             },
             {
-                "name": "Arctic Fox",
+                "name": "1301",
                 "pic": "pic_M249SAW_1301.png"
             },
             {
-                "name": "Arctic Fox (Damaged)",
+                "name": "1301 (Damaged)",
                 "pic": "pic_M249SAW_1301_D.png"
             }
         ]
@@ -18041,11 +18461,11 @@
                 "pic": "pic_Ithaca37_D.png"
             },
             {
-                "name": "Summer Parader",
+                "name": "1105",
                 "pic": "pic_Ithaca37_1105.png"
             },
             {
-                "name": "Summer Parader (Damaged)",
+                "name": "1105 (Damaged)",
                 "pic": "pic_Ithaca37_1105_D.png"
             }
         ]
@@ -19007,11 +19427,11 @@
                 "pic": "pic_M590_3706_D.png"
             },
             {
-                "name": "Angel's Trumpet",
+                "name": "1806",
                 "pic": "pic_M590_1806.png"
             },
             {
-                "name": "Angel's Trumpet (Damaged)",
+                "name": "1806 (Damaged)",
                 "pic": "pic_M590_1806_D.png"
             }
         ]
@@ -19449,19 +19869,19 @@
                 "pic": "pic_M9_D.png"
             },
             {
-                "name": "Home Ec Training",
+                "name": "2303",
                 "pic": "pic_M950A_2303.png"
             },
             {
-                "name": "Home Ec Training (Damaged)",
+                "name": "2303 (Damaged)",
                 "pic": "pic_M950A_2303_D.png"
             },
             {
-                "name": "Concert Diva!",
+                "name": "0808",
                 "pic": "pic_M950A_808.png"
             },
             {
-                "name": "Concert Diva! (Damaged)",
+                "name": "0808 (Damaged)",
                 "pic": "pic_M950A_808_D.png"
             },
             {
@@ -19473,27 +19893,27 @@
                 "pic": "pic_M99_3304_D.png"
             },
             {
-                "name": "Rabbit Squad",
+                "name": "1701",
                 "pic": "pic_M99_1701.png"
             },
             {
-                "name": "Rabbit Squad (Damaged)",
+                "name": "1701 (Damaged)",
                 "pic": "pic_M99_1701_D.png"
             },
             {
-                "name": "Cyclamen",
+                "name": "0404",
                 "pic": "pic_M99_404.png"
             },
             {
-                "name": "Cyclamen (Damaged)",
+                "name": "0404 (Damaged)",
                 "pic": "pic_M99_404_D.png"
             },
             {
-                "name": "Ace on Duty",
+                "name": "0702",
                 "pic": "pic_M950A_702.png"
             },
             {
-                "name": "Ace on Duty (Damaged)",
+                "name": "0702 (Damaged)",
                 "pic": "pic_M950A_702_D.png"
             }
         ]
@@ -19595,27 +20015,27 @@
                 "pic": "pic_M950A_D.png"
             },
             {
-                "name": "Home Ec Training",
+                "name": "2303",
                 "pic": "pic_M950A_2303.png"
             },
             {
-                "name": "Home Ec Training (Damaged)",
+                "name": "2303 (Damaged)",
                 "pic": "pic_M950A_2303_D.png"
             },
             {
-                "name": "Concert Diva!",
+                "name": "0808",
                 "pic": "pic_M950A_808.png"
             },
             {
-                "name": "Concert Diva! (Damaged)",
+                "name": "0808 (Damaged)",
                 "pic": "pic_M950A_808_D.png"
             },
             {
-                "name": "Ace on Duty",
+                "name": "0702",
                 "pic": "pic_M950A_702.png"
             },
             {
-                "name": "Ace on Duty (Damaged)",
+                "name": "0702 (Damaged)",
                 "pic": "pic_M950A_702_D.png"
             }
         ]
@@ -19732,19 +20152,19 @@
                 "pic": "pic_M99_3304_D.png"
             },
             {
-                "name": "Rabbit Squad",
+                "name": "1701",
                 "pic": "pic_M99_1701.png"
             },
             {
-                "name": "Rabbit Squad (Damaged)",
+                "name": "1701 (Damaged)",
                 "pic": "pic_M99_1701_D.png"
             },
             {
-                "name": "Cyclamen",
+                "name": "0404",
                 "pic": "pic_M99_404.png"
             },
             {
-                "name": "Cyclamen (Damaged)",
+                "name": "0404 (Damaged)",
                 "pic": "pic_M99_404_D.png"
             }
         ]
@@ -19865,6 +20285,61 @@
                 "pic": "pic_MAC10_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/MAT-49",
+        "num": -1,
+        "name": "MAT-49",
+        "type": "SMG",
+        "rating": 4,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "production": {
+            "stage": "Drops only from specific enemy units in 12-6 and 12-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
+        }
     },
     {
         "url": "/wiki/MDR",
@@ -20001,11 +20476,11 @@
                 "pic": "pic_MDR_3305_D.png"
             },
             {
-                "name": "Ghost Trap",
+                "name": "2603",
                 "pic": "pic_MDR_2603.png"
             },
             {
-                "name": "Ghost Trap (Damaged)",
+                "name": "2603 (Damaged)",
                 "pic": "pic_MDR_2603_D.png"
             }
         ]
@@ -20127,11 +20602,11 @@
                 "pic": "pic_MG3_D.png"
             },
             {
-                "name": "Urban Holiday",
+                "name": "1304",
                 "pic": "pic_MG3_1304.png"
             },
             {
-                "name": "Urban Holiday (Damaged)",
+                "name": "1304 (Damaged)",
                 "pic": "pic_MG3_1304_D.png"
             },
             {
@@ -20640,27 +21115,27 @@
                 "pic": "pic_MG5_D.png"
             },
             {
-                "name": "Plague Knight",
+                "name": "2501",
                 "pic": "pic_MG5_2501.png"
             },
             {
-                "name": "Plague Knight (Damaged)",
+                "name": "2501 (Damaged)",
                 "pic": "pic_MG5_2501_D.png"
             },
             {
-                "name": "Crimson Guardian",
+                "name": "0309",
                 "pic": "pic_MG5_309.png"
             },
             {
-                "name": "Crimson Guardian (Damaged)",
+                "name": "0309 (Damaged)",
                 "pic": "pic_MG5_309_D.png"
             },
             {
-                "name": "Call of the Hunter",
+                "name": "1504",
                 "pic": "pic_MG5_1504.png"
             },
             {
-                "name": "Call of the Hunter (Damaged)",
+                "name": "1504 (Damaged)",
                 "pic": "pic_MG5_1504_D.png"
             }
         ]
@@ -20856,11 +21331,11 @@
                 "pic": "pic_MP446_D.png"
             },
             {
-                "name": "Sunflower",
+                "name": "0402",
                 "pic": "pic_MP446_402.png"
             },
             {
-                "name": "Sunflower (Damaged)",
+                "name": "0402 (Damaged)",
                 "pic": "pic_MP446_402_D.png"
             },
             {
@@ -20872,11 +21347,11 @@
                 "pic": "pic_MP446Mod_D.png"
             },
             {
-                "name": "Boisterous Rogue",
+                "name": "0103",
                 "pic": "pic_MP446_103.png"
             },
             {
-                "name": "Boisterous Rogue (Damaged)",
+                "name": "0103 (Damaged)",
                 "pic": "pic_MP446_103_D.png"
             }
         ]
@@ -21398,11 +21873,11 @@
                 "pic": "pic_MP40_D.png"
             },
             {
-                "name": "Thumbelina",
+                "name": "0902",
                 "pic": "pic_MP40_902.png"
             },
             {
-                "name": "Thumbelina (Damaged)",
+                "name": "0902 (Damaged)",
                 "pic": "pic_MP40_902_D.png"
             }
         ]
@@ -21612,35 +22087,35 @@
                 "pic": "pic_MP5Mod_D.png"
             },
             {
-                "name": "Sleepless Begonias",
+                "name": "1205",
                 "pic": "pic_MP5_1205.png"
             },
             {
-                "name": "Sleepless Begonias (Damaged)",
+                "name": "1205 (Damaged)",
                 "pic": "pic_MP5_1205_D.png"
             },
             {
-                "name": "Vietnamese Balm",
+                "name": "3006",
                 "pic": "pic_MP5_3006.png"
             },
             {
-                "name": "Vietnamese Balm (Damaged)",
+                "name": "3006 (Damaged)",
                 "pic": "pic_MP5_3006_D.png"
             },
             {
-                "name": "A Small Step",
+                "name": "1903",
                 "pic": "pic_MP5_1903.png"
             },
             {
-                "name": "A Small Step (Damaged)",
+                "name": "1903 (Damaged)",
                 "pic": "pic_MP5_1903_D.png"
             },
             {
-                "name": "Nocturnal Familiar",
+                "name": "0003",
                 "pic": "pic_MP5_3.png"
             },
             {
-                "name": "Nocturnal Familiar (Damaged)",
+                "name": "0003 (Damaged)",
                 "pic": "pic_MP5_3_D.png"
             }
         ]
@@ -22039,11 +22514,11 @@
                 "pic": "pic_MP7_D.png"
             },
             {
-                "name": "Lollipop Ammo",
+                "name": "2405",
                 "pic": "pic_MP7_2405.png"
             },
             {
-                "name": "Lollipop Ammo (Damaged)",
+                "name": "2405 (Damaged)",
                 "pic": "pic_MP7_2405_D.png"
             }
         ]
@@ -22331,19 +22806,19 @@
                 "pic": "pic_PM_D.png"
             },
             {
-                "name": "I'm Soarin', Flyin'",
+                "name": "2703",
                 "pic": "pic_PM06_2703.png"
             },
             {
-                "name": "I'm Soarin', Flyin' (Damaged)",
+                "name": "2703 (Damaged)",
                 "pic": "pic_PM06_2703_D.png"
             },
             {
-                "name": "Pumpkin Mishka",
+                "name": "0001",
                 "pic": "pic_PM_1.png"
             },
             {
-                "name": "Pumpkin Mishka (Damaged)",
+                "name": "0001 (Damaged)",
                 "pic": "pic_PM_1_D.png"
             }
         ]
@@ -22473,11 +22948,11 @@
                 "pic": "pic_MicroUZIMod_D.png"
             },
             {
-                "name": "Dorky Sleepyhead",
+                "name": "0101",
                 "pic": "pic_MicroUZI_101.png"
             },
             {
-                "name": "Dorky Sleepyhead (Damaged)",
+                "name": "0101 (Damaged)",
                 "pic": "pic_MicroUZI_101_D.png"
             }
         ]
@@ -23030,27 +23505,27 @@
                 "pic": "pic_Mk23_3705_D.png"
             },
             {
-                "name": "Honey Flower",
+                "name": "1805",
                 "pic": "pic_Mk23_1805.png"
             },
             {
-                "name": "Honey Flower (Damaged)",
+                "name": "1805 (Damaged)",
                 "pic": "pic_Mk23_1805_D.png"
             },
             {
-                "name": "Conveyed Feelings",
+                "name": "3105",
                 "pic": "pic_Mk23_3105.png"
             },
             {
-                "name": "Conveyed Feelings (Damaged)",
+                "name": "3105 (Damaged)",
                 "pic": "pic_Mk23_3105_D.png"
             },
             {
-                "name": "Impish Sweetheart",
+                "name": "0008",
                 "pic": "pic_Mk23_8.png"
             },
             {
-                "name": "Impish Sweetheart (Damaged)",
+                "name": "0008 (Damaged)",
                 "pic": "pic_Mk23_8_D.png"
             }
         ]
@@ -23355,7 +23830,27 @@
         "bonus_desc": "Affects submachine guns\nIncreases damage by 15%\nIncreases accuracy by 25%",
         "production": {
             "reward": "Login reward for July 2018 (CN)."
-        }
+        },
+        "internalName": "CETME556",
+        "img": "pic_CETME556.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_CETME556.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_CETME556_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_CETME556_3809.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_CETME556_3809_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Mosin-Nagant",
@@ -23461,11 +23956,11 @@
                 "pic": "pic_M1891_D.png"
             },
             {
-                "name": "Moonlit Ocean",
+                "name": "0803",
                 "pic": "pic_M1891_803.png"
             },
             {
-                "name": "Moonlit Ocean (Damaged)",
+                "name": "0803 (Damaged)",
                 "pic": "pic_M1891_803_D.png"
             },
             {
@@ -23995,27 +24490,27 @@
                 "pic": "pic_NTW20_D.png"
             },
             {
-                "name": "The Aristocrat Experience",
+                "name": "2301",
                 "pic": "pic_NTW20_2301.png"
             },
             {
-                "name": "The Aristocrat Experience (Damaged)",
+                "name": "2301 (Damaged)",
                 "pic": "pic_NTW20_2301_D.png"
             },
             {
-                "name": "Op. Blazing Sun",
+                "name": "1101",
                 "pic": "pic_NTW20_1101.png"
             },
             {
-                "name": "Op. Blazing Sun (Damaged)",
+                "name": "1101 (Damaged)",
                 "pic": "pic_NTW20_1101_D.png"
             },
             {
-                "name": "Xmas Reindeer",
+                "name": "0307",
                 "pic": "pic_NTW20_307.png"
             },
             {
-                "name": "Xmas Reindeer (Damaged)",
+                "name": "0307 (Damaged)",
                 "pic": "pic_NTW20_307_D.png"
             }
         ]
@@ -24118,19 +24613,19 @@
                 "pic": "pic_NZ75_D.png"
             },
             {
-                "name": "ThanX! & Go2Hell!",
+                "name": "1702",
                 "pic": "pic_NZ75_1702.png"
             },
             {
-                "name": "ThanX! & Go2Hell! (Damaged)",
+                "name": "1702 (Damaged)",
                 "pic": "pic_NZ75_1702_D.png"
             },
             {
-                "name": "Chrysanthemum",
+                "name": "0403",
                 "pic": "pic_NZ75_403.png"
             },
             {
-                "name": "Chrysanthemum (Damaged)",
+                "name": "0403 (Damaged)",
                 "pic": "pic_NZ75_403_D.png"
             }
         ]
@@ -24258,11 +24753,11 @@
                 "pic": "pic_M1895_D.png"
             },
             {
-                "name": "Astral Bond",
+                "name": "2706",
                 "pic": "pic_M1895_2706.png"
             },
             {
-                "name": "Astral Bond (Damaged)",
+                "name": "2706 (Damaged)",
                 "pic": "pic_M1895_2706_D.png"
             },
             {
@@ -24740,19 +25235,19 @@
                 "pic": "pic_NEGEV_D.png"
             },
             {
-                "name": "Obsidian Princess",
+                "name": "3202",
                 "pic": "pic_NEGEV_3202.png"
             },
             {
-                "name": "Obsidian Princess (Damaged)",
+                "name": "3202 (Damaged)",
                 "pic": "pic_NEGEV_3202_D.png"
             },
             {
-                "name": "Little Drifter",
+                "name": "0904",
                 "pic": "pic_NEGEV_904.png"
             },
             {
-                "name": "Little Drifter (Damaged)",
+                "name": "0904 (Damaged)",
                 "pic": "pic_NEGEV_904_D.png"
             }
         ]
@@ -25056,19 +25551,19 @@
                 "pic": "pic_OTs14_D.png"
             },
             {
-                "name": "Flurry of Petals",
+                "name": "1203",
                 "pic": "pic_OTs14_1203.png"
             },
             {
-                "name": "Flurry of Petals (Damaged)",
+                "name": "1203 (Damaged)",
                 "pic": "pic_OTs14_1203_D.png"
             },
             {
-                "name": "Crassula Volkensii",
+                "name": "3001",
                 "pic": "pic_OTs14_3001.png"
             },
             {
-                "name": "Crassula Volkensii (Damaged)",
+                "name": "3001 (Damaged)",
                 "pic": "pic_OTs14_3001_D.png"
             }
         ]
@@ -25246,11 +25741,11 @@
                 "pic": "pic_OC44_D.png"
             },
             {
-                "name": "Forest Reindeer",
+                "name": "1608",
                 "pic": "pic_OC44_1608.png"
             },
             {
-                "name": "Forest Reindeer (Damaged)",
+                "name": "1608 (Damaged)",
                 "pic": "pic_OC44_1608_D.png"
             },
             {
@@ -25794,11 +26289,11 @@
                 "pic": "pic_P38_D.png"
             },
             {
-                "name": "Apprentice Witch",
+                "name": "2410",
                 "pic": "pic_P38_2410.png"
             },
             {
-                "name": "Apprentice Witch (Damaged)",
+                "name": "2410 (Damaged)",
                 "pic": "pic_P38_2410_D.png"
             }
         ]
@@ -25901,19 +26396,19 @@
                 "pic": "pic_P7_D.png"
             },
             {
-                "name": "Pinky Swear",
+                "name": "0606",
                 "pic": "pic_P7_606.png"
             },
             {
-                "name": "Pinky Swear (Damaged)",
+                "name": "0606 (Damaged)",
                 "pic": "pic_P7_606_D.png"
             },
             {
-                "name": "Sister Gunslinger",
+                "name": "1404",
                 "pic": "pic_P7_1404.png"
             },
             {
-                "name": "Sister Gunslinger (Damaged)",
+                "name": "1404 (Damaged)",
                 "pic": "pic_P7_1404_D.png"
             }
         ]
@@ -25997,11 +26492,11 @@
                 "pic": "pic_P90_D.png"
             },
             {
-                "name": "Scarlet Turbo",
+                "name": "2802",
                 "pic": "pic_P90_2802.png"
             },
             {
-                "name": "Scarlet Turbo (Damaged)",
+                "name": "2802 (Damaged)",
                 "pic": "pic_P90_2802_D.png"
             }
         ]
@@ -26308,35 +26803,35 @@
                 "pic": "pic_PK_D.png"
             },
             {
-                "name": "Flower and Water",
+                "name": "1201",
                 "pic": "pic_PKP_1201.png"
             },
             {
-                "name": "Flower and Water (Damaged)",
+                "name": "1201 (Damaged)",
                 "pic": "pic_PKP_1201_D.png"
             },
             {
-                "name": "By Your Side",
+                "name": "0605",
                 "pic": "pic_PK_605.png"
             },
             {
-                "name": "By Your Side (Damaged)",
+                "name": "0605 (Damaged)",
                 "pic": "pic_PK_605_D.png"
             },
             {
-                "name": "L.A.D.Y",
+                "name": "1503",
                 "pic": "pic_PKP_1503.png"
             },
             {
-                "name": "L.A.D.Y (Damaged)",
+                "name": "1503 (Damaged)",
                 "pic": "pic_PKP_1503_D.png"
             },
             {
-                "name": "Silver Star",
+                "name": "3102",
                 "pic": "pic_PKP_3102.png"
             },
             {
-                "name": "Silver Star (Damaged)",
+                "name": "3102 (Damaged)",
                 "pic": "pic_PKP_3102_D.png"
             }
         ]
@@ -26420,27 +26915,27 @@
                 "pic": "pic_PKP_D.png"
             },
             {
-                "name": "Flower and Water",
+                "name": "1201",
                 "pic": "pic_PKP_1201.png"
             },
             {
-                "name": "Flower and Water (Damaged)",
+                "name": "1201 (Damaged)",
                 "pic": "pic_PKP_1201_D.png"
             },
             {
-                "name": "L.A.D.Y",
+                "name": "1503",
                 "pic": "pic_PKP_1503.png"
             },
             {
-                "name": "L.A.D.Y (Damaged)",
+                "name": "1503 (Damaged)",
                 "pic": "pic_PKP_1503_D.png"
             },
             {
-                "name": "Silver Star",
+                "name": "3102",
                 "pic": "pic_PKP_3102.png"
             },
             {
-                "name": "Silver Star (Damaged)",
+                "name": "3102 (Damaged)",
                 "pic": "pic_PKP_3102_D.png"
             }
         ]
@@ -26573,11 +27068,11 @@
                 "pic": "pic_PM06_D.png"
             },
             {
-                "name": "I'm Soarin', Flyin'",
+                "name": "2703",
                 "pic": "pic_PM06_2703.png"
             },
             {
-                "name": "I'm Soarin', Flyin' (Damaged)",
+                "name": "2703 (Damaged)",
                 "pic": "pic_PM06_2703_D.png"
             }
         ]
@@ -26765,11 +27260,11 @@
                 "pic": "pic_PP19_D.png"
             },
             {
-                "name": "Frog Princess",
+                "name": "2204",
                 "pic": "pic_PP19_2204.png"
             },
             {
-                "name": "Frog Princess (Damaged)",
+                "name": "2204 (Damaged)",
                 "pic": "pic_PP19_2204_D.png"
             }
         ]
@@ -27381,11 +27876,11 @@
                 "pic": "pic_PPsh41_D.png"
             },
             {
-                "name": "Moment of Vows",
+                "name": "0602",
                 "pic": "pic_PPsh41_602.png"
             },
             {
-                "name": "Moment of Vows (Damaged)",
+                "name": "0602 (Damaged)",
                 "pic": "pic_PPsh41_602_D.png"
             }
         ]
@@ -27699,11 +28194,11 @@
                 "pic": "pic_PTRD_D.png"
             },
             {
-                "name": "Romantic Mission",
+                "name": "0408",
                 "pic": "pic_PTRD_408.png"
             },
             {
-                "name": "Romantic Mission (Damaged)",
+                "name": "0408 (Damaged)",
                 "pic": "pic_PTRD_408_D.png"
             }
         ]
@@ -27817,11 +28312,11 @@
                 "pic": "pic_Px4Storm_D.png"
             },
             {
-                "name": "Queen of X'mas Morning",
+                "name": "2801",
                 "pic": "pic_Px4Storm_2801.png"
             },
             {
-                "name": "Queen of X'mas Morning (Damaged)",
+                "name": "2801 (Damaged)",
                 "pic": "pic_Px4Storm_2801_D.png"
             }
         ]
@@ -28064,11 +28559,11 @@
                 "pic": "pic_PzB39_D.png"
             },
             {
-                "name": "Raging Rider",
+                "name": "1506",
                 "pic": "pic_PzB39_1506.png"
             },
             {
-                "name": "Raging Rider (Damaged)",
+                "name": "1506 (Damaged)",
                 "pic": "pic_PzB39_1506_D.png"
             }
         ]
@@ -28184,6 +28679,86 @@
                 "pic": "pic_QBU88_3801_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/R5",
+        "num": 289,
+        "name": "R5",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 62,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 124,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 55,
+            "eva": 43,
+            "acc": 54,
+            "rof": 76,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Damage Focus T",
+            "icon": "powBuffSelf",
+            "text": "Increases damage by ($damage_value)% for ($time_value) seconds.",
+            "initial": "4",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "damage_value": [
+                "45",
+                "48",
+                "52",
+                "55",
+                "58",
+                "62",
+                "65",
+                "68",
+                "72",
+                "75"
+            ],
+            "time_value": [
+                "6",
+                "6.4",
+                "6.8",
+                "7.2",
+                "7.6",
+                "8",
+                "8.4",
+                "8.8",
+                "9.4",
+                "10"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷⬛\n⬛⬛🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 12%\nIncreases evasion by 15%",
+        "production": {
+            "reward": "Rewarded to players after matching 8 lines in the Pink-Toned Melody bingo event on December 28th. (CN)"
+        }
     },
     {
         "url": "/wiki/R93",
@@ -28412,19 +28987,19 @@
                 "pic": "pic_RFB_D.png"
             },
             {
-                "name": "New Year's MVP",
+                "name": "2902",
                 "pic": "pic_RFB_2902.png"
             },
             {
-                "name": "New Year's MVP (Damaged)",
+                "name": "2902 (Damaged)",
                 "pic": "pic_RFB_2902_D.png"
             },
             {
-                "name": "How RFP Stole Xmas",
+                "name": "1601",
                 "pic": "pic_RFB_1601.png"
             },
             {
-                "name": "How RFP Stole Xmas (Damaged)",
+                "name": "1601 (Damaged)",
                 "pic": "pic_RFB_1601_D.png"
             }
         ]
@@ -28527,11 +29102,11 @@
                 "pic": "pic_RMB93_D.png"
             },
             {
-                "name": "Cross the Milky Way",
+                "name": "1705",
                 "pic": "pic_RMB93_1705.png"
             },
             {
-                "name": "Cross the Milky Way (Damaged)",
+                "name": "1705 (Damaged)",
                 "pic": "pic_RMB93_1705_D.png"
             }
         ]
@@ -29026,11 +29601,11 @@
                 "pic": "pic_SAT8_D.png"
             },
             {
-                "name": "Wintersweet",
+                "name": "1802",
                 "pic": "pic_SAT8_1802.png"
             },
             {
-                "name": "Wintersweet (Damaged)",
+                "name": "1802 (Damaged)",
                 "pic": "pic_SAT8_1802_D.png"
             },
             {
@@ -29042,11 +29617,11 @@
                 "pic": "pic_SAT8_3602_D.png"
             },
             {
-                "name": "Pumpkin Skewers",
+                "name": "2601",
                 "pic": "pic_SAT8_2601.png"
             },
             {
-                "name": "Pumpkin Skewers (Damaged)",
+                "name": "2601 (Damaged)",
                 "pic": "pic_SAT8_2601_D.png"
             }
         ]
@@ -29342,6 +29917,74 @@
         ]
     },
     {
+        "url": "/wiki/SIG-556",
+        "num": 287,
+        "name": "SIG-556",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 61,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 19,
+            "eva": 6,
+            "acc": 6,
+            "rof": 52,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 121,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 51,
+            "eva": 45,
+            "acc": 46,
+            "rof": 76,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Battlefield Wave",
+            "icon": "sig556",
+            "text": "Tap to toggle between one of two effects. [Active]: Raise self rate of fire to maximum and increases damage by ($dam_value)%. While active, each attack gives 1 stack of Overload to self. [Inactive]: Each attack removes 1 stack of Overload from self. [Overload]: When Overload stacks reaches 12, clears all Overload stacks and stun self for 2 seconds, returning the skill to its inactive state. While stunned, the echelon will be unable to advance.",
+            "initial": "5",
+            "cooldown": [
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4"
+            ],
+            "dam_value": [
+                "25",
+                "28",
+                "31",
+                "33",
+                "36",
+                "39",
+                "42",
+                "44",
+                "47",
+                "50"
+            ]
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases rate of fire by 12%\nIncreases evasion by 15%",
+        "production": {
+            "timer": "3:56:00"
+        }
+    },
+    {
         "url": "/wiki/SM-1",
         "num": 217,
         "name": "SM-1",
@@ -29521,27 +30164,27 @@
                 "pic": "pic_SPAS12_D.png"
             },
             {
-                "name": "Marching Band",
+                "name": "0522",
                 "pic": "pic_SPAS12_522.png"
             },
             {
-                "name": "Marching Band (Damaged)",
+                "name": "0522 (Damaged)",
                 "pic": "pic_SPAS12_522_D.png"
             },
             {
-                "name": "Midsummer Fruit",
+                "name": "2408",
                 "pic": "pic_SPAS12_2408.png"
             },
             {
-                "name": "Midsummer Fruit (Damaged)",
+                "name": "2408 (Damaged)",
                 "pic": "pic_SPAS12_2408_D.png"
             },
             {
-                "name": "Goblin Huntress",
+                "name": "3203",
                 "pic": "pic_SPAS12_3203.png"
             },
             {
-                "name": "Goblin Huntress (Damaged)",
+                "name": "3203 (Damaged)",
                 "pic": "pic_SPAS12_3203_D.png"
             }
         ]
@@ -29637,11 +30280,11 @@
                 "pic": "pic_SPP1_D.png"
             },
             {
-                "name": "Snowflakes in Arms",
+                "name": "1703",
                 "pic": "pic_SPP1_1703.png"
             },
             {
-                "name": "Snowflakes in Arms (Damaged)",
+                "name": "1703 (Damaged)",
                 "pic": "pic_SPP1_1703_D.png"
             }
         ]
@@ -29842,11 +30485,11 @@
                 "pic": "pic_SR3MP_D.png"
             },
             {
-                "name": "Bunny Macchiato",
+                "name": "0807",
                 "pic": "pic_SR3MP_807.png"
             },
             {
-                "name": "Bunny Macchiato (Damaged)",
+                "name": "0807 (Damaged)",
                 "pic": "pic_SR3MP_807_D.png"
             },
             {
@@ -30260,11 +30903,11 @@
                 "pic": "pic_AR15Mod_D.png"
             },
             {
-                "name": "Literary Girl",
+                "name": "0701",
                 "pic": "pic_AR15_701.png"
             },
             {
-                "name": "Literary Girl (Damaged)",
+                "name": "0701 (Damaged)",
                 "pic": "pic_AR15_701_D.png"
             }
         ]
@@ -30688,19 +31331,19 @@
                 "pic": "pic_SV98_D.png"
             },
             {
-                "name": "At Your Service",
+                "name": "0502",
                 "pic": "pic_SV98_502.png"
             },
             {
-                "name": "At Your Service (Damaged)",
+                "name": "0502 (Damaged)",
                 "pic": "pic_SV98_502_D.png"
             },
             {
-                "name": "Pierce Your Heart!",
+                "name": "1906",
                 "pic": "pic_SV98_1906.png"
             },
             {
-                "name": "Pierce Your Heart! (Damaged)",
+                "name": "1906 (Damaged)",
                 "pic": "pic_SV98_1906_D.png"
             },
             {
@@ -31130,11 +31773,11 @@
                 "pic": "pic_SVD_D.png"
             },
             {
-                "name": "Winter Fairy",
+                "name": "0305",
                 "pic": "pic_SVD_305.png"
             },
             {
-                "name": "Winter Fairy (Damaged)",
+                "name": "0305 (Damaged)",
                 "pic": "pic_SVD_305_D.png"
             }
         ]
@@ -31436,7 +32079,27 @@
         "production": {
             "stage": "Obtained as a possible drop throughout Operation Cube (CN) and Singularity (EN).",
             "reward": "Acquired as login reward during July 2016 (CN), June 2019 (EN)."
-        }
+        },
+        "internalName": "SPS",
+        "img": "pic_SPS.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_SPS.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_SPS_D.png"
+            },
+            {
+                "name": "Untranslated1",
+                "pic": "pic_SPS_3506.png"
+            },
+            {
+                "name": "Untranslated1 (Damaged)",
+                "pic": "pic_SPS_3506_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Shipka",
@@ -31850,11 +32513,11 @@
                 "pic": "pic_VZ61_D.png"
             },
             {
-                "name": "Crimson Starlet",
+                "name": "0801",
                 "pic": "pic_VZ61_801.png"
             },
             {
-                "name": "Crimson Starlet (Damaged)",
+                "name": "0801 (Damaged)",
                 "pic": "pic_VZ61_801_D.png"
             }
         ]
@@ -32056,11 +32719,11 @@
                 "pic": "pic_Spitfire_D.png"
             },
             {
-                "name": "The Last Alice",
+                "name": "1405",
                 "pic": "pic_Spitfire_1405.png"
             },
             {
-                "name": "The Last Alice (Damaged)",
+                "name": "1405 (Damaged)",
                 "pic": "pic_Spitfire_1405_D.png"
             }
         ]
@@ -32170,35 +32833,35 @@
                 "pic": "pic_M1903_D.png"
             },
             {
-                "name": "Stirring Mermaid",
+                "name": "1107",
                 "pic": "pic_M1903_1107.png"
             },
             {
-                "name": "Stirring Mermaid (Damaged)",
+                "name": "1107 (Damaged)",
                 "pic": "pic_M1903_1107_D.png"
             },
             {
-                "name": "O Holy Night",
+                "name": "0302",
                 "pic": "pic_M1903_302.png"
             },
             {
-                "name": "O Holy Night (Damaged)",
+                "name": "0302 (Damaged)",
                 "pic": "pic_M1903_302_D.png"
             },
             {
-                "name": "Queen in Radiance",
+                "name": "0802",
                 "pic": "pic_M1903_802.png"
             },
             {
-                "name": "Queen in Radiance (Damaged)",
+                "name": "0802 (Damaged)",
                 "pic": "pic_M1903_802_D.png"
             },
             {
-                "name": "Classic Witch",
+                "name": "0005",
                 "pic": "pic_M1903_5.png"
             },
             {
-                "name": "Classic Witch (Damaged)",
+                "name": "0005 (Damaged)",
                 "pic": "pic_M1903_5_D.png"
             }
         ]
@@ -32739,11 +33402,11 @@
                 "pic": "pic_StenMK2_D.png"
             },
             {
-                "name": "Reciprocated Love",
+                "name": "0603",
                 "pic": "pic_StenMK2_603.png"
             },
             {
-                "name": "Reciprocated Love (Damaged)",
+                "name": "0603 (Damaged)",
                 "pic": "pic_StenMK2_603_D.png"
             },
             {
@@ -33138,7 +33801,19 @@
         "bonus_desc": "Affects handguns\nReduce skill cooldown by 12%",
         "production": {
             "reward": "Login reward for February 2019 (CN)."
-        }
+        },
+        "internalName": "scout",
+        "img": "pic_scout.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_scout.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_scout_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Suomi",
@@ -33243,27 +33918,27 @@
                 "pic": "pic_KP31_D.png"
             },
             {
-                "name": "Blissful Mission",
+                "name": "3101",
                 "pic": "pic_KP31_3101.png"
             },
             {
-                "name": "Blissful Mission (Damaged)",
+                "name": "3101 (Damaged)",
                 "pic": "pic_KP31_3101_D.png"
             },
             {
-                "name": "Korvatunturi Pixie",
+                "name": "0310",
                 "pic": "pic_KP31_310.png"
             },
             {
-                "name": "Korvatunturi Pixie (Damaged)",
+                "name": "0310 (Damaged)",
                 "pic": "pic_KP31_310_D.png"
             },
             {
-                "name": "Midsummer Pixie",
+                "name": "1103",
                 "pic": "pic_KP31_1103.png"
             },
             {
-                "name": "Midsummer Pixie (Damaged)",
+                "name": "1103 (Damaged)",
                 "pic": "pic_KP31_1103_D.png"
             }
         ]
@@ -33360,11 +34035,11 @@
                 "pic": "pic_SuperSASS_D.png"
             },
             {
-                "name": "Wolf Walker",
+                "name": "1407",
                 "pic": "pic_SuperSASS_1407.png"
             },
             {
-                "name": "Wolf Walker (Damaged)",
+                "name": "1407 (Damaged)",
                 "pic": "pic_SuperSASS_1407_D.png"
             }
         ]
@@ -33479,11 +34154,11 @@
                 "pic": "pic_SuperShorty_D.png"
             },
             {
-                "name": "Crossing in Labyrinth",
+                "name": "1704",
                 "pic": "pic_SuperShorty_1704.png"
             },
             {
-                "name": "Crossing in Labyrinth (Damaged)",
+                "name": "1704 (Damaged)",
                 "pic": "pic_SuperShorty_1704_D.png"
             }
         ]
@@ -33591,11 +34266,11 @@
                 "pic": "pic_T5000_D.png"
             },
             {
-                "name": "Oath of Transformation",
+                "name": "3106",
                 "pic": "pic_T5000_3106.png"
             },
             {
-                "name": "Oath of Transformation (Damaged)",
+                "name": "3106 (Damaged)",
                 "pic": "pic_T5000_3106_D.png"
             }
         ]
@@ -34144,11 +34819,11 @@
                 "pic": "pic_TAC50_D.png"
             },
             {
-                "name": "Elf Helsing",
+                "name": "2602",
                 "pic": "pic_TAC50_2602.png"
             },
             {
-                "name": "Elf Helsing (Damaged)",
+                "name": "2602 (Damaged)",
                 "pic": "pic_TAC50_2602_D.png"
             }
         ]
@@ -34269,11 +34944,11 @@
                 "pic": "pic_TAR21_D.png"
             },
             {
-                "name": "Night at the Bar",
+                "name": "1305",
                 "pic": "pic_TAR21_1305.png"
             },
             {
-                "name": "Night at the Bar (Damaged)",
+                "name": "1305 (Damaged)",
                 "pic": "pic_TAR21_1305_D.png"
             }
         ]
@@ -34486,11 +35161,11 @@
                 "pic": "pic_TMP_D.png"
             },
             {
-                "name": "Red-Eared Cat",
+                "name": "2807",
                 "pic": "pic_TMP_2807.png"
             },
             {
-                "name": "Red-Eared Cat (Damaged)",
+                "name": "2807 (Damaged)",
                 "pic": "pic_TMP_2807_D.png"
             },
             {
@@ -34594,11 +35269,11 @@
                 "pic": "pic_M1928A1_D.png"
             },
             {
-                "name": "Demon Hunter",
+                "name": "1501",
                 "pic": "pic_M1928A1_1501.png"
             },
             {
-                "name": "Demon Hunter (Damaged)",
+                "name": "1501 (Damaged)",
                 "pic": "pic_M1928A1_1501_D.png"
             }
         ]
@@ -34682,11 +35357,11 @@
                 "pic": "pic_Thunder50_D.png"
             },
             {
-                "name": "Lenore's Raven",
+                "name": "2206",
                 "pic": "pic_Thunder50_2206.png"
             },
             {
-                "name": "Lenore's Raven (Damaged)",
+                "name": "2206 (Damaged)",
                 "pic": "pic_Thunder50_2206_D.png"
             },
             {
@@ -34798,19 +35473,19 @@
                 "pic": "pic_TT33_D.png"
             },
             {
-                "name": "Griffin's Dancer",
+                "name": "3204",
                 "pic": "pic_TT33_3204.png"
             },
             {
-                "name": "Griffin's Dancer (Damaged)",
+                "name": "3204 (Damaged)",
                 "pic": "pic_TT33_3204_D.png"
             },
             {
-                "name": "A Couple's Journey",
+                "name": "0601",
                 "pic": "pic_TT33_601.png"
             },
             {
-                "name": "A Couple's Journey (Damaged)",
+                "name": "0601 (Damaged)",
                 "pic": "pic_TT33_601_D.png"
             }
         ]
@@ -35023,11 +35698,11 @@
                 "pic": "pic_Type100_D.png"
             },
             {
-                "name": "Gunslinger Miko",
+                "name": "2903",
                 "pic": "pic_Type100_2903.png"
             },
             {
-                "name": "Gunslinger Miko (Damaged)",
+                "name": "2903 (Damaged)",
                 "pic": "pic_Type100_2903_D.png"
             }
         ]
@@ -35439,11 +36114,11 @@
                 "pic": "pic_59type_D.png"
             },
             {
-                "name": "Fairy Primrose",
+                "name": "0407",
                 "pic": "pic_59type_407.png"
             },
             {
-                "name": "Fairy Primrose (Damaged)",
+                "name": "0407 (Damaged)",
                 "pic": "pic_59type_407_D.png"
             }
         ]
@@ -35552,11 +36227,11 @@
                 "pic": "pic_Type62_D.png"
             },
             {
-                "name": "New Year Fair",
+                "name": "2908",
                 "pic": "pic_Type62_2908.png"
             },
             {
-                "name": "New Year Fair (Damaged)",
+                "name": "2908 (Damaged)",
                 "pic": "pic_Type62_2908_D.png"
             }
         ]
@@ -36143,11 +36818,11 @@
                 "pic": "pic_79type_D.png"
             },
             {
-                "name": "Nine-Tail Fox",
+                "name": "1402",
                 "pic": "pic_79type_1402.png"
             },
             {
-                "name": "Nine-Tail Fox (Damaged)",
+                "name": "1402 (Damaged)",
                 "pic": "pic_79type_1402_D.png"
             },
             {
@@ -36252,11 +36927,11 @@
                 "pic": "pic_80type_D.png"
             },
             {
-                "name": "Steel Butterfly",
+                "name": "2504",
                 "pic": "pic_80type_2504.png"
             },
             {
-                "name": "Steel Butterfly (Damaged)",
+                "name": "2504 (Damaged)",
                 "pic": "pic_80type_2504_D.png"
             }
         ]
@@ -36365,11 +37040,11 @@
                 "pic": "pic_81typeR_D.png"
             },
             {
-                "name": "White Camellia",
+                "name": "1807",
                 "pic": "pic_81typeR_1807.png"
             },
             {
-                "name": "White Camellia (Damaged)",
+                "name": "1807 (Damaged)",
                 "pic": "pic_81typeR_1807_D.png"
             }
         ]
@@ -36502,11 +37177,11 @@
                 "pic": "pic_Type88_D.png"
             },
             {
-                "name": "Noble Orchid",
+                "name": "3003",
                 "pic": "pic_Type88_3003.png"
             },
             {
-                "name": "Noble Orchid (Damaged)",
+                "name": "3003 (Damaged)",
                 "pic": "pic_Type88_3003_D.png"
             },
             {
@@ -36721,19 +37396,19 @@
                 "pic": "pic_95type_D.png"
             },
             {
-                "name": "Narcissus",
+                "name": "0405",
                 "pic": "pic_95type_405.png"
             },
             {
-                "name": "Narcissus (Damaged)",
+                "name": "0405 (Damaged)",
                 "pic": "pic_95type_405_D.png"
             },
             {
-                "name": "Summer Cicada",
+                "name": "1102",
                 "pic": "pic_95type_1102.png"
             },
             {
-                "name": "Summer Cicada (Damaged)",
+                "name": "1102 (Damaged)",
                 "pic": "pic_95type_1102_D.png"
             },
             {
@@ -36849,11 +37524,11 @@
                 "pic": "pic_97type_D.png"
             },
             {
-                "name": "Peony",
+                "name": "0406",
                 "pic": "pic_97type_406.png"
             },
             {
-                "name": "Peony (Damaged)",
+                "name": "0406 (Damaged)",
                 "pic": "pic_97type_406_D.png"
             },
             {
@@ -37308,11 +37983,11 @@
                 "pic": "pic_UMP45_3403_D.png"
             },
             {
-                "name": "Winter Trip",
+                "name": "0521",
                 "pic": "pic_UMP45_521.png"
             },
             {
-                "name": "Winter Trip (Damaged)",
+                "name": "0521 (Damaged)",
                 "pic": "pic_UMP45_521_D.png"
             },
             {
@@ -37743,11 +38418,11 @@
                 "pic": "pic_UMP9_D.png"
             },
             {
-                "name": "Am I Late?",
+                "name": "0409",
                 "pic": "pic_UMP9_409.png"
             },
             {
-                "name": "Am I Late? (Damaged)",
+                "name": "0409 (Damaged)",
                 "pic": "pic_UMP9_409_D.png"
             },
             {
@@ -37759,11 +38434,11 @@
                 "pic": "pic_UMP9_3404_D.png"
             },
             {
-                "name": "The World's Melody",
+                "name": "2106",
                 "pic": "pic_UMP9_2106.png"
             },
             {
-                "name": "The World's Melody (Damaged)",
+                "name": "2106 (Damaged)",
                 "pic": "pic_UMP9_2106_D.png"
             },
             {
@@ -38216,11 +38891,11 @@
                 "pic": "pic_USAS12_D.png"
             },
             {
-                "name": "VRAIN Power",
+                "name": "2704",
                 "pic": "pic_USAS12_2704.png"
             },
             {
-                "name": "VRAIN Power (Damaged)",
+                "name": "2704 (Damaged)",
                 "pic": "pic_USAS12_2704_D.png"
             }
         ]
@@ -38532,19 +39207,19 @@
                 "pic": "pic_Vector_D.png"
             },
             {
-                "name": "Kitty Paws",
+                "name": "0002",
                 "pic": "pic_Vector_2.png"
             },
             {
-                "name": "Kitty Paws (Damaged)",
+                "name": "0002 (Damaged)",
                 "pic": "pic_Vector_2_D.png"
             },
             {
-                "name": "Ardent Devotion",
+                "name": "1901",
                 "pic": "pic_Vector_1901.png"
             },
             {
-                "name": "Ardent Devotion (Damaged)",
+                "name": "1901 (Damaged)",
                 "pic": "pic_Vector_1901_D.png"
             }
         ]
@@ -38653,35 +39328,35 @@
                 "pic": "pic_WA2000_D.png"
             },
             {
-                "name": "Date in the Snow",
+                "name": "0306",
                 "pic": "pic_WA2000_306.png"
             },
             {
-                "name": "Date in the Snow (Damaged)",
+                "name": "0306 (Damaged)",
                 "pic": "pic_WA2000_306_D.png"
             },
             {
-                "name": "Op. Manta Ray",
+                "name": "1108",
                 "pic": "pic_WA2000_1108.png"
             },
             {
-                "name": "Op. Manta Ray (Damaged)",
+                "name": "1108 (Damaged)",
                 "pic": "pic_WA2000_1108_D.png"
             },
             {
-                "name": "Haunted Castle",
+                "name": "0006",
                 "pic": "pic_WA2000_6.png"
             },
             {
-                "name": "Haunted Castle (Damaged)",
+                "name": "0006 (Damaged)",
                 "pic": "pic_WA2000_6_D.png"
             },
             {
-                "name": "Ballroom Interlude",
+                "name": "0804",
                 "pic": "pic_WA2000_804.png"
             },
             {
-                "name": "Ballroom Interlude (Damaged)",
+                "name": "0804 (Damaged)",
                 "pic": "pic_WA2000_804_D.png"
             }
         ]
@@ -38783,27 +39458,27 @@
                 "pic": "pic_Welrod_D.png"
             },
             {
-                "name": "English in Love",
+                "name": "0411",
                 "pic": "pic_Welrod_411.png"
             },
             {
-                "name": "English in Love (Damaged)",
+                "name": "0411 (Damaged)",
                 "pic": "pic_Welrod_411_D.png"
             },
             {
-                "name": "Nightfall Crisis",
+                "name": "2103",
                 "pic": "pic_Welrod_2103.png"
             },
             {
-                "name": "Nightfall Crisis (Damaged)",
+                "name": "2103 (Damaged)",
                 "pic": "pic_Welrod_2103_D.png"
             },
             {
-                "name": "Lord of Shadow",
+                "name": "1401",
                 "pic": "pic_Welrod_1401.png"
             },
             {
-                "name": "Lord of Shadow (Damaged)",
+                "name": "1401 (Damaged)",
                 "pic": "pic_Welrod_1401_D.png"
             }
         ]
@@ -39348,20 +40023,112 @@
                 "pic": "pic_ZastavaM21_D.png"
             },
             {
-                "name": "White Queen",
+                "name": "2104",
                 "pic": "pic_ZastavaM21_2104.png"
             },
             {
-                "name": "White Queen (Damaged)",
+                "name": "2104 (Damaged)",
                 "pic": "pic_ZastavaM21_2104_D.png"
             },
             {
-                "name": "Gunshot in the Snow",
+                "name": "1603",
                 "pic": "pic_ZastavaM21_1603.png"
             },
             {
-                "name": "Gunshot in the Snow (Damaged)",
+                "name": "1603 (Damaged)",
                 "pic": "pic_ZastavaM21_1603_D.png"
+            }
+        ]
+    },
+    {
+        "url": "/wiki/Zas_M76",
+        "num": -1,
+        "name": "Zas M76",
+        "type": "RF",
+        "rating": 3,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 42,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 52,
+            "eva": 4,
+            "acc": 10,
+            "rof": 25,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 84,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 146,
+            "eva": 32,
+            "acc": 70,
+            "rof": 34,
+            "armor": 0
+        },
+        "ability": {
+            "name": "Assault Focus",
+            "icon": "rateBuffSelf",
+            "text": "Increases rate of fire by ($rof_value)% for ($time_value) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "rof_value": [
+                "35",
+                "38",
+                "41",
+                "43",
+                "46",
+                "49",
+                "52",
+                "54",
+                "57",
+                "60"
+            ],
+            "time_value": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
+        "production": {
+            "reward": "Login reward for December 2019 (CN)."
+        },
+        "img": "pic_ZasM76.png",
+        "internalName": "ZasM76",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_ZasM76.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_ZasM76_D.png"
             }
         ]
     },
@@ -39475,11 +40242,11 @@
                 "pic": "pic_m45_D.png"
             },
             {
-                "name": "Candy Express",
+                "name": "0004",
                 "pic": "pic_m45_4.png"
             },
             {
-                "name": "Candy Express (Damaged)",
+                "name": "0004 (Damaged)",
                 "pic": "pic_m45_4_D.png"
             }
         ]
@@ -39669,11 +40436,11 @@
                 "pic": "pic_Alma_D.png"
             },
             {
-                "name": "Middle School Adventure",
+                "name": "0528",
                 "pic": "pic_Alma_528.png"
             },
             {
-                "name": "Middle School Adventure (Damaged)",
+                "name": "0528 (Damaged)",
                 "pic": "pic_Alma_528_D.png"
             }
         ]
@@ -39757,11 +40524,11 @@
                 "pic": "pic_Bronya_D.png"
             },
             {
-                "name": "Bronya's Armor",
+                "name": "0507",
                 "pic": "pic_Bronya_507.png"
             },
             {
-                "name": "Bronya's Armor (Damaged)",
+                "name": "0507 (Damaged)",
                 "pic": "pic_Bronya_507_D.png"
             }
         ]
@@ -39857,19 +40624,19 @@
                 "pic": "pic_CLEAR_D.png"
             },
             {
-                "name": "Pocket City Queen the Second",
+                "name": "0509",
                 "pic": "pic_CLEAR_509.png"
             },
             {
-                "name": "Pocket City Queen the Second (Damaged)",
+                "name": "0509 (Damaged)",
                 "pic": "pic_CLEAR_509_D.png"
             },
             {
-                "name": "Doll Annihilator",
+                "name": "0505",
                 "pic": "pic_CLEAR_505.png"
             },
             {
-                "name": "Doll Annihilator (Damaged)",
+                "name": "0505 (Damaged)",
                 "pic": "pic_CLEAR_505_D.png"
             }
         ]
@@ -39978,11 +40745,11 @@
                 "pic": "pic_Dana_D.png"
             },
             {
-                "name": "Red Comet",
+                "name": "0526",
                 "pic": "pic_Dana_526.png"
             },
             {
-                "name": "Red Comet (Damaged)",
+                "name": "0526 (Damaged)",
                 "pic": "pic_Dana_526_D.png"
             }
         ]
@@ -40090,11 +40857,11 @@
                 "pic": "pic_Dorothy_D.png"
             },
             {
-                "name": "Precious Christmas Outfit",
+                "name": "0525",
                 "pic": "pic_Dorothy_525.png"
             },
             {
-                "name": "Precious Christmas Outfit (Damaged)",
+                "name": "0525 (Damaged)",
                 "pic": "pic_Dorothy_525_D.png"
             }
         ]
@@ -40283,19 +41050,19 @@
                 "pic": "pic_FAIL_D.png"
             },
             {
-                "name": "Kiana's Dress",
+                "name": "0506",
                 "pic": "pic_FAIL_506.png"
             },
             {
-                "name": "Kiana's Dress (Damaged)",
+                "name": "0506 (Damaged)",
                 "pic": "pic_FAIL_506_D.png"
             },
             {
-                "name": "Pocket City Queen the Third",
+                "name": "0510",
                 "pic": "pic_FAIL_510.png"
             },
             {
-                "name": "Pocket City Queen the Third (Damaged)",
+                "name": "0510 (Damaged)",
                 "pic": "pic_FAIL_510_D.png"
             }
         ]
@@ -40511,11 +41278,11 @@
                 "pic": "pic_Jill_D.png"
             },
             {
-                "name": "Model Warrior",
+                "name": "0529",
                 "pic": "pic_Jill_529.png"
             },
             {
-                "name": "Model Warrior (Damaged)",
+                "name": "0529 (Damaged)",
                 "pic": "pic_Jill_529_D.png"
             }
         ]
@@ -40611,11 +41378,11 @@
                 "pic": "pic_Kiana_D.png"
             },
             {
-                "name": "Kiana's Dress",
+                "name": "0506",
                 "pic": "pic_Kiana_506.png"
             },
             {
-                "name": "Kiana's Dress (Damaged)",
+                "name": "0506 (Damaged)",
                 "pic": "pic_Kiana_506_D.png"
             }
         ]
@@ -40710,7 +41477,19 @@
         "bonus_desc": "Affects submachine guns\nIncreases damage by 20%\nIncreases rate of fire by 20%",
         "production": {
             "reward": "Rewarded to players after the completion of Hitoribocchi map E1-4."
-        }
+        },
+        "internalName": "Himeko",
+        "img": "pic_Himeko.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_Himeko.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_Himeko_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Noel",
@@ -40965,11 +41744,11 @@
                 "pic": "pic_Seele_D.png"
             },
             {
-                "name": "Seele's Ceremony",
+                "name": "0508",
                 "pic": "pic_Seele_508.png"
             },
             {
-                "name": "Seele's Ceremony (Damaged)",
+                "name": "0508 (Damaged)",
                 "pic": "pic_Seele_508_D.png"
             }
         ]
@@ -41065,43 +41844,43 @@
                 "pic": "pic_SEI_D.png"
             },
             {
-                "name": "Kitty Paws",
+                "name": "0002",
                 "pic": "pic_SEI_2.png"
             },
             {
-                "name": "Kitty Paws (Damaged)",
+                "name": "0002 (Damaged)",
                 "pic": "pic_SEI_2_D.png"
             },
             {
-                "name": "Best Friend's Casual Dress",
+                "name": "0527",
                 "pic": "pic_SEI_527.png"
             },
             {
-                "name": "Best Friend's Casual Dress (Damaged)",
+                "name": "0527 (Damaged)",
                 "pic": "pic_SEI_527_D.png"
             },
             {
-                "name": "Nocturnal Familiar",
+                "name": "0003",
                 "pic": "pic_SEI_3.png"
             },
             {
-                "name": "Nocturnal Familiar (Damaged)",
+                "name": "0003 (Damaged)",
                 "pic": "pic_SEI_3_D.png"
             },
             {
-                "name": "Candy Express",
+                "name": "0004",
                 "pic": "pic_SEI_4.png"
             },
             {
-                "name": "Candy Express (Damaged)",
+                "name": "0004 (Damaged)",
                 "pic": "pic_SEI_4_D.png"
             },
             {
-                "name": "Pumpkin Mishka",
+                "name": "0001",
                 "pic": "pic_SEI_1.png"
             },
             {
-                "name": "Pumpkin Mishka (Damaged)",
+                "name": "0001 (Damaged)",
                 "pic": "pic_SEI_1_D.png"
             }
         ]
@@ -41221,11 +42000,11 @@
                 "pic": "pic_Stella_D.png"
             },
             {
-                "name": "Best Friend's Armor",
+                "name": "0524",
                 "pic": "pic_Stella_524.png"
             },
             {
-                "name": "Best Friend's Armor (Damaged)",
+                "name": "0524 (Damaged)",
                 "pic": "pic_Stella_524_D.png"
             }
         ]
@@ -41359,11 +42138,11 @@
         ]
     },
     {
-        "url": "/wiki/MAT-49",
+        "url": "/wiki/43M",
         "num": -1,
-        "name": "MAT-49",
+        "name": "43M",
         "type": "SMG",
-        "rating": 4,
+        "rating": 3,
         "constStats": {
             "mov": 12,
             "crit_rate": 5,
@@ -41371,7 +42150,7 @@
             "pen": 15
         },
         "baseStats": {
-            "hp": 10,
+            "hp": 93,
             "ammo": 25,
             "ration": 20,
             "dmg": -1,
@@ -41381,13 +42160,13 @@
             "armor": 0
         },
         "maxStats": {
-            "hp": 100,
+            "hp": 185,
             "ammo": 85,
             "ration": 60,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
+            "dmg": 30,
+            "eva": 56,
+            "acc": 13,
+            "rof": 89,
             "armor": 0
         },
         "ability": {
@@ -41407,103 +42186,11 @@
                 "?"
             ]
         },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects assault rifles\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "tile_bonus": "🔶⬛⬛\n⬛🔷⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases evasion by 10%",
         "production": {
-            "stage": "Drops only from specific enemy units in 12-6 and 12-4E. Can also be obtained by S-Ranking the map and by Auto-battles"
+            "reward": "Login reward for January 2020 (CN)."
         }
-    },
-    {
-        "url": "/wiki/Zas_M76",
-        "num": -1,
-        "name": "Zas M76",
-        "type": "RF",
-        "rating": 3,
-        "constStats": {
-            "mov": 7,
-            "crit_rate": 40,
-            "crit_dmg": 50,
-            "pen": 15
-        },
-        "baseStats": {
-            "hp": 42,
-            "ammo": 15,
-            "ration": 30,
-            "dmg": 52,
-            "eva": 4,
-            "acc": 10,
-            "rof": 25,
-            "armor": 0
-        },
-        "maxStats": {
-            "hp": 84,
-            "ammo": 55,
-            "ration": 90,
-            "dmg": 146,
-            "eva": 32,
-            "acc": 70,
-            "rof": 34,
-            "armor": 0
-        },
-        "ability": {
-            "name": "Assault Focus",
-            "icon": "rateBuffSelf",
-            "text": "Increases rate of fire by ($rof_value)% for ($time_value) seconds.",
-            "initial": "6",
-            "cooldown": [
-                "10",
-                "9.8",
-                "9.6",
-                "9.3",
-                "9.1",
-                "8.9",
-                "8.7",
-                "8.4",
-                "8.2",
-                "8"
-            ],
-            "rof_value": [
-                "35",
-                "38",
-                "41",
-                "43",
-                "46",
-                "49",
-                "52",
-                "54",
-                "57",
-                "60"
-            ],
-            "time_value": [
-                "3",
-                "3.2",
-                "3.4",
-                "3.7",
-                "3.9",
-                "4.1",
-                "4.3",
-                "4.6",
-                "4.8",
-                "5"
-            ]
-        },
-        "tile_bonus": "⬛⬛⬛\n⬛🔷🔶\n⬛⬛🔶",
-        "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
-        "production": {
-            "reward": "Login reward for December 2019 (CN)."
-        },
-        "img": "pic_ZasM76.png",
-        "internalName": "ZasM76",
-        "costumes": [
-            {
-                "name": "Default",
-                "pic": "pic_ZasM76.png"
-            },
-            {
-                "name": "Default (Damaged)",
-                "pic": "pic_ZasM76_D.png"
-            }
-        ]
     },
     {
         "url": "/wiki/K7",
@@ -41556,7 +42243,9 @@
         },
         "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
         "bonus_desc": "Affects assault rifles\nNot available\nNot available",
-        "production": {},
+        "production": {
+            "reward": "It is impossible to obtain this T-Doll."
+        },
         "img": "pic_K7.png",
         "internalName": "K7",
         "costumes": [
@@ -41604,9 +42293,11 @@
         },
         "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
         "bonus_desc": "Affects assault rifles\nNot available\nNot available",
-        "production": {},
-        "img": "pic_KGP9.png",
+        "production": {
+            "reward": "It is impossible to obtain this T-Doll."
+        },
         "internalName": "KGP9",
+        "img": "pic_KGP9.png",
         "costumes": [
             {
                 "name": "Default",
@@ -41820,6 +42511,18 @@
             "reward": "?̖ͮ͗?̞̏?̄͂̉"
         },
         "description": "||The true form of the Parapluie Virus. At least M4A1's isn't so bad, right?||",
+        "internalName": "OGAS"
+    },
+    {
+        "url": "",
+        "num": -1,
+        "rating": -1,
+        "name": "Dandelai",
+        "type": "pͧ̅ͅḁ͋̿ṙ̭a̗ͪ̇p̦̈̅lui͔͎̪e ̊͋̇v̊͒̽i͊ͧ̊ru̳̠s",
+        "production": {
+            "reward": "?̖ͮ͗?̞̏?̄͂̉"
+        },
+        "description": "||M4A1's OGAS. Her name is based on 'dandelion'.||",
         "internalName": "OGAS",
         "img": "Nyto_Isomer_Shadow.png"
     },
@@ -41861,7 +42564,7 @@
                 "pic": "Abandoned_Isomer.png"
             },
             {
-                "name": "Shadow ||(OGAS)||",
+                "name": "Shadow ||(Dandelai)||",
                 "pic": "Nyto_Isomer_Shadow.png"
             },
             {
