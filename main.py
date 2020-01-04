@@ -767,8 +767,9 @@ async def on_message(message):
 		msg+="For advanced help, do `"+COMMAND_PREFIX+"help <short name of command>`. Example: `"+COMMAND_PREFIX+"help image`, `$gfhelp quote`\n\n"
 		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
-		msg+="Contact: /u/RhythmLunatic on Reddit, RhythmLunatic on Github, or Accelerator#6473 on Discord\n"
-		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!"
+		msg+="Contact: /u/RhythmLunatic on Reddit or RhythmLunatic on Github\n"
+		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!\n"
+		msg+="Girls Frontline Discord Search is licenced under AGPLv3. Support free and open source software!"
 		await client.send_message(message.channel, msg)
 		return
 	
