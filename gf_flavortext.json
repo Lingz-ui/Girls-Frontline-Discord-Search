@@ -2,10 +2,18 @@
 	"Ak 5":{"alias":"Ak5"},
 	"AS Val": {"flavor":"Error's waifu. Who is Error? Don't worry about it."},
 	"AUG" : {"flavor":"Glory to mankind."},
-	"Colt Revolver":{"alias":"M1873"},
+	"Colt Revolver":{"alias":"SAA"},
 	"C-MS":{"alias":"cms"},
 	"Carcano M1891":{"alias":"Strawberry"},
 	"Carcano M91∕38":{"alias":"Grape"},
+	"Destroyer":{"quotes":
+		{
+		"dialogue1":"(Missing dialogue translation currently, plz wait)",
+		"dialogue2":"Hey you griffin guys! I'm not the shortest one anymore!",
+		"dialogue3":"(Missing dialogue translation currently, plz wait)",
+		"dialoguewedding":"(Missing dialogue translation currently, plz wait)"
+		}
+	},
 	"Elphelt" : {"flavor" : "Heaven or Hell! Let's rock!", "alias":"Elphelt Valentine"},
 	"Elisa": {"flavor":"Father...?"},
 	"FAMAS": {"alias":"Fr FAMAS"},

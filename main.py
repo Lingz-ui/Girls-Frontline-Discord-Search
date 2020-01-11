@@ -15,17 +15,43 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 This program is written by Rhythm Lunatic.
 '''
 
+'''
+HOW THE DATABASES WORK
+girlsfrontline.json: Data scraped from gfwiki. Plus NPCs and Sangvis Ferri dolls.
+gf_flavortext.json: Bonus data not scraped from gfwiki. Can include quotes too if you add a "quotes" dict to the gf_flavortext with the keys inside them (Look at Destroyer for an example)
+Why is stuff injected in instead of being preprocessed? Because it's easier to maintain, girlsfrontline.json takes a long time to update
+
+Here's the quote keys if you didn't dump the data from the girls frontline game like I told you to:
+"dialogue1"       - first adjutant dialogue
+"dialogue2"       - second adjutant dialogue
+"dialogue3"       - third adjutant dialogue, this has a lower chance of appearing
+"dialoguewedding" - wedding adjutant dialogue, said sometimes after you've ~~married~~ oathed them
+"soulcontract"    - dialogue when you marry them
+"introduce"       - Dialogue used when you look at them in the index. (The english translators copypasted from gain, but it's unique in CN)
+"gain"            - Dialogue when you obtain them
+"allhallows"      - Dialogue used during halloween.
+"newyear"         - Take a wild guess.
+"valentine"       - ...
+"christmas"       - ...
+
+There are various others but they're only shown in the index, they're translations for voice lines and stuff
+
+'''
+
 import discord
 import json
 #Error handler
 import traceback
 #To insert ability parameters for dolls
 import re
+#environment token
 import os
 #For random flavor texts if quotes are present.
 import random
 #Time is needed for gfstatus time sort.
 import time
+#datetime is needed to show seasonal quotes. Yes, really.
+#from datetime import datetime
 #Return closest result for dolls. (Thank god because nobody ever spells anything correctly with this bot)
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
@@ -49,7 +75,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:998/pic/equip/"
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
 gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
-version = "IOP 3.1-20200103"
+version = "IOP 3.2-20200109"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -157,17 +183,24 @@ def printError(text):
 
 
 def num2stars(n):
-	#★☆
-	st = ""
-	if n > 5:
+	#★☆⚝
+	if n == 100:
 		return "⚝"
+	#NPCs and SF dolls don't really have rarities so don't return any stars
 	elif n < 1:
-		return st
+		return ""
+	#For HK416 MOD 2
+	elif n > 5:
+		#Behold, the pythonic way of duplicating text. "str"*5 would be "strstrstrstrstr"
+		return "★"*n
+	#Normal dolls
+	st = ""
 	for i in range(5):
 		if i < n:
 			st = st + "★"
 		else:
 			st = st + "☆"
+	#The really pythonic way would be "★"*n+"☆"*(5-n) but I don't think anyone would be able to read that
 	return st
 
 
@@ -200,13 +233,44 @@ def serverCount():
 	print("Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders")
 	return "Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders"
 
+'''
+internalName = internal name of doll.
+quoteType = quote key you want. (Scroll up to the top if you don't know)
+'''
 def getQuote(internalName, quoteType):
+	#Yes I know the ifs can be an and statement I'm not changing it
 	if quotedex:
 		if internalName in quotedex:
 			if quoteType in quotedex[internalName]:
 				return " ".join(quotedex[internalName][quoteType])
 	return False
 	
+#unnecessary
+#def quoteExists(internalName,quoteType):
+#	return quotedex and internalName in quotedex and quotetype in quotedex[internalName]
+
+#super unnecessary
+'''
+def getFlavorText(dollInternalName):
+	quote = None
+	curDate = datetime.now()
+	if (curDate.month == 1 and curDate.day == 1) or (curDate.month==12 and curDate.day == 31):
+		quote = getQuote(dollInternalName,"newyear")
+	if (curDate.month == 2 and curDate.day == 14):
+		quote = getQuote(dollInternalName,"valentine")
+	elif (curDate.month == 10 and curDate.day > 25):
+		quote = getQuote(dollInternalName,"allhallows")
+	elif curDate.month == 12 and curDate.day > 15:
+		quote = getQuote(dollInternalName,"christmas")
+	if quote:
+		return quote
+	#the MOD 3 dolls can have blank gain tags for some reason, so check if it's not an empty string.
+	if getQuote(dollInternalName,"gain") != "":
+		return getQuote(dollInternalName, random.choice(["dialogue1","dialogue2","dialogue3","dialoguewedding","gain"]))
+	else:
+		return getQuote(dollInternalName, random.choice(["dialogue1","dialogue2","dialogue3","dialoguewedding"]))
+'''
+
 def getAbility(doll, tag):
 	abilityText = doll[tag]['text']
 	while True:
@@ -224,7 +288,6 @@ def getAbility(doll, tag):
 		abilityText += ", "+str(doll[tag]['initial']) + " seconds initial cooldown"
 	return abilityText
 	
-#There was honestly no need to make this a function
 #if statements for all the things!!!!!!
 def dollInfo(doll):
 	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 0 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
@@ -290,16 +353,18 @@ def dollInfo(doll):
 	if doll['name'] in bonusdex and 'flavor' in bonusdex[doll['name']]:
 		embed.set_footer(text=bonusdex[doll['name']]['flavor'])
 	else:
-		quote = False
 		if 'internalName' in doll:
+			#quote = getFlavorText(doll['internalName'])
+			quote = None
+			#the MOD 3 dolls can have blank gain tags for some reason, so check if it's not an empty string.
 			if getQuote(doll['internalName'],"gain") != "":
-				quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3","gain"]))
+				quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3","dialoguewedding","gain"]))
 			else:
-				quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3"]))
-		if quote != False:
-			embed.set_footer(text=quote)
-		else:
-			embed.set_footer(text="Data is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0.")
+				quote = getQuote(doll['internalName'], random.choice(["dialogue1","dialogue2","dialogue3","dialoguewedding"]))
+			if quote:
+				embed.set_footer(text=quote)
+			else:
+				embed.set_footer(text="Data is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0.")
 
 	if 'img' in doll:
 		embed.set_image(url=PIC_DOMAIN+doll['img'])
@@ -451,7 +516,8 @@ def getSearchResult(param, search_equip=False):
 		for doll in frontlinedex:
 			if res[0][0] == doll['name']:
 				return doll, res
-	raise Exception("This shouldn't be possible! No result found in search.")
+	#raise Exception("This shouldn't be possible! No result found in search.")
+	printError("This shouldn't be possible! No result found in search.")
 
 
 
@@ -524,6 +590,7 @@ async def on_server_remove(server):
 #You know what? It's better if it's stateless anyways
 @client.event
 async def on_reaction_add(reaction,user):
+	#If the reaction added was by the bot itself
 	if user == client.user:
 		return
 	#If the message that the reaction was added to is not a message this bot sent, return.
@@ -537,25 +604,45 @@ async def on_reaction_add(reaction,user):
 	
 	#Check if it's a search result
 	#This is an example of how NOT to write a function
-	#if msg[0].startswith("No T-Doll was"):
-	#	dollList = msg[0].split(": ")[-1].split(", ")
-	#	if len(reaction.message.embeds) < 1:
-	#		print("What? search result was not an embed.")
-	#		return
-	#	curDollName = ' '.join(reaction.message.embeds[0].title.split(" - ")[1].split(' ')[:-1])
-	#	print(curDollName)
-	#	curIndex = 0
-	#	for d in dollList:
-	#		if curDollName == d:
-	#			break;
-	#		else:
-	#			curIndex+=1
-	#	print(str(curIndex))
-		#UNFINISHED...
+	if msg[0].startswith("No T-Doll was") and reaction.emoji in ['⏪','⏩']:
+		dollList = msg[0].split(": ")[-1].split(", ")
+		if len(reaction.message.embeds) < 1:
+			printError("What? search result was not an embed.")
+			return
+		else:
+			#print(reaction.message.embeds[0])
+			curDollName = ' '.join(reaction.message.embeds[0]['title'].split(" - ")[1].split(' ')[:-1])
+			print(curDollName)
+			curIndex = 0
+			for d in dollList:
+				if curDollName == d:
+					break;
+				else:
+					curIndex+=1
+			print(str(curIndex)+ " "+dollList[curIndex])
+			if reaction.emoji == "⏩" and curIndex+1 < len(dollList):
+				curIndex+=1
+			elif reaction.emoji == "⏪" and curIndex > 0:
+				curIndex-=1
+			else:
+				return
+			for doll in frontlinedex:
+				if dollList[curIndex] == doll['name']:
+					await client.edit_message(reaction.message,embed=dollInfo(doll))
+					try:
+						await client.clear_reactions(reaction.message)
+						for e in ['⏪','⏩']:
+							try:
+								await client.add_reaction(reaction.message,e)
+							except:
+								print("Missing manage messages permissions...")
+					except:
+						print("Missing manage messages permissions...")
+					return
 	
 	#lame hack to check if it's a --list result
 	#We check backwards becuse the "No T doll was found blah blah" message might appear
-	if msg[-2].startswith("Costumes for"):
+	elif msg[-2].startswith("Costumes for"):
 		#print(msg[0].split(":")[0])
 		name = msg[-2].split(":")[0][(len("Costumes for")+1):]
 		print(name)
@@ -575,22 +662,21 @@ async def on_reaction_add(reaction,user):
 					print("Missing manage messages permissions...")
 					#await client.edit_message(msg,new_content=msg.content+"\n(I'm missing manage message permissions, so I can't clear your reactions.)")
 	#Lame hack to check if this is a $gfimage command result
-	elif msg[-1].endswith(".png"):
-		if reaction.emoji == "🔥":
-			name,costume = msg[-2].split(":")
+	elif msg[-1].endswith(".png") and reaction.emoji == "🔥":
+		name,costume = msg[-2].split(":")
+		
+		#If already damage art
+		if "(" in costume:
+			#costume = costume.split("(")[0].strip()
+			return
+		elif costume.strip() == "":
+			costume = "Default (Damaged)"
+		else:
+			costume = costume.strip() + " (Damaged)"
 			
-			#If already damage art
-			if "(" in costume:
-				#costume = costume.split("(")[0].strip()
-				return
-			elif costume.strip() == "":
-				costume = "Default (Damaged)"
-			else:
-				costume = costume.strip() + " (Damaged)"
-				
-			for doll in frontlinedex:
-				if name == doll['name']:
-					await client.edit_message(reaction.message,new_content=getDollCostume(doll,costume))
+		for doll in frontlinedex:
+			if name == doll['name']:
+				await client.edit_message(reaction.message,new_content=getDollCostume(doll,costume))
 		#Insert else statements here for left and right arrows
 	#Lame hack to check if this is an equipment result
 	elif 'exclusive equipment' in msg[0] and '(' in msg[-1]:
@@ -787,14 +873,20 @@ async def on_message(message):
 
 		try:
 			if res:
-				await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+				msg = await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+				for e in ['⏪','⏩']:
+					try:
+						await client.add_reaction(msg,e)
+					except:
+						print(e+" is not a valid emoji")
 			else:
 				await client.send_message(message.channel, embed=embed)
 		except Exception as e:
 			#await client.send_message(message.channel, content="An error occured and I am unable to complete your request. Perhaps you have embed permissions turned off?")
 			#print("An error occured. Here is the affected doll:")
 			#print(doll)
-			print("Exception occured trying to send the message, probably missing embed permissions.")
+			#I don't really want this to be a warn because someone could keep embed permissions off and spam it but whatever
+			printWarn("Exception occured trying to send the message, probably missing embed permissions.")
 			print(e)
 			try:
 				msg = "You are currently looking at a simplified view because embed permissions are turned off. Please turn them on, or if you always want a simplified view use search2. Most commands will not work with embeds turned off!\n"
@@ -834,7 +926,6 @@ async def on_message(message):
 							print(e+" is not a valid emoji")
 				else:
 					await client.send_message(message.channel, content="Found 1 exclusive equipment for "+doll['name']+".",embed=equipInfo(equipmentResults[0]))
-
 				return
 		try:
 			equip, res = getSearchResult(param,True)
@@ -846,7 +937,7 @@ async def on_message(message):
 		except Exception as e:
 			await client.send_message(message.channel, content="An error has occured while trying to get equipment data. Perhaps the data for this equipment is missing.")
 			print(traceback.print_exc())
-			print(embed2text(equipInfo(equip)))
+			printWarn(embed2text(equipInfo(equip)))
 		return
 	elif command == "image" or command == "i":
 		param = param.split(",")
@@ -870,11 +961,14 @@ async def on_message(message):
 				msg = await client.send_message(message.channel, msgText)
 				#ord starts at 127462 btw
 				emojis = ["🇦","🇧","🇨","🇩","🇪","🇫","🇬","🇭","🇮","🇯","🇰","🇱","🇲","🇳","🇴","🇵","🇶","🇷","🇸","🇹"]
-				for i in range(len(doll['costumes'])):
+				
+				#Do whatever is lower, the number of costumes or the emojis. G36 has 20 costumes right now (ignoring my broken parser) but she might have more in the future and you can't put that many emoji in.
+				#20 = the number of emoji discord will let you add to a message.
+				for i in range( min( len(doll['costumes']), 20 ) ):
 					try:
 						await client.add_reaction(msg,emojis[i])
 					except:
-						print(emojis[i]+" is not a valid emoji")
+						print(emojis[i]+" is not a valid emoji or you put too many emojis on")
 			else:
 				printWarn("T-Doll "+doll['name']+" is missing costume information.")
 				await client.send_message(message.channel, "Sorry, the data for this T-Doll is missing.")
@@ -992,24 +1086,24 @@ async def on_message(message):
 		print("[EXP] "+param)
 		start = None
 		end = None
-		
-		if "," in param:
-			try:
-				start,end = param.split(",")
-				start = intTryParse(start.strip())
-				end = intTryParse(end.strip())
-				if start == -1 or end == -1:
-					await client.send_message(message.channel,"1st or 2nd argument was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5,100` (where 5 is start, 100 is end)")
-					return
-			except Exception:
-				await client.send_message(message.channel, "An error has occured and I am unable to complete your request. Perhaps your argument was malformed.")
-				print(traceback.print_exc())
-		else:
-			start = 1
-			end = intTryParse(param)
-			if end == -1:
-				await client.send_message(message.channel,"parameter was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5` (where 5 is end)")
+		try:
+			#some people try $gfexp 100 120 so just accept both
+			start,end = param.replace(" ",",").split(",")
+			start = intTryParse(start.strip())
+			end = intTryParse(end.strip())
+			if start == -1 or end == -1:
+				await client.send_message(message.channel,"1st or 2nd argument was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5,100` (where 5 is start, 100 is end)")
 				return
+		except Exception:
+			#await client.send_message(message.channel, "An error has occured and I am unable to complete your request. Perhaps your argument was malformed.")
+			await client.send_message(message.channel,"parameter was invalid. Use this command like:\n `"+COMMAND_PREFIX+"exp 5` (where 5 is end)\n`"+COMMAND_PREFIX+"exp 100,120` (where 100 is start and 120 is end)")
+			print(traceback.print_exc())
+		#else:
+		#	start = 1
+		#	end = intTryParse(param)
+		#	if end == -1:
+		#		await client.send_message(message.channel,"parameter was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5` (where 5 is end)")
+		#		return
 		
 		if end > len(exp_table):
 			await client.send_message(message.channel,"Calculations for levels above "+str(len(exp_table))+" are not supported.")
@@ -1037,11 +1131,22 @@ if os.path.isfile("NewCharacterVoice.json"):
 		quotedex = json.loads(file_obj.read())
 	print(COMMAND_PREFIX+"quote is now available!")
 
-#Yeah it's stupid as fuck, I have to fix my scraper
-print("Injecting aliases into the frontlinedex...")
+print("Injecting aliases into the frontlinedex and quotes into the quotedex...")
 for doll in frontlinedex:
-	if doll['name'] in bonusdex and 'alias' in bonusdex[doll['name']]:
-		doll['alias'] = bonusdex[doll['name']]['alias']
+	if doll['name'] in bonusdex:
+		if 'alias' in bonusdex[doll['name']]:
+			doll['alias'] = bonusdex[doll['name']]['alias']
+		'''
+		To inject, a lot of checks are needed.
+		1. quotes must be loaded.
+		2. doll must have a quotes key in the bonusdex.
+		3. doll must have its internal name, since the quotedex works by internal names.
+		'''
+		if quotedex and 'quotes' in bonusdex[doll['name']] and 'internalName' in doll:
+			quotedex[doll['internalName']] = bonusdex[doll['name']]['quotes']
+
+	
+
 #for doll in frontlinedex:
 #	if doll['name'] == "Five-seveN":
 #		assert doll['alias'], "Missing aliases!"
