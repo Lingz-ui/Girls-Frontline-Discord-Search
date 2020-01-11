@@ -74,7 +74,6 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:998/pic/equip/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
-gfcolors = [0, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600, 0xdfb6ff]
 version = "IOP 3.2-20200109"
 
 #This is the exp table for levelling up a T-Doll.
@@ -181,6 +180,17 @@ def printWarn(text):
 def printError(text):
 	print(bcolors.FAIL + text + bcolors.ENDC)
 
+
+#I don't really like this being a function to be honest, I might change extras to 7 stars instead
+#NPCs use 0 as the color
+gfcolors = [0xadadad, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600]
+def getgfcolors(n):
+	if n == 100:
+		return 0xdfb6ff
+	elif n > 5:
+		return gfcolors[5]
+	else:
+		return gfcolors[n]
 
 def num2stars(n):
 	#★☆⚝
@@ -290,7 +300,7 @@ def getAbility(doll, tag):
 	
 #if statements for all the things!!!!!!
 def dollInfo(doll):
-	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 0 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
+	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 0 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=getgfcolors(doll['rating']))
 	embed.add_field(name="Type", value=doll['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(doll['baseStats']['hp']) + ", **DMG:** " + str(doll['baseStats']['dmg']) + ", **ACC:** " + str(doll['baseStats']['acc']) + ", **EVA:** " + str(doll['baseStats']['eva']) + ", **ROF:** " + str(doll['baseStats']['rof']))
@@ -384,7 +394,7 @@ def dollInfo(doll):
 	return embed
 
 def equipInfo(equip):
-	embed = discord.Embed(title=equip['name'] + " " + num2stars(equip['rating']), url=SITE_DOMAIN+equip['url'], color=gfcolors[equip['rating']])
+	embed = discord.Embed(title=equip['name'] + " " + num2stars(equip['rating']), url=SITE_DOMAIN+equip['url'], color=getgfcolors(equip['rating']))
 	#Type is worthless, show valid for instead
 	if 'valid' in equip:
 		embed.add_field(name="Usable by", value=equip['valid'], inline=True)
