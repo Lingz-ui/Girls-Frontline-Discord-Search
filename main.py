@@ -1050,8 +1050,9 @@ async def on_message(message):
 		print("stripped arg: "+param)
 		
 		res = []
-		#Speedup: Only search equipment if the time is <1 hour or searching a Fairy.
-		if int(param.split(':')[0]) == 0 or 'fairy' in param:
+		#Speedup: Only search equipment if the time is <1 hour
+		#todo: This speedup doesn't work since fairies exist
+		if int(param.split(':')[0]) == 0:
 			equipRes = []
 			for equip in equipmentdex:
 				if 'production' in equip and 'timer' in equip['production']:
