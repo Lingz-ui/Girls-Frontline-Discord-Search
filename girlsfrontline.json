@@ -1,5 +1,60 @@
 [
     {
+        "url": "/wiki/43M",
+        "num": -1,
+        "name": "43M",
+        "type": "SMG",
+        "rating": 3,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 93,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 185,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 30,
+            "eva": 56,
+            "acc": 13,
+            "rof": 89,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛⬛\n⬛🔷⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases evasion by 10%",
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for January 2020 (CN)."
+        }
+    },
+    {
         "url": "/wiki/6P62",
         "num": 138,
         "name": "6P62",
@@ -1101,6 +1156,61 @@
         ]
     },
     {
+        "url": "/wiki/AK-15",
+        "num": -1,
+        "name": "AK-15",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncrease ?? by ??%\nIncrease ?? by ??%",
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "timer": "4:15:00"
+        }
+    },
+    {
         "url": "/wiki/AK-47",
         "num": 58,
         "name": "AK-47",
@@ -1943,7 +2053,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on AS Val.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "ASVAL",
-        "img": "pic_ASVAL.png"
+        "img": "pic_ASVAL.png",
+        "mod": 1
     },
     {
         "url": "/wiki/AS_Val#Mod2",
@@ -2038,6 +2149,7 @@
         },
         "internalName": "ASVAL",
         "img": "pic_ASVAL.png",
+        "mod": 2,
         "ability2": {
             "name": "Belief",
             "icon": "AS_VALmod",
@@ -2149,6 +2261,7 @@
         },
         "internalName": "ASVALMod",
         "img": "pic_ASVALMod.png",
+        "mod": 3,
         "ability2": {
             "name": "Belief",
             "icon": "AS_VALmod",
@@ -3044,7 +3157,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Beretta Model 38.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "MAB38",
-        "img": "pic_MAB38.png"
+        "img": "pic_MAB38.png",
+        "mod": 1
     },
     {
         "url": "/wiki/Beretta_Model_38#Mod2",
@@ -3115,6 +3229,7 @@
         },
         "internalName": "MAB38",
         "img": "pic_MAB38.png",
+        "mod": 2,
         "ability2": {
             "name": "Scarlet Flame Pursuit",
             "icon": "",
@@ -3226,6 +3341,7 @@
         },
         "internalName": "MAB38Mod",
         "img": "pic_MAB38Mod.png",
+        "mod": 3,
         "ability2": {
             "name": "Scarlet Flame Pursuit",
             "icon": "",
@@ -3495,7 +3611,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Bren.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "BrenMK",
-        "img": "pic_BrenMK.png"
+        "img": "pic_BrenMK.png",
+        "mod": 1
     },
     {
         "url": "/wiki/Bren#Mod2",
@@ -3591,6 +3708,7 @@
         },
         "internalName": "BrenMK",
         "img": "pic_BrenMK.png",
+        "mod": 2,
         "ability2": {
             "name": "Gap between the Strong",
             "icon": "comboBuffSelf",
@@ -3703,6 +3821,7 @@
         },
         "internalName": "BrenMKMod",
         "img": "pic_BrenMKMod.png",
+        "mod": 3,
         "ability2": {
             "name": "Gap between the Strong",
             "icon": "comboBuffSelf",
@@ -4222,7 +4341,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on C96.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_C96.png",
-        "internalName": "C96"
+        "internalName": "C96",
+        "mod": 1
     },
     {
         "url": "/wiki/C96#Mod2",
@@ -4305,6 +4425,7 @@
         },
         "img": "pic_C96.png",
         "internalName": "C96",
+        "mod": 2,
         "ability2": {
             "name": "Night Sky Pursuer",
             "icon": "",
@@ -4428,6 +4549,7 @@
         },
         "img": "pic_C96Mod.png",
         "internalName": "C96Mod",
+        "mod": 3,
         "ability2": {
             "name": "Night Sky Pursuer",
             "icon": "",
@@ -4562,6 +4684,86 @@
                 "pic": "pic_HKCAWS_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/CF05",
+        "num": 295,
+        "name": "CF05",
+        "type": "SMG",
+        "rating": 4,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 95,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 10,
+            "eva": 10,
+            "acc": 2,
+            "rof": 61,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 190,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 26,
+            "eva": 73,
+            "acc": 13,
+            "rof": 87,
+            "armor": 0
+        },
+        "tile_bonus": "🔶🔷⬛\n🔶⬛⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncrease damage by 20%\nIncrease accuracy by 25%",
+        "ability": {
+            "name": "Butter Cream",
+            "icon": "06S",
+            "text": "Reduces every instance of damage taken by ($dam_value) points for ($duration) seconds.",
+            "initial": "5",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "dam_value": [
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "15"
+            ],
+            "duration": [
+                "4",
+                "4.2",
+                "4.4",
+                "4.7",
+                "4.9",
+                "5.1",
+                "5.3",
+                "5.6",
+                "5.8",
+                "6"
+            ]
+        },
+        "production": {
+            "stage": "Obtained as a possible drop throughout E?-? of Polarized Light."
+        }
     },
     {
         "url": "/wiki/CR-21",
@@ -5634,7 +5836,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Colt Revolver.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "M1873",
-        "img": "pic_M1873.png"
+        "img": "pic_M1873.png",
+        "mod": 1
     },
     {
         "url": "/wiki/Colt_Revolver#Mod2",
@@ -5717,6 +5920,7 @@
         },
         "internalName": "M1873",
         "img": "pic_M1873.png",
+        "mod": 2,
         "ability2": {
             "name": "Duel Survivor",
             "icon": "powBuff",
@@ -5828,6 +6032,7 @@
         },
         "internalName": "M1873Mod",
         "img": "pic_M1873Mod.png",
+        "mod": 3,
         "ability2": {
             "name": "Duel Survivor",
             "icon": "powBuff",
@@ -7551,7 +7756,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on FN-49.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_FN49.png",
-        "internalName": "FN49"
+        "internalName": "FN49",
+        "mod": 1
     },
     {
         "url": "/wiki/FN-49#Mod2",
@@ -7634,6 +7840,7 @@
         },
         "img": "pic_FN49.png",
         "internalName": "FN49",
+        "mod": 2,
         "ability2": {
             "name": "Cold Fighting Spirit",
             "icon": "rateBuffSelf",
@@ -7745,6 +7952,7 @@
         },
         "img": "pic_FN49Mod.png",
         "internalName": "FN49Mod",
+        "mod": 3,
         "ability2": {
             "name": "Cold Fighting Spirit",
             "icon": "rateBuffSelf",
@@ -8653,94 +8861,6 @@
                 "pic": "pic_G3_D.png"
             },
             {
-                "name": "Untranslated1",
-                "pic": "pic_G36C_3802.png"
-            },
-            {
-                "name": "Untranslated1 (Damaged)",
-                "pic": "pic_G36C_3802_D.png"
-            },
-            {
-                "name": "\"Sommelier\"",
-                "pic": "pic_G36_1507.png"
-            },
-            {
-                "name": "\"Sommelier\" (Damaged)",
-                "pic": "pic_G36_1507_D.png"
-            },
-            {
-                "name": "Ode to Summer",
-                "pic": "pic_G36C_1202.png"
-            },
-            {
-                "name": "Ode to Summer (Damaged)",
-                "pic": "pic_G36C_1202_D.png"
-            },
-            {
-                "name": "Pure White Cornflower",
-                "pic": "pic_G36_1904.png"
-            },
-            {
-                "name": "Pure White Cornflower (Damaged)",
-                "pic": "pic_G36_1904_D.png"
-            },
-            {
-                "name": "Every Child's X'mas Dream",
-                "pic": "pic_G36_2806.png"
-            },
-            {
-                "name": "Every Child's X'mas Dream (Damaged)",
-                "pic": "pic_G36_2806_D.png"
-            },
-            {
-                "name": "Battlefield Baker",
-                "pic": "pic_G3_1303.png"
-            },
-            {
-                "name": "Battlefield Baker (Damaged)",
-                "pic": "pic_G3_1303_D.png"
-            },
-            {
-                "name": "Untranslated2",
-                "pic": "pic_G36_3603.png"
-            },
-            {
-                "name": "Untranslated2 (Damaged)",
-                "pic": "pic_G36_3603_D.png"
-            },
-            {
-                "name": "You Who Steps Up",
-                "pic": "pic_G36C_3103.png"
-            },
-            {
-                "name": "You Who Steps Up (Damaged)",
-                "pic": "pic_G36C_3103_D.png"
-            },
-            {
-                "name": "50 Days with Gr G36",
-                "pic": "pic_G36_2407.png"
-            },
-            {
-                "name": "50 Days with Gr G36 (Damaged)",
-                "pic": "pic_G36_2407_D.png"
-            },
-            {
-                "name": "Mini Maid",
-                "pic": "pic_G36_905.png"
-            },
-            {
-                "name": "Mini Maid (Damaged)",
-                "pic": "pic_G36_905_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_G36Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_G36Mod_D.png"
-            },
-            {
                 "name": "MOD 3",
                 "pic": "pic_G3Mod.png"
             },
@@ -8749,8 +8869,12 @@
                 "pic": "pic_G3Mod_D.png"
             },
             {
-                "name": "coffee",
-                "pic": "pic_G36_coffee.png"
+                "name": "Battlefield Baker",
+                "pic": "pic_G3_1303.png"
+            },
+            {
+                "name": "Battlefield Baker (Damaged)",
+                "pic": "pic_G3_1303_D.png"
             }
         ]
     },
@@ -8822,7 +8946,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on G3.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_G3.png",
-        "internalName": "G3"
+        "internalName": "G3",
+        "mod": 1
     },
     {
         "url": "/wiki/G3#Mod2",
@@ -8893,6 +9018,7 @@
         },
         "img": "pic_G3.png",
         "internalName": "G3",
+        "mod": 2,
         "ability2": {
             "name": "Freezing Point of Bravery",
             "icon": "RifleGrenade",
@@ -8992,6 +9118,7 @@
         },
         "img": "pic_G3Mod.png",
         "internalName": "G3Mod",
+        "mod": 3,
         "ability2": {
             "name": "Freezing Point of Bravery",
             "icon": "RifleGrenade",
@@ -9028,7 +9155,7 @@
             },
             {
                 "name": "Default (Damaged)",
-                "pic": "pic_G36Mod_D.png"
+                "pic": "pic_G3Mod_D.png"
             }
         ]
     },
@@ -9135,12 +9262,12 @@
                 "pic": "pic_G36_D.png"
             },
             {
-                "name": "Untranslated1",
-                "pic": "pic_G36C_3802.png"
+                "name": "MOD 3",
+                "pic": "pic_G36Mod.png"
             },
             {
-                "name": "Untranslated1 (Damaged)",
-                "pic": "pic_G36C_3802_D.png"
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_G36Mod_D.png"
             },
             {
                 "name": "\"Sommelier\"",
@@ -9149,14 +9276,6 @@
             {
                 "name": "\"Sommelier\" (Damaged)",
                 "pic": "pic_G36_1507_D.png"
-            },
-            {
-                "name": "Ode to Summer",
-                "pic": "pic_G36C_1202.png"
-            },
-            {
-                "name": "Ode to Summer (Damaged)",
-                "pic": "pic_G36C_1202_D.png"
             },
             {
                 "name": "Pure White Cornflower",
@@ -9175,20 +9294,12 @@
                 "pic": "pic_G36_2806_D.png"
             },
             {
-                "name": "Untranslated2",
+                "name": "Untranslated1",
                 "pic": "pic_G36_3603.png"
             },
             {
-                "name": "Untranslated2 (Damaged)",
+                "name": "Untranslated1 (Damaged)",
                 "pic": "pic_G36_3603_D.png"
-            },
-            {
-                "name": "You Who Steps Up",
-                "pic": "pic_G36C_3103.png"
-            },
-            {
-                "name": "You Who Steps Up (Damaged)",
-                "pic": "pic_G36C_3103_D.png"
             },
             {
                 "name": "50 Days with Gr G36",
@@ -9205,14 +9316,6 @@
             {
                 "name": "Mini Maid (Damaged)",
                 "pic": "pic_G36_905_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_G36Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_G36Mod_D.png"
             },
             {
                 "name": "coffee",
@@ -9300,7 +9403,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on G36.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_G36.png",
-        "internalName": "G36"
+        "internalName": "G36",
+        "mod": 1
     },
     {
         "url": "/wiki/G36#Mod2",
@@ -9383,6 +9487,7 @@
         },
         "img": "pic_G36.png",
         "internalName": "G36",
+        "mod": 2,
         "ability2": {
             "name": "Arclight Pact",
             "icon": "G36Buff",
@@ -9506,6 +9611,7 @@
         },
         "img": "pic_G36Mod.png",
         "internalName": "G36Mod",
+        "mod": 3,
         "ability2": {
             "name": "Arclight Pact",
             "icon": "G36Buff",
@@ -10078,38 +10184,6 @@
             {
                 "name": "Default (Damaged)",
                 "pic": "pic_AR_D.png"
-            },
-            {
-                "name": "White Cabbage",
-                "pic": "pic_ART556_1803.png"
-            },
-            {
-                "name": "White Cabbage (Damaged)",
-                "pic": "pic_ART556_1803_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_AR15Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_AR15Mod_D.png"
-            },
-            {
-                "name": "Literary Girl",
-                "pic": "pic_AR15_701.png"
-            },
-            {
-                "name": "Literary Girl (Damaged)",
-                "pic": "pic_AR15_701_D.png"
-            },
-            {
-                "name": "Little Chimney Sweeper",
-                "pic": "pic_ART556_2803.png"
-            },
-            {
-                "name": "Little Chimney Sweeper (Damaged)",
-                "pic": "pic_ART556_2803_D.png"
             }
         ]
     },
@@ -10926,7 +11000,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on HK416.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_HK416.png",
-        "internalName": "HK416"
+        "internalName": "HK416",
+        "mod": 1
     },
     {
         "url": "/wiki/HK416#Mod2",
@@ -10997,6 +11072,7 @@
         },
         "img": "pic_HK416.png",
         "internalName": "HK416",
+        "mod": 2,
         "ability2": {
             "name": "Parasitic Grenade",
             "icon": "416mods",
@@ -11108,6 +11184,7 @@
         },
         "img": "pic_HK416Mod.png",
         "internalName": "HK416Mod",
+        "mod": 3,
         "ability2": {
             "name": "Parasitic Grenade",
             "icon": "416mods",
@@ -11368,6 +11445,99 @@
         ]
     },
     {
+        "url": "/wiki/HSM10",
+        "num": 299,
+        "name": "HSM10",
+        "type": "SG",
+        "rating": 3,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "4"
+        },
+        "baseStats": {
+            "hp": 124,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 13,
+            "eva": 2,
+            "acc": 2,
+            "rof": 19,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 247,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 34,
+            "eva": 12,
+            "acc": 13,
+            "rof": 27,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛⬛\n⬛⬛🔷\n🔶⬛⬛",
+        "bonus_desc": "Affects machine guns\nIncreases damage by 15%",
+        "ability": {
+            "name": "Survival Instinct",
+            "icon": "Invincible",
+            "text": "Increases evasion by ($eva_value)% and armour rating by ($armour_value)% for ($time_value) seconds.",
+            "initial": "10",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "eva_value": [
+                "25",
+                "28",
+                "31",
+                "33",
+                "36",
+                "39",
+                "42",
+                "44",
+                "47",
+                "50"
+            ],
+            "armour_value": [
+                "20",
+                "23",
+                "26",
+                "28",
+                "31",
+                "34",
+                "36",
+                "39",
+                "42",
+                "45"
+            ],
+            "time_value": [
+                "4",
+                "4.2",
+                "4.4",
+                "4.7",
+                "4.9",
+                "5.1",
+                "5.3",
+                "5.6",
+                "5.8",
+                "6"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for March 2020 (CN)."
+        }
+    },
+    {
         "url": "/wiki/Hanyang_Type_88",
         "num": 95,
         "name": "Hanyang Type 88",
@@ -11583,7 +11753,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Hanyang Type 88.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "88type",
-        "img": "pic_88type.png"
+        "img": "pic_88type.png",
+        "mod": 1
     },
     {
         "url": "/wiki/Hanyang_Type_88#Mod2",
@@ -11678,6 +11849,7 @@
         },
         "internalName": "88type",
         "img": "pic_88type.png",
+        "mod": 2,
         "ability2": {
             "name": "Almighty Combat Skills",
             "icon": "88typemods",
@@ -11825,6 +11997,7 @@
         },
         "internalName": "88typeMod",
         "img": "pic_88typeMod.png",
+        "mod": 3,
         "ability2": {
             "name": "Almighty Combat Skills",
             "icon": "88typemods",
@@ -12297,6 +12470,14 @@
                 "pic": "pic_IDW_D.png"
             },
             {
+                "name": "MOD 3",
+                "pic": "pic_IDWMod.png"
+            },
+            {
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_IDWMod_D.png"
+            },
+            {
                 "name": "Cat in the Box",
                 "pic": "pic_IDW_2108.png"
             },
@@ -12311,14 +12492,6 @@
             {
                 "name": "Cloak and Cat Ears (Damaged)",
                 "pic": "pic_IDW_3205_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_IDWMod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_IDWMod_D.png"
             }
         ]
     },
@@ -12402,7 +12575,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on IDW.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_IDW.png",
-        "internalName": "IDW"
+        "internalName": "IDW",
+        "mod": 1
     },
     {
         "url": "/wiki/IDW#Mod2",
@@ -12485,6 +12659,7 @@
         },
         "img": "pic_IDW.png",
         "internalName": "IDW",
+        "mod": 2,
         "ability2": {
             "name": "Lightning Carnival",
             "icon": "dodgeBuffSelf",
@@ -12608,6 +12783,7 @@
         },
         "img": "pic_IDWMod.png",
         "internalName": "IDWMod",
+        "mod": 3,
         "ability2": {
             "name": "Lightning Carnival",
             "icon": "dodgeBuffSelf",
@@ -14803,7 +14979,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on LWMMG.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_LWMMG.png",
-        "internalName": "LWMMG"
+        "internalName": "LWMMG",
+        "mod": 1
     },
     {
         "url": "/wiki/LWMMG#Mod2",
@@ -14887,6 +15064,7 @@
         },
         "img": "pic_LWMMG.png",
         "internalName": "LWMMG",
+        "mod": 2,
         "ability2": {
             "name": "Shining Barrier",
             "icon": "LWMMGShield",
@@ -15011,6 +15189,7 @@
         },
         "img": "pic_LWMMGMod.png",
         "internalName": "LWMMGMod",
+        "mod": 3,
         "ability2": {
             "name": "Shining Barrier",
             "icon": "LWMMGShield",
@@ -15495,202 +15674,6 @@
             {
                 "name": "Beach Princess (Damaged)",
                 "pic": "pic_M1_1106_D.png"
-            },
-            {
-                "name": "Party Sweetheart",
-                "pic": "pic_M1919A4_106.png"
-            },
-            {
-                "name": "Party Sweetheart (Damaged)",
-                "pic": "pic_M1919A4_106_D.png"
-            },
-            {
-                "name": "Bunny Girl",
-                "pic": "pic_M1918_102.png"
-            },
-            {
-                "name": "Bunny Girl (Damaged)",
-                "pic": "pic_M1918_102_D.png"
-            },
-            {
-                "name": "Witcher General",
-                "pic": "pic_M1887_2503.png"
-            },
-            {
-                "name": "Witcher General (Damaged)",
-                "pic": "pic_M1887_2503_D.png"
-            },
-            {
-                "name": "Moonlit Ocean",
-                "pic": "pic_M1891_803.png"
-            },
-            {
-                "name": "Moonlit Ocean (Damaged)",
-                "pic": "pic_M1891_803_D.png"
-            },
-            {
-                "name": "Electric Witch",
-                "pic": "pic_M1897_2505.png"
-            },
-            {
-                "name": "Electric Witch (Damaged)",
-                "pic": "pic_M1897_2505_D.png"
-            },
-            {
-                "name": "Astral Bond",
-                "pic": "pic_M1895_2706.png"
-            },
-            {
-                "name": "Astral Bond (Damaged)",
-                "pic": "pic_M1895_2706_D.png"
-            },
-            {
-                "name": "Snow, Moon and Flowers",
-                "pic": "pic_M1014_2906.png"
-            },
-            {
-                "name": "Snow, Moon and Flowers (Damaged)",
-                "pic": "pic_M1014_2906_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_M1895Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_M1895Mod_D.png"
-            },
-            {
-                "name": "Stirring Mermaid",
-                "pic": "pic_M1903_1107.png"
-            },
-            {
-                "name": "Stirring Mermaid (Damaged)",
-                "pic": "pic_M1903_1107_D.png"
-            },
-            {
-                "name": "Tender Nocturne",
-                "pic": "pic_M1918_806.png"
-            },
-            {
-                "name": "Tender Nocturne (Damaged)",
-                "pic": "pic_M1918_806_D.png"
-            },
-            {
-                "name": "Boss",
-                "pic": "pic_M16A1_Boss.png"
-            },
-            {
-                "name": "Demon Hunter",
-                "pic": "pic_M1928A1_1501.png"
-            },
-            {
-                "name": "Demon Hunter (Damaged)",
-                "pic": "pic_M1928A1_1501_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_M1918Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_M1918Mod_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_M1873Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_M1873Mod_D.png"
-            },
-            {
-                "name": "Carmilla",
-                "pic": "pic_M1919A4_7.png"
-            },
-            {
-                "name": "Carmilla (Damaged)",
-                "pic": "pic_M1919A4_7_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_M1911Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_M1911Mod_D.png"
-            },
-            {
-                "name": "O Holy Night",
-                "pic": "pic_M1903_302.png"
-            },
-            {
-                "name": "O Holy Night (Damaged)",
-                "pic": "pic_M1903_302_D.png"
-            },
-            {
-                "name": "Xmas Parade",
-                "pic": "pic_M14_303.png"
-            },
-            {
-                "name": "Xmas Parade (Damaged)",
-                "pic": "pic_M14_303_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_M1891Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_M1891Mod_D.png"
-            },
-            {
-                "name": "Queen of Miracles",
-                "pic": "pic_M1873_2105.png"
-            },
-            {
-                "name": "Queen of Miracles (Damaged)",
-                "pic": "pic_M1873_2105_D.png"
-            },
-            {
-                "name": "War Is Over",
-                "pic": "pic_M1918_1606.png"
-            },
-            {
-                "name": "War Is Over (Damaged)",
-                "pic": "pic_M1918_1606_D.png"
-            },
-            {
-                "name": "Queen in Radiance",
-                "pic": "pic_M1903_802.png"
-            },
-            {
-                "name": "Queen in Radiance (Damaged)",
-                "pic": "pic_M1903_802_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_M14Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_M14Mod_D.png"
-            },
-            {
-                "name": "Wish Upon A Star",
-                "pic": "pic_M1873_301.png"
-            },
-            {
-                "name": "Wish Upon A Star (Damaged)",
-                "pic": "pic_M1873_301_D.png"
-            },
-            {
-                "name": "Classic Witch",
-                "pic": "pic_M1903_5.png"
-            },
-            {
-                "name": "Classic Witch (Damaged)",
-                "pic": "pic_M1903_5_D.png"
             }
         ]
     },
@@ -16017,20 +16000,20 @@
                 "pic": "pic_M14_D.png"
             },
             {
-                "name": "Xmas Parade",
-                "pic": "pic_M14_303.png"
-            },
-            {
-                "name": "Xmas Parade (Damaged)",
-                "pic": "pic_M14_303_D.png"
-            },
-            {
                 "name": "MOD 3",
                 "pic": "pic_M14Mod.png"
             },
             {
                 "name": "MOD 3 (Damaged)",
                 "pic": "pic_M14Mod_D.png"
+            },
+            {
+                "name": "Xmas Parade",
+                "pic": "pic_M14_303.png"
+            },
+            {
+                "name": "Xmas Parade (Damaged)",
+                "pic": "pic_M14_303_D.png"
             }
         ]
     },
@@ -16114,7 +16097,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M14.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_M14.png",
-        "internalName": "M14"
+        "internalName": "M14",
+        "mod": 1
     },
     {
         "url": "/wiki/M14#Mod2",
@@ -16197,6 +16181,7 @@
         },
         "img": "pic_M14.png",
         "internalName": "M14",
+        "mod": 2,
         "ability2": {
             "name": "Clear Fighting Spirit",
             "icon": "px4",
@@ -16308,6 +16293,7 @@
         },
         "img": "pic_M14Mod.png",
         "internalName": "M14Mod",
+        "mod": 3,
         "ability2": {
             "name": "Clear Fighting Spirit",
             "icon": "px4",
@@ -16946,7 +16932,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M1911.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_M1911.png",
-        "internalName": "M1911"
+        "internalName": "M1911",
+        "mod": 1
     },
     {
         "url": "/wiki/M1911#Mod2",
@@ -17041,6 +17028,7 @@
         },
         "img": "pic_M1911.png",
         "internalName": "M1911",
+        "mod": 2,
         "ability2": {
             "name": "Desperado",
             "icon": "AimAttackSpecificTarge",
@@ -17152,6 +17140,7 @@
         },
         "img": "pic_M1911Mod.png",
         "internalName": "M1911Mod",
+        "mod": 3,
         "ability2": {
             "name": "Desperado",
             "icon": "AimAttackSpecificTarge",
@@ -17286,6 +17275,14 @@
                 "pic": "pic_M1918_D.png"
             },
             {
+                "name": "MOD 3",
+                "pic": "pic_M1918Mod.png"
+            },
+            {
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_M1918Mod_D.png"
+            },
+            {
                 "name": "Bunny Girl",
                 "pic": "pic_M1918_102.png"
             },
@@ -17300,14 +17297,6 @@
             {
                 "name": "Tender Nocturne (Damaged)",
                 "pic": "pic_M1918_806_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_M1918Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_M1918Mod_D.png"
             },
             {
                 "name": "War Is Over",
@@ -17400,7 +17389,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M1918.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_M1918.png",
-        "internalName": "M1918"
+        "internalName": "M1918",
+        "mod": 1
     },
     {
         "url": "/wiki/M1918#Mod2",
@@ -17484,6 +17474,7 @@
         },
         "img": "pic_M1918.png",
         "internalName": "M1918",
+        "mod": 2,
         "ability2": {
             "name": "Battlefield Witch",
             "icon": "m1918",
@@ -17596,6 +17587,7 @@
         },
         "img": "pic_M1918Mod.png",
         "internalName": "M1918Mod",
+        "mod": 3,
         "ability2": {
             "name": "Battlefield Witch",
             "icon": "m1918",
@@ -18549,8 +18541,12 @@
                 "pic": "pic_M4_SOPMOD_II_D.png"
             },
             {
-                "name": "Without Gun",
-                "pic": "pic_M4_SOPMOD_IIMod_NoArmor1.png"
+                "name": "MOD 3",
+                "pic": "pic_M4_SOPMOD_IIMod.png"
+            },
+            {
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_M4_SOPMOD_IIMod_D.png"
             }
         ]
     },
@@ -18622,7 +18618,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M4 SOPMOD II.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "M4_SOPMOD_II",
-        "img": "pic_M4_SOPMOD_II.png"
+        "img": "pic_M4_SOPMOD_II.png",
+        "mod": 1
     },
     {
         "url": "/wiki/M4_SOPMOD_II#Mod2",
@@ -18693,6 +18690,7 @@
         },
         "internalName": "M4_SOPMOD_II",
         "img": "pic_M4_SOPMOD_II.png",
+        "mod": 2,
         "ability2": {
             "name": "Frenzied Circus",
             "icon": "SplitGrenade",
@@ -18792,6 +18790,7 @@
         },
         "internalName": "M4_SOPMOD_IIMod",
         "img": "pic_M4_SOPMOD_IIMod.png",
+        "mod": 3,
         "ability2": {
             "name": "Frenzied Circus",
             "icon": "SplitGrenade",
@@ -18820,7 +18819,17 @@
                 "24",
                 "25"
             ]
-        }
+        },
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "pic_M4_SOPMOD_IIMod.png"
+            },
+            {
+                "name": "Default (Damaged)",
+                "pic": "pic_M4_SOPMOD_IIMod_D.png"
+            }
+        ]
     },
     {
         "url": "/wiki/M4A1",
@@ -19003,7 +19012,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on M4A1.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_M4A1.png",
-        "internalName": "M4A1"
+        "internalName": "M4A1",
+        "mod": 1
     },
     {
         "url": "/wiki/M4A1#Mod2",
@@ -19086,6 +19096,7 @@
         },
         "img": "pic_M4A1.png",
         "internalName": "M4A1",
+        "mod": 2,
         "ability2": {
             "name": "Mark of Vengeance",
             "icon": "m4_nightmare",
@@ -19185,6 +19196,7 @@
         },
         "img": "pic_M4A1Mod.png",
         "internalName": "M4A1Mod",
+        "mod": 3,
         "ability2": {
             "name": "Mark of Vengeance",
             "icon": "m4_nightmare",
@@ -19555,6 +19567,98 @@
         ]
     },
     {
+        "url": "/wiki/M82",
+        "num": 297,
+        "name": "M82",
+        "type": "AR",
+        "rating": 4,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 57,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 18,
+            "eva": 6,
+            "acc": 6,
+            "rof": 50,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 113,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 51,
+            "eva": 46,
+            "acc": 45,
+            "rof": 75,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncrease accuracy by 50%\nIncrease evasion by 12%",
+        "ability": {
+            "name": "Charge Focus",
+            "icon": "powBuffSelf",
+            "text": "Increases damage by ($damage_value)% and rate of fire by ($rof_value)% for ($time_value) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "damage_value": [
+                "45",
+                "48",
+                "52",
+                "55",
+                "58",
+                "62",
+                "65",
+                "68",
+                "72",
+                "75"
+            ],
+            "rof_value": [
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25"
+            ],
+            "time_value": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "stage": "Obtained as a possible drop throughout E?-? of Polarized Light."
+        }
+    },
+    {
         "url": "/wiki/M82A1",
         "num": 231,
         "name": "M82A1",
@@ -19867,54 +19971,6 @@
             {
                 "name": "Default (Damaged)",
                 "pic": "pic_M9_D.png"
-            },
-            {
-                "name": "Home Ec Training",
-                "pic": "pic_M950A_2303.png"
-            },
-            {
-                "name": "Home Ec Training (Damaged)",
-                "pic": "pic_M950A_2303_D.png"
-            },
-            {
-                "name": "Concert Diva!",
-                "pic": "pic_M950A_808.png"
-            },
-            {
-                "name": "Concert Diva! (Damaged)",
-                "pic": "pic_M950A_808_D.png"
-            },
-            {
-                "name": "Untranslated1",
-                "pic": "pic_M99_3304.png"
-            },
-            {
-                "name": "Untranslated1 (Damaged)",
-                "pic": "pic_M99_3304_D.png"
-            },
-            {
-                "name": "Rabbit Squad",
-                "pic": "pic_M99_1701.png"
-            },
-            {
-                "name": "Rabbit Squad (Damaged)",
-                "pic": "pic_M99_1701_D.png"
-            },
-            {
-                "name": "Cyclamen",
-                "pic": "pic_M99_404.png"
-            },
-            {
-                "name": "Cyclamen (Damaged)",
-                "pic": "pic_M99_404_D.png"
-            },
-            {
-                "name": "Ace on Duty",
-                "pic": "pic_M950A_702.png"
-            },
-            {
-                "name": "Ace on Duty (Damaged)",
-                "pic": "pic_M950A_702_D.png"
             }
         ]
     },
@@ -21331,20 +21387,20 @@
                 "pic": "pic_MP446_D.png"
             },
             {
-                "name": "Sunflower",
-                "pic": "pic_MP446_402.png"
-            },
-            {
-                "name": "Sunflower (Damaged)",
-                "pic": "pic_MP446_402_D.png"
-            },
-            {
                 "name": "MOD 3",
                 "pic": "pic_MP446Mod.png"
             },
             {
                 "name": "MOD 3 (Damaged)",
                 "pic": "pic_MP446Mod_D.png"
+            },
+            {
+                "name": "Sunflower",
+                "pic": "pic_MP446_402.png"
+            },
+            {
+                "name": "Sunflower (Damaged)",
+                "pic": "pic_MP446_402_D.png"
             },
             {
                 "name": "Boisterous Rogue",
@@ -21436,7 +21492,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on MP-446.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_MP446.png",
-        "internalName": "MP446"
+        "internalName": "MP446",
+        "mod": 1
     },
     {
         "url": "/wiki/MP-446#Mod2",
@@ -21519,6 +21576,7 @@
         },
         "img": "pic_MP446.png",
         "internalName": "MP446",
+        "mod": 2,
         "ability2": {
             "name": "Tidal Warcry",
             "icon": "rateBuff",
@@ -21630,6 +21688,7 @@
         },
         "img": "pic_MP446Mod.png",
         "internalName": "MP446Mod",
+        "mod": 3,
         "ability2": {
             "name": "Tidal Warcry",
             "icon": "rateBuff",
@@ -22188,7 +22247,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on MP5.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_MP5.png",
-        "internalName": "MP5"
+        "internalName": "MP5",
+        "mod": 1
     },
     {
         "url": "/wiki/MP5#Mod2",
@@ -22259,6 +22319,7 @@
         },
         "img": "pic_MP5.png",
         "internalName": "MP5",
+        "mod": 2,
         "ability2": {
             "name": "Immaterial Defense",
             "icon": "Mp5mods",
@@ -22358,6 +22419,7 @@
         },
         "img": "pic_MP5Mod.png",
         "internalName": "MP5Mod",
+        "mod": 3,
         "ability2": {
             "name": "Immaterial Defense",
             "icon": "Mp5mods",
@@ -22806,14 +22868,6 @@
                 "pic": "pic_PM_D.png"
             },
             {
-                "name": "I'm Soarin', Flyin'",
-                "pic": "pic_PM06_2703.png"
-            },
-            {
-                "name": "I'm Soarin', Flyin' (Damaged)",
-                "pic": "pic_PM06_2703_D.png"
-            },
-            {
                 "name": "Pumpkin Mishka",
                 "pic": "pic_PM_1.png"
             },
@@ -23049,7 +23103,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Micro Uzi.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_MicroUZI.png",
-        "internalName": "MicroUZI"
+        "internalName": "MicroUZI",
+        "mod": 1
     },
     {
         "url": "/wiki/Micro_Uzi#Mod2",
@@ -23144,6 +23199,7 @@
         },
         "img": "pic_MicroUZI.png",
         "internalName": "MicroUZI",
+        "mod": 2,
         "ability2": {
             "name": "Burning Chain",
             "icon": "UZImod",
@@ -23255,6 +23311,7 @@
         },
         "img": "pic_MicroUZIMod.png",
         "internalName": "MicroUZIMod",
+        "mod": 3,
         "ability2": {
             "name": "Burning Chain",
             "icon": "UZImod",
@@ -23956,20 +24013,20 @@
                 "pic": "pic_M1891_D.png"
             },
             {
-                "name": "Moonlit Ocean",
-                "pic": "pic_M1891_803.png"
-            },
-            {
-                "name": "Moonlit Ocean (Damaged)",
-                "pic": "pic_M1891_803_D.png"
-            },
-            {
                 "name": "MOD 3",
                 "pic": "pic_M1891Mod.png"
             },
             {
                 "name": "MOD 3 (Damaged)",
                 "pic": "pic_M1891Mod_D.png"
+            },
+            {
+                "name": "Moonlit Ocean",
+                "pic": "pic_M1891_803.png"
+            },
+            {
+                "name": "Moonlit Ocean (Damaged)",
+                "pic": "pic_M1891_803_D.png"
             }
         ]
     },
@@ -24053,7 +24110,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Mosin-Nagant.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "M1891",
-        "img": "pic_M1891.png"
+        "img": "pic_M1891.png",
+        "mod": 1
     },
     {
         "url": "/wiki/Mosin-Nagant#Mod2",
@@ -24136,6 +24194,7 @@
         },
         "internalName": "M1891",
         "img": "pic_M1891.png",
+        "mod": 2,
         "ability2": {
             "name": "Pure White Reaper",
             "icon": "mosinnagant",
@@ -24247,6 +24306,7 @@
         },
         "internalName": "M1891Mod",
         "img": "pic_M1891Mod.png",
+        "mod": 3,
         "ability2": {
             "name": "Pure White Reaper",
             "icon": "mosinnagant",
@@ -24516,6 +24576,289 @@
         ]
     },
     {
+        "url": "/wiki/NTW-20#Mod1",
+        "num": 53,
+        "name": "NTW-20 MOD 1",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 47,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 56,
+            "eva": 4,
+            "acc": 9,
+            "rof": 20,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 94,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 168,
+            "eva": 30,
+            "acc": 80,
+            "rof": 32,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 20%",
+        "ability": {
+            "name": "Interdiction Shot",
+            "icon": "AimAttackCurrentTarge",
+            "text": "Begin charging after skill cooldown ends, gaining 1 charge stack every second, up to a maximum of 7 stacks. When skill is used, aim for 1.5 seconds, then deal ($min_dam_value) ~ ($max_dam_value)x damage to the nearest enemy based on the current number of charge stacks. All stacks will be consumed on skill use.",
+            "initial": "8",
+            "cooldown": [
+                "13",
+                "12.6",
+                "12.1",
+                "11.7",
+                "11.2",
+                "10.8",
+                "10.3",
+                "9.9",
+                "9.4",
+                "9"
+            ],
+            "min_dam_value": [
+                "2.2",
+                "2.3",
+                "2.5",
+                "2.6",
+                "2.7",
+                "2.9",
+                "3",
+                "3.1",
+                "3.3",
+                "3.4"
+            ],
+            "max_dam_value": [
+                "3.5",
+                "4",
+                "4.5",
+                "5",
+                "5.5",
+                "6",
+                "6.5",
+                "7",
+                "7.5",
+                "8"
+            ]
+        },
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on NTW-20.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
+        },
+        "img": "pic_NTW20.png",
+        "internalName": "NTW20",
+        "mod": 1
+    },
+    {
+        "url": "/wiki/NTW-20#Mod2",
+        "num": 53,
+        "name": "NTW-20 MOD 2",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 47,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 56,
+            "eva": 4,
+            "acc": 9,
+            "rof": 20,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 95,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 169,
+            "eva": 30,
+            "acc": 81,
+            "rof": 32,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 20%",
+        "ability": {
+            "name": "Interdiction Shot",
+            "icon": "AimAttackCurrentTarge",
+            "text": "Begin charging after skill cooldown ends, gaining 1 charge stack every second, up to a maximum of 7 stacks. When skill is used, aim for 1.5 seconds, then deal ($min_dam_value) ~ ($max_dam_value)x damage to the nearest enemy based on the current number of charge stacks. All stacks will be consumed on skill use.",
+            "initial": "8",
+            "cooldown": [
+                "13",
+                "12.6",
+                "12.1",
+                "11.7",
+                "11.2",
+                "10.8",
+                "10.3",
+                "9.9",
+                "9.4",
+                "9"
+            ],
+            "min_dam_value": [
+                "2.2",
+                "2.3",
+                "2.5",
+                "2.6",
+                "2.7",
+                "2.9",
+                "3",
+                "3.1",
+                "3.3",
+                "3.4"
+            ],
+            "max_dam_value": [
+                "3.5",
+                "4",
+                "4.5",
+                "5",
+                "5.5",
+                "6",
+                "6.5",
+                "7",
+                "7.5",
+                "8"
+            ]
+        },
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on NTW-20 MOD 1.\nRequirements: Lv.110, 100 Affection."
+        },
+        "img": "pic_NTW20.png",
+        "internalName": "NTW20",
+        "mod": 2,
+        "ability2": {
+            "name": "Chain Reaction",
+            "icon": "ntw20",
+            "text": "[Passive 1]: When \"Burning Hunting Spirit\" kills an enemy, activate skill again and gain 3 Charge stacks. Can activate up to 3 times. The additional skill uses has no aiming time and does not gain bonus damage from Charge stacks, dealing ($dam_value)x damage that can miss. It priorities enemies that can be instantly killed and which has the lowest health. [Passive 2]: Increases damage of normal attacks and skills by 10% when attacking enemies with more than 50% HP.",
+            "dam_value": [
+                "2.5",
+                "2.7",
+                "2.9",
+                "3",
+                "3.2",
+                "3.4",
+                "3.5",
+                "3.7",
+                "3.9",
+                "4"
+            ]
+        }
+    },
+    {
+        "url": "/wiki/NTW-20#Mod3",
+        "num": 53,
+        "name": "NTW-20 MOD 3",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 47,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 56,
+            "eva": 4,
+            "acc": 9,
+            "rof": 20,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 95,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 170,
+            "eva": 31,
+            "acc": 82,
+            "rof": 32,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 20%",
+        "ability": {
+            "name": "Interdiction Shot",
+            "icon": "AimAttackCurrentTarge",
+            "text": "Begin charging after skill cooldown ends, gaining 1 charge stack every second, up to a maximum of 7 stacks. When skill is used, aim for 1.5 seconds, then deal ($min_dam_value) ~ ($max_dam_value)x damage to the nearest enemy based on the current number of charge stacks. All stacks will be consumed on skill use.",
+            "initial": "8",
+            "cooldown": [
+                "13",
+                "12.6",
+                "12.1",
+                "11.7",
+                "11.2",
+                "10.8",
+                "10.3",
+                "9.9",
+                "9.4",
+                "9"
+            ],
+            "min_dam_value": [
+                "2.2",
+                "2.3",
+                "2.5",
+                "2.6",
+                "2.7",
+                "2.9",
+                "3",
+                "3.1",
+                "3.3",
+                "3.4"
+            ],
+            "max_dam_value": [
+                "3.5",
+                "4",
+                "4.5",
+                "5",
+                "5.5",
+                "6",
+                "6.5",
+                "7",
+                "7.5",
+                "8"
+            ]
+        },
+        "production": {
+            "upgrade": "Obtained by performing a Digi-mind Upgrade on NTW-20 MOD 2.\nRequirements: Lv.115, 100 Affection."
+        },
+        "img": "pic_NTW20Mod.png",
+        "internalName": "NTW20Mod",
+        "mod": 3,
+        "ability2": {
+            "name": "Chain Reaction",
+            "icon": "ntw20",
+            "text": "[Passive 1]: When \"Burning Hunting Spirit\" kills an enemy, activate skill again and gain 3 Charge stacks. Can activate up to 3 times. The additional skill uses has no aiming time and does not gain bonus damage from Charge stacks, dealing ($dam_value)x damage that can miss. It priorities enemies that can be instantly killed and which has the lowest health. [Passive 2]: Increases damage of normal attacks and skills by 10% when attacking enemies with more than 50% HP.",
+            "dam_value": [
+                "2.5",
+                "2.7",
+                "2.9",
+                "3",
+                "3.2",
+                "3.4",
+                "3.5",
+                "3.7",
+                "3.9",
+                "4"
+            ]
+        }
+    },
+    {
         "url": "/wiki/NZ75",
         "num": 126,
         "name": "NZ75",
@@ -24753,20 +25096,20 @@
                 "pic": "pic_M1895_D.png"
             },
             {
-                "name": "Astral Bond",
-                "pic": "pic_M1895_2706.png"
-            },
-            {
-                "name": "Astral Bond (Damaged)",
-                "pic": "pic_M1895_2706_D.png"
-            },
-            {
                 "name": "MOD 3",
                 "pic": "pic_M1895Mod.png"
             },
             {
                 "name": "MOD 3 (Damaged)",
                 "pic": "pic_M1895Mod_D.png"
+            },
+            {
+                "name": "Astral Bond",
+                "pic": "pic_M1895_2706.png"
+            },
+            {
+                "name": "Astral Bond (Damaged)",
+                "pic": "pic_M1895_2706_D.png"
             }
         ]
     },
@@ -24874,7 +25217,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Nagant Revolver.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "M1895",
-        "img": "pic_M1895.png"
+        "img": "pic_M1895.png",
+        "mod": 1
     },
     {
         "url": "/wiki/Nagant_Revolver#Mod2",
@@ -24981,6 +25325,7 @@
         },
         "internalName": "M1895",
         "img": "pic_M1895.png",
+        "mod": 2,
         "ability2": {
             "name": "Seven Note Cadenza.",
             "icon": "powBuff",
@@ -25116,6 +25461,7 @@
         },
         "internalName": "M1895Mod",
         "img": "pic_M1895Mod.png",
+        "mod": 3,
         "ability2": {
             "name": "Seven Note Cadenza.",
             "icon": "powBuff",
@@ -26803,36 +27149,12 @@
                 "pic": "pic_PK_D.png"
             },
             {
-                "name": "Flower and Water",
-                "pic": "pic_PKP_1201.png"
-            },
-            {
-                "name": "Flower and Water (Damaged)",
-                "pic": "pic_PKP_1201_D.png"
-            },
-            {
                 "name": "By Your Side",
                 "pic": "pic_PK_605.png"
             },
             {
                 "name": "By Your Side (Damaged)",
                 "pic": "pic_PK_605_D.png"
-            },
-            {
-                "name": "L.A.D.Y",
-                "pic": "pic_PKP_1503.png"
-            },
-            {
-                "name": "L.A.D.Y (Damaged)",
-                "pic": "pic_PKP_1503_D.png"
-            },
-            {
-                "name": "Silver Star",
-                "pic": "pic_PKP_3102.png"
-            },
-            {
-                "name": "Silver Star (Damaged)",
-                "pic": "pic_PKP_3102_D.png"
             }
         ]
     },
@@ -29314,6 +29636,62 @@
         ]
     },
     {
+        "url": "/wiki/RPK-16",
+        "num": -1,
+        "name": "RPK-16",
+        "type": "MG",
+        "rating": 5,
+        "constStats": {
+            "mov": 4,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "0"
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects machine guns\nIncrease ?? by ??%\nIncrease ?? by ??%",
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "timer": "6:16:00"
+        }
+    },
+    {
         "url": "/wiki/RT-20",
         "num": 241,
         "name": "RT-20",
@@ -29982,6 +30360,98 @@
         },
         "production": {
             "timer": "3:56:00"
+        }
+    },
+    {
+        "url": "/wiki/SL8",
+        "num": 296,
+        "name": "SL8",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 43,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 41,
+            "eva": 5,
+            "acc": 9,
+            "rof": 27,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 85,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 120,
+            "eva": 39,
+            "acc": 78,
+            "rof": 41,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛⬛\n🔶🔶🔶\n🔷⬛⬛",
+        "bonus_desc": "Affects all guns\nIncreases damage by 10%\nIncreases evasion by 18%",
+        "ability": {
+            "name": "Distant Waves",
+            "icon": "SL8S",
+            "text": "Increases rate of fire by ($rof_value)% for ($time_value) seconds. On skill activation, grants self a stack of ($pass_value)% damage for each different classed ally present on her tile buffs up to a max of 3 stacks.",
+            "initial": "5",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "rof_value": [
+                "35",
+                "38",
+                "41",
+                "43",
+                "46",
+                "49",
+                "52",
+                "54",
+                "57",
+                "60"
+            ],
+            "pass_value": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ],
+            "time_value": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "reward": "Obtainable as a potential reward from event supply crates given during Polarized Light. One guaranteed unit will be given from opening the 777th crate."
         }
     },
     {
@@ -30992,7 +31462,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on ST AR-15.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "AR15",
-        "img": "pic_AR15.png"
+        "img": "pic_AR15.png",
+        "mod": 1
     },
     {
         "url": "/wiki/ST_AR-15#Mod2",
@@ -31075,6 +31546,7 @@
         },
         "internalName": "AR15",
         "img": "pic_AR15.png",
+        "mod": 2,
         "ability2": {
             "name": "Crime and Punishment",
             "icon": "ar15_shot",
@@ -31186,6 +31658,7 @@
         },
         "internalName": "AR15Mod",
         "img": "pic_AR15Mod.png",
+        "mod": 3,
         "ability2": {
             "name": "Crime and Punishment",
             "icon": "ar15_shot",
@@ -31331,6 +31804,14 @@
                 "pic": "pic_SV98_D.png"
             },
             {
+                "name": "MOD 3",
+                "pic": "pic_SV98Mod.png"
+            },
+            {
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_SV98Mod_D.png"
+            },
+            {
                 "name": "At Your Service",
                 "pic": "pic_SV98_502.png"
             },
@@ -31345,14 +31826,6 @@
             {
                 "name": "Pierce Your Heart! (Damaged)",
                 "pic": "pic_SV98_1906_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_SV98Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_SV98Mod_D.png"
             }
         ]
     },
@@ -31436,7 +31909,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on SV-98.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_SV98.png",
-        "internalName": "SV98"
+        "internalName": "SV98",
+        "mod": 1
     },
     {
         "url": "/wiki/SV-98#Mod2",
@@ -31519,6 +31993,7 @@
         },
         "img": "pic_SV98.png",
         "internalName": "SV98",
+        "mod": 2,
         "ability2": {
             "name": "Shadowy Savior",
             "icon": "rateBuffSelf",
@@ -31630,6 +32105,7 @@
         },
         "img": "pic_SV98Mod.png",
         "internalName": "SV98Mod",
+        "mod": 3,
         "ability2": {
             "name": "Shadowy Savior",
             "icon": "rateBuffSelf",
@@ -33025,7 +33501,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on StG44.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_STG44.png",
-        "internalName": "STG44"
+        "internalName": "STG44",
+        "mod": 1
     },
     {
         "url": "/wiki/StG44#Mod2",
@@ -33096,6 +33573,7 @@
         },
         "img": "pic_STG44.png",
         "internalName": "STG44",
+        "mod": 2,
         "ability2": {
             "name": "Firestorm",
             "icon": "Stg44mod",
@@ -33183,6 +33661,7 @@
         },
         "img": "pic_STG44Mod.png",
         "internalName": "STG44Mod",
+        "mod": 3,
         "ability2": {
             "name": "Firestorm",
             "icon": "Stg44mod",
@@ -33402,20 +33881,20 @@
                 "pic": "pic_StenMK2_D.png"
             },
             {
-                "name": "Reciprocated Love",
-                "pic": "pic_StenMK2_603.png"
-            },
-            {
-                "name": "Reciprocated Love (Damaged)",
-                "pic": "pic_StenMK2_603_D.png"
-            },
-            {
                 "name": "MOD 3",
                 "pic": "pic_StenMK2Mod.png"
             },
             {
                 "name": "MOD 3 (Damaged)",
                 "pic": "pic_StenMK2Mod_D.png"
+            },
+            {
+                "name": "Reciprocated Love",
+                "pic": "pic_StenMK2_603.png"
+            },
+            {
+                "name": "Reciprocated Love (Damaged)",
+                "pic": "pic_StenMK2_603_D.png"
             }
         ]
     },
@@ -33487,7 +33966,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Sten MkII.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "internalName": "StenMK2",
-        "img": "pic_StenMK2.png"
+        "img": "pic_StenMK2.png",
+        "mod": 1
     },
     {
         "url": "/wiki/Sten_MkII#Mod2",
@@ -33558,6 +34038,7 @@
         },
         "internalName": "StenMK2",
         "img": "pic_StenMK2.png",
+        "mod": 2,
         "ability2": {
             "name": "Valiant Shield",
             "icon": "StenMK2",
@@ -33670,6 +34151,7 @@
         },
         "internalName": "StenMK2Mod",
         "img": "pic_StenMK2Mod.png",
+        "mod": 3,
         "ability2": {
             "name": "Valiant Shield",
             "icon": "StenMK2",
@@ -36517,7 +36999,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on Type 64.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_64type.png",
-        "internalName": "64type"
+        "internalName": "64type",
+        "mod": 1
     },
     {
         "url": "/wiki/Type_64#Mod2",
@@ -36588,6 +37071,7 @@
         },
         "img": "pic_64type.png",
         "internalName": "64type",
+        "mod": 2,
         "ability2": {
             "name": "Silencing Flash",
             "icon": "dodgeBuffSelf",
@@ -36687,6 +37171,7 @@
         },
         "img": "pic_64typeMod.png",
         "internalName": "64typeMod",
+        "mod": 3,
         "ability2": {
             "name": "Silencing Flash",
             "icon": "dodgeBuffSelf",
@@ -37538,14 +38023,6 @@
             {
                 "name": "Untranslated1 (Damaged)",
                 "pic": "pic_97type_3703_D.png"
-            },
-            {
-                "name": "Untranslated2",
-                "pic": "pic_97typeS_3807.png"
-            },
-            {
-                "name": "Untranslated2 (Damaged)",
-                "pic": "pic_97typeS_3807_D.png"
             }
         ]
     },
@@ -37959,20 +38436,20 @@
                 "pic": "pic_UMP45_D.png"
             },
             {
-                "name": "Flower of Diamond",
-                "pic": "pic_UMP45_2107.png"
-            },
-            {
-                "name": "Flower of Diamond (Damaged)",
-                "pic": "pic_UMP45_2107_D.png"
-            },
-            {
                 "name": "MOD 3",
                 "pic": "pic_UMP45Mod.png"
             },
             {
                 "name": "MOD 3 (Damaged)",
                 "pic": "pic_UMP45Mod_D.png"
+            },
+            {
+                "name": "Flower of Diamond",
+                "pic": "pic_UMP45_2107.png"
+            },
+            {
+                "name": "Flower of Diamond (Damaged)",
+                "pic": "pic_UMP45_2107_D.png"
             },
             {
                 "name": "Untranslated1",
@@ -38092,7 +38569,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on UMP45.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_UMP45.png",
-        "internalName": "UMP45"
+        "internalName": "UMP45",
+        "mod": 1
     },
     {
         "url": "/wiki/UMP45#Mod2",
@@ -38187,6 +38665,7 @@
         },
         "img": "pic_UMP45.png",
         "internalName": "UMP45",
+        "mod": 2,
         "ability2": {
             "name": "Mist Trap",
             "icon": "ShortCircuit",
@@ -38298,6 +38777,7 @@
         },
         "img": "pic_UMP45Mod.png",
         "internalName": "UMP45Mod",
+        "mod": 3,
         "ability2": {
             "name": "Mist Trap",
             "icon": "ShortCircuit",
@@ -38418,6 +38898,14 @@
                 "pic": "pic_UMP9_D.png"
             },
             {
+                "name": "MOD 3",
+                "pic": "pic_UMP9Mod.png"
+            },
+            {
+                "name": "MOD 3 (Damaged)",
+                "pic": "pic_UMP9Mod_D.png"
+            },
+            {
                 "name": "\"Am I Late?\"",
                 "pic": "pic_UMP9_409.png"
             },
@@ -38440,18 +38928,6 @@
             {
                 "name": "The World's Melody (Damaged)",
                 "pic": "pic_UMP9_2106_D.png"
-            },
-            {
-                "name": "MOD 3",
-                "pic": "pic_UMP9Mod.png"
-            },
-            {
-                "name": "MOD 3 (Damaged)",
-                "pic": "pic_UMP9Mod_D.png"
-            },
-            {
-                "name": "MOD 3 (Angry)",
-                "pic": "pic_UMP9Mod_angry.png"
             }
         ]
     },
@@ -38523,7 +38999,8 @@
             "upgrade": "Obtained by performing a Digi-mind Upgrade on UMP9.\nRequirements: Lv.100, 100 Affection, and 5x dummy linked."
         },
         "img": "pic_UMP9.png",
-        "internalName": "UMP9"
+        "internalName": "UMP9",
+        "mod": 1
     },
     {
         "url": "/wiki/UMP9#Mod2",
@@ -38594,6 +39071,7 @@
         },
         "img": "pic_UMP9.png",
         "internalName": "UMP9",
+        "mod": 2,
         "ability2": {
             "name": "Snow Owl's Roar",
             "icon": "ump9mod",
@@ -38717,6 +39195,7 @@
         },
         "img": "pic_UMP9Mod.png",
         "internalName": "UMP9Mod",
+        "mod": 3,
         "ability2": {
             "name": "Snow Owl's Roar",
             "icon": "ump9mod",
@@ -39225,6 +39704,61 @@
         ]
     },
     {
+        "url": "/wiki/Vepr",
+        "num": -1,
+        "name": "Vepr",
+        "type": "AR",
+        "rating": 3,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Steel Blue Timpani",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for February 2020 (CN)."
+        }
+    },
+    {
         "url": "/wiki/WA2000",
         "num": 48,
         "name": "WA2000",
@@ -39360,6 +39894,61 @@
                 "pic": "pic_WA2000_804_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Webley",
+        "num": -1,
+        "name": "Webley",
+        "type": "HG",
+        "rating": 5,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects all guns\nIncrease ?? by ??%\nIncrease ?? by ??%",
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "reward": "Reward for clearing E4-? of Polarized Light."
+        }
     },
     {
         "url": "/wiki/Welrod_MkII",
@@ -40349,7 +40938,7 @@
         "num": 1021,
         "name": "Alma",
         "type": "MG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 4,
             "crit_rate": 5,
@@ -40450,7 +41039,7 @@
         "num": 1005,
         "name": "Bronya",
         "type": "RF",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 7,
             "crit_rate": 40,
@@ -40538,7 +41127,7 @@
         "num": 1009,
         "name": "Clear",
         "type": "HG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 15,
             "crit_rate": 20,
@@ -40646,7 +41235,7 @@
         "num": 1022,
         "name": "Dana",
         "type": "SG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 6,
             "crit_rate": 40,
@@ -40759,7 +41348,7 @@
         "num": 1019,
         "name": "Dorothy",
         "type": "SMG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 12,
             "crit_rate": 5,
@@ -40871,7 +41460,7 @@
         "num": 1002,
         "name": "Elphelt",
         "type": "SG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 6,
             "crit_rate": 40,
@@ -40964,7 +41553,7 @@
         "num": 1010,
         "name": "Fail",
         "type": "HG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 15,
             "crit_rate": 20,
@@ -41072,7 +41661,7 @@
         "num": 1017,
         "name": "Jill",
         "type": "HG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 15,
             "crit_rate": 20,
@@ -41292,7 +41881,7 @@
         "num": 1003,
         "name": "Kiana",
         "type": "HG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 15,
             "crit_rate": 20,
@@ -41392,7 +41981,7 @@
         "num": 1007,
         "name": "Murata Himeko",
         "type": "AR",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 10,
             "crit_rate": 20,
@@ -41496,7 +42085,7 @@
         "num": 1001,
         "name": "Noel",
         "type": "HG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 15,
             "crit_rate": 20,
@@ -41577,7 +42166,7 @@
         "num": 1004,
         "name": "Raiden Mei",
         "type": "RF",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 7,
             "crit_rate": 40,
@@ -41669,7 +42258,7 @@
         "num": 1008,
         "name": "Seele",
         "type": "SG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 6,
             "crit_rate": 40,
@@ -41758,7 +42347,7 @@
         "num": 1018,
         "name": "Sei",
         "type": "HG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 15,
             "crit_rate": 20,
@@ -41866,7 +42455,7 @@
         "num": 1020,
         "name": "Stella",
         "type": "RF",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 7,
             "crit_rate": 40,
@@ -41990,7 +42579,7 @@
         "num": 1006,
         "name": "Theresa",
         "type": "HG",
-        "rating": 100,
+        "rating": 7,
         "constStats": {
             "mov": 15,
             "crit_rate": 20,
@@ -42114,127 +42703,16 @@
         ]
     },
     {
-        "url": "/wiki/43M",
+        "url": "/wiki/CAR",
         "num": -1,
-        "name": "43M",
-        "type": "SMG",
-        "rating": 3,
-        "constStats": {
-            "mov": 12,
-            "crit_rate": 5,
-            "crit_dmg": 50,
-            "pen": 15
-        },
-        "baseStats": {
-            "hp": 93,
-            "ammo": 25,
-            "ration": 20,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "maxStats": {
-            "hp": 185,
-            "ammo": 85,
-            "ration": 60,
-            "dmg": 30,
-            "eva": 56,
-            "acc": 13,
-            "rof": 89,
-            "armor": 0
-        },
-        "tile_bonus": "🔶⬛⬛\n⬛🔷⬛\n🔶⬛⬛",
-        "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases evasion by 10%",
-        "ability": {
-            "name": "Placeholder Name",
-            "icon": "",
-            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
-            "placeholder_value": [
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?"
-            ]
-        },
-        "production": {
-            "reward": "Login reward for January 2020 (CN)."
-        }
-    },
-    {
-        "url": "/wiki/AK-15",
-        "num": -1,
-        "name": "AK-15",
-        "type": "AR",
-        "rating": 5,
-        "constStats": {
-            "mov": 10,
-            "crit_rate": 20,
-            "crit_dmg": 50,
-            "pen": 15
-        },
-        "baseStats": {
-            "hp": 10,
-            "ammo": 20,
-            "ration": 20,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "maxStats": {
-            "hp": 100,
-            "ammo": 60,
-            "ration": 60,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects submachine guns\nIncrease ?? by ??%\nIncrease ?? by ??%",
-        "ability": {
-            "name": "Placeholder Name",
-            "icon": "",
-            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
-            "placeholder_value": [
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?"
-            ]
-        },
-        "production": {
-            "timer": "4:15:00"
-        }
-    },
-    {
-        "url": "/wiki/RPK-16",
-        "num": -1,
-        "name": "RPK-16",
+        "name": "CAR",
         "type": "MG",
-        "rating": 5,
+        "rating": 3,
         "constStats": {
             "mov": 4,
             "crit_rate": 5,
             "crit_dmg": 50,
-            "pen": 15,
-            "clipsize": "0"
+            "pen": 15
         },
         "baseStats": {
             "hp": 10,
@@ -42257,7 +42735,7 @@
             "armor": 0
         },
         "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects machine guns\nIncrease ?? by ??%\nIncrease ?? by ??%",
+        "bonus_desc": "Affects shotguns\nIncreases ?? by ??%\nIncreases ?? by ??%",
         "ability": {
             "name": "Placeholder Name",
             "icon": "",
@@ -42276,62 +42754,7 @@
             ]
         },
         "production": {
-            "timer": "6:16:00"
-        }
-    },
-    {
-        "url": "/wiki/Webley",
-        "num": -1,
-        "name": "Webley",
-        "type": "HG",
-        "rating": 5,
-        "constStats": {
-            "mov": 15,
-            "crit_rate": 20,
-            "crit_dmg": 50,
-            "pen": 15
-        },
-        "baseStats": {
-            "hp": 10,
-            "ammo": 10,
-            "ration": 10,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "maxStats": {
-            "hp": 100,
-            "ammo": 30,
-            "ration": 30,
-            "dmg": -1,
-            "eva": -1,
-            "acc": -1,
-            "rof": -1,
-            "armor": 0
-        },
-        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects all guns\nIncrease ?? by ??%\nIncrease ?? by ??%",
-        "ability": {
-            "name": "Placeholder Name",
-            "icon": "",
-            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
-            "placeholder_value": [
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?"
-            ]
-        },
-        "production": {
-            "reward": "Reward for clearing E4-? of Polarized Light."
+            "reward": "Login reward for April 2020 (CN)."
         }
     },
     {
@@ -42541,7 +42964,7 @@
         "type": "Sangvis Ferri Doll",
         "rating": -1,
         "production": {
-            "reward": "ACCESS DENIED"
+            "reward": "||Given as a gift when starting Protocol Assimilation.||"
         },
         "img": "Scarecrow.png"
     },
@@ -42551,11 +42974,21 @@
         "name": "Executioner",
         "internalName": "Executioner",
         "type": "Sangvis Ferri Doll",
-        "rating": -1,
+        "rating": 3,
         "production": {
-            "reward": "ACCESS DENIED"
+            "stage": "||Obtainable through Protocol Assimilation.||"
         },
-        "img": "Executioner.png"
+        "img": "Excutioner.png",
+        "costumes": [
+            {
+                "name": "Default",
+                "pic": "Excutioner.png"
+            },
+            {
+                "name": "Elite",
+                "pic": "ExcutionerElite.png"
+            }
+        ]
     },
     {
         "url": "/wiki/Gager",

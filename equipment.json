@@ -173,6 +173,17 @@
         }
     },
     {
+        "url": "/wiki/9x39mm_SPP",
+        "name": "9x39mm SPP",
+        "valid": "OTs-12 Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 新式的9x39mm子弹，比一般同口径的子弹有着更高的穿透能力，看似无害的蓝色弹头下面隐藏的是惊人的破坏力，不可小视。EN: A new type of 9x39mm bullet, boasts higher penetration performance than the other rounds of the same calibre. The seemingly harmless blue tipped bullet hides an unbelievable level of damage potential, do not underestimate it.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/Ability_Upgrade_Cartridge",
         "name": "Ability Upgrade Cartridge",
         "valid": "IDW Only",
@@ -518,6 +529,17 @@
         }
     },
     {
+        "url": "/wiki/ART2",
+        "name": "ART2",
+        "valid": "M21 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 为精准射击准备的瞄准镜，金色的目镜边框别具一番风味，让M21爱不释手。EN: An optical scope prepared for precision shooting, the golden coloured rim makes the scope fairly stylish, M21 finds it hard to keep her hands off it.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/Artificial_Hands",
         "name": "Artificial Hands",
         "valid": "Alma Only",
@@ -652,6 +674,17 @@
         "rating": 5,
         "slot": "Accessory",
         "description": "CN: 配备了重型枪管的BM59 Mark IV，在长时间全自动连射的情况下也不会过热，让BM59可以扮演班用火力支援的角色。EN: a BM59 Mark IV rifle equipped with heavier barrels can cope with extended automatic firing sessions without overheating, this allows BM59 to perform as fire support.",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/BPR4_%26_SRM6",
+        "name": "BPR4 & SRM6",
+        "valid": "MDR Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: OSS为.308和7.62mm口径设计的消音器，模块化设计和新潮的外观迅速在格里芬讨论版上走红，某匿名版常客自然是不会错过这样的产品。EN: <!-- Translations go here, remove brackets once you're done -->",
         "stats": {}
     },
     {
@@ -1206,6 +1239,29 @@
         "stats": {
             "Damage": {
                 "min": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Frag-12_HE_Rounds",
+        "name": "Frag-12 HE Rounds",
+        "valid": "AA-12 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 为12号霰弹枪设计的高爆弹头，以AA12为宣传手段快速在市场中占据了一席之地，高爆弹头的效果和AA12的自动射击结合在一起，爆炸就是艺术！EN: A high-explosive warhead made for 12-gauge shotguns, these rounds have swiftly carved out a niche for themselves in the market thanks to being promoted by AA-12. The HE warhead effect in combination with the AA-12's fully-automatic firing; explosions are art!Special equipment awarded to players who are placed in the top 50% onward category of \"Labyrinthine Defense\", ranking map of [[Polarized Light]]. This equipment comes with max calibration.",
+        "stats": {
+            "Targets": {
+                "min": -2.0
+            },
+            "Damage": {
+                "min": 8.0,
+                "growth": 1.9
+            },
+            "Accuracy": {
+                "min": 12.0,
+                "growth": 1.7
             }
         }
     },
@@ -3379,7 +3435,7 @@
         "name": "Armor Fairy",
         "rating": -1,
         "production": {
-            "timer": ":00:00",
+            "timer": "3:00:00",
             "heavy": [
                 500,
                 500,
@@ -3394,7 +3450,7 @@
         "name": "Shield Fairy",
         "rating": -1,
         "production": {
-            "timer": ":05:00",
+            "timer": "3:05:00",
             "heavy": [
                 500,
                 500,
@@ -3409,7 +3465,7 @@
         "name": "Provocation Fairy",
         "rating": -1,
         "production": {
-            "timer": ":10:00",
+            "timer": "3:10:00",
             "heavy": [
                 500,
                 500,
@@ -3424,7 +3480,7 @@
         "name": "Sniper Fairy",
         "rating": -1,
         "production": {
-            "timer": ":30:00",
+            "timer": "3:30:00",
             "heavy": [
                 500,
                 500,
@@ -3439,7 +3495,7 @@
         "name": "Bombardment Fairy",
         "rating": -1,
         "production": {
-            "timer": ":35:00",
+            "timer": "3:35:00",
             "heavy": [
                 500,
                 500,
@@ -3454,7 +3510,7 @@
         "name": "Airstrike Fairy",
         "rating": -1,
         "production": {
-            "timer": ":40:00",
+            "timer": "3:40:00",
             "heavy": [
                 500,
                 500,
@@ -3469,7 +3525,7 @@
         "name": "Reinforcement Fairy",
         "rating": -1,
         "production": {
-            "timer": ":00:00",
+            "timer": "4:00:00",
             "heavy": [
                 2000,
                 500,
@@ -3484,7 +3540,7 @@
         "name": "Parachute Fairy",
         "rating": -1,
         "production": {
-            "timer": ":05:00",
+            "timer": "4:05:00",
             "heavy": [
                 2000,
                 500,
@@ -3499,7 +3555,7 @@
         "name": "Defense Fairy",
         "rating": -1,
         "production": {
-            "timer": ":10:00",
+            "timer": "4:10:00",
             "heavy": [
                 2000,
                 500,
@@ -3514,7 +3570,7 @@
         "name": "Barrier Fairy",
         "rating": -1,
         "production": {
-            "timer": ":15:00"
+            "timer": "4:15:00"
         },
         "img": ""
     },
@@ -3523,7 +3579,7 @@
         "name": "Warrior Fairy",
         "rating": -1,
         "production": {
-            "timer": ":30:00",
+            "timer": "4:30:00",
             "heavy": [
                 500,
                 500,
@@ -3538,7 +3594,7 @@
         "name": "Fury Fairy",
         "rating": -1,
         "production": {
-            "timer": ":35:00",
+            "timer": "4:35:00",
             "heavy": [
                 500,
                 500,
@@ -3553,7 +3609,7 @@
         "name": "Twin Fairy",
         "rating": -1,
         "production": {
-            "timer": ":40:00"
+            "timer": "4:40:00"
         },
         "img": ""
     },
@@ -3562,7 +3618,7 @@
         "name": "Command Fairy",
         "rating": -1,
         "production": {
-            "timer": ":00:00",
+            "timer": "5:00:00",
             "heavy": [
                 500,
                 500,
@@ -3577,7 +3633,7 @@
         "name": "Rescue Fairy",
         "rating": -1,
         "production": {
-            "timer": ":05:00",
+            "timer": "5:05:00",
             "heavy": [
                 500,
                 500,
@@ -3592,7 +3648,7 @@
         "name": "Illumination Fairy",
         "rating": -1,
         "production": {
-            "timer": ":10:00",
+            "timer": "5:10:00",
             "heavy": [
                 500,
                 500,
@@ -3607,7 +3663,7 @@
         "name": "Combo Fairy",
         "rating": -1,
         "production": {
-            "timer": ":15:00"
+            "timer": "5:15:00"
         },
         "img": ""
     },
@@ -3616,7 +3672,7 @@
         "name": "Landmine Fairy",
         "rating": -1,
         "production": {
-            "timer": ":30:00",
+            "timer": "5:30:00",
             "heavy": [
                 500,
                 2000,
@@ -3631,7 +3687,7 @@
         "name": "Rocket Fairy",
         "rating": -1,
         "production": {
-            "timer": ":35:00",
+            "timer": "5:35:00",
             "heavy": [
                 500,
                 2000,
@@ -3646,7 +3702,7 @@
         "name": "Construction Fairy",
         "rating": -1,
         "production": {
-            "timer": ":40:00",
+            "timer": "5:40:00",
             "heavy": [
                 500,
                 2000,

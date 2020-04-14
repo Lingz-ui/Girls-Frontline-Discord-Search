@@ -74,7 +74,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:998/pic/equip/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
-version = "IOP 3.2-20200109"
+version = "IOP 3.21-20200414"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -181,20 +181,27 @@ def printError(text):
 	print(bcolors.FAIL + text + bcolors.ENDC)
 
 
-#I don't really like this being a function to be honest, I might change extras to 7 stars instead
-#NPCs use 0 as the color
-gfcolors = [0xadadad, 0, 0xffffff, 0x6bdfce, 0xd6e35a, 0xffb600]
-def getgfcolors(n):
+gfcolors = [
+	0xadadad, #NPCs & SF - Grey
+	0,        #Nothing has 1 stars.
+	0xffffff, #2 stars   - White
+	0x6bdfce, #3 stars   - Turquoise
+	0xd6e35a, #4 stars   - Green
+	0xffb600, #5 stars   - Orange
+	0xffb600, #6 stars   - Orange
+	0xdfb6ff  #EXTRAstar - Purple
+]
+'''def getgfcolors(n):
 	if n == 100:
 		return 0xdfb6ff
 	elif n > 5:
 		return gfcolors[5]
 	else:
-		return gfcolors[n]
+		return gfcolors[n]'''
 
 def num2stars(n):
 	#★☆⚝
-	if n == 100:
+	if n == 7:
 		return "⚝"
 	#NPCs and SF dolls don't really have rarities so don't return any stars
 	elif n < 1:
@@ -300,7 +307,7 @@ def getAbility(doll, tag):
 	
 #if statements for all the things!!!!!!
 def dollInfo(doll):
-	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 0 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=getgfcolors(doll['rating']))
+	embed = discord.Embed(title="No."+(str(doll["num"]) if doll['num'] > 0 else "?")+" - "+ doll['name'] + " " + num2stars(doll['rating']), url=SITE_DOMAIN+doll['url'], color=gfcolors[doll['rating']])
 	embed.add_field(name="Type", value=doll['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(doll['baseStats']['hp']) + ", **DMG:** " + str(doll['baseStats']['dmg']) + ", **ACC:** " + str(doll['baseStats']['acc']) + ", **EVA:** " + str(doll['baseStats']['eva']) + ", **ROF:** " + str(doll['baseStats']['rof']))
@@ -394,7 +401,7 @@ def dollInfo(doll):
 	return embed
 
 def equipInfo(equip):
-	embed = discord.Embed(title=equip['name'] + " " + num2stars(equip['rating']), url=SITE_DOMAIN+equip['url'], color=getgfcolors(equip['rating']))
+	embed = discord.Embed(title=equip['name'] + " " + num2stars(equip['rating']), url=SITE_DOMAIN+equip['url'], color=gfcolors[equip['rating']])
 	#Type is worthless, show valid for instead
 	if 'valid' in equip:
 		embed.add_field(name="Usable by", value=equip['valid'], inline=True)
@@ -576,6 +583,8 @@ def getDollCostume(doll,costumeType):
 		return doll['name'] + ":\n"+PIC_DOMAIN+doll['img']
 	#else
 	printWarn("T-Doll "+doll['name']+ " is missing image information.")
+	if 'img' in doll:
+		return "There are either no costumes for this T-Doll or the data is missing. Default art:"+doll['img']
 	return "Sorry, either there are no images for this doll or the data is missing."
 	#return False
 
@@ -777,7 +786,15 @@ async def on_message(message):
 	if command == "status":
 		st = "Running "+version+"\n"
 		st += serverCount()
-		st += "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants & 1 kalina)"
+		#st += "\n"+str(len(frontlinedex))+" dolls indexed (incl. MOD variants & 1 kalina)"
+		numDolls = 0
+		numMods = 0
+		for d in frontlinedex:
+			if 'mod' in d:
+				numMods+=1
+			else:
+				numDolls+=1
+		st+="\n"+str(numDolls)+" dolls indexed (incl. NPCs). "+str(numMods/3)+" MODs indexed. (MOD1/2/3 counted as one MOD)"
 		st += "\n"+str(len(equipmentdex))+" equipments indexed."
 		#require --extra because this command is expensive to compute and I don't want people spamming it. It also doesn't work yet.
 		if param == "--extra":
@@ -1033,8 +1050,8 @@ async def on_message(message):
 		print("stripped arg: "+param)
 		
 		res = []
-		#Speedup: Only search equipment if the time is <1 hour.
-		if int(param.split(':')[0]) == 0:
+		#Speedup: Only search equipment if the time is <1 hour or searching a Fairy.
+		if int(param.split(':')[0]) == 0 or 'fairy' in param:
 			equipRes = []
 			for equip in equipmentdex:
 				if 'production' in equip and 'timer' in equip['production']:
@@ -1098,8 +1115,15 @@ async def on_message(message):
 		end = None
 		try:
 			#some people try $gfexp 100 120 so just accept both
-			start,end = param.replace(" ",",").split(",")
-			start = intTryParse(start.strip())
+			#if param was $gfexp 100, nothing to split
+			param = param.replace(" ",",")
+			if ',' in param:
+				start,end=param.split(",")
+				start = intTryParse(start.strip())
+			else:
+				start = 1
+				end = param
+			
 			end = intTryParse(end.strip())
 			if start == -1 or end == -1:
 				await client.send_message(message.channel,"1st or 2nd argument was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5,100` (where 5 is start, 100 is end)")
@@ -1107,6 +1131,7 @@ async def on_message(message):
 		except Exception:
 			#await client.send_message(message.channel, "An error has occured and I am unable to complete your request. Perhaps your argument was malformed.")
 			await client.send_message(message.channel,"parameter was invalid. Use this command like:\n `"+COMMAND_PREFIX+"exp 5` (where 5 is end)\n`"+COMMAND_PREFIX+"exp 100,120` (where 100 is start and 120 is end)")
+			printWarn("Invalid argument for gfexp.")
 			print(traceback.print_exc())
 		#else:
 		#	start = 1
