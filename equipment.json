@@ -130,7 +130,7 @@
         "type": "Shotgun Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 明黄色的弹体内含20颗铅弹，提供了顶尖的初速和极佳的指向性，可以大幅提升KS23的杀伤力。EN: Up to 20 lead pellets encased in bright yellow shells, provides pinnacle muzzle velocity and superior spread control, can greatly improve KS23's damaging potential.",
+        "description": "CN: 明黄色的弹体内含20颗铅弹，提供了顶尖的初速和极佳的指向性，可以大幅提升KS23的杀伤力。\nEN: Up to 20 lead pellets encased in bright yellow shells, provides pinnacle muzzle velocity and superior spread control, can greatly improve KS23's damaging potential.",
         "stats": {}
     },
     {
@@ -141,7 +141,7 @@
         "type": "",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 有什么比一颗高速飞向你的20mm弹头更可怕？答案是一颗20mm高爆引燃弹头，在你听到枪声前，你前面的墙壁，你，你身后的墙壁，墙壁后的邻居，就已经都不复存在了。EN: What is more scary than a rapidly approaching 20mm projectile? The answer is a 20mm high explosive incendiary projectile! Before you even hear the gun fire, the wall in front of you, yourself, the wall behind you, and your neighbour behind that wall are all gone!Obtained by reaching Stage 3 of NTW-20's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 有什么比一颗高速飞向你的20mm弹头更可怕？答案是一颗20mm高爆引燃弹头，在你听到枪声前，你前面的墙壁，你，你身后的墙壁，墙壁后的邻居，就已经都不复存在了。\nEN: What is more scary than a rapidly approaching 20mm projectile? The answer is a 20mm high explosive incendiary projectile! Before you even hear the gun fire, the wall in front of you, yourself, the wall behind you, and your neighbour behind that wall are all gone!\nObtained by reaching Stage 3 of NTW-20's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Armor Penetration": {
                 "min": 110.0,
@@ -163,7 +163,7 @@
         "type": "High-Velocity Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN:专为STG44开发的7.9mm弹药，也是世界最早的中间威力弹之一，战时黄铜短缺而采用的钢制弹壳带来了独特的时髦配色，STG44专用。EN: 7.9mm calibre munition developed for StG44, one of the first intermediate rifle cartridges in the world. The shortage of brass during the war lead to the usage of steel bullet casing, it reflects a speciality of that age. StG44 exclusive.Obtained by reaching Stage 3 of StG44's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN:专为STG44开发的7.9mm弹药，也是世界最早的中间威力弹之一，战时黄铜短缺而采用的钢制弹壳带来了独特的时髦配色，STG44专用。\nEN: 7.9mm calibre munition developed for StG44, one of the first intermediate rifle cartridges in the world. The shortage of brass during the war lead to the usage of steel bullet casing, it reflects a speciality of that age. StG44 exclusive.\nObtained by reaching Stage 3 of StG44's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
                 "min": 10.0,
@@ -180,7 +180,7 @@
         "type": "High-Velocity Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 新式的9x39mm子弹，比一般同口径的子弹有着更高的穿透能力，看似无害的蓝色弹头下面隐藏的是惊人的破坏力，不可小视。EN: A new type of 9x39mm bullet, boasts higher penetration performance than the other rounds of the same calibre. The seemingly harmless blue tipped bullet hides an unbelievable level of damage potential, do not underestimate it.",
+        "description": "CN: 新式的9x39mm子弹，比一般同口径的子弹有着更高的穿透能力，看似无害的蓝色弹头下面隐藏的是惊人的破坏力，不可小视。\nEN: A new type of 9x39mm bullet, boasts higher penetration performance than the other rounds of the same calibre. The seemingly harmless blue tipped bullet hides an unbelievable level of damage potential, do not underestimate it.",
         "stats": {}
     },
     {
@@ -191,7 +191,7 @@
         "type": "Microchip",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN:看起来很古朴的卡带，很难相信插上这个能提升作战能力，使用前对触点吹一吹比较好，IDW专用。EN: A really ancient looking cartridge, it is hard to believe that by plugging in this one can improve combat efficiency, maybe it works better if you give the connection point a good blow before use. IDW exclusiveObtained by reaching Stage 3 of IDW's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN:看起来很古朴的卡带，很难相信插上这个能提升作战能力，使用前对触点吹一吹比较好，IDW专用。\nEN: A really ancient looking cartridge, it is hard to believe that by plugging in this one can improve combat efficiency, maybe it works better if you give the connection point a good blow before use. IDW exclusive\nObtained by reaching Stage 3 of IDW's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Evasion": {
                 "min": 21.0,
@@ -339,7 +339,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 舍弃了古老的火药推进方式，全新升级的汉阳造配备了高性能加速线圈，可以瞬间将弹丸加速至5倍音速，也太厉害了。EN: Ditched the old gunpowder propelled method, the new upgraded Hanyang is equipped with high performance acceleration coils, can instantly accelerate projectiles to five times the speed of sound, that's so overpowered! Obtained by reaching Stage 3 of Hanyang Type 88's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 舍弃了古老的火药推进方式，全新升级的汉阳造配备了高性能加速线圈，可以瞬间将弹丸加速至5倍音速，也太厉害了。\nEN: Ditched the old gunpowder propelled method, the new upgraded Hanyang is equipped with high performance acceleration coils, can instantly accelerate projectiles to five times the speed of sound, that's so overpowered! \nObtained by reaching Stage 3 of Hanyang Type 88's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Critical hit rate (%)": {
                 "min": 18.0,
@@ -361,7 +361,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:针对UMP45特调的扩充升级芯片，在进一步发挥基础性能的前提下，最重要的是有效了解决电子战人形无法安装复杂火控的问题。Special equipment given to player after stage 3 Digi-mind upgrade of UMP45. This equipment can be found on the accessory slot of UMP45 after the upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN:针对UMP45特调的扩充升级芯片，在进一步发挥基础性能的前提下，最重要的是有效了解决电子战人形无法安装复杂火控的问题。\nSpecial equipment given to player after stage 3 Digi-mind upgrade of UMP45. This equipment can be found on the accessory slot of UMP45 after the upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Critical hit rate": {
                 "min": 15.0,
@@ -383,7 +383,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 饮料中的甜味成分。由BTC统一配发。\nEN: The sweet component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "description": "CN: 饮料中的甜味成分。由BTC统一配发。\n\nEN: The sweet component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 60",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -398,7 +398,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 饮料中的甜味成分。由BTC统一配发。\nEN: The sweet component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "description": "CN: 饮料中的甜味成分。由BTC统一配发。\n\nEN: The sweet component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 60",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -413,7 +413,7 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为增强95/97式战场感知和作战适应性设计的一体式瞄具，集成了有线传输的电子瞄具和测距仪，使95/97在掩体后不暴露自己便可进行攻击。EN: An all-in-one optic designed to improve battlefield awareness and combat adaptiveness for Type 95 and 97. Utilising wire connected electronic optics and range finder, 95 and 97 can strike from behind cover without exposing themselves.Obtained as a potential reward from unboxing the special lootboxes which were given out during the 70th Chinese National Day login event. One scope was guaranteed upon opening the 100th crate.",
+        "description": "CN: 专为增强95/97式战场感知和作战适应性设计的一体式瞄具，集成了有线传输的电子瞄具和测距仪，使95/97在掩体后不暴露自己便可进行攻击。\nEN: An all-in-one optic designed to improve battlefield awareness and combat adaptiveness for Type 95 and 97. Utilising wire connected electronic optics and range finder, 95 and 97 can strike from behind cover without exposing themselves.\nObtained as a potential reward from unboxing the special lootboxes which were given out during the 70th Chinese National Day login event. One scope was guaranteed upon opening the 100th crate.",
         "stats": {}
     },
     {
@@ -484,7 +484,7 @@
         "type": "Holographic Sight",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: AMP公司出品的UMP9特装版瞄具，主要特色是内建的4MOA准星是9喜欢的亮黄色。UMP9专用。EN: Exclusive optic for UMP9 produced AMP Corp, main selling point is the built in 4 MOA pointer being 9's favourite colour: egg yolk yellow. UMP9 exclusive.Obtained by reaching Stage 3 of UMP9's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: AMP公司出品的UMP9特装版瞄具，主要特色是内建的4MOA准星是9喜欢的亮黄色。UMP9专用。\nEN: Exclusive optic for UMP9 produced AMP Corp, main selling point is the built in 4 MOA pointer being 9's favourite colour: egg yolk yellow. UMP9 exclusive.\nObtained by reaching Stage 3 of UMP9's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
                 "min": 5.0,
@@ -536,7 +536,7 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 为精准射击准备的瞄准镜，金色的目镜边框别具一番风味，让M21爱不释手。EN: An optical scope prepared for precision shooting, the golden coloured rim makes the scope fairly stylish, M21 finds it hard to keep her hands off it.",
+        "description": "CN: 为精准射击准备的瞄准镜，金色的目镜边框别具一番风味，让M21爱不释手。\nEN: An optical scope prepared for precision shooting, the golden coloured rim makes the scope fairly stylish, M21 finds it hard to keep her hands off it.",
         "stats": {}
     },
     {
@@ -547,7 +547,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 为了防止长期敲键盘患腕管综合征（以及为了接入其他便利的功能），阿尔玛做手术将自己的双手换成了电子手。\nEN: To avoid Carpal Tunnel Syndrome from long periods at the keyboard (and various other benefits), Alma replaced her own 2 hands with artificial ones.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 80",
+        "description": "CN: 为了防止长期敲键盘患腕管综合征（以及为了接入其他便利的功能），阿尔玛做手术将自己的双手换成了电子手。\n\nEN: To avoid Carpal Tunnel Syndrome from long periods at the keyboard (and various other benefits), Alma replaced her own 2 hands with artificial ones.\nObtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].\nMinimum Level Required: 80",
         "stats": {
             "Damage": {
                 "min": 2.0,
@@ -604,7 +604,7 @@
         "type": "Night Combat Equipment",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CH: 来自异世界的混沌心灵绽放出的光芒，希望在置身黑暗中的你不会将其遗忘，“我将打破规则，无论多少次！”EN: A ray of light emitted from a chaotic heart from another world, it reminds you of it's existence even in the darkness that surrounds you. \"Break the rules, I, time and time again!\" Obtainable during the 2018 collaboration event with DJMax Respect, can be exchanged from the event shop for 120 Crown of Respects. This equipment comes max calibrated and does not need upgrading.Minimum Level Requirement: 60",
+        "description": "CH: 来自异世界的混沌心灵绽放出的光芒，希望在置身黑暗中的你不会将其遗忘，“我将打破规则，无论多少次！”\nEN: A ray of light emitted from a chaotic heart from another world, it reminds you of it's existence even in the darkness that surrounds you. \"Break the rules, I, time and time again!\" \nObtainable during the 2018 collaboration event with DJMax Respect, can be exchanged from the event shop for 120 Crown of Respects. This equipment comes max calibrated and does not need upgrading.\nMinimum Level Requirement: 60",
         "stats": {
             "Night Penalty Reduction": {
                 "min": 100.0
@@ -622,7 +622,7 @@
         "type": "Camo Cape",
         "rating": 5,
         "slot": "Doll",
-        "description": "CH: 一个姓帕夫里琴科的神秘少女曾经身披的外套，可以抵御西伯利亚冻土的严寒。EN: A cloak once wore by a mysterious girl under the family name of Pavlichenko, be used to resist frozen land of Siberia.Can be exchanged for 100 Easter egg during the 2018 Easter Egg Frag Delay event.Minimum Level Requirement: 80",
+        "description": "CH: 一个姓帕夫里琴科的神秘少女曾经身披的外套，可以抵御西伯利亚冻土的严寒。\nEN: A cloak once wore by a mysterious girl under the family name of Pavlichenko, be used to resist frozen land of Siberia.\nCan be exchanged for 100 Easter egg during the 2018 Easter Egg Frag Delay event.\nMinimum Level Requirement: 80",
         "stats": {
             "Critical Hit Damage (%)": {
                 "min": 11.0,
@@ -673,7 +673,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 配备了重型枪管的BM59 Mark IV，在长时间全自动连射的情况下也不会过热，让BM59可以扮演班用火力支援的角色。EN: a BM59 Mark IV rifle equipped with heavier barrels can cope with extended automatic firing sessions without overheating, this allows BM59 to perform as fire support.",
+        "description": "CN: 配备了重型枪管的BM59 Mark IV，在长时间全自动连射的情况下也不会过热，让BM59可以扮演班用火力支援的角色。\nEN: a BM59 Mark IV rifle equipped with heavier barrels can cope with extended automatic firing sessions without overheating, this allows BM59 to perform as fire support.",
         "stats": {}
     },
     {
@@ -684,7 +684,7 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: OSS为.308和7.62mm口径设计的消音器，模块化设计和新潮的外观迅速在格里芬讨论版上走红，某匿名版常客自然是不会错过这样的产品。EN: <!-- Translations go here, remove brackets once you're done -->",
+        "description": "CN: OSS为.308和7.62mm口径设计的消音器，模块化设计和新潮的外观迅速在格里芬讨论版上走红，某匿名版常客自然是不会错过这样的产品。\nEN: <!-- Translations go here, remove brackets once you're done -->",
         "stats": {}
     },
     {
@@ -695,7 +695,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:换装L4枪管组后布伦可以发射7.62x51mm北约通用弹药，提升了伤害和命中，射速略微降低，布伦轻机枪专用。EN: After being fitted with the L4 barrel group Bren can now chamber 7.62x51mm NATO calibre, improving damage and accuracy while slightly lowering rate of fire. Bren LMG exclusive.Obtained by reaching Stage 3 of Bren's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN:换装L4枪管组后布伦可以发射7.62x51mm北约通用弹药，提升了伤害和命中，射速略微降低，布伦轻机枪专用。\nEN: After being fitted with the L4 barrel group Bren can now chamber 7.62x51mm NATO calibre, improving damage and accuracy while slightly lowering rate of fire. Bren LMG exclusive.\nObtained by reaching Stage 3 of Bren's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
                 "min": 2.0,
@@ -721,7 +721,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 饮料中的苦味成分。由BTC统一配发。\nEN: The sour component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "description": "CN: 饮料中的苦味成分。由BTC统一配发。\n\nEN: The sour component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 60",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -736,7 +736,7 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为毛瑟C96特制的实木枪托，提高连续射击时的精确度，装饰有与人形服饰配色向搭配的布套，打开后盖内部空间还可以收纳一些零食，真是太实用了。EN: A wooden gunstock made exclusively for Mauser C96, improves shooting accuracy during continuous firing. Decorated with the same coloured cloth as the doll's outfit, it can also carry some snacks in the hollowed out chamber, it's so useful!Obtained by reaching Stage 3 of C96's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 专为毛瑟C96特制的实木枪托，提高连续射击时的精确度，装饰有与人形服饰配色向搭配的布套，打开后盖内部空间还可以收纳一些零食，真是太实用了。\nEN: A wooden gunstock made exclusively for Mauser C96, improves shooting accuracy during continuous firing. Decorated with the same coloured cloth as the doll's outfit, it can also carry some snacks in the hollowed out chamber, it's so useful!\nObtained by reaching Stage 3 of C96's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Critical Hit Rate (%)": {
                 "min": 12.0,
@@ -797,7 +797,7 @@
         },
         "rating": 4,
         "slot": "Accessory",
-        "description": "CN: COG公司的先进红点瞄准镜，最大优势在于其不需要依靠电池便可提供任何环境下的瞄准照明，除手枪外均可装配。EN: The greatest advantage of COG Corporation's advanced red dot sight is that it does not requires batteries to assist in any situation. Can be equipped by all except HG.",
+        "description": "CN: COG公司的先进红点瞄准镜，最大优势在于其不需要依靠电池便可提供任何环境下的瞄准照明，除手枪外均可装配。\nEN: The greatest advantage of COG Corporation's advanced red dot sight is that it does not requires batteries to assist in any situation. Can be equipped by all except HG.",
         "stats": {
             "Accuracy": {
                 "min": 7.0,
@@ -818,7 +818,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:一把超长枪管的柯尔特左轮，和皮靴上的叮当作响的马刺，嘴唇上精心修剪的壮美胡须一样，是蛮荒的西部故事主角的重要配置，也许，还有一瓶元祖可乐。Obtained by reaching Stage 3 of Colt Revolver's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN:一把超长枪管的柯尔特左轮，和皮靴上的叮当作响的马刺，嘴唇上精心修剪的壮美胡须一样，是蛮荒的西部故事主角的重要配置，也许，还有一瓶元祖可乐。\nObtained by reaching Stage 3 of Colt Revolver's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical hit rate": {
                 "min": 12.0,
@@ -845,7 +845,7 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 原本是为AR平台开发的瞄具，经过多场大战的考验性能可靠，M1918经过现代化改造后通过导轨加装，M1918专用。Obtained by reaching Stage 3 of M1918 BAR's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 原本是为AR平台开发的瞄具，经过多场大战的考验性能可靠，M1918经过现代化改造后通过导轨加装，M1918专用。\nObtained by reaching Stage 3 of M1918 BAR's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Critical Hit Chance (%)": {
                 "min": 3.0,
@@ -871,7 +871,7 @@
         "type": "Armor Plate",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 铁血工造陷落前的遗留装备，整合了机动外骨骼的护甲极大地提升了使用者的生存能力，同时也会造成极高的身体和精神负荷。Drops from certain units and the boss in Midnight Chapter 6-4N, This piece of equipment comes max calibrated.Minimum Level Requirement: 60",
+        "description": "CN: 铁血工造陷落前的遗留装备，整合了机动外骨骼的护甲极大地提升了使用者的生存能力，同时也会造成极高的身体和精神负荷。\nDrops from certain units and the boss in Midnight Chapter 6-4N, This piece of equipment comes max calibrated.\nMinimum Level Requirement: 60",
         "stats": {
             "Armor": {
                 "min": 15.0,
@@ -897,7 +897,7 @@
         "type": "Microchip",
         "rating": 5,
         "slot": "Doll",
-        "description": "Obtainable during the 2017 Christmas event Operation Gingerbread Men Collecting, exchangeable in the event shop for 100 Gingerbread men.Minimum Level Requirement: 80",
+        "description": "Obtainable during the 2017 Christmas event Operation Gingerbread Men Collecting, exchangeable in the event shop for 100 Gingerbread men.\nMinimum Level Requirement: 80",
         "stats": {
             "Damage": {
                 "min": 3.0,
@@ -923,7 +923,7 @@
         "type": "Camo Cape",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN:冬季数码迷彩披风，很适合SV98熟悉的作战环境，提高伤害和暴击伤害，SV98专用。Translated: Winter digital camouflage patterned cape, very suitable for the combat environment SV98 is familiar with, improves damage and critical damage, SV98 exclusive.Obtained by reaching Stage 3 of SV-98 Digimind Upgrade.Minimum Level Requirement: 115",
+        "description": "CN:冬季数码迷彩披风，很适合SV98熟悉的作战环境，提高伤害和暴击伤害，SV98专用。\nTranslated: Winter digital camouflage patterned cape, very suitable for the combat environment SV98 is familiar with, improves damage and critical damage, SV98 exclusive.\nObtained by reaching Stage 3 of SV-98 Digimind Upgrade.\nMinimum Level Requirement: 115",
         "stats": {
             "Critical  Damage (%)": {
                 "min": 11.0,
@@ -948,7 +948,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 透过与连线RO635心智云图的兵蚁建立数据共享，M4 SOPMOD2对战场的反应力获得了大幅提升。如果这只兵蚁比别只看得更远，那是因为它站在M4 SOPMOD2的肩上。EN: With the data sharing established by a Dinergate connected with RO635's Digimind, M4 SOPMOD2's combat reactiveness greatly improved. The reason behind this particular Dinergate having greater viewing distances is purely because it is placed on SOPMOD2's shoulder.Obtained by reaching Stage 3 of Soppu's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN: 透过与连线RO635心智云图的兵蚁建立数据共享，M4 SOPMOD2对战场的反应力获得了大幅提升。如果这只兵蚁比别只看得更远，那是因为它站在M4 SOPMOD2的肩上。\nEN: With the data sharing established by a Dinergate connected with RO635's Digimind, M4 SOPMOD2's combat reactiveness greatly improved. The reason behind this particular Dinergate having greater viewing distances is purely because it is placed on SOPMOD2's shoulder.\nObtained by reaching Stage 3 of Soppu's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Accuracy": {
                 "min": 6.0,
@@ -974,7 +974,7 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 一款搭载7MOA准星的反射瞄具，因其小巧轻便的特性而在战前的民用市场中十分流行，通过焊接的皮轨装在贝雷塔38上，极大地提高了使用体验。EN: A Reflex Optic equipped with a sight of 7MOA accuracy, the small and compactness made it super popular in civilian market before the war broke out. It is attached on top of Picatinny rails, welded on top of Beretta 38, greatly improves user experience.Obtained by reaching Stage 3 of Beretta Model 38's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 一款搭载7MOA准星的反射瞄具，因其小巧轻便的特性而在战前的民用市场中十分流行，通过焊接的皮轨装在贝雷塔38上，极大地提高了使用体验。\nEN: A Reflex Optic equipped with a sight of 7MOA accuracy, the small and compactness made it super popular in civilian market before the war broke out. It is attached on top of Picatinny rails, welded on top of Beretta 38, greatly improves user experience.\nObtained by reaching Stage 3 of Beretta Model 38's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
                 "min": 11.0
@@ -1135,7 +1135,7 @@
         "type": "Holographic Sight",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CH: EOT公司最新的全息瞄具，除了看起来酷外还附带了快速翻折的3倍镜，应用范围更为广泛，HK416专用。EN: EOT Company's latest holographic optic, aside from looking cool it also featured a quick-adjustable 3x scope, widen the usage situation, HK416 exclusive.Obtainable during the 2018 winter event [[Singularity]], can be obtained from E2-C4 Gager boss fight and E2-D4 Agent boss fight and Dragoon units.Minimum Level Requirement: 60",
+        "description": "CH: EOT公司最新的全息瞄具，除了看起来酷外还附带了快速翻折的3倍镜，应用范围更为广泛，HK416专用。\nEN: EOT Company's latest holographic optic, aside from looking cool it also featured a quick-adjustable 3x scope, widen the usage situation, HK416 exclusive.\nObtainable during the 2018 winter event [[Singularity]], can be obtained from E2-C4 Gager boss fight and E2-D4 Agent boss fight and Dragoon units.\nMinimum Level Requirement: 60",
         "stats": {
             "Damage": {
                 "min": 4.0,
@@ -1162,7 +1162,7 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 曾经的先进单兵计划的一部分，集合了摄影机和红外系统的光学瞄具，让FAMAS可以更灵活多变的适应战场状况。Drops from certain units and the boss in Midnight Chapter 8-4NMinimum Level Required: 60",
+        "description": "CN: 曾经的先进单兵计划的一部分，集合了摄影机和红外系统的光学瞄具，让FAMAS可以更灵活多变的适应战场状况。\nDrops from certain units and the boss in Midnight Chapter 8-4N\nMinimum Level Required: 60",
         "stats": {
             "Critical Hit Chance (%)": {
                 "min": 17.0,
@@ -1189,7 +1189,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:后期型特有的扳机组，装备这个套件的FN49可以在单发和连发中自由切换，提升射速和暴击概率，FN49专用。\nEN:A fire selector for later versions of the rifle. A FN49 equipped with this can freely switch between semi-auto and fully-auto. Increases rate of fire and critical strike chance. Can only be equipped by FN49.Obtained by reaching Stage 3 of FN-49's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN:后期型特有的扳机组，装备这个套件的FN49可以在单发和连发中自由切换，提升射速和暴击概率，FN49专用。\n\nEN:A fire selector for later versions of the rifle. A FN49 equipped with this can freely switch between semi-auto and fully-auto. Increases rate of fire and critical strike chance. Can only be equipped by FN49.\nObtained by reaching Stage 3 of FN-49's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical Hit Chance (%)": {
                 "min": 17.0,
@@ -1211,7 +1211,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 饮料中的辣味成分。由BTC统一配发。\nEN: The bitter component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "description": "CN: 饮料中的辣味成分。由BTC统一配发。\n\nEN: The bitter component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 60",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -1250,7 +1250,7 @@
         "type": "",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 为12号霰弹枪设计的高爆弹头，以AA12为宣传手段快速在市场中占据了一席之地，高爆弹头的效果和AA12的自动射击结合在一起，爆炸就是艺术！EN: A high-explosive warhead made for 12-gauge shotguns, these rounds have swiftly carved out a niche for themselves in the market thanks to being promoted by AA-12. The HE warhead effect in combination with the AA-12's fully-automatic firing; explosions are art!Special equipment awarded to players who are placed in the top 50% onward category of \"Labyrinthine Defense\", ranking map of [[Polarized Light]]. This equipment comes with max calibration.",
+        "description": "CN: 为12号霰弹枪设计的高爆弹头，以AA12为宣传手段快速在市场中占据了一席之地，高爆弹头的效果和AA12的自动射击结合在一起，爆炸就是艺术！\nEN: A high-explosive warhead made for 12-gauge shotguns, these rounds have swiftly carved out a niche for themselves in the market thanks to being promoted by AA-12. The HE warhead effect in combination with the AA-12's fully-automatic firing; explosions are art!\nSpecial equipment awarded to players who are placed in the top 50% onward category of \"Labyrinthine Defense\", ranking map of [[Polarized Light]]. This equipment comes with max calibration.",
         "stats": {
             "Targets": {
                 "min": -2.0
@@ -1305,7 +1305,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:换装了重型枪管的G3更加稳定，弹道散布更小，配合精巧的滚轮延迟反冲式枪机，精度可以接近狙击步枪，提升暴击概率及伤害。EN: G3 has seen significant improvements to shooting stability, reduced ballistic spread after being retrofitted with heavy barrels, combined with the intricate roller delayed blowback action, G3 is now almost as accurate as marksmen rifle. Improves critical hit rate and damage.Obtained by reaching Stage 3 of G3's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN:换装了重型枪管的G3更加稳定，弹道散布更小，配合精巧的滚轮延迟反冲式枪机，精度可以接近狙击步枪，提升暴击概率及伤害。\nEN: G3 has seen significant improvements to shooting stability, reduced ballistic spread after being retrofitted with heavy barrels, combined with the intricate roller delayed blowback action, G3 is now almost as accurate as marksmen rifle. Improves critical hit rate and damage.\nObtained by reaching Stage 3 of G3's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
                 "min": 1.0,
@@ -1327,7 +1327,7 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:为G36专门设计的瞄具组，结合了下方的3倍主光学瞄具和上方的单倍红点瞄具，可以根据作战环境变化灵活切换使用，G36专用。EN: Optical system designed exclusively for G36, combining the 3x magnification telescopic sight and an unmagnified reflex sight on top, provides flexibility to fit different battlefield conditions.Special equipment given to player after stage 3 Digi-mind upgrade of G36. This equipment can be fitted on G36's accessory slot. Minimum level requirement: Lvl 115",
+        "description": "CN:为G36专门设计的瞄具组，结合了下方的3倍主光学瞄具和上方的单倍红点瞄具，可以根据作战环境变化灵活切换使用，G36专用。\nEN: Optical system designed exclusively for G36, combining the 3x magnification telescopic sight and an unmagnified reflex sight on top, provides flexibility to fit different battlefield conditions.\nSpecial equipment given to player after stage 3 Digi-mind upgrade of G36. This equipment can be fitted on G36's accessory slot. \nMinimum level requirement: Lvl 115",
         "stats": {
             "Critical Hit Rate (%)": {
                 "min": 17.0,
@@ -1349,7 +1349,7 @@
         "type": "Night Combat Equipment",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CH: 来自异世界的明澈心灵绽放出的光芒，希望带给迷茫中的你一线力量和希望，“荣耀之日，荣耀之光，你是唯一，你是光芒！”EN: A ray of light emitted from a pure heart from another world, it brings a ray of power and hope to you who is yet to be found. \"Glory day, Glory light, You are the one, You are the light!\"Obtainable during the 2018 collaboration event with DJMax Respect, rewarded to players after completing event chapter E2-1. This equipment comes max calibrated and does not need upgrading.Minimum level required: 60",
+        "description": "A ray of light emitted from a pure heart from another world, it brings a ray of power and hope to you who is yet to be found. \"Glory day, Glory light, You are the one, You are the light!\"\nObtainable during the 2018 (2020 in EN) collaboration event with DJMax Respect, rewarded to players after completing event chapter E2-1. This equipment comes max calibrated and does not need upgrading.\nMinimum level required: 60",
         "stats": {
             "Night Penalty Reduction": {
                 "min": 100.0
@@ -1415,7 +1415,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "A weird looking ball shaped hair decal used by G41, fire-control chips assisting in enemy tracking and aiming can be found within, however once it turns red it becomes very dangerous and must be returned to the factory for repairs.Special equipment awarded to players who are placed in the top 50% onward category of 'Hurricane Rescue', ranking map of [[Continuum Turbulence]]. This equipment comes with max calibration.",
+        "description": "A weird looking ball shaped hair decal used by G41, fire-control chips assisting in enemy tracking and aiming can be found within, however once it turns red it becomes very dangerous and must be returned to the factory for repairs.\nSpecial equipment awarded to players who are placed in the top 50% onward category of 'Hurricane Rescue', ranking map of [[Continuum Turbulence]]. This equipment comes with max calibration.",
         "stats": {
             "Damage": {
                 "min": 3.0,
@@ -1448,7 +1448,7 @@
         },
         "rating": 5,
         "slot": "Magazine",
-        "description": "EN: A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.\nCN: ILM生产的空尖短弹，对无甲单位有可怕的杀伤力，但面对装甲缺乏穿透力，手枪和冲锋枪可以装备。",
+        "description": "EN: A hollow-point ammunition developed by ILM, it has high lethality against unarmored targets, but lacks penetration when facing armored enemies. Can be equipped by HG and SMGs.\n\nCN: ILM生产的空尖短弹，对无甲单位有可怕的杀伤力，但面对装甲缺乏穿透力，手枪和冲锋枪可以装备。",
         "stats": {
             "Damage": {
                 "min": 7.0,
@@ -1558,7 +1558,7 @@
         "type": "Ammo Box",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN:远古时期遗留的神秘强力装备，虽然大多都已经被某神秘管理局收缴，竟然有一件一直保留到今天，MG3专用。EN: A powerful equipment recovered from the ancient times, most of these had been confiscated by a mysterious bureau, it is unbelievable this one recovered today. MG3 exclusive.Drops in from certain units and the boss in Midnight Chapter 7-4N. This piece of equipment comes max calibrated.Minimum level requirement: Lvl 80",
+        "description": "CN:远古时期遗留的神秘强力装备，虽然大多都已经被某神秘管理局收缴，竟然有一件一直保留到今天，MG3专用。\nEN: A powerful equipment recovered from the ancient times, most of these had been confiscated by a mysterious bureau, it is unbelievable this one recovered today. MG3 exclusive.\nDrops in from certain units and the boss in Midnight Chapter 7-4N. This piece of equipment comes max calibrated.\nMinimum level requirement: Lvl 80",
         "stats": {
             "Clip size": {
                 "min": 20.0,
@@ -1583,7 +1583,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN:离去的老兵M16A1的礼物，见证了许多不被歌颂的战争，和没有墓碑的英雄，重新校准后由M4A1使用。EN: A departing gift from the old soldier M16A1, it had witness many unsung wars and graveless heroes. After recalibration it is now used by M4A1.Special equipment given to player after stage 3 Digi-mind upgrade of M4A1. This equipment can be fitted on the doll slot of M4A1 have after the upgrade.Minimum Level Required: 115",
+        "description": "CN:离去的老兵M16A1的礼物，见证了许多不被歌颂的战争，和没有墓碑的英雄，重新校准后由M4A1使用。\nEN: A departing gift from the old soldier M16A1, it had witness many unsung wars and graveless heroes. After recalibration it is now used by M4A1.\nSpecial equipment given to player after stage 3 Digi-mind upgrade of M4A1. This equipment can be fitted on the doll slot of M4A1 have after the upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Damage": {
                 "min": 2.0,
@@ -1950,7 +1950,7 @@
         },
         "rating": 3,
         "slot": "Magazine",
-        "description": "EN: The FCA Research Center's assault rifle-specific JSP high-velocity ammunition uses an experimental bullet design to further increase the output of assault rifles. They are issued with MP Group's reliable and lightweight magazines.\nCN: FCA研究局的突击步枪专用JSP高速弹，采用了实验型的弹头设计进一步提升突击步枪输出能力，和MP社可靠的轻量化弹匣配套发送。",
+        "description": "EN: The FCA Research Center's assault rifle-specific JSP high-velocity ammunition uses an experimental bullet design to further increase the output of assault rifles. They are issued with MP Group's reliable and lightweight magazines.\n\nCN: FCA研究局的突击步枪专用JSP高速弹，采用了实验型的弹头设计进一步提升突击步枪输出能力，和MP社可靠的轻量化弹匣配套发送。",
         "stats": {
             "Damage": {
                 "min": 3.0,
@@ -1967,7 +1967,7 @@
         "type": "Telescopic Sight",
         "rating": 5,
         "slot": "accessory",
-        "description": "CN: 通過導軌加裝的現代光學瞄具，最大限度發揮出了莫辛納甘天生的精準素質，提升命中和暴擊機率. Can only be equipped by Mosin-Nagant.Obtained by reaching Stage 3 of Mosin-Nagant's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN: 通過導軌加裝的現代光學瞄具，最大限度發揮出了莫辛納甘天生的精準素質，提升命中和暴擊機率. Can only be equipped by Mosin-Nagant.\nObtained by reaching Stage 3 of Mosin-Nagant's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical Hit Chance (%)": {
                 "min": 18.0,
@@ -1989,7 +1989,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\nEN: The alcoholic component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\n\nEN: The alcoholic component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 60",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -2004,7 +2004,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\nEN: The alcoholic component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\n\nEN: The alcoholic component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 60",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -2019,7 +2019,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\nEN: The alcoholic component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 60",
+        "description": "CN: 饮料中的酒精成分。由BTC统一配发。\n\nEN: The alcoholic component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 60",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -2094,7 +2094,7 @@
         "type": "Holographic Sight",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 高亮度的LED武器灯集成在整体更换的护木内，内置锂电池，可以通过护木上的开关快速操控。MP5专用。EN: Bright LED flashlight integrated within the weapon's arm guard, powered by lithium batteries, can be toggled by the switch located on the arm guard. MP5 exclusive.Obtained by reaching Stage 3 of MP5's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 高亮度的LED武器灯集成在整体更换的护木内，内置锂电池，可以通过护木上的开关快速操控。MP5专用。\nEN: Bright LED flashlight integrated within the weapon's arm guard, powered by lithium batteries, can be toggled by the switch located on the arm guard. MP5 exclusive.\nObtained by reaching Stage 3 of MP5's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
                 "min": 10.0
@@ -2115,7 +2115,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:追求轻量化和快速射击稳定性的配置，包含keymod导轨，前握把，枪口补偿器及浮置式枪管，提升暴击伤害和命中，AR15专用。EN: Equipment set built with reduced weight and stability during rapid firing in mind, contains Keymod rails, an angular grip, nozzle compensator and free-floating barrel, improves critical hit damage and accuracy, ST AR15 exclusive.Special equipment given to player after stage 3 Digi-mind upgrade of ST AR-15. This equipment can be fitted on one of the two accessory slots AR-15 have after the upgrade.Minimum Level Required: 115",
+        "description": "CN:追求轻量化和快速射击稳定性的配置，包含keymod导轨，前握把，枪口补偿器及浮置式枪管，提升暴击伤害和命中，AR15专用。\nEN: Equipment set built with reduced weight and stability during rapid firing in mind, contains Keymod rails, an angular grip, nozzle compensator and free-floating barrel, improves critical hit damage and accuracy, ST AR15 exclusive.\nSpecial equipment given to player after stage 3 Digi-mind upgrade of ST AR-15. This equipment can be fitted on one of the two accessory slots AR-15 have after the upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical Damage (%)": {
                 "min": 11.0,
@@ -2163,7 +2163,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 历史悠久的可折叠脚架，曾经短暂配发给M14，有效提升射击稳定性，M14专用。EN: A storied foldable bipod, issued to M14 in small batches, effectively improves shooting stability. M14 exclusive.Obtained by reaching Stage 3 of M14's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN: 历史悠久的可折叠脚架，曾经短暂配发给M14，有效提升射击稳定性，M14专用。\nEN: A storied foldable bipod, issued to M14 in small batches, effectively improves shooting stability. M14 exclusive.\nObtained by reaching Stage 3 of M14's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical Hit Chance (%)": {
                 "min": 20.0,
@@ -2210,7 +2210,7 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: M9专用的改装聚合物战术握把，集成了皮卡汀尼下导轨，在提高控制力的同时增加了战术配件的灵活性。EN: M9 exclusive modified synthetic material tactical grip, the molded picatinny lower rails also adds accessory compatibilities to the handgun.",
+        "description": "CN: M9专用的改装聚合物战术握把，集成了皮卡汀尼下导轨，在提高控制力的同时增加了战术配件的灵活性。\nEN: M9 exclusive modified synthetic material tactical grip, the molded picatinny lower rails also adds accessory compatibilities to the handgun.",
         "stats": {}
     },
     {
@@ -2247,7 +2247,7 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: MAC10专用的改装上机匣，增加了可灵活配置装具的导轨系统的同时降低了射速，使其更容易被火控模块控制，最重要的还是看上去非常酷。EN: A modified upper receiver for MAC10, added accessory rails for combat accessory compatibilities while lowering the rate of fire, also made it easier to control for the doll's fire control module. Most importantly it looks really cool.",
+        "description": "CN: MAC10专用的改装上机匣，增加了可灵活配置装具的导轨系统的同时降低了射速，使其更容易被火控模块控制，最重要的还是看上去非常酷。\nEN: A modified upper receiver for MAC10, added accessory rails for combat accessory compatibilities while lowering the rate of fire, also made it easier to control for the doll's fire control module. Most importantly it looks really cool.",
         "stats": {}
     },
     {
@@ -2258,7 +2258,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 达娜的机械臂。达娜从未透露失去手臂的原因。\nEN: Dana's mechanical arm. Dana has never revealed the reason she lost her arm.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 60",
+        "description": "CN: 达娜的机械臂。达娜从未透露失去手臂的原因。\n\nEN: Dana's mechanical arm. Dana has never revealed the reason she lost her arm.\nObtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].\nMinimum Level Required: 60",
         "stats": {
             "Damage": {
                 "min": 2.0,
@@ -2283,7 +2283,7 @@
         "type": "Red Dot Sight",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，更有德国陆军迷彩涂层，采购价格翻倍，MG4专用。Translated: Specialised optic optimised by TJC company for machinegun combat purposes, featuring 6x magnification and ballistic markings, as well as Bundeswehr issue camoflauge, resulting in the high procuring prices. MG4 exclusive.Special equipment awarded to players who are placed in the top 50% onward category of \"Chaotic Finale\", ranking map of [[Isomer]]. This equipment comes with max calibration.",
+        "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，更有德国陆军迷彩涂层，采购价格翻倍，MG4专用。\nTranslated: Specialised optic optimised by TJC company for machinegun combat purposes, featuring 6x magnification and ballistic markings, as well as Bundeswehr issue camoflauge, resulting in the high procuring prices. MG4 exclusive.\nSpecial equipment awarded to players who are placed in the top 50% onward category of \"Chaotic Finale\", ranking map of [[Isomer]]. This equipment comes with max calibration.",
         "stats": {
             "Critical hit rate (%)": {
                 "min": 15.0,
@@ -2306,7 +2306,7 @@
         "type": "Red Dot Sight",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，让远距离火力压制变得更有效率，LWMMG专用。Obtained by reaching Stage 3 of LWMMG's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: TJC公司为机枪作战优化过的专用红点，拥有6倍放大倍率和内置弹道标尺，让远距离火力压制变得更有效率，LWMMG专用。\nObtained by reaching Stage 3 of LWMMG's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Accuracy": {
                 "min": 13.0,
@@ -2332,7 +2332,7 @@
         "type": "HP Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 多萝西对自己的手指进行了私自改装，可以发射大威力弹药。\nEN: Dorothy modified her own fingers to be able to fire high powered bullets.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 60",
+        "description": "CN: 多萝西对自己的手指进行了私自改装，可以发射大威力弹药。\n\nEN: Dorothy modified her own fingers to be able to fire high powered bullets.\nObtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].\nMinimum Level Required: 60",
         "stats": {
             "Damage": {
                 "min": 12.0,
@@ -2405,7 +2405,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: MP446升级后使用更加灵活的446C型，可以换装竞赛用的120mm加长枪管，提升精度，MP446专用。Obtained by reaching Stage 3 of MP-446 Viking's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN: MP446升级后使用更加灵活的446C型，可以换装竞赛用的120mm加长枪管，提升精度，MP446专用。\nObtained by reaching Stage 3 of MP-446 Viking's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical hit rate": {
                 "min": 12.0,
@@ -2432,7 +2432,7 @@
         "type": "Red Dot Sight",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:专为中东地区艰苦环境设计的红点瞄具，拥有光导纤维和氚双重点亮的准星，无需电池，乌兹专用。Obtained by reaching Stage 3 of Micro Uzi's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN:专为中东地区艰苦环境设计的红点瞄具，拥有光导纤维和氚双重点亮的准星，无需电池，乌兹专用。\nObtained by reaching Stage 3 of Micro Uzi's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Accuracy": {
                 "min": 14.0,
@@ -2453,7 +2453,7 @@
         "type": "Silencer",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:左轮手枪因为结构的巨大间隙通常无法被消音，但纳甘左轮独特的上膛结构，配合专用弹药和消音器便可达到很好的消音效果，纳甘左轮专用。Obtained by reaching Stage 3 of Nagant Revolver's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN:左轮手枪因为结构的巨大间隙通常无法被消音，但纳甘左轮独特的上膛结构，配合专用弹药和消音器便可达到很好的消音效果，纳甘左轮专用。\nObtained by reaching Stage 3 of Nagant Revolver's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical hit rate": {
                 "min": 12.0,
@@ -2502,7 +2502,7 @@
         "type": "Telescopic Sight",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 上世纪大战早期，专为李恩菲尔德no4 MKI(T)狙击步枪生产的光学瞄具，配有华丽的黄铜套筒，略微昏暗的镜片见证了无数生命的消逝，李恩菲尔德专用。EN: Telescopic sight produced exclusively for Lee Enfield No.1 MkI sniper rifle at the beginning of the last century, furnished with exquisite bronze finish. The faded scope lens witnessed countless lives lost. Lee Enfield exclusive.Special equipment awarded to players who are placed in the top 50% onward category of \"Meadow's End\", ranking map of [[Shattered Connexion]]. This equipment comes with max calibration.",
+        "description": "CN: 上世纪大战早期，专为李恩菲尔德no4 MKI(T)狙击步枪生产的光学瞄具，配有华丽的黄铜套筒，略微昏暗的镜片见证了无数生命的消逝，李恩菲尔德专用。\nEN: Telescopic sight produced exclusively for Lee Enfield No.1 MkI sniper rifle at the beginning of the last century, furnished with exquisite bronze finish. The faded scope lens witnessed countless lives lost. Lee Enfield exclusive.\nSpecial equipment awarded to players who are placed in the top 50% onward category of \"Meadow's End\", ranking map of [[Shattered Connexion]]. This equipment comes with max calibration.",
         "stats": {
             "Critical hit rate (%)": {
                 "min": 24.0,
@@ -2522,7 +2522,7 @@
         "type": "Silencer",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 当年战略情报局为隐秘行动特别开发的消音器，除了能让M3更不容易被发现外，还附有牛皮制的隔热套，紧急情况下可以让指挥官食用。EN: A specially designed suppressor issued by Strategic Intelligence Bureau, on top of improving M3's concealment, it also features a heat insulator made from bull leather, which can function as emergency ration (for the Commander)...",
+        "description": "CN: 当年战略情报局为隐秘行动特别开发的消音器，除了能让M3更不容易被发现外，还附有牛皮制的隔热套，紧急情况下可以让指挥官食用。\nEN: A specially designed suppressor issued by Strategic Intelligence Bureau, on top of improving M3's concealment, it also features a heat insulator made from bull leather, which can function as emergency ration (for the Commander)...",
         "stats": {}
     },
     {
@@ -2542,7 +2542,7 @@
         },
         "rating": 4,
         "slot": "Doll",
-        "description": "EN: An improved model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it effectively increases the T-Dolls' combat efficiency during nighttime. Can only be equipped by SMGs, HGs and ARs.\nCN: IOP公司人形列装的改进型ATPIAL红外指示器，有效提升了人形在夜战中的战斗力，只有冲锋枪，手枪，突击步枪可以装备。",
+        "description": "EN: An improved model of the ATPIAL infrared designator issued by IOP Corporation for their T-Dolls, it effectively increases the T-Dolls' combat efficiency during nighttime. Can only be equipped by SMGs, HGs and ARs.\n\nCN: IOP公司人形列装的改进型ATPIAL红外指示器，有效提升了人形在夜战中的战斗力，只有冲锋枪，手枪，突击步枪可以装备。",
         "stats": {
             "Night Penalty Reduction": {
                 "min": 76.0,
@@ -2633,7 +2633,7 @@
         "type": "Night Combat Equipment",
         "rating": 5,
         "slot": "Accessory",
-        "description": "Developed on demands of the Ministry of Internal Affairs, the combination of x3 magnification and infrared targeting laser in this night scope helps 9A91 accurately take care of her targets in the dark.Obtainable by ranking in the top 40% during the [[Deep Dive]] Ranking EX map \"Imaginary Maze\". This piece of equipment comes max calibrated.Minimum Level required: 60",
+        "description": "Developed on demands of the Ministry of Internal Affairs, the combination of x3 magnification and infrared targeting laser in this night scope helps 9A91 accurately take care of her targets in the dark.\nObtainable by ranking in the top 40% during the [[Deep Dive]] Ranking EX map \"Imaginary Maze\". This piece of equipment comes max calibrated.\nMinimum Level required: 60",
         "stats": {
             "Damage": {
                 "min": 5.0,
@@ -2672,7 +2672,7 @@
         "type": "Silencer",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 一个淑女的包中除了口红外，永远还需要一支消音器。前者令人滔滔不绝，后者让人永远沉默。EN: Other than a lipstick, a suppressor is also a must in a lady's bag, the former one keeps them talking, the latter makes sure they remain silent.",
+        "description": "CN: 一个淑女的包中除了口红外，永远还需要一支消音器。前者令人滔滔不绝，后者让人永远沉默。\nEN: Other than a lipstick, a suppressor is also a must in a lady's bag, the former one keeps them talking, the latter makes sure they remain silent.",
         "stats": {}
     },
     {
@@ -2683,7 +2683,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 史黛拉在幼年遭到歹徒袭击失去一只眼睛，之后就开始佩戴电子眼。\nEN: Stella lost an eye after being assaulted at a young age. After that, she began wearing a prosthetic eye.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 80",
+        "description": "CN: 史黛拉在幼年遭到歹徒袭击失去一只眼睛，之后就开始佩戴电子眼。\n\nEN: Stella lost an eye after being assaulted at a young age. After that, she began wearing a prosthetic eye.\nObtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].\nMinimum Level Required: 80",
         "stats": {
             "Critical Hit Damage (%)": {
                 "min": 15.0,
@@ -2734,7 +2734,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 饮料中的酸味成分。由BTC统一配发。\nEN: The spicy component of a drink. Distributed by BTC.Obtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.Minimum Level Required: 80",
+        "description": "CN: 饮料中的酸味成分。由BTC统一配发。\n\nEN: The spicy component of a drink. Distributed by BTC.\nObtained by clearing E1-8 \"Last Rain in the World\" of [[Valhalla]] alongside Jill. This equipment comes max calibrated and cannot be enhanced.\nMinimum Level Required: 80",
         "stats": {
             "Evasion": {
                 "min": 15.0
@@ -2777,7 +2777,7 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 牛犊式布局的突击步枪安装配件经常面临导轨不足的困境，多亏了KTC原厂推出的3英寸四导轨护木，战术圣诞树再也不是传统布局枪支的专属了，RFB专用。EN: When equipping Bullpup style assault rifles with accessories, user often found they are short on available rails. After KTC introduced the 3 inch four direction railed arm guard, tactical christmas tree is no longer an exclusive title for the conventional layout rifles. RFB exclusive.",
+        "description": "CN: 牛犊式布局的突击步枪安装配件经常面临导轨不足的困境，多亏了KTC原厂推出的3英寸四导轨护木，战术圣诞树再也不是传统布局枪支的专属了，RFB专用。\nEN: When equipping Bullpup style assault rifles with accessories, user often found they are short on available rails. After KTC introduced the 3 inch four direction railed arm guard, tactical christmas tree is no longer an exclusive title for the conventional layout rifles. RFB exclusive.",
         "stats": {}
     },
     {
@@ -2788,7 +2788,7 @@
         "type": "",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 战前某东方阵营生产的单兵装备，轻便实用，在部分爱好者中有很高的人气，治安任务时候经常被人以高价索要，令RPD十分困扰。EN: An individual infantry gear produced by a certain eastern faction prior to the war, it's highly rated amongst the users due to its light weight and usefulness. However what troubles RPD is that while she is on missions, people often approach and offer to buy this item for exordinary prices.",
+        "description": "CN: 战前某东方阵营生产的单兵装备，轻便实用，在部分爱好者中有很高的人气，治安任务时候经常被人以高价索要，令RPD十分困扰。\nEN: An individual infantry gear produced by a certain eastern faction prior to the war, it's highly rated amongst the users due to its light weight and usefulness. However what troubles RPD is that while she is on missions, people often approach and offer to buy this item for exordinary prices.",
         "stats": {}
     },
     {
@@ -2831,7 +2831,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为SIG510设计的快慢机机构，可自由切换单发点射与全自动射击，可以适应多变的战场状况。EN: A fire selector layout designed exclusively for SIG510, used to freely switch between semi and fully automatic fires, suitably adjusting for the ever changing battlefield.",
+        "description": "CN: 专为SIG510设计的快慢机机构，可自由切换单发点射与全自动射击，可以适应多变的战场状况。\nEN: A fire selector layout designed exclusively for SIG510, used to freely switch between semi and fully automatic fires, suitably adjusting for the ever changing battlefield.",
         "stats": {}
     },
     {
@@ -2842,7 +2842,7 @@
         "type": "High-Velocity Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 为配合消音器使用而特别开发的亚音速弹药，配合内含钢芯的弹头有着很高的泛用性，AS Val专用。Translated: Specially developed subsonic ammunition with the use of suppressor, the steel bullet tips improves effectiveness in many situations, AS Val exclusive.Obtained by reaching Stage 3 of AS Val's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 为配合消音器使用而特别开发的亚音速弹药，配合内含钢芯的弹头有着很高的泛用性，AS Val专用。\nTranslated: Specially developed subsonic ammunition with the use of suppressor, the steel bullet tips improves effectiveness in many situations, AS Val exclusive.\nObtained by reaching Stage 3 of AS Val's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Damage": {
                 "min": 10.0,
@@ -2859,7 +2859,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 尽管后期型的树脂枪托更加轻便，但人人都知道，一个经典的，饱经风霜的实木枪托，才是任何有自尊的斯捷奇金的唯一选择。斯捷奇金专用。EN: Even though the later polymer gunstock are lighter, but everyone understands that a classic and weathered gunstock made of real lumber, is still the best choice for a Stechkin.Obtained as a drop by certain enemies in 9-4M as well as the boss and by S-ranking the map or auto-battling itMinimum Level Required: 60",
+        "description": "CN: 尽管后期型的树脂枪托更加轻便，但人人都知道，一个经典的，饱经风霜的实木枪托，才是任何有自尊的斯捷奇金的唯一选择。斯捷奇金专用。\nEN: Even though the later polymer gunstock are lighter, but everyone understands that a classic and weathered gunstock made of real lumber, is still the best choice for a Stechkin.\nObtained as a drop by certain enemies in 9-4M as well as the boss and by S-ranking the map or auto-battling it\nMinimum Level Required: 60",
         "stats": {
             "Critical hit rate (%)": {
                 "min": 12.0,
@@ -2886,7 +2886,7 @@
         "type": "Silencer",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 古朴的消音器，曾经活跃于欧洲和太平洋战场，标配的帆布护手可以隔离发射时产生的热量，斯登MKII专用。Obtained by reaching Stage 3 of Sten MkII's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN: 古朴的消音器，曾经活跃于欧洲和太平洋战场，标配的帆布护手可以隔离发射时产生的热量，斯登MKII专用。\nObtained by reaching Stage 3 of Sten MkII's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical hit rate": {
                 "min": 12.0,
@@ -2908,7 +2908,7 @@
         "type": "",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 指挥部的大家都很在意斯捷奇金那会灵活摆动的闪电形呆毛，背地里觉得这个作为维持人设的特征未免过于抢眼，直到有一天P7发现斯捷奇金睡觉时将呆毛摘下放在一旁充电。EN: Everyone at the headquarters thought Stechkin's side-to-side moving ahoge was pretty cool, as well as thinking that it might had been too eye-catching for a character setting... until oneday P7 found out that whenever Stechkin sleeps, she would take off the ahoge and charge it by her bed side.Obtained by reaching Stage 3 of Stechkin's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 指挥部的大家都很在意斯捷奇金那会灵活摆动的闪电形呆毛，背地里觉得这个作为维持人设的特征未免过于抢眼，直到有一天P7发现斯捷奇金睡觉时将呆毛摘下放在一旁充电。\nEN: Everyone at the headquarters thought Stechkin's side-to-side moving ahoge was pretty cool, as well as thinking that it might had been too eye-catching for a character setting... until oneday P7 found out that whenever Stechkin sleeps, she would take off the ahoge and charge it by her bed side.\nObtained by reaching Stage 3 of Stechkin's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Critical Hit Rate (%)": {
                 "min": 12.0,
@@ -2930,7 +2930,7 @@
         "type": "",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: TAR21标志性的头部装备，看起来像兔耳的内部集成了大量传感器，可以在掩体后不暴露自己的同时精确定位目标。EN: TAR21's signature head gear, the rabbit like ear piece is packed with sensor arrays, it helps locating targets without exposing herself to line of fires.Obtained as a drop by certain enemies in 10-4M as well as the boss and by S-ranking the map or auto-battling itMinimum Level Required: 80",
+        "description": "CN: TAR21标志性的头部装备，看起来像兔耳的内部集成了大量传感器，可以在掩体后不暴露自己的同时精确定位目标。\nEN: TAR21's signature head gear, the rabbit like ear piece is packed with sensor arrays, it helps locating targets without exposing herself to line of fires.\nObtained as a drop by certain enemies in 10-4M as well as the boss and by S-ranking the map or auto-battling it\nMinimum Level Required: 80",
         "stats": {
             "Damage": {
                 "min": 1.0,
@@ -2957,7 +2957,7 @@
         "type": "Special",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 416改造后配备了全新的增强型势态感知系统，虽然看起来只是普通的发卡，但实际上内建有22个各类传感器和天线阵列，极大地提高了HK416的作战效率。EN: A brand new improved motion sensor system, may only appear to be an ornament, but it has up to 22 different sensor arrays integrated within, significantly improves HK416's combat effectiveness.Obtained by reaching Stage 3 of HK416's Digimind Upgrade.Minimum level requirement: Lvl 115",
+        "description": "CN: 416改造后配备了全新的增强型势态感知系统，虽然看起来只是普通的发卡，但实际上内建有22个各类传感器和天线阵列，极大地提高了HK416的作战效率。\nEN: A brand new improved motion sensor system, may only appear to be an ornament, but it has up to 22 different sensor arrays integrated within, significantly improves HK416's combat effectiveness.\nObtained by reaching Stage 3 of HK416's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
         "stats": {
             "Critical Hit Damage (%)": {
                 "min": 6.0,
@@ -3063,7 +3063,7 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为伞兵作战设计的折叠枪托，比较特别的是相比其他枪支常见的金属折叠托，樱花沿用了木质枪托配合金属活页折叠结构，樱花专用。EN: A folding stock exclusively designed for airborne operations, the main difference between this folding stock and the conventional full metal types, is that only the folding mechanism is metalic, the stock itself is made of wood. Sakura (Type 100) exclusive.",
+        "description": "CN: 专为伞兵作战设计的折叠枪托，比较特别的是相比其他枪支常见的金属折叠托，樱花沿用了木质枪托配合金属活页折叠结构，樱花专用。\nEN: A folding stock exclusively designed for airborne operations, the main difference between this folding stock and the conventional full metal types, is that only the folding mechanism is metalic, the stock itself is made of wood. Sakura (Type 100) exclusive.",
         "stats": {}
     },
     {
@@ -3134,7 +3134,7 @@
         "type": "Silencer",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN:古朴的消音器，让64式无声融入漆黑的雨林夜色中，同时提升暴击概率，64式专用。\nEN:This quaint suppressor allows Type 64 to silently blend into the darkness of the rainforest night while increasing her critical strike chance. Can only be equipped by Type 64.Obtained by reaching Stage 3 of Type 64's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN:古朴的消音器，让64式无声融入漆黑的雨林夜色中，同时提升暴击概率，64式专用。\n\nEN:This quaint suppressor allows Type 64 to silently blend into the darkness of the rainforest night while increasing her critical strike chance. Can only be equipped by Type 64.\nObtained by reaching Stage 3 of Type 64's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Critical hit rate": {
                 "min": 12.0,
@@ -3156,7 +3156,7 @@
         "type": "Exoskeleton",
         "rating": 5,
         "slot": "Doll",
-        "description": "A highly mobile exoskeleton specially calibrated for T-Dolls of the UMP weapons platform by the former Equipment Department. It greatly increases evasive ability while preserving firing accuracy.Obtainable during the 2017 Summer event [[Operation Deep Dive]], with Deep Dive added to the campaign menu, players can now return to the maps and acquire this equipment again from random battle loots, drop location as following: E2-3, E2-4, E3-2, E3-4.Minimum Level Requirement: 60",
+        "description": "A highly mobile exoskeleton specially calibrated for T-Dolls of the UMP weapons platform by the former Equipment Department. It greatly increases evasive ability while preserving firing accuracy.\nObtainable during the 2017 Summer event [[Operation Deep Dive]], with Deep Dive added to the campaign menu, players can now return to the maps and acquire this equipment again from random battle loots, drop location as following: E2-3, E2-4, E3-2, E3-4.\nMinimum Level Requirement: 60",
         "stats": {
             "Evasion": {
                 "min": 20.0,
@@ -3265,7 +3265,7 @@
         "type": "Exoskeleton",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 白骑士制式铠甲，能够快速治疗受伤的穿戴者。\nEN: A White Knight's standard armor. Able to quickly heal the wearer.Obtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].Minimum Level Required: 80",
+        "description": "CN: 白骑士制式铠甲，能够快速治疗受伤的穿戴者。\n\nEN: A White Knight's standard armor. Able to quickly heal the wearer.\nObtained by exchanging 70x \"White Knight Armor Shards\" in the Event Shop during [[Valhalla]].\nMinimum Level Required: 80",
         "stats": {
             "Evasion": {
                 "min": 15.0,
@@ -3282,7 +3282,7 @@
         "type": "HP Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN:曾经战争中为残酷的战壕内近距离战斗开发的实验弹药，本质是一种可以直接用.45口径手枪发射的霰弹，M1911专用。\nEN:The experimental ammunition that was once developed for CQC in the brutal trench warfare, this is essentially a .45 calibre shotgun shell that can be fired from pistol. M1911 exclusive.Obtained by reaching Stage 3 of M1911's Digimind Upgrade.Minimum Level Required: 115",
+        "description": "CN:曾经战争中为残酷的战壕内近距离战斗开发的实验弹药，本质是一种可以直接用.45口径手枪发射的霰弹，M1911专用。\n\nEN:The experimental ammunition that was once developed for CQC in the brutal trench warfare, this is essentially a .45 calibre shotgun shell that can be fired from pistol. M1911 exclusive.\nObtained by reaching Stage 3 of M1911's Digimind Upgrade.\nMinimum Level Required: 115",
         "stats": {
             "Damage": {
                 "min": 8.0,
@@ -3303,7 +3303,7 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: ZF公司专为FG42生产的光学瞄具，经过一百多年的时光，黄铜镜筒已经黯淡，玻璃镜片却依然德味，透过瞄具都感觉自己仿佛加入了马格南。EN: <!-- Insert translation here, remove the brackets once you're done -->",
+        "description": "CN: ZF公司专为FG42生产的光学瞄具，经过一百多年的时光，黄铜镜筒已经黯淡，玻璃镜片却依然德味，透过瞄具都感觉自己仿佛加入了马格南。\nEN: <!-- Insert translation here, remove the brackets once you're done -->",
         "stats": {}
     },
     {
