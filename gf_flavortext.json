@@ -3,6 +3,9 @@
 	"AS Val": {"flavor":"Error's waifu. Who is Error? Don't worry about it."},
 	"AUG" : {"flavor":"Glory to mankind."},
 	"Colt Revolver":{"alias":"SAA"},
+	"Colt Revolver MOD 1":{"alias":"SAA MOD 1"},
+	"Colt Revolver MOD 2":{"alias":"SAA MOD 2"},
+	"Colt Revolver MOD 3":{"alias":"SAA MOD 3"},
 	"C-MS":{"alias":"cms"},
 	"Carcano M1891":{"alias":"Strawberry"},
 	"Carcano M91∕38":{"alias":"Grape"},
@@ -21,7 +24,7 @@
 	"FNC" : {"flavor" : "All this chocolate can't heal my wounds", "alias" : "FF FNC", "voodoo": [430, 430, 91, 230], "drop_rate" : 5.07},
 	"Grizzly MkV": {"voodoo" : [130, 130, 130, 230], "drop_rate" : 2.56},
 	"Glock 17":{"alias":"G17"},
-	"G11": {"flavor": "I'm tired...", "voodoo" : [95, 400, 400, 95], "drop_rate" : 2.67},
+	"G11": {"alias":"sleepo beepo", "voodoo" : [95, 400, 400, 95], "drop_rate" : 2.67},
 	"G36" : {"voodoo":[95, 433, 433, 233], "drop_rate" : 3.02, "alias": "Gr G36"},
 	"G36C" : {"voodoo" : [730, 630, 130, 439], "drop_rate" : 5.38},
 	"G41" : {"alias":"homete","flavor": "f××knugget", "voodoo" : [95, 494, 494, 230], "drop_rate" : 2.53},
@@ -61,7 +64,7 @@
 	"UMP9": {"voodoo": [400, 400, 30, 200], "drop_rate" : 3.62},
 	"UMP45" : {"flavor" : "Cutting board.", "voodoo" : [435, 435, 135, 235], "drop_rate" : 4.35},
 	"Vector" : {"voodoo": [400, 400, 90, 230], "drop_rate" : 2.79},
-	"WA2000" : {"flavor":"Do not attempt to eat her cooking", "voodoo":[438,438,438,238], "drop_rate":1.86},
+	"WA2000" : {"alias":"wa2k","flavor":"Do not attempt to eat her cooking", "voodoo":[438,438,438,238], "drop_rate":1.86},
 	"Welrod MkII": {"voodoo" : [130, 130, 131, 130], "drop_rate" : 1.32, "alias":"Welrod Mk2"},
 	"XM8":{"flavor":"(´・ω・｀)", "alias":":3"}
 }
