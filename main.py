@@ -74,7 +74,7 @@ PIC_EQUIP_DOMAIN="http://103.28.71.152:998/pic/equip/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
-version = "IOP 3.21-20200414"
+version = "IOP 3.21-20200607"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -558,7 +558,7 @@ def getDollCostume(doll,costumeType):
 				
 				if RepresentsInt(costumeType):
 					print("chr was already a number, no remapping.")
-					i = int(costumeType)
+					i = int(costumeType)-1
 				else:
 					print("Remapped chr to int.")
 					i = ord(costumeType.upper())-65
@@ -1156,14 +1156,14 @@ async def on_message(message):
 print("Starting up I.O.P. version "+version+"...")
 print("Discord.py version is "+discord.__version__)
 print("Reading the frontlinedex into memory. This may take a while.")
-with open("girlsfrontline.json", "r") as file_obj:
+with open("girlsfrontline.json", "r", encoding='utf-8') as file_obj:
 	frontlinedex = json.loads(file_obj.read())
 print("Reading bonus information...")
-with open("gf_flavortext.json", "r") as file_obj:
+with open("gf_flavortext.json", "r", encoding='utf-8') as file_obj:
 	bonusdex = json.loads(file_obj.read())
 if os.path.isfile("NewCharacterVoice.json"):
 	print("Reading quotes.")
-	with open("NewCharacterVoice.json", "r") as file_obj:
+	with open("NewCharacterVoice.json", "r", encoding='utf-8') as file_obj:
 		quotedex = json.loads(file_obj.read())
 	print(COMMAND_PREFIX+"quote is now available!")
 
@@ -1188,7 +1188,7 @@ for doll in frontlinedex:
 #		assert doll['alias'], "Missing aliases!"
 
 print("Reading equipment data into memory. This may take a while.")
-file_obj = open("equipment.json", "r")
+file_obj = open("equipment.json", "r", encoding='utf-8')
 equipmentdex = json.loads(file_obj.read())
 file_obj.close()
 
