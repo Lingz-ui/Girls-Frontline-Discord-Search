@@ -53,7 +53,6 @@ Python3 and pip. Game files need to be extracted if you want images and quotes.
 To extract files: https://github.com/36base/girlsfrontline-resources-extract
 
 ## Setup
-**This bot was written for a very old version of Discord.py, if you have a newer version it will need to be replaced or you need multiple python environments.**
 1. `git clone https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search.git`
 2. Set the GFBOT_TOKEN environment variable in your terminal with the token for the bot
 3. Open main.py, change COMMAND_PREFIX to whatever you want, the default is $gf
@@ -61,6 +60,8 @@ To extract files: https://github.com/36base/girlsfrontline-resources-extract
 5. `pip3 install -r requirements.txt` (Windows users, the command might be 'pip' instead of pip3)
 6. `chmod +x run_forever.sh` (Windows users, you're on your own)
 7. `./run_forever.sh` if linux, otherwise `python3 main.py`.
+
+If the bot gives random errors, try downgrading to discord.py 1.3.4.
 
 
 ## Screenshot
@@ -70,6 +71,9 @@ To extract files: https://github.com/36base/girlsfrontline-resources-extract
 main.py is AGPLv3, read LICENCE for more information. If you run a public modified version of this bot, you MUST release the source code.
 
 THIS PROGRAM IS NOT ENDORSED BY https://en.gfwiki.com. ALL DATA CONTAINED WITHIN girlsfrontline.json IS Ⓒ https://en.gfwiki.com AND LICENCED UNDER CC BY-SA 3.0. For more information, please read gf_json_LICENCE.
+
+## Usage information
+You could probably tell by reading the source code, but nothing is logged except for commands that start with $gf. No, your username is not recorded. Neither is your user ID.
 
 ## Plz donate
 I'm a broke college student who needs to pay for my college loans: https://www.ko-fi.com/rhythmlunatic
