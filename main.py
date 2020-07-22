@@ -65,16 +65,16 @@ DISCORD_TOKEN=os.environ['GFBOT_TOKEN']
 COMMAND_PREFIX="$gf"
 #The domain for the images extracted from Girls' Frontline. The bot will combine it like PIC_DOMAIN + "pic_ump45.png"
 #This is my server, in case you didn't already realize that.
-PIC_DOMAIN="http://103.28.71.152:998/pic/"
+PIC_DOMAIN="http://23.92.83.222:998/pic/"
 #The domain for the equipment images extracted from Girls' Frontline. The bot will combine it like PIC_EQUIP_DOMAIN + "pic_ump45.png"
-PIC_EQUIP_DOMAIN="http://103.28.71.152:998/pic/equip/"
+PIC_EQUIP_DOMAIN="http://23.92.83.222:998/pic/equip/"
 #The domain for the icons for dolls like the ones that are on the top left of the doll cards.
 #Icons are disabled because they make embeds worse.
 #ICON_DOMAIN="http://103.28.71.152:999/pic_compressed/icons/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
-version = "IOP 3.21-20200607"
+version = "IOP 3.21-20200722"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -238,17 +238,17 @@ def RepresentsInt(s):
 #@client.event
 #async def loaddex(message):
 #	reload()
-#	await client.send_message(message.channel, "Done.")
+#	await message.channel.send( "Done.")
 def serverCount():
 	#Create a variable to store amount of members per server
 	numMembers = 0
 	#Loop through the servers, get all members and add them up
-	for s in client.servers:
+	for s in client.guilds:
 		numMembers += len(s.members)
 	#The bot itself doesn't count as a member
-	numMembers -= len(client.servers)
-	print("Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders")
-	return "Serving " + str(len(client.servers)) +" bases and "+str(numMembers)+ " commanders"
+	numMembers -= len(client.guilds)
+	print("Serving " + str(len(client.guilds)) +" bases and "+str(numMembers)+ " commanders")
+	return "Serving " + str(len(client.guilds)) +" bases and "+str(numMembers)+ " commanders"
 
 '''
 internalName = internal name of doll.
@@ -594,16 +594,16 @@ async def on_ready():
 	#print(str(client.user.id))
 	#https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0
 	#Send Messages, Manage Messages, Embed Links, and Add Reactions is required for optimal use.
-	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+client.user.id+ "&scope=bot&permissions=26688")
-	await client.change_presence(game=discord.Game(name=serverCount()))
+	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+str(client.user.id)+ "&scope=bot&permissions=26688")
+	await client.change_presence(status=discord.Status.online, activity=discord.Game(serverCount()))
 
 @client.event
 async def on_server_join(server):
-	await client.change_presence(game=discord.Game(name=serverCount()))
+	await client.change_presence(status=discord.Status.online, activity=discord.Game(serverCount()))
 
 @client.event
 async def on_server_remove(server):
-	await client.change_presence(game=discord.Game(name=serverCount()))
+	await client.change_presence(status=discord.Status.online, activity=discord.Game(serverCount()))
 
 #Behold, a stateless function by parsing my own messages
 #You know what? It's better if it's stateless anyways
@@ -629,8 +629,8 @@ async def on_reaction_add(reaction,user):
 			printError("What? search result was not an embed.")
 			return
 		else:
-			#print(reaction.message.embeds[0])
-			curDollName = ' '.join(reaction.message.embeds[0]['title'].split(" - ")[1].split(' ')[:-1])
+			#print(reaction.message.embeds[0].title)
+			curDollName = ' '.join(reaction.message.embeds[0].title.split(" - ")[1].split(' ')[:-1])
 			print(curDollName)
 			curIndex = 0
 			for d in dollList:
@@ -647,16 +647,16 @@ async def on_reaction_add(reaction,user):
 				return
 			for doll in frontlinedex:
 				if dollList[curIndex] == doll['name']:
-					await client.edit_message(reaction.message,embed=dollInfo(doll))
+					await reaction.message.edit(embed=dollInfo(doll))
 					try:
-						await client.clear_reactions(reaction.message)
+						await reaction.message.clear_reactions()
 						for e in ['⏪','⏩']:
 							try:
-								await client.add_reaction(reaction.message,e)
+								await reaction.message.add_reaction(e)
 							except:
-								print("Missing manage messages permissions...")
+								print("Missing manage messages permissions... No reaction clearing.")
 					except:
-						print("Missing manage messages permissions...")
+						print("Missing manage messages permissions... No reaction clearing.")
 					return
 	
 	#lame hack to check if it's a --list result
@@ -674,11 +674,11 @@ async def on_reaction_add(reaction,user):
 		print("Converted to "+letter)
 		for doll in frontlinedex:
 			if name == doll['name']:
-				msg = await client.edit_message(reaction.message,new_content=getDollCostume(doll,letter))
+				msg = await reaction.message.edit(content=getDollCostume(doll,letter))
 				try:
-					await client.clear_reactions(reaction.message)
+					await reaction.message.clear_reactions()
 				except:
-					print("Missing manage messages permissions...")
+					print("Missing manage messages permissions... No reaction clearing.")
 					#await client.edit_message(msg,new_content=msg.content+"\n(I'm missing manage message permissions, so I can't clear your reactions.)")
 	#Lame hack to check if this is a $gfimage command result
 	elif msg[-1].endswith(".png") and reaction.emoji == "🔥":
@@ -695,7 +695,7 @@ async def on_reaction_add(reaction,user):
 			
 		for doll in frontlinedex:
 			if name == doll['name']:
-				await client.edit_message(reaction.message,new_content=getDollCostume(doll,costume))
+				await reaction.message.edit(content=getDollCostume(doll,costume))
 		#Insert else statements here for left and right arrows
 	#Lame hack to check if this is an equipment result
 	elif 'exclusive equipment' in msg[0] and '(' in msg[-1]:
@@ -720,16 +720,16 @@ async def on_reaction_add(reaction,user):
 		for equip in equipmentdex:
 			if equipmentList[selection-1] == equip['name']:
 				newMsg = msg[0] + "\n("+str(selection)+"/"+str(len(equipmentList))+")"
-				await client.edit_message(reaction.message,new_content=newMsg, embed=equipInfo(equip))
+				await reaction.message.edit(content=newMsg, embed=equipInfo(equip))
 				try:
-					await client.clear_reactions(reaction.message)
+					await reaction.message.clear_reactions()
 					for e in ['⏪','⏩']:
 						try:
-							await client.add_reaction(reaction.message,e)
+							await reaction.message.add_reaction(e)
 						except:
-							print("Missing manage messages permissions...")
+							print("Missing manage messages permissions... No reaction clearing.")
 				except:
-					print("Missing manage messages permissions...")
+					print("Missing manage messages permissions... No reaction clearing.")
 				return
 		printError("WTF? Can't find equipment!")
 		printError("Selection: "+ str(selection))
@@ -761,7 +761,7 @@ async def on_reaction_remove(reaction,user):
 				return
 			for doll in frontlinedex:
 				if name == doll['name']:
-					await client.edit_message(reaction.message,new_content=getDollCostume(doll,costume))
+					await reaction.message.edit(content=getDollCostume(doll,costume))
 	return
 	
 @client.event
@@ -794,7 +794,7 @@ async def on_message(message):
 				numMods+=1
 			else:
 				numDolls+=1
-		st+="\n"+str(numDolls)+" dolls indexed (incl. NPCs). "+str(numMods/3)+" MODs indexed. (MOD1/2/3 counted as one MOD)"
+		st+="\n"+str(numDolls-numMods)+" dolls indexed (incl. NPCs) and " + '%g'%(numMods/3) + " MODs indexed. (MOD1/2/3 counted as one MOD)"
 		st += "\n"+str(len(equipmentdex))+" equipments indexed."
 		#require --extra because this command is expensive to compute and I don't want people spamming it. It also doesn't work yet.
 		if param == "--extra":
@@ -818,7 +818,7 @@ async def on_message(message):
 		for type in type_list:
 			st += "\n**"+type+":** "+str(type_list[type])
 		
-		await client.send_message(message.channel, st)
+		await message.channel.send(st)
 		#print("Attempting to change the status to " + st)
 		#await client.change_presence(game=discord.Game(name="testing"))
 		#print("done")
@@ -839,31 +839,31 @@ async def on_message(message):
 				msg += "`"+COMMAND_PREFIX+"image M16A1,C`: Show M16A1's 3rd costume.\n"
 				msg += "`"+COMMAND_PREFIX+"image Negev --list`: Show all available costumes for Negev.\n"
 				msg += "You can also use numbers instead of letters. Ex. `"+COMMAND_PREFIX+"image UMP9,2`\n"
-				await client.send_message(message.channel, msg)
+				await message.channel.send(msg)
 			elif param == "timer":
 				msg = "Find a matching doll or equip for the timer. Fairies coming eventually.\n"
 				msg += "Usage examples:\n"
 				msg += "`"+COMMAND_PREFIX+"timer 0:40` or `"+COMMAND_PREFIX+"timer :40`: Search for a matching timer of 0 hours 40 mins\n"
 				msg += "`"+COMMAND_PREFIX+"timer 8:00` or `"+COMMAND_PREFIX+"timer 08:00` or `"+COMMAND_PREFIX+"timer 08:00:00`: Search for a matching timer of 8 hours\n"
-				await client.send_message(message.channel, msg)
+				await message.channel.send(msg)
 			elif param == "status":
 				msg = "Show the amount of servers this bot is in and the number of dolls and equipment indexed."
 				#msg += "\nIf --extra is appended the lowest and highest production timers for weapons and dolls will be shown."
 				msg += "\nAlso shows the number of dolls in each type (HG,SMG,AR,SG,RF)."
-				await client.send_message(message.channel, msg)
+				await message.channel.send(msg)
 			elif param == "exp":
 				msg = "Estimate how much exp is required to get from one level to another."
 				msg += "\nExample: `"+COMMAND_PREFIX+"exp 5,25`: Estimate how much exp and combat reports it takes to get from level 5 to 25."
 				msg += "\nExample: `"+COMMAND_PREFIX+"exp 75`: Estimate how much exp and combat reports it takes to get from level 1 to 75."
-				await client.send_message(message.channel,msg)
+				await message.channel.send(msg)
 			elif param == "equip":
 				msg = "Search for equipment or fairies. If you search a doll's name, it will return the exclusive equipment for that doll."
 				msg += "\nExample: `"+COMMAND_PREFIX+"equip Additional Process Module`: Returns information on the 'Additional Process Module' equipment."
 				msg += "\nExample: `"+COMMAND_PREFIX+"equip HK416`: Returns HK416's exclusive equipment. You can switch results with the react buttons."
-				await client.send_message(message.channel, msg)
+				await message.channel.send(msg)
 			else:
 				printWarn("Tried to get help for "+param+ " but there was none.")
-				await client.send_message(message.channel, "No help available for this command yet.")
+				await message.channel.send("No help available for this command yet.")
 			return
 		msg = "I am I.O.P., a Discord bot that will give you useful information about T-Dolls and equipment.\n"
 		msg+="Running version "+version+"\n"
@@ -883,12 +883,12 @@ async def on_message(message):
 		msg+="Contact: /u/RhythmLunatic on Reddit or RhythmLunatic on Github\n"
 		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!\n"
 		msg+="Girls Frontline Discord Search is licenced under AGPLv3. Support free and open source software!"
-		await client.send_message(message.channel, msg)
+		await message.channel.send(msg)
 		return
 	
 	#All commands below this require a parameter.
 	if param == None:
-		#await client.send_message(message.channel, "This command requires a parameter.")
+		#await message.channel.send( "This command requires a parameter.")
 		print("Tried using a command without a parameter?")
 		return
 
@@ -900,16 +900,16 @@ async def on_message(message):
 
 		try:
 			if res:
-				msg = await client.send_message(message.channel, content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+				msg = await message.channel.send(content="No T-Doll was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
 				for e in ['⏪','⏩']:
 					try:
-						await client.add_reaction(msg,e)
+						await msg.add_reaction(e)
 					except:
 						print(e+" is not a valid emoji")
 			else:
-				await client.send_message(message.channel, embed=embed)
+				await message.channel.send(embed=embed)
 		except Exception as e:
-			#await client.send_message(message.channel, content="An error occured and I am unable to complete your request. Perhaps you have embed permissions turned off?")
+			#await message.channel.send( content="An error occured and I am unable to complete your request. Perhaps you have embed permissions turned off?")
 			#print("An error occured. Here is the affected doll:")
 			#print(doll)
 			#I don't really want this to be a warn because someone could keep embed permissions off and spam it but whatever
@@ -918,7 +918,7 @@ async def on_message(message):
 			try:
 				msg = "You are currently looking at a simplified view because embed permissions are turned off. Please turn them on, or if you always want a simplified view use search2. Most commands will not work with embeds turned off!\n"
 				msg += embed2text(embed)
-				await client.send_message(message.channel, content=msg)
+				await message.channel.send(msg)
 			except Exception as e:
 				printError("Tried to send message twice and failed, giving up. Here is the affected doll:")
 				print(doll)
@@ -926,7 +926,7 @@ async def on_message(message):
 	elif command == "search2":
 		doll, res = getSearchResult(param)
 		embed = dollInfo(doll)
-		await client.send_message(message.channel, content=embed2text(embed))
+		await message.channel.send(embed2text(embed))
 		
 	elif command == "equip" or command == "e":
 		print("[EQUIP] "+param)
@@ -940,29 +940,29 @@ async def on_message(message):
 					if 'valid' in equip and param in equip['valid'].lower():
 						equipmentResults.append(equip)
 				if len(equipmentResults) == 0:
-					await client.send_message(message.channel, content="Found no exclusive equipment for "+doll['name']+". (If this is wrong, please file a bug report)")
+					await message.channel.send(content="Found no exclusive equipment for "+doll['name']+". (If this is wrong, please file a bug report)")
 				elif len(equipmentResults) > 1:
 					msgText = "Found "+str(len(equipmentResults))+" exclusive equipment for "+doll['name']+": " + ", ".join([e['name'] for e in equipmentResults])
 					msgText += "\n(1/"+str(len(equipmentResults))+")"
-					msg = await client.send_message(message.channel, content=msgText, embed=equipInfo(equipmentResults[0]))
+					msg = await message.channel.send(content=msgText, embed=equipInfo(equipmentResults[0]))
 					#Yes I know you don't need to show the back button when it's the first selection but it's simpler this way
 					for e in ['⏪','⏩']:
 						try:
-							await client.add_reaction(msg,e)
+							await msg.add_reaction(e)
 						except:
 							print(e+" is not a valid emoji")
 				else:
-					await client.send_message(message.channel, content="Found 1 exclusive equipment for "+doll['name']+".",embed=equipInfo(equipmentResults[0]))
+					await message.channel.send(content="Found 1 exclusive equipment for "+doll['name']+".", embed=equipInfo(equipmentResults[0]))
 				return
 		try:
 			equip, res = getSearchResult(param,True)
 			embed = equipInfo(equip)
 			if res[0][1] == 100:
-				await client.send_message(message.channel, embed=embed)
+				await message.channel.send(embed=embed)
 			else:
-				await client.send_message(message.channel, content="No equipment was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
+				await message.channel.send(content="No equipment was found with that exact name, so I'm returning the closest result. Did you mean: "+", ".join([i[0] for i in res]), embed=embed)
 		except Exception as e:
-			await client.send_message(message.channel, content="An error has occured while trying to get equipment data. Perhaps the data for this equipment is missing.")
+			await message.channel.send(content="An error has occured while trying to get equipment data. Perhaps the data for this equipment is missing.")
 			print(traceback.print_exc())
 			printWarn(embed2text(equipInfo(equip)))
 		return
@@ -985,7 +985,7 @@ async def on_message(message):
 		if costumeType == "--list" or costumeType == "-l":
 			if 'costumes' in doll:
 				msgText += getPossibleCostumes(doll)
-				msg = await client.send_message(message.channel, msgText)
+				msg = await message.channel.send(msgText)
 				#ord starts at 127462 btw
 				emojis = ["🇦","🇧","🇨","🇩","🇪","🇫","🇬","🇭","🇮","🇯","🇰","🇱","🇲","🇳","🇴","🇵","🇶","🇷","🇸","🇹"]
 				
@@ -993,20 +993,20 @@ async def on_message(message):
 				#20 = the number of emoji discord will let you add to a message.
 				for i in range( min( len(doll['costumes']), 20 ) ):
 					try:
-						await client.add_reaction(msg,emojis[i])
+						await msg.add_reaction(emojis[i])
 					except:
 						print(emojis[i]+" is not a valid emoji or you put too many emojis on")
 			else:
 				printWarn("T-Doll "+doll['name']+" is missing costume information.")
-				await client.send_message(message.channel, "Sorry, the data for this T-Doll is missing.")
+				await message.channel.send("Sorry, the data for this T-Doll is missing.")
 				return			
 		else:
 			try:
 				msgText += getDollCostume(doll,costumeType)
-				msg = await client.send_message(message.channel, msgText)
-				await client.add_reaction(msg,"🔥")
+				msg = await message.channel.send(msgText)
+				await msg.add_reaction("🔥")
 			except Exception:
-				await client.send_message(message.channel, "An error has occured and I am unable to complete your request.")
+				await message.channel.send("An error has occured and I am unable to complete your request.")
 				print(traceback.print_exc())
 			#emojis = ['⏪','⏩']
 			#for e in emojis:
@@ -1016,7 +1016,7 @@ async def on_message(message):
 			#		print(e+" is not a valid emoji")
 		return
 		#print("WARN: No T-Doll was found for " + param)
-		#await client.send_message(message.channel, "No T-Doll was found with that name.")
+		#await message.channel.send("No T-Doll was found with that name.")
 		#return
 	elif command == "timer" or command == "t":
 		print("[TIMER] "+param)
@@ -1027,7 +1027,7 @@ async def on_message(message):
 				param = "0"+param
 		elif param.count(':') == 0:
 			print("Argument was too ambiguous.")
-			await client.send_message(message.channel, "I don't support numbers without `:`. Please format your query with `:`.")
+			await message.channel.send("I don't support numbers without `:`. Please format your query with `:`.")
 			return
 			#print("Converted " +param+" to ",end="")
 			
@@ -1044,7 +1044,7 @@ async def on_message(message):
 			if int(param.split(':')[0]) != 0:
 				param = param.lstrip('0')
 		except:
-			await client.send_message(message.channel, "This does not appear to be a timer.")
+			await message.channel.send("This does not appear to be a timer.")
 			print(param + " was not a valid timer.")
 			return
 		print("stripped arg: "+param)
@@ -1065,16 +1065,16 @@ async def on_message(message):
 						res.append(doll)
 			
 			if len(equipRes) == 0 and len(res) == 0:
-				await client.send_message(message.channel, "No equipment or T-Doll was found matching that production timer.")
+				await message.channel.send("No equipment or T-Doll was found matching that production timer.")
 				print("No match found for "+param)
 			elif len(equipRes) == 1 and len(res) == 0:
-				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=equipInfo(equipRes[0]))
+				await message.channel.send(content="Found an exact match for the timer.", embed=equipInfo(equipRes[0]))
 			elif len(equipRes) == 0 and len(res) == 1:
-				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=dollInfo(res[0]))
+				await message.channel.send(content="Found an exact match for the timer.", embed=dollInfo(res[0]))
 			else:
 				msg = "Equipment that matches this production timer: "+", ".join(i['name'] for i in equipRes)
 				msg += "\nT-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res)
-				await client.send_message(message.channel, msg)
+				await message.channel.send(msg)
 			return
 			
 
@@ -1084,12 +1084,12 @@ async def on_message(message):
 					if param == doll['production']['timer']:
 						res.append(doll)
 			if len(res) == 0:
-				await client.send_message(message.channel, "No dolls were found matching that production timer.")
+				await message.channel.send("No dolls were found matching that production timer.")
 				print("No match found for "+param)
 			elif len(res) == 1:
-				await client.send_message(message.channel, content="Found an exact match for the timer.", embed=dollInfo(res[0]))
+				await message.channel.send( content="Found an exact match for the timer.", embed=dollInfo(res[0]))
 			else:
-				await client.send_message(message.channel, "T-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res))
+				await message.channel.send( "T-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res))
 		return
 	elif command == "quote" or command == "q":
 		if quotedex:
@@ -1100,16 +1100,16 @@ async def on_message(message):
 					msg = doll['name']+"'s quotes:\n"
 					for key,value in sorted(quotedex[doll['internalName']].items()):
 						msg += "**"+key.capitalize()+"**: "+" ".join(value)+"\n"
-					await client.send_message(message.channel, msg)
+					await message.channel.send(msg)
 				else:
-					await client.send_message(message.channel, "This doll has no quotes... Somehow.")
+					await message.channel.send( "This doll has no quotes... Somehow.")
 					printWarn(doll['name']+" with internalName "+doll['internalName']+ " has no quotes.")
 			else:
 				printWarn("T-Doll "+doll['name']+" is missing the internal name.")
-				await client.send_message(message.channel, "Sorry, the internal name for this doll is missing, which is needed to pull the quote from the data.")
+				await message.channel.send("Sorry, the internal name for this doll is missing, which is needed to pull the quote from the data.")
 			return
 		else:
-			await client.send_message(message.channel, "This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions.")
+			await message.channel.send("This command is unavailable. If you are the bot owner, check https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search for instructions on how to set it up.")
 	elif command == "exp":
 		print("[EXP] "+param)
 		start = None
@@ -1127,29 +1127,29 @@ async def on_message(message):
 			
 			end = intTryParse(end.strip())
 			if start == -1 or end == -1:
-				await client.send_message(message.channel,"1st or 2nd argument was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5,100` (where 5 is start, 100 is end)")
+				await message.channel.send("1st or 2nd argument was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5,100` (where 5 is start, 100 is end)")
 				return
 		except Exception:
-			#await client.send_message(message.channel, "An error has occured and I am unable to complete your request. Perhaps your argument was malformed.")
-			await client.send_message(message.channel,"parameter was invalid. Use this command like:\n `"+COMMAND_PREFIX+"exp 5` (where 5 is end)\n`"+COMMAND_PREFIX+"exp 100,120` (where 100 is start and 120 is end)")
+			#await message.channel.send( "An error has occured and I am unable to complete your request. Perhaps your argument was malformed.")
+			await message.channel.send("parameter was invalid. Use this command like:\n `"+COMMAND_PREFIX+"exp 5` (where 5 is end)\n`"+COMMAND_PREFIX+"exp 100,120` (where 100 is start and 120 is end)")
 			printWarn("Invalid argument for gfexp.")
 			print(traceback.print_exc())
 		#else:
 		#	start = 1
 		#	end = intTryParse(param)
 		#	if end == -1:
-		#		await client.send_message(message.channel,"parameter was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5` (where 5 is end)")
+		#		await message.channel.send("parameter was not a number. Use this command like: `"+COMMAND_PREFIX+"exp 5` (where 5 is end)")
 		#		return
 		
 		if end > len(exp_table):
-			await client.send_message(message.channel,"Calculations for levels above "+str(len(exp_table))+" are not supported.")
+			await message.channel.send("Calculations for levels above "+str(len(exp_table))+" are not supported.")
 			return
 		n = 0
 		for i in range(start-1,end-1):
 			n+=exp_table[i]
 		msg =  "Exp required to go from level " + str(start) + " to level "+str(end) + ": **"+str(n)+"**\n"
 		msg += "Combat reports required: **"+str(math.ceil(n/3000))+"**"
-		await client.send_message(message.channel,msg)
+		await message.channel.send(msg)
 		return
 			
 #startup...
