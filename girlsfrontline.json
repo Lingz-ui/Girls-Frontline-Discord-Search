@@ -2666,6 +2666,110 @@
         ]
     },
     {
+        "url": "/wiki/AUG_Para",
+        "num": 315,
+        "name": "AUG Para",
+        "type": "SMG",
+        "rating": 5,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 93,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 11,
+            "eva": 11,
+            "acc": 2,
+            "rof": 60,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 185,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 29,
+            "eva": 83,
+            "acc": 15,
+            "rof": 88,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛⬛\n🔶🔷⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 15%\nIncreases accuracy by 25%",
+        "ability": {
+            "name": "Cognitive Transformation",
+            "icon": "AugPara",
+            "text": "Activate the skill to switch between modes: [Offense Focused]: Every ($time_value) seconds, converts own evasion into both damage and accuracy. Every -1 point of evasion is converted to +2 points of damage and +1 point of accuracy. Conversion stops when evasion is lower than ($eva_value). [Evasion Focused]: Every ($time_value) seconds, converts own damage and accuracy into evasion. Every -1 point of damage and accuracy is converted into +4 points of evasion. Conversion stops when damage is lower than ($dam_value) or accuracy is lower than ($acc_value). Stat changes from either conversion is applied after other stat modifiers, and converted stats will not disappear as a result of other modifiers expiring. After changing modes, prioritize restoring the converted stats first.",
+            "initial": "1",
+            "cooldown": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "time_value": [
+                "0.2",
+                "0.2",
+                "0.167",
+                "0.167",
+                "0.167",
+                "0.133",
+                "0.133",
+                "0.133",
+                "0.1",
+                "0.1"
+            ],
+            "eva_value": [
+                "85",
+                "84",
+                "83",
+                "82",
+                "81",
+                "80",
+                "79",
+                "78",
+                "77",
+                "75"
+            ],
+            "dam_value": [
+                "50",
+                "49",
+                "48",
+                "47",
+                "45",
+                "43",
+                "41",
+                "39",
+                "37",
+                "35"
+            ],
+            "acc_value": [
+                "35",
+                "34",
+                "33",
+                "32",
+                "31",
+                "30",
+                "29",
+                "27",
+                "25",
+                "23"
+            ]
+        },
+        "production": {
+            "reward": "Obtainable as a potential reward from event supply crates given during Dual Randomness. One guaranteed unit will be given from opening the 777th crate."
+        }
+    },
+    {
         "url": "/wiki/Ak_5",
         "num": 187,
         "name": "Ak 5",
@@ -4380,6 +4484,61 @@
                 "pic": "pic_CBJMS_2205_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/C14",
+        "num": -1,
+        "name": "C14",
+        "type": "RF",
+        "rating": 3,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for June 2020 (CN)."
+        }
     },
     {
         "url": "/wiki/C96",
@@ -10679,6 +10838,98 @@
         ]
     },
     {
+        "url": "/wiki/General_Liu",
+        "num": 316,
+        "name": "General Liu",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 40,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 47,
+            "eva": 4,
+            "acc": 10,
+            "rof": 26,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 80,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 139,
+            "eva": 30,
+            "acc": 88,
+            "rof": 40,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛⬛\n🔷🔶⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
+        "ability": {
+            "name": "Shared Hatred",
+            "icon": "Liu",
+            "text": "[Passive]: At the start of battle, summon 3 reinforcement T-Dolls with 3 dummy links each to the rear of the echelon. Each reinforcement has 5 HP per dummy link and inherits the following stats from General Liu; ($dam_value)% damage, ($rof_value)% rate of fire and ($acc_value)% accuracy. The remaining stats and targeting mode are also the same as General Liu. [Active]: Activate the skill to switch between the following modes; [Rear-Focus (default)]: Reduces own rate of fire by 10% and increases own damage by 20% and targets the furthest enemy from self. [Vanguard-Focus]: Reduces own damage by 10% and increases own rate of fire by 20% and targets the nearest enemy from self.",
+            "initial": "1",
+            "cooldown": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1",
+                "1"
+            ],
+            "dam_value": [
+                "20",
+                "21",
+                "22",
+                "23",
+                "25",
+                "27",
+                "29",
+                "31",
+                "33",
+                "35"
+            ],
+            "rof_value": [
+                "45",
+                "46",
+                "47",
+                "48",
+                "50",
+                "52",
+                "54",
+                "56",
+                "58",
+                "60"
+            ],
+            "acc_value": [
+                "25",
+                "26",
+                "27",
+                "28",
+                "30",
+                "32",
+                "34",
+                "36",
+                "38",
+                "40"
+            ]
+        },
+        "production": {
+            "stage": "Obtained as a possible drop throughout Chapter 3 of Dual Randomness."
+        }
+    },
+    {
         "url": "/wiki/Gepard_M1",
         "num": 201,
         "name": "Gepard M1",
@@ -16330,6 +16581,86 @@
                 "pic": "pic_Liberator_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Lusa",
+        "num": 311,
+        "name": "Lusa",
+        "type": "SMG",
+        "rating": 5,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 103,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 11,
+            "eva": 9,
+            "acc": 2,
+            "rof": 65,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 205,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 29,
+            "eva": 69,
+            "acc": 13,
+            "rof": 94,
+            "armor": 0
+        },
+        "tile_bonus": "🔶🔷⬛\n🔶⬛⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles (AR) and rifles (RF)\nIncreases damage by 18%\nIncreases critical hit rate by 25%",
+        "ability": {
+            "name": "Tactical Taunting",
+            "icon": "Lusa128",
+            "text": "[Passive]: For every 20% Max HP lost, grants self a +($hp_dam_value) HP shield. [Active]: Reduces incoming damage taken by ($hp_dam_value)% and grants self a \"Taunt\" effect for ($duration) seconds. [Taunt]: Enemies' basic attacks and strengthened attacks will prioritize targets with \"Taunt\" within attack range.",
+            "initial": "4",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "hp_dam_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "duration": [
+                "5",
+                "5.3",
+                "5.7",
+                "6",
+                "6.3",
+                "6.7",
+                "7",
+                "7.3",
+                "7.7",
+                "8"
+            ]
+        },
+        "production": {
+            "reward": "Rewarded to players after accumulating 1800 points during the \"Wild Summer Nights\" point event on the 25th of July 2020 (CN)."
+        }
     },
     {
         "url": "/wiki/M1_Garand",
@@ -25042,6 +25373,122 @@
         ]
     },
     {
+        "url": "/wiki/Mondragon",
+        "num": 317,
+        "name": "Mondragon",
+        "type": "RF",
+        "rating": 4,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 42,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 40,
+            "eva": 4,
+            "acc": 9,
+            "rof": 27,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 84,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 112,
+            "eva": 34,
+            "acc": 74,
+            "rof": 41,
+            "armor": 0
+        },
+        "tile_bonus": "⬛🔶⬛\n⬛🔷⬛\n⬛🔶⬛",
+        "bonus_desc": "Affects rifles\nIncreases damage by 15%",
+        "ability": {
+            "name": "Conviction of Certain Victory",
+            "icon": "m190",
+            "text": "[Passive]: If currently assigned as an echelons leader, permanently reduces own rate of fire by 35% while increasing allied Rifles' critical hit rate by ($crt_value)% and critical hit damage by ($crtd_value)%. [Active]: When skill is activated, allies on her tiles gain ($dam_value)% damage and ($rof_value)% rate of fire for ($duration) seconds.",
+            "initial": "5",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "crt_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "20"
+            ],
+            "crtd_value": [
+                "5",
+                "5.5",
+                "6",
+                "6.5",
+                "7",
+                "7.5",
+                "8",
+                "8.5",
+                "9",
+                "10"
+            ],
+            "dam_value": [
+                "10",
+                "10.5",
+                "11",
+                "11.5",
+                "12",
+                "12.5",
+                "13",
+                "13.5",
+                "14",
+                "15"
+            ],
+            "rof_value": [
+                "6",
+                "6.5",
+                "7",
+                "7.5",
+                "8",
+                "8.5",
+                "9",
+                "10",
+                "11",
+                "12"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "stage": "Obtained as a possible drop throughout Chapter 2 of Dual Randomness."
+        }
+    },
+    {
         "url": "/wiki/Mosin-Nagant",
         "num": 39,
         "name": "Mosin-Nagant",
@@ -28702,6 +29149,99 @@
         ]
     },
     {
+        "url": "/wiki/PM1910",
+        "num": 319,
+        "name": "PM1910",
+        "type": "MG",
+        "rating": 4,
+        "constStats": {
+            "mov": 4,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "10"
+        },
+        "baseStats": {
+            "hp": 95,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": 34,
+            "eva": 4,
+            "acc": 4,
+            "rof": 72,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 190,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": 90,
+            "eva": 25,
+            "acc": 27,
+            "rof": 104,
+            "armor": 0
+        },
+        "tile_bonus": "🔷🔶⬛\n⬛🔶🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects shotguns\nIncreases damage by 10%\nIncreases armour by 15%",
+        "ability": {
+            "name": "Spreading Bloodthirst",
+            "icon": "PM1910",
+            "text": "[Passive]: During reloading state, allies on her tiles gain ($eva_value)% evasion, whereas allies not on her tiles gain ($dam_value)% damage. [Active]: Extends the current volley by +12 ammo. When using additional ammo, increases own accuracy by ($acc_value)% and extends the next reload time by 4 seconds.",
+            "initial": "3",
+            "cooldown": [
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18",
+                "18"
+            ],
+            "eva_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "20"
+            ],
+            "dam_value": [
+                "5",
+                "5.5",
+                "6",
+                "6.5",
+                "7",
+                "7.5",
+                "8",
+                "8.5",
+                "9",
+                "10"
+            ],
+            "acc_value": [
+                "50",
+                "53",
+                "56",
+                "59",
+                "62",
+                "65",
+                "68",
+                "72",
+                "76",
+                "80"
+            ]
+        },
+        "production": {
+            "reward": "Reward for clearing Chapter 3.1  of Dual Randomness."
+        }
+    },
+    {
         "url": "/wiki/PP-19",
         "num": 136,
         "name": "PP-19",
@@ -31073,6 +31613,98 @@
                 "pic": "pic_RT20_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Rex_Zero_1",
+        "num": 310,
+        "name": "Rex Zero 1",
+        "type": "HG",
+        "rating": 4,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 35,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 12,
+            "eva": 10,
+            "acc": 8,
+            "rof": 42,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 70,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 31,
+            "eva": 74,
+            "acc": 56,
+            "rof": 61,
+            "armor": 0
+        },
+        "tile_bonus": "🔶🔷🔶\n🔶🔶🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects all classes\nIncreases damage by 12%(x1) / 15%(x2) / 18%(x3) / 21%(x4) / 24%(x5)\nIncreases accuracy by 25%(x1) / 31%(x2) / 37%(x3) / 43%(x4) / 50%(x5)",
+        "ability": {
+            "name": "Intersecting Support",
+            "icon": "rex",
+            "text": "Grants a +($hp_value) HP shield to the T-Doll in the leader position; increases the damage of the remaining T-Dolls by ($dam_value)% for ($duration) seconds",
+            "initial": "6",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "hp_value": [
+                "5",
+                "8",
+                "11",
+                "14",
+                "17",
+                "20",
+                "23",
+                "26",
+                "29",
+                "32"
+            ],
+            "dam_value": [
+                "10",
+                "11",
+                "13",
+                "14",
+                "15",
+                "17",
+                "18",
+                "19",
+                "21",
+                "22"
+            ],
+            "duration": [
+                "5",
+                "5.3",
+                "5.7",
+                "6",
+                "6.3",
+                "6.7",
+                "7",
+                "7.3",
+                "7.7",
+                "8"
+            ]
+        },
+        "production": {
+            "timer": "00:54:00"
+        }
     },
     {
         "url": "/wiki/Ribeyrolles",
@@ -34786,6 +35418,110 @@
         ]
     },
     {
+        "url": "/wiki/StG-940",
+        "num": 314,
+        "name": "StG-940",
+        "type": "AR",
+        "rating": 3,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Assault Focus",
+            "icon": "powBuffSelf",
+            "text": "Increases damage by ($dam_value)%, rate of fire by ($rof_value)% and accuracy by ($acc_value)% for ($duration) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "dam_value": [
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "rof_value": [
+                "12",
+                "14",
+                "16",
+                "18",
+                "20",
+                "22",
+                "24",
+                "26",
+                "28",
+                "30"
+            ],
+            "acc_value": [
+                "30",
+                "36",
+                "41",
+                "47",
+                "52",
+                "58",
+                "63",
+                "69",
+                "74",
+                "80"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for August 2020 (CN)."
+        }
+    },
+    {
         "url": "/wiki/StG44",
         "num": 61,
         "name": "StG44",
@@ -35663,6 +36399,134 @@
                 "pic": "pic_StenMK2Mod_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Steyr_ACR",
+        "num": 313,
+        "name": "Steyr ACR",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 62,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 16,
+            "eva": 5,
+            "acc": 6,
+            "rof": 61,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 124,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 46,
+            "eva": 42,
+            "acc": 45,
+            "rof": 91,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛⬛🔶\n⬛🔷🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases damage by 20%\nIncreases evasion by 15%",
+        "ability": {
+            "name": "Ode to the Dawn Carnival",
+            "icon": "sacr",
+            "text": "[Passive]: For every stat reduction effect on self, increase final damage by ($pass_duration)% (stacks additively). [Active]: Swaps to Focus mode, reducing self rate of fire by ($rof_value)%, movement speed and evasion by ($ms_eva_value)%; Increases self damage by ($dam_value)%, accuracy by ($acc_value)%, critical damage by ($crt_dam_value)% for ($pass_duration) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "rof_value": [
+                "30",
+                "29",
+                "28",
+                "27",
+                "26",
+                "25",
+                "24",
+                "23",
+                "22",
+                "20"
+            ],
+            "ms_eva_value": [
+                "50",
+                "48",
+                "46",
+                "43",
+                "41",
+                "39",
+                "37",
+                "34",
+                "32",
+                "30"
+            ],
+            "dam_value": [
+                "15",
+                "17",
+                "20",
+                "22",
+                "24",
+                "27",
+                "29",
+                "31",
+                "33",
+                "35"
+            ],
+            "acc_value": [
+                "25",
+                "29",
+                "33",
+                "37",
+                "40",
+                "44",
+                "48",
+                "52",
+                "56",
+                "60"
+            ],
+            "crt_dam_value": [
+                "30",
+                "32",
+                "35",
+                "37",
+                "39",
+                "42",
+                "44",
+                "46",
+                "48",
+                "50"
+            ],
+            "pass_duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "timer": "04:08:00"
+        }
     },
     {
         "url": "/wiki/Steyr_Scout",
@@ -41090,6 +41954,122 @@
         ]
     },
     {
+        "url": "/wiki/VHS",
+        "num": 318,
+        "name": "VHS",
+        "type": "AR",
+        "rating": 5,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 58,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 116,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 57,
+            "eva": 47,
+            "acc": 54,
+            "rof": 78,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛🔶",
+        "bonus_desc": "Affects submachine guns\nIncreases accuracy by 30%\nIncreases evasion by 18%",
+        "ability": {
+            "name": "Destructor Intrusion",
+            "icon": "VHS",
+            "text": "[Passive]: Obtains +1 stack of \"Destruct\" every second. For every stack of \"Destruct\" currently active, increases own final damage by ($pass_value)% up to a max of 10 stacks. [Active]: Consumes all stacks of \"Destruct\" and obtains damage/accuracy/rate of fire equivalent to the stat of the enemies with the highest respective stat. The stat gain is capped at ($dam_value)% of self damage, ($acc_value)% of self accuracy and ($rof_value)% of self rate of fire. The effect lasts for ($duration) seconds and no stacks of \"Destruct\" can be gained throughout the skills duration.",
+            "initial": "5",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "pass_value": [
+                "1.6",
+                "1.7",
+                "1.8",
+                "1.9",
+                "2",
+                "2.1",
+                "2.2",
+                "2.3",
+                "2.4",
+                "2.5"
+            ],
+            "dam_value": [
+                "25",
+                "27",
+                "30",
+                "32",
+                "34",
+                "36",
+                "39",
+                "41",
+                "43",
+                "45"
+            ],
+            "acc_value": [
+                "50",
+                "53",
+                "56",
+                "59",
+                "62",
+                "65",
+                "68",
+                "72",
+                "76",
+                "80"
+            ],
+            "rof_value": [
+                "20",
+                "22",
+                "24",
+                "26",
+                "28",
+                "30",
+                "32",
+                "34",
+                "37",
+                "40"
+            ],
+            "duration": [
+                "3",
+                "3.3",
+                "3.7",
+                "4",
+                "4.3",
+                "4.7",
+                "5",
+                "5.3",
+                "5.7",
+                "6"
+            ]
+        },
+        "production": {
+            "reward": "Reward for Clearing E?-? of Dual Randomness."
+        }
+    },
+    {
         "url": "/wiki/VP70",
         "num": 277,
         "name": "VP70",
@@ -41180,6 +42160,98 @@
                 "pic": "pic_VP70_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/VSK-94",
+        "num": 312,
+        "name": "VSK-94",
+        "type": "RF",
+        "rating": 5,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 44,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 45,
+            "eva": 4,
+            "acc": 9,
+            "rof": 25,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 88,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 133,
+            "eva": 32,
+            "acc": 79,
+            "rof": 38,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛🔷⬛\n⬛🔶🔶",
+        "bonus_desc": "Affects handguns\nReduce skill cooldown by 18%",
+        "ability": {
+            "name": "Double Guard",
+            "icon": "VSK",
+            "text": "Increase self damage by ($dam_value)% of self accuracy before skill activation for ($duration) seconds. The first ($hit_value) attacks after skill activation deal 2 hits.",
+            "initial": "5",
+            "cooldown": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "dam_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "hit_value": [
+                "1",
+                "1",
+                "1",
+                "1",
+                "2",
+                "2",
+                "2",
+                "2",
+                "3",
+                "3"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "timer": "04:43:00"
+        }
     },
     {
         "url": "/wiki/Vector",
@@ -41517,6 +42589,61 @@
                 "pic": "pic_WA2000_804_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/WKp",
+        "num": -1,
+        "name": "WKp",
+        "type": "HG",
+        "rating": 3,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects all guns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for July 2020 (CN)."
+        }
     },
     {
         "url": "/wiki/Webley",
@@ -42828,6 +43955,86 @@
         ]
     },
     {
+        "url": "/wiki/Angelica",
+        "num": 1027,
+        "name": "Angelica",
+        "type": "AR",
+        "rating": 7,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 30,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 61,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 19,
+            "eva": 6,
+            "acc": 7,
+            "rof": 50,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 121,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 55,
+            "eva": 46,
+            "acc": 57,
+            "rof": 75,
+            "armor": 0
+        },
+        "tile_bonus": "⬛🔶🔶\n⬛🔷🔶\n⬛🔶🔶",
+        "bonus_desc": "Affects assault rifles (AR) and submachine guns (SMG)\nIncreases damage by 10%\nIncreases accuracy by 20%",
+        "ability": {
+            "name": "Extreme Shooting",
+            "icon": "Angelica",
+            "text": "[Passive]: Increases self damage by 12% at battle start. This buff gradually decays by 4% every 2 seconds, and is completely removed after 6 seconds. The buff will refresh itself every 10 seconds. [Active]: Reduces own accuracy by -($debuff_value)% and increases rate of fire to a fixed 150 for ($duration) seconds.",
+            "initial": "4",
+            "cooldown": [
+                "16",
+                "15.6",
+                "15.1",
+                "14.7",
+                "14.2",
+                "13.8",
+                "13.3",
+                "12.9",
+                "12.4",
+                "12"
+            ],
+            "debuff_value": [
+                "40",
+                "36",
+                "31",
+                "27",
+                "22",
+                "18",
+                "13",
+                "9",
+                "4",
+                "0"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "stage": "Obtained as a possible drop throughout E0-1, E1-1, E1-1Ex, E1-? of Dream Theatre."
+        }
+    },
+    {
         "url": "/wiki/Bronya",
         "num": 1005,
         "name": "Bronya",
@@ -42914,6 +44121,75 @@
                 "pic": "pic_Bronya_507_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Claes",
+        "num": 1026,
+        "name": "Claes",
+        "type": "MG",
+        "rating": 7,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "8"
+        },
+        "baseStats": {
+            "hp": 79,
+            "ammo": 40,
+            "ration": 30,
+            "dmg": 26,
+            "eva": 4,
+            "acc": 4,
+            "rof": 90,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 157,
+            "ammo": 140,
+            "ration": 90,
+            "dmg": 79,
+            "eva": 36,
+            "acc": 35,
+            "rof": 139,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n🔷⬛🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects shotguns\nIncreases damage by 15%\nIncreases armour by 15%",
+        "ability": {
+            "name": "Thinker's Key",
+            "icon": "claes",
+            "text": "[Passive]: While in Charging Mode, this unit cannot perform normal attacks. For every 2 seconds after a battle has begun, obtains +1 Charge up to a max of 5 Charges. For each held Charge, increases self damage by ($dam_value)%. [Active]: Enters attack mode. After ending attack mode and reloading, removes all damage increase from Charging mode and re-enters Charging Mode. [EQ Passive 1]: When equipped with \"Optical Glasses\", Charging mode grants +8 HP shields to frontal allied units for 5 seconds, up to 3 layers maximum. [EQ Passive 2]: When equipped with \"Celestial Meteor\", Charging mode increases all allies' damage by 5% for 5 seconds, up to 3 layers maximum. [EQ Passive 3]: When equipped with \"Wristwatch\", Charging mode grants self +1 additional ammo into current clip.",
+            "initial": "0",
+            "cooldown": [
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3",
+                "3"
+            ],
+            "dam_value": [
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25"
+            ]
+        },
+        "production": {
+            "stage": "Obtained as a possible drop throughout E0-1, E1-2, E1-2Ex, E1-? of Dream Theatre."
+        }
     },
     {
         "url": "/wiki/Clear",
@@ -43448,6 +44724,110 @@
                 "pic": "pic_FAIL_510_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Henrietta",
+        "num": 1023,
+        "name": "Henrietta",
+        "type": "SMG",
+        "rating": 7,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 95,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 13,
+            "eva": 15,
+            "acc": 3,
+            "rof": 63,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 190,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 30,
+            "eva": 83,
+            "acc": 15,
+            "rof": 93,
+            "armor": 0
+        },
+        "tile_bonus": "⬛🔶⬛\n🔶🔶⬛\n🔶🔷⬛",
+        "bonus_desc": "Affects assault rifles (AR) and submachine guns (SMG)\nIncreases damage by 12%\nIncreases accuracy by 20%",
+        "ability": {
+            "name": "Full Moon Protector",
+            "icon": "Henrietta",
+            "text": "[Passive]: Grants self a +10 HP shield at the start of battle, lasting for 8 seconds. If currently shielded, obtains +1 \"Damage Mark\" stack every 2 seconds up to a max of 3 stacks. For each \"Damage mark\" stack, increases self damage by ($dam_value)% for ($duration) seconds. If not shielded, obtains +1 \"Evasion Mark\" stack every 2 seconds up to a max of 3 stacks. For each \"Evasion Mark\" stack, increases self evasion by ($eva_rof_value)% for ($duration) seconds. [Active]: Grants self a +10 HP shield for 8 seconds. For every stack of \"Damage Mark\", increases self rate of fire by ($eva_rof_value)%; For every stack of \"Evasion Mark\", grants self an additional +($hp_value) HP shield. Effects last for ($duration) seconds.",
+            "initial": "4",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "dam_value": [
+                "15",
+                "17",
+                "18",
+                "20",
+                "22",
+                "23",
+                "25",
+                "27",
+                "28",
+                "30"
+            ],
+            "eva_rof_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+            ],
+            "hp_value": [
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "reward": "Obtained from clearing E1-7 \"???\" of the Dream Theatre Collaboration Event."
+        }
     },
     {
         "url": "/wiki/Jill",
@@ -44047,6 +45427,122 @@
         ]
     },
     {
+        "url": "/wiki/Rico",
+        "num": 1024,
+        "name": "Rico",
+        "type": "RF",
+        "rating": 7,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 40,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": 47,
+            "eva": 4,
+            "acc": 10,
+            "rof": 25,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 80,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": 130,
+            "eva": 33,
+            "acc": 80,
+            "rof": 37,
+            "armor": 0
+        },
+        "tile_bonus": "🔷⬛⬛\n🔶⬛⬛\n🔶🔶⬛",
+        "bonus_desc": "Affects handguns\nReduces skill cooldown by 18%",
+        "ability": {
+            "name": "Tower of Tisiphone",
+            "icon": "rico",
+            "text": "[Passive]: Obtains +1 Tarot Card every 3 attacks up to a max of 3 Tarot Cards. Each Tarot Card held increases own damage by ($pass_value)% for ($duration) seconds. [Active]: Consumes all held Tarot Cards and deals ($dam_value1)x damage to the furthest target. This shot has perfect accuracy and can do critical damage. Additionally, deal an additional hit to enemies within a radius of 1 unit around the target. The damage of the additional hit is equal to ($dam_value2)x the number of Tarot Cards consumed up to a max of ($dam_value3)x damage.",
+            "initial": "4",
+            "cooldown": [
+                "12",
+                "11.8",
+                "11.6",
+                "11.3",
+                "11.1",
+                "10.9",
+                "10.7",
+                "10.4",
+                "10.2",
+                "10"
+            ],
+            "pass_value": [
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "dam_value1": [
+                "2",
+                "2.1",
+                "2.2",
+                "2.3",
+                "2.4",
+                "2.6",
+                "2.7",
+                "2.8",
+                "2.9",
+                "3"
+            ],
+            "dam_value2": [
+                "0.3",
+                "0.32",
+                "0.34",
+                "0.37",
+                "0.39",
+                "0.41",
+                "0.43",
+                "0.46",
+                "0.48",
+                "0.5"
+            ],
+            "dam_value3": [
+                "0.9",
+                "0.96",
+                "1.02",
+                "1.11",
+                "1.17",
+                "1.23",
+                "1.29",
+                "1.38",
+                "1.44",
+                "1.5"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.7",
+                "3.9",
+                "4.1",
+                "4.3",
+                "4.6",
+                "4.8",
+                "5"
+            ]
+        },
+        "production": {
+            "reward": "Obtained by redeeming x150 \"Augustus\" plushies in the Event Shop during Dream Theatre"
+        }
+    },
+    {
         "url": "/wiki/Seele",
         "num": 1008,
         "name": "Seele",
@@ -44520,9 +46016,114 @@
         ]
     },
     {
-        "url": "/wiki/C14",
+        "url": "/wiki/Triela",
+        "num": 1025,
+        "name": "Triela",
+        "type": "SG",
+        "rating": 7,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "4"
+        },
+        "baseStats": {
+            "hp": 127,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 14,
+            "eva": 2,
+            "acc": 2,
+            "rof": 18,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 253,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 35,
+            "eva": 11,
+            "acc": 11,
+            "rof": 26,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛⬛\n🔶🔶🔷\n🔶⬛⬛",
+        "bonus_desc": "Affects machine guns\nIncreases damage by 10%\nIncreases accuracy by 15%",
+        "ability": {
+            "name": "Puppet Trick",
+            "icon": "Triela",
+            "text": "[Passive]: When there is an enemy unit within 2 units distance of herself, switches to using a bayonet to deal 2x damage to the nearest target. In this state, ammo is not consumed and rate of fire increases by ($rof_value)% (does not work with Slug ammo). If there are no enemy units within 2 units distance of herself, increases max hit targets by +1. [Active]: Increases damage by ($dam_value)% and movement speed by +($ms_value) points for ($duration) seconds.",
+            "initial": "8",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "rof_value": [
+                "30",
+                "32",
+                "34",
+                "37",
+                "39",
+                "41",
+                "43",
+                "46",
+                "48",
+                "50"
+            ],
+            "dam_value": [
+                "30",
+                "36",
+                "41",
+                "47",
+                "52",
+                "58",
+                "63",
+                "69",
+                "74",
+                "80"
+            ],
+            "ms_value": [
+                "3",
+                "3",
+                "3",
+                "4",
+                "4",
+                "4",
+                "5",
+                "5",
+                "5",
+                "6"
+            ],
+            "duration": [
+                "5",
+                "5.3",
+                "5.7",
+                "6",
+                "6.3",
+                "6.7",
+                "7",
+                "7.3",
+                "7.7",
+                "8"
+            ]
+        },
+        "production": {
+            "reward": "Obtained by redeeming x150 \"Augustus\" plushies in the Event Shop during Dream Theatre"
+        }
+    },
+    {
+        "url": "/wiki/GM6_Lynx",
         "num": -1,
-        "name": "C14",
+        "name": "GM6 Lynx",
         "type": "RF",
         "rating": 3,
         "constStats": {
@@ -44554,24 +46155,49 @@
         "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
         "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
         "ability": {
-            "name": "Placeholder Name",
-            "icon": "",
-            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
-            "placeholder_value": [
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?",
-                "?"
+            "name": "Rapid Firing",
+            "icon": "AimAttackCurrentTarge",
+            "text": "Begin charging after skill cooldown ends, gaining 1 charge stack every second, up to a maximum of 5 stacks. When skill is used, shoot the current target thrice, dealing ($min_dam_value) ~ ($max_dam_value)x damage per shot based on the current number of charge stacks, taking 0.5 seconds to aim before each shot. All stacks will be consumed on skill use.",
+            "initial": "5",
+            "cooldown": [
+                "15",
+                "14.6",
+                "14.1",
+                "13.7",
+                "13.2",
+                "12.8",
+                "12.3",
+                "11.9",
+                "11.4",
+                "11"
+            ],
+            "min_dam_value": [
+                "0.8",
+                "0.9",
+                "1",
+                "1.1",
+                "1.2",
+                "1.3",
+                "1.4",
+                "1.5",
+                "1.6",
+                "1.7"
+            ],
+            "max_dam_value": [
+                "1.6",
+                "1.7",
+                "1.8",
+                "2",
+                "2.2",
+                "2.4",
+                "2.6",
+                "2.8",
+                "3",
+                "3.2"
             ]
         },
         "production": {
-            "reward": "Login reward for June 2020 (CN)."
+            "reward": "Login reward for September 2020 (CN)."
         }
     },
     {

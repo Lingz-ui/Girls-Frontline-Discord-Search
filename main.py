@@ -594,7 +594,7 @@ async def on_ready():
 	#print(str(client.user.id))
 	#https://discordapp.com/oauth2/authorize?client_id=351447700064960522&scope=bot&permissions=0
 	#Send Messages, Manage Messages, Embed Links, and Add Reactions is required for optimal use.
-	print("Add me with https://discordapp.com/oauth2/authorize?client_id="+str(client.user.id)+ "&scope=bot&permissions=26688")
+	print("Add me with https://discord.com/oauth2/authorize?client_id="+str(client.user.id)+ "&scope=bot&permissions=26688")
 	await client.change_presence(status=discord.Status.online, activity=discord.Game(serverCount()))
 
 @client.event
