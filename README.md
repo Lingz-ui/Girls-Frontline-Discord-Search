@@ -52,6 +52,26 @@ Python3 and pip. Game files need to be extracted if you want images and quotes.
 
 To extract files: https://github.com/36base/girlsfrontline-resources-extract
 
+This will help (replace adb pull with the region you play in and $PWD with the folder of extractor):
+```bash
+#!/bin/bash
+#adb pull /sdcard/Android/data/kr.txwy.and.snqx/files/Android/New/ $PWD
+#skin.json is in asset_textes
+
+rm log.txt
+a=(New/*)
+# get length of an array
+arraylength=${#a[@]}
+
+for (( i=1; i<${arraylength}+1; i++ ));
+do
+  echo $i " / " ${arraylength}
+  python3 main.py -o out target ${a[$i-1]}
+done
+
+find out/wav/ -name '*.wav' -execdir oggenc {} \; -execdir rm {} \;
+```
+
 ## Setup
 1. `git clone https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search.git`
 2. Set the GFBOT_TOKEN environment variable in your terminal with the token for the bot
@@ -60,9 +80,6 @@ To extract files: https://github.com/36base/girlsfrontline-resources-extract
 5. `pip3 install -r requirements.txt` (Windows users, the command might be 'pip' instead of pip3)
 6. `chmod +x run_forever.sh` (Windows users, you're on your own)
 7. `./run_forever.sh` if linux, otherwise `python3 main.py`.
-
-If the bot gives random errors, try downgrading to discord.py 1.3.4.
-
 
 ## Screenshot
 ![GFSearch Command](https://i.imgur.com/QAkHNF5.png)
