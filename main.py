@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -74,7 +75,7 @@ PIC_EQUIP_DOMAIN="http://23.92.83.222:998/pic/equip/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
 SITE_DOMAIN = "https://en.gfwiki.com"
 #pls don't touch.
-version = "IOP 3.21-20200722"
+version = "IOP 3.21-20200901"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -188,7 +189,7 @@ gfcolors = [
 	0x6bdfce, #3 stars   - Turquoise
 	0xd6e35a, #4 stars   - Green
 	0xffb600, #5 stars   - Orange
-	0xffb600, #6 stars   - Orange
+	0xff6a00, #6 stars   - Orange Red
 	0xdfb6ff  #EXTRAstar - Purple
 ]
 '''def getgfcolors(n):
