@@ -73,9 +73,9 @@ PIC_EQUIP_DOMAIN="http://23.92.83.222:998/pic/equip/"
 #Icons are disabled because they make embeds worse.
 #ICON_DOMAIN="http://103.28.71.152:999/pic_compressed/icons/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
-SITE_DOMAIN = "https://en.gfwiki.com"
+SITE_DOMAIN = "https://iopwiki.com"
 #pls don't touch.
-version = "IOP 3.21-20200901"
+version = "IOP 3.21-20201128"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -241,15 +241,16 @@ def RepresentsInt(s):
 #	reload()
 #	await message.channel.send( "Done.")
 def serverCount():
+	#Discord removed the member privledge...
 	#Create a variable to store amount of members per server
-	numMembers = 0
+	#numMembers = 0
 	#Loop through the servers, get all members and add them up
-	for s in client.guilds:
-		numMembers += len(s.members)
+	#for s in client.guilds:
+	#	numMembers += len(s.members)
 	#The bot itself doesn't count as a member
-	numMembers -= len(client.guilds)
-	print("Serving " + str(len(client.guilds)) +" bases and "+str(numMembers)+ " commanders")
-	return "Serving " + str(len(client.guilds)) +" bases and "+str(numMembers)+ " commanders"
+	#numMembers -= len(client.guilds)
+	print("Serving " + str(len(client.guilds)) +" bases")
+	return "Serving " + str(len(client.guilds)) +" bases"
 
 '''
 internalName = internal name of doll.
@@ -382,7 +383,7 @@ def dollInfo(doll):
 			if quote:
 				embed.set_footer(text=quote)
 			else:
-				embed.set_footer(text="Data is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0.")
+				embed.set_footer(text="Data is Ⓒ iopwiki.com and licenced under CC BY-SA 3.0.")
 
 	if 'img' in doll:
 		embed.set_image(url=PIC_DOMAIN+doll['img'])
@@ -483,7 +484,7 @@ def equipInfo(equip):
 		embed.add_field(name="2nd Skill: "+equip['ability2']['name'], value=getAbility(equip,'ability2'), inline=False)
 
 
-	if 'description' in equip:
+	if 'description' in equip and not description.isspace():
 		embed.add_field(name="Description", value=equip['description'], inline=False)
 	
 	#if equip['name'] in bonusdex and 'flavor' in bonusdex[equip['name']]:
@@ -882,7 +883,7 @@ async def on_message(message):
 		msg+="Invite: Check github page\n"
 		msg+="Github: https://github.com/RhythmLunatic/Girls-Frontline-Discord-Search\n"
 		msg+="Contact: /u/RhythmLunatic on Reddit or RhythmLunatic on Github\n"
-		msg+="The information in this bot is Ⓒ en.gfwiki.com and licenced under CC BY-SA 3.0. Support the wiki!\n"
+		msg+="The information in this bot is Ⓒ iopwiki.com and licenced under CC BY-SA 3.0. Support the wiki!\n"
 		msg+="Girls Frontline Discord Search is licenced under AGPLv3. Support free and open source software!"
 		await message.channel.send(msg)
 		return
@@ -1064,18 +1065,23 @@ async def on_message(message):
 				if 'production' in doll and 'timer' in doll['production']:
 					if param == doll['production']['timer']:
 						res.append(doll)
-			
-			if len(equipRes) == 0 and len(res) == 0:
-				await message.channel.send("No equipment or T-Doll was found matching that production timer.")
-				print("No match found for "+param)
-			elif len(equipRes) == 1 and len(res) == 0:
-				await message.channel.send(content="Found an exact match for the timer.", embed=equipInfo(equipRes[0]))
-			elif len(equipRes) == 0 and len(res) == 1:
-				await message.channel.send(content="Found an exact match for the timer.", embed=dollInfo(res[0]))
-			else:
-				msg = "Equipment that matches this production timer: "+", ".join(i['name'] for i in equipRes)
-				msg += "\nT-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res)
-				await message.channel.send(msg)
+			try:
+				if len(equipRes) == 0 and len(res) == 0:
+					await message.channel.send("No equipment or T-Doll was found matching that production timer.")
+					print("No match found for "+param)
+				elif len(equipRes) == 1 and len(res) == 0:
+					await message.channel.send(content="Found an exact match for the timer.", embed=equipInfo(equipRes[0]))
+				elif len(equipRes) == 0 and len(res) == 1:
+					await message.channel.send(content="Found an exact match for the timer.", embed=dollInfo(res[0]))
+				else:
+					msg = "Equipment that matches this production timer: "+", ".join(i['name'] for i in equipRes)
+					msg += "\nT-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res)
+					await message.channel.send(msg)
+			except Exception as e:
+				printError("Invalid equipment data.")
+				printError(str(equipRes[0]))
+				await message.channel.send("Something is wrong with this equipment data... Here it is in text form.\n"+embed2text(equipInfo(equipRes[0])))
+				print(traceback.print_exc())
 			return
 			
 

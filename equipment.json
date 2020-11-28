@@ -21,6 +21,39 @@
         }
     },
     {
+        "url": "/wiki/.357_Jacketed_Hollow_Point_Round",
+        "name": ".357 Jacketed Hollow Point Round",
+        "valid": "Astra Revolver Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 180gr装药的.357口径被甲空尖弹，铜制被甲能够防止枪管挂铅 ，同时还能起到扩大空腔的作用。\nEN: <!-- translations go here, remove brackets once you're done -->",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/12.7mm_1SL",
+        "name": "12.7mm 1SL",
+        "valid": "KSVK Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 本身是使用在攻击直升机上的特种弹药，为了增加对地攻击时的命中概率在弹壳中加入了第二个弹头，在KSVK的强烈要求下，IOP将这种子弹改造成了能够在她的枪械上面正常使用的样子。这样也能在作战时起到不错的压制效果吧。\nEN: Originally a specialised ammunition type used on attack helicopters, a second tip was added to improve hit rate while attacking ground targets. Under KSVK's beseech, IOP modified this type of bullets so it can be fired from her gun, surely it can provide some decent suppression effect on the battlefield.\nObtained by reaching Stage 3 of KSVK's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Armor Penetration": {
+                "min": 110.0,
+                "max": 120.0,
+                "growth": 1.5
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
         "url": "/wiki/16Lab_6-24X56",
         "name": "16Lab 6-24X56",
         "valid": "All except HG",
@@ -169,6 +202,33 @@
                 "min": 10.0,
                 "max": 14.0,
                 "growth": 1.76
+            }
+        }
+    },
+    {
+        "url": "/wiki/7N31",
+        "name": "7N31",
+        "valid": "GSh-18 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 比起一般的9x19mm Para弹有着更高的穿透能力，为了应对敌方日益增多的装甲单位，Gsh18采购了不少7n31。\nEN: Boasts stronger penetration performance than the standard 9x19mm Para(Parabellum) rounds. With the amount of armoured foes increasing every day, Gsh-18 procured a sizeable amount of 7N31.\nObtained by reaching Stage 3 of GSh-18's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Armour Penetration": {
+                "min": 16.0,
+                "max": 20.0,
+                "growth": 1.75
+            },
+            "Damage": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 1.5
+            },
+            "Rate of fire": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 1.5
             }
         }
     },
@@ -354,6 +414,28 @@
         }
     },
     {
+        "url": "/wiki/ACS-L",
+        "name": "ACS-L",
+        "valid": "Super SASS Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: MGP设计的聚合物后托，后部设有小型储物仓可以放置工具。宽大的托腮增加了使用者的舒适度。\nEN: This polymer backrest designed by MGP has a small storage bin at the rear for tools. The large cheek support increases the comfort of the user.\nObtained by reaching Stage 3 of Super SASS's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
         "url": "/wiki/Additional_Process_Module",
         "name": "Additional Process Module",
         "valid": "UMP45 Only",
@@ -501,6 +583,17 @@
                 "max": -3.0
             }
         }
+    },
+    {
+        "url": "/wiki/Antique_Kaleidoscope",
+        "name": "Antique Kaleidoscope",
+        "valid": "Henrietta Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 做工考究的万花筒。持有者并不关注这到底是真品还是赝品，其中蕴含的心意才是她最珍视的东西。\nEN: A kaleidoscope of fine craftsmanship. The holder does not care whether it is a genuine or a fake, as the heart in it is what she cherishes most.",
+        "stats": {}
     },
     {
         "url": "/wiki/APCR_High-Velocity_Ammo",
@@ -781,6 +874,28 @@
         }
     },
     {
+        "url": "/wiki/Celestial_Meteor",
+        "name": "Celestial Meteor",
+        "valid": "Claes Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 无论施加多少血火磨难，都不能使这颗真心磨灭。\nEN: No matter how much blood and fire, this heart will never falter.",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/Childrens%27_Storybook",
+        "name": "Childrens' Storybook",
+        "valid": "Angelica Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 记载着美好童话的绘本，安放着少女的梦境与记忆。无论何时，看到它就能够安心。\nEN: Picture books illustrated with lovely fairy tales, it carries a girl's dreams and memories. Gives off a feeling of tranquillity whenever it's read.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/COG_M150",
         "name": "COG M150",
         "valid": "All except HG",
@@ -836,6 +951,17 @@
                 "growth": 1.5
             }
         }
+    },
+    {
+        "url": "/wiki/Combat_Bayonet",
+        "name": "Combat Bayonet",
+        "valid": "Triela Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 在枪械无法使用的时候，就用上刀，用上拳头和牙齿来战斗。一切为了胜利。\nEN: When the guns are dry of ammo, they use knives, fists and teeth to fight. All for victory.",
+        "stats": {}
     },
     {
         "url": "/wiki/CT_4X20",
@@ -1294,6 +1420,27 @@
                 "min": 3.0,
                 "max": 4.0,
                 "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/G-Box",
+        "name": "G-Box",
+        "valid": "G11 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 由IOP专为g11开发的神秘工具箱，据说设计之初只是一个便携人形能源备用机。最终版本的Gbox还能储存g11的日用品，彻底成为了她的移动生活终端。同时据g11所说此箱子对她有着相当之高的战术价值。\nEN: This mysterious toolbox developed by IOP specifically for G11 was initially planned to be a backup energy storage for dolls. The final version of the G-Box can also store G11's daily necessities, and has become her mobile life terminal. At the same time, G11 insists this box has a very high tactical value to her.\nObtained by reaching Stage 3 of G11's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Accuracy": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 2.0
+            },
+            "Evasion": {
+                "min": -10.0,
+                "max": -5.0
             }
         }
     },
@@ -2325,6 +2472,32 @@
         }
     },
     {
+        "url": "/wiki/MGP_Upgrade_Kit",
+        "name": "MGP Upgrade Kit",
+        "valid": "M500 Only",
+        "img": "accessory_reddot_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 著名枪械配件厂生产的升级配件，Mlok系统带来了极高的配件适应力，后托的长度也更适合一般体型的人形使用了。\nEN: An upgrade kit produced by a famous accessory company, Mlok system also brought about high level of component compatibility, the length of the stock is also now more ergonomic for average body size dolls.\nObtained by reaching Stage 3 of M500's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Critical damage (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.65
+            },
+            "Accuracy": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -4.0,
+                "max": -1.0
+            }
+        }
+    },
+    {
         "url": "/wiki/MIRD5-Class_Ammo",
         "name": "MIRD5-Class Ammo",
         "valid": "Dorothy Only",
@@ -2394,6 +2567,25 @@
                 "min": 110.0,
                 "max": 120.0,
                 "growth": 1.5
+            }
+        }
+    },
+    {
+        "url": "/wiki/MK31_Multi-functional_Exoskeleton",
+        "name": "MK31 Multi-functional Exoskeleton",
+        "valid": "Suomi Only",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: IOP专为索米设计的高性能腿用外骨骼，外部附加了一个小型机械臂可供使用者进行操作。是集操作性和机动性为一体的最新锐外骨骼。\nEN: <!-- Translations go here, remove brackets once you're done. -->\nSpecial equipment awarded to players who are placed in the top 50% onward category for a collective score in the following ranking maps of [[Dual Randomness]]; Hole 1: \"Secret Vortex\", Hole 2: \"Blood-Dimmed Tide\", Hole 3: \"Collapsing Subterfuge\". This equipment comes with max calibration.\nMinimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 25.0,
+                "growth": 1.9
+            },
+            "Damage": {
+                "min": -6.0
             }
         }
     },
@@ -2515,6 +2707,17 @@
         }
     },
     {
+        "url": "/wiki/Optical_Glasses",
+        "name": "Optical Glasses",
+        "valid": "Claes Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 见证了某人与某人约定的眼镜，虽然没有度数，却能让她更加冷静地看待世界。\nEN: A pair of glasses that witnessed a promise between two souls, though it has no magnification, it allows her to see the world more calmly.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/OSS_Suppressor",
         "name": "OSS Suppressor",
         "valid": "M3 Only",
@@ -2626,6 +2829,27 @@
         }
     },
     {
+        "url": "/wiki/Pet_Keychain",
+        "name": "Pet Keychain",
+        "valid": "RO635 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 专为RO635设计的多功能挂饰，集解压、警报、承重等多项功能为一体。据说在设计过程中，某位人形曾强行闯入现场，胁迫设计师采用自己的形象进行设计。\nEN: A multi-functional pendant designed for RO635, with integrated uses in decompression, load-bearing, and as an alarm. It is said that during the design process, a certain doll broke into the lab and forced the designer to create this pendant in her own image.\nObtained by reaching Stage 3 of RO635's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Evasion": {
+                "min": 20.0,
+                "max": 25.0,
+                "growth": 1.8
+            },
+            "Damage": {
+                "min": -8.0,
+                "max": -6.0
+            }
+        }
+    },
+    {
         "url": "/wiki/PKN03M_Night_Scope",
         "name": "PKN03M Night Scope",
         "valid": "9A-91 Only",
@@ -2643,6 +2867,17 @@
                 "min": 100.0
             }
         }
+    },
+    {
+        "url": "/wiki/Playing_Cards",
+        "name": "Playing Cards",
+        "valid": "Rico Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 虽然起了帅气的名字，但实际上只是搭纸牌塔的玩具而已。这是生而为了破坏的义体为数不多能够建造的东西。\nEN: Although it has a handsome name, it is actually just a toy for building a tower of cards. This is one of the few things that can be built for the purpose of destruction.",
+        "stats": {}
     },
     {
         "url": "/wiki/PM_5-25X56",
@@ -2781,6 +3016,17 @@
         "stats": {}
     },
     {
+        "url": "/wiki/RIP380ACP",
+        "name": "RIP380ACP",
+        "valid": "Skorpion Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 旋转炸裂！从外表到杀伤力都极其凶悍的空尖弹，扩张弹头能迅速对软目标造成极大的伤害。真是弹如其名“R.I.P”。\nEN: Spin and explode! These hollowpoint rounds are vicious in appearance and effect, and their expanding tips can do extreme damage to soft targets. Truly a round worthy of the name \"R.I.P.\"",
+        "stats": {}
+    },
+    {
         "url": "/wiki/RPD_Infantry_Webbing",
         "name": "RPD Infantry Webbing",
         "valid": "RPD Only",
@@ -2789,6 +3035,17 @@
         "rating": 5,
         "slot": "Doll",
         "description": "CN: 战前某东方阵营生产的单兵装备，轻便实用，在部分爱好者中有很高的人气，治安任务时候经常被人以高价索要，令RPD十分困扰。\nEN: An individual infantry gear produced by a certain eastern faction prior to the war, it's highly rated amongst the users due to its light weight and usefulness. However what troubles RPD is that while she is on missions, people often approach and offer to buy this item for exordinary prices.",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/S%26B762",
+        "name": "S&B762",
+        "valid": "Type 79 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 85gr（5.5g）全金属被甲弹能够提升射击时的贯通力，79式手中的新宠。\nEN: 85 grains full metal jacketed rounds improves perforation performance, A new favourite of Type 79.",
         "stats": {}
     },
     {
@@ -2950,6 +3207,39 @@
         }
     },
     {
+        "url": "/wiki/Tactical_Folding_Stock",
+        "name": "Tactical Folding Stock",
+        "valid": "Spectre M4 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 专为Spectre M4设计的折叠后托，让枪械使用起来更加得心应手了。\nEN: <!-- translations go here, remove brackets once you're done -->",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/Tactical_Grip",
+        "name": "Tactical Grip",
+        "valid": "Makarov Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 由著名枪械配件厂为马卡洛夫PM设计的战术握把，内置弹匣快速释放的结构。同时提升了握持的舒适感，是一件能让使用者爱不释手的产品。\nEN: A tactical grip manufactured for the Makarov PM by a renowned manufacturer. Includes a quick-release for the magazine in its structure while also improving comfort when holding it. So good, you'll never want to let go.",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/Tactical_Guard_Rail",
+        "name": "Tactical Guard Rail",
+        "valid": "Serdyukov Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 专为谢尔久科夫手枪设计的战术导轨，使得手枪能更换外部配件以应对不同的环境。\nEN: A tactical rail system designed specifically for Serdyukov, allows the user to adapt the weapon to multiple situations.",
+        "stats": {}
+    },
+    {
         "url": "/wiki/Tactical_Headband",
         "name": "Tactical Headband",
         "valid": "HK416 Only",
@@ -2968,6 +3258,27 @@
                 "min": 10.0,
                 "max": 12.0,
                 "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/Tactical_Mobile_Shield",
+        "name": "Tactical Mobile Shield",
+        "valid": "Type 97 Shotgun Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: IOP为97霰设计的高机动防弹盾牌，简练的结构和朴素的外表使其可靠性相当之高。\nEN: IOP designed this high-mobility bulletproof shield for Type 97S with a concise structure and simple appearance, making it highly reliable.\nObtained by reaching Stage 3 of Type 97 Shotgun's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Armour": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.4
+            },
+            "Evasion": {
+                "min": 1.0,
+                "max": 2.0
             }
         }
     },
@@ -3187,7 +3498,7 @@
         },
         "rating": 4,
         "slot": "Doll",
-        "description": "",
+        "description": "A digital camouflage cape developed from Sangvis Ferris technology. It is able to blend into most environments. Having an undisturbed firing environment allows for increased critical damage, Can only be equipped by RFs.",
         "stats": {
             "Critical Hit Damage (%)": {
                 "min": 8.0,
@@ -3273,6 +3584,50 @@
                 "growth": 1.7
             }
         }
+    },
+    {
+        "url": "/wiki/WML_%26_Tactical_Handguard",
+        "name": "WML & Tactical Handguard",
+        "valid": "M950A Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 改造后的M950A安装了战术护木，四条皮轨让可M950A在配件上有了更多的选择，另一方面M950A经常抱怨枪头因为护木变重了不少，导致训练的成本又增加了。\nEN: A tactical handguard fitted after M950A's modification, four Picatinny rails provides more options for tactical accessories. However M950A now frequently complain about the increased weight of the guard, which lead to an increase of funds spent during training.\nObtained by reaching Stage 3 of M950A's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 9.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/Wooden_Grips",
+        "name": "Wooden Grips",
+        "valid": "NZ75 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 专为NZ75设计的木制握把片，大大地提升了握持手感。\nEN: <!-- translations go here, remove brackets when done -->",
+        "stats": {}
+    },
+    {
+        "url": "/wiki/Wristwatch",
+        "name": "Wristwatch",
+        "valid": "Claes Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 按部就班地生活也是一种平稳的幸福。\nEN: To live an orderly life, is in a way experiencing happiness.",
+        "stats": {}
     },
     {
         "url": "/wiki/XM261_ACP",

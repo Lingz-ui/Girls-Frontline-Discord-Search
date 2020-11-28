@@ -10631,6 +10631,86 @@
         ]
     },
     {
+        "url": "/wiki/GM6_Lynx",
+        "num": -1,
+        "name": "GM6 Lynx",
+        "type": "RF",
+        "rating": 3,
+        "constStats": {
+            "mov": 7,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 15,
+            "ration": 30,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 55,
+            "ration": 90,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
+        "ability": {
+            "name": "Rapid Firing",
+            "icon": "AimAttackCurrentTarge",
+            "text": "Begin charging after skill cooldown ends, gaining 1 charge stack every second, up to a maximum of 5 stacks. When skill is used, shoot the current target thrice, dealing ($min_dam_value) ~ ($max_dam_value)x damage per shot based on the current number of charge stacks, taking 0.5 seconds to aim before each shot. All stacks will be consumed on skill use.",
+            "initial": "5",
+            "cooldown": [
+                "15",
+                "14.6",
+                "14.1",
+                "13.7",
+                "13.2",
+                "12.8",
+                "12.3",
+                "11.9",
+                "11.4",
+                "11"
+            ],
+            "min_dam_value": [
+                "0.8",
+                "0.9",
+                "1",
+                "1.1",
+                "1.2",
+                "1.3",
+                "1.4",
+                "1.5",
+                "1.6",
+                "1.7"
+            ],
+            "max_dam_value": [
+                "1.6",
+                "1.7",
+                "1.8",
+                "2",
+                "2.2",
+                "2.4",
+                "2.6",
+                "2.8",
+                "3",
+                "3.2"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for September 2020 (CN)."
+        }
+    },
+    {
         "url": "/wiki/GSh-18",
         "num": 221,
         "name": "GSh-18",
@@ -12131,6 +12211,87 @@
                 "pic": "pic_HK45_2705_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/HK512",
+        "num": 326,
+        "name": "HK512",
+        "type": "SG",
+        "rating": 4,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "3"
+        },
+        "baseStats": {
+            "hp": 128,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 14,
+            "eva": 2,
+            "acc": 2,
+            "rof": 21,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 256,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 37,
+            "eva": 13,
+            "acc": 15,
+            "rof": 31,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛🔶\n🔶🔶🔷\n🔶⬛🔶",
+        "bonus_desc": "Affects machine guns (MG) and shotguns (SG).\nIncreases damage by 10%\nIncreases armour by 18%",
+        "ability": {
+            "name": "Fiery Dimension",
+            "icon": "HK512",
+            "text": "[Passive]: When reloading, reduce the current remaining reload time by ($rt_buff_value)% for self and other shotguns in the same column. [Active]: Upon skill activation, increases own armour and evasion by ($rt_buff_value)% for every shotgun in the echelon for ($duration) seconds.",
+            "initial": "6",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "rt_buff_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "20"
+            ],
+            "duration": [
+                "4",
+                "4.2",
+                "4.4",
+                "4.7",
+                "4.9",
+                "5.1",
+                "5.3",
+                "5.6",
+                "5.8",
+                "6"
+            ]
+        },
+        "production": {
+            "timer": "7:56:00"
+        }
     },
     {
         "url": "/wiki/HP-35",
@@ -15782,6 +15943,99 @@
                 "pic": "pic_L85A1_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/LTLX_7000",
+        "num": 323,
+        "name": "LTLX 7000",
+        "type": "SG",
+        "rating": 5,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "5"
+        },
+        "baseStats": {
+            "hp": 138,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 9,
+            "eva": 2,
+            "acc": 2,
+            "rof": 20,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 275,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 23,
+            "eva": 11,
+            "acc": 14,
+            "rof": 28,
+            "armor": 0
+        },
+        "tile_bonus": "🔶🔶⬛\n🔶🔶🔷\n🔶🔶⬛",
+        "bonus_desc": "Affects machine guns.\nIncreases damage by 10%\nIncreases accuracy by 15%",
+        "ability": {
+            "name": "Opposites Repel",
+            "icon": "LTLX7",
+            "text": "[Passive]: Reduces damage dealt to self from enemies directly ahead by ($pass_amr_value)%. [Active]: Performs an attack that does not deal damage, forcibly knocking back moveable enemies within a 150-degree frontal cone of 6 unit radius ahead of self by 5 units, and remove the targets' HP shields and buff effects. Additionally, increases self armour by ($pass_amr_value)% for every target knocked-back (up to 5 stacks max) and reduce self damage by ($dam_value)% for ($duration) seconds.",
+            "initial": "5",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "pass_amr_value": [
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "20"
+            ],
+            "dam_value": [
+                "30",
+                "27",
+                "24",
+                "21",
+                "18",
+                "15",
+                "12",
+                "8",
+                "4",
+                "0"
+            ],
+            "duration": [
+                "6",
+                "6.2",
+                "6.4",
+                "6.6",
+                "6.8",
+                "7",
+                "7.2",
+                "7.4",
+                "7.7",
+                "8"
+            ]
+        },
+        "production": {
+            "timer": "8:17:00"
+        }
     },
     {
         "url": "/wiki/LWMMG",
@@ -20665,6 +20919,123 @@
                 "pic": "pic_M590_1806_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/M6_ASW",
+        "num": 324,
+        "name": "M6 ASW",
+        "type": "SG",
+        "rating": 5,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "4"
+        },
+        "baseStats": {
+            "hp": 130,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 14,
+            "eva": 2,
+            "acc": 2,
+            "rof": 19,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 260,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 39,
+            "eva": 14,
+            "acc": 15,
+            "rof": 28,
+            "armor": 0
+        },
+        "tile_bonus": "🔶🔶⬛\n🔶⬛⬛\n🔶🔶🔷",
+        "bonus_desc": "Affects machine guns.\nIncreases damage by 18%\nIncreases accuracy by 12%",
+        "ability": {
+            "name": "Resilience of Blood and Fire",
+            "icon": "M6ASW",
+            "text": "[Passive]: The first attack will consume all ammo and deal 4 hits. Whenever ammo is fully used up, switches to RF mode and change targeting mode to prioritise the furthest enemy from self. While RF mode is active, obtains the following stat changes: Reduced evasion by ($pass_eva)%, increased rate of fire and damage by ($pass_rof_dam)%, increased accuracy by ($pass_acc)%, increased armour piercing by +100 points. [Active]: Reload and switches back to SG mode. Grants self a taunt effect until SG mode ends. Reload time is fixed at 2 seconds. When reloading ends, remove stat changes from RF mode and gains a +($hp_value) HP shield for ($duration) seconds. (Slug ammo only applies to normal attacks under SG mode)",
+            "initial": "5",
+            "cooldown": [
+                "24",
+                "23.6",
+                "23.1",
+                "22.7",
+                "22.2",
+                "21.8",
+                "21.3",
+                "20.9",
+                "20.4",
+                "20"
+            ],
+            "pass_eva": [
+                "35",
+                "32",
+                "30",
+                "27",
+                "24",
+                "21",
+                "18",
+                "15",
+                "12",
+                "10"
+            ],
+            "pass_rof_dam": [
+                "50",
+                "55",
+                "60",
+                "65",
+                "70",
+                "76",
+                "82",
+                "88",
+                "94",
+                "100"
+            ],
+            "pass_acc": [
+                "150",
+                "155",
+                "160",
+                "165",
+                "170",
+                "176",
+                "182",
+                "188",
+                "194",
+                "200"
+            ],
+            "hp_value": [
+                "30",
+                "35",
+                "40",
+                "45",
+                "50",
+                "55",
+                "60",
+                "65",
+                "70",
+                "75"
+            ],
+            "duration": [
+                "3",
+                "3.2",
+                "3.4",
+                "3.6",
+                "3.8",
+                "4",
+                "4.2",
+                "4.4",
+                "4.7",
+                "5"
+            ]
+        },
+        "production": {
+            "timer": "8:08:00"
+        }
     },
     {
         "url": "/wiki/M60",
@@ -30761,6 +31132,86 @@
         ]
     },
     {
+        "url": "/wiki/QSB-91",
+        "num": 322,
+        "name": "QSB-91",
+        "type": "HG",
+        "rating": 3,
+        "constStats": {
+            "mov": 15,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 35,
+            "ammo": 10,
+            "ration": 10,
+            "dmg": 13,
+            "eva": 9,
+            "acc": 8,
+            "rof": 36,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 70,
+            "ammo": 30,
+            "ration": 30,
+            "dmg": 36,
+            "eva": 72,
+            "acc": 58,
+            "rof": 53,
+            "armor": 0
+        },
+        "tile_bonus": "🔶🔶⬛\n🔶🔷⬛\n🔶🔶⬛",
+        "bonus_desc": "Affects all guns\nIncreases damage by 16%(x1) / 20%(x2) / 24%(x3) / 28%(x4) / 32%(x5)",
+        "ability": {
+            "name": "Sharpshooting",
+            "icon": "X95",
+            "text": "[Passive]: If there are enemies near self, switch to knife mode. In this mode, every attack will deal ($pass_value)x damage 4 times to the nearest target that cannot miss. [Active]: Fire 4 consecutive shots with perfect accuracy at the current target, with each hit dealing ($dam_value)x damage and ignores HP shields. Every shot requires 1 second of aiming.",
+            "initial": "4",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "pass_value": [
+                "0.2",
+                "0.21",
+                "0.21",
+                "0.22",
+                "0.22",
+                "0.23",
+                "0.23",
+                "0.24",
+                "0.24",
+                "0.25"
+            ],
+            "dam_value": [
+                "4",
+                "4.2",
+                "4.4",
+                "4.6",
+                "4.8",
+                "5",
+                "5.2",
+                "5.4",
+                "5.7",
+                "6"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for November 2020 (CN)."
+        }
+    },
+    {
         "url": "/wiki/R5",
         "num": 289,
         "name": "R5",
@@ -37992,6 +38443,62 @@
         ]
     },
     {
+        "url": "/wiki/TS12",
+        "num": -1,
+        "name": "TS12",
+        "type": "SG",
+        "rating": 3,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "?"
+        },
+        "baseStats": {
+            "hp": 10,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 100,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": -1,
+            "eva": -1,
+            "acc": -1,
+            "rof": -1,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
+        "bonus_desc": "Affects machine guns\nIncreases ?? by ??%\nIncreases ?? by ??%",
+        "ability": {
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+            ]
+        },
+        "production": {
+            "reward": "Login reward for October 2020 (CN)."
+        }
+    },
+    {
         "url": "/wiki/Tabuk",
         "num": 305,
         "name": "Tabuk",
@@ -41954,6 +42461,87 @@
         ]
     },
     {
+        "url": "/wiki/V-PM5",
+        "num": 325,
+        "name": "V-PM5",
+        "type": "SG",
+        "rating": 4,
+        "constStats": {
+            "mov": 6,
+            "crit_rate": 40,
+            "crit_dmg": 50,
+            "pen": 15,
+            "clipsize": "5"
+        },
+        "baseStats": {
+            "hp": 119,
+            "ammo": 30,
+            "ration": 40,
+            "dmg": 13,
+            "eva": 2,
+            "acc": 2,
+            "rof": 20,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 238,
+            "ammo": 90,
+            "ration": 140,
+            "dmg": 34,
+            "eva": 15,
+            "acc": 12,
+            "rof": 29,
+            "armor": 0
+        },
+        "tile_bonus": "🔶⬛⬛\n⬛🔶🔷\n🔶🔶⬛",
+        "bonus_desc": "Affects machine guns.\nIncreases damage by 18%",
+        "ability": {
+            "name": "Survival First",
+            "icon": "Vpm5",
+            "text": "[Passive]: Whenever movement is made, grants self +9 movement speed which gradually decays within 9 seconds. [Active]: Gains additional evasion equal to ($eva_value)x of armour value for ($duration) seconds.",
+            "initial": "8",
+            "cooldown": [
+                "20",
+                "19.6",
+                "19.1",
+                "18.7",
+                "18.2",
+                "17.8",
+                "17.3",
+                "16.9",
+                "16.4",
+                "16"
+            ],
+            "eva_value": [
+                "0.3",
+                "0.35",
+                "0.4",
+                "0.45",
+                "0.5",
+                "0.55",
+                "0.6",
+                "0.65",
+                "0.7",
+                "0.8"
+            ],
+            "duration": [
+                "3",
+                "3.1",
+                "3.2",
+                "3.3",
+                "3.4",
+                "3.5",
+                "3.6",
+                "3.7",
+                "3.8",
+                "4"
+            ]
+        },
+        "production": {
+            "timer": "7:11:00"
+        }
+    },
+    {
         "url": "/wiki/VHS",
         "num": 318,
         "name": "VHS",
@@ -43852,6 +44440,166 @@
                 "pic": "pic_wz29_D.png"
             }
         ]
+    },
+    {
+        "url": "/wiki/Agent_416",
+        "num": 1029,
+        "name": "Agent 416",
+        "type": "AR",
+        "rating": 7,
+        "constStats": {
+            "mov": 10,
+            "crit_rate": 20,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 61,
+            "ammo": 20,
+            "ration": 20,
+            "dmg": 19,
+            "eva": 6,
+            "acc": 6,
+            "rof": 52,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 121,
+            "ammo": 60,
+            "ration": 60,
+            "dmg": 51,
+            "eva": 44,
+            "acc": 46,
+            "rof": 76,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛🔶\n⬛🔷🔶\n⬛⬛⬛",
+        "bonus_desc": "Affects submachine guns\nIncreases damage by 20%\nIncreases evasion by 15%",
+        "ability": {
+            "name": "Sticky Bombs",
+            "icon": "Ag416",
+            "text": "Every ($time_value) seconds, automatically place a sticky grenade on the enemy with the highest HP, up to a maximum of 3 grenades per enemy unit. When skill is activated, detonate all sticky grenades on the field, each dealing ($dam_value)x damage that cannot miss within an area of 1.5 units.",
+            "initial": "3",
+            "cooldown": [
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4",
+                "4"
+            ],
+            "time_value": [
+                "10",
+                "9.8",
+                "9.6",
+                "9.3",
+                "9.1",
+                "8.9",
+                "8.7",
+                "8.4",
+                "8.2",
+                "8"
+            ],
+            "dam_value": [
+                "3",
+                "3.22",
+                "3.44",
+                "3.67",
+                "3.89",
+                "4.11",
+                "4.33",
+                "4.56",
+                "4.78",
+                "5"
+            ]
+        },
+        "production": {
+            "reward": "Obtained by redeeming x150 \"Phoenix Credits\" in the Event Shop during Bounty Feast."
+        }
+    },
+    {
+        "url": "/wiki/Agent_Vector",
+        "num": 1028,
+        "name": "Agent Vector",
+        "type": "SMG",
+        "rating": 7,
+        "constStats": {
+            "mov": 12,
+            "crit_rate": 5,
+            "crit_dmg": 50,
+            "pen": 15
+        },
+        "baseStats": {
+            "hp": 93,
+            "ammo": 25,
+            "ration": 20,
+            "dmg": 12,
+            "eva": 10,
+            "acc": 2,
+            "rof": 71,
+            "armor": 0
+        },
+        "maxStats": {
+            "hp": 185,
+            "ammo": 85,
+            "ration": 60,
+            "dmg": 30,
+            "eva": 71,
+            "acc": 11,
+            "rof": 101,
+            "armor": 0
+        },
+        "tile_bonus": "⬛⬛⬛\n🔶🔷⬛\n🔶⬛⬛",
+        "bonus_desc": "Affects assault rifles\nIncreases damage by 12%\nIncreases accuracy by 35%",
+        "ability": {
+            "name": "Mobile Cover",
+            "icon": "AgVec",
+            "text": "Deploys a mobile cover ahead of self lasting for ($duration) seconds. The mobile cover will inherit ($hp_value)% of the user's Max HP and gains taunt effect on deployment.",
+            "initial": "6",
+            "cooldown": [
+                "15",
+                "14.7",
+                "14.3",
+                "14",
+                "13.7",
+                "13.3",
+                "13",
+                "12.7",
+                "12.3",
+                "12"
+            ],
+            "hp_value": [
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15"
+            ],
+            "duration": [
+                "5",
+                "5.3",
+                "5.7",
+                "6",
+                "6.3",
+                "6.7",
+                "7",
+                "7.3",
+                "7.7",
+                "8"
+            ]
+        },
+        "production": {
+            "reward": "Obtained from clearing E1-2 \"0:07 New York Public Library\" of the Bounty Feast Collaboration Event."
+        }
     },
     {
         "url": "/wiki/Alma",
@@ -46121,21 +46869,21 @@
         }
     },
     {
-        "url": "/wiki/GM6_Lynx",
+        "url": "/wiki/SUB-2000",
         "num": -1,
-        "name": "GM6 Lynx",
-        "type": "RF",
+        "name": "SUB-2000",
+        "type": "SMG",
         "rating": 3,
         "constStats": {
-            "mov": 7,
-            "crit_rate": 40,
+            "mov": 12,
+            "crit_rate": 5,
             "crit_dmg": 50,
             "pen": 15
         },
         "baseStats": {
             "hp": 10,
-            "ammo": 15,
-            "ration": 30,
+            "ammo": 25,
+            "ration": 20,
             "dmg": -1,
             "eva": -1,
             "acc": -1,
@@ -46144,8 +46892,8 @@
         },
         "maxStats": {
             "hp": 100,
-            "ammo": 55,
-            "ration": 90,
+            "ammo": 85,
+            "ration": 60,
             "dmg": -1,
             "eva": -1,
             "acc": -1,
@@ -46153,51 +46901,39 @@
             "armor": 0
         },
         "tile_bonus": "⬛⬛⬛\n⬛⬛⬛\n⬛⬛⬛",
-        "bonus_desc": "Affects handguns\nReduces skill cooldown by 12%",
+        "bonus_desc": "Affects assault rifles\nIncreases ?? by ??%\nIncreases ?? by ??%",
         "ability": {
-            "name": "Rapid Firing",
-            "icon": "AimAttackCurrentTarge",
-            "text": "Begin charging after skill cooldown ends, gaining 1 charge stack every second, up to a maximum of 5 stacks. When skill is used, shoot the current target thrice, dealing ($min_dam_value) ~ ($max_dam_value)x damage per shot based on the current number of charge stacks, taking 0.5 seconds to aim before each shot. All stacks will be consumed on skill use.",
-            "initial": "5",
+            "name": "Placeholder Name",
+            "icon": "",
+            "text": "Placeholder text, did you know this is a placeholder description, in case you haven't noticed this is in fact, a placeholder description. And these --> ($placeholder_value) <-- are question marks.",
+            "initial": "0",
             "cooldown": [
-                "15",
-                "14.6",
-                "14.1",
-                "13.7",
-                "13.2",
-                "12.8",
-                "12.3",
-                "11.9",
-                "11.4",
-                "11"
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
             ],
-            "min_dam_value": [
-                "0.8",
-                "0.9",
-                "1",
-                "1.1",
-                "1.2",
-                "1.3",
-                "1.4",
-                "1.5",
-                "1.6",
-                "1.7"
-            ],
-            "max_dam_value": [
-                "1.6",
-                "1.7",
-                "1.8",
-                "2",
-                "2.2",
-                "2.4",
-                "2.6",
-                "2.8",
-                "3",
-                "3.2"
+            "placeholder_value": [
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
             ]
         },
         "production": {
-            "reward": "Login reward for September 2020 (CN)."
+            "reward": "Login reward for December 2020 (CN)."
         }
     },
     {
