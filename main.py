@@ -75,7 +75,7 @@ PIC_EQUIP_DOMAIN="http://23.92.83.222:998/pic/equip/"
 #The domain for the Girls' Frontline wiki (urls are kept in girlsfrontline.json)
 SITE_DOMAIN = "https://iopwiki.com"
 #pls don't touch.
-version = "IOP 3.21-20201128"
+version = "IOP 3.21-2021.02.13"
 
 #This is the exp table for levelling up a T-Doll.
 #Accumulated exp is calculated on the fly.
@@ -410,7 +410,7 @@ def equipInfo(equip):
 	#embed.add_field(name="Type", value=equip['type'], inline=True)
 	#{ "hp" : 40, "ammo": 10, "ration": 10, "dmg": 12, "acc": 6, "eva": 9, "rof": 31, "spd": 15, "armor": 0, "crit_rate": 20, "crit_dmg": 50, "pen": 10},
 	#embed.add_field(name="Base Stats", value="**HP:** "+str(equip['baseStats']['hp']) + ", **DMG:** " + str(equip['baseStats']['dmg']) + ", **ACC:** " + str(equip['baseStats']['acc']) + ", **EVA:** " + str(equip['baseStats']['eva']) + ", **ROF:** " + str(equip['baseStats']['rof']))
-	if 'stats' in equip:
+	if 'stats' in equip and len(equip['stats']) > 0:
 		outStats = ""
 		for k in equip['stats']:
 			print(k)
@@ -440,6 +440,9 @@ def equipInfo(equip):
 				print("Bad keys in equip.")
 				print(str(equip['stats'][k]))
 		embed.add_field(name="Stats",value=outStats,inline=True)
+	else:
+		#At least one field is required
+		embed.add_field(name="Stats",value="Missing data!")
 	#if 'constStats' in equip:
 	#	stats = "**Movement:** "+str(equip['constStats']['mov']) + "**, Crit. rate:** " + str(equip['constStats']['crit_rate'])+"%, **Crit DMG:** "+str(equip['constStats']['crit_dmg']) + ", **Armor Pen.:** " + str(equip['constStats']['pen'])
 	#	stats += "\n**HP:** "+str(equip['maxStats']['hp']) + ", **DMG:** " + str(equip['maxStats']['dmg']) + ", **ACC:** " + str(equip['maxStats']['acc']) + ", **EVA:** " + str(equip['maxStats']['eva']) + ", **ROF:** " + str(equip['maxStats']['rof']) + ", **Armor:** "+ str(equip['maxStats']['armor'])
@@ -484,7 +487,7 @@ def equipInfo(equip):
 		embed.add_field(name="2nd Skill: "+equip['ability2']['name'], value=getAbility(equip,'ability2'), inline=False)
 
 
-	if 'description' in equip and not description.isspace():
+	if 'description' in equip and not equip['description'].isspace():
 		embed.add_field(name="Description", value=equip['description'], inline=False)
 	
 	#if equip['name'] in bonusdex and 'flavor' in bonusdex[equip['name']]:
@@ -1074,8 +1077,8 @@ async def on_message(message):
 				elif len(equipRes) == 0 and len(res) == 1:
 					await message.channel.send(content="Found an exact match for the timer.", embed=dollInfo(res[0]))
 				else:
-					msg = "Equipment that matches this production timer: "+", ".join(i['name'] for i in equipRes)
-					msg += "\nT-Dolls that match this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating']) +")" for i in res)
+					msg = "Equipment that matches this production timer: "+", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating'])+")" for i in equipRes)
+					msg += "\nT-Dolls that match this production timer: "+ ", ".join(i['name']+" ("+i['type']+" "+num2stars(i['rating'])+")" for i in res)
 					await message.channel.send(msg)
 			except Exception as e:
 				printError("Invalid equipment data.")

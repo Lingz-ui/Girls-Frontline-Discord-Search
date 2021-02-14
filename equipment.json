@@ -28,8 +28,37 @@
         "type": "",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 180gr装药的.357口径被甲空尖弹，铜制被甲能够防止枪管挂铅 ，同时还能起到扩大空腔的作用。\nEN: <!-- translations go here, remove brackets once you're done -->",
-        "stats": {}
+        "description": "CN: 180gr装药的.357口径被甲空尖弹，铜制被甲能够防止枪管挂铅 ，同时还能起到扩大空腔的作用。\nEN: <!-- translations go here, remove brackets once you're done -->\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 8.0,
+                "max": 10.0,
+                "growth": 2.0
+            },
+            "Armour Piercing": {
+                "min": -10.0,
+                "max": -7.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/.45_Hollow_Point_(Incendiary)",
+        "name": ".45 Hollow Point (Incendiary)",
+        "valid": "Agent Vector Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 在普通的空尖弹上改装而成，概率性将敌人点燃从而增加了整体输出。\nEN: Modified from normal hollow point rounds, they have a chance to ignite enemies and raise overall DPS.\nObtained by exchanging {{Icon|Phoenix Credits}}x80 \"Phoenix Credits\" in the Event Shop during [[Bounty Feast]]. This equipment will come max calibrated.\nMinimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 10.0,
+                "growth": 1.5
+            },
+            "Armour Piercing": {
+                "min": -7.0
+            }
+        }
     },
     {
         "url": "/wiki/12.7mm_1SL",
@@ -49,6 +78,28 @@
             "Damage": {
                 "min": 3.0,
                 "max": 5.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/12GA_Flechette_Shells",
+        "name": "12GA Flechette Shells",
+        "valid": "M1897 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 过去战争中使用的特殊飞镖弹，每发弹药中装有20个小型飞镖，据说主要用来处理叶林中的敌人。\nEN: Special flechette shells used in wars of the past. Each round contains 20 miniature flechettes. Supposedly, its main purpose was to eliminate enemies hiding in foliage.\nObtained by reaching Stage 3 of M1897's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.5
+            },
+            "Accuracy": {
+                "min": 4.0,
+                "max": 6.0,
                 "growth": 2.0
             }
         }
@@ -163,8 +214,24 @@
         "type": "Shotgun Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 明黄色的弹体内含20颗铅弹，提供了顶尖的初速和极佳的指向性，可以大幅提升KS23的杀伤力。\nEN: Up to 20 lead pellets encased in bright yellow shells, provides pinnacle muzzle velocity and superior spread control, can greatly improve KS23's damaging potential.",
-        "stats": {}
+        "description": "CN: 明黄色的弹体内含20颗铅弹，提供了顶尖的初速和极佳的指向性，可以大幅提升KS23的杀伤力。\nEN: Up to 20 lead pellets encased in bright yellow shells, provides pinnacle muzzle velocity and superior spread control, can greatly improve KS23's damaging potential.\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base]]\nMinimum Level Required: 60",
+        "stats": {
+            "Critical Damage (%)": {
+                "min": 14.0,
+                "max": 18.0,
+                "growth": 1.5
+            },
+            "Damage": {
+                "min": 9.0,
+                "max": 12.0,
+                "growth": 1.5
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            }
+        }
     },
     {
         "url": "/wiki/20mm_HEI",
@@ -185,6 +252,38 @@
                 "min": 3.0,
                 "max": 5.0,
                 "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/416%27s_Go_Bag",
+        "name": "416's Go Bag",
+        "valid": "Agent 416 Only",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 在基础的SHD go bag上根据特工416个人需求专属定制的背包。\nEN: A specially-made backpack modified to 416's personal requirements from a normal SHD go-bag.\nObtained by clearing Chapter 4.1: \"0:50 Dark Zone ∞\" of [[Bounty Feast]]. This equipment comes max calibrated\nMinimum Level Required: 80",
+        "stats": {
+            "Evasion": {
+                "min": 12.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/5.56mm_HV_rounds_(Explosive)",
+        "name": "5.56mm HV rounds (Explosive)",
+        "valid": "Agent 416 Only",
+        "img": "ammo_hvBullet_N.png",
+        "type": "High-Velocity Ammo",
+        "rating": 5,
+        "slot": "Magazine",
+        "description": "CN: 在普通的5.56mm高速弹上改装而成，命中敌人时会产生爆炸从而提升输出，据说同时还有吸引目标注意力的功能。\nEN: Modified from ordinary 5.56mm high velocity rounds. They explode upon hitting an enemy, thus increasing DPS. Supposedly, they have the ability to draw targets' attention.\nObtained by exchanging {{Icon|Phoenix Credits}}x80 \"Phoenix Credits\" in the Event Shop during [[Bounty Feast]]. This equipment will come max calibrated.\nMinimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 12.0,
+                "growth": 1.7
             }
         }
     },
@@ -240,8 +339,19 @@
         "type": "High-Velocity Ammo",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 新式的9x39mm子弹，比一般同口径的子弹有着更高的穿透能力，看似无害的蓝色弹头下面隐藏的是惊人的破坏力，不可小视。\nEN: A new type of 9x39mm bullet, boasts higher penetration performance than the other rounds of the same calibre. The seemingly harmless blue tipped bullet hides an unbelievable level of damage potential, do not underestimate it.",
-        "stats": {}
+        "description": "CN: 新式的9x39mm子弹，比一般同口径的子弹有着更高的穿透能力，看似无害的蓝色弹头下面隐藏的是惊人的破坏力，不可小视。\nEN: A new type of 9x39mm bullet, boasts higher penetration performance than the other rounds of the same calibre. The seemingly harmless blue tipped bullet hides an unbelievable level of damage potential, do not underestimate it.\nCan also be obtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit damage (%)": {
+                "min": 6.0,
+                "max": 10.0,
+                "growth": 1.5
+            },
+            "Damage": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.7
+            }
+        }
     },
     {
         "url": "/wiki/Ability_Upgrade_Cartridge",
@@ -414,6 +524,22 @@
         }
     },
     {
+        "url": "/wiki/ACOG_(4x)",
+        "name": "ACOG (4x)",
+        "valid": "Agent 416 Only",
+        "img": "accessory_scope_N.png",
+        "type": "Scope",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 根据SHD需求特别改装的光学倍镜，安装在步枪上有效增加了在中远距离作战时的效率。\nEN: An optical sight that has been modified to the SHD's requirements. When fitted to a rifle, it improves effectiveness at middle to long range combat.\nObtained as a potential drop from an '''S-Ranked battle''' against {{enemy name|Fang HK416|boss}} in Chapter 5.2: \"1:10 Evacuation Point ∞-2\" of [[Bounty Feast]]. This equipment can only be obtained once and will come max calibrated.\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 24.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
         "url": "/wiki/ACS-L",
         "name": "ACS-L",
         "valid": "Super SASS Only",
@@ -495,8 +621,19 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为增强95/97式战场感知和作战适应性设计的一体式瞄具，集成了有线传输的电子瞄具和测距仪，使95/97在掩体后不暴露自己便可进行攻击。\nEN: An all-in-one optic designed to improve battlefield awareness and combat adaptiveness for Type 95 and 97. Utilising wire connected electronic optics and range finder, 95 and 97 can strike from behind cover without exposing themselves.\nObtained as a potential reward from unboxing the special lootboxes which were given out during the 70th Chinese National Day login event. One scope was guaranteed upon opening the 100th crate.",
-        "stats": {}
+        "description": "CN: 专为增强95/97式战场感知和作战适应性设计的一体式瞄具，集成了有线传输的电子瞄具和测距仪，使95/97在掩体后不暴露自己便可进行攻击。\nEN: An all-in-one optic designed to improve battlefield awareness and combat adaptiveness for Type 95 and 97. Utilising wire connected electronic optics and range finder, 95 and 97 can strike from behind cover without exposing themselves.\nObtained as a potential reward from unboxing the special lootboxes which were given out during the 70th Chinese National Day login event. One scope was guaranteed upon opening the 100th crate.\nCan also be obtained by exchanging {{Icon|Forrest Gift}} x7000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.7
+            }
+        }
     },
     {
         "url": "/wiki/AMP_COMPM2",
@@ -592,8 +729,24 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 做工考究的万花筒。持有者并不关注这到底是真品还是赝品，其中蕴含的心意才是她最珍视的东西。\nEN: A kaleidoscope of fine craftsmanship. The holder does not care whether it is a genuine or a fake, as the heart in it is what she cherishes most.",
-        "stats": {}
+        "description": "CN: 做工考究的万花筒。持有者并不关注这到底是真品还是赝品，其中蕴含的心意才是她最珍视的东西。\nEN: A kaleidoscope of fine craftsmanship. The holder does not care whether it is a genuine or a fake, as the heart in it is what she cherishes most.\nObtained by exchanging {{Icon|Augustus}}x60 \"Augustus\" plushies in the Event Shop during [[Dream Theatre]].\nMinimum Level Required: 80",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.7
+            },
+            "Evasion": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.3
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 3.0,
+                "growth": 1.7
+            }
+        }
     },
     {
         "url": "/wiki/APCR_High-Velocity_Ammo",
@@ -629,8 +782,19 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 为精准射击准备的瞄准镜，金色的目镜边框别具一番风味，让M21爱不释手。\nEN: An optical scope prepared for precision shooting, the golden coloured rim makes the scope fairly stylish, M21 finds it hard to keep her hands off it.",
-        "stats": {}
+        "description": "CN: 为精准射击准备的瞄准镜，金色的目镜边框别具一番风味，让M21爱不释手。\nEN: An optical scope prepared for precision shooting, the golden coloured rim makes the scope fairly stylish, M21 finds it hard to keep her hands off it.\nCan also be obtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 17.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 1.8
+            }
+        }
     },
     {
         "url": "/wiki/Artificial_Hands",
@@ -766,8 +930,24 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 配备了重型枪管的BM59 Mark IV，在长时间全自动连射的情况下也不会过热，让BM59可以扮演班用火力支援的角色。\nEN: a BM59 Mark IV rifle equipped with heavier barrels can cope with extended automatic firing sessions without overheating, this allows BM59 to perform as fire support.",
-        "stats": {}
+        "description": "CN: 配备了重型枪管的BM59 Mark IV，在长时间全自动连射的情况下也不会过热，让BM59可以扮演班用火力支援的角色。\nEN: a BM59 Mark IV rifle equipped with heavier barrels can cope with extended automatic firing sessions without overheating, this allows BM59 to perform as fire support.\nObtained by exchanging {{Icon|Forrest Gift}} x4000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 2.0
+            },
+            "Accuracy": {
+                "min": 4.0,
+                "max": 6.0,
+                "growth": 1.45
+            },
+            "Rate of Fire": {
+                "min": 2.0,
+                "max": 4.0,
+                "growth": 1.5
+            }
+        }
     },
     {
         "url": "/wiki/BPR4_%26_SRM6",
@@ -777,8 +957,24 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: OSS为.308和7.62mm口径设计的消音器，模块化设计和新潮的外观迅速在格里芬讨论版上走红，某匿名版常客自然是不会错过这样的产品。\nEN: <!-- Translations go here, remove brackets once you're done -->",
-        "stats": {}
+        "description": "CN: OSS为.308和7.62mm口径设计的消音器，模块化设计和新潮的外观迅速在格里芬讨论版上走红，某匿名版常客自然是不会错过这样的产品。\nEN: <!-- Translations go here, remove brackets once you're done -->\nObtained as an event shop item from the White Day seasonal event [[The Photo Studio Mystery]] for {{Icon|Tangerine Coin}} x80. Max 1 purchase.\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 17.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 2.0
+            },
+            "Evasion": {
+                "min": 6.0,
+                "max": 8.0,
+                "growth": 1.3
+            }
+        }
     },
     {
         "url": "/wiki/Bren_L4_Barrel_Group",
@@ -881,8 +1077,24 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 无论施加多少血火磨难，都不能使这颗真心磨灭。\nEN: No matter how much blood and fire, this heart will never falter.",
-        "stats": {}
+        "description": "CN: 无论施加多少血火磨难，都不能使这颗真心磨灭。\nEN: No matter how much blood and fire, this heart will never falter.\nObtained by exchanging {{Icon|Augustus}}x60 \"Augustus\" plushies in the Event Shop during [[Dream Theatre]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 1.7
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 3.0,
+                "growth": 1.7
+            }
+        }
     },
     {
         "url": "/wiki/Childrens%27_Storybook",
@@ -892,8 +1104,19 @@
         "type": "",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 记载着美好童话的绘本，安放着少女的梦境与记忆。无论何时，看到它就能够安心。\nEN: Picture books illustrated with lovely fairy tales, it carries a girl's dreams and memories. Gives off a feeling of tranquillity whenever it's read.",
-        "stats": {}
+        "description": "CN: 记载着美好童话的绘本，安放着少女的梦境与记忆。无论何时，看到它就能够安心。\nEN: Picture books illustrated with lovely fairy tales, it carries a girl's dreams and memories. Gives off a feeling of tranquillity whenever it's read.\nObtained by exchanging {{Icon|Augustus}}x60 \"Augustus\" plushies in the Event Shop during [[Dream Theatre]].\nMinimum Level Required: 80",
+        "stats": {
+            "Evasion": {
+                "min": 8.0,
+                "max": 12.0,
+                "growth": 1.7
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 3.0,
+                "growth": 1.7
+            }
+        }
     },
     {
         "url": "/wiki/COG_M150",
@@ -960,8 +1183,24 @@
         "type": "",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 在枪械无法使用的时候，就用上刀，用上拳头和牙齿来战斗。一切为了胜利。\nEN: When the guns are dry of ammo, they use knives, fists and teeth to fight. All for victory.",
-        "stats": {}
+        "description": "CN: 在枪械无法使用的时候，就用上刀，用上拳头和牙齿来战斗。一切为了胜利。\nEN: When the guns are dry of ammo, they use knives, fists and teeth to fight. All for victory.\nObtained by exchanging {{Icon|Augustus}}x60 \"Augustus\" plushies in the Event Shop during [[Dream Theatre]].\nMinimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 1.5
+            },
+            "Critical hit rate (%)": {
+                "min": 10.0,
+                "max": 14.0,
+                "growth": 1.8
+            },
+            "Critical hit damage (%)": {
+                "min": 11.0,
+                "max": 15.0,
+                "growth": 1.5
+            }
+        }
     },
     {
         "url": "/wiki/CT_4X20",
@@ -1485,6 +1724,24 @@
                 "min": 3.0,
                 "max": 4.0,
                 "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/Galil_Exclusive_Handguard",
+        "name": "Galil Exclusive Handguard",
+        "valid": "Galil Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 专为加利尔步枪设计的模块化护木，全新的mlok系统带来了更多的可能性。\nEN: This modular handguard was specially designed for the Galil rifle. The brand new MLOK system brings many possibilities with it.\nObtained by reaching Stage 3 of Galil's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Accuracy": {
+                "min": 10.0
+            },
+            "Evasion": {
+                "min": -5.0
             }
         }
     },
@@ -2357,8 +2614,23 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: M9专用的改装聚合物战术握把，集成了皮卡汀尼下导轨，在提高控制力的同时增加了战术配件的灵活性。\nEN: M9 exclusive modified synthetic material tactical grip, the molded picatinny lower rails also adds accessory compatibilities to the handgun.",
-        "stats": {}
+        "description": "CN: M9专用的改装聚合物战术握把，集成了皮卡汀尼下导轨，在提高控制力的同时增加了战术配件的灵活性。\nEN: M9 exclusive modified synthetic material tactical grip, the molded picatinny lower rails also adds accessory compatibilities to the handgun.\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 9.0,
+                "max": 12.0,
+                "growth": 1.7
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 3.0
+            }
+        }
     },
     {
         "url": "/wiki/M993_Armor-Piercing_Ammo",
@@ -2394,8 +2666,23 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: MAC10专用的改装上机匣，增加了可灵活配置装具的导轨系统的同时降低了射速，使其更容易被火控模块控制，最重要的还是看上去非常酷。\nEN: A modified upper receiver for MAC10, added accessory rails for combat accessory compatibilities while lowering the rate of fire, also made it easier to control for the doll's fire control module. Most importantly it looks really cool.",
-        "stats": {}
+        "description": "CN: MAC10专用的改装上机匣，增加了可灵活配置装具的导轨系统的同时降低了射速，使其更容易被火控模块控制，最重要的还是看上去非常酷。\nEN: A modified upper receiver for MAC10, added accessory rails for combat accessory compatibilities while lowering the rate of fire, also made it easier to control for the doll's fire control module. Most importantly it looks really cool.\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 15.0,
+                "max": 20.0,
+                "growth": 1.75
+            },
+            "Evasion": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Rate of Fire": {
+                "min": -6.0,
+                "max": -4.0
+            }
+        }
     },
     {
         "url": "/wiki/Mechanical_Arm",
@@ -2714,8 +3001,44 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 见证了某人与某人约定的眼镜，虽然没有度数，却能让她更加冷静地看待世界。\nEN: A pair of glasses that witnessed a promise between two souls, though it has no magnification, it allows her to see the world more calmly.",
-        "stats": {}
+        "description": "CN: 见证了某人与某人约定的眼镜，虽然没有度数，却能让她更加冷静地看待世界。\nEN: A pair of glasses that witnessed a promise between two souls, though it has no magnification, it allows her to see the world more calmly.\nObtained by exchanging {{Icon|Augustus}}x60 \"Augustus\" plushies in the Event Shop during [[Dream Theatre]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 1.7
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 3.0,
+                "growth": 1.7
+            }
+        }
+    },
+    {
+        "url": "/wiki/Osprey45_Silencer",
+        "name": "Osprey45 Silencer",
+        "valid": "Agent Vector Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 在SHD大规模装备的消音器，主要使用在Vector.45ACP上，出色的性能和干练的外观让其颇受欢迎。\nEN: A silencer in widespread service with the SHD. Mainly used on .45 Vectors. Its excellent performance and rugged appearance have won it much acclaim.\nObtained as a potential drop from an '''S-Ranked battle''' against {{enemy name|Hellfire Vector|boss}} in Chapter 5.1: \"1:10 Evacuation Point ∞-1\" of [[Bounty Feast]]. This equipment can only be obtained once and will come max calibrated.\nMinimum Level Required: 80",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 8.0,
+                "growth": 1.3
+            }
+        }
     },
     {
         "url": "/wiki/OSS_Suppressor",
@@ -2725,8 +3048,24 @@
         "type": "Silencer",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 当年战略情报局为隐秘行动特别开发的消音器，除了能让M3更不容易被发现外，还附有牛皮制的隔热套，紧急情况下可以让指挥官食用。\nEN: A specially designed suppressor issued by Strategic Intelligence Bureau, on top of improving M3's concealment, it also features a heat insulator made from bull leather, which can function as emergency ration (for the Commander)...",
-        "stats": {}
+        "description": "CN: 当年战略情报局为隐秘行动特别开发的消音器，除了能让M3更不容易被发现外，还附有牛皮制的隔热套，紧急情况下可以让指挥官食用。\nEN: A specially designed suppressor issued by Strategic Intelligence Bureau, on top of improving M3's concealment, it also features a heat insulator made from bull leather, which can function as emergency ration (for the Commander)...\nObtained by exchanging {{Icon|Forrest Gift}} x4000 in the Black Market. The Black Market can be found in the [[Forward Base]]\nMinimum Level Required: 80",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 15.0,
+                "max": 20.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            },
+            "Evasion": {
+                "min": 12.0,
+                "max": 14.0,
+                "growth": 1.5
+            }
+        }
     },
     {
         "url": "/wiki/PEQ-15",
@@ -2876,8 +3215,17 @@
         "type": "",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 虽然起了帅气的名字，但实际上只是搭纸牌塔的玩具而已。这是生而为了破坏的义体为数不多能够建造的东西。\nEN: Although it has a handsome name, it is actually just a toy for building a tower of cards. This is one of the few things that can be built for the purpose of destruction.",
-        "stats": {}
+        "description": "CN: 虽然起了帅气的名字，但实际上只是搭纸牌塔的玩具而已。这是生而为了破坏的义体为数不多能够建造的东西。\nEN: Although it has a handsome name, it is actually just a toy for building a tower of cards. This is one of the few things that can be built for the purpose of destruction.\nObtained by exchanging {{Icon|Augustus}}x60 \"Augustus\" plushies in the Event Shop during [[Dream Theatre]].\nMinimum Level Required: 80",
+        "stats": {
+            "Critical hit damage (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 1.8
+            },
+            "Movement speed": {
+                "min": -3.0
+            }
+        }
     },
     {
         "url": "/wiki/PM_5-25X56",
@@ -2907,8 +3255,19 @@
         "type": "Silencer",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 一个淑女的包中除了口红外，永远还需要一支消音器。前者令人滔滔不绝，后者让人永远沉默。\nEN: Other than a lipstick, a suppressor is also a must in a lady's bag, the former one keeps them talking, the latter makes sure they remain silent.",
-        "stats": {}
+        "description": "CN: 一个淑女的包中除了口红外，永远还需要一支消音器。前者令人滔滔不绝，后者让人永远沉默。\nEN: Other than a lipstick, a suppressor is also a must in a lady's bag, the former one keeps them talking, the latter makes sure they remain silent.\nObtained by exchanging {{Icon|Forrest Gift}} x4000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 15.0,
+                "max": 20.0,
+                "growth": 1.5
+            },
+            "Evasion": {
+                "min": 11.0,
+                "max": 13.0,
+                "growth": 1.4
+            }
+        }
     },
     {
         "url": "/wiki/Prosthetic_Eye",
@@ -2957,6 +3316,28 @@
             "Critical hit rate": {
                 "min": 13.0,
                 "max": 16.0,
+                "growth": 2.0
+            }
+        }
+    },
+    {
+        "url": "/wiki/PT-3_Buttstock",
+        "name": "PT-3 Buttstock",
+        "valid": "PP-19 Only",
+        "img": "",
+        "type": "",
+        "rating": 5,
+        "slot": "Accessory",
+        "description": "CN: 大名鼎鼎的ZNT设计的后托，从设计和做工都透露出了浓厚的俄味。\nEN: A buttstock designed by the renowned ZNT. Both its design and workmanship ooze with Russian flavour.\nObtained by reaching Stage 3 of PP-19's Digimind Upgrade.\nMinimum level requirement: Lvl 115",
+        "stats": {
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            },
+            "Evasion": {
+                "min": 8.0,
+                "max": 10.0,
                 "growth": 2.0
             }
         }
@@ -3012,8 +3393,19 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 牛犊式布局的突击步枪安装配件经常面临导轨不足的困境，多亏了KTC原厂推出的3英寸四导轨护木，战术圣诞树再也不是传统布局枪支的专属了，RFB专用。\nEN: When equipping Bullpup style assault rifles with accessories, user often found they are short on available rails. After KTC introduced the 3 inch four direction railed arm guard, tactical christmas tree is no longer an exclusive title for the conventional layout rifles. RFB exclusive.",
-        "stats": {}
+        "description": "CN: 牛犊式布局的突击步枪安装配件经常面临导轨不足的困境，多亏了KTC原厂推出的3英寸四导轨护木，战术圣诞树再也不是传统布局枪支的专属了，RFB专用。\nEN: When equipping Bullpup style assault rifles with accessories, user often found they are short on available rails. After KTC introduced the 3 inch four direction railed arm guard, tactical christmas tree is no longer an exclusive title for the conventional layout rifles. RFB exclusive.\nObtained as an event shop item from the Christmas seasonal event [[A Snowy Nights Capriccio]] for {{Icon|Star Ornament}} x80. Max 1 purchase.\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 17.0,
+                "max": 24.0,
+                "growth": 2.0
+            },
+            "Critical damage (%)": {
+                "min": 6.0,
+                "max": 10.0,
+                "growth": 1.8
+            }
+        }
     },
     {
         "url": "/wiki/RIP380ACP",
@@ -3023,8 +3415,22 @@
         "type": "",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 旋转炸裂！从外表到杀伤力都极其凶悍的空尖弹，扩张弹头能迅速对软目标造成极大的伤害。真是弹如其名“R.I.P”。\nEN: Spin and explode! These hollowpoint rounds are vicious in appearance and effect, and their expanding tips can do extreme damage to soft targets. Truly a round worthy of the name \"R.I.P.\"",
-        "stats": {}
+        "description": "CN: 旋转炸裂！从外表到杀伤力都极其凶悍的空尖弹，扩张弹头能迅速对软目标造成极大的伤害。真是弹如其名“R.I.P”。\nEN: Spin and explode! These hollowpoint rounds are vicious in appearance and effect, and their expanding tips can do extreme damage to soft targets. Truly a round worthy of the name \"R.I.P.\"\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 2.0
+            },
+            "Rate of fire": {
+                "min": -6.0,
+                "max": -4.0
+            },
+            "Armour Penetration": {
+                "min": -10.0,
+                "max": -7.0
+            }
+        }
     },
     {
         "url": "/wiki/RPD_Infantry_Webbing",
@@ -3034,8 +3440,23 @@
         "type": "",
         "rating": 5,
         "slot": "Doll",
-        "description": "CN: 战前某东方阵营生产的单兵装备，轻便实用，在部分爱好者中有很高的人气，治安任务时候经常被人以高价索要，令RPD十分困扰。\nEN: An individual infantry gear produced by a certain eastern faction prior to the war, it's highly rated amongst the users due to its light weight and usefulness. However what troubles RPD is that while she is on missions, people often approach and offer to buy this item for exordinary prices.",
-        "stats": {}
+        "description": "CN: 战前某东方阵营生产的单兵装备，轻便实用，在部分爱好者中有很高的人气，治安任务时候经常被人以高价索要，令RPD十分困扰。\nEN: An individual infantry gear produced by a certain eastern faction prior to the war, it's highly rated amongst the users due to its light weight and usefulness. However what troubles RPD is that while she is on missions, people often approach and offer to buy this item for exordinary prices.\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 80",
+        "stats": {
+            "Clip Size": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 1.7
+            },
+            "Damage": {
+                "min": 2.0,
+                "max": 3.0,
+                "growth": 2.0
+            },
+            "Evasion": {
+                "min": -3.0,
+                "max": -2.0
+            }
+        }
     },
     {
         "url": "/wiki/S%26B762",
@@ -3045,8 +3466,18 @@
         "type": "",
         "rating": 5,
         "slot": "Magazine",
-        "description": "CN: 85gr（5.5g）全金属被甲弹能够提升射击时的贯通力，79式手中的新宠。\nEN: 85 grains full metal jacketed rounds improves perforation performance, A new favourite of Type 79.",
-        "stats": {}
+        "description": "CN: 85gr（5.5g）全金属被甲弹能够提升射击时的贯通力，79式手中的新宠。\nEN: 85 grains full metal jacketed rounds improves perforation performance, A new favourite of Type 79.\nObtained as an event shop item from the Summer seasonal event [[Unheard Legends of Azure Seas]] for {{Icon|Ocean Conch}} x80. Max 1 purchase.\nCan also be obtained by exchanging {{Icon|Forrest Gift}} x7000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\n-->\nMinimum Level Required: 60",
+        "stats": {
+            "Damage": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.7
+            },
+            "Rate of fire": {
+                "min": -6.0,
+                "max": -4.0
+            }
+        }
     },
     {
         "url": "/wiki/SABOT_Slug",
@@ -3088,8 +3519,24 @@
         "type": "Special",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为SIG510设计的快慢机机构，可自由切换单发点射与全自动射击，可以适应多变的战场状况。\nEN: A fire selector layout designed exclusively for SIG510, used to freely switch between semi and fully automatic fires, suitably adjusting for the ever changing battlefield.",
-        "stats": {}
+        "description": "CN: 专为SIG510设计的快慢机机构，可自由切换单发点射与全自动射击，可以适应多变的战场状况。\nEN: A fire selector layout designed exclusively for SIG510, used to freely switch between semi and fully automatic fires, suitably adjusting for the ever changing battlefield.\nObtained by exchanging {{Icon|Forrest Gift}} x4000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 1.8
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            }
+        }
     },
     {
         "url": "/wiki/SP-6_Subsonic_Rounds",
@@ -3214,8 +3661,19 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为Spectre M4设计的折叠后托，让枪械使用起来更加得心应手了。\nEN: <!-- translations go here, remove brackets once you're done -->",
-        "stats": {}
+        "description": "CN: 专为Spectre M4设计的折叠后托，让枪械使用起来更加得心应手了。\nEN: <!-- translations go here, remove brackets once you're done -->\nObtained by exchanging {{Icon|Forrest Gift}} x4000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 80",
+        "stats": {
+            "Evasion": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 1.0,
+                "max": 2.0,
+                "growth": 2.0
+            }
+        }
     },
     {
         "url": "/wiki/Tactical_Grip",
@@ -3225,8 +3683,19 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 由著名枪械配件厂为马卡洛夫PM设计的战术握把，内置弹匣快速释放的结构。同时提升了握持的舒适感，是一件能让使用者爱不释手的产品。\nEN: A tactical grip manufactured for the Makarov PM by a renowned manufacturer. Includes a quick-release for the magazine in its structure while also improving comfort when holding it. So good, you'll never want to let go.",
-        "stats": {}
+        "description": "CN: 由著名枪械配件厂为马卡洛夫PM设计的战术握把，内置弹匣快速释放的结构。同时提升了握持的舒适感，是一件能让使用者爱不释手的产品。\nEN: A tactical grip manufactured for the Makarov PM by a renowned manufacturer. Includes a quick-release for the magazine in its structure while also improving comfort when holding it. So good, you'll never want to let go.\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 7.0,
+                "max": 11.0,
+                "growth": 2.0
+            }
+        }
     },
     {
         "url": "/wiki/Tactical_Guard_Rail",
@@ -3236,8 +3705,19 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为谢尔久科夫手枪设计的战术导轨，使得手枪能更换外部配件以应对不同的环境。\nEN: A tactical rail system designed specifically for Serdyukov, allows the user to adapt the weapon to multiple situations.",
-        "stats": {}
+        "description": "CN: 专为谢尔久科夫手枪设计的战术导轨，使得手枪能更换外部配件以应对不同的环境。\nEN: A tactical rail system designed specifically for Serdyukov, allows the user to adapt the weapon to multiple situations.\nObtained by exchanging {{Icon|Forrest Gift}} x5000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 8.0,
+                "max": 11.0,
+                "growth": 2.0
+            }
+        }
     },
     {
         "url": "/wiki/Tactical_Headband",
@@ -3374,8 +3854,19 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为伞兵作战设计的折叠枪托，比较特别的是相比其他枪支常见的金属折叠托，樱花沿用了木质枪托配合金属活页折叠结构，樱花专用。\nEN: A folding stock exclusively designed for airborne operations, the main difference between this folding stock and the conventional full metal types, is that only the folding mechanism is metalic, the stock itself is made of wood. Sakura (Type 100) exclusive.",
-        "stats": {}
+        "description": "CN: 专为伞兵作战设计的折叠枪托，比较特别的是相比其他枪支常见的金属折叠托，樱花沿用了木质枪托配合金属活页折叠结构，樱花专用。\nEN: A folding stock exclusively designed for airborne operations, the main difference between this folding stock and the conventional full metal types, is that only the folding mechanism is metalic, the stock itself is made of wood. Sakura (Type 100) exclusive.\nObtained as an event shop item from the Christmas seasonal event [[A Snowy Nights Capriccio]] for {{Icon|Star Ornament}} x80. Max 1 purchase.\nMinimum Level Required: 80",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.35
+            },
+            "Evasion": {
+                "min": 12.0,
+                "max": 15.0,
+                "growth": 1.7
+            }
+        }
     },
     {
         "url": "/wiki/Type_2_Armor_Plate",
@@ -3511,6 +4002,25 @@
         }
     },
     {
+        "url": "/wiki/Vector%27s_Go_Bag",
+        "name": "Vector's Go Bag",
+        "valid": "Agent Vector Only",
+        "img": "doll_skeleton_N.png",
+        "type": "Exoskeleton",
+        "rating": 5,
+        "slot": "Doll",
+        "description": "CN: 专为特工Vector设计的go bag，小巧的收纳包兼顾了功能性同时也不会拖慢Vector的行动节奏。\nEN: A go bag specially designed for Agent Vector. This compact string bag is both functional and does not impede Vector's operational tempo.\nObtained by clearing Chapter 2.1: \"0:07 New York Public Library ∞\" of [[Bounty Feast]]. This equipment comes max calibrated\nMinimum Level Required: 60",
+        "stats": {
+            "Evasion": {
+                "min": 25.0,
+                "growth": 1.4
+            },
+            "Damage": {
+                "min": -6.0
+            }
+        }
+    },
+    {
         "url": "/wiki/VFL_6-24x56",
         "name": "VFL 6-24x56",
         "valid": "All except HG",
@@ -3615,8 +4125,19 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 专为NZ75设计的木制握把片，大大地提升了握持手感。\nEN: <!-- translations go here, remove brackets when done -->",
-        "stats": {}
+        "description": "CN: 专为NZ75设计的木制握把片，大大地提升了握持手感。\nEN: <!-- translations go here, remove brackets when done -->\nObtained as an event shop item from the Halloween seasonal event [[Butterfly In A Cocoon]] for {{Icon|Phantom Butterflies}} x80. Max 1 purchase.\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 16.0,
+                "max": 20.0,
+                "growth": 1.5
+            },
+            "Evasion": {
+                "min": 7.0,
+                "max": 10.0,
+                "growth": 2.0
+            }
+        }
     },
     {
         "url": "/wiki/Wristwatch",
@@ -3626,8 +4147,24 @@
         "type": "",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: 按部就班地生活也是一种平稳的幸福。\nEN: To live an orderly life, is in a way experiencing happiness.",
-        "stats": {}
+        "description": "CN: 按部就班地生活也是一种平稳的幸福。\nEN: To live an orderly life, is in a way experiencing happiness.\nObtained by exchanging {{Icon|Augustus}}x60 \"Augustus\" plushies in the Event Shop during [[Dream Theatre]].\nMinimum Level Required: 60",
+        "stats": {
+            "Critical hit rate (%)": {
+                "min": 18.0,
+                "max": 25.0,
+                "growth": 2.0
+            },
+            "Damage": {
+                "min": 3.0,
+                "max": 5.0,
+                "growth": 1.7
+            },
+            "Accuracy": {
+                "min": 1.0,
+                "max": 3.0,
+                "growth": 1.7
+            }
+        }
     },
     {
         "url": "/wiki/XM261_ACP",
@@ -3658,8 +4195,23 @@
         "type": "Scope",
         "rating": 5,
         "slot": "Accessory",
-        "description": "CN: ZF公司专为FG42生产的光学瞄具，经过一百多年的时光，黄铜镜筒已经黯淡，玻璃镜片却依然德味，透过瞄具都感觉自己仿佛加入了马格南。\nEN: <!-- Insert translation here, remove the brackets once you're done -->",
-        "stats": {}
+        "description": "CN: ZF公司专为FG42生产的光学瞄具，经过一百多年的时光，黄铜镜筒已经黯淡，玻璃镜片却依然德味，透过瞄具都感觉自己仿佛加入了马格南。\nEN: <!-- Insert translation here, remove the brackets once you're done -->\nObtained by exchanging {{Icon|Forrest Gift}} x4000 in the Black Market. The Black Market can be found in the [[Forward Base|Forward Base Camp]].\nMinimum Level Required: 60",
+        "stats": {
+            "Accuracy": {
+                "min": 13.0,
+                "max": 17.0,
+                "growth": 1.9
+            },
+            "Critical hit rate (%)": {
+                "min": 13.0,
+                "max": 16.0,
+                "growth": 1.5
+            },
+            "Rate of Fire": {
+                "min": -4.0,
+                "max": -1.0
+            }
+        }
     },
     {
         "url": "/wiki/%EF%BC%830_Buckshot",
@@ -3798,7 +4350,7 @@
                 500
             ]
         },
-        "img": "armor_3.png"
+        "img": "fairy/armor_3.png"
     },
     {
         "url": "/wiki/Shield_Fairy",
@@ -3813,7 +4365,7 @@
                 500
             ]
         },
-        "img": "shield_3.png"
+        "img": "fairy/shield_3.png"
     },
     {
         "url": "/wiki/Provocation_Fairy",
@@ -3828,7 +4380,7 @@
                 500
             ]
         },
-        "img": "target_3.png"
+        "img": "fairy/target_3.png"
     },
     {
         "url": "/wiki/Sniper_Fairy",
@@ -3843,7 +4395,7 @@
                 500
             ]
         },
-        "img": "sniper_3.png"
+        "img": "fairy/sniper_3.png"
     },
     {
         "url": "/wiki/Bombardment_Fairy",
@@ -3858,7 +4410,7 @@
                 500
             ]
         },
-        "img": "bombard_3.png"
+        "img": "fairy/bombard_3.png"
     },
     {
         "url": "/wiki/Airstrike_Fairy",
@@ -3873,7 +4425,7 @@
                 500
             ]
         },
-        "img": "air_attack_3.png"
+        "img": "fairy/air_attack_3.png"
     },
     {
         "url": "/wiki/Reinforcement_Fairy",
@@ -3888,7 +4440,7 @@
                 1000
             ]
         },
-        "img": "reinforce_3.png"
+        "img": "fairy/reinforce_3.png"
     },
     {
         "url": "/wiki/Parachute_Fairy",
@@ -3903,7 +4455,7 @@
                 1000
             ]
         },
-        "img": "airborne_3.png"
+        "img": "fairy/airborne_3.png"
     },
     {
         "url": "/wiki/Defense_Fairy",
@@ -3918,7 +4470,7 @@
                 1000
             ]
         },
-        "img": "defense_3.png"
+        "img": "fairy/defense_3.png"
     },
     {
         "url": "/wiki/Barrier_Fairy",
@@ -3927,7 +4479,7 @@
         "production": {
             "timer": "4:15:00"
         },
-        "img": ""
+        "img": "fairy/"
     },
     {
         "url": "/wiki/Warrior_Fairy",
@@ -3942,7 +4494,7 @@
                 500
             ]
         },
-        "img": "fighting_3.png"
+        "img": "fairy/fighting_3.png"
     },
     {
         "url": "/wiki/Fury_Fairy",
@@ -3957,7 +4509,7 @@
                 500
             ]
         },
-        "img": "crit_3.png"
+        "img": "fairy/crit_3.png"
     },
     {
         "url": "/wiki/Twin_Fairy",
@@ -3966,7 +4518,7 @@
         "production": {
             "timer": "4:40:00"
         },
-        "img": ""
+        "img": "fairy/"
     },
     {
         "url": "/wiki/Command_Fairy",
@@ -3981,7 +4533,7 @@
                 500
             ]
         },
-        "img": "command_3.png"
+        "img": "fairy/command_3.png"
     },
     {
         "url": "/wiki/Rescue_Fairy",
@@ -3996,7 +4548,7 @@
                 500
             ]
         },
-        "img": "rescue_3.png"
+        "img": "fairy/rescue_3.png"
     },
     {
         "url": "/wiki/Illumination_Fairy",
@@ -4011,7 +4563,7 @@
                 500
             ]
         },
-        "img": "illumine_3.png"
+        "img": "fairy/illumine_3.png"
     },
     {
         "url": "/wiki/Combo_Fairy",
@@ -4020,7 +4572,7 @@
         "production": {
             "timer": "5:15:00"
         },
-        "img": ""
+        "img": "fairy/"
     },
     {
         "url": "/wiki/Landmine_Fairy",
@@ -4035,7 +4587,7 @@
                 1000
             ]
         },
-        "img": "Landmines_3.png"
+        "img": "fairy/Landmines_3.png"
     },
     {
         "url": "/wiki/Rocket_Fairy",
@@ -4050,7 +4602,7 @@
                 1000
             ]
         },
-        "img": "position_3.png"
+        "img": "fairy/position_3.png"
     },
     {
         "url": "/wiki/Construction_Fairy",
@@ -4065,6 +4617,6 @@
                 1000
             ]
         },
-        "img": "fortress_3.png"
+        "img": "fairy/fortress_3.png"
     }
 ]
